@@ -1,0 +1,85 @@
+{
+	"resourceType": "ServiceRequest",
+	"id": "UKCore-ServiceRequest-MichaelJonesDYPDRequest-Example",
+	"meta": {
+        "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest"
+        ]
+    },
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource &quot; UKCore-ServiceRequest-MichaelJonesDYPDRequest-Example&quot; </p></div></div>"
+	},
+	"identifier": [
+		{
+			"system": "https://www.christie.nhs.uk/ehr",
+			"value": "LabOrder123456",
+			"assigner":  {
+				"reference": "Organization/UKCore-Organization-RBV-Example"
+			}
+		}
+	],
+	"instantiatesUri": [
+		"https://www.england.nhs.uk/wp-content/uploads/2020/11/1869-dpyd-policy-statement.pdf"
+	],
+	"basedOn": [
+		{
+			"reference": "UKCore-CarePlan-PancreaticCancerPlan-Example"
+		}
+	],
+	"status": "active",
+	"intent": "order",
+	"category": [
+		{ 
+			"coding": [
+				{ 
+					"system": "http://snomed.info/sct", 
+					"code": "108252007", 
+					"display": "Laboratory procedure"
+				}
+			]
+		}
+	],
+	"priority": "routine",
+	"doNotPerform": "false",
+	"code": { 
+		"coding": [
+			{ 
+				"system": "https://www.england.nhs.uk/publication/national-genomic-test-directories", 
+				"code": "M219.3", 
+				"display": "DPYD hotspot"
+			}
+		]
+	},
+	"subject":  {
+		"reference": "Patient/UKCore-Patient-MichealJones-Example"
+	},
+	"encounter":  {
+		"reference": "Encounter/UKCore-Encounter-OncologyConsultation-Example"
+	},
+	"authoredOn": "2022-07-11T09:00:00Z",
+	"requester": {
+		"reference": "Practitioner/UKCore-Practitioner-DrLucyHale-Example"
+	},
+	"performer": [
+		{
+			"reference": "Organization/UKCore-Organization-699X0-Example"
+		}
+	],
+	"reasonCode": [
+		{ 
+			"coding": [
+				{ 
+					"system": "https://www.england.nhs.uk/publication/national-genomic-test-directories", 
+					"code": "363418001", 
+					"display": "Malignant tumor of pancreas (disorder)"
+				}
+			]
+		}
+	],
+	"specimen": [
+		{
+			"reference": "UKCore-Specimen-MichaelJonesBlood-Example"
+		}
+	]
+}

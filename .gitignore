@@ -1,0 +1,9 @@
+Examples/org.hl7.fhir.validator.jar
+StructureDefinition/Extension-UKCore*.xml
+StructureDefinition/Extension-UKCore*.json
+StructureDefinition/UKCore*.xml
+StructureDefinition/UKCore*.json
+validation
+IOPS-validation
+validation-service-fhir-r4
+.idea/workspace.xml
