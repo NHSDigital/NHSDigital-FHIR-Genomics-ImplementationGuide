@@ -1,15 +1,6 @@
 {
 	"resourceType": "Task",
 	"id": "UKCore-Task-DPYDSequencingTask-Example",
-	"meta": {
-        "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Task"
-        ]
-    },
-	"text": {
-		"status": "generated",
-		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource &quot; UKCore-Task-DPYDSequencingTask-Example&quot; </p></div></div>"
-	},
 	"identifier": [
 		{
 			"system": "https://mft.nhs.uk/nwglh/lims",
@@ -17,15 +8,17 @@
 		}
 	],
 	"instantiatesUri": "https://www.england.nhs.uk/wp-content/uploads/2020/11/1869-dpyd-policy-statement.pdf",
-	"partOf": {
-		"display": "Task/UKCore-Task-ParentTask-Example"
-	},
+	"partOf": [
+		{
+			"display": "Task/UKCore-Task-ParentTask-Example"
+		}
+	],
 	"status": "requested",
 	"businessStatus": { 
 		"coding": [
 			{ 
-				"system": "http://terminology.hl7.org/CodeSystem/lab-status-codes", 
-				"code": "AwaitingSpecimen", 
+				"system": "http://hl7.org/fhir/us/ecr/CodeSystem/codesystem-task-businessStatus", 
+				"code": "sent-supplemental", 
 				"display": "Awaiting Specimen"
 			}
 		]

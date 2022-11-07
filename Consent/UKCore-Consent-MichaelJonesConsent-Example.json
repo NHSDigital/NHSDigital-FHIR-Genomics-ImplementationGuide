@@ -6,10 +6,6 @@
             "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Consent"
         ]
     },
-	"text": {
-		"status": "generated",
-		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource &quot; UKCore-Consent-MichaelJonesConsent-Example&quot; </p></div></div>"
-	},
 	"identifier": [
 		{
 			"system": "https://www.christie.nhs.uk/ehr",
@@ -58,7 +54,7 @@
 		"contentType": "application/pdf",
 		"language": "en-GB",
 		"url": "https://files.genomicsengland.co.uk/forms/Participant-consent-form-for-patients-with-cancer-or-suspected-cancer-C1.pdf",
-		"size": "539588",
+		"size": 539588,
 		"title" : "Participant-consent-form-for-patients-with-cancer-or-suspected-cancer-C1_MJ",
 		"creation": "2022-07-11T09:00:00Z"
 	},
@@ -69,7 +65,7 @@
 	],
 	"verification": [
 		{
-			"verified": "true",
+			"verified": true,
 			"verifiedWith": {
 				"reference": "Patient/UKCore-Patient-MichealJones-Example"
 			},

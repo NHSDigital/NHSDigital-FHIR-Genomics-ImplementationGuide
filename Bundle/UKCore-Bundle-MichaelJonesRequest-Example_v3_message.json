@@ -34,6 +34,12 @@
                 "focus":  [
                     {
                         "reference": "urn:uuid:66c519dd-423f-4238-89c8-91c5be52f330"
+                    },
+					{
+                        "reference": "urn:uuid:840d075e-0480-4134-ae51-27f572731cc8"
+                    },
+					{
+                        "reference": "urn:uuid:87486509-5512-44e9-aa95-6d23ae0c8687"
                     }
                 ]
             }
@@ -43,10 +49,6 @@
 			"resource": {
 				"resourceType": "Practitioner",
 				"id": "f799ec75-8648-4b91-b0a9-b73b46db2c00",
-				"text": {
-				  "status": "generated",
-				  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource &quot; UKCore-Practitioner-MaryLane-Example&quot; </p></div></div>"
-				},
 				"identifier": [
 					{
 						"use": "official",
@@ -54,7 +56,7 @@
 						"value": "999999"
 					}
 				],
-				"active": "true",
+				"active": true,
 				"name": [
 					{
 						"use": "official",
@@ -103,10 +105,6 @@
 			"resource": {
 				"resourceType": "Practitioner",
 				"id": "2b94aed1-02bd-4f68-b5f4-df5aaceecdb1",
-				"text": {
-				  "status": "generated",
-				  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource &quot; UKCore-Practitioner-DrDMello-Example&quot; </p></div></div>"
-				},
 				"identifier": [
 					{
 						"use": "official",
@@ -114,7 +112,7 @@
 						"value": "5173256"
 					}
 				],
-				"active": "true",
+				"active": true,
 				"name": [
 					{
 						"use": "official",
@@ -175,10 +173,6 @@
 			"resource": {
 				"resourceType": "Practitioner",
 				"id": "6e1a8ea3-3a59-40aa-b943-5c896a30e43a",
-				"text": {
-				  "status": "generated",
-				  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource &quot; UKCore-Practitioner-DrLucyHale-Example&quot; </p></div></div>"
-				},
 				"identifier": [
 					{
 						"use": "official",
@@ -186,7 +180,7 @@
 						"value": "9999999"
 					}
 				],
-				"active": "true",
+				"active": true,
 				"name": [
 					{
 						"use": "official",
@@ -247,26 +241,24 @@
 			"resource": {
 				"resourceType": "Organization",
 				"id": "748e3f37-e05e-4484-8425-81e7b7572812",
-				"text": {
-					"status": "generated",
-					"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource &quot; UKCore-Organization-DPX-Example&quot; </p></div></div>"
-				},
 				"identifier": [
 					{
 						"system": "https://fhir.nhs.uk/Id/ods-organization-code",
 						"value": "DPX"
 					}
 				],
-				"active": "true",
-				"type": { 
-					"coding": [
-						{ 
-							"system": "http://terminology.hl7.org/CodeSystem/organization-type", 
-							"code": "prov", 
-							"display": "Healthcare Provider"
-						}
-					]
-				},
+				"active": true,
+				"type": [
+					{ 
+						"coding": [
+							{ 
+								"system": "http://terminology.hl7.org/CodeSystem/organization-type", 
+								"code": "prov", 
+								"display": "Healthcare Provider"
+							}
+						]
+					}
+				],
 				"name": "Independent Sector Healthcare Provider - JUBILEE HEALTHCARE",
 				"address": [
 					{
@@ -303,9 +295,11 @@
 						]
 					}
 				],
-				"endpoint": {
-					"display": "UKCore-Endpoint-DPX-Example"
-				}
+				"endpoint": [
+					{
+						"display": "UKCore-Endpoint-DPX-Example"
+					}
+				]
 			}
 		},
 		{
@@ -313,26 +307,24 @@
 			"resource": {
 				"resourceType": "Organization",
 				"id": "309aba59-ce1a-4ee6-bc82-ab44fa1bf904",
-				"text": {
-					"status": "generated",
-					"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource &quot; UKCore-Organization-699X0-Example&quot; </p></div></div>"
-				},
 				"identifier": [
 					{
 						"system": "https://fhir.nhs.uk/Id/ods-organization-code",
 						"value": "699X0"
 					}
 				],
-				"active": "true",
-				"type": { 
-					"coding": [
-						{ 
-							"system": "http://terminology.hl7.org/CodeSystem/organization-type", 
-							"code": "GLH", 
-							"display": "Genomic Laboratory Hub"
-						}
-					]
-				},
+				"active": true,
+				"type": [
+					{ 
+						"coding": [
+							{ 
+								"system": "http://terminology.hl7.org/CodeSystem/organization-type", 
+								"code": "other", 
+								"display": "Other"
+							}
+						]
+					}
+				],
 				"name": "Pathology Lab - NORTH WEST GLH LED BY MANCHESTER UNIVERSITY NHS FOUNDATION TRUST",
 				"address": [
 					{
@@ -375,9 +367,11 @@
 						]
 					}
 				],
-				"endpoint": {
-					"display": "UKCore-Endpoint-NorthWestGLH-Example"
-				}
+				"endpoint": [
+					{
+						"display": "UKCore-Endpoint-NorthWestGLH-Example"
+					}
+				]
 			}
 		},
 		{
@@ -385,26 +379,24 @@
 			"resource": {
 				"resourceType": "Organization",
 				"id": "9af435fd-4bbf-4cc6-81c6-9f2800c2c513",
-				"text": {
-					"status": "generated",
-					"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource &quot; UKCore-Organization-RBV-Example&quot; </p></div></div>"
-				},
 				"identifier": [
 					{
 						"system": "https://fhir.nhs.uk/Id/ods-organization-code",
 						"value": "RBV"
 					}
 				],
-				"active": "true",
-				"type": { 
-					"coding": [
-						{ 
-							"system": "http://terminology.hl7.org/CodeSystem/organization-type", 
-							"code": "prov", 
-							"display": "Healthcare Provider"
-						}
-					]
-				},
+				"active": true,
+				"type": [
+					{ 
+						"coding": [
+							{ 
+								"system": "http://terminology.hl7.org/CodeSystem/organization-type", 
+								"code": "prov", 
+								"display": "Healthcare Provider"
+							}
+						]
+					}
+				],
 				"name": "NHS Trust - THE CHRISTIE NHS FOUNDATION TRUST",
 				"address": [
 					{
@@ -442,9 +434,11 @@
 						]
 					}
 				],
-				"endpoint": {
-					"display": "UKCore-Endpoint-RBV-Example"
-				}
+				"endpoint": [
+					{
+						"display": "UKCore-Endpoint-RBV-Example"
+					}
+				]
 			}
 		},
 		{
@@ -452,10 +446,6 @@
 			"resource": {
 				"resourceType": "Patient",
 				"id": "41e4b604-37f3-4799-a6b3-ab5b104f3c97",
-				"text": {
-				  "status": "generated",
-				  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource &quot; UKCore-Patient-MichealJones-Example&quot; </p></div></div>"
-				},
 				"extension": [
 					{
 						"url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EthnicCategory",
@@ -491,7 +481,7 @@
 						"value": "9999999999"
 					}
 				],
-				"active": "true",
+				"active": true,
 				"name": [
 					{
 						"use": "official",
@@ -510,7 +500,7 @@
 				],
 				"gender": "male",
 				"birthDate": "1989-12-08",
-				"deceasedBoolean": "false",
+				"deceasedBoolean": false,
 				"address": [
 					{
 						"type": "both",
@@ -524,52 +514,49 @@
 				"maritalStatus": {
 				  "coding": [
 					{
-					  "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatus",
-					  "code": "married-or-civil-partner",
-					  "display": "Married/Civil Partner"
+					  "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+					  "code": "M",
+					  "display": "Married"
 					}
 				  ]
 				},
-				"multipleBirthBoolean": "false",
+				"multipleBirthBoolean": false,
 				"contact": [
 					{
 						"relationship": [
 							{
 								"coding": [
 									{
-										"system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
-										"code": "SPS",
-										"display": "spouse"
+										"system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+										"code": "N",
+										"display": "Next-of-Kin"
 									}
 								]
 							}
 						],
-						"name": [
-							{
-								"use": "official",
-								"text": "Jane Jones",
-								"family": "Jones",
-								"given": [
-									"Jane"
-								]
-							}
-						],
+						"name": {
+							"use": "official",
+							"text": "Jane Jones",
+							"family": "Jones",
+							"given": [
+								"Jane"
+							]
+						},
 						"telecom": [
 							{
 								"system": "phone",
 								"value": "079468308869"
 							}
 						],
-						"address": [
-							{
-								"type": "both",
-								"line": [
-									"48 Astoria Drive"
-								],
-								"city": "Coventry",
-								"postalCode": "CV4 9ZY"
-							}
-						],
+						"address": 
+						{
+							"type": "both",
+							"line": [
+								"48 Astoria Drive"
+							],
+							"city": "Coventry",
+							"postalCode": "CV4 9ZY"
+						},
 						"gender": "female"
 					}
 				],
@@ -584,7 +571,7 @@
 								}
 							]
 						},
-						"preferred": "true"
+						"preferred": true
 					}
 				],
 				"generalPractitioner": [
@@ -602,10 +589,6 @@
 			"resource": {
 				"resourceType": "ServiceRequest",
 				"id": "66c519dd-423f-4238-89c8-91c5be52f330",
-				"text": {
-					"status": "generated",
-					"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource &quot; UKCore-ServiceRequest-MichaelJonesDYPDRequest-Example&quot; </p></div></div>"
-				},
 				"identifier": [
 					{
 						"system": "https://www.christie.nhs.uk/ehr",
@@ -637,7 +620,7 @@
 					}
 				],
 				"priority": "routine",
-				"doNotPerform": "false",
+				"doNotPerform": false,
 				"code": { 
 					"coding": [
 						{ 
@@ -680,10 +663,6 @@
 			"resource": {
 				"resourceType": "Specimen",
 				"id": "840d075e-0480-4134-ae51-27f572731cc8",
-				"text": {
-					"status": "generated",
-					"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource &quot; UKCore-Specimen-MichaelJonesBlood-Example&quot; </p></div></div>"
-				},
 				"identifier": [
 					{
 						"system": "https://www.christie.nhs.uk/path",
@@ -717,7 +696,7 @@
 					"quantity": {
 						"system": "http://unitsofmeasure.org", 
 						"code": "mL", 
-						"value": "2.5"
+						"value": 2.5
 					},
 					"method": {
 						"coding": [
@@ -771,19 +750,21 @@
 						"specimenQuantity": {
 							"system": "http://unitsofmeasure.org", 
 							"code": "mL", 
-							"value": "2.5"
+							"value": 2.5
 						}
 					}
 				],
-				"condition": {
-					"coding": [
-						{
-							"system": "http://terminology.hl7.org/CodeSystem/v2-0493", 
-							"code": "SNR", 
-							"display": "Sample not received"
-						}
-					]
-				}
+				"condition": [
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/v2-0493", 
+								"code": "SNR", 
+								"display": "Sample not received"
+							}
+						]
+					}
+				]
 			}
 		},
 		{
@@ -791,10 +772,6 @@
 			"resource": {
 				"resourceType": "Consent",
 				"id": "87486509-5512-44e9-aa95-6d23ae0c8687",
-				"text": {
-					"status": "generated",
-					"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource &quot; UKCore-Consent-MichaelJonesConsent-Example&quot; </p></div></div>"
-				},
 				"identifier": [
 					{
 						"system": "https://www.christie.nhs.uk/ehr",
@@ -843,7 +820,7 @@
 					"contentType": "application/pdf",
 					"language": "en-GB",
 					"url": "https://files.genomicsengland.co.uk/forms/Participant-consent-form-for-patients-with-cancer-or-suspected-cancer-C1.pdf",
-					"size": "539588",
+					"size": 539588,
 					"title" : "Participant-consent-form-for-patients-with-cancer-or-suspected-cancer-C1_MJ",
 					"creation": "2022-07-11T09:00:00Z"
 				},
@@ -854,7 +831,7 @@
 				],
 				"verification": [
 					{
-						"verified": "true",
+						"verified": true,
 						"verifiedWith": {
 							"reference": "urn:uuid:41e4b604-37f3-4799-a6b3-ab5b104f3c97"
 						},
