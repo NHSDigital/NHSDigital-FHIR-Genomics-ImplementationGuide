@@ -1,15 +1,6 @@
 {
 	"resourceType": "ServiceRequest",
 	"id": "UKCore-ServiceRequest-MichaelJonesDYPDRequest-Example",
-	"meta": {
-        "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest"
-        ]
-    },
-	"text": {
-		"status": "generated",
-		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource &quot; UKCore-ServiceRequest-MichaelJonesDYPDRequest-Example&quot; </p></div></div>"
-	},
 	"identifier": [
 		{
 			"system": "https://www.christie.nhs.uk/ehr",
@@ -34,14 +25,14 @@
 			"coding": [
 				{ 
 					"system": "http://snomed.info/sct", 
-					"code": "108252007", 
-					"display": "Laboratory procedure"
+					"code": "3457005", 
+					"display": "Patient referral"
 				}
 			]
 		}
 	],
 	"priority": "routine",
-	"doNotPerform": "false",
+	"doNotPerform": false,
 	"code": { 
 		"coding": [
 			{ 

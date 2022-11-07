@@ -14,15 +14,6 @@
 		}
 	],
 	"status": "requested",
-	"businessStatus": { 
-		"coding": [
-			{ 
-				"system": "http://hl7.org/fhir/us/ecr/CodeSystem/codesystem-task-businessStatus", 
-				"code": "sent-supplemental", 
-				"display": "Awaiting Specimen"
-			}
-		]
-	},
 	"intent": "filler-order",
 	"priority": "routine",
 	"code": { 

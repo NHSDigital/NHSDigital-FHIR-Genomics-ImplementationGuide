@@ -15,9 +15,9 @@
                     ]
                 },
                 "eventCoding": {
-                    "system": "http://snomed.info/sct",
-                    "code": "405824009",
-                    "display": "Genetic test (procedure)"
+                    "system": "https://fhir.nhs.uk/CodeSystem/message-event",
+                    "code": "referral",
+                    "display": "Patient Referral"
                 },
                 "destination":  [
                     {
