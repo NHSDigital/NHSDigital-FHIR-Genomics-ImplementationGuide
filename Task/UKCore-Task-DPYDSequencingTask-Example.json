@@ -29,7 +29,11 @@
 		"reference": "ServiceRequest/ad37bdf1-3f56-4070-b981-1a619c4943ed"
 	},
 	"for": {
-		"reference": "Patient/f837d8b0-cab6-4841-b735-b9cf1a3453e5"
+		"reference": "Patient/f837d8b0-cab6-4841-b735-b9cf1a3453e5",
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/nhs-number",
+			"value": "9999999999"
+		}
 	},
 	"authoredOn": "2022-07-13T09:00:00Z",
 	"lastModified": "2022-07-13T09:00:00Z",

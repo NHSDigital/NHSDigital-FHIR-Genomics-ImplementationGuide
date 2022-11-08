@@ -33,7 +33,8 @@
 		}
 	],
 	"partOf": {
-		"reference": "Organization/UKCore-Organization-R0A-Example"
+		"reference": "Organization/UKCore-Organization-R0A-Example",
+		"display": "R0A"
 	},
 	"contact": [
 		{ 
