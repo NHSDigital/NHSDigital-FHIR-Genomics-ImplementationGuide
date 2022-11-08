@@ -13,11 +13,6 @@
             "resource": {
                 "resourceType": "MessageHeader",
                 "id": "a4409d7c-b613-477c-b623-87e60406c2f0",
-                "meta": {
-                    "profile":  [
-                        "https://fhir.hl7.org.uk/StructureDefinition/UKCore-MessageHeader"
-                    ]
-                },
                 "eventCoding": {
                     "system": "https://fhir.nhs.uk/CodeSystem/message-event",
                     "code": "referral",
@@ -26,11 +21,21 @@
                 "destination":  [
                     {
                         "name": "National Genomic Medicine Service",
-                        "endpoint": "https://api.service.nhs.uk/GMS"
+                        "endpoint": "https://api.service.nhs.uk/GMS",
+						"receiver": {
+							"identifier": {
+								"system": "https://fhir.nhs.uk/Id/ods-organization-code",
+								"value": "699X0"
+							}
+						}
                     }
                 ],
                 "sender": {
-                    "reference": "urn:uuid:9af435fd-4bbf-4cc6-81c6-9f2800c2c513"
+                    "reference": "urn:uuid:9af435fd-4bbf-4cc6-81c6-9f2800c2c513",
+					"identifier": {
+						"system": "https://fhir.nhs.uk/Id/ods-organization-code",
+						"value": "RBV"
+					}
                 },
                 "source": {
                     "endpoint": "https://www.christie.nhs.uk/ehr"
@@ -74,7 +79,8 @@
 				"telecom": [
 					{
 						"system": "email",
-						"value": "mary.lane@nhs.net"
+						"value": "mary.lane@nhs.net",
+						"use": "work"
 					}
 				],
 				"address": [
@@ -113,7 +119,7 @@
 					{
 						"use": "official",
 						"system": "https://fhir.hl7.org.uk/Id/gmc-number",
-						"value": "5173256"
+						"value": "C5173256"
 					}
 				],
 				"active": true,
@@ -131,7 +137,8 @@
 				"telecom": [
 					{
 						"system": "email",
-						"value": "veeda.dmello@nhs.net"
+						"value": "veeda.dmello@nhs.net",
+						"use": "work"
 					}
 				],
 				"address": [
@@ -181,7 +188,7 @@
 					{
 						"use": "official",
 						"system": "https://fhir.hl7.org.uk/Id/gmc-number",
-						"value": "9999999"
+						"value": "C9999999"
 					}
 				],
 				"active": true,
@@ -198,7 +205,8 @@
 				"telecom": [
 					{
 						"system": "email",
-						"value": "lucy.hale@nhs.net"
+						"value": "lucy.hale@nhs.net",
+						"use": "work"
 					}
 				],
 				"address": [
@@ -294,7 +302,8 @@
 						"telecom": [
 							{
 								"system": "phone",
-								"value": "02476223565"
+								"value": "02476223565",
+								"use": "work"
 							}
 						]
 					}
@@ -362,7 +371,8 @@
 						"telecom": [
 							{
 								"system": "phone",
-								"value": "01612766506"
+								"value": "01612766506",
+								"use": "work"
 							},
 							{
 								"system": "email",
@@ -433,7 +443,8 @@
 						"telecom": [
 							{
 								"system": "phone",
-								"value": "01614463000"
+								"value": "01614463000",
+								"use": "work"
 							}
 						]
 					}
@@ -499,7 +510,8 @@
 				"telecom": [
 					{
 						"system": "phone",
-						"value": "07920754621"
+						"value": "07920754621",
+						"use": "mobile"
 					}
 				],
 				"gender": "male",
@@ -549,7 +561,8 @@
 						"telecom": [
 							{
 								"system": "phone",
-								"value": "079468308869"
+								"value": "079468308869",
+								"use": "work"
 							}
 						],
 						"address": 
