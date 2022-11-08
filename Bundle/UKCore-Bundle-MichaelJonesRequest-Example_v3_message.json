@@ -659,6 +659,11 @@
 							}
 						]
 					}
+				],
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:a0be9a81-4396-47ac-a700-2e8a1a4a8277"
+					}
 				]
 			}
 		},
@@ -923,6 +928,21 @@
 						}
 					]
 				}
+			}
+		},
+		{
+			"fullUrl": "urn:uuid:a0be9a81-4396-47ac-a700-2e8a1a4a8277",
+			"resource": {
+				"resourceType": "DocumentReference",
+				"id": "a0be9a81-4396-47ac-a700-2e8a1a4a8277",
+				"status": "current",
+				"content": [
+					{
+						"attachment": {
+							"url": "http://www.labs.gosh.nhs.uk/media/1392938/joint_genetics_request_form_v3.5.pdf"
+						}
+					}
+				]
 			}
 		}
 	]
