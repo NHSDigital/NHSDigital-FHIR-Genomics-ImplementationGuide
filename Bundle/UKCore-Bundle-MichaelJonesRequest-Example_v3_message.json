@@ -227,7 +227,7 @@
 						"code": {
 							"coding": [
 								{
-									"system": "http://terminology.hl7.org/CodeSystem/v2-0360|2.7",
+									"system": "http://terminology.hl7.org/CodeSystem/v2-0360",
 									"code": "MD",
 									"display": "Doctor of Medicine"
 								}
@@ -264,9 +264,9 @@
 					{ 
 						"coding": [
 							{ 
-								"system": "http://terminology.hl7.org/CodeSystem/organization-type", 
-								"code": "prov", 
-								"display": "Healthcare Provider"
+								"system": "https://fhir.nhs.uk/CodeSystem/organisation-role", 
+								"code": "172", 
+								"display": "INDEPENDENT SECTOR HEALTHCARE PROVIDER"
 							}
 						]
 					}
@@ -286,7 +286,8 @@
 					"identifier": {
 						"system": "https://fhir.nhs.uk/Id/ods-organization-code",
 						"value": "QWU"
-					}
+					},
+					"display": "QWU"
 				},
 				"contact": [
 					{ 
@@ -331,9 +332,9 @@
 					{ 
 						"coding": [
 							{ 
-								"system": "http://terminology.hl7.org/CodeSystem/organization-type", 
-								"code": "other", 
-								"display": "Other"
+								"system": "https://fhir.nhs.uk/CodeSystem/organisation-role", 
+								"code": "173", 
+								"display": "PATHOLOGY LAB"
 							}
 						]
 					}
@@ -355,7 +356,8 @@
 					"identifier": {
 						"system": "https://fhir.nhs.uk/Id/ods-organization-code",
 						"value": "R0A"
-					}
+					},
+					"display": "R0A"
 				},
 				"contact": [
 					{ 
@@ -404,9 +406,9 @@
 					{ 
 						"coding": [
 							{ 
-								"system": "http://terminology.hl7.org/CodeSystem/organization-type", 
-								"code": "prov", 
-								"display": "Healthcare Provider"
+								"system": "https://fhir.nhs.uk/CodeSystem/organisation-role", 
+								"code": "197", 
+								"display": "NHS TRUST"
 							}
 						]
 					}
@@ -427,7 +429,8 @@
 					"identifier": {
 						"system": "https://fhir.nhs.uk/Id/ods-organization-code",
 						"value": "QOP"
-					}
+					},
+					"display": "QOP"
 				},
 				"contact": [
 					{ 
@@ -593,11 +596,19 @@
 				],
 				"generalPractitioner": [
 					{
-						"reference": "urn:uuid:2b94aed1-02bd-4f68-b5f4-df5aaceecdb1"
+						"reference": "urn:uuid:2b94aed1-02bd-4f68-b5f4-df5aaceecdb1",
+						"identifier": {
+							"system": "https://fhir.hl7.org.uk/Id/gmc-number",
+							"value": "C5173256"
+						}
 					}
 				],
 				"managingOrganization": {
-					"reference": "urn:uuid:748e3f37-e05e-4484-8425-81e7b7572812"
+					"reference": "urn:uuid:748e3f37-e05e-4484-8425-81e7b7572812",
+					"identifier": {
+						"system": "https://fhir.nhs.uk/Id/ods-organization-code",
+						"value": "DPX"
+					}
 				}
 			}
 		},
@@ -630,8 +641,8 @@
 						"coding": [
 							{ 
 								"system": "http://snomed.info/sct", 
-								"code": "108252007", 
-								"display": "Laboratory procedure"
+								"code": "3457005", 
+								"display": "Patient referral"
 							}
 						]
 					}
@@ -641,9 +652,9 @@
 				"code": { 
 					"coding": [
 						{ 
-							"system": "https://www.england.nhs.uk/publication/national-genomic-test-directories", 
-							"code": "M219.3", 
-							"display": "DPYD hotspot"
+							"system": "http://snomed.info/sct", 
+							"code": "405824009", 
+							"display": "Genetic test (procedure)"
 						}
 					]
 				},
@@ -817,9 +828,9 @@
 					{ 
 						"coding": [
 							{ 
-								"system": "http://terminology.hl7.org/CodeSystem/consentcategorycodes", 
-								"code": "rsdid", 
-								"display": "De-identified Information Access"
+								"system": "https://fhir.nhs.uk/CodeSystem/consent-categories-bars", 
+								"code": "DRC", 
+								"display": "Direct Care"
 							}
 						]
 					}
