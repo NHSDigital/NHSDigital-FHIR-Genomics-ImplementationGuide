@@ -44,7 +44,7 @@
 				"system": "http://snomed.info/sct", 
 				"code": "405824009", 
 				"display": "Genetic test (procedure)"
-			},
+			}
 		]
 	},
 	"subject":  {
