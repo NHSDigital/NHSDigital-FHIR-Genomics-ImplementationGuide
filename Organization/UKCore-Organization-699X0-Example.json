@@ -34,6 +34,10 @@
 	],
 	"partOf": {
 		"reference": "Organization/UKCore-Organization-R0A-Example",
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/ods-organization-code",
+			"value": "R0A"
+		},
 		"display": "R0A"
 	},
 	"contact": [

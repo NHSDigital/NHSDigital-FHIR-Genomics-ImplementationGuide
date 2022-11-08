@@ -38,7 +38,10 @@
 	"authoredOn": "2022-07-13T09:00:00Z",
 	"lastModified": "2022-07-13T09:00:00Z",
 	"requester": {
-			"reference": "Practitioner/d40da028-017a-427e-961e-b6fd86976101"
+		"identifier": {
+			"system": "https://fhir.hl7.org.uk/Id/gmc-number",
+			"value": "9999999"
+		}
 	},
 	"performerType": [
 		{

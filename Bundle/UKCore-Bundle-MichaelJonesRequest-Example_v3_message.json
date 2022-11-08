@@ -1,6 +1,10 @@
 {
 	"resourceType": "Bundle",
 	"id": "UKCore-Bundle-MichaelJonesRequest-Example",
+	"identifier": {
+		"system": "https://tools.ietf.org/html/rfc4122",
+		"value": "30d65c8e-98e8-4806-b6a6-51e94733f0e9"
+	},
 	"type": "message",
 	"timestamp": "2022-07-11T09:00:00Z",
 	"entry": [

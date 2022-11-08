@@ -36,11 +36,6 @@
 	"code": { 
 		"coding": [
 			{ 
-				"system": "https://www.england.nhs.uk/publication/national-genomic-test-directories", 
-				"code": "M219.3", 
-				"display": "DPYD hotspot"
-			},
-			{ 
 				"system": "http://snomed.info/sct", 
 				"code": "405824009", 
 				"display": "Genetic test (procedure)"
