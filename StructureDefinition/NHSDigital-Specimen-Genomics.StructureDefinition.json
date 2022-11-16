@@ -1,0 +1,95 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Specimen-Genomics",
+  "name": "NHSDigital_Specimen_Genomics",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Specimen",
+  "baseDefinition": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Specimen.accessionIdentifier",
+        "path": "Specimen.accessionIdentifier",
+        "min": 1
+      },
+      {
+        "id": "Specimen.status",
+        "path": "Specimen.status",
+        "min": 1
+      },
+      {
+        "id": "Specimen.type",
+        "path": "Specimen.type",
+        "min": 1
+      },
+      {
+        "id": "Specimen.subject",
+        "path": "Specimen.subject",
+        "min": 1
+      },
+      {
+        "id": "Specimen.receivedTime",
+        "path": "Specimen.receivedTime",
+        "min": 1
+      },
+      {
+        "id": "Specimen.parent",
+        "path": "Specimen.parent",
+        "max": "1"
+      },
+      {
+        "id": "Specimen.request",
+        "path": "Specimen.request",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Specimen.collection.fastingStatus[x]",
+        "path": "Specimen.collection.fastingStatus[x]",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.processing",
+        "path": "Specimen.processing",
+        "max": "1"
+      },
+      {
+        "id": "Specimen.processing.procedure",
+        "path": "Specimen.processing.procedure",
+        "min": 1
+      },
+      {
+        "id": "Specimen.processing.additive",
+        "path": "Specimen.processing.additive",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Specimen.processing.time[x]",
+        "path": "Specimen.processing.time[x]",
+        "min": 1
+      },
+      {
+        "id": "Specimen.container",
+        "path": "Specimen.container",
+        "max": "1"
+      },
+      {
+        "id": "Specimen.condition",
+        "path": "Specimen.condition",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Specimen.note",
+        "path": "Specimen.note",
+        "min": 1,
+        "max": "1"
+      }
+    ]
+  }
+}
