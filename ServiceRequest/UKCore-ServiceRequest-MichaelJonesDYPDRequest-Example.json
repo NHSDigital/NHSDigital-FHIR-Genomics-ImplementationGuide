@@ -6,7 +6,10 @@
 			"system": "https://www.christie.nhs.uk/ehr",
 			"value": "LabOrder123456",
 			"assigner":  {
-				"reference": "Organization/UKCore-Organization-RBV-Example"
+				"identifier": {
+					"system": "https://fhir.nhs.uk/Id/ods-organization-code",
+					"value": "RBV"
+				}
 			}
 		}
 	],
@@ -15,7 +18,7 @@
 	],
 	"basedOn": [
 		{
-			"reference": "UKCore-CarePlan-PancreaticCancerPlan-Example"
+			"display": "UKCore-CarePlan-PancreaticCancerPlan-Example"
 		}
 	],
 	"status": "active",
@@ -43,18 +46,27 @@
 		]
 	},
 	"subject":  {
-		"reference": "Patient/UKCore-Patient-MichealJones-Example"
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/nhs-number",
+			"value": "9999999999"
+		}
 	},
 	"encounter":  {
-		"reference": "Encounter/UKCore-Encounter-OncologyConsultation-Example"
+		"display": "Encounter/UKCore-Encounter-OncologyConsultation-Example"
 	},
 	"authoredOn": "2022-07-11T09:00:00Z",
 	"requester": {
-		"reference": "Practitioner/UKCore-Practitioner-DrLucyHale-Example"
+		"identifier": {
+			"system": "https://fhir.hl7.org.uk/Id/gmc-number",
+			"value": "C9999999"
+		}
 	},
 	"performer": [
 		{
-			"reference": "Organization/UKCore-Organization-699X0-Example"
+			"identifier": {
+				"system": "https://fhir.nhs.uk/Id/ods-organization-code",
+				"value": "RBV"
+			}
 		}
 	],
 	"reasonCode": [
@@ -70,7 +82,10 @@
 	],
 	"specimen": [
 		{
-			"reference": "UKCore-Specimen-MichaelJonesBlood-Example"
+			"identifier": {
+				"system": "https://www.christie.nhs.uk/path",
+				"value": "Spec123456"
+			}
 		}
 	]
 }
