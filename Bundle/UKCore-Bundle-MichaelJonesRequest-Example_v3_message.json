@@ -667,8 +667,20 @@
 					"display": "UKCore-Encounter-OncologyConsultation-Example"
 				},
 				"authoredOn": "2022-07-11T09:00:00Z",
+				"contained": [
+					{
+						"resourceType": "PractitionerRole",
+						"id": "requester",
+						"practitioner": {
+							"reference": "urn:uuid:6e1a8ea3-3a59-40aa-b943-5c896a30e43a"
+						},
+						"organization": {
+							"reference": "urn:uuid:9af435fd-4bbf-4cc6-81c6-9f2800c2c513"
+						}
+					}
+				],
 				"requester": {
-					"reference": "urn:uuid:6e1a8ea3-3a59-40aa-b943-5c896a30e43a"
+					"reference": "#requester"
 				},
 				"performer": [
 					{
