@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "https://example.org/fhir/StructureDefinition/NHSDigital-Condition-Genomics",
+  "url": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Condition-Genomics",
   "name": "NHSDigital_Condition_Genomics",
   "status": "draft",
   "fhirVersion": "4.0.1",
