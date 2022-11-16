@@ -1,0 +1,64 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Consent-Genomics",
+  "name": "NHSDigital_Consent_Genomics",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Consent",
+  "baseDefinition": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Consent",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Consent.identifier",
+        "path": "Consent.identifier",
+        "max": "1"
+      },
+      {
+        "id": "Consent.patient",
+        "path": "Consent.patient",
+        "min": 1
+      },
+      {
+        "id": "Consent.dateTime",
+        "path": "Consent.dateTime",
+        "min": 1
+      },
+      {
+        "id": "Consent.performer",
+        "path": "Consent.performer",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Consent.organization",
+        "path": "Consent.organization",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Consent.source[x]",
+        "path": "Consent.source[x]",
+        "min": 1
+      },
+      {
+        "id": "Consent.policy",
+        "path": "Consent.policy",
+        "max": "0"
+      },
+      {
+        "id": "Consent.policyRule",
+        "path": "Consent.policyRule",
+        "max": "0"
+      },
+      {
+        "id": "Consent.verification",
+        "path": "Consent.verification",
+        "min": 1,
+        "max": "1"
+      }
+    ]
+  }
+}
