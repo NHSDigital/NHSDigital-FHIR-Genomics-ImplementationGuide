@@ -15,8 +15,8 @@
                 "id": "a4409d7c-b613-477c-b623-87e60406c2f0",
                 "eventCoding": {
                     "system": "https://fhir.nhs.uk/CodeSystem/message-event",
-                    "code": "referral",
-                    "display": "Patient Referral"
+                    "code": "patient",
+                    "display": "Patient Demographics"
                 },
                 "destination":  [
                     {
@@ -26,7 +26,8 @@
 							"identifier": {
 								"system": "https://fhir.nhs.uk/Id/ods-organization-code",
 								"value": "699X0"
-							}
+							},
+							"display": "Pathology Lab - NORTH WEST GLH LED BY MANCHESTER UNIVERSITY NHS FOUNDATION TRUST"
 						}
                     }
                 ],
@@ -35,7 +36,8 @@
 					"identifier": {
 						"system": "https://fhir.nhs.uk/Id/ods-organization-code",
 						"value": "RBV"
-					}
+					},
+					"display": "NHS Trust - THE CHRISTIE NHS FOUNDATION TRUST"
                 },
                 "source": {
                     "endpoint": "https://www.christie.nhs.uk/ehr"
