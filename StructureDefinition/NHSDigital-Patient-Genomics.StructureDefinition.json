@@ -1,0 +1,172 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient-Genomics",
+  "name": "NHSDigital_Patient_Genomics",
+  "status": "draft",
+  "date": "2022-11-13T17:36:08.5828032+00:00",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Patient",
+  "baseDefinition": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Patient.extension",
+        "path": "Patient.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 3
+      },
+      {
+        "id": "Patient.extension:birthPlace",
+        "path": "Patient.extension",
+        "sliceName": "birthPlace",
+        "min": 0,
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:birthSex",
+        "path": "Patient.extension",
+        "sliceName": "birthSex",
+        "min": 1
+      },
+      {
+        "id": "Patient.extension:cadavericDonor",
+        "path": "Patient.extension",
+        "sliceName": "cadavericDonor",
+        "min": 0,
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:contactPreference",
+        "path": "Patient.extension",
+        "sliceName": "contactPreference",
+        "min": 0,
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:deathNotificationStatus",
+        "path": "Patient.extension",
+        "sliceName": "deathNotificationStatus",
+        "min": 0,
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:ethnicCategory",
+        "path": "Patient.extension",
+        "sliceName": "ethnicCategory",
+        "min": 1
+      },
+      {
+        "id": "Patient.extension:residentialStatus",
+        "path": "Patient.extension",
+        "sliceName": "residentialStatus",
+        "min": 1
+      },
+      {
+        "id": "Patient.extension:patientReligion",
+        "path": "Patient.extension",
+        "sliceName": "patientReligion",
+        "min": 0,
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:patientInterpreterRequired",
+        "path": "Patient.extension",
+        "sliceName": "patientInterpreterRequired",
+        "min": 0,
+        "max": "0"
+      },
+      {
+        "id": "Patient.identifier:otherUniqueIdentifier",
+        "path": "Patient.identifier",
+        "sliceName": "otherUniqueIdentifier",
+        "max": "1",
+        "mustSupport": false,
+        "isModifierReason": "nhs number absent"
+      },
+      {
+        "id": "Patient.identifier:otherUniqueIdentifier.value",
+        "path": "Patient.identifier.value",
+        "min": 1
+      },
+      {
+        "id": "Patient.name",
+        "path": "Patient.name",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Patient.name.family",
+        "path": "Patient.name.family",
+        "min": 1
+      },
+      {
+        "id": "Patient.name.given",
+        "path": "Patient.name.given",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Patient.gender",
+        "path": "Patient.gender",
+        "min": 1
+      },
+      {
+        "id": "Patient.birthDate",
+        "path": "Patient.birthDate",
+        "min": 1
+      },
+      {
+        "id": "Patient.address",
+        "path": "Patient.address",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Patient.maritalStatus",
+        "path": "Patient.maritalStatus",
+        "max": "0"
+      },
+      {
+        "id": "Patient.multipleBirth[x]",
+        "path": "Patient.multipleBirth[x]",
+        "max": "0"
+      },
+      {
+        "id": "Patient.photo",
+        "path": "Patient.photo",
+        "max": "0"
+      },
+      {
+        "id": "Patient.contact",
+        "path": "Patient.contact",
+        "min": 1
+      },
+      {
+        "id": "Patient.communication",
+        "path": "Patient.communication",
+        "max": "0"
+      },
+      {
+        "id": "Patient.generalPractitioner",
+        "path": "Patient.generalPractitioner",
+        "max": "1"
+      },
+      {
+        "id": "Patient.managingOrganization",
+        "path": "Patient.managingOrganization",
+        "min": 1
+      }
+    ]
+  }
+}
