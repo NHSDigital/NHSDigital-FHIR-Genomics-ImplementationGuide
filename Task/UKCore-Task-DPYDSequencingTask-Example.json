@@ -38,6 +38,7 @@
 	"authoredOn": "2022-07-13T09:00:00Z",
 	"lastModified": "2022-07-13T09:00:00Z",
 	"requester": {
+		"reference": "Practitioner/2b94aed1-02bd-4f68-b5f4-df5aaceecdb1",
 		"identifier": {
 			"system": "https://fhir.hl7.org.uk/Id/gmc-number",
 			"value": "9999999"
@@ -55,6 +56,10 @@
 		}
 	],
 	"owner": {
-		"reference": "Organization/eff48e55-70d7-47bc-b4f1-ecc737a86813"
+		"reference": "Organization/eff48e55-70d7-47bc-b4f1-ecc737a86813",
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/ods-organization-code",
+			"value": "RBV"
+		}
 	}
 }
