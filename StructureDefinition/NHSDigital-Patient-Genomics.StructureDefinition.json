@@ -87,6 +87,23 @@
         "max": "0"
       },
       {
+        "id": "Patient.identifier:nhsNumber",
+        "path": "Patient.identifier",
+        "sliceName": "nhsNumber"
+      },
+      {
+        "id": "Patient.identifier:nhsNumber.assigner",
+        "path": "Patient.identifier.assigner",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization-Genomics"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Patient.identifier:otherUniqueIdentifier",
         "path": "Patient.identifier",
         "sliceName": "otherUniqueIdentifier",
@@ -98,6 +115,18 @@
         "id": "Patient.identifier:otherUniqueIdentifier.value",
         "path": "Patient.identifier.value",
         "min": 1
+      },
+      {
+        "id": "Patient.identifier:otherUniqueIdentifier.assigner",
+        "path": "Patient.identifier.assigner",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization-Genomics"
+            ]
+          }
+        ]
       },
       {
         "id": "Patient.name",
@@ -138,11 +167,6 @@
         "max": "0"
       },
       {
-        "id": "Patient.multipleBirth[x]",
-        "path": "Patient.multipleBirth[x]",
-        "max": "0"
-      },
-      {
         "id": "Patient.photo",
         "path": "Patient.photo",
         "max": "0"
@@ -151,6 +175,30 @@
         "id": "Patient.contact",
         "path": "Patient.contact",
         "min": 1
+      },
+      {
+        "id": "Patient.contact.organization",
+        "path": "Patient.contact.organization",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization-Genomics"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.contact.organization.identifier.assigner",
+        "path": "Patient.contact.organization.identifier.assigner",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization-Genomics"
+            ]
+          }
+        ]
       },
       {
         "id": "Patient.communication",
