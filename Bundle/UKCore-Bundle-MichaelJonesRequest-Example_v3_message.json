@@ -520,10 +520,12 @@
 			"resource": {
 				"resourceType": "PractitionerRole",
 				"id": "3462583a-536c-4bad-99d3-44dc553921fd",
-				"identifier": {
-					"system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
-					"value": "100102238986"
-				}
+				"identifier": [
+					{
+						"system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+						"value": "100102238986"
+					}
+				],
 				"practitioner": {
 					"reference": "urn:uuid:6e1a8ea3-3a59-40aa-b943-5c896a30e43a"
 				},
