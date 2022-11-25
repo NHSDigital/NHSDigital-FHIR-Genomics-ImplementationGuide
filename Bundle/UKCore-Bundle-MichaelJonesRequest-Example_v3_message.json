@@ -516,6 +516,35 @@
 			}
 		},
 		{
+			"fullUrl": "urn:uuid:3462583a-536c-4bad-99d3-44dc553921fd",
+			"resource": {
+				"resourceType": "PractitionerRole",
+				"id": "3462583a-536c-4bad-99d3-44dc553921fd",
+				"identifier": {
+					"system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+					"value": "100102238986"
+				}
+				"practitioner": {
+					"reference": "urn:uuid:6e1a8ea3-3a59-40aa-b943-5c896a30e43a"
+				},
+				"organization": {
+					"reference": "urn:uuid:9af435fd-4bbf-4cc6-81c6-9f2800c2c513"
+				},
+				"telecom" : [
+					{
+						"system": "email",
+						"value": "lucy.hale@nhs.net",
+						"use": "work"
+					},
+					{
+						"system": "phone",
+						"value": "02476151602",
+						"use": "work"
+					}
+				]
+			}
+		},
+		{
 			"fullUrl": "urn:uuid:66c519dd-423f-4238-89c8-91c5be52f330",
 			"resource": {
 				"resourceType": "ServiceRequest",
@@ -567,20 +596,8 @@
 					"display": "UKCore-Encounter-OncologyConsultation-Example"
 				},
 				"authoredOn": "2022-07-11T09:00:00Z",
-				"contained": [
-					{
-						"resourceType": "PractitionerRole",
-						"id": "requester",
-						"practitioner": {
-							"reference": "urn:uuid:6e1a8ea3-3a59-40aa-b943-5c896a30e43a"
-						},
-						"organization": {
-							"reference": "urn:uuid:9af435fd-4bbf-4cc6-81c6-9f2800c2c513"
-						}
-					}
-				],
 				"requester": {
-					"reference": "#requester"
+					"reference": "3462583a-536c-4bad-99d3-44dc553921fd"
 				},
 				"performer": [
 					{

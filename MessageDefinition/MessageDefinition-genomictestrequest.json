@@ -100,7 +100,7 @@
         {
             "code": "RelatedPerson",
             "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson",
-            "min": 1,
+            "min": 0,
             "max": "*"
         }
     ]
