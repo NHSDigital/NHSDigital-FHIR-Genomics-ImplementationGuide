@@ -1,7 +1,7 @@
 {
 	"resourceType": "ValueSet",
 	"id": "genomics-message-events",
-	"url": "https://fhir.nhs.uk/ValueSet/genomics-message-events"
+	"url": "https://fhir.nhs.uk/ValueSet/genomics-message-events",
 	"version": "0.1.0",
 	"name": "GenomicsMessageEvents",
 	"status": "draft",
