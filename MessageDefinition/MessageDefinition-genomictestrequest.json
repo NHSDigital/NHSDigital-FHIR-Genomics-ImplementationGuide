@@ -15,7 +15,7 @@
 	"focus":  [
         {
             "code": "MessageHeader",
-            "profile": "https://fhir.nhs.uk/StructureDefinition/UKCore-MessageHeader",
+            "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-MessageHeader-Genomics",
             "min": 1,
             "max": "1"
         },

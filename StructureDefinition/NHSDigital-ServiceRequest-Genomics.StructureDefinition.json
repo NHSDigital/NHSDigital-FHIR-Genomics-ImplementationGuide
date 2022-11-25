@@ -19,14 +19,48 @@
         "max": "1"
       },
       {
+        "id": "ServiceRequest.identifier.assigner",
+        "path": "ServiceRequest.identifier.assigner",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization-Genomics"
+            ]
+          }
+        ]
+      },
+      {
         "id": "ServiceRequest.instantiatesCanonical",
         "path": "ServiceRequest.instantiatesCanonical",
         "max": "0"
       },
       {
+        "id": "ServiceRequest.basedOn",
+        "path": "ServiceRequest.basedOn",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-CarePlan",
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-ServiceRequest-Genomics"
+            ]
+          }
+        ]
+      },
+      {
         "id": "ServiceRequest.replaces",
         "path": "ServiceRequest.replaces",
-        "max": "1"
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-ServiceRequest-Genomics"
+            ]
+          }
+        ]
       },
       {
         "id": "ServiceRequest.category",
