@@ -7,6 +7,10 @@
 			"value": "Spec123456"
 		}
 	],
+	"accessionIdentifier": {
+		"system": "https://www.christie.nhs.uk/path",
+		"value": "Spec123456"
+	},
 	"status": "available",
 	"type": { 
 		"coding": [

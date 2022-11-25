@@ -24,11 +24,6 @@
         "max": "0"
       },
       {
-        "id": "ServiceRequest.instantiatesUri",
-        "path": "ServiceRequest.instantiatesUri",
-        "max": "0"
-      },
-      {
         "id": "ServiceRequest.replaces",
         "path": "ServiceRequest.replaces",
         "max": "1"
@@ -60,9 +55,19 @@
         "max": "0"
       },
       {
-        "id": "ServiceRequest.subject.reference",
-        "path": "ServiceRequest.subject.reference",
-        "min": 1
+        "id": "ServiceRequest.subject",
+        "path": "ServiceRequest.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Group",
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device",
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient-Genomics"
+            ]
+          }
+        ]
       },
       {
         "id": "ServiceRequest.asNeeded[x]",
@@ -77,7 +82,39 @@
       {
         "id": "ServiceRequest.requester",
         "path": "ServiceRequest.requester",
-        "min": 1
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device",
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization-Genomics",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient-Genomics",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Practitioner-Genomics",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole-Genomics"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.performer",
+        "path": "ServiceRequest.performer",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-CareTeam",
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device",
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-HealthcareService",
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization-Genomics",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient-Genomics",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Practitioner-Genomics",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole-Genomics"
+            ]
+          }
+        ]
       },
       {
         "id": "ServiceRequest.locationCode",

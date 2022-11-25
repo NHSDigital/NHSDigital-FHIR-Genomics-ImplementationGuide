@@ -14,9 +14,9 @@
                 "resourceType": "MessageHeader",
                 "id": "a4409d7c-b613-477c-b623-87e60406c2f0",
                 "eventCoding": {
-                    "system": "https://fhir.nhs.uk/CodeSystem/message-event",
-                    "code": "patient",
-                    "display": "Patient Demographics"
+                    "system": "https://fhir.nhs.uk/CodeSystem/message-events-genomics",
+                    "code": "genomictestrequest",
+                    "display": "Genomic Test Request"
                 },
                 "destination":  [
                     {
@@ -67,7 +67,6 @@
 						"value": "999999"
 					}
 				],
-				"active": true,
 				"name": [
 					{
 						"use": "official",
@@ -75,38 +74,6 @@
 						"family": "Lane",
 						"given": [
 							"Mary"
-						]
-					}
-				],
-				"telecom": [
-					{
-						"system": "email",
-						"value": "mary.lane@nhs.net",
-						"use": "work"
-					}
-				],
-				"address": [
-					{
-						"type": "both",
-						"line": [
-							"ST MARYS HOSPITAL",
-							"MANCHESTER ROYAL INFIRMARY",
-							"OXFORD ROAD"
-						],
-						"city": "Manchester",
-						"postalCode": "M13 9WL"
-					}
-				],
-				"gender": "female",
-				"birthDate": "1970-01-01",
-				"communication": [
-					{
-						"coding": [
-							{
-								"system": "urn:ietf:bcp:47",
-								"code": "en",
-								"display": "English"
-							}
 						]
 					}
 				]
@@ -124,7 +91,6 @@
 						"value": "C5173256"
 					}
 				],
-				"active": true,
 				"name": [
 					{
 						"use": "official",
@@ -136,25 +102,6 @@
 						]
 					}
 				],
-				"telecom": [
-					{
-						"system": "email",
-						"value": "veeda.dmello@nhs.net",
-						"use": "work"
-					}
-				],
-				"address": [
-					{
-						"type": "both",
-						"line": [
-							"41 WESTMINSTER ROAD"
-						],
-						"city": "COVENTRY",
-						"postalCode": "CV1 3GB"
-					}
-				],
-				"gender": "female",
-				"birthDate": "1970-01-01",
 				"qualification": [
 					{
 						"code": {
@@ -166,17 +113,6 @@
 								}
 							]
 						}
-					}
-				],
-				"communication": [
-					{
-						"coding": [
-							{
-								"system": "urn:ietf:bcp:47",
-								"code": "en",
-								"display": "English"
-							}
-						]
 					}
 				]
 			}
@@ -193,7 +129,6 @@
 						"value": "C9999999"
 					}
 				],
-				"active": true,
 				"name": [
 					{
 						"use": "official",
@@ -204,26 +139,6 @@
 						]
 					}
 				],
-				"telecom": [
-					{
-						"system": "email",
-						"value": "lucy.hale@nhs.net",
-						"use": "work"
-					}
-				],
-				"address": [
-					{
-						"type": "both",
-						"line": [
-							"550 WILMSLOW ROAD",
-							"WITHINGTON"
-						],
-						"city": "Manchester",
-						"postalCode": "M20 4BX"
-					}
-				],
-				"gender": "female",
-				"birthDate": "1970-01-01",
 				"qualification": [
 					{
 						"code": {
@@ -235,17 +150,6 @@
 								}
 							]
 						}
-					}
-				],
-				"communication": [
-					{
-						"coding": [
-							{
-								"system": "urn:ietf:bcp:47",
-								"code": "en",
-								"display": "English"
-							}
-						]
 					}
 				]
 			}
@@ -261,7 +165,6 @@
 						"value": "DPX"
 					}
 				],
-				"active": true,
 				"type": [
 					{ 
 						"coding": [
@@ -329,7 +232,6 @@
 						"value": "699X0"
 					}
 				],
-				"active": true,
 				"type": [
 					{ 
 						"coding": [
@@ -403,7 +305,6 @@
 						"value": "RBV"
 					}
 				],
-				"active": true,
 				"type": [
 					{ 
 						"coding": [
@@ -643,20 +544,19 @@
 						"coding": [
 							{ 
 								"system": "http://snomed.info/sct", 
-								"code": "3457005", 
-								"display": "Patient referral"
+								"code": "405824009", 
+								"display": "Genetic test"
 							}
 						]
 					}
 				],
 				"priority": "routine",
-				"doNotPerform": false,
 				"code": { 
 					"coding": [
 						{ 
 							"system": "http://snomed.info/sct", 
-							"code": "405824009", 
-							"display": "Genetic test (procedure)"
+							"code": "63491000000109", 
+							"display": "Paediatric IDH-wildtype glioblastoma tumour and germline WGS (whole genome sequencing)"
 						}
 					]
 				},
@@ -711,6 +611,10 @@
 						"value": "Spec123456"
 					}
 				],
+				"accessionIdentifier": {
+					"system": "https://www.christie.nhs.uk/path",
+					"value": "Spec123456"
+				},
 				"status": "available",
 				"type": { 
 					"coding": [

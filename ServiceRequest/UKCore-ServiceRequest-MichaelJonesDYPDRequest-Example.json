@@ -28,20 +28,19 @@
 			"coding": [
 				{ 
 					"system": "http://snomed.info/sct", 
-					"code": "3457005", 
-					"display": "Patient referral"
+					"code": "405824009", 
+					"display": "Genetic test"
 				}
 			]
 		}
 	],
 	"priority": "routine",
-	"doNotPerform": false,
 	"code": { 
 		"coding": [
 			{ 
 				"system": "http://snomed.info/sct", 
-				"code": "405824009", 
-				"display": "Genetic test (procedure)"
+				"code": "63491000000109", 
+				"display": "Paediatric IDH-wildtype glioblastoma tumour and germline WGS (whole genome sequencing)"
 			}
 		]
 	},

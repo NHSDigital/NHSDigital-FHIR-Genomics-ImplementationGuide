@@ -79,6 +79,19 @@
         "max": "0"
       },
       {
+        "id": "Condition.subject",
+        "path": "Condition.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Group",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient-Genomics"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Condition.encounter",
         "path": "Condition.encounter",
         "max": "0"
@@ -105,6 +118,39 @@
         "id": "Condition.recordedDate",
         "path": "Condition.recordedDate",
         "min": 1
+      },
+      {
+        "id": "Condition.recorder",
+        "path": "Condition.recorder",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient-Genomics",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Practitioner-Genomics",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole-Genomics"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Condition.asserter",
+        "path": "Condition.asserter",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner",
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole",
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient",
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Practitioner-Genomics",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole-Genomics",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient-Genomics"
+            ]
+          }
+        ]
       },
       {
         "id": "Condition.stage",

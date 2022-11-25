@@ -1,0 +1,24 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-MessageDefinition-Genomics",
+  "name": "NHSDigitalMessageDefinitionGenomics",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "MessageDefinition",
+  "baseDefinition": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-MessageDefinition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "MessageDefinition.event[x]",
+        "path": "MessageDefinition.event[x]",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.nhs.uk/ValueSet/genomics-message-events"
+        }
+      }
+    ]
+  }
+}
