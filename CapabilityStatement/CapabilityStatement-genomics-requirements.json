@@ -69,7 +69,7 @@
                 },
                 {
                     "type": "MessageHeader",
-                    "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-MessageHeader"
+                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-MessageHeader-Genomics"
                 },
                 {
                     "type": "Subscription",
