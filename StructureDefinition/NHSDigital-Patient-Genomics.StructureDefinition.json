@@ -159,6 +159,10 @@
             "code": "Reference",
             "targetProfile": [
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization-Genomics"
+            ],
+            "aggregation": [
+              "referenced",
+              "bundled"
             ]
           }
         ]
@@ -191,6 +195,10 @@
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Practitioner-Genomics",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization-Genomics",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole-Genomics"
+            ],
+            "aggregation": [
+              "referenced",
+              "bundled"
             ]
           }
         ]
@@ -204,6 +212,10 @@
             "code": "Reference",
             "targetProfile": [
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization-Genomics"
+            ],
+            "aggregation": [
+              "referenced",
+              "bundled"
             ]
           }
         ]

@@ -51,6 +51,10 @@
               "http://hl7.org/fhir/StructureDefinition/Substance",
               "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient-Genomics"
+            ],
+            "aggregation": [
+              "referenced",
+              "bundled"
             ]
           }
         ]
@@ -64,6 +68,10 @@
             "code": "Reference",
             "targetProfile": [
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Specimen-Genomics"
+            ],
+            "aggregation": [
+              "referenced",
+              "bundled"
             ]
           }
         ]
@@ -78,6 +86,10 @@
             "code": "Reference",
             "targetProfile": [
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-ServiceRequest-Genomics"
+            ],
+            "aggregation": [
+              "referenced",
+              "bundled"
             ]
           }
         ]
@@ -124,6 +136,10 @@
             "targetProfile": [
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Practitioner-Genomics",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole-Genomics"
+            ],
+            "aggregation": [
+              "referenced",
+              "bundled"
             ]
           }
         ]

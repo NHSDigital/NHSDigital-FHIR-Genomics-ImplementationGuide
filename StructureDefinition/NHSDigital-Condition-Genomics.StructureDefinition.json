@@ -87,6 +87,10 @@
             "targetProfile": [
               "http://hl7.org/fhir/StructureDefinition/Group",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient-Genomics"
+            ],
+            "aggregation": [
+              "referenced",
+              "bundled"
             ]
           }
         ]
@@ -130,6 +134,10 @@
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient-Genomics",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Practitioner-Genomics",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole-Genomics"
+            ],
+            "aggregation": [
+              "referenced",
+              "bundled"
             ]
           }
         ]
@@ -148,6 +156,10 @@
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Practitioner-Genomics",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole-Genomics",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient-Genomics"
+            ],
+            "aggregation": [
+              "referenced",
+              "bundled"
             ]
           }
         ]
