@@ -45,6 +45,10 @@
               "https://fhir.hl7.org.uk/StructureDefinition/UKCore-CarePlan",
               "https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-ServiceRequest-Genomics"
+            ],
+            "aggregation": [
+              "referenced",
+              "bundled"
             ]
           }
         ]
@@ -99,6 +103,23 @@
               "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device",
               "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient-Genomics"
+            ],
+            "aggregation": [
+              "referenced",
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.encounter",
+        "path": "ServiceRequest.encounter",
+        "type": [
+          {
+            "code": "Reference",
+            "aggregation": [
+              "referenced",
+              "bundled"
             ]
           }
         ]
@@ -127,6 +148,10 @@
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient-Genomics",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Practitioner-Genomics",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole-Genomics"
+            ],
+            "aggregation": [
+              "referenced",
+              "bundled"
             ]
           }
         ]
@@ -146,6 +171,10 @@
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient-Genomics",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Practitioner-Genomics",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole-Genomics"
+            ],
+            "aggregation": [
+              "referenced",
+              "bundled"
             ]
           }
         ]
@@ -166,9 +195,54 @@
         "min": 1
       },
       {
+        "id": "ServiceRequest.reasonReference",
+        "path": "ServiceRequest.reasonReference",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport",
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-DocumentReference",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Condition-Genomics",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Observation-Genomics"
+            ],
+            "aggregation": [
+              "referenced",
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
         "id": "ServiceRequest.insurance",
         "path": "ServiceRequest.insurance",
         "max": "1"
+      },
+      {
+        "id": "ServiceRequest.supportingInfo",
+        "path": "ServiceRequest.supportingInfo",
+        "type": [
+          {
+            "code": "Reference",
+            "aggregation": [
+              "referenced",
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.specimen",
+        "path": "ServiceRequest.specimen",
+        "type": [
+          {
+            "code": "Reference",
+            "aggregation": [
+              "referenced",
+              "bundled"
+            ]
+          }
+        ]
       },
       {
         "id": "ServiceRequest.bodySite",

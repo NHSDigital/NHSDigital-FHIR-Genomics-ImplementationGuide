@@ -38,6 +38,10 @@
               "http://hl7.org/fhir/StructureDefinition/Device",
               "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient-Genomics"
+            ],
+            "aggregation": [
+              "referenced",
+              "bundled"
             ]
           }
         ]
@@ -45,7 +49,16 @@
       {
         "id": "Observation.focus",
         "path": "Observation.focus",
-        "max": "1"
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "aggregation": [
+              "referenced",
+              "bundled"
+            ]
+          }
+        ]
       },
       {
         "id": "Observation.encounter",
@@ -85,6 +98,10 @@
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient-Genomics",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Practitioner-Genomics",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole-Genomics"
+            ],
+            "aggregation": [
+              "referenced",
+              "bundled"
             ]
           }
         ]
@@ -112,6 +129,10 @@
             "code": "Reference",
             "targetProfile": [
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Specimen-Genomics"
+            ],
+            "aggregation": [
+              "referenced",
+              "bundled"
             ]
           }
         ]

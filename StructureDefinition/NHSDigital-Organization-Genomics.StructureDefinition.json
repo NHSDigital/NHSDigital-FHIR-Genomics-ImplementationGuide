@@ -78,6 +78,10 @@
             "code": "Reference",
             "targetProfile": [
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization-Genomics"
+            ],
+            "aggregation": [
+              "referenced",
+              "bundled"
             ]
           }
         ]

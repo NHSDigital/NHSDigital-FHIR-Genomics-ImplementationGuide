@@ -25,6 +25,10 @@
             "code": "Reference",
             "targetProfile": [
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient-Genomics"
+            ],
+            "aggregation": [
+              "referenced",
+              "bundled"
             ]
           }
         ]
@@ -48,6 +52,10 @@
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient-Genomics",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Practitioner-Genomics",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole-Genomics"
+            ],
+            "aggregation": [
+              "referenced",
+              "bundled"
             ]
           }
         ]
@@ -62,6 +70,10 @@
             "code": "Reference",
             "targetProfile": [
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization-Genomics"
+            ],
+            "aggregation": [
+              "referenced",
+              "bundled"
             ]
           }
         ]
@@ -81,6 +93,10 @@
               "http://hl7.org/fhir/StructureDefinition/Contract",
               "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Consent-Genomics"
+            ],
+            "aggregation": [
+              "referenced",
+              "bundled"
             ]
           }
         ]

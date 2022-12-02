@@ -29,6 +29,10 @@
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization-Genomics",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Practitioner-Genomics",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole-Genomics"
+            ],
+            "aggregation": [
+              "referenced",
+              "bundled"
             ]
           }
         ]
@@ -43,6 +47,10 @@
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole-Genomics",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization-Genomics",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Practitioner-Genomics"
+            ],
+            "aggregation": [
+              "referenced",
+              "bundled"
             ]
           }
         ]
@@ -56,6 +64,10 @@
             "targetProfile": [
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Practitioner-Genomics",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole-Genomics"
+            ],
+            "aggregation": [
+              "referenced",
+              "bundled"
             ]
           }
         ]
@@ -69,6 +81,10 @@
             "targetProfile": [
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Practitioner-Genomics",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole-Genomics"
+            ],
+            "aggregation": [
+              "referenced",
+              "bundled"
             ]
           }
         ]
@@ -83,6 +99,10 @@
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization-Genomics",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole-Genomics",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Practitioner-Genomics"
+            ],
+            "aggregation": [
+              "referenced",
+              "bundled"
             ]
           }
         ]
