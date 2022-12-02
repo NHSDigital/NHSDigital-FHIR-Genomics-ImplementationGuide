@@ -71,6 +71,18 @@
         "max": "1"
       },
       {
+        "id": "Organization.partOf",
+        "path": "Organization.partOf",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization-Genomics"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Organization.endpoint",
         "path": "Organization.endpoint",
         "max": "1"

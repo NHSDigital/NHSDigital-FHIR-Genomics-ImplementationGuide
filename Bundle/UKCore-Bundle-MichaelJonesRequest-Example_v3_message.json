@@ -14,9 +14,9 @@
                 "resourceType": "MessageHeader",
                 "id": "a4409d7c-b613-477c-b623-87e60406c2f0",
                 "eventCoding": {
-                    "system": "https://fhir.nhs.uk/CodeSystem/message-event",
-                    "code": "patient",
-                    "display": "Patient Demographics"
+                    "system": "https://fhir.nhs.uk/CodeSystem/message-events-genomics",
+                    "code": "genomictestrequest",
+                    "display": "Genomic Test Request"
                 },
                 "destination":  [
                     {
@@ -67,7 +67,6 @@
 						"value": "999999"
 					}
 				],
-				"active": true,
 				"name": [
 					{
 						"use": "official",
@@ -75,38 +74,6 @@
 						"family": "Lane",
 						"given": [
 							"Mary"
-						]
-					}
-				],
-				"telecom": [
-					{
-						"system": "email",
-						"value": "mary.lane@nhs.net",
-						"use": "work"
-					}
-				],
-				"address": [
-					{
-						"type": "both",
-						"line": [
-							"ST MARYS HOSPITAL",
-							"MANCHESTER ROYAL INFIRMARY",
-							"OXFORD ROAD"
-						],
-						"city": "Manchester",
-						"postalCode": "M13 9WL"
-					}
-				],
-				"gender": "female",
-				"birthDate": "1970-01-01",
-				"communication": [
-					{
-						"coding": [
-							{
-								"system": "urn:ietf:bcp:47",
-								"code": "en",
-								"display": "English"
-							}
 						]
 					}
 				]
@@ -124,7 +91,6 @@
 						"value": "C5173256"
 					}
 				],
-				"active": true,
 				"name": [
 					{
 						"use": "official",
@@ -136,25 +102,6 @@
 						]
 					}
 				],
-				"telecom": [
-					{
-						"system": "email",
-						"value": "veeda.dmello@nhs.net",
-						"use": "work"
-					}
-				],
-				"address": [
-					{
-						"type": "both",
-						"line": [
-							"41 WESTMINSTER ROAD"
-						],
-						"city": "COVENTRY",
-						"postalCode": "CV1 3GB"
-					}
-				],
-				"gender": "female",
-				"birthDate": "1970-01-01",
 				"qualification": [
 					{
 						"code": {
@@ -166,17 +113,6 @@
 								}
 							]
 						}
-					}
-				],
-				"communication": [
-					{
-						"coding": [
-							{
-								"system": "urn:ietf:bcp:47",
-								"code": "en",
-								"display": "English"
-							}
-						]
 					}
 				]
 			}
@@ -193,7 +129,6 @@
 						"value": "C9999999"
 					}
 				],
-				"active": true,
 				"name": [
 					{
 						"use": "official",
@@ -204,26 +139,6 @@
 						]
 					}
 				],
-				"telecom": [
-					{
-						"system": "email",
-						"value": "lucy.hale@nhs.net",
-						"use": "work"
-					}
-				],
-				"address": [
-					{
-						"type": "both",
-						"line": [
-							"550 WILMSLOW ROAD",
-							"WITHINGTON"
-						],
-						"city": "Manchester",
-						"postalCode": "M20 4BX"
-					}
-				],
-				"gender": "female",
-				"birthDate": "1970-01-01",
 				"qualification": [
 					{
 						"code": {
@@ -235,17 +150,6 @@
 								}
 							]
 						}
-					}
-				],
-				"communication": [
-					{
-						"coding": [
-							{
-								"system": "urn:ietf:bcp:47",
-								"code": "en",
-								"display": "English"
-							}
-						]
 					}
 				]
 			}
@@ -261,7 +165,6 @@
 						"value": "DPX"
 					}
 				],
-				"active": true,
 				"type": [
 					{ 
 						"coding": [
@@ -329,7 +232,6 @@
 						"value": "699X0"
 					}
 				],
-				"active": true,
 				"type": [
 					{ 
 						"coding": [
@@ -403,7 +305,6 @@
 						"value": "RBV"
 					}
 				],
-				"active": true,
 				"type": [
 					{ 
 						"coding": [
@@ -468,6 +369,10 @@
 				"id": "41e4b604-37f3-4799-a6b3-ab5b104f3c97",
 				"extension": [
 					{
+						"url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BirthSex",
+						"valueCode": "M"
+					},
+					{
 						"url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EthnicCategory",
 						"valueCodeableConcept": {
 							"coding": [
@@ -475,6 +380,18 @@
 									"system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland",
 									"code": "A",
 									"display": "White - British"
+								}
+							]
+						}
+					},
+					{
+						"url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ResidentialStatus",
+						"valueCodeableConcept": {
+							"coding": [
+								{
+									"system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-ResidentialStatus",
+									"code": "H",
+									"display": "UK Resident"
 								}
 							]
 						}
@@ -532,15 +449,6 @@
 						"postalCode": "CV4 9ZY"
 					}
 				],
-				"maritalStatus": {
-				  "coding": [
-					{
-					  "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
-					  "code": "M",
-					  "display": "Married"
-					}
-				  ]
-				},
 				"multipleBirthBoolean": false,
 				"contact": [
 					{
@@ -580,20 +488,6 @@
 							"postalCode": "CV4 9ZY"
 						},
 						"gender": "female"
-					}
-				],
-				"communication": [
-					{
-						"language": {
-							"coding": [
-								{
-									"system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage",
-									"code": "en",
-									"display": "English"
-								}
-							]
-						},
-						"preferred": true
 					}
 				],
 				"generalPractitioner": [
@@ -643,20 +537,19 @@
 						"coding": [
 							{ 
 								"system": "http://snomed.info/sct", 
-								"code": "3457005", 
-								"display": "Patient referral"
+								"code": "405824009", 
+								"display": "Genetic test"
 							}
 						]
 					}
 				],
 				"priority": "routine",
-				"doNotPerform": false,
 				"code": { 
 					"coding": [
 						{ 
 							"system": "http://snomed.info/sct", 
-							"code": "405824009", 
-							"display": "Genetic test (procedure)"
+							"code": "63491000000109", 
+							"display": "Paediatric IDH-wildtype glioblastoma tumour and germline WGS (whole genome sequencing)"
 						}
 					]
 				},
@@ -667,20 +560,8 @@
 					"display": "UKCore-Encounter-OncologyConsultation-Example"
 				},
 				"authoredOn": "2022-07-11T09:00:00Z",
-				"contained": [
-					{
-						"resourceType": "PractitionerRole",
-						"id": "requester",
-						"practitioner": {
-							"reference": "urn:uuid:6e1a8ea3-3a59-40aa-b943-5c896a30e43a"
-						},
-						"organization": {
-							"reference": "urn:uuid:9af435fd-4bbf-4cc6-81c6-9f2800c2c513"
-						}
-					}
-				],
 				"requester": {
-					"reference": "#requester"
+					"reference": "urn:uuid:3462583a-536c-4bad-99d3-44dc553921fd"
 				},
 				"performer": [
 					{
@@ -701,6 +582,37 @@
 			}
 		},
 		{
+			"fullUrl": "urn:uuid:3462583a-536c-4bad-99d3-44dc553921fd",
+			"resource": {
+				"resourceType": "PractitionerRole",
+				"id": "3462583a-536c-4bad-99d3-44dc553921fd",
+				"identifier": [
+					{
+						"system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+						"value": "100102238986"
+					}
+				],
+				"practitioner": {
+					"reference": "urn:uuid:6e1a8ea3-3a59-40aa-b943-5c896a30e43a"
+				},
+				"organization": {
+					"reference": "urn:uuid:9af435fd-4bbf-4cc6-81c6-9f2800c2c513"
+				},
+				"telecom" : [
+					{
+						"system": "email",
+						"value": "lucy.hale@nhs.net",
+						"use": "work"
+					},
+					{
+						"system": "phone",
+						"value": "02476151602",
+						"use": "work"
+					}
+				]
+			}
+		},
+		{
 			"fullUrl": "urn:uuid:840d075e-0480-4134-ae51-27f572731cc8",
 			"resource": {
 				"resourceType": "Specimen",
@@ -711,6 +623,10 @@
 						"value": "Spec123456"
 					}
 				],
+				"accessionIdentifier": {
+					"system": "https://www.christie.nhs.uk/path",
+					"value": "Spec123456"
+				},
 				"status": "available",
 				"type": { 
 					"coding": [

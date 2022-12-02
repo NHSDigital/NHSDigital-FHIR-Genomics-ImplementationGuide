@@ -1,0 +1,63 @@
+{
+    "resourceType": "CodeSystem",
+    "id": "959a0a2f-73e3-4c6e-8e99-babb6b3a4296",
+    "url": "https://fhir.nhs.uk/CodeSystem/business-status-genomics",
+	"identifier":  [
+        {
+            "system": "https://fhir.nhs.uk/identifier/CodeSystem",
+            "value": "business-status-genomics"
+        }
+    ],
+    "version": "0.1.0",
+    "name": "BusinessStatusGenomics",
+	"title": "Business Status Genomics",
+    "status": "draft",
+    "date": "2022-11-25",
+    "publisher": "NHS Digital",
+    "contact":  [
+        {
+            "name": "NHS Digital",
+            "telecom":  [
+                {
+                    "system": "email",
+                    "value": "interoperabilityteam@nhs.net",
+                    "use": "work"
+                }
+            ]
+        }
+    ],
+	"description": "Business status for test order Tasks in genomics",
+    "copyright": "Copyright © 2022 NHS Digital",
+    "caseSensitive": true,
+    "content": "complete",
+    "concept": [
+        {
+            "code": "AwaitingSpecimen",
+            "display": "AwaitingSpecimen"
+        },
+        {
+            "code": "SpecimenReceived",
+            "display": "Specimen Received"
+        },
+        {
+            "code": "SpecimenProcessed",
+            "display": "Specimen Processed"
+        },
+        {
+            "code": "AnalysisInProgress",
+            "display": "Analysis In Progress"
+        },
+        {
+            "code": "VariantsIdentified",
+            "display": "Variants Identified"
+        },
+        {
+            "code": "InterpretationInProgress",
+            "display": "Interpretation In Progress"
+        },
+		{
+            "code": "DraftingReport",
+            "display": "Drafting Report"
+        }
+    ]
+}

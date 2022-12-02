@@ -1,0 +1,47 @@
+{
+    "resourceType": "CodeSystem",
+    "id": "959a0a2f-73e3-4c6e-8e99-babb6b3a4296",
+    "url": "https://fhir.nhs.uk/CodeSystem/organization-type-genomics",
+	"identifier":  [
+        {
+            "system": "https://fhir.nhs.uk/identifier/CodeSystem",
+            "value": "organization-type-genomics"
+        }
+    ],
+    "version": "0.1.0",
+    "name": "OrganizationTypeGenomics",
+	"title": "Organization Type Genomics",
+    "status": "draft",
+    "date": "2022-11-25",
+    "publisher": "NHS Digital",
+    "contact":  [
+        {
+            "name": "NHS Digital",
+            "telecom":  [
+                {
+                    "system": "email",
+                    "value": "interoperabilityteam@nhs.net",
+                    "use": "work"
+                }
+            ]
+        }
+    ],
+	"description": "Organization type for use in genomic test orders",
+    "copyright": "Copyright © 2022 NHS Digital",
+    "caseSensitive": true,
+    "content": "complete",
+    "concept": [
+        {
+            "code": "GLH",
+            "display": "Genomic Lab Hub"
+        },
+        {
+            "code": "GEL",
+            "display": "Genomics England"
+        },
+        {
+            "code": "LAB",
+            "display": "Genomics Laboratory"
+        }
+    ]
+}

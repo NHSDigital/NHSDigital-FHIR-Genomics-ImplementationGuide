@@ -30,12 +30,28 @@
       {
         "id": "PractitionerRole.practitioner",
         "path": "PractitionerRole.practitioner",
-        "min": 1
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Practitioner-Genomics"
+            ]
+          }
+        ]
       },
       {
         "id": "PractitionerRole.organization",
         "path": "PractitionerRole.organization",
-        "min": 1
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization-Genomics"
+            ]
+          }
+        ]
       },
       {
         "id": "PractitionerRole.location",

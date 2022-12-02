@@ -19,7 +19,15 @@
       {
         "id": "Consent.patient",
         "path": "Consent.patient",
-        "min": 1
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient-Genomics"
+            ]
+          }
+        ]
       },
       {
         "id": "Consent.dateTime",
@@ -30,23 +38,52 @@
         "id": "Consent.performer",
         "path": "Consent.performer",
         "min": 1,
-        "max": "1"
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization-Genomics",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient-Genomics",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Practitioner-Genomics",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole-Genomics"
+            ]
+          }
+        ]
       },
       {
         "id": "Consent.organization",
         "path": "Consent.organization",
         "min": 1,
-        "max": "1"
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization-Genomics"
+            ]
+          }
+        ]
       },
       {
         "id": "Consent.source[x]",
         "path": "Consent.source[x]",
-        "min": 1
-      },
-      {
-        "id": "Consent.policy",
-        "path": "Consent.policy",
-        "max": "0"
+        "min": 1,
+        "type": [
+          {
+            "code": "Attachment"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/DocumentReference",
+              "http://hl7.org/fhir/StructureDefinition/Contract",
+              "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Consent-Genomics"
+            ]
+          }
+        ]
       },
       {
         "id": "Consent.policyRule",
@@ -58,6 +95,38 @@
         "path": "Consent.verification",
         "min": 1,
         "max": "1"
+      },
+      {
+        "id": "Consent.verification.verifiedWith",
+        "path": "Consent.verification.verifiedWith",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient-Genomics"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Consent.provision.actor.reference",
+        "path": "Consent.provision.actor.reference",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Device",
+              "http://hl7.org/fhir/StructureDefinition/Group",
+              "http://hl7.org/fhir/StructureDefinition/CareTeam",
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization-Genomics",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient-Genomics",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Practitioner-Genomics",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole-Genomics"
+            ]
+          }
+        ]
       }
     ]
   }
