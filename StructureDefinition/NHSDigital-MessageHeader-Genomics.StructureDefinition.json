@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "url": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-MessageHeader-Genomics",
-  "name": "NHSDigitalMessageHeaderGenomics",
+  "name": "NHSDigital_MessageHeader_Genomics",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "kind": "resource",
@@ -15,6 +15,16 @@
         "id": "MessageHeader.event[x]",
         "path": "MessageHeader.event[x]",
         "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "MessageEvent"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
+              "valueBoolean": true
+            }
+          ],
           "strength": "extensible",
           "valueSet": "https://fhir.nhs.uk/ValueSet/genomics-message-events"
         }

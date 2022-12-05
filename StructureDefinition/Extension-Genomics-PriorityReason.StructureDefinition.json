@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "url": "https://fhir.nhs.uk/StructureDefinition/Extension-Genomics-PriorityReason",
   "version": "0.1.0",
-  "name": "ExtensionGenomicsPriorityReason",
+  "name": "GenomicsPriorityReason",
   "status": "draft",
   "date": "2022-12-05",
   "fhirVersion": "4.0.1",

@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "url": "https://fhir.nhs.uk/StructureDefinition/Extension-Genomics-AdditionalContact",
   "version": "0.1.0",
-  "name": "ExtensionGenomicsAdditionalContact",
+  "name": "GenomicsAdditionalContact",
   "status": "draft",
   "date": "2022-12-05",
   "publisher": "NHS Digital",

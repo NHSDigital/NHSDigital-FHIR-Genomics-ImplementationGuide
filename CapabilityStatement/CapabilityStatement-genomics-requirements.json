@@ -129,7 +129,7 @@
                 },
                 {
                     "type": "RelatedPerson",
-                    "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson"
+                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-RelatedPerson-Genomics"
                 },
                 {
                     "type": "Specimen",

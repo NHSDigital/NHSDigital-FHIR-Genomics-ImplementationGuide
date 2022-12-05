@@ -1,18 +1,17 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "https://fhir.nhs.uk/StructureDefinition/Extension-Genomics-Coverage",
+  "url": "https://fhir.nhs.uk/StructureDefinition/Extension-Genomics-Deceased",
   "version": "0.1.0",
-  "name": "GenomicsCoverage",
+  "name": "GenomicsDeceased",
   "status": "draft",
   "date": "2022-12-05",
-  "publisher": "NHS Digital",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,
   "context": [
     {
       "type": "element",
-      "expression": "ServiceRequest"
+      "expression": "RelatedPerson"
     }
   ],
   "type": "Extension",
@@ -23,30 +22,23 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Private/NHS",
-        "definition": "How the test request is funded, NHS or privately.",
-        "min": 1,
-        "max": "1"
+        "short": "Life status",
+        "definition": "WGS relative's life status."
       },
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://fhir.nhs.uk/StructureDefinition/Extension-Genomics-Coverage"
+        "fixedUri": "https://fhir.nhs.uk/StructureDefinition/Extension-Genomics-Deceased"
       },
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
-        "min": 1,
+        "short": "True if deceased",
         "type": [
           {
-            "code": "Coding"
+            "code": "boolean"
           }
-        ],
-        "binding": {
-          "strength": "extensible",
-          "description": "Funder",
-          "valueSet": "https://fhir.nhs.uk/ValueSet/genomics-coverage"
-        }
+        ]
       }
     ]
   }

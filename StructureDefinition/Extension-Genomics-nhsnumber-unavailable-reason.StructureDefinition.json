@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "url": "https://fhir.nhs.uk/StructureDefinition/Extension-Genomics-nhsnumber-unavailable-reason",
   "version": "0.1.0",
-  "name": "NHSNumberUnavailableReason",
+  "name": "GenomicsNHSNumberUnavailableReason",
   "status": "draft",
   "date": "2022-12-05",
   "publisher": "NHS Digital",
