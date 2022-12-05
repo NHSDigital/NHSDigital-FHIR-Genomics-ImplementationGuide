@@ -1,0 +1,42 @@
+{
+    "resourceType": "CodeSystem",
+    "url": "https://fhir.nhs.uk/CodeSystem/nhsnumber-unavailable-reason-genomics",
+	"identifier":  [
+        {
+            "system": "https://fhir.nhs.uk/identifier/CodeSystem",
+            "value": "nhsnumber-unavailable-reason"
+        }
+    ],
+    "version": "0.1.0",
+    "name": "NHSNumberUnavailableReasonGenomics",
+	"title": "NHSNumber Unavailable Reason Genomics",
+    "status": "draft",
+    "date": "2022-12-05",
+    "publisher": "NHS Digital",
+    "contact":  [
+        {
+            "name": "NHS Digital",
+            "telecom":  [
+                {
+                    "system": "email",
+                    "value": "interoperabilityteam@nhs.net",
+                    "use": "work"
+                }
+            ]
+        }
+    ],
+	"description": "Reason why an NHS number is unavailable",
+    "copyright": "Copyright © 2022 NHS Digital",
+    "caseSensitive": true,
+    "content": "complete",
+    "concept": [
+        {
+            "code": "NotKnown",
+            "display": "NHS Number not known"
+        },
+        {
+            "code": "Overseas",
+            "display": "Overseas patient"
+        }
+    ]
+}
