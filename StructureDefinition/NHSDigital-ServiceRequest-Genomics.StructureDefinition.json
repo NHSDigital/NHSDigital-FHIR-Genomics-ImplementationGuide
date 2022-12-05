@@ -24,7 +24,7 @@
           ],
           "rules": "open"
         },
-        "min": 0
+        "min": 1
       },
       {
         "id": "ServiceRequest.extension:additionalContact",
@@ -36,7 +36,23 @@
           {
             "code": "Extension",
             "profile": [
-              "https://example.org/fhir/StructureDefinition/Extension-Genomics-AdditionalContact"
+              "https://fhir.nhs.uk/StructureDefinition/Extension-Genomics-AdditionalContact"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "ServiceRequest.extension:coverage",
+        "path": "ServiceRequest.extension",
+        "sliceName": "coverage",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.nhs.uk/StructureDefinition/Extension-Genomics-Coverage"
             ]
           }
         ],
