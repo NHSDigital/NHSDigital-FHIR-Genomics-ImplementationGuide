@@ -1,6 +1,16 @@
 {
 	"resourceType": "ServiceRequest",
 	"id": "UKCore-ServiceRequest-MichaelJonesDYPDRequest-Example",
+	"extension": [
+		{
+			"url": "https://fhir.nhs.uk/StructureDefinition/Extension-Genomics-Coverage",
+			"valueCoding": {
+				"system": "https://fhir.nhs.uk/CodeSystem/coverage-genomics",
+				"code": "NHS",
+				"display": "NHS"
+			}
+		}
+	],
 	"identifier": [
 		{
 			"system": "https://www.christie.nhs.uk/ehr",
