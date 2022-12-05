@@ -1,0 +1,53 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://example.org/fhir/StructureDefinition/Extension-Genomics-AdditionalContact",
+  "version": "0.1.0",
+  "name": "ExtensionGenomicsAdditionalContact",
+  "status": "draft",
+  "date": "2022-12-05",
+  "publisher": "NHS Digital",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ServiceRequest"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Additional contacts for the ServiceRequest",
+        "definition": "To know who additionally should be contacted with questions or clinical results and how they should be contacted."
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://example.org/fhir/StructureDefinition/Extension-Genomics-AdditionalContact"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole-Genomics"
+            ],
+            "aggregation": [
+              "referenced",
+              "bundled"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

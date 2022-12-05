@@ -13,6 +13,36 @@
   "differential": {
     "element": [
       {
+        "id": "ServiceRequest.extension",
+        "path": "ServiceRequest.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "ServiceRequest.extension:additionalContact",
+        "path": "ServiceRequest.extension",
+        "sliceName": "additionalContact",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/Extension-Genomics-AdditionalContact"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
         "id": "ServiceRequest.identifier",
         "path": "ServiceRequest.identifier",
         "min": 1,
