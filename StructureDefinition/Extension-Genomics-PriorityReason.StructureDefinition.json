@@ -1,0 +1,60 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.nhs.uk/StructureDefinition/Extension-Genomics-PriorityReason",
+  "version": "0.1.0",
+  "name": "ExtensionGenomicsPriorityReason",
+  "status": "draft",
+  "date": "2022-12-05",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ServiceRequest"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Urgency reason",
+        "definition": "If urgent, the test request urgency reason."
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://fhir.nhs.uk/StructureDefinition/Extension-Genomics-PriorityReason"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.value[x].coding",
+        "path": "Extension.value[x].coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "fixedCoding": {
+          "system": "http://snomed.info/sct"
+        }
+      }
+    ]
+  }
+}
