@@ -128,6 +128,25 @@
         ]
       },
       {
+        "id": "Patient.identifier:pedigreeNumber",
+        "path": "Patient.identifier",
+        "sliceName": "pedigreeNumber",
+        "fixedIdentifier": {
+          "system": "https://fhir.nhs.uk/Id/genomics-pedigree-number"
+        }
+      },
+      {
+        "id": "Patient.identifier:pedigreeNumber.system",
+        "path": "Patient.identifier.system",
+        "min": 1,
+        "fixedUri": "https://fhir.nhs.uk/Id/genomics-pedigree-number"
+      },
+      {
+        "id": "Patient.identifier:pedigreeNumber.value",
+        "path": "Patient.identifier.value",
+        "min": 1
+      },
+      {
         "id": "Patient.name",
         "path": "Patient.name",
         "min": 1,
