@@ -13,6 +13,87 @@
   "differential": {
     "element": [
       {
+        "id": "ServiceRequest.extension",
+        "path": "ServiceRequest.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.extension:additionalContact",
+        "path": "ServiceRequest.extension",
+        "sliceName": "additionalContact",
+        "min": 0,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.nhs.uk/StructureDefinition/Extension-Genomics-AdditionalContact"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "ServiceRequest.extension:coverage",
+        "path": "ServiceRequest.extension",
+        "sliceName": "coverage",
+        "min": 1,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.nhs.uk/StructureDefinition/Extension-Genomics-Coverage"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "ServiceRequest.extension:priorityReason",
+        "path": "ServiceRequest.extension",
+        "sliceName": "priorityReason",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.nhs.uk/StructureDefinition/Extension-Genomics-PriorityReason"
+            ]
+          }
+        ],
+        "constraint": [
+          {
+            "key": "gen-1",
+            "severity": "error",
+            "human": "Extension must be present if priority is not routine",
+            "expression": "(ServiceRequest.extension(priorityReason).exists() and ServiceRequest.priority!=routine) or ServiceRequest.priority=routine"
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "ServiceRequest.extension:priorityReason.value[x].coding",
+        "path": "ServiceRequest.extension.value[x].coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
         "id": "ServiceRequest.identifier",
         "path": "ServiceRequest.identifier",
         "min": 1,

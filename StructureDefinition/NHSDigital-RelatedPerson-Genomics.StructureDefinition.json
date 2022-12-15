@@ -1,0 +1,96 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-RelatedPerson-Genomics",
+  "version": "0.1.0",
+  "name": "NHSDigital_RelatedPerson_Genomics",
+  "status": "draft",
+  "date": "2022-12-05",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "RelatedPerson",
+  "baseDefinition": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "RelatedPerson.extension",
+        "path": "RelatedPerson.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "RelatedPerson.extension:birthSex",
+        "path": "RelatedPerson.extension",
+        "sliceName": "birthSex",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.nhs.uk/StructureDefinition/Extension-Genomics-BirthSex"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "RelatedPerson.extension:deceasedBoolean",
+        "path": "RelatedPerson.extension",
+        "sliceName": "deceasedBoolean",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.nhs.uk/StructureDefinition/Extension-Genomics-Deceased"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "RelatedPerson.extension:ethnicCategory",
+        "path": "RelatedPerson.extension",
+        "sliceName": "ethnicCategory",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.nhs.uk/StructureDefinition/Extension-Genomics-EthnicCategory"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "RelatedPerson.extension:gpPractice",
+        "path": "RelatedPerson.extension",
+        "sliceName": "gpPractice",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/Extension-Genomics-GPPractice"
+            ]
+          }
+        ],
+        "isModifier": false
+      }
+    ]
+  }
+}

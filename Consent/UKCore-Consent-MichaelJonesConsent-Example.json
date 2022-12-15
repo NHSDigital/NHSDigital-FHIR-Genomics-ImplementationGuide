@@ -1,11 +1,6 @@
 {
 	"resourceType": "Consent",
 	"id": "UKCore-Consent-MichaelJonesConsent-Example",
-	"meta": {
-        "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Consent"
-        ]
-    },
 	"identifier": [
 		{
 			"system": "https://www.christie.nhs.uk/ehr",

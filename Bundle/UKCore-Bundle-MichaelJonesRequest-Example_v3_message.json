@@ -513,6 +513,16 @@
 			"resource": {
 				"resourceType": "ServiceRequest",
 				"id": "66c519dd-423f-4238-89c8-91c5be52f330",
+				"extension": [
+					{
+						"url": "https://fhir.nhs.uk/StructureDefinition/Extension-Genomics-Coverage",
+						"valueCoding": {
+						    "system": "https://fhir.nhs.uk/CodeSystem/coverage-genomics",
+						    "code": "NHS",
+						    "display": "NHS"
+						}
+					}
+				],
 				"identifier": [
 					{
 						"system": "https://www.christie.nhs.uk/ehr",

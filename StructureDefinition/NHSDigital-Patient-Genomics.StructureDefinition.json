@@ -87,6 +87,30 @@
         "max": "0"
       },
       {
+        "id": "Patient.extension:nhsNumberUnavailableReason",
+        "path": "Patient.extension",
+        "sliceName": "nhsNumberUnavailableReason",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.nhs.uk/StructureDefinition/Extension-Genomics-nhsnumber-unavailable-reason"
+            ]
+          }
+        ],
+        "constraint": [
+          {
+            "key": "gen-2",
+            "severity": "error",
+            "human": "Reason must be provided if NHS number is not provided",
+            "expression": "(Patient.extension(nhsNumberUnavailableReason).exists() and Patient.identifier(nhsNumber).notExists()) or Patient.identifier(nhsNumber).exists()"
+          }
+        ],
+        "isModifier": false
+      },
+      {
         "id": "Patient.identifier:nhsNumber",
         "path": "Patient.identifier",
         "sliceName": "nhsNumber"
@@ -102,6 +126,25 @@
             ]
           }
         ]
+      },
+      {
+        "id": "Patient.identifier:pedigreeNumber",
+        "path": "Patient.identifier",
+        "sliceName": "pedigreeNumber",
+        "fixedIdentifier": {
+          "system": "https://fhir.nhs.uk/Id/genomics-pedigree-number"
+        }
+      },
+      {
+        "id": "Patient.identifier:pedigreeNumber.system",
+        "path": "Patient.identifier.system",
+        "min": 1,
+        "fixedUri": "https://fhir.nhs.uk/Id/genomics-pedigree-number"
+      },
+      {
+        "id": "Patient.identifier:pedigreeNumber.value",
+        "path": "Patient.identifier.value",
+        "min": 1
       },
       {
         "id": "Patient.name",
