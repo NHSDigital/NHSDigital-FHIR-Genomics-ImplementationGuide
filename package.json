@@ -5,10 +5,11 @@
   "fhirVersions": [
     "4.0.1"
   ],
+  "jurisdiction": "urn:iso:std:iso:3166:-2:GB-ENG",
   "dependencies": {
-    "hl7.fhir.r4.core": "4.0.1",
-    "fhir.r4.ukcore.stu1": "0.5.1",
-	"uk.nhsdigital.r4.test": "2.7.3-prerelease"
-  },
-  "jurisdiction" : "urn:iso:std:iso:3166:-2:GB-ENG"
+    "hl7.fhir.uv.genomics-reporting": "2.0.0",
+    "fhir.r4.ukcore.stu1": "1.0.0-pre-release",
+    "uk.nhsdigital.r4.test": "2.7.9-prerelease",
+    "hl7.fhir.r4.core": "4.0.1"
+  }
 }

@@ -190,11 +190,6 @@
         "max": "0"
       },
       {
-        "id": "Patient.contact",
-        "path": "Patient.contact",
-        "min": 1
-      },
-      {
         "id": "Patient.contact.organization",
         "path": "Patient.contact.organization",
         "type": [
@@ -249,7 +244,6 @@
       {
         "id": "Patient.managingOrganization",
         "path": "Patient.managingOrganization",
-        "min": 1,
         "type": [
           {
             "code": "Reference",

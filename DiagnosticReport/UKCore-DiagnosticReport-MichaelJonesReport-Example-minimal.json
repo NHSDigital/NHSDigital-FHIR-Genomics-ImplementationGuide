@@ -1,48 +1,37 @@
 {
 	"resourceType": "DiagnosticReport",
-	"id": "UKCore-DiagnosticReport-MichaelJonesReport-Example",
-	"identifier": [
+	"id": "UKCore-DiagnosticReport-MichaelJonesReport-Example-Minimal",
+	"basedOn": [
 		{
-			"system": "https://mft.nhs.uk/nwglh/lims",
-			"value": "DPYDGenomicReport",
-			"assigner": {
-				"reference": "Organization/1b81b2e9-d428-4cf6-8d9f-b3f3e3833430"
+			"identifier": {
+				"system": "https://www.christie.nhs.uk/ehr",
+				"value": "LabOrder123456"
 			}
 		}
 	],
-	"basedOn": [
-		{
-			"reference": "ServiceRequest/7f70bb0c-5792-46d4-bbfd-c48cbcd3895b"
-		}
-	],
 	"status": "final",
-	"category": [
-		{ 
-			"coding": [
-				{ 
-					"system": "http://terminology.hl7.org/CodeSystem/v2-0074", 
-					"code": "LAB", 
-					"display": "Laboratory"
-				}
-			]
-		}
-	],
 	"code": { 
 		"coding": [
 			{ 
 				"system": "http://snomed.info/sct", 
-				"code": "4321000179101", 
-				"display": "Hematology report (record artifact)"
+				"code": "1054161000000101", 
+				"display": "Genetic report"
 			}
 		]
 	},
 	"subject": {
-		"reference": "Patient/f52cae9c-81eb-422c-be58-8363e72144aa"
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/nhs-number",
+			"value": "9999999999"
+		}
 	},
 	"issued": "2022-07-15T09:00:00Z",
 	"performer": [
 		{
-			"reference": "Organization/1b81b2e9-d428-4cf6-8d9f-b3f3e3833430"
+			"identifier": {
+				"system": "https://fhir.nhs.uk/Id/ods-organization-code",
+				"value": "699X0"
+			}
 		}
 	],
 	"resultsInterpreter": [
@@ -55,18 +44,10 @@
 	],
 	"specimen": [
 		{
-			"reference": "Specimen/e64a0757-f092-47ff-ad36-e8ff0c3b6fa1"
-		}
-	],
-	"conclusionCode": [
-		{ 
-			"coding": [
-				{ 
-					"system": "http://snomed.info/sct", 
-					"code": "738542003", 
-					"display": "Dihydropyrimidine dehydrogenase poor metabolizer (finding)"
-				}
-			]
+			"identifier": {
+				"system": "https://www.christie.nhs.uk/path",
+				"value": "Spec123456"
+			}
 		}
 	],
 	"presentedForm": [

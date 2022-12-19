@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "https://example.org/fhir/StructureDefinition/Extension-Genomics-GPPractice",
+  "url": "https://fhir.nhs.uk/StructureDefinition/Extension-Genomics-GPPractice",
   "version": "0.1.0",
   "name": "GenomicsGPPractice",
   "status": "draft",
@@ -29,7 +29,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://example.org/fhir/StructureDefinition/Extension-Genomics-GPPractice"
+        "fixedUri": "https://fhir.nhs.uk/StructureDefinition/Extension-Genomics-GPPractice"
       },
       {
         "id": "Extension.value[x]",

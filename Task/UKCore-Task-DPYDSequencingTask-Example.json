@@ -8,12 +8,26 @@
 		}
 	],
 	"instantiatesUri": "https://www.england.nhs.uk/wp-content/uploads/2020/11/1869-dpyd-policy-statement.pdf",
+	"basedOn": [
+		{
+			"reference": "ServiceRequest/ad37bdf1-3f56-4070-b981-1a619c4943ed"
+		}
+	],
 	"partOf": [
 		{
 			"display": "Task/UKCore-Task-ParentTask-Example"
 		}
 	],
 	"status": "requested",
+	"businessStatus": { 
+		"coding": [
+			{ 
+				"system": "https://fhir.nhs.uk/CodeSystem/business-status-genomics", 
+				"code": "AwaitingSpecimen", 
+				"display": "Awaiting Specimen"
+			}
+		]
+	},
 	"intent": "filler-order",
 	"priority": "routine",
 	"code": { 
@@ -25,9 +39,6 @@
 			}
 		]
 	},
-	"focus": {
-		"reference": "ServiceRequest/ad37bdf1-3f56-4070-b981-1a619c4943ed"
-	},
 	"for": {
 		"reference": "Patient/f837d8b0-cab6-4841-b735-b9cf1a3453e5",
 		"identifier": {
@@ -38,10 +49,10 @@
 	"authoredOn": "2022-07-13T09:00:00Z",
 	"lastModified": "2022-07-13T09:00:00Z",
 	"requester": {
-		"reference": "Practitioner/2b94aed1-02bd-4f68-b5f4-df5aaceecdb1",
+		"reference": "PractitionerRole/3462583a-536c-4bad-99d3-44dc553921fd",
 		"identifier": {
-			"system": "https://fhir.hl7.org.uk/Id/gmc-number",
-			"value": "9999999"
+			"system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+			"value": "100102238986"
 		}
 	},
 	"performerType": [

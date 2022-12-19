@@ -1,9 +1,10 @@
 {
-  "updated": "2022-11-25T14:18:12.0072232+00:00",
+  "updated": "2022-12-19T14:43:30.7440698+00:00",
   "dependencies": {
+    "hl7.fhir.uv.genomics-reporting": "2.0.0",
     "hl7.fhir.r4.core": "4.0.1",
-    "fhir.r4.ukcore.stu1": "0.5.1",
-    "uk.nhsdigital.r4.test": "2.7.3-prerelease"
+    "fhir.r4.ukcore.stu1": "1.0.0-pre-release",
+    "uk.nhsdigital.r4.test": "2.7.9-prerelease"
   },
   "missing": {}
 }

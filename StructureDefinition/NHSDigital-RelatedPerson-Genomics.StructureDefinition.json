@@ -32,7 +32,6 @@
         "path": "RelatedPerson.extension",
         "sliceName": "birthSex",
         "min": 0,
-        "max": "1",
         "type": [
           {
             "code": "Extension",
@@ -80,16 +79,47 @@
         "path": "RelatedPerson.extension",
         "sliceName": "gpPractice",
         "min": 0,
-        "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "https://example.org/fhir/StructureDefinition/Extension-Genomics-GPPractice"
+              "https://fhir.nhs.uk/StructureDefinition/Extension-Genomics-GPPractice"
             ]
           }
         ],
         "isModifier": false
+      },
+      {
+        "id": "RelatedPerson.patient",
+        "path": "RelatedPerson.patient",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient-Genomics"
+            ],
+            "aggregation": [
+              "referenced",
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "RelatedPerson.relationship",
+        "path": "RelatedPerson.relationship",
+        "min": 1
+      },
+      {
+        "id": "RelatedPerson.photo",
+        "path": "RelatedPerson.photo",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.period",
+        "path": "RelatedPerson.period",
+        "max": "0"
       }
     ]
   }

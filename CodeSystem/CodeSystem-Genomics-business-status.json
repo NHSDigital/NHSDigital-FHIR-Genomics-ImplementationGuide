@@ -33,7 +33,7 @@
     "concept": [
         {
             "code": "AwaitingSpecimen",
-            "display": "AwaitingSpecimen"
+            "display": "Awaiting Specimen"
         },
         {
             "code": "SpecimenReceived",
