@@ -80,13 +80,6 @@
         "max": "0"
       },
       {
-        "id": "Patient.extension:patientReligion",
-        "path": "Patient.extension",
-        "sliceName": "patientReligion",
-        "min": 0,
-        "max": "0"
-      },
-      {
         "id": "Patient.extension:nhsNumberUnavailableReason",
         "path": "Patient.extension",
         "sliceName": "nhsNumberUnavailableReason",
