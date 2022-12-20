@@ -38,10 +38,7 @@
           {
             "code": "Identifier"
           }
-        ],
-        "fixedIdentifier": {
-          "system": "https://fhir.nhs.uk/Id/ods-organization-code"
-        }
+        ]
       },
       {
         "id": "Extension.value[x].system",
