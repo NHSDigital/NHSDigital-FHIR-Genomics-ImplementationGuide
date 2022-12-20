@@ -81,19 +81,6 @@
         "isModifier": false
       },
       {
-        "id": "ServiceRequest.extension:priorityReason.value[x].coding",
-        "path": "ServiceRequest.extension.value[x].coding",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "system"
-            }
-          ],
-          "rules": "open"
-        }
-      },
-      {
         "id": "ServiceRequest.identifier",
         "path": "ServiceRequest.identifier",
         "min": 1,

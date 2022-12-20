@@ -81,7 +81,7 @@
                 },
                 {
                     "type": "Task",
-                    "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Task"
+                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Task-Genomics"
                 },
                 {
                     "type": "ServiceRequest",
@@ -101,7 +101,7 @@
                 },
                 {
                     "type": "DiagnosticReport",
-                    "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport"
+                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-DiagnosticReport-Genomics"
                 },
                 {
                     "type": "FamilyMemberHistory",

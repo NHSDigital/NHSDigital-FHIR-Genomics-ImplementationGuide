@@ -73,13 +73,6 @@
         "min": 1
       },
       {
-        "id": "Patient.extension:patientReligion",
-        "path": "Patient.extension",
-        "sliceName": "patientReligion",
-        "min": 0,
-        "max": "0"
-      },
-      {
         "id": "Patient.extension:patientInterpreterRequired",
         "path": "Patient.extension",
         "sliceName": "patientInterpreterRequired",
@@ -190,11 +183,6 @@
         "max": "0"
       },
       {
-        "id": "Patient.contact",
-        "path": "Patient.contact",
-        "min": 1
-      },
-      {
         "id": "Patient.contact.organization",
         "path": "Patient.contact.organization",
         "type": [
@@ -249,7 +237,6 @@
       {
         "id": "Patient.managingOrganization",
         "path": "Patient.managingOrganization",
-        "min": 1,
         "type": [
           {
             "code": "Reference",
