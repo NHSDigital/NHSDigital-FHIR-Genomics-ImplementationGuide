@@ -73,16 +73,16 @@
         "min": 1
       },
       {
-        "id": "Patient.extension:patientReligion",
+        "id": "Patient.extension:patientInterpreterRequired",
         "path": "Patient.extension",
-        "sliceName": "patientReligion",
+        "sliceName": "patientInterpreterRequired",
         "min": 0,
         "max": "0"
       },
       {
-        "id": "Patient.extension:patientInterpreterRequired",
+        "id": "Patient.extension:patientReligion",
         "path": "Patient.extension",
-        "sliceName": "patientInterpreterRequired",
+        "sliceName": "patientReligion",
         "min": 0,
         "max": "0"
       },
