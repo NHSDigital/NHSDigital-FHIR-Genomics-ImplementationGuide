@@ -1,0 +1,54 @@
+{
+  "resourceType": "CodeSystem",
+  "url": "https://fhir.nhs.uk/CodeSystem/patience-choice-category-genomics",
+  "identifier": [
+    {
+      "system": "https://fhir.nhs.uk/identifier/CodeSystem",
+      "value": "patience-choice-category-genomics"
+    }
+  ],
+  "version": "0.1.0",
+  "name": "PatientChoiceCategoryGenomics",
+  "title": "Patient Choice Category Genomics",
+  "status": "draft",
+  "date": "2022-12-21T11:27:52.3231281+00:00",
+  "publisher": "NHS Digital",
+  "contact": [
+    {
+      "name": "NHS Digital",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "interoperabilityteam@nhs.net",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "A set of codes use to identify the categories of sources of obtaining the patienct consent before undergoing Genomic test.",
+  "copyright": "Copyright © 2022 NHS Digital",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "AOC",
+      "display": "Adult(made their own choice)"
+    },
+    {
+      "code": "ALC",
+      "display": "Adult lacking capacity(choices advised by consultee)"
+    },
+    {
+      "code": "CPG",
+      "display": "Child (parent or guardian choices)"
+    },
+    {
+      "code": "CL",
+      "display": "Clinician has agreed to the test(in the patient`s best interest)"
+    },
+    {
+      "code": "D",
+      "display": "Deceased(choices made on behalf of deceased individual)"
+    }
+  ]
+}
