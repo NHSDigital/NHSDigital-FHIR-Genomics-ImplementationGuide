@@ -5,13 +5,13 @@
 	"status": "completed",
 	"basedOn": [
 		{
-			"reference": "ServiceRequest/a40c7ddc-2897-4e3c-bae6-88500e080229"
+			"reference": "urn:uuid:a40c7ddc-2897-4e3c-bae6-88500e080229"
 		}
 	],
 	"subject": {
 		"identifier": {
 			"system": "https://fhir.nhs.uk/Id/nhs-number",
-			"value": "0123456789"
+			"value": "9999999999"
 		},
 		"display": "A Patient"
 	},
@@ -27,7 +27,7 @@
 		"type": "Patient",
 		"identifier": {
 			"system": "https://fhir.nhs.uk/Id/nhs-number",
-			"value": "0123456789"
+			"value": "9999999999"
 		}
 	},
 	"item": [
@@ -58,7 +58,7 @@
 					"text": "NHS number (or postcode if not not known)",
 					"answer": [
 						{
-							"valueString": "0123456789"
+							"valueString": "9999999999"
 						}
 					]
 				},
@@ -67,7 +67,7 @@
 					"text": "Date of Birth",
 					"answer": [
 						{
-							"valueDate": "2022-12-08"
+							"valueDate": "1980-12-01"
 						}
 					]
 				}
@@ -141,8 +141,21 @@
 			"text": "If you are signing this form on behalf of someone else (children, adults without capacity or deceased patients) then please sign below.",
 			"item": [
 				{
+					"linkId": "attorneyType",
+					"text": "Parent | Guardian | Consultee *(please select your applicable relationship)",
+					"answer": [
+						{
+							"valueCoding": {
+								"system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+								"code": "PRN",
+								"display": "Parent"
+							}
+						}
+					]
+				},
+				{
 					"linkId": "attorneyName",
-					"text": "Parent | Guardian | Consultee name*(please amend as appropriate)",
+					"text": "Name",
 					"answer": [
 						{
 							"valueString": "Smith Taylor"
@@ -183,7 +196,7 @@
 							"answer": [
 								{
 									"valueCoding": {
-										"system": "https://fhir.nhs.uk/CodeSystem/patience-choice-category-genomics",
+										"system": "https://fhir.nhs.uk/CodeSystem/patient-choice-category-genomics",
 										"code": "AOC",
 										"display": "Adult(made their own choice)"
 									}
@@ -209,7 +222,7 @@
 							"answer": [
 								{
 									"valueCoding": {
-										"system": "https://fhir.nhs.uk/CodeSystem/patience-choice-researchparticipation",
+										"system": "https://fhir.nhs.uk/CodeSystem/patient-choice-researchparticipation",
 										"code": "LKD",
 										"display": "Patient would like to discuss at a later date"
 									}
@@ -239,7 +252,7 @@
 							"text": "Hospital number",
 							"answer": [
 								{
-									"valueString": "0123456789"
+									"valueString": "999999999"
 								}
 							]
 						},
