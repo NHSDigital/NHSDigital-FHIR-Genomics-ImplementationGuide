@@ -138,7 +138,7 @@
 		},
 		{
 			"linkId": "attorney",
-			"text": "If you are signing this form on behalf of someone else (children, adults without capacity or deceased patients) then please sign below.",
+			"text": "If you are signing this form on behalf of someone else (children, adults without capacity or deceased patients) then please indicate your relationship role and  sign below.",
 			"item": [
 				{
 					"linkId": "attorneyType",
