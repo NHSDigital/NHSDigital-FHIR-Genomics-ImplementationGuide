@@ -330,7 +330,7 @@
                   "operator": "!=",
                   "answerBoolean": true
                 }
-              ]
+              ],
               "answerValueSet": "https://fhir.nhs.uk/ValueSet/genomics-patient-choice-researchparticipation",
               "required": true
             },
