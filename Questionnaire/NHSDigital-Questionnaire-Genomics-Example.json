@@ -326,6 +326,13 @@
               "type": "choice",
               "required": true,
               "answerValueSet": "https://fhir.nhs.uk/ValueSet/genomics-patient-choice-researchparticipation"
+              "enableWhen": [
+                {
+                  "question": "researchConfirmation1",
+                  "operator": "!=",
+                  "answerBoolean": true
+                }
+              ]
             },
             {
               "linkId": "remoteConsent",
