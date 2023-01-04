@@ -324,8 +324,6 @@
               "linkId": "reasonsforChoiceA",
               "text": "If answer to research choice A is NO",
               "type": "choice",
-              "required": true,
-              "answerValueSet": "https://fhir.nhs.uk/ValueSet/genomics-patient-choice-researchparticipation",
               "enableWhen": [
                 {
                   "question": "researchConfirmation1",
@@ -333,6 +331,8 @@
                   "answerBoolean": true
                 }
               ]
+              "answerValueSet": "https://fhir.nhs.uk/ValueSet/genomics-patient-choice-researchparticipation",
+              "required": true
             },
             {
               "linkId": "remoteConsent",
