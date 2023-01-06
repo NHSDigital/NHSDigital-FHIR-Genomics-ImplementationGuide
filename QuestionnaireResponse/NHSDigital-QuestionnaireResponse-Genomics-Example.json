@@ -104,81 +104,11 @@
 			]
 		},
 		{
-			"linkId": "patientValidation",
-			"text": "Respondent Validation",
-			"item": [
+			"linkId": "isRespondentPatientorAttorney",
+			"text": "Are you completing this form on behalf of someone?",
+			"answer": [
 				{
-					"linkId": "patientNamecombined",
-					"text": "Patient Name",
-					"answer": [
-						{
-							"valueString": "James Goldsmith"
-						}
-					]
-				},
-				{
-					"linkId": "patientSignature",
-					"text": "Signature",
-					"answer": [
-						{
-							"valueString": "JamesG"
-						}
-					]
-				},
-				{
-					"linkId": "datePatientCompletedForm",
-					"text": "Date",
-					"answer": [
-						{
-							"valueDateTime": "2022-12-08"
-						}
-					]
-				}
-			]
-		},
-		{
-			"linkId": "attorney",
-			"text": "If you are signing this form on behalf of someone else (children, adults without capacity or deceased patients) then please indicate your relationship role and  sign below.",
-			"item": [
-				{
-					"linkId": "attorneyType",
-					"text": "Parent | Guardian | Consultee *(please select your applicable relationship)",
-					"answer": [
-						{
-							"valueCoding": {
-								"system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
-								"code": "PRN",
-								"display": "Parent"
-							}
-						}
-					]
-				},
-				{
-					"linkId": "attorneyName",
-					"text": "Name",
-					"answer": [
-						{
-							"valueString": "Smith Taylor"
-						}
-					]
-				},
-				{
-					"linkId": "attorneySignature",
-					"text": "Signature",
-					"answer": [
-						{
-							"valueString": "TaylorS"
-						}
-					]
-				},
-				{
-					"linkId": "dateAttorneyCompletedForm",
-					"text": "Date",
-					"answer": [
-						{
-							"valueDateTime": "2022-12-08"
-						}
-					]
+					"valueBoolean": false
 				}
 			]
 		},
@@ -212,19 +142,6 @@
 										"system": "https://fhir.nhs.uk/CodeSystem/test-type-genomics",
 										"code": "C-WGS",
 										"display": "Cancer (paired tumour normal) -WGS"
-									}
-								}
-							]
-						},
-						{
-							"linkId": "reasonsforChoiceA",
-							"text": "If answer to research choice A is NO",
-							"answer": [
-								{
-									"valueCoding": {
-										"system": "https://fhir.nhs.uk/CodeSystem/patient-choice-researchparticipation",
-										"code": "LKD",
-										"display": "Patient would like to discuss at a later date"
 									}
 								}
 							]
