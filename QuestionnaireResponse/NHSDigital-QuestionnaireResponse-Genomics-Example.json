@@ -113,6 +113,39 @@
 			]
 		},
 		{
+			"linkId": "patientValidation",
+			"text": "Patient Validation",
+			"item": [
+				{
+					"linkId": "patientNamecombined",
+					"text": "Patient Name",
+					"answer": [
+						{
+							"valueString": "James Goldsmith"
+						}
+					]
+				},
+				{
+					"linkId": "patientSignature",
+					"text": "Signature",
+					"answer": [
+						{
+							"valueString": "JamesG"
+						}
+					]
+				},
+				{
+					"linkId": "datePatientCompletedForm",
+					"text": "Date",
+					"answer": [
+						{
+							"valueDateTime": "2022-12-08"
+						}
+					]
+				}
+			]
+		},
+		{
 			"linkId": "declaration5",
 			"text": "Healthcare professional use only",
 			"item": [
