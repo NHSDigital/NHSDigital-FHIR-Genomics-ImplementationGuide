@@ -241,7 +241,7 @@
       },
       {
         "text": "Are you completing this form on behalf of someone?",
-        "linkId": "isRespondentPatientorAttorney",
+        "linkId": "isRespondentAttorney",
         "type": "boolean",
         "required": true
       },
@@ -251,9 +251,9 @@
         "type": "group",
         "enableWhen": [
           {
-            "question": "isRespondentPatientorAttorney",
-            "operator": "!=",
-            "answerBoolean": true
+            "question": "isRespondentAttorney",
+            "operator": "=",
+            "answerBoolean": false
           }
         ],
         "item": [
@@ -283,7 +283,7 @@
         "type": "group",
         "enableWhen": [
           {
-            "question": "isRespondentPatientorAttorney",
+            "question": "isRespondentAttorney",
             "operator": "=",
             "answerBoolean": true
           }

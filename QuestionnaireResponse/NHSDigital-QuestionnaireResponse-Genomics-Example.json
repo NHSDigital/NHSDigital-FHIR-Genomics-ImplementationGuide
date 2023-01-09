@@ -104,7 +104,7 @@
 			]
 		},
 		{
-			"linkId": "isRespondentPatientorAttorney",
+			"linkId": "isRespondentAttorney",
 			"text": "Are you completing this form on behalf of someone?",
 			"answer": [
 				{
