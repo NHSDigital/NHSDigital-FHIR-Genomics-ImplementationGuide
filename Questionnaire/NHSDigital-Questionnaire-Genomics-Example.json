@@ -4,7 +4,7 @@
     "url": "https://fhir.nhs.uk/Questionnaire/NHSDigital-Questionnaire-Genomics-Example",
     "version": "0.1.0",
     "name": "NHSDigitalQuestionnaireGenomicsExample",
-    "title": "NHSDigital-Questionnaire-Genomics-Example",
+    "title": "Record of Discussion Regarding Genomic Testing-Example",
     "status": "draft",
     "subjectType": [
       "Patient"
