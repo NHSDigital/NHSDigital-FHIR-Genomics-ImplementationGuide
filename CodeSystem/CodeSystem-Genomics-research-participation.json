@@ -31,19 +31,19 @@
 	"content": "complete",
 	"concept": [
 		{
-			"code": "LKD",
+			"code": "LiketoDiscussLater",
 			"display": "Patient would like to discuss at a later date"
 		},
 		{
-			"code": "PLC",
+			"code": "PatientLackCapacity",
 			"display": "Patient lacks capacity and no consultee available"
 		},
 		{
-			"code": "ITD",
+			"code": "InappropriatetoDiscuss",
 			"display": "Inappropriate to have discussion"
 		},
 		{
-			"code": "O",
+			"code": "Other",
 			"display": "Other"
 		}
 	]

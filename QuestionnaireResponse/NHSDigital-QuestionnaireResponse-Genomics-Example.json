@@ -160,7 +160,7 @@
 								{
 									"valueCoding": {
 										"system": "https://fhir.nhs.uk/CodeSystem/patient-choice-category-genomics",
-										"code": "AOC",
+										"code": "AdultOwnChoice",
 										"display": "Adult(made their own choice)"
 									}
 								}

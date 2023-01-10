@@ -3,7 +3,7 @@
 	"id": "genomics-coverage",
 	"url": "https://fhir.nhs.uk/ValueSet/genomics-coverage",
 	"version": "0.1.0",
-	"name": "GenomicsMessageEvents",
+	"name": "GenomicsCoverageTypes",
 	"status": "draft",
 	"description": "A ValueSet to identify the funder for a Genomic Test Order",
 	"compose": {
