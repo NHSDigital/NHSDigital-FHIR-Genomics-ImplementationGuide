@@ -31,23 +31,23 @@
 	"content": "complete",
 	"concept": [
 		{
-			"code": "AOC",
+			"code": "AdultOwnChoice",
 			"display": "Adult (made their own choice)"
 		},
 		{
-			"code": "ALC",
+			"code": "AdultLackCapacity",
 			"display": "Adult lacking capacity (choices advised by consultee)"
 		},
 		{
-			"code": "CPG",
+			"code": "Child",
 			"display": "Child (parent or guardian choices)"
 		},
 		{
-			"code": "CL",
+			"code": "Clinician",
 			"display": "Clinician has agreed to the test (in the patient`s best interest)"
 		},
 		{
-			"code": "D",
+			"code": "Deceased",
 			"display": "Deceased (choices made on behalf of deceased individual)"
 		}
 	]
