@@ -68,6 +68,11 @@
         ]
       },
       {
+        "id": "Procedure.code",
+        "path": "Procedure.code",
+        "min": 1
+      },
+      {
         "id": "Procedure.encounter",
         "path": "Procedure.encounter",
         "max": "0"
