@@ -1,36 +1,5 @@
 {
 	"resourceType": "RelatedPerson",
-	"extension": [
-		{
-			"url": "https://fhir.nhs.uk/StructureDefinition/Extension-Genomics-BirthSex",
-			"valueCode": "F"
-		},
-		{
-			"url": "https://fhir.nhs.uk/StructureDefinition/Extension-Genomics-EthnicCategory",
-			"valueCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland",
-						"code": "A",
-						"display": "White - British"
-					}
-				]
-			}
-		},
-		{
-			"url": "https://fhir.nhs.uk/StructureDefinition/Extension-Genomics-GPPractice",
-			"valueIdentifier": {
-				"system": "https://fhir.nhs.uk/Id/ods-organization-code",
-				"value": "DPX"
-			}
-		}
-	],
-	"identifier": [
-		{
-			"system": "https://fhir.nhs.uk/Id/nhs-number",
-			"value": "9999999998"
-		}
-	],
 	"patient": {
 		"identifier": {
 			"system": "https://fhir.nhs.uk/Id/nhs-number",
@@ -46,32 +15,6 @@
 					"display": "sister"
 				}
 			]
-		}
-	],
-	"name": [
-		{
-			"family": "Jones",
-			"given": [
-				"Michaela"
-			]
-		}
-	],
-	"telecom": [
-		{
-			"system": "phone",
-			"value": "07920754621",
-			"use": "mobile"
-		}
-	],
-	"gender": "female",
-	"birthDate": "1993-02-12",
-	"address": [
-		{
-			"line": [
-				"48 Astoria Drive"
-			],
-			"city": "Coventry",
-			"postalCode": "CV4 9ZY"
 		}
 	]
 }
