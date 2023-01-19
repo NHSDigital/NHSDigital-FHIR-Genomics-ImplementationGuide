@@ -1,6 +1,6 @@
 {
 	"resourceType": "Procedure",
-	"id": "UKCore-MichaelJonesTransplant-Example",
+	"id": "UKCore-Procedure-MichaelJonesTransplant-Example",
 	"status": "completed",
 	"code": {
 		"coding": [
