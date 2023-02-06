@@ -54,38 +54,6 @@
         "isModifier": false
       },
       {
-        "id": "Specimen.extension:topology",
-        "path": "Specimen.extension",
-        "sliceName": "topology",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://fhir.nhs.uk/StructureDefinition/mcode-body-location-qualifier"
-            ]
-          }
-        ],
-        "isModifier": false
-      },
-      {
-        "id": "Specimen.extension:morphology",
-        "path": "Specimen.extension",
-        "sliceName": "morphology",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://fhir.nhs.uk/StructureDefinition/mcode-histology-morphology-behavior"
-            ]
-          }
-        ],
-        "isModifier": false
-      },
-      {
         "id": "Specimen.identifier.assigner",
         "path": "Specimen.identifier.assigner",
         "type": [
