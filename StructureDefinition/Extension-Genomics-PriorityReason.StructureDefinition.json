@@ -37,7 +37,11 @@
           {
             "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://fhir.hl7.org.uk/ValueSet/UKCore-ServiceRequestReasonCode"
+        }
       },
       {
         "id": "Extension.value[x].coding",
