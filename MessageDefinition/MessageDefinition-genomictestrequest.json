@@ -60,6 +60,12 @@
             "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson",
             "min": 0,
             "max": "*"
+        },
+        {
+            "code": "BodyStructure",
+            "profile": "http://hl7.org/fhir/StructureDefinition/BodyStructure",
+            "min": 0,
+            "max": "*"
         }
     ]
 }

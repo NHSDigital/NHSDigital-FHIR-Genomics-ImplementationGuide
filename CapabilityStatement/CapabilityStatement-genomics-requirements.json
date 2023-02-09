@@ -105,7 +105,7 @@
                 },
                 {
                     "type": "FamilyMemberHistory",
-                    "profile": "http://hl7.org/fhir/StructureDefinition/FamilyMemberHistory"
+                    "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-FamilyMemberHistory"
                 },
                 {
                     "type": "Observation",
@@ -150,6 +150,10 @@
                 {
                     "type": "OperationOutcome",
                     "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-OperationOutcome"
+                },
+                {
+                    "type": "BodyStructure",
+                    "profile": "http://hl7.org/fhir/StructureDefinition/BodyStructure"
                 }
             ]
         }
