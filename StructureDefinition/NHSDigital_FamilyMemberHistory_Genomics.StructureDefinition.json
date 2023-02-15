@@ -15,7 +15,6 @@
       {
         "id": "FamilyMemberHistory.identifier",
         "path": "FamilyMemberHistory.identifier",
-        "min": 1,
         "max": "1"
       },
       {
@@ -41,21 +40,6 @@
             ]
           }
         ]
-      },
-      {
-        "id": "FamilyMemberHistory.age[x]",
-        "path": "FamilyMemberHistory.age[x]",
-        "max": "0"
-      },
-      {
-        "id": "FamilyMemberHistory.estimatedAge",
-        "path": "FamilyMemberHistory.estimatedAge",
-        "max": "0"
-      },
-      {
-        "id": "FamilyMemberHistory.deceased[x]",
-        "path": "FamilyMemberHistory.deceased[x]",
-        "max": "0"
       },
       {
         "id": "FamilyMemberHistory.reasonReference",
