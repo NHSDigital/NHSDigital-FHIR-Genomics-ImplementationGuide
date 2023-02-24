@@ -171,6 +171,7 @@
       {
         "id": "ServiceRequest.code",
         "path": "ServiceRequest.code",
+        "definition": "A code that identifies a particular service (i.e., procedure, diagnostic investigation, or panel of investigations) that have been requested.\r\n\r\nFor Genomic Test Orders, use the system 'https://www.england.nhs.uk/publication/national-genomic-test-directories' and code from one of the test directories provided by NHS England. Addition of these codes to an appropriate coding system, e.g. SNOMED-CT, is under discussion.",
         "min": 1
       },
       {
