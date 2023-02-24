@@ -32,6 +32,18 @@
     "content": "complete",
     "concept": [
         {
+            "code": "InvalidRequest",
+            "display": "Invalid Request"
+        },
+		{
+            "code": "UnsatisfiedCondition",
+            "display": "Unsatisfied Condition"
+        },
+		{
+            "code": "TimeframeExceeded",
+            "display": "Timeframe Exceeded"
+        },
+		{
             "code": "AwaitingSpecimen",
             "display": "Awaiting Specimen"
         },
@@ -39,13 +51,45 @@
             "code": "SpecimenReceived",
             "display": "Specimen Received"
         },
+		{
+            "code": "SpecimenQualityNotOk",
+            "display": "Specimen Quality Not OK"
+        },
+		{
+            "code": "SpecimenProcessingInProgress",
+            "display": "Specimen Processing In Progress"
+        },
         {
             "code": "SpecimenProcessed",
             "display": "Specimen Processed"
         },
+		{
+            "code": "RemoteProcessingRequired",
+            "display": "Remote Processing Required"
+        },
+		{
+            "code": "SpecimenProcessingUnsuccessful",
+            "display": "Specimen Processing Unsuccessful"
+        },
+		{
+            "code": "SequencingCompleted",
+            "display": "Sequencing Completed"
+        },
+		{
+            "code": "RepeatSequencing",
+            "display": "Repeat Sequencing"
+        },
+		{
+            "code": "AlignSequencing",
+            "display": "Align Sequencing"
+        },
         {
-            "code": "AnalysisInProgress",
-            "display": "Analysis In Progress"
+            "code": "GeneticDataProcessingInProgress",
+            "display": "Genetic Data Processing In Progress"
+        },
+		{
+            "code": "RemoteGeneticDataProcessingRequired",
+            "display": "Remote Genetic Data Processing Required"
         },
         {
             "code": "VariantsIdentified",
@@ -56,8 +100,40 @@
             "display": "Interpretation In Progress"
         },
 		{
+            "code": "RemoteInterpretationRequired",
+            "display": "Remote Interpretation Required"
+        },
+		{
+            "code": "InterpretationCompleted",
+            "display": "Interpretation Completed"
+        },
+		{
+            "code": "InterpretationUnsuccessful",
+            "display": "Interpretation Unsuccessful"
+        },
+		{
+            "code": "FurtherClinicalDetailsRequired",
+            "display": "Further Clinical Details Required"
+        },
+		{
+            "code": "FurtherClinicalDetailsProvided",
+            "display": "Further Clinical Details Provided"
+        },
+		{
+            "code": "ReflexTestRequired",
+            "display": "Reflex Test Required"
+        },
+		{
+            "code": "ReflexTestComplete",
+            "display": "Reflex Test Complete"
+        },
+		{
             "code": "DraftingReport",
             "display": "Drafting Report"
+        },
+		{
+            "code": "ReportCompleted",
+            "display": "ReportCompleted"
         }
     ]
 }
