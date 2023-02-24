@@ -171,7 +171,27 @@
       {
         "id": "ServiceRequest.code",
         "path": "ServiceRequest.code",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "coding.system"
+            }
+          ],
+          "rules": "open"
+        },
         "min": 1
+      },
+      {
+        "id": "ServiceRequest.code:nhseTestDirectory",
+        "path": "ServiceRequest.code",
+        "sliceName": "nhseTestDirectory"
+      },
+      {
+        "id": "ServiceRequest.code:nhseTestDirectory.coding.system",
+        "path": "ServiceRequest.code.coding.system",
+        "definition": "The identification of the code system that defines the meaning of the symbol in the code.\r\nSlice to allow population of NHSE Test Directory codes",
+        "fixedUri": "https://www.england.nhs.uk/publication/national-genomic-test-directories"
       },
       {
         "id": "ServiceRequest.quantity[x]",
