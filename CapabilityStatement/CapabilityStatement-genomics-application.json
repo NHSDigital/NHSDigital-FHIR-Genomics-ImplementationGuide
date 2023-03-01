@@ -1,0 +1,1679 @@
+{
+    "resourceType": "CapabilityStatement",
+    "id": "CapabilityStatement-genomics-application",
+    "url": "https://fhir.nhs.uk/CapabilityStatement/CapabilityStatement-genomics-application",
+    "version": "0.1.0",
+    "name": "CapabilityStatementGenomicsApplication",
+    "status": "draft",
+    "date": "2023-02-27T00:00:00+00:00",
+    "publisher": "NHS England",
+    "description": "Sample server capability for the Genomic Medicine Service",
+    "kind": "instance",
+    "implementationGuide":  [
+        "https://simplifier.net/guide/fhir-genomics-implementation-guide",
+        "https://simplifier.net/guide/nhsdigital"
+    ],
+    "fhirVersion": "4.0.1",
+    "format":  [
+        "application/fhir+json"
+    ],
+	"implementation": {
+		"description": "Exemplar CapabilityStatement for the GMS central broker implementation"
+	},
+	"messaging": [
+		{
+			"endpoint": [
+				{
+					"protocol": {
+						"system": "http://terminology.hl7.org/CodeSystem/message-transport",
+						"code": "http",
+						"display": "HTTP"
+					},
+					"address": "https://[baseUrl]/$process-message"
+				}
+			],
+			"documentation": "Endpoint which accepts test order and result message bundles. The server saves the whole message as well as splitting the message into its individual resources for ease of updating through RESTful interactions",
+			"supportedMessage": [
+				{
+					"mode": "receiver",
+					"definition": "https://fhir.nhs.uk/MessageDefinition/genomic-test-request"
+				},
+				{
+					"mode": "receiver",
+					"definition": "https://fhir.nhs.uk/MessageDefinition/genomic-test-response"
+				}
+			]
+		}
+	],
+    "rest":  [
+        {
+            "mode": "server",
+			"documentation": "RESTful endpoints supported by the Genomic Medicine Service",
+            "security": {
+                "service":  [
+                    {
+                        "coding":  [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/restful-security-service",
+                                "code": "OAuth",
+                                "display": "OAuth2 Token"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "resource":  [
+                {
+                    "type": "Bundle",
+                    "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Bundle", 
+					"documentation": "For posting transaction bundles to the server",
+					"interaction": [
+						{
+							"code": "create"
+						}
+					],
+					"conditionalCreate": true,
+					"referencePolicy": [
+						"resolves"
+					]
+                },
+				{
+                    "type": "CodeSystem",
+                    "profile": "http://hl7.org/fhir/StructureDefinition/CodeSystem",
+					"documentation": "For searching supported CodeSystems",
+					"interaction": [
+						{
+							"code": "read"
+						},
+						{
+							"code": "search-type"
+						}
+					],
+					"searchParam": [
+						{
+							"name": "code",
+							"type": "token"
+						},
+						{
+							"name": "context",
+							"type": "token"
+						},
+						{
+							"name": "description",
+							"type": "string"
+						},
+						{
+							"name": "identifier",
+							"type": "token"
+						},
+						{
+							"name": "name",
+							"type": "string"
+						},
+						{
+							"name": "system",
+							"type": "uri"
+						},
+						{
+							"name": "title",
+							"type": "string"
+						}
+					]
+                },
+				{
+                    "type": "ConceptMap",
+                    "profile": "http://hl7.org/fhir/StructureDefinition/ConceptMap",
+					"documentation": "For searching provided ConceptMaps",
+					"interaction": [
+						{
+							"code": "read"
+						},
+						{
+							"code": "search-type"
+						}
+					],
+					"searchParam": [
+						{
+							"name": "context",
+							"type": "token"
+						},
+						{
+							"name": "description",
+							"type": "string"
+						},
+						{
+							"name": "identifier",
+							"type": "token"
+						},
+						{
+							"name": "name",
+							"type": "string"
+						},
+						{
+							"name": "source-system",
+							"type": "uri"
+						},
+						{
+							"name": "target-system",
+							"type": "uri"
+						},
+						{
+							"name": "title",
+							"type": "string"
+						}
+					]
+                },
+				{
+                    "type": "HealthcareService",
+                    "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-HealthcareService",
+					"documentation": "Endpoints for interacting with HealthcareService resources",
+					"interaction": [
+						{
+							"code": "read"
+						},
+						{
+							"code": "vread"
+						},
+						{
+							"code": "update"
+						},
+						{
+							"code": "patch"
+						},
+						{
+							"code": "delete"
+						},
+						{
+							"code": "history-instance"
+						},
+						{
+							"code": "create"
+						},
+						{
+							"code": "search-type"
+						}
+					],
+					"versioning": "versioned",
+					"readHistory": true,
+					"conditionalCreate": true,
+					"referencePolicy": [
+						"resolves"
+					],
+					"searchParam": [
+						{
+							"name": "coverage-area",
+							"type": "reference"
+						},
+						{
+							"name": "endpoint",
+							"type": "reference"
+						},
+						{
+							"name": "identifier",
+							"type": "token"
+						},
+						{
+							"name": "name",
+							"type": "string"
+						},
+						{
+							"name": "location",
+							"type": "reference"
+						},
+						{
+							"name": "organization",
+							"type": "reference"
+						},
+						{
+							"name": "service-category",
+							"type": "token"
+						},
+						{
+							"name": "service-type",
+							"type": "token"
+						},
+						{
+							"name": "specialty",
+							"type": "token"
+						}
+					]
+                },
+				{
+                    "type": "MessageDefinition",
+                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-MessageDefinition-Genomics",
+					"documentation": "For searching supported MessageDefinitions",
+					"interaction": [
+						{
+							"code": "read"
+						},
+						{
+							"code": "search-type"
+						}
+					],
+					"searchParam": [
+						{
+							"name": "description",
+							"type": "string"
+						},
+						{
+							"name": "identifier",
+							"type": "token"
+						},
+						{
+							"name": "name",
+							"type": "string"
+						},
+						{
+							"name": "focus",
+							"type": "token"
+						},
+						{
+							"name": "title",
+							"type": "string"
+						}
+					]
+                },
+				{
+                    "type": "NamingSystem",
+                    "profile": "http://hl7.org/fhir/StructureDefinition/NamingSystem",
+					"documentation": "For searching supported NamingSystems",
+					"interaction": [
+						{
+							"code": "read"
+						},
+						{
+							"code": "search-type"
+						}
+					],
+					"searchParam": [
+						{
+							"name": "context",
+							"type": "token"
+						},
+						{
+							"name": "description",
+							"type": "string"
+						},
+						{
+							"name": "name",
+							"type": "string"
+						}
+					]
+                },
+				{
+                    "type": "Parameters",
+                    "profile": "http://hl7.org/fhir/StructureDefinition/Parameters"
+                },
+				{
+                    "type": "StructureMap",
+                    "profile": "http://hl7.org/fhir/StructureDefinition/StructureMap",
+					"documentation": "For searching provided StructureMaps",
+					"interaction": [
+						{
+							"code": "read"
+						},
+						{
+							"code": "search-type"
+						}
+					],
+					"searchParam": [
+						{
+							"name": "context",
+							"type": "token"
+						},
+						{
+							"name": "description",
+							"type": "string"
+						},
+						{
+							"name": "identifier",
+							"type": "token"
+						},
+						{
+							"name": "name",
+							"type": "string"
+						}
+					]
+                },
+				{
+                    "type": "ValueSet",
+                    "profile": "http://hl7.org/fhir/StructureDefinition/ValueSet",
+					"documentation": "For searching supported CodeSystems",
+					"interaction": [
+						{
+							"code": "read"
+						},
+						{
+							"code": "search-type"
+						}
+					],
+					"searchParam": [
+						{
+							"name": "code",
+							"type": "token"
+						},
+						{
+							"name": "context",
+							"type": "token"
+						},
+						{
+							"name": "description",
+							"type": "string"
+						},
+						{
+							"name": "identifier",
+							"type": "token"
+						},
+						{
+							"name": "name",
+							"type": "string"
+						},
+						{
+							"name": "title",
+							"type": "string"
+						}
+					]
+                },
+                {
+                    "type": "MessageHeader",
+                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-MessageHeader-Genomics",
+					"documentation": "Endpoints for interacting with MessageHeader resources",
+					"interaction": [
+						{
+							"code": "read"
+						},
+						{
+							"code": "create"
+						},
+						{
+							"code": "search-type"
+						}
+					],
+					"versioning": "no-version",
+					"conditionalCreate": true,
+					"referencePolicy": [
+						"resolves"
+					],
+					"searchParam": [
+						{
+							"name": "code",
+							"type": "token"
+						},
+						{
+							"name": "destination",
+							"type": "string"
+						},
+						{
+							"name": "destination-uri",
+							"type": "uri"
+						},
+						{
+							"name": "focus",
+							"type": "reference"
+						},
+						{
+							"name": "sender",
+							"type": "reference"
+						},
+						{
+							"name": "source",
+							"type": "string"
+						},
+						{
+							"name": "source-uri",
+							"type": "uri"
+						}
+					]
+                },
+                {
+                    "type": "Subscription",
+                    "profile": "http://hl7.org/fhir/StructureDefinition/Subscription",
+					"documentation": "Endpoints for interacting with Subscription resources",
+					"interaction": [
+						{
+							"code": "read"
+						},
+						{
+							"code": "vread"
+						},
+						{
+							"code": "update"
+						},
+						{
+							"code": "patch"
+						},
+						{
+							"code": "delete"
+						},
+						{
+							"code": "history-instance"
+						},
+						{
+							"code": "create"
+						},
+						{
+							"code": "search-type"
+						}
+					],
+					"versioning": "versioned",
+					"readHistory": true,
+					"conditionalCreate": true,
+					"searchParam": [
+						{
+							"name": "contact",
+							"type": "token"
+						},
+						{
+							"name": "criteria",
+							"type": "string"
+						},
+						{
+							"name": "status",
+							"type": "token"
+						},
+						{
+							"name": "type",
+							"type": "token"
+						},
+						{
+							"name": "url",
+							"type": "uri"
+						}
+					]
+                },
+                {
+                    "type": "CapabilityStatement",
+                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-CapabilityStatement",
+					"documentation": "For searching provided CapabilityStatements",
+					"interaction": [
+						{
+							"code": "read"
+						},
+						{
+							"code": "search-type"
+						}
+					],
+					"searchParam": [
+						{
+							"name": "description",
+							"type": "string"
+						},
+						{
+							"name": "format",
+							"type": "token"
+						},
+						{
+							"name": "mode",
+							"type": "token"
+						},
+						{
+							"name": "name",
+							"type": "string"
+						},
+						{
+							"name": "resource",
+							"type": "token"
+						},
+						{
+							"name": "resource-profile",
+							"type": "reference"
+						},
+						{
+							"name": "title",
+							"type": "string"
+						}
+					]
+                },
+                {
+                    "type": "Task",
+                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Task-Genomics",
+					"documentation": "Endpoints for interacting with Task resources",
+					"interaction": [
+						{
+							"code": "read"
+						},
+						{
+							"code": "vread"
+						},
+						{
+							"code": "update"
+						},
+						{
+							"code": "patch"
+						},
+						{
+							"code": "delete"
+						},
+						{
+							"code": "history-instance"
+						},
+						{
+							"code": "create"
+						},
+						{
+							"code": "search-type"
+						}
+					],
+					"versioning": "versioned",
+					"readHistory": true,
+					"conditionalCreate": true,
+					"referencePolicy": [
+						"resolves"
+					],
+					"searchParam": [
+						{
+							"name": "based-on",
+							"type": "reference"
+						},
+						{
+							"name": "business-status",
+							"type": "token"
+						},
+						{
+							"name": "code",
+							"type": "token"
+						},
+						{
+							"name": "focus",
+							"type": "reference"
+						},
+						{
+							"name": "modified",
+							"type": "date"
+						},
+						{
+							"name": "owner",
+							"type": "reference"
+						},
+						{
+							"name": "subject",
+							"type": "reference"
+						},
+						{
+							"name": "performer",
+							"type": "token"
+						},
+						{
+							"name": "period",
+							"type": "date"
+						},
+						{
+							"name": "priority",
+							"type": "token"
+						},
+						{
+							"name": "requester",
+							"type": "reference"
+						},
+						{
+							"name": "status",
+							"type": "token"
+						}
+					]
+                },
+                {
+                    "type": "ServiceRequest",
+                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-ServiceRequest-Genomics",
+					"documentation": "Endpoints for interacting with ServiceRequest resources",
+					"interaction": [
+						{
+							"code": "read"
+						},
+						{
+							"code": "vread"
+						},
+						{
+							"code": "update"
+						},
+						{
+							"code": "patch"
+						},
+						{
+							"code": "delete"
+						},
+						{
+							"code": "history-instance"
+						},
+						{
+							"code": "create"
+						},
+						{
+							"code": "search-type"
+						}
+					],
+					"versioning": "versioned",
+					"readHistory": true,
+					"conditionalCreate": true,
+					"referencePolicy": [
+						"resolves"
+					],
+					"searchParam": [
+						{
+							"name": "based-on",
+							"type": "reference"
+						},
+						{
+							"name": "category",
+							"type": "token"
+						},
+						{
+							"name": "code",
+							"type": "token"
+						},
+						{
+							"name": "identifier",
+							"type": "token"
+						},
+						{
+							"name": "intent",
+							"type": "token"
+						},
+						{
+							"name": "subject",
+							"type": "reference"
+						},
+						{
+							"name": "performer",
+							"type": "reference"
+						},
+						{
+							"name": "performer-type",
+							"type": "token"
+						},
+						{
+							"name": "priority",
+							"type": "token"
+						},
+						{
+							"name": "replaces",
+							"type": "reference"
+						},
+						{
+							"name": "requester",
+							"type": "reference"
+						},
+						{
+							"name": "specimen",
+							"type": "reference"
+						},
+						{
+							"name": "status",
+							"type": "token"
+						}
+					]
+                },
+                {
+                    "type": "PractitionerRole",
+                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole-Genomics",
+					"documentation": "Endpoints for interacting with PractitionerRole resources",
+					"interaction": [
+						{
+							"code": "read"
+						},
+						{
+							"code": "vread"
+						},
+						{
+							"code": "update"
+						},
+						{
+							"code": "patch"
+						},
+						{
+							"code": "delete"
+						},
+						{
+							"code": "history-instance"
+						},
+						{
+							"code": "create"
+						},
+						{
+							"code": "search-type"
+						}
+					],
+					"versioning": "versioned",
+					"readHistory": true,
+					"conditionalCreate": true,
+					"referencePolicy": [
+						"resolves"
+					],
+					"searchParam": [
+						{
+							"name": "endpoint",
+							"type": "reference"
+						},
+						{
+							"name": "identifier",
+							"type": "token"
+						},
+						{
+							"name": "organization",
+							"type": "reference"
+						},
+						{
+							"name": "practitioner",
+							"type": "reference"
+						},
+						{
+							"name": "specialty",
+							"type": "token"
+						},
+						{
+							"name": "telecom",
+							"type": "token"
+						}
+					]
+                },
+                {
+                    "type": "Practitioner",
+                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Practitioner-Genomics",
+					"documentation": "Endpoints for interacting with Practitioner resources",
+					"interaction": [
+						{
+							"code": "read"
+						},
+						{
+							"code": "vread"
+						},
+						{
+							"code": "update"
+						},
+						{
+							"code": "patch"
+						},
+						{
+							"code": "delete"
+						},
+						{
+							"code": "history-instance"
+						},
+						{
+							"code": "create"
+						},
+						{
+							"code": "search-type"
+						}
+					],
+					"versioning": "versioned",
+					"readHistory": true,
+					"conditionalCreate": true,
+					"referencePolicy": [
+						"resolves"
+					],
+					"searchParam": [
+						{
+							"name": "name",
+							"type": "string"
+						},
+						{
+							"name": "identifier",
+							"type": "token"
+						}
+					]
+                },
+                {
+                    "type": "Organization",
+                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization-Genomics",
+					"documentation": "Endpoints for interacting with PractitionerRole resources",
+					"interaction": [
+						{
+							"code": "read"
+						},
+						{
+							"code": "vread"
+						},
+						{
+							"code": "update"
+						},
+						{
+							"code": "patch"
+						},
+						{
+							"code": "delete"
+						},
+						{
+							"code": "history-instance"
+						},
+						{
+							"code": "create"
+						},
+						{
+							"code": "search-type"
+						}
+					],
+					"versioning": "versioned",
+					"readHistory": true,
+					"conditionalCreate": true,
+					"referencePolicy": [
+						"resolves"
+					],
+					"searchParam": [
+						{
+							"name": "address",
+							"type": "string"
+						},
+						{
+							"name": "endpoint",
+							"type": "reference"
+						},
+						{
+							"name": "identifier",
+							"type": "token"
+						},
+						{
+							"name": "name",
+							"type": "string"
+						},
+						{
+							"name": "partof",
+							"type": "reference"
+						},
+						{
+							"name": "type",
+							"type": "token"
+						}
+					]
+                },
+                {
+                    "type": "DiagnosticReport",
+                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-DiagnosticReport-Genomics",
+					"documentation": "Endpoints for interacting with DiagnosticReport resources",
+					"interaction": [
+						{
+							"code": "read"
+						},
+						{
+							"code": "vread"
+						},
+						{
+							"code": "update"
+						},
+						{
+							"code": "patch"
+						},
+						{
+							"code": "delete"
+						},
+						{
+							"code": "history-instance"
+						},
+						{
+							"code": "create"
+						},
+						{
+							"code": "search-type"
+						}
+					],
+					"versioning": "versioned",
+					"readHistory": true,
+					"conditionalCreate": true,
+					"referencePolicy": [
+						"resolves"
+					],
+					"searchParam": [
+						{
+							"name": "based-on",
+							"type": "reference"
+						},
+						{
+							"name": "category",
+							"type": "token"
+						},
+						{
+							"name": "code",
+							"type": "token"
+						},
+						{
+							"name": "conclusion",
+							"type": "token"
+						},
+						{
+							"name": "date",
+							"type": "date"
+						},
+						{
+							"name": "identifier",
+							"type": "token"
+						},
+						{
+							"name": "issued",
+							"type": "date"
+						},
+						{
+							"name": "subject",
+							"type": "reference"
+						},
+						{
+							"name": "performer",
+							"type": "reference"
+						},
+						{
+							"name": "result",
+							"type": "reference"
+						},
+						{
+							"name": "results-interpreter",
+							"type": "reference"
+						},
+						{
+							"name": "specimen",
+							"type": "reference"
+						},
+						{
+							"name": "status",
+							"type": "token"
+						}
+					]
+                },
+                {
+                    "type": "FamilyMemberHistory",
+                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-FamilyMemberHistory-Genomics",
+					"documentation": "Endpoints for interacting with FamilyMemberHistory resources",
+					"interaction": [
+						{
+							"code": "read"
+						},
+						{
+							"code": "vread"
+						},
+						{
+							"code": "update"
+						},
+						{
+							"code": "patch"
+						},
+						{
+							"code": "delete"
+						},
+						{
+							"code": "history-instance"
+						},
+						{
+							"code": "create"
+						},
+						{
+							"code": "search-type"
+						}
+					],
+					"versioning": "versioned",
+					"readHistory": true,
+					"conditionalCreate": true,
+					"referencePolicy": [
+						"resolves"
+					],
+					"searchParam": [
+						{
+							"name": "code",
+							"type": "token"
+						},
+						{
+							"name": "date",
+							"type": "date"
+						},
+						{
+							"name": "identifier",
+							"type": "token"
+						},
+						{
+							"name": "patient",
+							"type": "reference"
+						},
+						{
+							"name": "relationship",
+							"type": "token"
+						},
+						{
+							"name": "sex",
+							"type": "token"
+						},
+						{
+							"name": "status",
+							"type": "token"
+						}
+					]
+                },
+                {
+                    "type": "Observation",
+                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Observation-Genomics",
+					"documentation": "Endpoints for interacting with Observation resources",
+					"interaction": [
+						{
+							"code": "read"
+						},
+						{
+							"code": "vread"
+						},
+						{
+							"code": "update"
+						},
+						{
+							"code": "patch"
+						},
+						{
+							"code": "delete"
+						},
+						{
+							"code": "history-instance"
+						},
+						{
+							"code": "create"
+						},
+						{
+							"code": "search-type"
+						}
+					],
+					"versioning": "versioned",
+					"readHistory": true,
+					"conditionalCreate": true,
+					"referencePolicy": [
+						"resolves"
+					],
+					"searchParam": [
+						{
+							"name": "based-on",
+							"type": "reference"
+						},
+						{
+							"name": "category",
+							"type": "token"
+						},
+						{
+							"name": "code",
+							"type": "token"
+						},
+						{
+							"name": "component-code",
+							"type": "token"
+						},
+						{
+							"name": "data-absent-reason",
+							"type": "token"
+						},
+						{
+							"name": "date",
+							"type": "date"
+						},
+						{
+							"name": "focus",
+							"type": "reference"
+						},
+						{
+							"name": "identifier",
+							"type": "token"
+						},
+						{
+							"name": "subject",
+							"type": "reference"
+						},
+						{
+							"name": "performer",
+							"type": "reference"
+						},
+						{
+							"name": "specimen",
+							"type": "reference"
+						},
+						{
+							"name": "value-string",
+							"type": "string"
+						},
+						{
+							"name": "status",
+							"type": "token"
+						}
+					]
+                },
+                {
+                    "type": "Patient",
+                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient-Genomics",
+					"documentation": "Endpoints for interacting with Patient resources",
+					"interaction": [
+						{
+							"code": "read"
+						},
+						{
+							"code": "vread"
+						},
+						{
+							"code": "update"
+						},
+						{
+							"code": "patch"
+						},
+						{
+							"code": "delete"
+						},
+						{
+							"code": "history-instance"
+						},
+						{
+							"code": "create"
+						},
+						{
+							"code": "search-type"
+						}
+					],
+					"versioning": "versioned",
+					"readHistory": true,
+					"conditionalCreate": true,
+					"referencePolicy": [
+						"resolves"
+					],
+					"searchParam": [
+						{
+							"name": "address",
+							"type": "string"
+						},
+						{
+							"name": "birthdate",
+							"type": "date"
+						},
+						{
+							"name": "death-date",
+							"type": "token"
+						},
+						{
+							"name": "gender",
+							"type": "token"
+						},
+						{
+							"name": "general-practitioner",
+							"type": "reference"
+						},
+						{
+							"name": "identifier",
+							"type": "token"
+						},
+						{
+							"name": "link",
+							"type": "reference"
+						},
+						{
+							"name": "name",
+							"type": "string"
+						},
+						{
+							"name": "organization",
+							"type": "reference"
+						},
+						{
+							"name": "telecom",
+							"type": "token"
+						}
+					]
+                },
+                {
+                    "type": "Consent",
+                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Consent-Genomics",
+					"documentation": "Endpoints for interacting with Consent resources",
+					"interaction": [
+						{
+							"code": "read"
+						},
+						{
+							"code": "vread"
+						},
+						{
+							"code": "update"
+						},
+						{
+							"code": "patch"
+						},
+						{
+							"code": "delete"
+						},
+						{
+							"code": "history-instance"
+						},
+						{
+							"code": "create"
+						},
+						{
+							"code": "search-type"
+						}
+					],
+					"versioning": "versioned",
+					"readHistory": true,
+					"conditionalCreate": true,
+					"referencePolicy": [
+						"resolves"
+					],
+					"searchParam": [
+						{
+							"name": "action",
+							"type": "token"
+						},
+						{
+							"name": "actor",
+							"type": "reference"
+						},
+						{
+							"name": "category",
+							"type": "token"
+						},
+						{
+							"name": "consentor",
+							"type": "reference"
+						},
+						{
+							"name": "identifier",
+							"type": "token"
+						},
+						{
+							"name": "organization",
+							"type": "reference"
+						},
+						{
+							"name": "patient",
+							"type": "reference"
+						},
+						{
+							"name": "period",
+							"type": "date"
+						}
+					]
+                },
+                {
+                    "type": "Condition",
+                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Condition-Genomics",
+					"documentation": "Endpoints for interacting with Condition resources",
+					"interaction": [
+						{
+							"code": "read"
+						},
+						{
+							"code": "vread"
+						},
+						{
+							"code": "update"
+						},
+						{
+							"code": "patch"
+						},
+						{
+							"code": "delete"
+						},
+						{
+							"code": "history-instance"
+						},
+						{
+							"code": "create"
+						},
+						{
+							"code": "search-type"
+						}
+					],
+					"versioning": "versioned",
+					"readHistory": true,
+					"conditionalCreate": true,
+					"referencePolicy": [
+						"resolves"
+					],
+					"searchParam": [
+						{
+							"name": "asserter",
+							"type": "reference"
+						},
+						{
+							"name": "category",
+							"type": "token"
+						},
+						{
+							"name": "clinical-status",
+							"type": "token"
+						},
+						{
+							"name": "code",
+							"type": "token"
+						},
+						{
+							"name": "identifier",
+							"type": "token"
+						},
+						{
+							"name": "onset-info",
+							"type": "string"
+						},
+						{
+							"name": "subject",
+							"type": "reference"
+						},
+						{
+							"name": "recorded-date",
+							"type": "date"
+						},
+						{
+							"name": "severity",
+							"type": "token"
+						},
+						{
+							"name": "stage",
+							"type": "token"
+						},
+						{
+							"name": "verification-status",
+							"type": "token"
+						}
+					]
+                },
+                {
+                    "type": "ResearchSubject",
+                    "profile": "http://hl7.org/fhir/StructureDefinition/ResearchSubject"
+                },
+                {
+                    "type": "RelatedPerson",
+                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-RelatedPerson-Genomics",
+					"documentation": "Endpoints for interacting with RelatedPerson resources",
+					"interaction": [
+						{
+							"code": "read"
+						},
+						{
+							"code": "vread"
+						},
+						{
+							"code": "update"
+						},
+						{
+							"code": "patch"
+						},
+						{
+							"code": "delete"
+						},
+						{
+							"code": "history-instance"
+						},
+						{
+							"code": "create"
+						},
+						{
+							"code": "search-type"
+						}
+					],
+					"versioning": "versioned",
+					"readHistory": true,
+					"conditionalCreate": true,
+					"referencePolicy": [
+						"resolves"
+					],
+					"searchParam": [
+						{
+							"name": "patient",
+							"type": "reference"
+						},
+						{
+							"name": "relationship",
+							"type": "token"
+						}
+					]
+                },
+                {
+                    "type": "Specimen",
+                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Specimen-Genomics",
+					"documentation": "Endpoints for interacting with Specimen resources",
+					"interaction": [
+						{
+							"code": "read"
+						},
+						{
+							"code": "vread"
+						},
+						{
+							"code": "update"
+						},
+						{
+							"code": "patch"
+						},
+						{
+							"code": "delete"
+						},
+						{
+							"code": "history-instance"
+						},
+						{
+							"code": "create"
+						},
+						{
+							"code": "search-type"
+						}
+					],
+					"versioning": "versioned",
+					"readHistory": true,
+					"conditionalCreate": true,
+					"referencePolicy": [
+						"resolves"
+					],
+					"searchParam": [
+						{
+							"name": "accession",
+							"type": "token"
+						},
+						{
+							"name": "bosysite",
+							"type": "token"
+						},
+						{
+							"name": "collected",
+							"type": "date"
+						},
+						{
+							"name": "collector",
+							"type": "reference"
+						},
+						{
+							"name": "container-id",
+							"type": "token"
+						},
+						{
+							"name": "identifier",
+							"type": "token"
+						},
+						{
+							"name": "parent",
+							"type": "reference"
+						},
+						{
+							"name": "subject",
+							"type": "reference"
+						},
+						{
+							"name": "status",
+							"type": "token"
+						},
+						{
+							"name": "type",
+							"type": "token"
+						}
+					]
+                },
+                {
+                    "type": "Questionnaire",
+                    "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire",
+					"documentation": "For searching supported Questionnaires",
+					"interaction": [
+						{
+							"code": "read"
+						},
+						{
+							"code": "search-type"
+						}
+					],
+					"searchParam": [
+						{
+							"name": "date",
+							"type": "date"
+						},
+						{
+							"name": "description",
+							"type": "string"
+						},
+						{
+							"name": "effective",
+							"type": "date"
+						},
+						{
+							"name": "identifier",
+							"type": "token"
+						},
+						{
+							"name": "name",
+							"type": "string"
+						},
+						{
+							"name": "status",
+							"type": "token"
+						},
+						{
+							"name": "title",
+							"type": "string"
+						},
+						{
+							"name": "version",
+							"type": "token"
+						}
+					]
+                },
+                {
+                    "type": "QuestionnaireResponse",
+                    "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse",
+					"documentation": "Endpoints for interacting with QuestionnaireResponse resources",
+					"interaction": [
+						{
+							"code": "read"
+						},
+						{
+							"code": "vread"
+						},
+						{
+							"code": "update"
+						},
+						{
+							"code": "patch"
+						},
+						{
+							"code": "delete"
+						},
+						{
+							"code": "history-instance"
+						},
+						{
+							"code": "create"
+						},
+						{
+							"code": "search-type"
+						}
+					],
+					"versioning": "versioned",
+					"readHistory": true,
+					"conditionalCreate": true,
+					"referencePolicy": [
+						"resolves"
+					],
+					"searchParam": [
+						{
+							"name": "author",
+							"type": "reference"
+						},
+						{
+							"name": "authored",
+							"type": "date"
+						},
+						{
+							"name": "identifier",
+							"type": "token"
+						},
+						{
+							"name": "subject",
+							"type": "reference"
+						},
+						{
+							"name": "questionnaire",
+							"type": "reference"
+						},
+						{
+							"name": "source",
+							"type": "reference"
+						},
+						{
+							"name": "status",
+							"type": "token"
+						}
+					]
+                },
+                {
+                    "type": "OperationDefinition",
+                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-OperationDefinition"
+                },
+                {
+                    "type": "OperationOutcome",
+                    "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-OperationOutcome",
+					"documentation": "For searching historical OperationOutcomes",
+					"interaction": [
+						{
+							"code": "read"
+						},
+						{
+							"code": "search-type"
+						}
+					]
+                },
+                {
+                    "type": "BodyStructure",
+                    "profile": "http://hl7.org/fhir/StructureDefinition/BodyStructure",
+					"documentation": "Endpoints for interacting with BodyStructure resources",
+					"interaction": [
+						{
+							"code": "read"
+						},
+						{
+							"code": "vread"
+						},
+						{
+							"code": "update"
+						},
+						{
+							"code": "patch"
+						},
+						{
+							"code": "delete"
+						},
+						{
+							"code": "history-instance"
+						},
+						{
+							"code": "create"
+						},
+						{
+							"code": "search-type"
+						}
+					],
+					"versioning": "versioned",
+					"readHistory": true,
+					"conditionalCreate": true,
+					"referencePolicy": [
+						"resolves"
+					],
+					"searchParam": [
+						{
+							"name": "identifier",
+							"type": "token"
+						},
+						{
+							"name": "location",
+							"type": "token"
+						},
+						{
+							"name": "morphology",
+							"type": "token"
+						},
+						{
+							"name": "patient",
+							"type": "reference"
+						}
+					]
+                }
+            ]
+        }
+    ]
+}
