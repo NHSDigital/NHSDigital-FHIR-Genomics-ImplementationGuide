@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "https://fhir.nhs.uk/StructureDefinition/NHSDigital_FamilyMemberHistory_Genomics",
+  "url": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-FamilyMemberHistory-Genomics",
   "name": "NHSDigital_FamilyMemberHistory_Genomics",
   "status": "draft",
   "date": "2023-02-06",
