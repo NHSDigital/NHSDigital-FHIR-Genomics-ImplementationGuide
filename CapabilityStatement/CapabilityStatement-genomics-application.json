@@ -1672,6 +1672,37 @@
 							"type": "reference"
 						}
 					]
+                },
+				{
+                    "type": "Provenance",
+                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Specimen-Genomics",
+					"documentation": "For searching stored Provenance resources",
+					"interaction": [
+						{
+							"code": "read"
+						},
+						{
+							"code": "search-type"
+						}
+					],
+					"searchParam": [
+						{
+							"name": "agent",
+							"type": "reference"
+						},
+						{
+							"name": "entity",
+							"type": "reference"
+						},
+						{
+							"name": "target",
+							"type": "reference"
+						},
+						{
+							"name": "recorded",
+							"type": "date"
+						}
+					]
                 }
             ]
         }

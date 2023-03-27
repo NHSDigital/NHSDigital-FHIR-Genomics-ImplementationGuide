@@ -154,6 +154,10 @@
                 {
                     "type": "BodyStructure",
                     "profile": "http://hl7.org/fhir/StructureDefinition/BodyStructure"
+                },
+                {
+                    "type": "Provenance",
+                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Provenance-Genomics"
                 }
             ]
         }
