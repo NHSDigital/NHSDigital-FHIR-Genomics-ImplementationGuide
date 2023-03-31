@@ -372,7 +372,7 @@
             "subject": {
                "reference": "urn:uuid:9fd5cd87-3668-4946-a109-6e54d0a9df3b"
             },
-            "requester": [
+            "request": [
                {
                   "reference": "urn:uuid:490519b8-3724-4fe7-8367-9f859e7786b4"
                }
@@ -532,7 +532,7 @@
             },
             "authoredOn": "2023-03-30T09:00:00Z",
             "requester": {
-               "reference": "urn:uuid:8d490f90-e24f-428d-8d9d-aecd9e699087"
+               "reference": "PractitionerRole/8d490f90-e24f-428d-8d9d-aecd9e699087"
             },
             "performer": [
                {
@@ -624,7 +624,7 @@
             "receivedTime": "2022-07-13T09:00:00Z",
             "request": [
                {
-                  "reference": "urn:uuid:490519b8-3724-4fe7-8367-9f859e7786b4"
+                  "reference": "ServiceRequest/490519b8-3724-4fe7-8367-9f859e7786b4"
                }
             ],
             "collection": {
