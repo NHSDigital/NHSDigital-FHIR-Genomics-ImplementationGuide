@@ -80,8 +80,7 @@
                   "text": "Michael Chalmers",
                   "family": "Chalmers",
                   "given": [
-                     "Michael",
-                     "Duncan"
+                     "Michael"
                   ]
                }
             ],
@@ -116,7 +115,7 @@
          },
          "request": {
             "method": "POST",
-            "url": "Patient/9fd5cd87-3668-4946-a109-6e54d0a9df3b",
+            "url": "urn:uuid:9fd5cd87-3668-4946-a109-6e54d0a9df3b",
             "ifNoneExist": "identifier=https://www.ouh.nhs.uk//ids|99955524"
          }
       },
@@ -373,7 +372,7 @@
             "subject": {
                "reference": "urn:uuid:9fd5cd87-3668-4946-a109-6e54d0a9df3b"
             },
-            "request": [
+            "requester": [
                {
                   "reference": "urn:uuid:490519b8-3724-4fe7-8367-9f859e7786b4"
                }
@@ -420,7 +419,7 @@
                ]
             },
             "subject": {
-               "reference": "urn:uuid:9fd5cd87-3668-4946-a109-6e54d0a9df3b"
+               "reference": "Patient/9fd5cd87-3668-4946-a109-6e54d0a9df3b"
             },
             "onsetDateTime": "2022-06-13T09:00:00Z",
             "recordedDate": "2022-11-13T09:00:00Z"
@@ -463,7 +462,7 @@
                ]
             },
             "subject": {
-               "reference": "urn:uuid:9fd5cd87-3668-4946-a109-6e54d0a9df3b"
+               "reference": "Patient/9fd5cd87-3668-4946-a109-6e54d0a9df3b"
             },
             "onsetDateTime": "2022-06-13T09:00:00Z",
             "recordedDate": "2022-11-13T09:00:00Z"
@@ -526,7 +525,7 @@
                ]
             },
             "subject": {
-               "reference": "urn:uuid:9fd5cd87-3668-4946-a109-6e54d0a9df3b"
+               "reference": "Patient/9fd5cd87-3668-4946-a109-6e54d0a9df3b"
             },
             "encounter": {
                "display": "UKCore-Encounter-OncologyConsultation-Example"
@@ -590,7 +589,7 @@
                ]
             },
             "subject": {
-               "reference": "urn:uuid:9fd5cd87-3668-4946-a109-6e54d0a9df3b"
+               "reference": "Patient/9fd5cd87-3668-4946-a109-6e54d0a9df3b"
             },
             "onsetDateTime": "1987-09-13T09:00:00Z",
             "recordedDate": "2022-03-13T09:00:00Z"
@@ -758,9 +757,9 @@
             "code": {
                "coding": [
                   {
-                     "system": "http://snomed.info/sct",
-                     "code": "3926003",
-                     "display": "Lactic acid measurement"
+                     "system": "https://loinc.org/",
+                     "code": "2520-5",
+                     "display": "Lactate [Moles/volume] in Cerebral spinal fluid"
                   }
                ]
             },
