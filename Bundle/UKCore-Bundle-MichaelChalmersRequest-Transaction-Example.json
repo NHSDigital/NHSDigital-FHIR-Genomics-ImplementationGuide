@@ -419,7 +419,7 @@
                ]
             },
             "subject": {
-               "reference": "Patient/9fd5cd87-3668-4946-a109-6e54d0a9df3b"
+               "reference": "urn:uuid:9fd5cd87-3668-4946-a109-6e54d0a9df3b"
             },
             "onsetDateTime": "2022-06-13T09:00:00Z",
             "recordedDate": "2022-11-13T09:00:00Z"
@@ -462,7 +462,7 @@
                ]
             },
             "subject": {
-               "reference": "Patient/9fd5cd87-3668-4946-a109-6e54d0a9df3b"
+               "reference": "urn:uuid:9fd5cd87-3668-4946-a109-6e54d0a9df3b"
             },
             "onsetDateTime": "2022-06-13T09:00:00Z",
             "recordedDate": "2022-11-13T09:00:00Z"
@@ -525,7 +525,7 @@
                ]
             },
             "subject": {
-               "reference": "Patient/9fd5cd87-3668-4946-a109-6e54d0a9df3b"
+               "reference": "urn:uuid:9fd5cd87-3668-4946-a109-6e54d0a9df3b"
             },
             "encounter": {
                "display": "UKCore-Encounter-OncologyConsultation-Example"
@@ -589,7 +589,7 @@
                ]
             },
             "subject": {
-               "reference": "Patient/9fd5cd87-3668-4946-a109-6e54d0a9df3b"
+               "reference": "urn:uuid:9fd5cd87-3668-4946-a109-6e54d0a9df3b"
             },
             "onsetDateTime": "1987-09-13T09:00:00Z",
             "recordedDate": "2022-03-13T09:00:00Z"
@@ -624,7 +624,7 @@
             "receivedTime": "2022-07-13T09:00:00Z",
             "request": [
                {
-                  "reference": "ServiceRequest/490519b8-3724-4fe7-8367-9f859e7786b4"
+                  "reference": "urn:uuid:490519b8-3724-4fe7-8367-9f859e7786b4"
                }
             ],
             "collection": {
@@ -651,8 +651,11 @@
                   }
                ]
             },
+            "subject": {
+               "reference": "urn:uuid:9fd5cd87-3668-4946-a109-6e54d0a9df3b"
+            },
             "specimen": {
-               "reference": "urn:uuid:6b3b974e-3437-432d-b7d9-b443c96bd886"
+               "reference": "Specimen/6b3b974e-3437-432d-b7d9-b443c96bd886"
             },
             "valueBoolean": true
          },
@@ -735,8 +738,8 @@
                   }
                ]
             },
-            "specimen": {
-               "reference": "urn:uuid:6b3b974e-3437-432d-b7d9-b443c96bd886"
+            "subject": {
+               "reference": "urn:uuid:9fd5cd87-3668-4946-a109-6e54d0a9df3b"
             },
             "valueQuantity": {
                "value": 29,
@@ -763,8 +766,8 @@
                   }
                ]
             },
-            "specimen": {
-               "reference": "urn:uuid:6b3b974e-3437-432d-b7d9-b443c96bd886"
+            "subject": {
+               "reference": "urn:uuid:9fd5cd87-3668-4946-a109-6e54d0a9df3b"
             },
             "valueQuantity": {
                "value": 1.3,
