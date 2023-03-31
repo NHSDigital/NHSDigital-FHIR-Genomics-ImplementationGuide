@@ -655,7 +655,7 @@
                "reference": "urn:uuid:9fd5cd87-3668-4946-a109-6e54d0a9df3b"
             },
             "specimen": {
-               "reference": "Specimen/6b3b974e-3437-432d-b7d9-b443c96bd886"
+               "reference": "urn:uuid:6b3b974e-3437-432d-b7d9-b443c96bd886"
             },
             "valueBoolean": true
          },
