@@ -414,7 +414,7 @@
                   {
                      "system": "http://snomed.info/sct",
                      "code": "39925003",
-                     "display": "MELAS/MERRF"
+                     "display": "Juvenile myopathy, encephalopathy, lactic acidosis AND stroke"
                   }
                ]
             },
@@ -457,7 +457,7 @@
                   {
                      "system": "http://snomed.info/sct",
                      "code": "221360009",
-                     "display": "Spasticity and Mobility"
+                     "display": "Spasticity"
                   }
                ]
             },
@@ -519,8 +519,8 @@
                "coding": [
                   {
                      "system": "http://snomed.info/sct",
-                     "code": "63491000000109",
-                     "display": "Mitochondrial Diseases"
+                     "code": "877971000000101",
+                     "display": "Mitochondrial 1555A>G mutation analysis"
                   }
                ]
             },
@@ -544,8 +544,8 @@
                   "coding": [
                      {
                         "system": "http://snomed.info/sct",
-                        "code": "363418001",
-                        "display": "Spastiscity and Mobility"
+                        "code": "221360009",
+                        "display": "Spastiscity"
                      }
                   ]
                }
@@ -583,7 +583,7 @@
                "coding": [
                   {
                      "system": "http://snomed.info/sct",
-                     "code": "267770004",
+                     "code": "8531006",
                      "display": "Deafness"
                   }
                ]
@@ -760,7 +760,7 @@
             "code": {
                "coding": [
                   {
-                     "system": "https://loinc.org/",
+                     "system": "http://loinc.org",
                      "code": "2520-5",
                      "display": "Lactate [Moles/volume] in Cerebral spinal fluid"
                   }
