@@ -544,8 +544,8 @@
                   "coding": [
                      {
                         "system": "http://snomed.info/sct",
-                        "code": "221360009",
-                        "display": "Spastiscity"
+                        "code": "404684003",
+                        "display": "Clinical Finding"
                      }
                   ]
                }
@@ -584,7 +584,7 @@
                   {
                      "system": "http://snomed.info/sct",
                      "code": "8531006",
-                     "display": "Deafness"
+                     "display": "Complete deafness"
                   }
                ]
             },
@@ -614,7 +614,7 @@
                   {
                      "system": "http://snomed.info/sct",
                      "code": "432058006",
-                     "display": "Muscle"
+                     "display": "Specimen from skeletal muscle obtained by biopsy"
                   }
                ]
             },
@@ -647,7 +647,7 @@
                   {
                      "system": "http://snomed.info/sct",
                      "code": "839021000000109",
-                     "display": "Biopsy(sample taken alive)"
+                     "display": "Post mortem sample"
                   }
                ]
             },
