@@ -372,11 +372,11 @@
             "subject": {
                "reference": "urn:uuid:9fd5cd87-3668-4946-a109-6e54d0a9df3b"
             },
-            "request": [
+            "request": 
                {
                   "reference": "urn:uuid:490519b8-3724-4fe7-8367-9f859e7786b4"
                }
-            ],
+            ,
             "collection": {
                "collectedDateTime": "2022-07-11T09:00:00Z"
             }
@@ -545,7 +545,7 @@
                      {
                         "system": "http://snomed.info/sct",
                         "code": "404684003",
-                        "display": "Clinical Finding"
+                        "display": "Clinical finding"
                      }
                   ]
                }
@@ -622,11 +622,11 @@
                "reference": "urn:uuid:9fd5cd87-3668-4946-a109-6e54d0a9df3b"
             },
             "receivedTime": "2022-07-13T09:00:00Z",
-            "request": [
+            "request": 
                {
                   "reference": "urn:uuid:490519b8-3724-4fe7-8367-9f859e7786b4"
                }
-            ],
+            ,
             "collection": {
                "collectedDateTime": "2022-07-11T09:00:00Z"
             }
