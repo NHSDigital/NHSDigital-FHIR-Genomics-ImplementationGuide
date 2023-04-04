@@ -372,11 +372,11 @@
             "subject": {
                "reference": "urn:uuid:9fd5cd87-3668-4946-a109-6e54d0a9df3b"
             },
-            "request": 
+            "request": [
                {
                   "reference": "urn:uuid:490519b8-3724-4fe7-8367-9f859e7786b4"
                }
-            ,
+            ],
             "collection": {
                "collectedDateTime": "2022-07-11T09:00:00Z"
             }
@@ -532,7 +532,7 @@
             },
             "authoredOn": "2023-03-30T09:00:00Z",
             "requester": {
-               "reference": "PractitionerRole/8d490f90-e24f-428d-8d9d-aecd9e699087"
+               "reference": "urn:uuid:8d490f90-e24f-428d-8d9d-aecd9e699087"
             },
             "performer": [
                {
@@ -613,8 +613,8 @@
                "coding": [
                   {
                      "system": "http://snomed.info/sct",
-                     "code": "432058006",
-                     "display": "Specimen from skeletal muscle obtained by biopsy"
+                     "code": "256668009",
+                     "display": "Muscle material"
                   }
                ]
             },
@@ -622,11 +622,11 @@
                "reference": "urn:uuid:9fd5cd87-3668-4946-a109-6e54d0a9df3b"
             },
             "receivedTime": "2022-07-13T09:00:00Z",
-            "request": 
+            "request": [
                {
                   "reference": "urn:uuid:490519b8-3724-4fe7-8367-9f859e7786b4"
                }
-            ,
+            ],
             "collection": {
                "collectedDateTime": "2022-07-11T09:00:00Z"
             }
