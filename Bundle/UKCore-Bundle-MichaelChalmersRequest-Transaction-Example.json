@@ -628,40 +628,21 @@
                }
             ],
             "collection": {
-               "collectedDateTime": "2022-07-11T09:00:00Z"
+               "collectedDateTime": "2022-07-11T09:00:00Z",
+               "method": {
+                  "coding": [
+                     {
+                        "system": "http://snomed.info/sct",
+                        "code": "129314006",
+                        "display": "Biopsy - action"
+                     }
+                  ]
+               }
             }
          },
          "request": {
             "method": "POST",
             "url": "urn:uuid:6b3b974e-3437-432d-b7d9-b443c96bd886"
-         }
-      },
-      {
-         "fullUrl": "urn:uuid:c4d5f915-f0bf-43f9-bcf2-1e1b0787549e",
-         "resource": {
-            "resourceType": "Observation",
-            "id": "c4d5f915-f0bf-43f9-bcf2-1e1b0787549e",
-            "status": "final",
-            "code": {
-               "coding": [
-                  {
-                     "system": "http://snomed.info/sct",
-                     "code": "839021000000109",
-                     "display": "Post mortem sample"
-                  }
-               ]
-            },
-            "subject": {
-               "reference": "urn:uuid:9fd5cd87-3668-4946-a109-6e54d0a9df3b"
-            },
-            "specimen": {
-               "reference": "urn:uuid:6b3b974e-3437-432d-b7d9-b443c96bd886"
-            },
-            "valueBoolean": true
-         },
-         "request": {
-            "method": "POST",
-            "url": "urn:uuid:c4d5f915-f0bf-43f9-bcf2-1e1b0787549e"
          }
       },
       {
@@ -733,8 +714,8 @@
                "coding": [
                   {
                      "system": "http://snomed.info/sct",
-                     "code": "29525002",
-                     "display": "Creatine kinase measurement"
+                     "code": "1028101000000105",
+                     "display": "Creatine kinase level"
                   }
                ]
             },
