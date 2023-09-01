@@ -1,0 +1,51 @@
+{
+	"resourceType": "Task",
+	"id": "Task-WGSRareDiseaseTestOrder-Example",
+	"status": "ready",
+	"businessStatus": { 
+		"coding": [
+			{ 
+				"system": "https://fhir.nhs.uk/CodeSystem/business-status-genomics", 
+				"code": "SpecimenReceived", 
+				"display": "Specimen Received"
+			}
+		]
+	},
+	"intent": "order",
+	"priority": "routine",
+	"code": { 
+		"coding": [
+			{ 
+				"system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics", 
+				"code": "SamplePrep", 
+				"display": "Sample Prep"
+			}
+		]
+	},
+	"focus": {
+		"reference": "ServiceRequest/ServiceRequest-SavedTestOrder-Example"
+	},
+	"for": {
+		"reference": "Patient/Patient-LindsaySorrell-Example"
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/nhs-number",
+			"value": "9449307946"
+		}
+	},
+	"authoredOn": "2022-08-08",
+	"requester": {
+		"reference": "PractitionerRole/PractitionerRole-HazelSmithRenal-Example"
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/sds-user-id",
+			"value": "9999999998"
+		}
+	},
+	"owner": {
+		"reference": "Organization/Organization-GEL-Example",
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/ods-organization-code",
+			"value": "8J834"
+		},
+		"display": "GENOMICS ENGLAND"
+	}
+}
