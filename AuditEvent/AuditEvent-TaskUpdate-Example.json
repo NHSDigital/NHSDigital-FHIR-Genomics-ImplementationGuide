@@ -31,6 +31,11 @@
 			"requestor": true
 		}
 	],
+	"source": {
+		"observer": {
+			"reference": "PractitionerRole/PractitionerRole-TestClinicalScientist-Example"
+		}
+	},
 	"entity": [
 		{
 			"what": {

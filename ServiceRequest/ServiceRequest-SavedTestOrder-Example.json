@@ -70,9 +70,11 @@
 			]
 		}
 	],
-	"reasonReference": {
-		"reference": "Condition/Condition-DiseaseStatus-Example"
-	},
+	"reasonReference": [
+		{
+			"reference": "Condition/Condition-DiseaseStatus-Example"
+		}
+	],
 	"supportingInfo": [
 		{
 			"reference": "Observation/Observation-GenomicEthnicity-Example"
