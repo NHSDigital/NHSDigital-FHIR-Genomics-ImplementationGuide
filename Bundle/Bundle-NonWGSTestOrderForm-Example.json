@@ -124,6 +124,14 @@
 						},
 						"display": "Dr. Aero Smith, 123 Test Practice"
 					}
+				],
+				"link": [
+					{
+						"other": {
+							"reference": "https://api.service.nhs.uk/personal-demographics/FHIR/R4/Patient/9449307873"
+						},
+						"type": "seealso"
+					}
 				]
 			},
       "request": {
@@ -236,7 +244,7 @@
 						"reference": "Observation/Observation-GenomicEthnicity-Example"
 					},
 					{
-						"reference": "Condition/Condition-DiseaseStatus-Example"
+						"reference": "Observation/Observation-NoPregnancy-Example"
 					},
 					{
 						"reference": "FamilyMemberHistory/FamilyMemberHistory-NonConsanguinousUnion-Example"
@@ -389,7 +397,7 @@
 						"value": "9449307873"
 					}
 				},
-				"effectiveDateTime": "2023-08-05555555555555",
+				"effectiveDateTime": "2023-08-05",
 				"valueBoolean": false
 			},
       "request": {

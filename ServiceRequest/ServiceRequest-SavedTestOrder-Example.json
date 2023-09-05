@@ -78,7 +78,7 @@
 			"reference": "Observation/Observation-GenomicEthnicity-Example"
 		},
 		{
-			"reference": "Condition/Condition-DiseaseStatus-Example"
+			"reference": "Observation/Observation-NoPregnancy-Example"
 		},
 		{
 			"reference": "FamilyMemberHistory/FamilyMemberHistory-NonConsanguinousUnion-Example"
