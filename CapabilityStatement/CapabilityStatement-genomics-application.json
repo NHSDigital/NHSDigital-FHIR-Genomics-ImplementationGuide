@@ -1,22 +1,22 @@
 {
-    "resourceType": "CapabilityStatement",
-    "id": "CapabilityStatement-genomics-application",
-    "url": "https://fhir.nhs.uk/CapabilityStatement/CapabilityStatement-genomics-application",
-    "version": "0.1.0",
-    "name": "CapabilityStatementGenomicsApplication",
-    "status": "draft",
-    "date": "2023-02-27T00:00:00+00:00",
-    "publisher": "NHS England",
-    "description": "Sample server capability for the Genomic Medicine Service",
-    "kind": "instance",
-    "implementationGuide":  [
-        "https://simplifier.net/guide/fhir-genomics-implementation-guide",
-        "https://simplifier.net/guide/nhsdigital"
-    ],
-    "fhirVersion": "4.0.1",
-    "format":  [
-        "application/fhir+json"
-    ],
+	"resourceType": "CapabilityStatement",
+	"id": "CapabilityStatement-genomics-application",
+	"url": "https://fhir.nhs.uk/CapabilityStatement/CapabilityStatement-genomics-application",
+	"version": "0.1.0",
+	"name": "CapabilityStatementGenomicsApplication",
+	"status": "draft",
+	"date": "2023-02-27T00:00:00+00:00",
+	"publisher": "NHS England",
+	"description": "Sample server capability for the Genomic Medicine Service",
+	"kind": "instance",
+	"implementationGuide":  [
+			"https://simplifier.net/guide/fhir-genomics-implementation-guide",
+			"https://simplifier.net/guide/nhsdigital"
+	],
+	"fhirVersion": "4.0.1",
+	"format":  [
+			"application/fhir+json"
+	],
 	"implementation": {
 		"description": "Exemplar CapabilityStatement for the GMS central broker implementation"
 	},
@@ -45,27 +45,27 @@
 			]
 		}
 	],
-    "rest":  [
-        {
-            "mode": "server",
+	"rest":  [
+		{
+			"mode": "server",
 			"documentation": "RESTful endpoints supported by the Genomic Medicine Service",
-            "security": {
-                "service":  [
-                    {
-                        "coding":  [
-                            {
-                                "system": "http://terminology.hl7.org/CodeSystem/restful-security-service",
-                                "code": "OAuth",
-                                "display": "OAuth2 Token"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "resource":  [
-                {
-                    "type": "Bundle",
-                    "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Bundle", 
+			"security": {
+				"service":  [
+					{
+						"coding":  [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/restful-security-service",
+								"code": "OAuth",
+								"display": "OAuth2 Token"
+							}
+						]
+					}
+				]
+			},
+			"resource":  [
+				{
+					"type": "Bundle",
+					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Bundle", 
 					"documentation": "For posting transaction bundles to the server",
 					"interaction": [
 						{
@@ -76,10 +76,10 @@
 					"referencePolicy": [
 						"resolves"
 					]
-                },
+				},
 				{
-                    "type": "CodeSystem",
-                    "profile": "http://hl7.org/fhir/StructureDefinition/CodeSystem",
+					"type": "CodeSystem",
+					"profile": "http://hl7.org/fhir/StructureDefinition/CodeSystem",
 					"documentation": "For searching supported CodeSystems",
 					"interaction": [
 						{
@@ -119,10 +119,10 @@
 							"type": "string"
 						}
 					]
-                },
+				},
 				{
-                    "type": "ConceptMap",
-                    "profile": "http://hl7.org/fhir/StructureDefinition/ConceptMap",
+					"type": "ConceptMap",
+					"profile": "http://hl7.org/fhir/StructureDefinition/ConceptMap",
 					"documentation": "For searching provided ConceptMaps",
 					"interaction": [
 						{
@@ -162,10 +162,10 @@
 							"type": "string"
 						}
 					]
-                },
+				},
 				{
-                    "type": "HealthcareService",
-                    "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-HealthcareService",
+					"type": "HealthcareService",
+					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-HealthcareService",
 					"documentation": "Endpoints for interacting with HealthcareService resources",
 					"interaction": [
 						{
@@ -237,10 +237,10 @@
 							"type": "token"
 						}
 					]
-                },
+				},
 				{
-                    "type": "MessageDefinition",
-                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-MessageDefinition-Genomics",
+					"type": "MessageDefinition",
+					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-MessageDefinition-Genomics",
 					"documentation": "For searching supported MessageDefinitions",
 					"interaction": [
 						{
@@ -272,10 +272,10 @@
 							"type": "string"
 						}
 					]
-                },
+				},
 				{
-                    "type": "NamingSystem",
-                    "profile": "http://hl7.org/fhir/StructureDefinition/NamingSystem",
+					"type": "NamingSystem",
+					"profile": "http://hl7.org/fhir/StructureDefinition/NamingSystem",
 					"documentation": "For searching supported NamingSystems",
 					"interaction": [
 						{
@@ -299,14 +299,14 @@
 							"type": "string"
 						}
 					]
-                },
+				},
 				{
-                    "type": "Parameters",
-                    "profile": "http://hl7.org/fhir/StructureDefinition/Parameters"
-                },
+					"type": "Parameters",
+					"profile": "http://hl7.org/fhir/StructureDefinition/Parameters"
+				},
 				{
-                    "type": "StructureMap",
-                    "profile": "http://hl7.org/fhir/StructureDefinition/StructureMap",
+					"type": "StructureMap",
+					"profile": "http://hl7.org/fhir/StructureDefinition/StructureMap",
 					"documentation": "For searching provided StructureMaps",
 					"interaction": [
 						{
@@ -334,10 +334,10 @@
 							"type": "string"
 						}
 					]
-                },
+				},
 				{
-                    "type": "ValueSet",
-                    "profile": "http://hl7.org/fhir/StructureDefinition/ValueSet",
+					"type": "ValueSet",
+					"profile": "http://hl7.org/fhir/StructureDefinition/ValueSet",
 					"documentation": "For searching supported CodeSystems",
 					"interaction": [
 						{
@@ -373,10 +373,10 @@
 							"type": "string"
 						}
 					]
-                },
-                {
-                    "type": "MessageHeader",
-                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-MessageHeader-Genomics",
+				},
+				{
+					"type": "MessageHeader",
+					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-MessageHeader-Genomics",
 					"documentation": "Endpoints for interacting with MessageHeader resources",
 					"interaction": [
 						{
@@ -424,10 +424,10 @@
 							"type": "uri"
 						}
 					]
-                },
-                {
-                    "type": "Subscription",
-                    "profile": "http://hl7.org/fhir/StructureDefinition/Subscription",
+				},
+				{
+					"type": "Subscription",
+					"profile": "http://hl7.org/fhir/StructureDefinition/Subscription",
 					"documentation": "Endpoints for interacting with Subscription resources",
 					"interaction": [
 						{
@@ -480,10 +480,10 @@
 							"type": "uri"
 						}
 					]
-                },
-                {
-                    "type": "CapabilityStatement",
-                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-CapabilityStatement",
+				},
+				{
+					"type": "CapabilityStatement",
+					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-CapabilityStatement",
 					"documentation": "For searching provided CapabilityStatements",
 					"interaction": [
 						{
@@ -523,10 +523,10 @@
 							"type": "string"
 						}
 					]
-                },
-                {
-                    "type": "Task",
-                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Task-Genomics",
+				},
+				{
+					"type": "Task",
+					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Task-Genomics",
 					"documentation": "Endpoints for interacting with Task resources",
 					"interaction": [
 						{
@@ -610,10 +610,10 @@
 							"type": "token"
 						}
 					]
-                },
-                {
-                    "type": "ServiceRequest",
-                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-ServiceRequest-Genomics",
+				},
+				{
+					"type": "ServiceRequest",
+					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-ServiceRequest-Genomics",
 					"documentation": "Endpoints for interacting with ServiceRequest resources",
 					"interaction": [
 						{
@@ -701,10 +701,10 @@
 							"type": "token"
 						}
 					]
-                },
-                {
-                    "type": "PractitionerRole",
-                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole-Genomics",
+				},
+				{
+					"type": "PractitionerRole",
+					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole-Genomics",
 					"documentation": "Endpoints for interacting with PractitionerRole resources",
 					"interaction": [
 						{
@@ -764,10 +764,10 @@
 							"type": "token"
 						}
 					]
-                },
-                {
-                    "type": "Practitioner",
-                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Practitioner-Genomics",
+				},
+				{
+					"type": "Practitioner",
+					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Practitioner-Genomics",
 					"documentation": "Endpoints for interacting with Practitioner resources",
 					"interaction": [
 						{
@@ -811,10 +811,10 @@
 							"type": "token"
 						}
 					]
-                },
-                {
-                    "type": "Organization",
-                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization-Genomics",
+				},
+				{
+					"type": "Organization",
+					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization-Genomics",
 					"documentation": "Endpoints for interacting with PractitionerRole resources",
 					"interaction": [
 						{
@@ -874,10 +874,10 @@
 							"type": "token"
 						}
 					]
-                },
-                {
-                    "type": "DiagnosticReport",
-                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-DiagnosticReport-Genomics",
+				},
+				{
+					"type": "DiagnosticReport",
+					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-DiagnosticReport-Genomics",
 					"documentation": "Endpoints for interacting with DiagnosticReport resources",
 					"interaction": [
 						{
@@ -965,10 +965,10 @@
 							"type": "token"
 						}
 					]
-                },
-                {
-                    "type": "FamilyMemberHistory",
-                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-FamilyMemberHistory-Genomics",
+				},
+				{
+					"type": "FamilyMemberHistory",
+					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-FamilyMemberHistory-Genomics",
 					"documentation": "Endpoints for interacting with FamilyMemberHistory resources",
 					"interaction": [
 						{
@@ -1032,10 +1032,10 @@
 							"type": "token"
 						}
 					]
-                },
-                {
-                    "type": "Observation",
-                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Observation-Genomics",
+				},
+				{
+					"type": "Observation",
+					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Observation-Genomics",
 					"documentation": "Endpoints for interacting with Observation resources",
 					"interaction": [
 						{
@@ -1123,10 +1123,10 @@
 							"type": "token"
 						}
 					]
-                },
-                {
-                    "type": "Patient",
-                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient-Genomics",
+				},
+				{
+					"type": "Patient",
+					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient-Genomics",
 					"documentation": "Endpoints for interacting with Patient resources",
 					"interaction": [
 						{
@@ -1202,10 +1202,10 @@
 							"type": "token"
 						}
 					]
-                },
-                {
-                    "type": "Consent",
-                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Consent-Genomics",
+				},
+				{
+					"type": "Consent",
+					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Consent-Genomics",
 					"documentation": "Endpoints for interacting with Consent resources",
 					"interaction": [
 						{
@@ -1273,10 +1273,10 @@
 							"type": "date"
 						}
 					]
-                },
-                {
-                    "type": "Condition",
-                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Condition-Genomics",
+				},
+				{
+					"type": "Condition",
+					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Condition-Genomics",
 					"documentation": "Endpoints for interacting with Condition resources",
 					"interaction": [
 						{
@@ -1356,14 +1356,14 @@
 							"type": "token"
 						}
 					]
-                },
-                {
-                    "type": "ResearchSubject",
-                    "profile": "http://hl7.org/fhir/StructureDefinition/ResearchSubject"
-                },
-                {
-                    "type": "RelatedPerson",
-                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-RelatedPerson-Genomics",
+				},
+				{
+					"type": "ResearchSubject",
+					"profile": "http://hl7.org/fhir/StructureDefinition/ResearchSubject"
+				},
+				{
+					"type": "RelatedPerson",
+					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-RelatedPerson-Genomics",
 					"documentation": "Endpoints for interacting with RelatedPerson resources",
 					"interaction": [
 						{
@@ -1407,10 +1407,10 @@
 							"type": "token"
 						}
 					]
-                },
-                {
-                    "type": "Specimen",
-                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Specimen-Genomics",
+				},
+				{
+					"type": "Specimen",
+					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Specimen-Genomics",
 					"documentation": "Endpoints for interacting with Specimen resources",
 					"interaction": [
 						{
@@ -1486,10 +1486,10 @@
 							"type": "token"
 						}
 					]
-                },
-                {
-                    "type": "Questionnaire",
-                    "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire",
+				},
+				{
+					"type": "Questionnaire",
+					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire",
 					"documentation": "For searching supported Questionnaires",
 					"interaction": [
 						{
@@ -1533,10 +1533,10 @@
 							"type": "token"
 						}
 					]
-                },
-                {
-                    "type": "QuestionnaireResponse",
-                    "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse",
+				},
+				{
+					"type": "QuestionnaireResponse",
+					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse",
 					"documentation": "Endpoints for interacting with QuestionnaireResponse resources",
 					"interaction": [
 						{
@@ -1600,14 +1600,14 @@
 							"type": "token"
 						}
 					]
-                },
-                {
-                    "type": "OperationDefinition",
-                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-OperationDefinition"
-                },
-                {
-                    "type": "OperationOutcome",
-                    "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-OperationOutcome",
+				},
+				{
+					"type": "OperationDefinition",
+					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-OperationDefinition"
+				},
+				{
+					"type": "OperationOutcome",
+					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-OperationOutcome",
 					"documentation": "For searching historical OperationOutcomes",
 					"interaction": [
 						{
@@ -1617,10 +1617,10 @@
 							"code": "search-type"
 						}
 					]
-                },
-                {
-                    "type": "BodyStructure",
-                    "profile": "http://hl7.org/fhir/StructureDefinition/BodyStructure",
+				},
+				{
+					"type": "BodyStructure",
+					"profile": "http://hl7.org/fhir/StructureDefinition/BodyStructure",
 					"documentation": "Endpoints for interacting with BodyStructure resources",
 					"interaction": [
 						{
@@ -1672,10 +1672,10 @@
 							"type": "reference"
 						}
 					]
-                },
+				},
 				{
-                    "type": "Provenance",
-                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Specimen-Genomics",
+					"type": "Provenance",
+					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Specimen-Genomics",
 					"documentation": "For searching stored Provenance resources",
 					"interaction": [
 						{
@@ -1703,8 +1703,8 @@
 							"type": "date"
 						}
 					]
-                }
-            ]
-        }
-    ]
+				}
+			]
+		}
+	]
 }
