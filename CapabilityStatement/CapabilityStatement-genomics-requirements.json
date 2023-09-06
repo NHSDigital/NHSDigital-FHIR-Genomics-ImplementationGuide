@@ -85,31 +85,31 @@
 				},
 				{
 					"type": "ServiceRequest",
-					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-ServiceRequest-Genomics"
+					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest"
 				},
 				{
 					"type": "PractitionerRole",
-					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole-Genomics"
+					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole"
 				},
 				{
 					"type": "Practitioner",
-					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Practitioner-Genomics"
+					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner"
 				},
 				{
 					"type": "Organization",
-					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization-Genomics"
+					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization"
 				},
 				{
 					"type": "DiagnosticReport",
-					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-DiagnosticReport-Genomics"
+					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport"
 				},
 				{
 					"type": "FamilyMemberHistory",
-					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-FamilyMemberHistory-Genomics"
+					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-FamilyMemberHistory"
 				},
 				{
 					"type": "Observation",
-					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Observation-Genomics"
+					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation"
 				},
 				{
 					"type": "Patient",
@@ -117,11 +117,11 @@
 				},
 				{
 					"type": "Consent",
-					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Consent-Genomics"
+					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Consent"
 				},
 				{
 					"type": "Condition",
-					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Condition-Genomics"
+					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition"
 				},
 				{
 					"type": "ResearchSubject",
@@ -129,11 +129,11 @@
 				},
 				{
 					"type": "RelatedPerson",
-					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-RelatedPerson-Genomics"
+					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson"
 				},
 				{
 					"type": "Specimen",
-					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Specimen-Genomics"
+					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen"
 				},
 				{
 					"type": "Questionnaire",

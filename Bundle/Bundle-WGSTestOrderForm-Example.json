@@ -645,9 +645,11 @@
 						"value": "9449307946"
 					}
 				},
-				"request": {
-					"reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-Example"
-				}
+				"request": [
+					{
+						"reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-Example"
+					}
+				]
 			},
       "request": {
         "method": "POST",
