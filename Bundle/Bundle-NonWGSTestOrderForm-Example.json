@@ -506,7 +506,7 @@
 						"value": "RGT03135"
 					}
 				],
-				"status": "unavailable"
+				"status": "unavailable",
 				"type": {
 					"coding": [
 						{
@@ -523,9 +523,11 @@
 						"value": "9449307873"
 					}
 				},
-				"request": {
-					"reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-Example",
-				}
+				"request": [
+					{
+						"reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-Example"
+					}
+				]
 			},
       "request": {
         "method": "POST",
