@@ -426,7 +426,7 @@
 					"coding": [
 						{
 							"system": "http://snomed.info/sct",
-							"code": "77465005",
+							"code": "23719005",
 							"display": "Transplantation of bone marrow"
 						}
 					]
@@ -645,9 +645,11 @@
 						"value": "9449307946"
 					}
 				},
-				"request": {
-					"reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-Example"
-				}
+				"request": [
+					{
+						"reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-Example"
+					}
+				]
 			},
       "request": {
         "method": "POST",

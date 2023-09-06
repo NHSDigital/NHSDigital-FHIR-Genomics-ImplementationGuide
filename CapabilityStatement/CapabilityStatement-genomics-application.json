@@ -526,7 +526,7 @@
 				},
 				{
 					"type": "Task",
-					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Task-Genomics",
+					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Task",
 					"documentation": "Endpoints for interacting with Task resources",
 					"interaction": [
 						{
@@ -613,7 +613,7 @@
 				},
 				{
 					"type": "ServiceRequest",
-					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-ServiceRequest-Genomics",
+					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest",
 					"documentation": "Endpoints for interacting with ServiceRequest resources",
 					"interaction": [
 						{
@@ -704,7 +704,7 @@
 				},
 				{
 					"type": "PractitionerRole",
-					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole-Genomics",
+					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole",
 					"documentation": "Endpoints for interacting with PractitionerRole resources",
 					"interaction": [
 						{
@@ -767,7 +767,7 @@
 				},
 				{
 					"type": "Practitioner",
-					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Practitioner-Genomics",
+					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner",
 					"documentation": "Endpoints for interacting with Practitioner resources",
 					"interaction": [
 						{
@@ -814,7 +814,7 @@
 				},
 				{
 					"type": "Organization",
-					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization-Genomics",
+					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization",
 					"documentation": "Endpoints for interacting with PractitionerRole resources",
 					"interaction": [
 						{
@@ -877,7 +877,7 @@
 				},
 				{
 					"type": "DiagnosticReport",
-					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-DiagnosticReport-Genomics",
+					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport",
 					"documentation": "Endpoints for interacting with DiagnosticReport resources",
 					"interaction": [
 						{
@@ -968,7 +968,7 @@
 				},
 				{
 					"type": "FamilyMemberHistory",
-					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-FamilyMemberHistory-Genomics",
+					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-FamilyMemberHistory",
 					"documentation": "Endpoints for interacting with FamilyMemberHistory resources",
 					"interaction": [
 						{
@@ -1035,7 +1035,7 @@
 				},
 				{
 					"type": "Observation",
-					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Observation-Genomics",
+					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation",
 					"documentation": "Endpoints for interacting with Observation resources",
 					"interaction": [
 						{
@@ -1126,7 +1126,7 @@
 				},
 				{
 					"type": "Patient",
-					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient-Genomics",
+					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient",
 					"documentation": "Endpoints for interacting with Patient resources",
 					"interaction": [
 						{
@@ -1205,7 +1205,7 @@
 				},
 				{
 					"type": "Consent",
-					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Consent-Genomics",
+					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Consent",
 					"documentation": "Endpoints for interacting with Consent resources",
 					"interaction": [
 						{
@@ -1276,7 +1276,7 @@
 				},
 				{
 					"type": "Condition",
-					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Condition-Genomics",
+					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition",
 					"documentation": "Endpoints for interacting with Condition resources",
 					"interaction": [
 						{
@@ -1410,7 +1410,7 @@
 				},
 				{
 					"type": "Specimen",
-					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Specimen-Genomics",
+					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen",
 					"documentation": "Endpoints for interacting with Specimen resources",
 					"interaction": [
 						{
@@ -1675,7 +1675,7 @@
 				},
 				{
 					"type": "Provenance",
-					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Specimen-Genomics",
+					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Provenance-Genomics",
 					"documentation": "For searching stored Provenance resources",
 					"interaction": [
 						{
