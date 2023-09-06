@@ -100,7 +100,7 @@
 			"text": "No family history of genomic testing"
 		},
 		{
-			"text": "Free text for diagnosis/reason for referral, relevant information including family history, phenotypic details/ HPO Terms<br />Patient in need of test...example"
+			"text": "Free text for diagnosis/reason for referral, relevant information including family history, phenotypic details/ HPO Terms/ Patient in need of test...example"
 		}
 	]
 }
