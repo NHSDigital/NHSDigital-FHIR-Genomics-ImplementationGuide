@@ -169,9 +169,9 @@
 					{ 
 						"coding": [
 							{ 
-								"system": "https://fhir.nhs.uk/CodeSystem/organisation-role", 
-								"code": "172", 
-								"display": "INDEPENDENT SECTOR HEALTHCARE PROVIDER"
+								"system": "http://terminology.hl7.org/CodeSystem/organization-type", 
+								"code": "prov", 
+								"display": "Healthcare Provider"
 							}
 						]
 					}
@@ -236,9 +236,9 @@
 					{ 
 						"coding": [
 							{ 
-								"system": "https://fhir.nhs.uk/CodeSystem/organisation-role", 
-								"code": "173", 
-								"display": "PATHOLOGY LAB"
+								"system": "http://terminology.hl7.org/CodeSystem/organization-type", 
+								"code": "dept", 
+								"display": "Hospital Department"
 							}
 						]
 					}
@@ -309,9 +309,9 @@
 					{ 
 						"coding": [
 							{ 
-								"system": "https://fhir.nhs.uk/CodeSystem/organisation-role", 
-								"code": "197", 
-								"display": "NHS TRUST"
+								"system": "http://terminology.hl7.org/CodeSystem/organization-type", 
+								"code": "prov", 
+								"display": "Healthcare Provider"
 							}
 						]
 					}

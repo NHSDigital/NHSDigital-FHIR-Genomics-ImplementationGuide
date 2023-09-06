@@ -11,9 +11,9 @@
 		{ 
 			"coding": [
 				{ 
-					"system": "https://fhir.nhs.uk/CodeSystem/organisation-role", 
-					"code": "173", 
-					"display": "PATHOLOGY LAB"
+					"system": "http://terminology.hl7.org/CodeSystem/organization-type", 
+					"code": "dept", 
+					"display": "Hospital Department"
 				}
 			]
 		}
