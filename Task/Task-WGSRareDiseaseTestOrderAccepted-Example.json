@@ -1,6 +1,6 @@
 {
 	"resourceType": "Task",
-	"id": "Task-WGSRareDiseaseTestOrder-Example",
+	"id": "Task-WGSRareDiseaseTestOrderAccepted-Example",
 	"status": "on-hold",
 	"businessStatus": { 
 		"coding": [
