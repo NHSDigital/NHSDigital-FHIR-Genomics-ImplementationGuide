@@ -32,14 +32,12 @@
 				"sourceReference": {
 					"reference": "QuestionnaireResponse/QuestionnaireResponse-RoD-Example"
 				},
-				"policyRule": {
-					"coding": [
-						{
-							"system": "http://terminology.hl7.org/CodeSystem/consentpolicycodes",
-							"code": "hipaa-research"
-						}
-					]
-				}
+				"policy": [
+					{
+						"authority": "https://www.england.nhs.uk",
+						"uri": "https://www.england.nhs.uk/publication/nhs-genomic-medicine-service-record-of-discussion-form"
+					}
+				]
 			},
 			"request": {
         "method": "POST",

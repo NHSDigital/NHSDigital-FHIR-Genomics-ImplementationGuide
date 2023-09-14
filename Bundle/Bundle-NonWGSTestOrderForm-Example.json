@@ -9,7 +9,6 @@
 				"resourceType": "PractitionerRole",
 				"id": "PractitionerRole-GeneSmithENT-Example",
 				"practitioner": {
-					"reference": "Practitioner/Practitioner-GeneSmith-Example",
 					"identifier": {
 						"system": "https://fhir.nhs.uk/Id/sds-user-id",
 						"value": "9999999999"
@@ -17,7 +16,6 @@
 					"display": "Dr. Gene Smith"
 				},
 				"organization": {
-					"reference": "Organization/Organization-AddenbrookesHospital-Example",
 					"identifier": {
 						"system": "https://fhir.nhs.uk/Id/ods-organization-code",
 						"value": "RGT01"
@@ -47,7 +45,12 @@
 					{
 						"system": "email",
 						"value": "Add-tr.entsecretaries@nhs.net",
-						"use": "work"
+						"extension": [
+							{
+								"url": "http://hl7.org/fhir/StructureDefinition/contactpoint-comment",
+								"valueString": "reporting"
+							}
+						]
 					}
 				]
 			},
@@ -82,11 +85,32 @@
 				"identifier": [
 					{
 						"system": "https://fhir.nhs.uk/Id/nhs-number",
-						"value": "9449307873"
+						"value": "9449307873",
+						"extension": [
+							{
+								"url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus",
+								"valueCodeableConcept": {
+									"coding": [
+										{
+											"system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus",
+											"version": "1.0.0",
+											"code": "01",
+											"display": "Number present and verified"
+										}
+									]
+								}
+							}
+						]
 					},
 					{
 						"system": "https://fhir.add.nhs.uk/Id/MRN",
-						"value": "RGT012423"
+						"value": "RGT012423",
+						"assigner": {
+							"identifier": {
+								"system": "https://fhir.nhs.uk/Id/ods-organization-code",
+								"value": "RGT01"
+							}
+						}
 					},
 					{
 						"system": "https://fhir.nhs.uk/Id/genomics-pedigree-number",
@@ -117,12 +141,18 @@
 				],
 				"generalPractitioner": [
 					{
-						"reference": "PractitionerRole/PractitionerRole-AeroSmith-Example",
 						"identifier": {
 							"system": "https://fhir.hl7.org.uk/Id/gmp-number",
 							"value": "G9999999"
 						},
-						"display": "Dr. Aero Smith, 123 Test Practice"
+						"display": "Dr. Aero Smith"
+					},
+					{
+						"identifier": {
+							"system": "https://fhir.hl7.org.uk/Id/ODS-code",
+							"value": "TP123"
+						},
+						"display": "123 Test Practice"
 					}
 				],
 				"link": [
@@ -136,7 +166,8 @@
 			},
       "request": {
         "method": "POST",
-        "url": "Patient"
+        "url": "Patient",
+        "ifNoneExist": "Patient?identifier=https://fhir.nhs.uk/Id/nhs-number|9449307873"
       }
 		},
 		{
@@ -219,11 +250,7 @@
 				},
 				"authoredOn": "2023-08-05",
 				"requester": {
-					"reference": "PractitionerRole/PractitionerRole-GeneSmithENT-Example",
-					"identifier": {
-						"system": "https://fhir.nhs.uk/Id/sds-user-id",
-						"value": "9999999999"
-					}
+					"reference": "PractitionerRole/PractitionerRole-GeneSmithENT-Example"
 				},
 				"reasonCode": [
 					{
@@ -236,12 +263,10 @@
 						]
 					}
 				],
-				"reasonReference": [
-					{
-						"reference": "Condition/Condition-DiseaseStatus-Example"
-					}
-				],
 				"supportingInfo": [
+					{
+						"reference": "Observation/Observation-DiseaseStatus-Example"
+					},
 					{
 						"reference": "Observation/Observation-GenomicEthnicity-Example"
 					},
@@ -252,10 +277,10 @@
 						"reference": "FamilyMemberHistory/FamilyMemberHistory-NonConsanguinousUnion-Example"
 					},
 					{
-						"reference": "Procedure/Procedure-NoTransplant-Example"
+						"reference": "Observation/Observation-NoTransplant-Example"
 					},
 					{
-						"reference": "Procedure/Procedure-NoTransfusion-Example"
+						"reference": "Observation/Observation-NoTransfusion-Example"
 					},
 					{
 						"reference": "Condition/Condition-HearingLoss-Example"
@@ -285,8 +310,8 @@
 					"coding": [
 						{
 							"system": "http://snomed.info/sct",
-							"code": "60001007",
-							"display": "Not pregnant"
+							"code": "77386006",
+							"display": "Pregnancy"
 						}
 					]
 				},
@@ -298,7 +323,7 @@
 					}
 				},
 				"effectiveDateTime": "2023-08-05",
-				"valueBoolean": true
+				"valueBoolean": false
 			},
       "request": {
         "method": "POST",
@@ -306,19 +331,11 @@
       }
 		},
 		{
-			"fullUrl": "http://example.org/fhir/Condition/Condition-DiseaseStatus-Example",
+			"fullUrl": "http://example.org/fhir/Observation/Observation-DiseaseStatus-Example",
 			"resource": {
-				"resourceType": "Condition",
-				"id": "Condition-DiseaseStatus-Example",
-				"clinicalStatus": {
-					"coding": [
-						{
-							"system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-							"code": "inactive",
-							"display": "Inactive"
-						}
-					]
-				},
+				"resourceType": "Observation",
+				"id": "Observation-DiseaseStatus-Example",
+				"status": "final",
 				"code": {
 					"coding": [
 						{
@@ -334,11 +351,21 @@
 						"system": "https://fhir.nhs.uk/Id/nhs-number",
 						"value": "9449307873"
 					}
+				},
+				"effectiveDateTime": "2023-08-05",
+				"valueCodeableConcept": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "103310001",
+							"display": "Patient not affected"
+						}
+					]
 				}
 			},
       "request": {
         "method": "POST",
-        "url": "Condition"
+        "url": "Observation"
       }
 		},
 		{
@@ -408,11 +435,11 @@
       }
 		},
 		{
-			"fullUrl": "http://example.org/fhir/Procedure/Procedure-NoTransplant-Example",
+			"fullUrl": "http://example.org/fhir/Observation/Observation-NoTransplant-Example",
 			"resource": {
-				"resourceType": "Procedure",
-				"id": "Procedure-NoTransplant-Example",
-				"status": "not-done",
+				"resourceType": "Observation",
+				"id": "Observation-NoTransplant-Example",
+				"status": "final",
 				"code": {
 					"coding": [
 						{
@@ -428,19 +455,21 @@
 						"system": "https://fhir.nhs.uk/Id/nhs-number",
 						"value": "9449307873"
 					}
-				}
+				},
+				"effectiveDateTime": "2023-08-05",
+				"valueBoolean": false
 			},
       "request": {
         "method": "POST",
-        "url": "Procedure"
+        "url": "Observation"
       }
 		},
 		{
-			"fullUrl": "http://example.org/fhir/Procedure/Procedure-NoTransfusion-Example",
+			"fullUrl": "http://example.org/fhir/Observation/Observation-NoTransfusion-Example",
 			"resource": {
-				"resourceType": "Procedure",
-				"id": "Procedure-NoTransfusion-Example",
-				"status": "not-done",
+				"resourceType": "Observation",
+				"id": "Observation-NoTransfusion-Example",
+				"status": "final",
 				"code": {
 					"coding": [
 						{
@@ -456,11 +485,13 @@
 						"system": "https://fhir.nhs.uk/Id/nhs-number",
 						"value": "9449307873"
 					}
-				}
+				},
+				"effectiveDateTime": "2023-08-05",
+				"valueBoolean": false
 			},
       "request": {
         "method": "POST",
-        "url": "Procedure"
+        "url": "Observation"
       }
 		},
 		{
