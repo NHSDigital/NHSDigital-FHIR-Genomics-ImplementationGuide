@@ -93,8 +93,8 @@
 									"coding": [
 										{
 											"system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus",
-											"version": "1.0.0",
-											"code": "01",
+											"version": "2.1.0",
+											"code": "number-present-and-verified",
 											"display": "Number present and verified"
 										}
 									]
