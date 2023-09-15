@@ -161,7 +161,7 @@
 				},
 				{
 					"type": "Provenance",
-					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Provenance-Genomics"
+					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Provenance"
 				}
 			]
 		}
