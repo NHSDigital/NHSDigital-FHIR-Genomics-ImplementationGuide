@@ -64,6 +64,45 @@
 			},
 			"resource":  [
 				{
+					"type": "AuditEvent",
+					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-AuditEvent",
+					"documentation": "For searching recorded AuditEvents",
+					"interaction": [
+						{
+							"code": "read"
+						},
+						{
+							"code": "search-type"
+						}
+					],
+					"searchParam": [
+						{
+							"name": "action",
+							"type": "token"
+						},
+						{
+							"name": "agent",
+							"type": "reference"
+						},
+						{
+							"name": "date",
+							"type": "date"
+						},
+						{
+							"name": "entity",
+							"type": "reference"
+						},
+						{
+							"name": "outcome",
+							"type": "token"
+						},
+						{
+							"name": "patient",
+							"type": "reference"
+						}
+					]
+				},
+				{
 					"type": "Bundle",
 					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Bundle", 
 					"documentation": "For posting transaction bundles to the server",
