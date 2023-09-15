@@ -241,6 +241,15 @@
 										]
 									},
 									{
+										"linkId": "patientMRN",
+										"text": "Hospital number",
+										"answer": [
+											{
+												"valueString": "RWT14789"
+											}
+										]
+									},
+									{
 										"linkId": "healthcareProfessionalName",
 										"text": "Healthcare professional name",
 										"answer": [
