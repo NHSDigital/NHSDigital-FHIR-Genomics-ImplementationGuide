@@ -15,7 +15,7 @@
 		"coding": [
 			{ 
 				"system": "https://fhir.nhs.uk/CodeSystem/business-status-genomics", 
-				"code": "Awaiting Specimen", 
+				"code": "AwaitingSpecimen", 
 				"display": "Awaiting Specimen"
 			}
 		]
