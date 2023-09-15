@@ -53,11 +53,7 @@
 	},
 	"authoredOn": "2023-08-08",
 	"requester": {
-		"reference": "PractitionerRole/PractitionerRole-HazelSmithRenal-Example",
-		"identifier": {
-			"system": "https://fhir.nhs.uk/Id/sds-user-id",
-			"value": "9999999998"
-		}
+		"reference": "PractitionerRole/PractitionerRole-HazelSmithRenal-Example"
 	},
 	"reasonCode": [
 		{
@@ -70,14 +66,12 @@
 			]
 		}
 	],
-	"reasonReference": [
-		{
-			"reference": "Condition/Condition-DiseaseStatus-Example"
-		}
-	],
 	"supportingInfo": [
 		{
 			"reference": "Observation/Observation-GenomicEthnicity-Example"
+		},
+		{
+			"reference": "Observation/Observation-DiseaseStatus-Example"
 		},
 		{
 			"reference": "Observation/Observation-NoPregnancy-Example"
@@ -86,10 +80,10 @@
 			"reference": "FamilyMemberHistory/FamilyMemberHistory-NonConsanguinousUnion-Example"
 		},
 		{
-			"reference": "Procedure/Procedure-NoBoneMarrowTransplant-Example"
+			"reference": "Observation/Observation-NoBoneMarrowTransplant-Example"
 		},
 		{
-			"reference": "Procedure/Procedure-NoTransfusion-Example"
+			"reference": "Observation/Observation-NoTransfusion-Example"
 		},
 		{
 			"reference": "Observation/Observation-MultipleRenalCysts-Example"

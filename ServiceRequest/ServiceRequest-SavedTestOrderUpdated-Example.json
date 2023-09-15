@@ -1,6 +1,10 @@
 {
 	"resourceType": "ServiceRequest",
 	"id": "ServiceRequest-SavedTestOrderUpdated-Example",
+	"meta": {
+		"versionId": "2",
+		"lastUpdated": "2023-08-10T11:10:00Z"
+	},
 	"extension": [
 		{
 			"url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage",
@@ -70,26 +74,24 @@
 			]
 		}
 	],
-	"reasonReference": [
-		{
-			"reference": "Condition/Condition-DiseaseStatus-Example"
-		}
-	],
 	"supportingInfo": [
 		{
 			"reference": "Observation/Observation-GenomicEthnicity-Example"
 		},
 		{
-			"reference": "Condition/Condition-DiseaseStatus-Example"
+			"reference": "Observation/Observation-NoPregnancy-Example"
+		},
+		{
+			"reference": "Observation/Observation-DiseaseStatus-Example"
 		},
 		{
 			"reference": "FamilyMemberHistory/FamilyMemberHistory-NonConsanguinousUnion-Example"
 		},
 		{
-			"reference": "Procedure/Procedure-NoTransplant-Example"
+			"reference": "Observation/Observation-NoTransplant-Example"
 		},
 		{
-			"reference": "Procedure/Procedure-NoTransfusion-Example"
+			"reference": "Observation/Observation-NoTransfusion-Example"
 		},
 		{
 			"reference": "Condition/Condition-HearingLoss-Example"
@@ -101,6 +103,11 @@
 		},
 		{
 			"text": "Free text for diagnosis/reason for referral, relevant information including family history, phenotypic details/ HPO Terms/ Patient in need of test...example"
+		}
+	],
+	"relevantHistory": [
+		{
+			"reference": "Provenance/Provenance-ServiceRequestUpdate-Example"
 		}
 	]
 }

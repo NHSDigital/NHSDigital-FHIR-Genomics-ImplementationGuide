@@ -32,6 +32,10 @@
 			},
 			"resource": [
 				{
+					"type": "AuditEvent",
+					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-AuditEvent"
+				},
+				{
 					"type": "Bundle",
 					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Bundle"
 				},

@@ -8,8 +8,8 @@
 		"coding": [
 			{ 
 				"system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics", 
-				"code": "SamplePrep", 
-				"display": "Sample Prep"
+				"code": "SampleManagement", 
+				"display": "Sample Management"
 			}
 		]
 	},
@@ -23,12 +23,8 @@
 			"value": "9449307873"
 		}
 	},
-	"authoredOn": "2022-08-05",
+	"authoredOn": "2023-08-05",
 	"requester": {
-		"reference": "PractitionerRole/PractitionerRole-GeneSmithENT-Example",
-		"identifier": {
-			"system": "https://fhir.nhs.uk/Id/sds-user-id",
-			"value": "9999999999"
-		}
+		"reference": "PractitionerRole/PractitionerRole-GeneSmithENT-Example"
 	}
 }
