@@ -89,7 +89,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://fhir.nhs.uk/StructureDefinition/Extension-Genomics-nhsnumber-unavailable-reason"
+              "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberUnavailableReason"
             ]
           }
         ],

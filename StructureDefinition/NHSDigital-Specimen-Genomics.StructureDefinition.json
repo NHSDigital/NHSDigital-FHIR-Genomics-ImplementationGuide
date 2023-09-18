@@ -47,7 +47,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://fhir.nhs.uk/StructureDefinition/Extension-Genomics-SampleState"
+              "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-SampleCategory"
             ]
           }
         ],
