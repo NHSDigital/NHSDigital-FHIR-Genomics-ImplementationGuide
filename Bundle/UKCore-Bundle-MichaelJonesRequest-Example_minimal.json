@@ -98,10 +98,14 @@
 				"extension": [
 					{
 						"url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage",
-						"valueCoding": {
-						    "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory",
-						    "code": "nhs",
-						    "display": "NHS"
+						"valueCodeableConcept": {
+							"coding": [
+						    {
+									"system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory",
+									"code": "nhs",
+									"display": "NHS"
+								}
+							]
 						}
 					}
 				],
