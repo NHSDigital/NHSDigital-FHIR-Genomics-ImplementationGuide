@@ -3,11 +3,15 @@
 	"id": "UKCore-ServiceRequest-MichaelJonesDYPDRequest-Example",
 	"extension": [
 		{
-			"url": "https://fhir.nhs.uk/StructureDefinition/Extension-Genomics-Coverage",
-			"valueCoding": {
-				"system": "https://fhir.nhs.uk/CodeSystem/coverage-genomics",
-				"code": "NHS",
-				"display": "NHS"
+			"url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage",
+			"valueCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory",
+						"code": "nhs",
+						"display": "NHS"
+					}
+				]
 			}
 		}
 	],
