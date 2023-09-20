@@ -950,7 +950,7 @@
 						},
 						{
 							"code": "search-type",
-							"documentaion": "Not nrequired for alpha build, but could be used to retrieve historical diagnostic reports."
+							"documentation": "Not required for alpha build, but could be used to retrieve historical diagnostic reports."
 						}
 					],
 					"versioning": "versioned",
