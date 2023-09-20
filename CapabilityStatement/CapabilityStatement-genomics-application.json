@@ -105,10 +105,11 @@
 				{
 					"type": "Bundle",
 					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Bundle", 
-					"documentation": "For posting transaction bundles to the server",
+					"documentation": "For posting FHIR transaction bundles (http://hl7.org/fhir/R4B/http.html#transaction) to the server.",
 					"interaction": [
 						{
-							"code": "create"
+							"code": "create",
+							"documentation": "Bundle containing ServiceRequest and all supporting resources (Patient, PractitionerRole, Specimen, etc.)"
 						}
 					],
 					"conditionalCreate": true,
@@ -575,7 +576,8 @@
 							"code": "vread"
 						},
 						{
-							"code": "update"
+							"code": "update",
+							"documentation": "Allow an organisation to claim or update a task. If pro-active notification is implemented GEL, GLH and LGL would also need to implement this endpoint to receive updates to their tasks, including cancellation/retraction of requests."
 						},
 						{
 							"code": "patch"
@@ -587,10 +589,12 @@
 							"code": "history-instance"
 						},
 						{
-							"code": "create"
+							"code": "create",
+							"documentation": "New tasks are created as the test request is submitted. Connected systems passing on the request may need to create a new task and may need to store new associated resources, in which case a Transaction Bundle should be used. In the IG, it is proposed that POST Task can be used to notify a service of a task, but this assumes that any referenced resources exist, which would need to be retrieved individually. If pro-active notification of Tasks is required the GLH, GEL and LGL should implement the FHIR transaction interaction, but this is out of scope for the Alpha."
 						},
 						{
-							"code": "search-type"
+							"code": "search-type",
+							"documentation": "Allows an organisation to search for tasks. Allows an organisation to find out the current state of the tasks associated with a service request. All search parameters listed should be supported. For polling, a consumer might want to be able to search for all tasks assigned to them, or by other attributes."
 						}
 					],
 					"versioning": "versioned",
@@ -653,7 +657,7 @@
 				{
 					"type": "ServiceRequest",
 					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest",
-					"documentation": "Endpoints for interacting with ServiceRequest resources",
+					"documentation": "Endpoints for interacting with ServiceRequest resources.",
 					"interaction": [
 						{
 							"code": "read"
@@ -662,7 +666,8 @@
 							"code": "vread"
 						},
 						{
-							"code": "update"
+							"code": "update",
+							"documentation": "Used to update the ServiceRequest resource, e.g. for adding a specimen reference or updating the status to completed."
 						},
 						{
 							"code": "patch"
@@ -677,7 +682,8 @@
 							"code": "create"
 						},
 						{
-							"code": "search-type"
+							"code": "search-type",
+							"documentation": "EHR may poll for updates to ServiceRequest or a user might be looking for historical test requests and DiagnosticReports, which would require them to be searchable. For organisations in the chain fulfilling the service request they might want to query service requests for information."
 						}
 					],
 					"versioning": "versioned",
@@ -926,7 +932,8 @@
 							"code": "vread"
 						},
 						{
-							"code": "update"
+							"code": "update", 
+							"documentation": "Allows a DiagnosticReport to be updated. Could also be used to notify requesters that a DiagnosticReport has been updated, if proactive notification is implemented."
 						},
 						{
 							"code": "patch"
@@ -938,10 +945,12 @@
 							"code": "history-instance"
 						},
 						{
-							"code": "create"
+							"code": "create",
+							"documentation": "Allows a DiagnosticReport to be created on the service. Triggers notification to the requester that a DiagnosticReport is available."
 						},
 						{
-							"code": "search-type"
+							"code": "search-type",
+							"documentation": "Not required for alpha build, but could be used to retrieve historical diagnostic reports."
 						}
 					],
 					"versioning": "versioned",
@@ -1459,7 +1468,8 @@
 							"code": "vread"
 						},
 						{
-							"code": "update"
+							"code": "update",
+							"documentation": "To enable updates to specimens"
 						},
 						{
 							"code": "patch"
@@ -1471,10 +1481,12 @@
 							"code": "history-instance"
 						},
 						{
-							"code": "create"
+							"code": "create",
+							"documentation": "To allow a user to add a Specimen, which should also be added to the relevant ServiceRequest/Task through a PUT"
 						},
 						{
-							"code": "search-type"
+							"code": "search-type",
+							"documentation": "To enable a user to retrieve specimens, enables specimen tracking"
 						}
 					],
 					"versioning": "versioned",
