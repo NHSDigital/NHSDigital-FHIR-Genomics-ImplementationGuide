@@ -1,0 +1,88 @@
+{
+  "resourceType": "ServiceRequest",
+  "id": "ServiceRequest-ReAnalysis-NonWGSTestOrderForm-Example",
+  "extension": [
+    {
+      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory",
+            "code": "nhs",
+            "display": "NHS"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "active",
+  "intent": "routine",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory",
+          "code": "rare-disease-non-wgs",
+          "display": "Rare Disease - Non-WGS"
+        }
+      ]
+    }
+  ],
+  "priority": "routine",
+  "code": {
+    "coding": [
+      {
+        "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
+        "code": "R387",
+        "display": "Re-analysis"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-MeirLieberman-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307873"
+    }
+  },
+  "authoredOn": "2023-11-13",
+  "requester": {
+    "reference": "PractitionerRole/PractitionerRole-GeneSmithENT-Example"
+  },
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
+          "code": "R59",
+          "display": "Early onset or syndromic epilepsy"
+        }
+      ]
+    }
+  ],
+  "supportingInfo": [
+    {
+      "reference": "Observation/Observation-DiseaseStatus-Example"
+    },
+    {
+      "reference": "Observation/Observation-NoPregnancy-Example"
+    },
+    {
+      "reference": "FamilyMemberHistory/FamilyMemberHistory-NonConsanguinousUnion-Example"
+    },
+    {
+      "reference": "Observation/Observation-NoTransplant-Example"
+    },
+    {
+      "reference": "DiagnosticReport/UKCore-DiagnosticReport-MichaelJonesReport-Example"
+    }
+  ],
+  "note": [
+    {
+      "text": "No family history of genomic testing"
+    },
+    {
+      "text": "Free text for diagnosis/reason for referral, relevant information including family history, phenotypic details/ HPO Terms/Patient in need of test...example"
+    }
+  ]
+}
