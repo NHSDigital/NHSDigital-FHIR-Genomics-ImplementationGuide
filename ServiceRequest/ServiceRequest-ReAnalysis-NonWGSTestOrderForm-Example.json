@@ -16,7 +16,7 @@
     }
   ],
   "status": "active",
-  "intent": "routine",
+  "intent": "reflex-order",
   "category": [
     {
       "coding": [
