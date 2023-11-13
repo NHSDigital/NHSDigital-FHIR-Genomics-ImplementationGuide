@@ -1,0 +1,81 @@
+{
+  "resourceType": "ServiceRequest",
+  "id": "ServiceRequest-NonWGSTestOrderForm-HaemOncology-Example",
+  "extension": [
+    {
+      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory",
+            "code": "nhs",
+            "display": "NHS"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "active",
+  "intent": "order",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory",
+          "code": "cancer-non-wgs",
+          "display": "Cancer - Non-WGS"
+        }
+      ]
+    }
+  ],
+  "priority": "routine",
+  "code": {
+    "coding": [
+      {
+        "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
+        "code": "M91",
+        "display": "Acute Lymphoblastic Leukaemia"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-MeirLieberman-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307873"
+    }
+  },
+  "authoredOn": "2023-11-13",
+  "requester": {
+    "reference": "PractitionerRole/PractitionerRole-HazalSmithRenal-Example"
+  },
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "49401003",
+          "display": "Bone marrow aspiration procedure"
+        }
+      ]
+    }
+  ],
+  "supportingInfo": [
+    {
+      "reference": "Observation/Observation-NoTransplant-Example"
+    }
+  ],
+  "specimen": [
+    {
+      "reference": "Specimen/Specimen-MichaelJonesBlood-Example"
+    }
+  ],
+  "note": [
+    {
+      "text": "No family history of genomic testing"
+    },
+    {
+      "text": "Free text for diagnosis/reason for referral, relevant information including family history, phenotypic details/ HPO Terms/Patient in need of test...example"
+    }
+  ]
+}
