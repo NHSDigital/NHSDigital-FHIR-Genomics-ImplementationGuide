@@ -13,6 +13,12 @@
           }
         ]
       }
+    },
+    {
+      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AdditionalContact",
+      "valueReference": {
+        "reference": "PractitionerRole/PractitionerRole-HazelSmithPathology-Example"
+      }
     }
   ],
   "status": "active",
@@ -39,7 +45,7 @@
     ]
   },
   "subject": {
-    "reference": "Patient/Patient-MeirLieberman-Example",
+    "reference": "Patient/Patient-PatrickSammy-Example",
     "identifier": {
       "system": "https://fhir.nhs.uk/Id/nhs-number",
       "value": "9449307873"
@@ -47,7 +53,7 @@
   },
   "authoredOn": "2023-11-13",
   "requester": {
-    "reference": "PractitionerRole/PractitionerRole-HazalSmithRenal-Example"
+    "reference": "PractitionerRole/PractitionerRole-HazalSmithPathology-Example"
   },
   "reasonCode": [
     {
@@ -63,11 +69,14 @@
   "supportingInfo": [
     {
       "reference": "Observation/Observation-NoTransplant-Example"
-    }
+    },
+      {
+        "reference": "Condition/Condition-AcuteLyphoblasticLeukamia-Example"
+      }
   ],
   "specimen": [
     {
-      "reference": "Specimen/Specimen-MichaelJonesBlood-Example"
+      "reference": "Specimen/Specimen-PatrickSammy-Blood-Example"
     }
   ],
   "note": [
@@ -75,7 +84,7 @@
       "text": "No family history of genomic testing"
     },
     {
-      "text": "Free text for diagnosis/reason for referral, relevant information including family history, phenotypic details/ HPO Terms/Patient in need of test...example"
+      "text": "Low counts, bruising, hepatosplenomegaly Hb: 83; WBC: 11.9; Neut: 0.51, Plts: 100"
     }
   ]
 }
