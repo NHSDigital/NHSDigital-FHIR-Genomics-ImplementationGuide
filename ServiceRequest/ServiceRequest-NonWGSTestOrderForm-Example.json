@@ -80,6 +80,9 @@
 			"reference": "Observation/Observation-NoTransfusion-Example"
 		},
 		{
+			"reference": "Observation/Observation-NoBoneMarrowTransplant-Example"
+		},
+		{
 			"reference": "Condition/Condition-HearingLoss-Example"
 		}
 	],
