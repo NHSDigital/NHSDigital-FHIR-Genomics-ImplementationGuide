@@ -25,14 +25,14 @@
       "value": "9449307873",
       "extension": [
         {
-          "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberUnavailableReason",
+          "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus",
           "valueCodeableConcept": {
             "coding": [
               {
-                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberUnavailableReason",
+                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus",
                 "version": "1.0.0",
-                "code": "nhs-number-not-known",
-                "display": "NHS number not known"
+                "code": "01",
+                "display": "Number present and verified"
               }
             ]
           }
