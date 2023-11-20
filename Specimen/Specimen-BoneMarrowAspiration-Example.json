@@ -33,7 +33,7 @@
   "collection": {
     "extension": [
       {
-        "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage",
+        "url": "http://hl7.org/fhir/StructureDefinition/specimen-specialHandling",
         "valueCodeableConcept": {
           "text":  "Nucleated Cell Count: 10, Blast Percentage 25%, High Risk of Infection:NO, ?:High"
 
