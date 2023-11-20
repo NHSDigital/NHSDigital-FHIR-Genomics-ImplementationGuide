@@ -1,0 +1,44 @@
+{
+  "resourceType": "Specimen",
+  "id": "Specimen-BoneMarrowAspiration-Example",
+  "identifier": [
+    {
+      "system": "https://fhir.add.nhs.uk/Id/specimenId",
+      "value": "RR812434"
+    }
+  ],
+  "accessionIdentifier": {
+    "system": "https://www.leedsth.nhs.uk/path",
+    "value": "RR8123745"
+  },
+  "status": "available",
+  "type": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "396997002",
+        "display": "Specimen from bone marrow obtained by aspiration"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-PatrickSammy-Example"
+  },
+  "receivedTime": "2023-08-13T09:00:00Z",
+  "request": [
+    {
+      "reference": "ServiceRequest-NonWGSTestOrderForm-HaemOncology-Example"
+    }
+  ],
+  "collection": {
+    "extension": [
+      {
+        "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage",
+        "valueCodeableConcept": {
+          "text":  "Nucleated Cell Count: 10, Blast Percentage 25%, High Risk of Infection:NO, ?:High"
+
+        }
+      }
+    ]
+  }
+}

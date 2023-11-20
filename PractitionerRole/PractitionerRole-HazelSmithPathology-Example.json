@@ -20,8 +20,8 @@
 			"coding": [
 				{
 					"system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode",
-					"code": "370",
-					"display": "Medical Oncology"
+					"code": "820",
+					"display": "General Pathology"
 				}
 			]
 		}
