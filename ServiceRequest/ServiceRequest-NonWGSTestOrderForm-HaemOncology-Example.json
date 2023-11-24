@@ -13,12 +13,6 @@
           }
         ]
       }
-    },
-    {
-      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AdditionalContact",
-      "valueReference": {
-        "reference": "PractitionerRole/PractitionerRole-HazelSmithPathology-Example"
-      }
     }
   ],
   "status": "active",
