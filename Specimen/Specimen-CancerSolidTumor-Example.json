@@ -1,0 +1,53 @@
+{
+  "resourceType": "Specimen",
+  "id": "Specimen-CancerSolidTumor-Example",
+  "identifier": [
+    {
+      "system": "https://fhir.add.nhs.uk/Id/specimenId",
+      "value": "RGT03135"
+    }
+  ],
+  "status": "available",
+  "type": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "364611000000101",
+        "display": "Tissue resection sample"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-ZelmaHadjkiss-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307555"
+    },
+    "collection": {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/specimen-specialHandling",
+          "valueCodeableConcept": {
+            "text": "High Risk of Infection:NO"
+          }
+        }
+      ]
+    }
+  },
+  "condition": [
+    {
+      "coding": [
+        {
+          "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-BiopsyState",
+          "code": "fresh-unfixed",
+          "display": "Fresh Unfixed"
+        }
+      ]
+    }
+  ],
+  "request": [
+    {
+      "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-CancerSolidTumor-Example"
+    }
+  ]
+}
