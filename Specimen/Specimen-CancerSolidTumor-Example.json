@@ -22,17 +22,17 @@
     "identifier": {
       "system": "https://fhir.nhs.uk/Id/nhs-number",
       "value": "9449307555"
-    },
-    "collection": {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/StructureDefinition/specimen-specialHandling",
-          "valueCodeableConcept": {
-            "text": "High Risk of Infection:NO"
-          }
-        }
-      ]
     }
+  },
+  "collection": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/specimen-specialHandling",
+        "valueCodeableConcept": {
+          "text": "High Risk of Infection:NO"
+        }
+      }
+    ]
   },
   "condition": [
     {
