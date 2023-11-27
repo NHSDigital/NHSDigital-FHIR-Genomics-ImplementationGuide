@@ -1,6 +1,6 @@
 {
 	"resourceType": "Observation",
-	"id": "Observation-PregnancyConfirmation-Example",
+	"id": "Observation-Pregnancy-Example",
 	"status": "final",
 	"code": {
 		"coding": [
@@ -20,13 +20,15 @@
 	},
 	"component": [
 		{
-			"coding": [
-				{
-					"system": "http://snomed.info/sct",
-					"code": "720451000000102",
-					"display": "Assisted conception"
-				}
-			]
+			"code": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "720451000000102",
+						"display": "Assisted conception"
+					}
+				]
+			}
 		}
 	],
 	"effectiveDateTime": "2023-08-05",
