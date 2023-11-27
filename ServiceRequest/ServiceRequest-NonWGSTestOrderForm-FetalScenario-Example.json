@@ -1,0 +1,94 @@
+{
+	"resourceType": "ServiceRequest",
+	"id": "ServiceRequest-NonWGSTestOrderForm-FetalScenario-Example",
+	"extension": [
+		{
+			"url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage",
+			"valueCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory",
+						"code": "nhs",
+						"display": "NHS"
+					}
+				]
+			}
+		}
+	],
+	"status": "active",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory",
+					"code": "rare-disease-non-wgs",
+					"display": "Rare Disease - Non-WGS"
+				}
+			]
+		}
+	],
+	"priority": "urgent",
+	"code": {
+		"coding": [
+			{
+				"system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
+				"code": "R21",
+				"display": "Fetal anomalies with a likely genetic cause"
+			}
+		]
+	},
+	"subject": {
+		"reference": "Patient/Patient-RyanneBoulder-Example",
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/nhs-number",
+			"value": "9449307687"
+		}
+	},
+	"authoredOn": "2023-11-27",
+	"requester": {
+		"reference": "PractitionerRole/PractitionerRole-LoisLaneKingstonClinicalGenetics-Example"
+	},
+	"reasonCode": [
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "243787009",
+					"display": "Antenatal screening"
+				}
+			]
+		}
+	],
+	"supportingInfo": [
+		{
+			"reference": "Observation/Observation-NonConsanguinousUnion-Example"
+		},
+		{
+			"reference": "Observation/Observation-GenomicEthnicity-Example"
+		},
+		{
+			"reference": "Observation/Observation-PregnancyConfirmation-Example"
+		},
+		{
+			"reference": "Observation/Observation-EstimatedDateOfDelivery-Example"
+		},
+		{
+			"reference": "Observation/Observation-NoTransplant-Example"
+		},
+		{
+			"reference": "Observation/Observation-GestationalAge-Example"
+		},
+		{
+			"reference": "Procedure/Procedure-InVitroFertilisation-Example"
+		}
+	],
+	"note": [
+		{
+			"text": "No family history of genomic testing"
+		},
+		{
+			"text": "Free text for diagnosis/reason for referral, relevant information including family history, phenotypic details/ HPO Terms/ E.g. large echogenic kidneys with normal bladder"
+		}
+	]
+}

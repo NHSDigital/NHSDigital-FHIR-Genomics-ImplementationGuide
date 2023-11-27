@@ -1,0 +1,23 @@
+{
+	"resourceType": "Observation",
+	"id": "Observation-GestationalAge-Example",
+	"status": "final",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "226081000000107",
+				"display": "Gestational age"
+			}
+		]
+	},
+	"subject": {
+		"reference": "Patient/Patient/Patient-RyanneBoulder-Example.json",
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/nhs-number",
+			"value": "9449307687"
+		}
+	},
+	"effectiveDateTime": "2023-08-05",
+	"valueString": "12 weeks 3 days"
+}
