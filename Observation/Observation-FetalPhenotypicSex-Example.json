@@ -1,0 +1,23 @@
+{
+	"resourceType": "Observation",
+	"id": "Observation-FetalPhenotypicSex-Example",
+	"status": "final",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "1028321000000103",
+				"display": "Phenotype observable"
+			}
+		]
+	},
+	"subject": {
+		"reference": "Patient/Patient/Patient-RyanneBoulder-Example.json",
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/nhs-number",
+			"value": "9449307687"
+		}
+	},
+	"effectiveDateTime": "2023-08-05",
+	"valueString": "inditerminate"
+}
