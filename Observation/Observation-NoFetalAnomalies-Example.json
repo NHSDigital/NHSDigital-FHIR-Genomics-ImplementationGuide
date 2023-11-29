@@ -1,0 +1,25 @@
+{
+  "resourceType": "Observation",
+  "id": "Observation-NoFetalAnomalies-Example",
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "161743003",
+        "display": "History of stillbirth (situation)"
+      }
+    ],
+    "text": "First Trimester Anomalies and Second Trimester Anomalies?"
+    
+  },
+  "subject": {
+    "reference": "Patient/Patient-RyanneBoulder-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307687"
+    }
+  },
+  "effectiveDateTime": "2023-08-05",
+  "valueBoolean": false
+}
