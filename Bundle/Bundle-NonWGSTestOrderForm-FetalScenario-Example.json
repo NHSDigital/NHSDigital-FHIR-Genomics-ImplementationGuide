@@ -273,7 +273,7 @@
               {
                 "system": "http://snomed.info/sct",
                 "code": "243787009",
-                "display": "Antenatal Screening"
+                "display": "Antenatal screening"
               }
             ]
           }
@@ -340,7 +340,7 @@
           ]
         },
         "subject": {
-          "reference": "Patient/Patient/Patient-RyanneBoulder-Example",
+          "reference": "Patient/Patient-RyanneBoulder-Example",
           "identifier": {
             "system": "https://fhir.nhs.uk/Id/nhs-number",
             "value": "9449307687"
@@ -383,7 +383,7 @@
           ]
         },
         "subject": {
-          "reference": "Patient/Patient/Patient-RyanneBoulder-Example",
+          "reference": "Patient/Patient-RyanneBoulder-Example",
           "identifier": {
             "system": "https://fhir.nhs.uk/Id/nhs-number",
             "value": "9449307687"
@@ -443,7 +443,7 @@
           ]
         },
         "subject": {
-          "reference": "Patient/Patient/Patient-RyanneBoulder-Example",
+          "reference": "Patient/Patient-RyanneBoulder-Example",
           "identifier": {
             "system": "https://fhir.nhs.uk/Id/nhs-number",
             "value": "9449307687"
@@ -529,7 +529,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "85116003",
-              "display": "Miscarriage in Second trimester"
+              "display": "Miscarriage in second trimester"
             }
           ],
           "text": "Second Trimester Anomalies?"
@@ -550,7 +550,7 @@
       }
     },
     {
-      "fullUrl": "http://example.org/fhir/Procudure/Procedure-InVitroFertilisation-Example",
+      "fullUrl": "http://example.org/fhir/Procedure/Procedure-InVitroFertilisation-Example",
       "resource": {
         "resourceType": "Procedure",
         "id": "Procedure-InVitroFertilisation-Example",
@@ -612,7 +612,7 @@
         },
         "request": [
           {
-            "reference": "ServiceRequest-NonWGSTestOrderForm-FetalScenario-Example"
+            "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-FetalScenario-Example"
           }
         ]
       },
