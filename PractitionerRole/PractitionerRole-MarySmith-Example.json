@@ -19,9 +19,9 @@
 		{
 			"coding": [
 				{
-					"system": "http://snomed.info/sct",
-					"code": "6816002",
-					"display": "Specialized nurse"
+					"system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode",
+					"code": "302",
+					"display": "Endocrinology and Diabetes"
 				}
 			]
 		}

@@ -6,8 +6,8 @@
   "coding": [
     {
       "system": "http://snomed.info/sct",
-      "code": "473289003:{160406008=109241000119103}",
-      "display": "Psychotic symptom rating scales observable where (and FH: Skin disease = Family history of eruptive xanthoma)"
+      "code": "75594004",
+      "display": "Xanthomatous deposition"
     }
   ],
   "text": "Physical Characteristics = query xanthoma"
