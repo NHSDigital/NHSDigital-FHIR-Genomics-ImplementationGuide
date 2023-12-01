@@ -80,6 +80,12 @@
 			"reference": "Observation/Observation-GestationalAge-Example"
 		},
 		{
+			"reference": "Observation/Observation-NoFirstTrimesterFetalAnomalies-Example"
+		},
+		{
+			"reference": "Observation/Observation-NoSecondTrimesterFetalAnomalies-Example"
+		},
+		{
 			"reference": "Procedure/Procedure-InVitroFertilisation-Example"
 		},
 		{

@@ -1,16 +1,16 @@
 {
   "resourceType": "Observation",
-  "id": "Observation-NoFetalAnomalies-Example",
+  "id": "Observation-NoFirstTrimesterFetalAnomalies-Example",
   "status": "final",
   "code": {
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "161743003",
-        "display": "History of stillbirth (situation)"
+        "code": "19169002",
+        "display": "Miscarriage in first trimester"
       }
     ],
-    "text": "First Trimester Anomalies and Second Trimester Anomalies?"
+    "text": "First Trimester Anomalies?"
     
   },
   "subject": {
