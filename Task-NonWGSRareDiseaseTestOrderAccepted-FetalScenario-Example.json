@@ -1,0 +1,57 @@
+{
+    "resourceType": "Task",
+    "id": "Task-NonWGSRareDiseaseTestOrderAccepted-FetalScenario-Example",
+    "basedOn": [
+        {
+            "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-FetalScenario-Example"
+        }
+    ],
+    "status": "accepted",
+    "businessStatus": {
+        "coding": [
+            {
+                "system": "https://fhir.nhs.uk/CodeSystem/business-status-genomics",
+                "code": "AwaitingSpecimen",
+                "display": "Awaiting Specimen"
+            }
+        ]
+    },
+    "intent": "order",
+    "priority": "urgent",
+    "code": {
+        "coding": [
+            {
+                "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
+                "code": "SampleManagement",
+                "display": "Sample Management"
+            }
+        ]
+    },
+    "focus": {
+        "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-FetalScenario-Example"
+    },
+    "for": {
+        "reference": "Patient/Patient-RyanneBoulder-Example",
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449307687"
+        }
+    },
+    "authoredOn": "2023-12-01",
+    "lastModified": "2023-12-04",
+    "requester": {
+        "reference": "PractitionerRole/PractitionerRole-LoisLaneKingstonClinicalGenetics-Example"
+    },
+    "owner": {
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "RAX"
+        },
+        "display": "Kingston Hospital NHS Foundation Trust"
+    },
+    "note": [
+        {
+            "text": "Optional Free Text field to record any additional details"
+        }
+    ]
+}
