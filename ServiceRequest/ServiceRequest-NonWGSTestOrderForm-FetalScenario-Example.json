@@ -91,7 +91,7 @@
 	],
 	"specimen": [
 		{
-			"reference": "Specimen-BloodEDTA-Example"
+			"reference": "Specimen/Specimen-BloodEDTA-Example"
 		}
 	],
 	"note": [
