@@ -87,9 +87,7 @@
 		},
 		{
 			"reference": "Procedure/Procedure-InVitroFertilisation-Example"
-		}
-	],
-	"specimen": [
+		},
 		{
 			"reference": "Specimen/Specimen-BloodEDTA-Example"
 		}

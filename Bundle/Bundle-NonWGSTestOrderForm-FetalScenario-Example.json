@@ -305,11 +305,9 @@
           },
           {
             "reference": "Procedure/Procedure-InVitroFertilisation-Example"
-          }
-        ],
-        "specimen": [
+          },
           {
-            "reference": "Specimen-BloodEDTA-Example"
+            "reference": "Specimen/Specimen-BloodEDTA-Example"
           }
         ],
         "note": [
