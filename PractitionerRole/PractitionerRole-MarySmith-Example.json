@@ -11,9 +11,9 @@
 	"organization": {
 		"identifier": {
 			"system": "https://fhir.nhs.uk/Id/ods-organization-code",
-			"value": "696B0"
+			"value": "RGD12"
 		},
-		"display": "Endocrinology- St James University Hospital"
+		"display": "ST JAMES'S UNIVERSITY HOSPITAL"
 	},
 	"specialty": [
 		{

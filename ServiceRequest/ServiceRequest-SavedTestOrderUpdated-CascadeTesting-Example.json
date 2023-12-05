@@ -1,11 +1,15 @@
 {
   "resourceType": "ServiceRequest",
-  "id": "ServiceRequest-NonWGSTestOrderForm-CascadeTesting-Example",
+  "id": "ServiceRequest-SavedTestOrderUpdated-CascadeTesting-Example",
   "basedOn": [
     {
       "reference": "ServiceRequest-NonWGSTestOrderForm-FatherOfFayMutlow-Example"
     }
   ],
+  "meta":{
+    "versionId":"2",
+    "lastUpdated":"2023-10-06T09:00:00Z"
+  },
   "extension": [
     {
       "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage",
@@ -38,8 +42,8 @@
     "coding": [
       {
         "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
-        "code": "R134",
-        "display": "Familial Hypercholesterolaemia"
+        "code": "R242.1",
+        "display": "Predictive testing for known familial mutation(s)"
       }
     ]
   },
@@ -95,7 +99,12 @@
       "text": "Free text for diagnosis/reason for referral, relevant information including family history, phenotypic details/ HPO Terms"
     },
     {
-      "text": "Father tested positive for FH. Confirmation required if daughter is positive for FH"
+      "text": "Father tested positive for FH. Confirmation required if daughter is postive for FH"
+    }
+  ],
+  "relevantHistory": [
+    {
+      "reference": "Provenance/Provenance-ServiceRequestUpdate-Example"
     }
   ]
 }

@@ -45,7 +45,7 @@
       "assigner": {
         "identifier": {
           "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-          "value": "B86012"
+          "value": "RGD12"
         }
       }
     }
