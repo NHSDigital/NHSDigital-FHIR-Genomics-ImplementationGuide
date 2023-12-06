@@ -1,38 +1,38 @@
 {
-	"resourceType": "CodeSystem",
-	"url": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
-	"identifier": [
-		{
-			"system": "https://fhir.nhs.uk/identifier/CodeSystem",
-			"value": "task-code-genomics"
-		}
-	],
-	"version": "0.1.0",
-	"name": "TaskCodeGenomics",
-	"title": "Task Code Genomics",
-	"status": "draft",
-	"date": "2023-12-06T10:54:00+00:00",
-	"publisher": "NHS England",
-	"contact": [
-		{
-			"name": "NHS England",
-			"telecom": [
-				{
-					"system": "email",
-					"value": "interoperabilityteam@nhs.net",
-					"use": "work"
-				}
-			]
-		}
-	],
-	"description": "A set of codes use to identify the type of task for Genomic Order Management",
-	"copyright": "Copyright © 2023 NHS England",
-	"caseSensitive": true,
-	"content": "complete",
-	"concept": [
-		{
-			"code": "RequestGenomicTest",
-			"display": "RequestGenomicTest",
+  "resourceType": "CodeSystem",
+  "url": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
+  "identifier": [
+    {
+      "system": "https://fhir.nhs.uk/identifier/CodeSystem",
+      "value": "task-code-genomics"
+    }
+  ],
+  "version": "0.1.0",
+  "name": "TaskCodeGenomics",
+  "title": "Task Code Genomics",
+  "status": "draft",
+  "date": "2023-12-06T10:54:00+00:00",
+  "publisher": "NHS England",
+  "contact": [
+    {
+      "name": "NHS England",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "interoperabilityteam@nhs.net",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "A set of codes use to identify the type of task for Genomic Order Management",
+  "copyright": "Copyright © 2023 NHS England",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "RequestGenomicTest",
+      "display": "RequestGenomicTest",
       "designation": [
         {
           "use": {
@@ -43,10 +43,10 @@
           "value": "10.00"
         }
       ]
-		},
-		{
-			"code": "ProcessGenomicTestRequest",
-			"display": "Process Genomic Test Request",
+    },
+    {
+      "code": "ProcessGenomicTestRequest",
+      "display": "Process Genomic Test Request",
       "designation": [
         {
           "use": {
@@ -57,10 +57,10 @@
           "value": "50.00"
         }
       ]
-		},
+    },
     {
-			"code": "RequestSampleAlignment",
-			"display": "Request & Sample Alignment",
+      "code": "RequestSampleAlignment",
+      "display": "Request & Sample Alignment",
       "designation": [
         {
           "use": {
@@ -71,10 +71,10 @@
           "value": "100.00"
         }
       ]
-		},
+    },
     {
-			"code": "SamplePreparation",
-			"display": "Sample Preparation",
+      "code": "SamplePreparation",
+      "display": "Sample Preparation",
       "designation": [
         {
           "use": {
@@ -85,10 +85,10 @@
           "value": "150.00"
         }
       ]
-		},
+    },
     {
-			"code": "SampleProcessing",
-			"display": "SampleProcessing",
+      "code": "SampleProcessing",
+      "display": "SampleProcessing",
       "designation": [
         {
           "use": {
@@ -99,10 +99,10 @@
           "value": "200.00"
         }
       ]
-		},
+    },
     {
-			"code": "GeneticGenomicDataProcessing",
-			"display": "Genetic/Genomic Data Processing",
+      "code": "GeneticGenomicDataProcessing",
+      "display": "Genetic/Genomic Data Processing",
       "designation": [
         {
           "use": {
@@ -113,10 +113,10 @@
           "value": "250.00"
         }
       ]
-		},
+    },
     {
-			"code": "Interpretation",
-			"display": "Interpretation",
+      "code": "Interpretation",
+      "display": "Interpretation",
       "designation": [
         {
           "use": {
@@ -127,10 +127,10 @@
           "value": "300.00"
         }
       ]
-		},
+    },
     {
-			"code": "ProduceInterimReport",
-			"display": "Produce Interim Report",
+      "code": "ProduceInterimReport",
+      "display": "Produce Interim Report",
       "designation": [
         {
           "use": {
@@ -141,10 +141,10 @@
           "value": "350.00"
         }
       ]
-		},
+    },
     {
-			"code": "Genomic MDT",
-			"display": "GenomicMDT",
+      "code": "Genomic MDT",
+      "display": "GenomicMDT",
       "designation": [
         {
           "use": {
@@ -155,10 +155,10 @@
           "value": "400.00"
         }
       ]
-		},
+    },
     {
-			"code": "ProduceFinalReport",
-			"display": "Produce Final Report",
+      "code": "ProduceFinalReport",
+      "display": "Produce Final Report",
       "designation": [
         {
           "use": {
@@ -169,10 +169,10 @@
           "value": "450.00"
         }
       ]
-		},
+    },
     {
-			"code": "DistributeReport",
-			"display": "Distribute Report",
+      "code": "DistributeReport",
+      "display": "Distribute Report",
       "designation": [
         {
           "use": {
@@ -183,6 +183,6 @@
           "value": "500.00"
         }
       ]
-		}
-	]
+    }
+  ]
 }
