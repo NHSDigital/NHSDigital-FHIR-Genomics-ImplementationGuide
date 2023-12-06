@@ -5,16 +5,7 @@
 	"statusReason": {
 		"coding": [
 			{
-				"system": "https://fhir.nhs.uk/CodeSystem/task-status-reason-genomics", 
-				"code": "Inappropriate", 
-				"display": "Inappropriate for patient"
-			}
-		]
-	},
-	"businessStatus": { 
-		"coding": [
-			{ 
-				"system": "https://fhir.nhs.uk/CodeSystem/business-status-genomics", 
+				"system": "https://fhir.nhs.uk/CodeSystem/task-statusReason-genomics", 
 				"code": "InvalidRequest", 
 				"display": "Invalid Request"
 			}
@@ -26,8 +17,8 @@
 		"coding": [
 			{ 
 				"system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics", 
-				"code": "SampleManagement", 
-				"display": "Sample Management"
+				"code": "ProcessGenomicTestRequest", 
+				"display": "Process Genomic Test Request"
 			}
 		]
 	},

@@ -8,7 +8,7 @@
 			"value": "business-status-genomics"
 		}
 	],
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"name": "BusinessStatusGenomics",
 	"title": "Business Status Genomics",
 	"status": "draft",
@@ -32,18 +32,6 @@
 	"content": "complete",
 	"concept": [
 		{
-			"code": "InvalidRequest",
-			"display": "Invalid Request"
-		},
-		{
-			"code": "UnsatisfiedCondition",
-			"display": "Unsatisfied Condition"
-		},
-		{
-			"code": "TimeframeExceeded",
-			"display": "Timeframe Exceeded"
-		},
-		{
 			"code": "AwaitingSpecimen",
 			"display": "Awaiting Specimen"
 		},
@@ -56,40 +44,12 @@
 			"display": "Specimen Received"
 		},
 		{
-			"code": "SpecimenQualityNotOk",
-			"display": "Specimen Quality Not OK"
-		},
-		{
-			"code": "SpecimenProcessingInProgress",
-			"display": "Specimen Processing In Progress"
-		},
-		{
-			"code": "SpecimenProcessed",
-			"display": "Specimen Processed"
-		},
-		{
 			"code": "RemoteProcessingRequired",
 			"display": "Remote Processing Required"
 		},
 		{
-			"code": "SpecimenProcessingUnsuccessful",
-			"display": "Specimen Processing Unsuccessful"
-		},
-		{
-			"code": "SequencingCompleted",
-			"display": "Sequencing Completed"
-		},
-		{
-			"code": "RepeatSequencing",
-			"display": "Repeat Sequencing"
-		},
-		{
 			"code": "AlignSequencing",
 			"display": "Align Sequencing"
-		},
-		{
-			"code": "GeneticDataProcessingInProgress",
-			"display": "Genetic Data Processing In Progress"
 		},
 		{
 			"code": "RemoteGeneticDataProcessingRequired",
@@ -100,20 +60,8 @@
 			"display": "Variants Identified"
 		},
 		{
-			"code": "InterpretationInProgress",
-			"display": "Interpretation In Progress"
-		},
-		{
 			"code": "RemoteInterpretationRequired",
 			"display": "Remote Interpretation Required"
-		},
-		{
-			"code": "InterpretationCompleted",
-			"display": "Interpretation Completed"
-		},
-		{
-			"code": "InterpretationUnsuccessful",
-			"display": "Interpretation Unsuccessful"
 		},
 		{
 			"code": "FurtherClinicalDetailsRequired",
@@ -130,14 +78,6 @@
 		{
 			"code": "ReflexTestComplete",
 			"display": "Reflex Test Complete"
-		},
-		{
-			"code": "DraftingReport",
-			"display": "Drafting Report"
-		},
-		{
-			"code": "ReportCompleted",
-			"display": "ReportCompleted"
 		}
 	]
 }
