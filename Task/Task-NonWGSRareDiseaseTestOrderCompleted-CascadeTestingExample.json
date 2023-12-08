@@ -2,23 +2,14 @@
 	"resourceType": "Task",
 	"id": "Task-NonWGSRareDiseaseTestOrderCompleted-CascadeTesting-Example",
 	"status": "completed",
-	"businessStatus": { 
-		"coding": [
-			{ 
-				"system": "https://fhir.nhs.uk/CodeSystem/business-status-genomics", 
-				"code": "ReportCompleted", 
-				"display": "Report Completed"
-			}
-		]
-	},
 	"intent": "order",
 	"priority": "routine",
-	"code": { 
+	"code": {
 		"coding": [
-			{ 
-				"system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics", 
-				"code": "SampleManagement", 
-				"display": "Sample Management"
+			{
+				"system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
+				"code": "DistributeReport",
+				"display": "Distribute Report"
 			}
 		]
 	},
@@ -40,13 +31,29 @@
 	"owner": {
 		"identifier": {
 			"system": "https://fhir.nhs.uk/Id/ods-organization-code",
-			"value": "RGD12"
+			"value": "RTD"
 		},
-		"display": "ST JAMES'S UNIVERSITY HOSPITAL"
+		"display": "THE NEWCASTLE UPON TYNE HOSPITALS NHS FOUNDATION TRUST"
 	},
 	"note": [
 		{
 			"text": "Optional Free Text field to record any additional details"
+		}
+	],
+	"output": [
+		{
+			"type": {
+				"coding": [
+					{
+						"system": "https://fhir.nhs.uk/CodeSystem/message-events-genomics",
+						"code": "genomictestresponse",
+						"display": "Genomic Test Response"
+					}
+				]
+			},
+			"valueReference": {
+				"reference": "DiagnosticReport/DiagnosticReport-FayMutlow-Example"
+			}
 		}
 	]
 }

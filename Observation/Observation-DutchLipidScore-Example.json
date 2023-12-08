@@ -20,9 +20,5 @@
     }
   },
   "effectiveDateTime": "2023-08-05",
-  "valueQuantity": {
-    "value": 7,
-    "system": "http://unitsofmeasure.org",
-    "code": "mmol/l"
-  }
+  "valueInteger": 7
 }

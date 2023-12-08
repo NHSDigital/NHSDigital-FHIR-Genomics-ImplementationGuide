@@ -42,11 +42,22 @@
     "coding": [
       {
         "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
-        "code": "R242.1",
-        "display": "Predictive testing for known familial mutation(s)"
+        "code": "R134",
+        "display": "Familial Hypercholesterolaemia"
       }
     ]
   },
+  "orderDetail":[
+    {
+      "coding": [
+        {
+          "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
+          "code": "R242.1",
+          "display": "Predictive testing for known familial mutation(s)"
+        }
+      ]
+    }
+  ],
   "subject": {
     "reference": "Patient/Patient-FayMutlow-Example",
     "identifier": {
@@ -63,8 +74,8 @@
       "coding": [
         {
           "system": "http://snomed.info/sct",
-          "code": "57177007",
-          "display": "Family history with explicit context"
+          "code": "473145005",
+          "display": "Possible familial hypercholesterolemia"
         }
       ]
     }
@@ -91,7 +102,7 @@
   ],
   "specimen": [
     {
-      "reference": "Specimen-BloodEDTA-Example"
+      "reference": "Specimen-FayMutlowBloodEDTA-Example"
     }
   ],
   "note": [

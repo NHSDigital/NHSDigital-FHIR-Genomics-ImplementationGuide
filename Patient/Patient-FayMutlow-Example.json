@@ -78,6 +78,13 @@
         "value": "G9999999"
       },
       "display": "Dr. Test GP"
+    },
+    {
+      "identifier": {
+        "system": "https://fhir.hl7.org.uk/Id/ODS-code",
+        "value": "B86012"
+      },
+      "display": "LEEDS CITY MEDICAL PRACTICE"
     }
   ]
 }

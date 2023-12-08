@@ -59,8 +59,8 @@
       "coding": [
         {
           "system": "http://snomed.info/sct",
-          "code": "57177007",
-          "display": "Family history with explicit context"
+          "code": "473145005",
+          "display": "Possible familial hypercholesterolemia"
         }
       ]
     }
