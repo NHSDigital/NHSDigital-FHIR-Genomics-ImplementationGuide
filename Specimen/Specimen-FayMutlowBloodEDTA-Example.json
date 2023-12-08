@@ -33,7 +33,8 @@
             "reference": "PractitionerRole/PractitionerRole-LoisLane-Example"
           }
         }
-      ]
+      ],
+      "display": "PractitionerRole-LoisLane: Specimen collector"
     },
     "collectedDateTime": "2023-10-05T15:30:00Z"
   },
