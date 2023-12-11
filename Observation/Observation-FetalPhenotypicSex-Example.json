@@ -6,8 +6,8 @@
 		"coding": [
 			{
 				"system": "http://snomed.info/sct",
-				"code": "1028321000000103",
-				"display": "Phenotype observable"
+				"code": "32570681000036106",
+				"display": "Indeterminate sex"
 			}
 		]
 	},
@@ -18,6 +18,5 @@
 			"value": "9449307687"
 		}
 	},
-	"effectiveDateTime": "2023-08-05",
-	"valueString": "inditerminate"
+	"effectiveDateTime": "2023-08-05"
 }

@@ -45,9 +45,9 @@
     "owner": {
         "identifier": {
             "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-            "value": "RAX"
+            "value": "PHO"
         },
-        "display": "Kingston Hospital NHS Foundation Trust"
+        "display": "Place Holder"
     },
     "note": [
         {

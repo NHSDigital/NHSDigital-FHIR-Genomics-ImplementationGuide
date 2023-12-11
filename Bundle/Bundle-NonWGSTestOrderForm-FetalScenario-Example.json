@@ -124,11 +124,11 @@
           },
           {
             "system": "urn:oid:2.16.840.1.113883.2.1.3.2.4.18.24",
-            "value": "RGT012423",
+            "value": "RWT13521",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                "value": "RWT13521"
+                "value": "RAX"
               }
             }
           }
@@ -279,36 +279,42 @@
           }
         ],
         "supportingInfo": [
-          {
-            "reference": "Observation/Observation-NonConsanguinousUnion-Example"
-          },
-          {
-            "reference": "Observation/Observation-GenomicEthnicity-Example"
-          },
-          {
-            "reference": "Observation/Observation-PregnancyConfirmation-Example"
-          },
-          {
-            "reference": "Observation/Observation-EstimatedDateOfDelivery-Example"
-          },
-          {
-            "reference": "Observation/Observation-NoTransplant-Example"
-          },
-          {
-            "reference": "Observation/Observation-GestationalAge-Example"
-          },
-          {
-            "reference": "Observation/Observation-NoFirstTrimesterFetalAnomalies-Example"
-          },
-          {
-            "reference": "Observation/Observation-NoSecondTrimesterFetalAnomalies-Example"
-          },
-          {
-            "reference": "Procedure/Procedure-InVitroFertilisation-Example"
-          },
-          {
-            "reference": "Specimen/Specimen-BloodEDTA-Example"
-          }
+            {
+              "reference": "Observation/Observation-HistoryOfFetalLoss-Example"
+            },
+            {
+              "reference": "Observation/Observation-NonConsanguinousUnion-Example"
+            },
+            {
+              "reference": "Observation/Observation-GenomicEthnicity-Example"
+            },
+            {
+              "reference": "Observation/Observation-PregnancyConfirmation-Example"
+            },
+            {
+              "reference": "Observation/Observation-EstimatedDateOfDelivery-Example"
+            },
+            {
+              "reference": "Observation/Observation-FetalPhenotypicSex-Example"
+            },
+            {
+              "reference": "Observation/Observation-NoTransplant-Example"
+            },
+            {
+              "reference": "Observation/Observation-GestationalAge-Example"
+            },
+            {
+              "reference": "Observation/Observation-NoFirstTrimesterFetalAnomalies-Example"
+            },
+            {
+              "reference": "Observation/Observation-NoSecondTrimesterFetalAnomalies-Example"
+            },
+            {
+              "reference": "Procedure/Procedure-InVitroFertilisation-Example"
+            },
+            {
+              "reference": "Specimen/Specimen-BloodEDTA-Example"
+            }
         ],
         "note": [
           {

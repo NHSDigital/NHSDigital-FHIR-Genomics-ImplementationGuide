@@ -6,12 +6,11 @@
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "19169002",
-        "display": "Miscarriage in first trimester"
+        "code": "609520005",
+        "display": "Disorder of fetal structure"
       }
     ],
     "text": "First Trimester Anomalies?"
-    
   },
   "subject": {
     "reference": "Patient/Patient-RyanneBoulder-Example",
@@ -20,6 +19,19 @@
       "value": "9449307687"
     }
   },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "255246003",
+            "display": "First trimester"
+          }
+        ]
+      }
+    }
+  ],
   "effectiveDateTime": "2023-08-05",
   "valueBoolean": false
 }

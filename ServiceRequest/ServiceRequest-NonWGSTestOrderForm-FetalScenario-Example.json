@@ -62,6 +62,9 @@
 	],
 	"supportingInfo": [
 		{
+			"reference": "Observation/Observation-HistoryOfFetalLoss-Example"
+		},
+		{
 			"reference": "Observation/Observation-NonConsanguinousUnion-Example"
 		},
 		{
@@ -72,6 +75,9 @@
 		},
 		{
 			"reference": "Observation/Observation-EstimatedDateOfDelivery-Example"
+		},
+		{
+			"reference": "Observation/Observation-FetalPhenotypicSex-Example"
 		},
 		{
 			"reference": "Observation/Observation-NoTransplant-Example"

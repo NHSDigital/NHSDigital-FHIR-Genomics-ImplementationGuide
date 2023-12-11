@@ -6,8 +6,8 @@
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "52637005",
-        "display": "In vitro fertilization"
+        "code": "425866000",
+        "display": "In vitro fertilization using donor eggs"
       }
     ]
   },
