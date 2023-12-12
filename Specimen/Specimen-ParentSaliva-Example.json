@@ -1,0 +1,46 @@
+{
+  "resourceType": "Specimen",
+  "id": "Specimen-ParentSaliva-Example",
+  "identifier": [
+    {
+      "system": "https://fhir.add.nhs.uk/Id/specimenId",
+      "value": "ROA-69050-FT-RWT13521"
+    }
+  ],
+  "status": "available",
+  "type": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "119342007",
+        "display": "Saliva specimen"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-FoetusOfRyanneBoulder-Example",
+    "identifier": {
+      "system": "urn:oid:2.16.840.1.113883.2.1.3.2.4.18.24",
+      "value": "FT-RWT13521",
+      "assigner": {
+        "identifier": {
+          "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+          "value": "RAX"
+        }
+      }
+    }
+  },
+  "container": [
+    {
+      "description": "Container:RAX-M-FT-RWT13521 contains Saliva for Mother"
+    },
+    {
+      "description": "Container:RAX-F-FT-RWT13521 contains Saliva for Father"
+    }
+  ],
+  "request": [
+    {
+      "reference": "ServiceRequest-NonWGSTestOrderForm-FetalScenario-Example"
+    }
+  ]
+}

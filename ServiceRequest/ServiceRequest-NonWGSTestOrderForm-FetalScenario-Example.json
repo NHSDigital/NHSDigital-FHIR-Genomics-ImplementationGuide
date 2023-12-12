@@ -90,6 +90,9 @@
 		},
 		{
 			"reference": "Specimen/Specimen-BloodEDTA-Example"
+		},
+		{
+			"reference": "Specimen/Specimen-ParentSaliva-Example"
 		}
 	],
 	"note": [
