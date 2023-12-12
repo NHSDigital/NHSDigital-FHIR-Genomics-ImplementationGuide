@@ -11,8 +11,8 @@
     "coding": [
       {
         "system": "https://fhir.nhs.uk/CodeSystem/task-status-reason-genomics",
-        "code": "UnsastifiedCondition",
-        "display": "Unsatisfied Condition"
+        "code": "SpecimenQualityNotOK",
+        "display": "Specimen Quality Not OK"
       }
     ]
   },
@@ -31,8 +31,8 @@
     "coding": [
       {
         "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
-        "code": "SampleManagement",
-        "display": "Sample Management"
+        "code": "RequestSampleAlignment",
+        "display": "Request Sample Alignment"
       }
     ]
   },

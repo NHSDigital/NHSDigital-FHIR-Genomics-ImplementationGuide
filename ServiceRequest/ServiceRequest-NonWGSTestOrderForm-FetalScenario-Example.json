@@ -74,9 +74,6 @@
 			"reference": "Observation/Observation-PregnancyConfirmation-Example"
 		},
 		{
-			"reference": "Observation/Observation-FetalPhenotypicSex-Example"
-		},
-		{
 			"reference": "Observation/Observation-NoTransplant-Example"
 		},
 		{
@@ -84,6 +81,9 @@
 		},
 		{
 			"reference": "Observation/Observation-NoSecondTrimesterFetalAnomalies-Example"
+		},
+		{
+			"reference": "Observation/Observation-FetalPhenotypicSex-Example"
 		},
 		{
 			"reference": "Procedure/Procedure-InVitroFertilisation-Example"
