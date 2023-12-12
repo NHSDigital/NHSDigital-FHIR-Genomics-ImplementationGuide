@@ -45,9 +45,9 @@
 			"type": {
 				"coding": [
 					{
-						"system": "https://fhir.nhs.uk/CodeSystem/message-events-genomics",
-						"code": "genomictestresponse",
-						"display": "Genomic Test Response"
+						"system": "http://snomed.info/sct",
+						"code": "1054161000000101",
+						"display": "Genetic report (record artifact)"
 					}
 				]
 			},

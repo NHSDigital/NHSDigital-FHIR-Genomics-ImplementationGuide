@@ -6,7 +6,7 @@
 			"system": "https://fhir.nhs.uk/Id/sds-user-id",
 			"value": "9999999998"
 		},
-		"display": "Lois Lane"
+		"display": "Phletobomist-Lois Lane"
 	},
 	"organization": {
 		"identifier": {
