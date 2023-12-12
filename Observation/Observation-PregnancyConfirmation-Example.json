@@ -29,9 +29,7 @@
 					}
 				]
 			}
-		}
-	],
-	"component": [
+		},
 		{
 			"code": {
 				"coding": [
@@ -48,9 +46,7 @@
 				"system": "http://unitsofmeasure.org",
 				"code": "d"
 			}
-		}
-	],
-	"component": [
+		},
 		{
 			"code": {
 				"coding": [

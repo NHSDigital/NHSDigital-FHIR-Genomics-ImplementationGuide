@@ -74,16 +74,10 @@
 			"reference": "Observation/Observation-PregnancyConfirmation-Example"
 		},
 		{
-			"reference": "Observation/Observation-EstimatedDateOfDelivery-Example"
-		},
-		{
 			"reference": "Observation/Observation-FetalPhenotypicSex-Example"
 		},
 		{
 			"reference": "Observation/Observation-NoTransplant-Example"
-		},
-		{
-			"reference": "Observation/Observation-GestationalAge-Example"
 		},
 		{
 			"reference": "Observation/Observation-NoFirstTrimesterFetalAnomalies-Example"

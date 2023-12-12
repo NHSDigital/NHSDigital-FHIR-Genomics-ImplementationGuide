@@ -279,42 +279,36 @@
           }
         ],
         "supportingInfo": [
-            {
-              "reference": "Observation/Observation-HistoryOfFetalLoss-Example"
-            },
-            {
-              "reference": "Observation/Observation-NonConsanguinousUnion-Example"
-            },
-            {
-              "reference": "Observation/Observation-GenomicEthnicity-Example"
-            },
-            {
-              "reference": "Observation/Observation-PregnancyConfirmation-Example"
-            },
-            {
-              "reference": "Observation/Observation-EstimatedDateOfDelivery-Example"
-            },
-            {
-              "reference": "Observation/Observation-FetalPhenotypicSex-Example"
-            },
-            {
-              "reference": "Observation/Observation-NoTransplant-Example"
-            },
-            {
-              "reference": "Observation/Observation-GestationalAge-Example"
-            },
-            {
-              "reference": "Observation/Observation-NoFirstTrimesterFetalAnomalies-Example"
-            },
-            {
-              "reference": "Observation/Observation-NoSecondTrimesterFetalAnomalies-Example"
-            },
-            {
-              "reference": "Procedure/Procedure-InVitroFertilisation-Example"
-            },
-            {
-              "reference": "Specimen/Specimen-BloodEDTA-Example"
-            }
+          {
+            "reference": "Observation/Observation-HistoryOfFetalLoss-Example"
+          },
+          {
+            "reference": "Observation/Observation-NonConsanguinousUnion-Example"
+          },
+          {
+            "reference": "Observation/Observation-GenomicEthnicity-Example"
+          },
+          {
+            "reference": "Observation/Observation-PregnancyConfirmation-Example"
+          },
+          {
+            "reference": "Observation/Observation-FetalPhenotypicSex-Example"
+          },
+          {
+            "reference": "Observation/Observation-NoTransplant-Example"
+          },
+          {
+            "reference": "Observation/Observation-NoFirstTrimesterFetalAnomalies-Example"
+          },
+          {
+            "reference": "Observation/Observation-NoSecondTrimesterFetalAnomalies-Example"
+          },
+          {
+            "reference": "Procedure/Procedure-InVitroFertilisation-Example"
+          },
+          {
+            "reference": "Specimen/Specimen-BloodEDTA-Example"
+          }
         ],
         "note": [
           {
