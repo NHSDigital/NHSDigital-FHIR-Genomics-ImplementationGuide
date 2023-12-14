@@ -72,13 +72,15 @@
       ]
     }
   ],
-  "performer": {
-    "identifier": {
-      "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-      "value": "RJZ"
-    },
-    "display": "KING'S COLLEGE HOSPITAL NHS FOUNDATION TRUST"
-  },
+  "performer": [
+    {
+      "identifier": {
+        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+        "value": "RJZ"
+      },
+      "display": "KING'S COLLEGE HOSPITAL NHS FOUNDATION TRUST"
+    }
+  ],
   "supportingInfo": [
     {
       "reference": "Observation/Observation-MultipleTumors-Example"

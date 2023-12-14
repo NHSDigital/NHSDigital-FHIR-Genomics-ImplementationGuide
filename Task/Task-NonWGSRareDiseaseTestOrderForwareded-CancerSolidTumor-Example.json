@@ -1,6 +1,6 @@
 {
     "resourceType": "Task",
-    "id": "Task-NonWGSRareDiseaseTestOrderForwarded-CancerSolidTumor-Example",
+    "id": "Task-NonWGSRareDiseaseTestOrderForwarded-SolidTumor-Example",
     "basedOn": [
         {
             "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-CancerSolidTumor-Example"

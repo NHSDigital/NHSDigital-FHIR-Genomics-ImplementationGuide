@@ -39,9 +39,9 @@
     {
       "coding": [
         {
-          "system": "http://snomed.info/sct",
-          "code": "441479001",
-          "display": "Fresh tissue specimen (specimen)"
+          "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-BiopsyState",
+          "code": "fresh-unfixed",
+          "display": "Fresh Unfixed"
         }
       ]
     }
