@@ -610,7 +610,7 @@
         ],
         "specimen": [
           {
-            "reference": "Specimen-CancerSolidTumor-Example"
+            "reference": "Specimen/Specimen-CancerSolidTumor-Example"
           }
         ],
         "note": [
