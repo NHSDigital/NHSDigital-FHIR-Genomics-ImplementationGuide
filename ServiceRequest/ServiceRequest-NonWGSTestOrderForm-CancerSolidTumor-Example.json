@@ -19,6 +19,12 @@
       "valueReference": {
         "reference": "PractitionerRole/PractitionerRole-AnnaLaneKingstonPathology-Example"
       }
+    },
+    {
+      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AdditionalContact",
+      "valueReference": {
+        "reference": "PractitionerRole/PractitionerRole-JamesTaylor-Example"
+      }
     }
   ],
   "status": "active",
@@ -51,7 +57,7 @@
       "value": "9449307555"
     }
   },
-  "authoredOn": "2023-11-24",
+  "authoredOn": "2023-09-08",
   "requester": {
     "reference": "PractitionerRole/PractitionerRole-HazelSmithKingstonPathology-Example"
   },
@@ -66,7 +72,20 @@
       ]
     }
   ],
+  "performer": {
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+      "value": "RJZ"
+    },
+    "display": "KING'S COLLEGE HOSPITAL NHS FOUNDATION TRUST"
+  },
   "supportingInfo": [
+    {
+      "reference": "Observation/Observation-MultipleTumors-Example"
+    },
+    {
+      "reference": "Observation/Observation-MultipleTumors-Example"
+    },
     {
       "reference": "Condition/Condition-LungTumor-Example"
     }
@@ -77,9 +96,6 @@
     }
   ],
   "note": [
-    {
-      "text": "No family history of genomic testing"
-    },
     {
       "text": "Free text for diagnosis/reason for referral, transplant, life status at time of request details/ e.g. malignant tumour - molecular assessment will aid management"
     }

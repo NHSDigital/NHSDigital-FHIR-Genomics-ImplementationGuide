@@ -1,0 +1,48 @@
+{
+  "resourceType": "Observation",
+  "id": "Observation-MultipleTumors-Example",
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "128462008",
+        "display": "Metastatic malignant neoplasm (disorder)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-ZelmaHadjkiss-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307555"
+    }
+  },
+  "specimen": {
+    "identifier": {
+      "system": "https://fhir.add.nhs.uk/Id/specimenId",
+      "value": "RA257630"
+    }
+  },
+  "valueQuantity": {
+    "value": 25,
+    "unit": "%",
+    "system": "http://unitsofmeasure.org",
+    "code": "%"
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "369755005",
+            "display": "Multiple tumors (qualifier value)"
+          }
+        ]
+      },
+      "valueBoolean": true
+    }
+  ],
+  "effectiveDateTime": "2023-09-08"
+}

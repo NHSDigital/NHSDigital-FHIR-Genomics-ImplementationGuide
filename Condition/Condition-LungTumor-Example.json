@@ -5,8 +5,8 @@
     "coding": [
       {
         "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-        "code": "active",
-        "display": "Active"
+        "code": "recurrence",
+        "display": "Recurrence"
       }
     ]
   },
@@ -14,8 +14,8 @@
     "coding": [
       {
         "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-        "code": "differential",
-        "display": "Differential"
+        "code": "provisional",
+        "display": "Provisional"
       }
     ]
   },

@@ -4,7 +4,7 @@
   "identifier": [
     {
       "system": "https://fhir.add.nhs.uk/Id/specimenId",
-      "value": "RGT03135"
+      "value": "RA257630"
     }
   ],
   "status": "available",
@@ -25,22 +25,23 @@
     }
   },
   "collection": {
-    "extension": [
-      {
-        "url": "http://hl7.org/fhir/StructureDefinition/specimen-specialHandling",
-        "valueCodeableConcept": {
-          "text": "High Risk of Infection:NO"
+    "bodySite": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "39607008",
+          "display": "Lung structure (body structure)"
         }
-      }
-    ]
+      ]
+    }
   },
   "condition": [
     {
       "coding": [
         {
-          "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-BiopsyState",
-          "code": "fresh-unfixed",
-          "display": "Fresh Unfixed"
+          "system": "http://snomed.info/sct",
+          "code": "441479001",
+          "display": "Fresh tissue specimen (specimen)"
         }
       ]
     }
