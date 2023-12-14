@@ -513,7 +513,7 @@
       }
     },
     {
-      "fullUrl": "http://example.org/fhir/ServiceRequest/ServiceRequest-NonWGSTestOrderForm-Example",
+      "fullUrl": "http://example.org/fhir/ServiceRequest/ServiceRequest-NonWGSTestOrderForm-CancerSolidTumor-Example",
       "resource": {
         "resourceType": "ServiceRequest",
         "id": "ServiceRequest-NonWGSTestOrderForm-CancerSolidTumor-Example",
