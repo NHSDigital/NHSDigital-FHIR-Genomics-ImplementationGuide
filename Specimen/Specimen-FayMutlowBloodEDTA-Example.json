@@ -3,7 +3,7 @@
   "id": "Specimen-FayMutlowBloodEDTA-Example",
   "identifier": [
     {
-      "system": "https://fhir.add.nhs.uk/Id/specimenId",
+      "system": "https://fhir.leedsth.nhs.uk//Id/specimenId",
       "value": "RR8-696B0-17843"
     }
   ],
