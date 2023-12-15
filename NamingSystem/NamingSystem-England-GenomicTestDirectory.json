@@ -1,10 +1,10 @@
 {
   "resourceType": "NamingSystem",
-  "id": "genomics-order-number",
-  "name": "GenomicsOrderNumber",
+  "id": "England-GenomicTestDirectory",
+  "name": "EnglandGenomicTestDirectory",
   "status": "draft",
-  "kind": "identifier",
-  "date": "2023-09-15",
+  "kind": "codesystem",
+  "date": "2023-12-04",
   "publisher": "NHS England",
   "contact": [
     {
@@ -31,12 +31,12 @@
     }
   ],
   "responsible": "NHS Genomic Interop Programme",
-  "description": "Genomic Medicine Service Unique Order Number",
-	"usage": "Assigned by central GMS system on receipt of a test order",
+  "description": "NamingSystem for Genomic Test Directory Codes",
+	"usage": "Used to define the system for Genomic Test Directory codes within ServiceRequest resources",
   "uniqueId":  [
     {
       "type": "uri",
-      "value": "https://fhir.nhs.uk/Id/GMSOrder",
+      "value": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
       "preferred": true
     }
   ]
