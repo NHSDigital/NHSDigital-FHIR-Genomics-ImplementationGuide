@@ -4,67 +4,6 @@
   "type": "transaction",
   "entry": [
     {
-      "fullUrl": "http://example.org/fhir/Specimen/Specimen-CancerSolidTumor-Example",
-      "resource": {
-        "resourceType": "Specimen",
-        "id": "Specimen-CancerSolidTumor-Example",
-        "identifier": [
-          {
-            "system": "https://fhir.add.nhs.uk/Id/specimenId",
-            "value": "RA257630"
-          }
-        ],
-        "status": "available",
-        "type": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "364611000000101",
-              "display": "Tissue resection sample"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/Patient-ZelmaHadjkiss-Example",
-          "identifier": {
-            "system": "https://fhir.nhs.uk/Id/nhs-number",
-            "value": "9449307555"
-          }
-        },
-        "collection": {
-          "bodySite": {
-            "coding": [
-              {
-                "system": "http://snomed.info/sct",
-                "code": "39607008",
-                "display": "Lung structure (body structure)"
-              }
-            ]
-          }
-        },
-        "condition": [
-          {
-            "coding": [
-              {
-                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-BiopsyState",
-                "code": "fresh-unfixed",
-                "display": "Fresh Unfixed"
-              }
-            ]
-          }
-        ],
-        "request": [
-          {
-            "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-CancerSolidTumor-Example"
-          }
-        ]
-      },
-      "request": {
-        "method": "POST",
-        "url": "Specimen"
-      }
-    },
-    {
       "fullUrl": "http://example.org/fhir/PractitionerRole/PractitionerRole-HazelSmithKingstonPathology-Example",
       "resource": {
         "resourceType": "PractitionerRole",
