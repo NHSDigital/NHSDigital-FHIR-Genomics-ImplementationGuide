@@ -3,7 +3,7 @@
   "id": "Specimen-ParentSaliva-Example",
   "identifier": [
     {
-      "system": "https://fhir.add.nhs.uk/Id/specimenId",
+      "system": "https://fhir.kingstonhospital.nhs.uk//Id/specimenId",
       "value": "ROA-69050-FT-RWT13521"
     }
   ],
@@ -18,17 +18,7 @@
     ]
   },
   "subject": {
-    "reference": "Patient/Patient-FoetusOfRyanneBoulder-Example",
-    "identifier": {
-      "system": "urn:oid:2.16.840.1.113883.2.1.3.2.4.18.24",
-      "value": "FT-RWT13521",
-      "assigner": {
-        "identifier": {
-          "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-          "value": "RAX"
-        }
-      }
-    }
+    "reference": "Patient/Patient-RyanneBoulder-Example"
   },
   "container": [
     {
@@ -40,7 +30,7 @@
   ],
   "request": [
     {
-      "reference": "ServiceRequest-NonWGSTestOrderForm-FetalScenario-Example"
+      "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-FetalScenario-Example"
     }
   ]
 }
