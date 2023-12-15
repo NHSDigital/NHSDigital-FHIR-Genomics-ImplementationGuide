@@ -1,6 +1,11 @@
 {
   "resourceType": "ServiceRequest",
   "id": "ServiceRequest-ReAnalysis-NonWGSTestOrderForm-Example",
+  "basedOn": [
+    {
+      "reference": "ServiceReques/ServiceRequest-NonWGSTestOrderForm-SyndromicEpilepsy-Example"
+    }
+  ],
   "extension": [
     {
       "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage",
@@ -16,14 +21,13 @@
     }
   ],
   "status": "active",
-  "intent": "reflex-order",
+  "intent": "order",
   "category": [
     {
       "coding": [
         {
           "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory",
-          "code": "rare-disease-non-wgs",
-          "display": "Rare Disease - Non-WGS"
+          "code": "rare-disease-non-wgs"
         }
       ]
     }
@@ -33,11 +37,20 @@
     "coding": [
       {
         "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
+        "code": "R387",
+        "display": "Re-analysis"
+      }
+    ]
+  },
+  "orderDetail": [{
+    "coding": [
+      {
+        "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
         "code": "R59",
         "display": "Early onset or syndromic epilepsy"
       }
     ]
-  },
+  }],
   "subject": {
     "reference": "Patient/Patient-DemeizaSeo-Example",
     "identifier": {
@@ -45,19 +58,20 @@
       "value": "9449306559"
     }
   },
-  "authoredOn": "2023-11-13",
+  "authoredOn": "2023-09-06T09:00:00Z",
   "requester": {
-    "reference": "PractitionerRole/PractitionerRole-GeneSmithENT-Example"
+    "reference": "PractitionerRole/PractitionerRole-HazelSmithRenal-Example"
   },
   "reasonCode": [
     {
       "coding": [
         {
           "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
-          "code": "R387",
-          "display": "Re-analysis"
+          "code": "719641000000101",
+          "display": "Data analysis (qualifier value)"
         }
-      ]
+      ],
+      "text": "Significant new treatment and or clinical management implication for the patient.Please provide details/treatment for management of epilepsy"
     }
   ],
   "supportingInfo": [
@@ -71,16 +85,21 @@
       "reference": "Observation/Observation-NoPregnancy-Example"
     },
     {
-      "reference": "FamilyMemberHistory/Observation-NonConsanguinousUnion-Example"
+      "reference": "Observation/Observation-NonConsanguinousUnion-Example"
+    },
+    {
+      "reference": "FamilyMemberHistory/FamilyMemberHistory-NonConsanguinousUnion-Example"
     },
     {
       "reference": "Observation/Observation-NoBoneMarrowTransplant-Example"
     },
     {
       "reference": "Observation/Observation-NoTransfusion-Example"
-    },
+    }
+  ],
+  "specimen": [
     {
-      "reference": "DiagnosticReport/UKCore-DiagnosticReport-MichaelJonesReport-Example"
+      "display": "No Sample Required"
     }
   ],
   "note": [
@@ -88,7 +107,7 @@
       "text": "No family history of genomic testing"
     },
     {
-      "text": "Free text for diagnosis/reason for referral, relevant information including family history, phenotypic details/ HPO Terms/E.g. Reanlaysis - change in observed phenotype. Epilespy test previously ordered on patient 5 years ago. "
+      "text": "Free text for diagnosis/reason for referral, relevant information including family history, phenotypic details/ HPO Terms/E.g. Reanlaysis - change in observed phenotype. Epilepsy test previously ordered on patient 5 years ago. "
     }
   ]
 }
