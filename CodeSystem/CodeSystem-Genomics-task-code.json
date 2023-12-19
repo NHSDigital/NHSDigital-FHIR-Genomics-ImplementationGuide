@@ -32,7 +32,7 @@
   "concept": [
     {
       "code": "RequestGenomicTest",
-      "display": "RequestGenomicTest",
+      "display": "Request Genomic Test",
       "designation": [
         {
           "use": {
@@ -88,7 +88,7 @@
     },
     {
       "code": "SampleProcessing",
-      "display": "SampleProcessing",
+      "display": "Sample Processing",
       "designation": [
         {
           "use": {
@@ -143,8 +143,8 @@
       ]
     },
     {
-      "code": "Genomic MDT",
-      "display": "GenomicMDT",
+      "code": "GenomicMDT",
+      "display": "Genomic MDT",
       "designation": [
         {
           "use": {
