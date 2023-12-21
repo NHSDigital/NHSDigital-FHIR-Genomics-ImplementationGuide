@@ -205,10 +205,10 @@
       }
     },
     {
-      "fullUrl": "http://example.org/fhir/ServiceRequest/ServiceRequest-ReAnalysis-NonWGSTestOrderForm-Example",
+      "fullUrl": "http://example.org/fhir/ServiceRequest/ServiceRequest-NonWGSTestOrderForm-ReAnalysis-Example",
       "resource": {
         "resourceType": "ServiceRequest",
-        "id": "ServiceRequest-ReAnalysis-NonWGSTestOrderForm-Example",
+        "id": "ServiceRequest-NonWGSTestOrderForm-ReAnalysis-Example",
         "basedOn": [
           {
             "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-SyndromicEpilepsy-Example"

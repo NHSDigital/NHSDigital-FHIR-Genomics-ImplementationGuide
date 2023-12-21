@@ -3,7 +3,7 @@
     "id": "Task-NonWGSRareDiseaseTestOrderAccepted-Reanlaysis-Example",
     "basedOn": [
         {
-            "reference": "ServiceRequest/ServiceRequest-ReAnalysis-NonWGSTestOrderForm-Example"
+            "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-ReAnalysis-Example.json"
         }
     ],
     "status": "accepted",
@@ -14,12 +14,12 @@
             {
                 "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
                 "code": "RequestGenomicTest",
-                "display": "RequestGenomicTest"
+                "display": "Request Genomic Test"
             }
         ]
     },
     "focus": {
-        "reference": "ServiceRequest/ServiceRequest-ReAnalysis-NonWGSTestOrderForm-Example"
+        "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-ReAnalysis-Example.json"
     },
     "for": {
         "reference": "Patient/Patient-DemeizaSeo-Example",

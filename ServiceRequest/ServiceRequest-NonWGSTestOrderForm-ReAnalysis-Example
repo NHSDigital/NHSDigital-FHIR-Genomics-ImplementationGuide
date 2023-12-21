@@ -1,6 +1,6 @@
 {
   "resourceType": "ServiceRequest",
-  "id": "ServiceRequest-ReAnalysis-NonWGSTestOrderForm-Example",
+  "id": "ServiceRequest-NonWGSTestOrderForm-ReAnalysis-Example",
   "basedOn": [
     {
       "reference": "ServiceReques/ServiceRequest-NonWGSTestOrderForm-SyndromicEpilepsy-Example"
