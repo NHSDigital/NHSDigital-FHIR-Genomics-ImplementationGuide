@@ -1,0 +1,57 @@
+{
+    "resourceType": "Task",
+    "id": "Task-TestOrderFormCompleted-StorageOfMaterial-Example",
+    "basedOn": [
+        {
+            "reference": "ServiceRequest/ServiceRequest-TestOrderForm-StorageOfMaterial-Example"
+        }
+    ],
+    "status": "completed",
+    "businessStatus": {
+      "coding": [
+        {
+          "system": "https://fhir.nhs.uk/CodeSystem/business-status-genomics",
+          "code": "SpecimenReceived",
+          "display": "Specimen Received"
+        }
+      ]
+    },
+    "intent": "order",
+    "priority": "routine",
+    "code": {
+        "coding": [
+            {
+                "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
+                "code": "SamplePreparation",
+                "display": "Sample Preparation"
+            }
+        ]
+    },
+    "focus": {
+        "reference": "ServiceRequest/ServiceRequest-TestOrderForm-StorageOfMaterial-Example"
+    },
+    "for": {
+        "reference": "Patient/Patient-TimMclullichs-Example",
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "8449303444"
+        }
+    },
+    "authoredOn": "2023-10-31T08:54:00Z",
+    "lastModified": "2023-10-31T15:43:00Z",
+    "requester": {
+        "reference": "PractitionerRole/PractitionerRole-OscarShields-Example"
+    },
+    "owner": {
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "RQ3"
+        },
+        "display": "BIRMINGHAM WOMEN'S AND CHILDREN'S NHS FOUNDATION TRUST"
+    },
+    "note": [
+        {
+            "text": "Optional Free Text field to record any additional details"
+        }
+    ]
+}
