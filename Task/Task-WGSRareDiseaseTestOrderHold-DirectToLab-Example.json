@@ -1,6 +1,6 @@
 {
   "resourceType": "Task",
-  "id": "Task-WGSRareDiseaseTestOrderAccepted-DirectToLab-Example",
+  "id": "Task-WGSRareDiseaseTestOrderHold-DirectToLab-Example",
   "basedOn": [
     {
       "reference": "ServiceRequest/ServiceRequest-WGSTestOrderForm-DirectToLab-Example"
