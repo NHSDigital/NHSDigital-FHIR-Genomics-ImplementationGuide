@@ -1,34 +1,25 @@
 {
     "resourceType": "Task",
-    "id": "Task-TestOrderFormCompleted-StorageOfMaterial-Example",
+    "id": "Task-NonWGSTestOrderFormAccepted-UsingStoredSample-Example",
     "basedOn": [
         {
-            "reference": "ServiceRequest/ServiceRequest-TestOrderForm-StorageOfMaterial-Example"
+            "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-UsingStoredSample-Example"
         }
     ],
-    "status": "completed",
-    "businessStatus": {
-      "coding": [
-        {
-          "system": "https://fhir.nhs.uk/CodeSystem/business-status-genomics",
-          "code": "SpecimenReceived",
-          "display": "Specimen Received"
-        }
-      ]
-    },
+    "status": "accepted",
     "intent": "order",
     "priority": "routine",
     "code": {
         "coding": [
             {
                 "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
-                "code": "SamplePreparation",
-                "display": "Sample Preparation"
+                "code": "RequestGenomicTest",
+                "display": "Request Genomic Test"
             }
         ]
     },
     "focus": {
-        "reference": "ServiceRequest/ServiceRequest-TestOrderForm-StorageOfMaterial-Example"
+        "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-UsingStoredSample-Example"
     },
     "for": {
         "reference": "Patient/Patient-TimMclullichs-Example",
@@ -37,8 +28,7 @@
             "value": "8449303452"
         }
     },
-    "authoredOn": "2023-10-31T08:54:00Z",
-    "lastModified": "2023-10-31T15:43:00Z",
+    "authoredOn": "2023-11-02T15:43:00Z",
     "requester": {
         "reference": "PractitionerRole/PractitionerRole-OscarShields-Example"
     },

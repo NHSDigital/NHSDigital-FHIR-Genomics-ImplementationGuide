@@ -1,6 +1,6 @@
 {
   "resourceType": "ServiceRequest",
-  "id": "ServiceRequest-TestOrderForm-StorageOfMaterial-Example",
+  "id": "ServiceRequest-NonWGSTestOrderForm-UsingStoredSample-Example",
   "extension": [
     {
       "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage",
@@ -19,7 +19,13 @@
   "intent": "order",
   "category": [
     {
-      "text": "Test category to be provided in future request."
+      "coding": [
+        {
+          "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory",
+          "code": "rare-disease-non-wgs",
+          "display": "Rare Disease - Non-WGS"
+        }
+      ]
     }
   ],
   "priority": "routine",
@@ -27,8 +33,8 @@
     "coding": [
       {
         "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
-        "code": "R346",
-        "display": "DNA to be stored"
+        "code": "R134",
+        "display": "Familial Hypercholesterolaemia"
       }
     ]
   },
@@ -39,7 +45,7 @@
       "value": "8449303452"
     }
   },
-  "authoredOn": "2023-10-28T11:00:00Z",
+  "authoredOn": "2023-11-02T11:00:00Z",
   "requester": {
     "reference": "PractitionerRole/PractitionerRole-OscarShields-Example"
   },
@@ -75,10 +81,32 @@
     },
     {
       "reference": "Observation/Observation-RiskOfInfection-Example"
+    },
+    {
+      "reference": "Observation/Observation-DutchLipidScore-Example"
+    },
+    {
+      "reference": "Observation/Observation-QueryXanthoma-Example"
+    },
+    {
+      "reference": "Observation/Observation-SimonBroomeCriteria-Example"
     }
   ],
   "specimen": [
     {
+      "reference": "Specimen/Specimen-BloodEDTA-WithCollectoinDetails-Example",
+      "identifier": [
+        {
+          "system": "https://fhir.bwc.nhs.uk//Id/specimenId",
+          "value": "RQ3-RTH-698C0-17543",
+          "assigner": {
+            "identifier": {
+              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+              "value": "RQ3"
+            }
+          }
+        }
+      ]
     }
   ],
   "note": [
@@ -86,7 +114,7 @@
       "text": "No family history of genomic testing"
     },
     {
-      "text": "Free text for diagnosis/reason for referral, transplant, life status at time of request details/ E.g. DNA to be stored for future testing"
+      "text": "Free text for diagnosis/reason for referral, relevant information including family history, phenotypic details/ HPO Terms/ patient to be tested for FH, use existing DNA sample in storage"
     }
   ]
 }
