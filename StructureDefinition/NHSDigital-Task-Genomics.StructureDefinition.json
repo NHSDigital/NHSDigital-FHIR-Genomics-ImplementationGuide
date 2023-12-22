@@ -73,6 +73,14 @@
         ]
       },
       {
+        "id": "Task.statusReason",
+        "path": "Task.statusReason",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://fhir.nhs.uk/ValueSet/genomics-task-statusReason"
+        }
+      },
+      {
         "id": "Task.businessStatus",
         "path": "Task.businessStatus",
         "short": "E.g. \"Specimen Received\", \"Analysis In Progress\"",
