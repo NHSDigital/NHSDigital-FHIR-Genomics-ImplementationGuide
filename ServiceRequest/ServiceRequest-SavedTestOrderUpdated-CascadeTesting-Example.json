@@ -91,18 +91,30 @@
       "reference": "Observation/Observation-DiseaseStatus-Example"
     },
     {
-      "reference": "Observation/FamilyMemberHistory-NonConsanguinousUnion-Example"
+      "reference": "Observation/Observation-NonConsanguinousUnion-Example"
+    },
+    {
+      "reference": "FamilyMemberHistory/FamilyMemberHistory-NonConsanguinousUnion-Example"
     },
     {
       "reference": "Observation/Observation-NoTransplant-Example"
     },
     {
       "reference": "Observation/Observation-NoTransfusion-Example"
+    },
+    {
+      "reference": "Observation/Observation-DutchLipidScore-Example"
+    },
+    {
+      "reference": "Observation/Observation-QueryXanthoma-Example"
+    },
+    {
+      "reference": "Observation/Observation-SimonBroomeCriteria-Example"
     }
   ],
   "specimen": [
     {
-      "reference": "Specimen-FayMutlowBloodEDTA-Example"
+      "reference": "Specimen/Specimen-FayMutlowBloodEDTA-Example"
     }
   ],
   "note": [
