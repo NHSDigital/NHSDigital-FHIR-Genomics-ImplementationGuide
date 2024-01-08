@@ -1,0 +1,57 @@
+{
+  "resourceType": "Task",
+  "id": "Task-NonWGSRareDiseaseTestOrderCancelled-FollowupTest-Example",
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-FollowupTestTypes-Example"
+    }
+  ],
+  "status": "cancelled",
+  "businessStatus": {
+    "coding": [
+      {
+        "system": "https://fhir.nhs.uk/CodeSystem/business-status-genomics",
+        "code": "FurtherClinicalDetailsRequired",
+        "display": "Further Clinical Details Required"
+      }
+    ]
+  },
+  "intent": "order",
+  "priority": "routine",
+  "code": {
+    "coding": [
+      {
+        "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
+        "code": "Interpretation",
+        "display": "Interpretation"
+      }
+    ]
+  },
+  "focus": {
+    "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-FollowupTestTypes-Example"
+  },
+  "for": {
+    "reference": "Patient/Patient-AnitaLamberts-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "8449303649"
+    }
+  },
+  "authoredOn": "2023-11-01T10:00:00Z",
+  "lastModified": "2023-11-10T11:00:00Z",
+  "requester": {
+    "reference": "PractitionerRole/PractitionerRole-GeneSmith-Example"
+  },
+  "owner": {
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+      "value": "RJ1"
+    },
+    "display": "GUY'S AND ST THOMAS' NHS FOUNDATION TRUST"
+  },
+  "note": [
+    {
+      "text": "Follow Up Test to be requested to aid interpretation. Request a new Test with M code R65.1"
+    }
+  ]
+}

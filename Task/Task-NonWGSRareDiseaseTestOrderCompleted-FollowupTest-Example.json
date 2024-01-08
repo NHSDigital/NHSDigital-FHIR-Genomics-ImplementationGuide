@@ -1,0 +1,57 @@
+{
+    "resourceType": "Task",
+    "id": "Task-NonWGSRareDiseaseTestOrderCompleted-FollowupTest-Example",
+    "basedOn": [
+        {
+            "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-FollowupTestUpdated-Example"
+        }
+    ],
+    "status": "completed",
+    "businessStatus": {
+        "coding": [
+            {
+                "system": "https://fhir.nhs.uk/CodeSystem/business-status-genomics",
+                "code": "SpecimenReceived",
+                "display": "Specimen Received"
+            }
+        ]
+    },
+    "intent": "order",
+    "priority": "routine",
+    "code": {
+        "coding": [
+            {
+                "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
+                "code": "ProduceFinalReport",
+                "display": "Produce Final Report"
+            }
+        ]
+    },
+    "focus": {
+        "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-FollowupTestUpdated-Example"
+    },
+    "for": {
+        "reference": "Patient/Patient-AnitaLamberts-Example",
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "8449303649"
+        }
+    },
+    "authoredOn": "2023-11-10T10:00:00Z",
+    "lastModified": "2023-11-24T15:30:00Z",
+    "requester": {
+        "reference": "PractitionerRole/PractitionerRole-AndrewSmith-Example"
+    },
+    "owner": {
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "RJ1"
+        },
+        "display": "GUY'S AND ST THOMAS' NHS FOUNDATION TRUST"
+    },
+    "note": [
+        {
+            "text": "Optional Free Text field to record any additional details"
+        }
+    ]
+}
