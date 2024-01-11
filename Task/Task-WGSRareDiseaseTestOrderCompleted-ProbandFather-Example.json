@@ -25,7 +25,7 @@
     "coding": [
       {
         "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
-        "code": "Produce Final Report",
+        "code": "ProduceFinalReport",
         "display": "Produce Final Report"
       }
     ]
