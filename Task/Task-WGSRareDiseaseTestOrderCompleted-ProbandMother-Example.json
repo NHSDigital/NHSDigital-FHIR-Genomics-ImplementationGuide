@@ -1,0 +1,60 @@
+{
+  "resourceType": "Task",
+  "id": "Task-WGSRareDiseaseTestOrderCompleted-ProbandMother-Example",
+  "groupIdentifier": {
+    "assigner": {
+      "identifier": {
+        "system": "https://fhir.leedsth.nhs.uk/Id/grouptestId",
+        "value": "RR8F1792"
+      }
+    }
+  },
+  "status": "completed",
+  "businessStatus": {
+    "coding": [
+      {
+        "system": "https://fhir.nhs.uk/CodeSystem/business-status-genomics",
+        "code": "SpecimenReceived",
+        "display": "Specimen Received"
+      }
+    ]
+  },
+  "intent": "order",
+  "priority": "routine",
+  "code": {
+    "coding": [
+      {
+        "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
+        "code": "ProduceFinalReport",
+        "display": "Produce Final Report"
+      }
+    ]
+  },
+  "focus": {
+    "reference": "ServiceRequest/ServiceRequest-WGSTestOrderForm-TrioTestingProbandMother-Example"
+  },
+  "for": {
+    "reference": "Patient/Patient-AliceSmithamProbandMother-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307246"
+    }
+  },
+  "authoredOn": "2023-09-15T15:00:00Z",
+  "lastModified": "2023-10-16T15:50:00Z",
+  "requester": {
+    "reference": "PractitionerRole/PractitionerRole-EugeneSmith-Example"
+  },
+  "owner": {
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+      "value": "R0A"
+    },
+    "display": "MANCHESTER UNIVERSITY NHS FOUNDATION TRUST"
+  },
+  "note": [
+    {
+      "text": "Optional Free Text field to record any additional details"
+    }
+  ]
+}

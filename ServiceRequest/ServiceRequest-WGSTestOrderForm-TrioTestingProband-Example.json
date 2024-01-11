@@ -88,6 +88,9 @@
       "reference": "Observation/Observation-DiseaseStatus-Example"
     },
     {
+      "reference": "Observation/Observation-DiseasePenetrance-Example"
+    },
+    {
       "reference": "Observation/Observation-IntellectualDisability-Example"
     },
     {

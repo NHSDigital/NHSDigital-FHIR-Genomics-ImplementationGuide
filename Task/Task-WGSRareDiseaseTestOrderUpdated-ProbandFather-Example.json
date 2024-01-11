@@ -1,0 +1,60 @@
+{
+  "resourceType": "Task",
+  "id": "Task-WGSRareDiseaseTestOrderAccepted-ProbandFather-Example",
+  "groupIdentifier": {
+    "assigner": {
+      "identifier": {
+        "system": "https://fhir.leedsth.nhs.uk/Id/grouptestId",
+        "value": "RR8F1792"
+      }
+    }
+  },
+  "status": "requested",
+  "businessStatus": {
+    "coding": [
+      {
+        "system": "https://fhir.nhs.uk/CodeSystem/business-status-genomics",
+        "code": "SpecimenReceived",
+        "display": "Specimen Received"
+      }
+    ]
+  },
+  "intent": "order",
+  "priority": "routine",
+  "code": {
+    "coding": [
+      {
+        "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
+        "code": "ProcessGenomicTestRequest",
+        "display": "Process Genomic Test Request"
+      }
+    ]
+  },
+  "focus": {
+    "reference": "ServiceRequest/ServiceRequest-WGSTestOrderForm-TrioTestingProbandFather-Example"
+  },
+  "for": {
+    "reference": "Patient/Patient-JamesLawrenceProbandFather-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307636"
+    }
+  },
+  "authoredOn": "2023-09-15T15:00:00Z",
+  "lastModified": "2023-10-09T09:15:00Z",
+  "requester": {
+    "reference": "PractitionerRole/PractitionerRole-EugeneSmith-Example"
+  },
+  "owner": {
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+      "value": "R0A"
+    },
+    "display": "MANCHESTER UNIVERSITY NHS FOUNDATION TRUST"
+  },
+  "note": [
+    {
+      "text": "Optional Free Text field to record any additional details"
+    }
+  ]
+}
