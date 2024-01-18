@@ -31,7 +31,7 @@
     ]
   },
   "focus": {
-    "reference": "ServiceRequest/ServiceRequest-WGSTestOrderForm-TrioTestingProbandFather-Example"
+    "reference": "ServiceRequest/ServiceRequest-WGSTestOrderFormUpdated-ProbandFather-Example"
   },
   "for": {
     "reference": "Patient/Patient-JamesLawrenceProbandFather-Example",
