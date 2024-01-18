@@ -1,0 +1,2011 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "Questionnaire-NonWGSTestOrderForm-FoetalScenario-Example",
+  "url": "https://fhir.nhs.uk/Questionnaire/Questionnaire-NonWGSTestOrderForm-FoetalScenario-Example",
+  "version": "0.1.0",
+  "name": "NonWGSTestOrderFormForFoetalScenario",
+  "title": "Non WGS Test Order Form for Foetal Scenario",
+  "status": "draft",
+  "subjectType": [
+    "Patient"
+  ],
+  "date": "2024-01-18T09:00:00Z",
+  "publisher": "HL7 UK",
+  "contact": [
+    {
+      "name": "HL7 UK",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "secretariat@hl7.org.uk",
+          "use": "work",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "name": "NHS England",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "interoperabilityteam@nhs.net",
+          "use": "work",
+          "rank": 2
+        }
+      ]
+    }
+  ],
+  "description": "This questionnaire represent a Non WGS Test Order Form for Foetal Scenario",
+  "purpose": "Non WGS Test Order Form for Foetal Scenario",
+  "item": [
+    {
+      "type": "string",
+      "linkId": "requestID",
+      "text": "Request ID",
+      "required": true,
+      "readOnly": true,
+      "initial": [
+        {
+          "valueString": "Autopopulate on submission of completed Test Order"
+        }
+      ],
+      "item": [
+        {
+          "text": "Autopopulate on submission of completed Test Order",
+          "type": "display",
+          "linkId": "requestID_helpText",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "text": "Help-Button",
+                "coding": [
+                  {
+                    "code": "help",
+                    "display": "Help-Button",
+                    "system": "http://hl7.org/fhir/questionnaire-item-control"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item": [
+        {
+          "type": "string",
+          "linkId": "requestingClinician",
+          "text": "Requesting Clinician",
+          "required": true,
+          "initial": [
+            {
+              "valueString": "Search for clinician using their SDS-user-id"
+            }
+          ],
+          "item": [
+            {
+              "text": "Requesting Clinician may be a pathologist, oncologist  or a member of the MDT",
+              "type": "display",
+              "linkId": "requestingClinician_helpText",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "text": "Help-Button",
+                    "coding": [
+                      {
+                        "code": "help",
+                        "display": "Help-Button",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "string",
+          "linkId": "emailAddrees",
+          "text": "Email Address",
+          "required": true,
+          "readOnly": true,
+          "initial": [
+            {
+              "valueString": "Auto-populate from Clinician search"
+            }
+          ]
+        },
+        {
+          "item": [
+            {
+              "text": "Ability to add multiple email addresses for cc for reporting",
+              "type": "display",
+              "linkId": "additionalEmailAddressForReporting_helpText",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "text": "Help-Button",
+                    "coding": [
+                      {
+                        "code": "help",
+                        "display": "Help-Button",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "type": "string",
+          "linkId": "additionalEmailAddressForReporting",
+          "text": "Additional Email for Reporting",
+          "required": false,
+          "repeats": true
+        },
+        {
+          "type": "string",
+          "linkId": "requestingOrganisation",
+          "text": "Requesting Organisation",
+          "required": true,
+          "initial": [
+            {
+              "valueString": "Search for NHS organisation using their ODS code"
+            }
+          ]
+        },
+        {
+          "type": "string",
+          "linkId": "departmentAndHospital",
+          "text": "Department and Hospital",
+          "required": true
+        },
+        {
+          "type": "string",
+          "maxLength": 11,
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/regex",
+              "valueString": "/^([0-9]\\d*|0)$/"
+            }
+          ],
+          "linkId": "telephoneNumber",
+          "text": "Telephone no",
+          "required": true
+        }
+      ],
+      "type": "group",
+      "linkId": "requestingClinicianDetails",
+      "text": "Requesting Clinician Details",
+      "readOnly": true
+    },
+    {
+      "item": [
+        {
+          "type": "string",
+          "linkId": "patientNHSNumber",
+          "text": "NHS Number",
+          "required": true,
+          "initial": [
+            {
+              "valueString": "Search for patient using their NHS number"
+            }
+          ]
+        },
+        {
+          "type": "string",
+          "linkId": "patientReasonNhsNumberUnavailable",
+          "text": "Reason for unavailable NHS Number",
+          "required": false
+        },
+        {
+          "type": "string",
+          "linkId": "patientFirstName",
+          "text": "First Name",
+          "required": true
+        },
+        {
+          "type": "string",
+          "linkId": "patientLastName",
+          "text": "Surname",
+          "required": true
+        },
+        {
+          "type": "date",
+          "linkId": "patientDdateOfBirth",
+          "text": "Date of Birth",
+          "required": true
+        },
+        {
+          "type": "string",
+          "linkId": "patientAddress",
+          "text": "Address",
+          "required": true,
+          "repeats": true
+        },
+        {
+          "type": "string",
+          "linkId": "patientPostCode",
+          "text": "Post code",
+          "required": true
+        },
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "patientSexRegisteredAtBirth",
+          "text": "Sex registered at Birth",
+          "required": true,
+          "answerValueSet": "http://hl7.org/fhir/ValueSet/administrative-gender"
+        },
+        {
+          "type": "boolean",
+          "linkId": "isPatientGenderSameWithSexRegisteredAtBirth",
+          "text": "Gender same as sex registered at birth",
+          "required": true
+        },
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "patientIdentifiedGender",
+          "text": "Patient Identified Gender",
+          "enableWhen": [
+            {
+              "question": "isPatientGenderSameWithSexRegisteredAtBirth",
+              "operator": "!=",
+              "answerBoolean": true
+            }
+          ],
+          "required": true,
+          "answerValueSet": "http://hl7.org/fhir/ValueSet/administrative-gender"
+        },
+        {
+          "type": "string",
+          "linkId": "patientGPDetails",
+          "text": "GP Details",
+          "required": true,
+          "initial": [
+            {
+              "valueString": "Autopopulate if patient exist on Spine"
+            }
+          ],
+          "item": [
+            {
+              "text": "Autopopulate if patient exist on Spine. Details must Summary Care Records",
+              "type": "display",
+              "linkId": "patientGPDetails_helpText",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "text": "Help-Button",
+                    "coding": [
+                      {
+                        "code": "help",
+                        "display": "Help-Button",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "patientEthnicity",
+          "text": "Ethnicity",
+          "required": true,
+          "answerValueSet": "https://fhir.hl7.org.uk/ValueSet/UKCore-EthnicCategory"
+        },
+        {
+          "item": [
+            {
+              "type": "date",
+              "linkId": "patientDateOfDeath",
+              "text": "Date of Death",
+              "enableWhen": [
+                {
+                  "question": "isPatientDeceseased",
+                  "operator": "=",
+                  "answerCoding": {
+                    "display": "Deceased"
+                  }
+                }
+              ],
+              "required": true
+            }
+          ],
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button",
+                    "display": "Radio Button"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "isPatientDeceseased",
+          "text": "Life Status",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "display": "Alive"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Deceased"
+              }
+            }
+          ]
+        },
+        {
+          "type": "string",
+          "linkId": "patientLocalIdentifier",
+          "text": "Local Identifier"
+        },
+        {
+          "type": "open-choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button",
+                    "display": "Radio Button"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "patientGenomicEthnicity",
+          "text": "Genomic Ethnicity",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "display": "Unknown"
+              }
+            }
+          ]
+        },
+        {
+          "type": "string",
+          "linkId": "patientPedigreeNumber",
+          "text": "Pedigree/Family Identifier"
+        },
+        {
+          "type": "attachment",
+          "linkId": "attchmentRecordOfDiscussion",
+          "text": "Attachment: Record of Discussion",
+          "item": [
+            {
+              "text": "Provide completed Record of Instruction as an attachment if available",
+              "type": "display",
+              "linkId": "attchmentRecordOfDiscussion_helpText",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "text": "Help-Button",
+                    "coding": [
+                      {
+                        "code": "help",
+                        "display": "Help-Button",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button",
+                    "display": "Radio Button"
+                  }
+                ],
+                "text": "Help-Button"
+              }
+            }
+          ],
+          "linkId": "patientInformation_helpText",
+          "text": "Record of Discussion",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "display": "I have attached a copy of the Record of Discussion form for all individuals"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Patient conversation taken place; Record of Discussion form to follow"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "We have not yet had the patient conversation on Record of Discussion"
+              }
+            }
+          ]
+        }
+      ],
+      "type": "group",
+      "linkId": "patientInformation",
+      "text": "Patient Information",
+      "required": false,
+      "readOnly": true
+    },
+    {
+      "item": [
+        {
+          "type": "open-choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button",
+                    "display": "Radio Button"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "optionsForDevolvedNations",
+          "text": "Options: Devolved nations",
+          "enableWhen": [
+            {
+              "question": "paymentStatus",
+              "operator": "=",
+              "answerCoding": {
+                "display": "Devolved Nation"
+              }
+            }
+          ],
+          "answerOption": [
+            {
+              "valueCoding": {
+                "display": "Scotland"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Wales"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Northern Ireland"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Jersey"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Guernsey"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Isle of Man"
+              }
+            }
+          ]
+        }
+      ],
+      "type": "open-choice",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "radio-button",
+                "display": "Radio Button"
+              }
+            ]
+          }
+        }
+      ],
+      "linkId": "paymentStatus",
+      "text": "Payment Status",
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "display": "NHS_E"
+          },
+          "initialSelected": true
+        },
+        {
+          "valueCoding": {
+            "display": "Private Patient"
+          }
+        },
+        {
+          "valueCoding": {
+            "display": "Devolved Nation"
+          }
+        },
+        {
+          "valueCoding": {
+            "display": "Overseas Visitors"
+          }
+        }
+      ]
+    },
+    {
+      "item": [
+        {
+          "type": "text",
+          "linkId": "urgencyReason",
+          "text": "Urgency Reason",
+          "enableWhen": [
+            {
+              "question": "testRequestPriority",
+              "operator": "=",
+              "answerCoding": {
+                "display": "Urgent"
+              }
+            }
+          ],
+          "required": true
+        }
+      ],
+      "type": "choice",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "radio-button",
+                "display": "Radio Button"
+              }
+            ]
+          }
+        }
+      ],
+      "linkId": "testRequestPriority",
+      "text": "Priority",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "display": "Routine"
+          },
+          "initialSelected": true
+        },
+        {
+          "valueCoding": {
+            "display": "Urgent"
+          }
+        }
+      ]
+    },
+    {
+      "item": [
+        {
+          "type": "dateTime",
+          "linkId": "dateAndTimeTestRequested",
+          "text": "Date and Time of Request",
+          "required": true,
+          "item": [
+            {
+              "text": "Autopopulate on submission of completed Test Order./ or Manually entered if from Paper Test",
+              "type": "display",
+              "linkId": "dateAndTimeTestRequested_helpText",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "text": "Help-Button",
+                    "coding": [
+                      {
+                        "code": "help",
+                        "display": "Help-Button",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "autocomplete",
+                    "display": "Auto-complete"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "testCategoryCode",
+          "text": "Test Category Code",
+          "required": true,
+          "answerValueSet": "https://fhir.hl7.org.uk/ValueSet/UKCore-GenomeSequencingCategory"
+        },
+        {
+          "item": [
+            {
+              "text": "M or R code from National Genomic Test Directory",
+              "type": "display",
+              "linkId": "testDirectoryCode_helpText",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "text": "Help-Button",
+                    "coding": [
+                      {
+                        "code": "help",
+                        "display": "Help-Button",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "autocomplete",
+                    "display": "Auto-complete"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "testDirectoryCode",
+          "text": "Test Directory Code",
+          "required": true,
+          "answerValueSet": "https://fhir.nhs.uk/Valueset/England-GenomicTestDirectory"
+        },
+        {
+          "type": "open-choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button",
+                    "display": "Radio Button"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "reasonForTesting",
+          "text": "Reason for Testing",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "103693007",
+                "display": "Diagnostic procedure"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Carrier"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Predictive/Pre-Symptomatic"
+              }
+            }
+          ]
+        },
+        {
+          "type": "open-choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button",
+                    "display": "Radio Button"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "isTestRequestSingleton",
+          "text": "Family Testing",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "display": "Singleton"
+              },
+              "initialSelected": true
+            },
+            {
+              "valueCoding": {
+                "display": "Duo"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Trio"
+              }
+            }
+          ]
+        },
+        {
+          "type": "open-choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button",
+                    "display": "Radio Button"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "familyHistoryOfGeneticTesting",
+          "text": "Has any other members of the family previously had genomic testing (e.g. BRACA, NIPD testing etc)?",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "No"
+              }
+            }
+          ]
+        }
+      ],
+      "type": "group",
+      "linkId": "testRequestDetails",
+      "text": "Test Request",
+      "readOnly": true
+    },
+    {
+      "item": [
+        {
+          "item": [
+            {
+              "type": "quantity",
+              "extension": [
+                {
+                  "valueBoolean": true,
+                  "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+                  "valueCoding": {
+                    "system": "http://unitsofmeasure.org",
+                    "code": "wk",
+                    "display": "weeks"
+                  }
+                }
+              ],
+              "linkId": "gestationalAge",
+              "code": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "226081000000107",
+                  "display": "Gestational age"
+                }
+              ],
+              "text": "Gestation",
+              "enableWhen": [
+                {
+                  "question": "isPregnancyConfirmed",
+                  "operator": "=",
+                  "answerCoding": {
+                    "display": "Yes"
+                  }
+                }
+              ],
+              "required": true,
+              "readOnly": false
+            },
+            {
+              "type": "date",
+              "linkId": "estimatedDateOfDelivery",
+              "code": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "161714006",
+                  "display": "Estimated date of delivery"
+                }
+              ],
+              "text": "Estimated Date of Delivery",
+              "enableWhen": [
+                {
+                  "question": "isPregnancyConfirmed",
+                  "operator": "=",
+                  "answerCoding": {
+                    "display": "Yes"
+                  }
+                }
+              ],
+              "required": true
+            }
+          ],
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button",
+                    "display": "Radio Button"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "isPregnancyConfirmed",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "77386006",
+              "display": "Pregnancy"
+            }
+          ],
+          "text": "Pregnant",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "No"
+              }
+            }
+          ]
+        },
+        {
+          "item": [
+            {
+              "type": "quantity",
+              "linkId": "diseaseAgeOnset",
+              "code": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "397669002",
+                  "display": "Age (qualifier value)"
+                }
+              ],
+              "text": "Age of Onset",
+              "enableWhen": [
+                {
+                  "question": "diseaseStatus",
+                  "operator": "=",
+                  "answerCoding": {
+                    "display": "Affected"
+                  }
+                }
+              ],
+              "required": true,
+              "initial": [
+                {
+                  "valueQuantity": {
+                    "unit": "year",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "a"
+                  }
+                }
+              ]
+            }
+          ],
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button",
+                    "display": "Radio Button"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "diseaseStatus",
+          "text": "Disease Status",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "display": "Affected"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Unaffected"
+              }
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button",
+                    "display": "Radio Button"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "diseasePenetrance",
+          "text": "Disease Penetrance",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "display": "Complete"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Incomplete"
+              }
+            }
+          ]
+        },
+        {
+          "type": "string",
+          "linkId": "clinicalDetails",
+          "text": "Clinical Details",
+          "initial": [
+            {
+              "valueString": "diagnosis/reason for referral, relevant information including family history, phenotypic details/ HPO Terms"
+            }
+          ],
+          "item": [
+            {
+              "text": "diagnosis/reason for referral, relevant information including family history, phenotypic details/ HPO Terms",
+              "type": "display",
+              "linkId": "clinicalDetails_helpText",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "text": "Help-Button",
+                    "coding": [
+                      {
+                        "code": "help",
+                        "display": "Help-Button",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "item": [
+            {
+              "type": "string",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "help",
+                        "display": "Help-Button"
+                      }
+                    ],
+                    "text": "Help-Button"
+                  }
+                }
+              ],
+              "linkId": "phenotypicDetails_helpText",
+              "text": "Select link HPO Terms",
+              "readOnly": true,
+              "initial": [
+                {
+                  "valueString": "Record indication of HPO details (display based on Test Directory code selected)"
+                }
+              ]
+            },
+            {
+              "type": "attachment",
+              "linkId": "pedigreeDetails",
+              "text": "Pedigree Details"
+            }
+          ],
+          "type": "group",
+          "linkId": "phenotypicDetails",
+          "text": "Phenotypic Details"
+        },
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button",
+                    "display": "Radio Button"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "productOfConsanguineousUnion",
+          "text": "Is the individual a product of a consanguineous union?",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "No"
+              }
+            }
+          ]
+        },
+        {
+          "item": [
+            {
+              "type": "date",
+              "linkId": "transplantDate",
+              "text": "Transplant Date",
+              "enableWhen": [
+                {
+                  "question": "patientHadBoneMarrowTransplant",
+                  "operator": "=",
+                  "answerCoding": {
+                    "display": "Yes"
+                  }
+                }
+              ],
+              "required": true
+            }
+          ],
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button",
+                    "display": "Radio Button"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "patientHadBoneMarrowTransplant",
+          "text": "Has the patient had a bone marrow transplant?",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "No"
+              }
+            }
+          ]
+        },
+        {
+          "item": [
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "radio-button",
+                        "display": "Radio Button"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "transfusionType",
+              "text": "Transfusion Type",
+              "enableWhen": [
+                {
+                  "question": "patientHadTransfusion",
+                  "operator": "=",
+                  "answerCoding": {
+                    "display": "Yes"
+                  }
+                }
+              ],
+              "required": true,
+              "readOnly": false,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "Packed Red Cells"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Plasma"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Platelets"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "date",
+              "linkId": "transfusionDate",
+              "text": "Transfusion Date",
+              "enableWhen": [
+                {
+                  "question": "patientHadTransfusion",
+                  "operator": "=",
+                  "answerCoding": {
+                    "display": "Yes"
+                  }
+                }
+              ],
+              "required": true
+            }
+          ],
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button",
+                    "display": "Radio Button"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "patientHadTransfusion",
+          "text": "Has the patient had a transfusion?",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "No"
+              }
+            }
+          ]
+        },
+        {
+          "type": "attachment",
+          "linkId": "previuosRelevantTestReport",
+          "text": "Previous Relevant Test Reports"
+        }
+      ],
+      "type": "group",
+      "linkId": "references",
+      "text": "References(Observations,Conditions. e.t.c)",
+      "readOnly": true
+    },
+    {
+      "item": [
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button",
+                    "display": "Radio Button"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "riskOfInfection",
+          "text": "High Risk of Infection",
+          "required": true,
+          "readOnly": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "No"
+              }
+            }
+          ]
+        },
+        {
+          "type": "date",
+          "linkId": "sampleCollectionDate",
+          "text": "Sample Date",
+          "required": true
+        },
+        {
+          "type": "string",
+          "linkId": "patientspecimenID",
+          "text": "Specimen ID",
+          "required": true
+        },
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "PatientTuberculosisTypes",
+          "text": "TB",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "display": "HIV"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "IV DRUG USERS"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "VIRAL HEPATITIS"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "CREUTZFELDT-JACOB DISEASE"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "TYPHOID"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "ANTHRAX"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "MELIOIDOSIS"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "BRUCELLOSIS"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "E-COLI 0157"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "HAEMOLYTRICURAEMIC SYNDROME"
+              }
+            }
+          ]
+        },
+        {
+          "type": "open-choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button",
+                    "display": "Radio Button"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "patientSampleTypes",
+          "text": "Sample Type",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "display": "Blood EDTA"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Fetal Blood"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "POC"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "DNA"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Blood Lithium Heparin"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Blood Strek"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Blood Sport"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Buffy Coat"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Saliva"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "CVS"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Amino"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Tissue"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Buccal Swab"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Urine"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "CD138"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "CD19"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Cerebrospinal fluid"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Pericardial fluid"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Pertioneal fluid (ascites)"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Pleural fluid"
+              }
+            }
+          ]
+        },
+        {
+          "type": "string",
+          "linkId": "patientSampleCollector",
+          "text": "Sample Taken By",
+          "required": true,
+          "initial": [
+            {
+              "valueString": "Search for Phlebotomist using their SDS-user-id"
+            }
+          ]
+        }
+      ],
+      "type": "group",
+      "linkId": "patientSamplesampleCollectionDetails",
+      "text": "Patient Sample"
+    },
+    {
+      "item": [
+        {
+          "item": [
+            {
+              "type": "open-choice",
+              "linkId": "nhsNumber_familyMember",
+              "text": "NHS Number",
+              "required": true,
+              "item": [
+                {
+                  "text": "Autopopulate if patient exist on SPINE. (Details must match Summary Care Record)",
+                  "type": "display",
+                  "linkId": "nhsNumber_familyMember_helpText",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept": {
+                        "text": "Help-Button",
+                        "coding": [
+                          {
+                            "code": "help",
+                            "display": "Help-Button",
+                            "system": "http://hl7.org/fhir/questionnaire-item-control"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "string",
+              "linkId": "reasonNhsNumberUnavailable_familyMember",
+              "text": "Reason for unavailable NHS Number"
+            },
+            {
+              "type": "string",
+              "linkId": "firstName_familyMember",
+              "text": "First Name",
+              "required": true
+            },
+            {
+              "type": "string",
+              "linkId": "lastName_familyMember",
+              "text": "Surname",
+              "required": true
+            },
+            {
+              "type": "date",
+              "linkId": "dateofBirth__familyMember",
+              "text": "Date of Birth"
+            },
+            {
+              "type": "string",
+              "linkId": "address__familyMember",
+              "text": "Address",
+              "required": true,
+              "repeats": true
+            },
+            {
+              "type": "string",
+              "linkId": "post_Code__familyMember",
+              "text": "Post code",
+              "required": true
+            },
+            {
+              "type": "attachment",
+              "linkId": "attachmentFamilyMemberRecordOfDiscussion",
+              "text": "Attachment: Record of Discussion",
+              "item": [
+                {
+                  "text": "Provide completed Record of Instruction as an attachment if available",
+                  "type": "display",
+                  "linkId": "attachmentFamilyMemberRecordOfDiscussion_helpText",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept": {
+                        "text": "Help-Button",
+                        "coding": [
+                          {
+                            "code": "help",
+                            "display": "Help-Button",
+                            "system": "http://hl7.org/fhir/questionnaire-item-control"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "radio-button",
+                        "display": "Radio Button"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "recordOfDiscussion__familyMember",
+              "text": "Record of Discussion",
+              "required": false,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "I have attached a copy of the Record of Discussion form for all individuals"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Patient conversation taken place; Record of Discussion form to follow"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "We have not yet had the patient conversation on Record of Discussion"
+                  }
+                }
+              ]
+            }
+          ],
+          "type": "group",
+          "linkId": "familyMembersDetails",
+          "text": "Family Members Details",
+          "required": true,
+          "readOnly": true
+        },
+        {
+          "item": [
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "radio-button",
+                        "display": "Radio Button"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "riskOfInfection_familyMembers",
+              "text": "High Risk of Infection",
+              "required": true,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "Yes"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "No"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "date",
+              "linkId": "sampleCollectionDate_familyMembers",
+              "text": "Sample Date",
+              "required": true
+            },
+            {
+              "type": "string",
+              "linkId": "specimenID_familyMembers",
+              "text": "Specimen ID",
+              "required": true
+            },
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "tuberculosisTypes_familyMembers",
+              "text": "TB",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "HIV"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "IV DRUG USERS"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "VIRAL HEPATITIS"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "CREUTZFELDT-JACOB DISEASE"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "TYPHOID"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "ANTHRAX"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "MELIOIDOSIS"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "BRUCELLOSIS"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "E-COLI 0157"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "HAEMOLYTRICURAEMIC SYNDROME"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "open-choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "radio-button",
+                        "display": "Radio Button"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "specimenTypes_familyMember",
+              "text": "Sample Type",
+              "required": true,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "Blood EDTA"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Fetal Blood"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "POC"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "DNA"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Blood Lithium Heparin"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Blood Strek"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Blood Sport"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Buffy Coat"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Saliva"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "CVS"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Amino"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Tissue"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Buccal Swab"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Urine"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "CD138"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "CD19"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Cerebrospinal fluid"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Pericardial fluid"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Pertioneal fluid (ascites)"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Pleural fluid"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "string",
+              "linkId": "sampleCollector_familyMembers",
+              "text": "Sample Taken By",
+              "required": true,
+              "initial": [
+                {
+                  "valueString": "Search for Phlebotomist using their SDS-user-id"
+                }
+              ]
+            }
+          ],
+          "type": "group",
+          "linkId": "sampleCollectionDetails_familyMembers",
+          "text": "Family Members Sample Details",
+          "required": true,
+          "readOnly": true
+        },
+        {
+          "text": "Add the required numbers of additional family members.",
+          "type": "display",
+          "linkId": "additionalFamilyMembers_helpText",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "text": "Help-Button",
+                "coding": [
+                  {
+                    "code": "help",
+                    "display": "Help-Button",
+                    "system": "http://hl7.org/fhir/questionnaire-item-control"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "type": "group",
+      "linkId": "additionalFamilyMembers",
+      "text": "Additional Family members",
+      "enableWhen": [
+        {
+          "question": "isTestRequestSingleton",
+          "operator": "!=",
+          "answerCoding": {
+            "display": "Singleton"
+          }
+        }
+      ],
+      "repeats": true,
+      "readOnly": true
+    }
+  ]
+}
