@@ -197,8 +197,8 @@
               "enableWhen": [
                 {
                   "question": "choiceConfirmation1",
-                  "operator": "!=",
-                  "answerBoolean": true
+                  "operator": "=",
+                  "answerBoolean": false
                 }
               ],
               "required": true
@@ -206,7 +206,7 @@
             {
               "type": "boolean",
               "linkId": "isRemoteConsentTrue",
-              "text": "Remote consent, recorded remotely by clinician, no patient signature",
+              "text": "Consent obtained remotely, no patient signature",
               "required": true
             },
             {
@@ -231,13 +231,13 @@
                 }
               ],
               "type": "group",
-              "linkId": "consilteeValidation",
+              "linkId": "consulteeValidation",
               "text": "Consultee Validation",
               "enableWhen": [
                 {
                   "question": "isRemoteConsentTrue",
-                  "operator": "!=",
-                  "answerBoolean": true
+                  "operator": "=",
+                  "answerBoolean": false
                 }
               ]
             }
