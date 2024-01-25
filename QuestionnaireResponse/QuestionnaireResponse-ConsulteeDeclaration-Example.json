@@ -92,52 +92,47 @@
             },
             {
               "linkId": "choiceConfirmation2",
-              "text": "I am willing to accept the role of consultee for this person",
+              "text": "I am willing to accept the role of consultee for this person"
+            },
+            {
+              "linkId": "isRemoteConsentTrue",
+              "text": "Consent obtained remotely, no consultee signature",
               "answer": [
                 {
-                  "valueBoolean": true
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "linkId": "isRemoteConsentTrue",
-          "text": "Consent obtained remotely, no patient signature",
-          "answer": [
-            {
-              "valueBoolean": false
-            }
-          ]
-        },
-        {
-          "linkId": "consulteeValidation",
-          "text": "Consultee Validation",
-          "item": [
-            {
-              "linkId": "consulteetNamecombined",
-              "text": "Your Name(i.e, the Consultee)",
-              "answer": [
-                {
-                  "valueString": "James Goldsmith"
+                  "valueBoolean": false
                 }
               ]
             },
             {
-              "linkId": "consulteeSignature",
-              "text": "Signature",
-              "answer": [
+              "linkId": "consulteeValidation",
+              "text": "Consultee Validation",
+              "item": [
                 {
-                  "valueString": "JamesG"
-                }
-              ]
-            },
-            {
-              "linkId": "dateConsulteeCompletedForm",
-              "text": "Date",
-              "answer": [
+                  "linkId": "consulteetNamecombined",
+                  "text": "Your Name(i.e, the Consultee)",
+                  "answer": [
+                    {
+                      "valueString": "James Goldsmith"
+                    }
+                  ]
+                },
                 {
-                  "valueDateTime": "2024-01-25"
+                  "linkId": "consulteeSignature",
+                  "text": "Signature",
+                  "answer": [
+                    {
+                      "valueString": "JamesG"
+                    }
+                  ]
+                },
+                {
+                  "linkId": "dateConsulteeCompletedForm",
+                  "text": "Date",
+                  "answer": [
+                    {
+                      "valueDateTime": "2024-01-25"
+                    }
+                  ]
                 }
               ]
             }

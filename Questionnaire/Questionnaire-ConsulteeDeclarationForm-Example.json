@@ -206,7 +206,7 @@
             {
               "type": "boolean",
               "linkId": "isRemoteConsentTrue",
-              "text": "Consent obtained remotely, no patient signature",
+              "text": "Consent obtained remotely, no consultee signature",
               "required": true
             },
             {
