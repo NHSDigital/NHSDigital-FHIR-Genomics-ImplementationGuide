@@ -108,7 +108,7 @@
               "text": "Consultee Validation",
               "item": [
                 {
-                  "linkId": "consulteetNamecombined",
+                  "linkId": "consulteeNamecombined",
                   "text": "Your Name(i.e, the Consultee)",
                   "answer": [
                     {

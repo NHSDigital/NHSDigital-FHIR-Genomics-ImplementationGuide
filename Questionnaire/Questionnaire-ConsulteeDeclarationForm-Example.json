@@ -213,7 +213,7 @@
               "item": [
                 {
                   "type": "string",
-                  "linkId": "cosulteeNamecombined",
+                  "linkId": "consulteeNamecombined",
                   "text": "Your Name(i.e, the Consultee)",
                   "required": true
                 },
