@@ -17,20 +17,9 @@
       "telecom": [
         {
           "system": "email",
-          "value": "secretariat@hl7.org.uk",
-          "use": "work",
-          "rank": 1
-        }
-      ]
-    },
-    {
-      "name": "NHS England",
-      "telecom": [
-        {
-          "system": "email",
           "value": "interoperabilityteam@nhs.net",
           "use": "work",
-          "rank": 2
+          "rank": 1
         }
       ]
     }
