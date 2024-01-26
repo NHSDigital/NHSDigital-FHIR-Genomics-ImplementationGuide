@@ -116,8 +116,7 @@
       ],
       "type": "group",
       "linkId": "guidanceNonWillingToConsent",
-      "text": "If ANY of your answers are ‘NO’, or you don’t want to take part:",
-      "required": true
+      "text": "If ANY of your answers are ‘NO’, or you don’t want to take part:"
     },
     {
       "item": [
