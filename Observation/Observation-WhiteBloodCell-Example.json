@@ -20,9 +20,9 @@
   },
   "valueQuantity": {
     "value": 11.9,
-    "unit": "g/dl",
+    "unit": "10^9/L",
     "system": "http://unitsofmeasure.org",
-    "code": "g/dL"
+    "code": "10^9/L"
   },
   "effectiveDateTime": "2023-09-03"
 }
