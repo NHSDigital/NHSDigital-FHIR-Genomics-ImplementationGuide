@@ -10,19 +10,8 @@
     "Patient"
   ],
   "date": "2024-01-18T09:00:00Z",
-  "publisher": "NHS England",
+  "publisher": "HL7 UK",
   "contact": [
-    {
-      "name": "NHS England",
-      "telecom": [
-        {
-          "system": "email",
-          "value": "secretariat@hl7.org.uk",
-          "use": "work",
-          "rank": 1
-        }
-      ]
-    },
     {
       "name": "NHS England",
       "telecom": [
@@ -273,10 +262,36 @@
       "text": "If ALL of your answers are ‘YES’:"
     },
     {
-      "type": "boolean",
+      "type": "choice",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "radio-button",
+                "display": "Radio Button"
+              }
+            ]
+          }
+        }
+      ],
       "linkId": "isRemoteConsentTrue",
       "text": "Assent obtained remotely, no participant signature",
-      "required": true
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "display": "Yes"
+          }
+        },
+        {
+          "valueCoding": {
+            "display": "No"
+          }
+        }
+      ]
     },
     {
       "item": [
@@ -341,7 +356,9 @@
         {
           "question": "isRemoteConsentTrue",
           "operator": "=",
-          "answerBoolean": false
+          "answerCoding": {
+            "display": "Yes"
+          }
         }
       ],
       "enableBehavior": "all"

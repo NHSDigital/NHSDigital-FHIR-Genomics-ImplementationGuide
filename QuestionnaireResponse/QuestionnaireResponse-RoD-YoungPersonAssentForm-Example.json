@@ -82,7 +82,7 @@
           "text": "1. Have you read information or has someone explained the research to you?",
           "answer": [
             {
-              "valueBoolean": true
+              "valueCoding": "Yes"
             }
           ]
         },
@@ -90,9 +90,9 @@
           "linkId": "consentQuestion2",
           "text": "2. Have you asked all the questions you want?",
           "answer": [
-            {
-              "valueBoolean": true
-            }
+           {
+            "valueCoding": "Yes"
+          }
           ]
         },
         {
@@ -100,7 +100,7 @@
           "text": "3. Have you had your questions answered in a way you understand?",
           "answer": [
             {
-              "valueBoolean": true
+              "valueCoding": "Yes"
             }
           ]
         },
@@ -109,7 +109,7 @@
           "text": "4. Do you understand it’s OK to say you don’t want to take part – but that your parent(s), or guardian who look after you, will make the final choice?",
           "answer": [
             {
-              "valueBoolean": true
+              "valueCoding": "Yes"
             }
           ]
         },
@@ -118,7 +118,7 @@
           "text": "5. Are you happy to take part?",
           "answer": [
             {
-              "valueBoolean": false
+              "valueCoding": "No"
             }
           ]
         }
@@ -128,9 +128,9 @@
       "linkId": "isRemoteConsentTrue",
       "text": "Assent obtained remotely, no participant signature",
       "answer": [
-        {
-          "valueBoolean": true
-        }
+       {
+        "valueCoding": "Yes"
+      }
       ]
     }
   ]
