@@ -10,10 +10,10 @@
     "Patient"
   ],
   "date": "2024-01-18T09:00:00Z",
-  "publisher": "HL7 UK",
+  "publisher": "NHS England",
   "contact": [
     {
-      "name": "HL7 UK",
+      "name": "NHS England",
       "telecom": [
         {
           "system": "email",
@@ -24,7 +24,7 @@
       ]
     },
     {
-      "name": "NHS Digital",
+      "name": "NHS England",
       "telecom": [
         {
           "system": "email",
@@ -273,6 +273,12 @@
       "text": "If ALL of your answers are ‘YES’:"
     },
     {
+      "type": "boolean",
+      "linkId": "isRemoteConsentTrue",
+      "text": "Assent obtained remotely, no participant signature",
+      "required": true
+    },
+    {
       "item": [
         {
           "type": "string",
@@ -295,7 +301,50 @@
       ],
       "type": "group",
       "linkId": "patientValidation",
-      "text": "Patient Validation"
+      "text": "Patient Validation",
+      "enableWhen": [
+        {
+          "question": "consentQuestion1",
+          "operator": "=",
+          "answerCoding": {
+            "display": "Yes"
+          }
+        },
+        {
+          "question": "consentQuestion2",
+          "operator": "=",
+          "answerCoding": {
+            "display": "Yes"
+          }
+        },
+        {
+          "question": "consentQuestion3",
+          "operator": "=",
+          "answerCoding": {
+            "display": "Yes"
+          }
+        },
+        {
+          "question": "consentQuestion4",
+          "operator": "=",
+          "answerCoding": {
+            "display": "Yes"
+          }
+        },
+        {
+          "question": "consentQuestion5",
+          "operator": "=",
+          "answerCoding": {
+            "display": "Yes"
+          }
+        },
+        {
+          "question": "isRemoteConsentTrue",
+          "operator": "=",
+          "answerBoolean": false
+        }
+      ],
+      "enableBehavior": "all"
     }
   ]
 }
