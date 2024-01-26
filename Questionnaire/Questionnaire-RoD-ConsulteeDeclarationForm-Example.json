@@ -24,7 +24,7 @@
       ]
     },
     {
-      "name": "NHS Digital",
+      "name": "NHS England",
       "telecom": [
         {
           "system": "email",
@@ -202,44 +202,6 @@
                 }
               ],
               "required": true
-            },
-            {
-              "type": "boolean",
-              "linkId": "isRemoteConsentTrue",
-              "text": "Consent obtained remotely, no consultee signature",
-              "required": true
-            },
-            {
-              "item": [
-                {
-                  "type": "string",
-                  "linkId": "consulteeNamecombined",
-                  "text": "Your Name(i.e, the Consultee)",
-                  "required": true
-                },
-                {
-                  "type": "string",
-                  "linkId": "consulteeSignature",
-                  "text": "Signature",
-                  "required": true
-                },
-                {
-                  "type": "dateTime",
-                  "linkId": "dateConsulteeCompletedForm",
-                  "text": "Date",
-                  "required": true
-                }
-              ],
-              "type": "group",
-              "linkId": "consulteeValidation",
-              "text": "Consultee Validation",
-              "enableWhen": [
-                {
-                  "question": "isRemoteConsentTrue",
-                  "operator": "=",
-                  "answerBoolean": false
-                }
-              ]
             }
           ],
           "type": "group",
@@ -250,6 +212,44 @@
       "type": "group",
       "linkId": "confirmationOfDecision",
       "text": "Confirmation of decision"
+    },
+    {
+      "type": "boolean",
+      "linkId": "isRemoteConsentTrue",
+      "text": "Consent obtained remotely, no consultee signature",
+      "required": true
+    },
+    {
+      "item": [
+        {
+          "type": "string",
+          "linkId": "consulteeNamecombined",
+          "text": "Your Name(i.e, the Consultee)",
+          "required": true
+        },
+        {
+          "type": "string",
+          "linkId": "consulteeSignature",
+          "text": "Signature",
+          "required": true
+        },
+        {
+          "type": "dateTime",
+          "linkId": "dateConsulteeCompletedForm",
+          "text": "Date",
+          "required": true
+        }
+      ],
+      "type": "group",
+      "linkId": "consulteeValidation",
+      "text": "Consultee Validation",
+      "enableWhen": [
+        {
+          "question": "isRemoteConsentTrue",
+          "operator": "=",
+          "answerBoolean": false
+        }
+      ]
     },
     {
       "item": [
