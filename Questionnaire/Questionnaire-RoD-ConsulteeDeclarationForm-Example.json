@@ -198,7 +198,7 @@
                 {
                   "question": "choiceConfirmation1",
                   "operator": "=",
-                  "answerBoolean": false
+                  "answerBoolean": true
                 }
               ],
               "required": true
