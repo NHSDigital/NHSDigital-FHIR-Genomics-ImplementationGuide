@@ -1,11 +1,11 @@
 {
   "resourceType": "QuestionnaireResponse",
-  "id": "QuestionnaireResponse-ConsulteeDeclarationForm-Example",
+  "id": "QuestionnaireResponse-RoD-ConsulteeDeclarationForm-Example",
   "questionnaire": "https://fhir.nhs.uk/Questionnaire/Questionnaire-RoD-ConsulteeDeclarationForm-Example",
   "status": "completed",
   "basedOn": [
     {
-      "reference": "urn:uuid:a40c7ddc-2897-4e3c-bae6-88500e080229"
+      "reference": "ServiceRequest/ServiceRequest-WGSTestOrderForm-TrioTestingProband-Example"
     }
   ],
   "subject": {
