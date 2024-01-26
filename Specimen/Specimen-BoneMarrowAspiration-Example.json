@@ -36,6 +36,23 @@
   "subject": {
     "reference": "Patient/Patient-PatrickSammy-Example"
   },
+  "collection":{
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/specimen-specialHandling",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "723509005",
+              "display": "High risk (qualifier value)"
+            }
+          ]
+        }
+      }
+    ]
+
+  },
   "receivedTime": "2023-08-29T11:00:00Z",
   "request": [
     {
