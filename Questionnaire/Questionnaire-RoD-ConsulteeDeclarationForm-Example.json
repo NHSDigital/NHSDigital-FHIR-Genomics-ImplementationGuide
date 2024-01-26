@@ -1,9 +1,9 @@
 {
   "resourceType": "Questionnaire",
-  "id": "Questionnaire-ConsulteeDeclarationForm-Example",
-  "url": "https://fhir.nhs.uk/Questionnaire/Questionnaire-ConsulteeDeclaration-Example",
+  "id": "Questionnaire-RoD-ConsulteeDeclarationForm-Example",
+  "url": "https://fhir.nhs.uk/Questionnaire/Questionnaire-RoD-ConsulteeDeclarationForm-Example",
   "version": "0.1.0",
-  "name": "QuestionnaireConsulteeDeclarationExample",
+  "name": "QuestionnaireRoDConsulteeDeclarationFormExample",
   "title": "Consultee declaration regarding whole genome sequencing",
   "status": "draft",
   "subjectType": [

@@ -1,7 +1,7 @@
 {
   "resourceType": "QuestionnaireResponse",
-  "id": "QuestionnaireResponse-RoD-ConsulteeDeclaration-Example",
-  "questionnaire": "https://fhir.nhs.uk/Questionnaire/Questionnaire-ConsulteeDeclaration-Example",
+  "id": "QuestionnaireResponse-ConsulteeDeclarationForm-Example",
+  "questionnaire": "https://fhir.nhs.uk/Questionnaire/Questionnaire-RoD-ConsulteeDeclarationForm-Example",
   "status": "completed",
   "basedOn": [
     {
