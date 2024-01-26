@@ -10,7 +10,7 @@
     "Patient"
   ],
   "date": "2024-01-18T09:00:00Z",
-  "publisher": "HL7 UK",
+  "publisher": "NHS England",
   "contact": [
     {
       "name": "NHS England",
@@ -66,164 +66,34 @@
     {
       "item": [
         {
-          "type": "choice",
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/questionnaire-item-control",
-                    "code": "radio-button",
-                    "display": "Radio Button"
-                  }
-                ]
-              }
-            }
-          ],
+          "type": "boolean",
           "linkId": "consentQuestion1",
           "text": "1. Have you read information or has someone explained the research to you?",
-          "required": true,
-          "answerOption": [
-            {
-              "valueCoding": {
-                "display": "Yes"
-              }
-            },
-            {
-              "valueCoding": {
-                "display": "No"
-              }
-            }
-          ]
+          "required": true
         },
         {
-          "type": "choice",
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/questionnaire-item-control",
-                    "code": "radio-button",
-                    "display": "Radio Button"
-                  }
-                ]
-              }
-            }
-          ],
+          "type": "boolean",
           "linkId": "consentQuestion2",
           "text": "2. Have you asked all the questions you want?",
-          "required": true,
-          "answerOption": [
-            {
-              "valueCoding": {
-                "display": "Yes"
-              }
-            },
-            {
-              "valueCoding": {
-                "display": "No"
-              }
-            }
-          ]
+          "required": true
         },
         {
-          "type": "choice",
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/questionnaire-item-control",
-                    "code": "radio-button",
-                    "display": "Radio Button"
-                  }
-                ]
-              }
-            }
-          ],
+          "type": "boolean",
           "linkId": "consentQuestion3",
           "text": "3. Have you had your questions answered in a way you understand?",
-          "required": true,
-          "answerOption": [
-            {
-              "valueCoding": {
-                "display": "Yes"
-              }
-            },
-            {
-              "valueCoding": {
-                "display": "No"
-              }
-            }
-          ]
+          "required": true
         },
         {
-          "type": "choice",
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/questionnaire-item-control",
-                    "code": "radio-button",
-                    "display": "Radio Button"
-                  }
-                ]
-              }
-            }
-          ],
+          "type": "boolean",
           "linkId": "consentQuestion4",
           "text": "4. Do you understand it’s OK to say you don’t want to take part – but that your parent(s), or guardian who look after you, will make the final choice?",
-          "required": true,
-          "answerOption": [
-            {
-              "valueCoding": {
-                "display": "Yes"
-              }
-            },
-            {
-              "valueCoding": {
-                "display": "No"
-              }
-            }
-          ]
+          "required": true
         },
         {
-          "type": "choice",
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/questionnaire-item-control",
-                    "code": "radio-button",
-                    "display": "Radio Button"
-                  }
-                ]
-              }
-            }
-          ],
+          "type": "boolean",
           "linkId": "consentQuestion5",
           "text": "5. Are you happy to take part?",
-          "required": true,
-          "answerOption": [
-            {
-              "valueCoding": {
-                "display": "Yes"
-              }
-            },
-            {
-              "valueCoding": {
-                "display": "No"
-              }
-            }
-          ]
+          "required": true
         }
       ],
       "type": "group",
@@ -262,36 +132,10 @@
       "text": "If ALL of your answers are ‘YES’:"
     },
     {
-      "type": "choice",
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/questionnaire-item-control",
-                "code": "radio-button",
-                "display": "Radio Button"
-              }
-            ]
-          }
-        }
-      ],
+      "type": "boolean",
       "linkId": "isRemoteConsentTrue",
       "text": "Assent obtained remotely, no participant signature",
-      "required": true,
-      "answerOption": [
-        {
-          "valueCoding": {
-            "display": "Yes"
-          }
-        },
-        {
-          "valueCoding": {
-            "display": "No"
-          }
-        }
-      ]
+      "required": true
     },
     {
       "item": [
@@ -321,44 +165,32 @@
         {
           "question": "consentQuestion1",
           "operator": "=",
-          "answerCoding": {
-            "display": "Yes"
-          }
+          "answerBoolean": true
         },
         {
           "question": "consentQuestion2",
           "operator": "=",
-          "answerCoding": {
-            "display": "Yes"
-          }
+          "answerBoolean": true
         },
         {
           "question": "consentQuestion3",
           "operator": "=",
-          "answerCoding": {
-            "display": "Yes"
-          }
+          "answerBoolean": true
         },
         {
           "question": "consentQuestion4",
           "operator": "=",
-          "answerCoding": {
-            "display": "Yes"
-          }
+          "answerBoolean": true
         },
         {
           "question": "consentQuestion5",
           "operator": "=",
-          "answerCoding": {
-            "display": "Yes"
-          }
+          "answerBoolean": true
         },
         {
           "question": "isRemoteConsentTrue",
           "operator": "=",
-          "answerCoding": {
-            "display": "Yes"
-          }
+          "answerBoolean": false
         }
       ],
       "enableBehavior": "all"
