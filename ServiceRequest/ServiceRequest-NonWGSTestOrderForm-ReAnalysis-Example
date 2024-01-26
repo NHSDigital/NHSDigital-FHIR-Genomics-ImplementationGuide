@@ -42,15 +42,17 @@
       }
     ]
   },
-  "orderDetail": [{
-    "coding": [
-      {
-        "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
-        "code": "R59",
-        "display": "Early onset or syndromic epilepsy"
-      }
-    ]
-  }],
+  "orderDetail": [
+    {
+      "coding": [
+        {
+          "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
+          "code": "R59",
+          "display": "Early onset or syndromic epilepsy"
+        }
+      ]
+    }
+  ],
   "subject": {
     "reference": "Patient/Patient-DemeizaSeo-Example",
     "identifier": {
@@ -97,12 +99,10 @@
       "reference": "Observation/Observation-NoTransfusion-Example"
     }
   ],
-  "specimen": [
-    {
-      "display": "No Sample Required"
-    }
-  ],
   "note": [
+    {
+      "text": "No Sample Required"
+    },
     {
       "text": "No family history of genomic testing"
     },

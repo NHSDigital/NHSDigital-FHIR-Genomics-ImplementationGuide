@@ -1,11 +1,6 @@
 {
     "resourceType": "Task",
     "id": "Task-NonWGSRareDiseaseTestOrderAccepted-Reanlaysis-Example",
-    "basedOn": [
-        {
-            "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-ReAnalysis-Example.json"
-        }
-    ],
     "status": "accepted",
     "intent": "order",
     "priority": "routine",
@@ -13,8 +8,8 @@
         "coding": [
             {
                 "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
-                "code": "RequestGenomicTest",
-                "display": "Request Genomic Test"
+                "code": "ProcessGenomicTestRequest",
+                "display": "Process Genomic Test Request"
             }
         ]
     },
