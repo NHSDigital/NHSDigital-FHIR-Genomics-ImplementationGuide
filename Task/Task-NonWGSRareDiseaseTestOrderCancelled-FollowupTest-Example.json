@@ -1,18 +1,13 @@
 {
   "resourceType": "Task",
   "id": "Task-NonWGSRareDiseaseTestOrderCancelled-FollowupTest-Example",
-  "basedOn": [
-    {
-      "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-FollowupTestTypes-Example"
-    }
-  ],
   "status": "cancelled",
-  "businessStatus": {
+  "statusReason": {
     "coding": [
       {
-        "system": "https://fhir.nhs.uk/CodeSystem/business-status-genomics",
-        "code": "FurtherClinicalDetailsRequired",
-        "display": "Further Clinical Details Required"
+        "system": "https://fhir.nhs.uk/CodeSystem/task-statusReason-genomics",
+        "code": "DecisionNotToProgressWithTestRequest",
+        "display": "Decision Not To Progress With Test Request"
       }
     ]
   },
@@ -28,7 +23,7 @@
     ]
   },
   "focus": {
-    "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-FollowupTestTypes-Example"
+    "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-FollowupTest-Example"
   },
   "for": {
     "reference": "Patient/Patient-AnitaLamberts-Example",

@@ -1,11 +1,6 @@
 {
   "resourceType": "ServiceRequest",
-  "id": "ServiceRequest-NonWGSTestOrderForm-FollowupTestUpdated-Example",
-  "basedOn": [
-    {
-      "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-FollowupTestTypes-Example"
-    }
-  ],
+  "id": "ServiceRequest-NonWGSTestOrderForm-FollowupTest-Example",
   "extension": [
     {
       "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage",
@@ -38,11 +33,10 @@
     "coding": [
       {
         "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
-        "code": "R65.1",
-        "display": "Aminoglycoside exposure posing risk to hearing"
+        "code": "R187",
+        "display": "Cystic Fibrosis"
       }
-    ],
-    "text": "Follow Up Test requested to aid interpretation. M code modified to: R65.1"
+    ]
   },
   "subject": {
     "reference": "Patient/Patient-AnitaLamberts-Example",
@@ -51,9 +45,9 @@
       "value": "8449303649"
     }
   },
-  "authoredOn": "2023-11-10T10:00:00Z",
+  "authoredOn": "2023-11-01T10:00:00Z",
   "requester": {
-    "reference": "PractitionerRole/PractitionerRole-AndrewSmith-Example"
+    "reference": "PractitionerRole/PractitionerRole-GeneSmith-Example"
   },
   "reasonCode": [
     {
@@ -102,7 +96,7 @@
   ],
   "specimen": [
     {
-      "reference": "Specimen/Specimen-BloodEDTA-Example"
+      "display": "Specimen to be provided later"
     }
   ],
   "note": [
@@ -110,12 +104,7 @@
       "text": "No family history of genomic testing"
     },
     {
-      "text": "Free text for diagnosis/reason for referral, relevant information including family history, phenotypic details/ HPO Terms /  For example: Adult with CT-proven bronchiectasis, chronic suppurative chest infection with colonisation by Pseudomonas and Staph aureus. Intital test ordered for Cystic Fibrosis."
-    }
-  ],
-  "relevantHistory": [
-    {
-      "reference": "Provenance/Provenance-ServiceRequest-NonWGSTestOrderForm-FollowupTestTypes-Example"
+      "text": "Free text for diagnosis/reason for referral, relevant information including family history, phenotypic details/ HPO Terms / For example: Adult with CT-proven bronchiectasis, chronic suppurative chest infection with colonisation by Pseudomonas and Staph aureus"
     }
   ]
 }
