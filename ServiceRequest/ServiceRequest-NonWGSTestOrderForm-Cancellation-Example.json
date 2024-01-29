@@ -1,6 +1,6 @@
 {
   "resourceType": "ServiceRequest",
-  "id": "ServiceRequest-NonWGSTestOrderForm-MarkInError-Example",
+  "id": "ServiceRequest-NonWGSTestOrderForm-Cancellation-Example",
   "extension": [
     {
       "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage",
@@ -45,9 +45,9 @@
       "value": "9449307873"
     }
   },
-  "authoredOn": "2023-11-01T10:00:00Z",
+  "authoredOn": "2023-08-05T10:08:00Z",
   "requester": {
-    "reference": "PractitionerRole/PractitionerRole-GeneSmith-Example"
+    "reference": "PractitionerRole/PractitionerRole-GeneSmithENT-Example"
   },
   "reasonCode": [
     {
