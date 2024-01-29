@@ -56,7 +56,7 @@
     },
     {
       "code": "MultipleTestRequestedOnTheSamePatient",
-      "display": "Multiple Test Requested On The SameP atient(only one test required)"
+      "display": "Multiple Test Requested On The Same Patient(only one test required)"
     },
     {
       "code": "DecisionNotToProgressWithTestRequest",
