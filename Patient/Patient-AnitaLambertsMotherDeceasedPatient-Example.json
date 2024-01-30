@@ -71,6 +71,12 @@
   "link": [
     {
       "other": {
+        "reference": "https://api.service.nhs.uk/personal-demographics/FHIR/R4/Patient/8449303650"
+      },
+      "type": "seealso"
+    },
+    {
+      "other": {
         "reference": "RelatedPerson/RelatedPerson-AnitaLambertsDeceasedPatient-Example"
       },
       "type": "seealso"
