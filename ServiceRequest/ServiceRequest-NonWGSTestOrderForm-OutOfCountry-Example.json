@@ -60,8 +60,8 @@
       "coding": [
         {
           "system": "http://snomed.info/sct",
-          "code": "717441000000107",
-          "display": "Diagnosis (record artifact)"
+          "code": "103693007",
+          "display": "Diagnostic procedure"
         }
       ]
     }

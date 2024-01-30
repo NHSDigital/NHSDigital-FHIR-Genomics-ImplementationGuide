@@ -1,12 +1,7 @@
 {
     "resourceType": "Task",
     "id": "Task-NonWGSRareDiseaseTestOrderForwarded-OutOfCountry-Example",
-    "basedOn": [
-        {
-            "reference": "ServiceRequest-NonWGSTestOrderForm-OutOfCountry-Example"
-        }
-    ],
-    "status": "ready",
+    "status": "in-progress",
     "businessStatus": {
         "coding": [
             {
@@ -22,8 +17,8 @@
         "coding": [
             {
                 "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
-                "code": "RequestGenomicTest",
-                "display": "Request Genomic Test"
+                "code": "ProcessGenomicTestRequest",
+                "display": "Process Genomic Test Request"
             }
         ]
     },
