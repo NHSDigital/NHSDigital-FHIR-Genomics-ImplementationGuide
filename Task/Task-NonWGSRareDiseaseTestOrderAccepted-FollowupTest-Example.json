@@ -14,7 +14,7 @@
     ]
   },
   "focus": {
-    "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-FollowupTestTypes-Example"
+    "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-FollowupTest-Example"
   },
   "for": {
     "reference": "Patient/Patient-AnitaLamberts-Example",
