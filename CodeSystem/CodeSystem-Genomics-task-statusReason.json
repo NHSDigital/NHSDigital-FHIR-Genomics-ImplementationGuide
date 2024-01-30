@@ -31,6 +31,10 @@
   "content": "complete",
   "concept": [
     {
+      "code": "AwaitingSpecimen",
+      "display": "Awaiting Specimen"
+    },
+    {
       "code": "InvalidRequest",
       "display": "Invalid Request"
     },
