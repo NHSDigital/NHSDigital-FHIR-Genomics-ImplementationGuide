@@ -80,9 +80,6 @@
       "reference": "Observation/Observation-NoTransfusion-Example"
     },
     {
-      "reference": "Observation/Observation-RiskOfInfection-Example"
-    },
-    {
       "reference": "Observation/Observation-DutchLipidScore-Example"
     },
     {

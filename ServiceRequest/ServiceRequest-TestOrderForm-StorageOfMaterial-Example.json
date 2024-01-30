@@ -17,11 +17,6 @@
   ],
   "status": "active",
   "intent": "order",
-  "category": [
-    {
-      "text": "Test category to be provided in future request."
-    }
-  ],
   "priority": "routine",
   "code": {
     "coding": [
@@ -72,17 +67,12 @@
     },
     {
       "reference": "Observation/Observation-NoTransfusion-Example"
-    },
-    {
-      "reference": "Observation/Observation-RiskOfInfection-Example"
-    }
-  ],
-  "specimen": [
-    {
-      "display": "Specimen will be provided at a later date"
     }
   ],
   "note": [
+    {
+      "text": "Specimen will be provided at a later date"
+    },
     {
       "text": "No family history of genomic testing"
     },

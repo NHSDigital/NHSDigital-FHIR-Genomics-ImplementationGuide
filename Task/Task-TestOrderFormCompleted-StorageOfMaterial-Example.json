@@ -22,8 +22,8 @@
         "coding": [
             {
                 "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
-                "code": "SamplePreparation",
-                "display": "Sample Preparation"
+                "code": "RequestSampleAlignment",
+                "display": "Request & Sample Alignment"
             }
         ]
     },
@@ -51,7 +51,23 @@
     },
     "note": [
         {
-            "text": "Optional Free Text field to record any additional details"
+            "text": "Sample recieved and placed in storage"
+        }
+    ],
+    "output": [
+        {
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "445295009",
+                        "display": "Blood specimen with EDTA"
+                    }
+                ]
+            },
+            "valueReference": {
+                "reference": "Specimen/Specimen-BloodEDTA-WithCollectoinDetails-Example"
+            }
         }
     ]
 }
