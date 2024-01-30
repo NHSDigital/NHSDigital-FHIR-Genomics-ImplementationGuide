@@ -98,11 +98,6 @@
       "reference": "Observation/Observation-NoTransfusion-Example"
     }
   ],
-  "specimen": [
-    {
-      "display": "No Sample Required"
-    }
-  ],
   "note": [
     {
       "text": "No family history of genomic testing"

@@ -1,11 +1,6 @@
 {
     "resourceType": "Task",
     "id": "Task-NonWGSTestOrderAccepted-VariantReinterpretation-Example",
-    "basedOn": [
-        {
-            "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrder-VariantReinterpretation-Example"
-        }
-    ],
     "status": "accepted",
     "intent": "order",
     "priority": "routine",
@@ -13,8 +8,8 @@
         "coding": [
             {
                 "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
-                "code": "RequestGenomicTest",
-                "display": "Request Genomic Test"
+                "code": "ProcessGenomicTestRequest",
+                "display": "Process Genomic Test Request"
             }
         ]
     },
@@ -28,7 +23,7 @@
             "value": "8449303444"
         }
     },
-    "authoredOn": "2023-10-02T11:30:00Z",
+    "authoredOn": "2023-10-01T10:08:00Z",
     "lastModified": "2023-10-02T11:30:00Z",
     "requester": {
         "reference": "PractitionerRole/PractitionerRole-GeneSmith-Example"
