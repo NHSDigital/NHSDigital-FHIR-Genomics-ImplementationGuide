@@ -1,6 +1,10 @@
 {
   "resourceType": "ServiceRequest",
   "id": "ServiceRequest-WGSTestOrderFormUpdated-DirectToLab-Example",
+    "meta": {
+      "versionId": "2",
+      "lastUpdated": "2023-10-10T16:00:00Z"
+    },
   "extension": [
     {
       "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage",
@@ -36,8 +40,7 @@
         "code": "R14",
         "display": "Acutely unwell children with a likely monogenic disorder"
       }
-    ],
-    "text":"This is a direct test request to ROYAL DEVON UNIVERSITY HEALTHCARE NHS FOUNDATION TRUST, Exeter"
+    ]
   },
   "subject": {
     "reference": "Patient/Patient-JamesMetcalfe-Example",
@@ -98,10 +101,7 @@
       "reference": "Observation/Observation-NoTransfusion-Example"
     },
     {
-      "reference": "Observation/Observation-RiskOfInfection-Example"
-    },
-    {
-      "reference": "Consent/Consent-RoDAvailable-Example"
+      "reference": "Consent/Consent-RoDYoungPersonAssentFormAvailable-Example"
     }
   ],
   "specimen": [

@@ -1,20 +1,24 @@
 {
   "resourceType": "Task",
   "id": "Task-WGSRareDiseaseTestOrderRequested-DirectToLab-Example",
-  "basedOn": [
-    {
-      "reference": "ServiceRequest/ServiceRequest-WGSTestOrderFormUpdated-DirectToLab-Example"
-    }
-  ],
   "status": "requested",
+    "statusReason": {
+      "coding": [
+        {
+          "system": "https://fhir.nhs.uk/CodeSystem/task-statusReason-genomics",
+          "code": "AwaitingRoDAndSpecimen",
+          "display": "Awaiting Record of Discussion and Specimen"
+        }
+      ]
+    },
   "intent": "order",
   "priority": "urgent",
   "code": { 
     "coding": [
       { 
         "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics", 
-        "code": "RequestGenomicTest", 
-        "display": "Request Genomic Test"
+        "code": "ProcessGenomicTestRequest", 
+        "display": "Process Genomic Test Request"
       }
     ]
   },
