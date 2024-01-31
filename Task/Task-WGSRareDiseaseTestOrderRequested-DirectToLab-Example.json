@@ -2,15 +2,6 @@
   "resourceType": "Task",
   "id": "Task-WGSRareDiseaseTestOrderRequested-DirectToLab-Example",
   "status": "requested",
-    "statusReason": {
-      "coding": [
-        {
-          "system": "https://fhir.nhs.uk/CodeSystem/task-statusReason-genomics",
-          "code": "AwaitingRoDAndSpecimen",
-          "display": "Awaiting Record of Discussion and Specimen"
-        }
-      ]
-    },
   "intent": "order",
   "priority": "urgent",
   "code": { 
