@@ -1,0 +1,39 @@
+{
+  "resourceType": "Observation",
+  "id": "Observation-CellularityKayBurbridge-Example",
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "https://loinc.org/",
+        "code": "55437-8",
+        "display": "Neoplastic cells/100 leukocytes"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-KayBurbridge-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "8449303541"
+    }
+  },
+  "specimen": {
+    "identifier": {
+      "system": "https://fhir.add.nhs.uk/Id/specimenId",
+      "value": "699F01231423"
+    }
+  },
+ "interpretation": [
+  {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+        "code": "H",
+        "display": "High"
+      }
+    ]
+  }
+],
+  "effectiveDateTime": "2023-11-01T11:00:00Z"
+}

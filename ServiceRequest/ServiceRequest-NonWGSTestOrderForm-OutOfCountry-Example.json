@@ -76,14 +76,15 @@
     }
   ],
   "supportingInfo": [
+
     {
-      "reference": "Observation/Observation-MultipleTumors-Example"
+      "reference": "Observation/Observation-CellularityKayBurbridge-Example"
     },
     {
-      "reference": "Observation/Observation-Necrosis-Example"
+      "reference": "Observation/Observation-TumorTypeKayKayBurbridge-Example"
     },
     {
-      "reference": "Observation/Observation-RiskOfInfection-Example"
+      "reference": "Observation/Observation-NecrosisKayBurbridge-Example"
     },
     {
       "reference": "Condition/Condition-BreastCancer-Example"
@@ -91,7 +92,7 @@
   ],
   "specimen": [
     {
-      "reference": "Specimen/Specimen-CancerSolidTumor-Example"
+      "reference": "Specimen/Specimen-TissueResection-Example"
     }
   ],
   "note": [
