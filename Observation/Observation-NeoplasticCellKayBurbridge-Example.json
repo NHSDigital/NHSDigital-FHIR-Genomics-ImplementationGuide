@@ -3,13 +3,7 @@
   "id": "Observation-NeoplasticCellKayBurbridge-Example",
   "status": "final",
   "code": {
-    "coding": [
-      {
-        "system": "http://snomed.info/sct",
-        "code": "55342001",
-        "display": "Neoplastic growth"
-      }
-    ]
+    "text": "Approximate Neoplastic cell % in sample"
   },
   "subject": {
     "reference": "Patient/Patient-KayBurbridge-Example",

@@ -3,13 +3,7 @@
   "id": "Observation-CellularityKayBurbridge-Example",
   "status": "final",
   "code": {
-    "coding": [
-      {
-        "system": "https://loinc.org/",
-        "code": "55437-8",
-        "display": "Neoplastic cells/100 leukocytes"
-      }
-    ]
+    "text":"Cellularity"
   },
   "subject": {
     "reference": "Patient/Patient-KayBurbridge-Example",
