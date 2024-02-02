@@ -7,15 +7,6 @@
         }
     ],
     "status": "ready",
-    "businessStatus": {
-        "coding": [
-            {
-                "system": "https://fhir.nhs.uk/CodeSystem/business-status-genomics",
-                "code": "SpecimenReceived",
-                "display": "Specimen Received"
-            }
-        ]
-    },
     "intent": "order",
     "priority": "routine",
     "code": {

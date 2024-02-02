@@ -87,6 +87,9 @@
       "reference": "Observation/Observation-Necrosis-Example"
     },
     {
+      "reference": "Observation/Observation-NeoplasticCell-Example"
+    },
+    {
       "reference": "Condition/Condition-LungTumor-Example"
     }
   ],

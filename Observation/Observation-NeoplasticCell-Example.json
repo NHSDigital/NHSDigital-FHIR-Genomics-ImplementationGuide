@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "Observation-NeoplasticCellPercentage-Example",
+  "id": "Observation-NeoplasticCell-Example",
   "status": "final",
   "code": {
     "coding": [
