@@ -1,11 +1,6 @@
 {
     "resourceType": "Task",
     "id": "Task-NonWGSRareDiseaseTestOrderRejected-CancerSolidTumor-Example",
-    "basedOn": [
-        {
-            "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-CancerSolidTumor-Example"
-        }
-    ],
     "status": "rejected",
     "statusReason": {
         "coding": [
