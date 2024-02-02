@@ -1,25 +1,11 @@
 {
   "resourceType": "Task",
   "id": "Task-NonWGSRareDiseaseTestOrderRejected-FetalScenario-Example",
-  "basedOn": [
-    {
-      "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-FetalScenario-Example"
-    }
-  ],
   "status": "rejected",
   "statusReason": {
     "coding": [
       {
         "system": "https://fhir.nhs.uk/CodeSystem/task-status-reason-genomics",
-        "code": "SpecimenQualityNotOK",
-        "display": "Specimen Quality Not OK"
-      }
-    ]
-  },
-  "businessStatus": {
-    "coding": [
-      {
-        "system": "https://fhir.nhs.uk/CodeSystem/business-status-genomics",
         "code": "FurtherClinicalDetailsRequired",
         "display": "Further Clinical Details Required"
       }
@@ -40,23 +26,31 @@
     "reference": "ServiceRequest/ServiceRequest/ServiceRequest-NonWGSTestOrderForm-FetalScenario-Example"
   },
   "for": {
-    "reference": "Patient/Patient-RyanneBoulder-Example",
-    "identifier": {
-      "system": "https://fhir.nhs.uk/Id/nhs-number",
-      "value": "9449307687"
-    }
+    "reference": "Patient/Patient-FoetusOfRyanneBoulder-Example",
+    "identifier": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.1.3.2.4.18.24",
+        "value": "FT-RWT13521",
+        "assigner": {
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "RAX"
+          }
+        }
+      }
+    ]
   },
-  "authoredOn": "2023-09-25",
-  "lastModified": "2023-10-02",
+  "authoredOn": "2023-09-25T10:00:00Z",
+  "lastModified": "2023-10-01T10:18:00Z",
   "requester": {
     "reference": "PractitionerRole/PractitionerRole-LoisLaneKingstonClinicalGenetics-Example"
   },
   "owner": {
     "identifier": {
       "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-      "value": "RAX"
+      "value": "RJ1"
     },
-    "display": "Kingston Hospital NHS Foundation Trust"
+    "display": "GUY'S AND ST THOMAS' NHS FOUNDATION TRUST"
   },
   "note": [
     {

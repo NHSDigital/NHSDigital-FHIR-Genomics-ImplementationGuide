@@ -1,10 +1,10 @@
 {
   "resourceType": "Specimen",
-  "id": "Specimen-ParentSaliva-Example",
+  "id": "Specimen-RyanneBoulderSaliva-Example",
   "identifier": [
     {
       "system": "https://fhir.kingstonhospital.nhs.uk//Id/specimenId",
-      "value": "ROA-69050-FT-RWT13521"
+      "value": "ROA-69050-MTH-RWT13521"
     }
   ],
   "status": "available",
@@ -22,10 +22,7 @@
   },
   "container": [
     {
-      "description": "Container:RAX-M-FT-RWT13521 contains Saliva for Mother"
-    },
-    {
-      "description": "Container:RAX-F-FT-RWT13521 contains Saliva for Father"
+      "description": "Container:ROA-69050-MTH-RWT13521 contains Saliva for Mother"
     }
   ],
   "request": [
