@@ -30,6 +30,10 @@
   "caseSensitive": true,
   "content": "complete",
   "concept": [
+      {
+        "code": "FurtherClinicalDetailsRequired",
+        "display": "Further Clinical Details Required"
+      },
     {
       "code": "AwaitingSpecimen",
       "display": "Awaiting Specimen"
