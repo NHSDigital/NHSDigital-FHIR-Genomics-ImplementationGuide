@@ -30,6 +30,10 @@
   "caseSensitive": true,
   "content": "complete",
   "concept": [
+      {
+        "code": "FurtherClinicalDetailsRequired",
+        "display": "Further Clinical Details Required"
+      },
     {
       "code": "AwaitingRoDAndSpecimen",
       "display": "Awaiting Record of Discussion and Specimen"

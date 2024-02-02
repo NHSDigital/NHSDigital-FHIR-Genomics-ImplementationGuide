@@ -1,6 +1,6 @@
 {
     "resourceType": "Task",
-    "id": "Task-NonWGSRareDiseaseTestOrderRejected-CancerSolidTumor-Example",
+    "id": "Task-NonWGSRareDiseaseTestOrderRejected-InsufficientSample-Example",
     "basedOn": [
         {
             "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-CancerSolidTumor-Example"
@@ -11,8 +11,8 @@
         "coding": [
             {
                 "system": "https://fhir.nhs.uk/CodeSystem/task-statusReason-genomics",
-                "code": "FurtherClinicalDetailsRequired",
-                "display": "Further Clinical Details Required"
+                "code": "SpecimenQualityNotOK",
+                "display": "Specimen Quality Not OK"
             }
         ]
     },
@@ -22,8 +22,8 @@
         "coding": [
             {
                 "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
-                "code": "ProcessGenomicTestRequest",
-                "display": "Process Genomic Test Request"
+                "code": "RequestSampleAlignment",
+                "display": "Request & Sample Alignment"
             }
         ]
     },
@@ -51,7 +51,7 @@
     },
     "note": [
         {
-            "text": "Additional information required on method of testing"
+            "text": "Please provide additional sample of X"
         }
     ]
 }
