@@ -87,6 +87,9 @@
       "reference": "Observation/Observation-NecrosisKayBurbridge-Example"
     },
     {
+      "reference": "Observation/Observation-NeoplasticCellKayBurbridge-Example"
+    },
+    {
       "reference": "Condition/Condition-BreastCancer-Example"
     }
   ],
