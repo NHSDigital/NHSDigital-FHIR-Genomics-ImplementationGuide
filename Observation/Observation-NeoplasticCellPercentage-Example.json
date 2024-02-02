@@ -1,13 +1,13 @@
 {
   "resourceType": "Observation",
-  "id": "Observation-MultipleTumors-Example",
+  "id": "Observation-NeoplasticCellPercentage-Example",
   "status": "final",
   "code": {
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "128462008",
-        "display": "Metastatic malignant neoplasm (disorder)"
+        "code": "55342001",
+        "display": "Neoplastic growth"
       }
     ]
   },
@@ -30,19 +30,5 @@
     "system": "http://unitsofmeasure.org",
     "code": "%"
   },
-  "component": [
-    {
-      "code": {
-        "coding": [
-          {
-            "system": "http://snomed.info/sct",
-            "code": "369755005",
-            "display": "Multiple tumors (qualifier value)"
-          }
-        ]
-      },
-      "valueBoolean": true
-    }
-  ],
-  "effectiveDateTime": "2023-09-08"
+  "effectiveDateTime": "2023-09-08T10:00:00Z"
 }

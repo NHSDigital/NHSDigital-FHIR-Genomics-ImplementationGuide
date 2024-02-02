@@ -1,18 +1,18 @@
 {
   "resourceType": "Observation",
-  "id": "Observation-Necrosis-Example",
+  "id": "Observation-TumourType-Example",
   "status": "final",
   "code": {
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "6574001",
-        "display": "Necrosis (morphologic abnormality)"
+        "code": "14799000",
+        "display": "Neoplasm, metastatic (morphologic abnormality)"
       }
     ]
   },
   "subject": {
-    "reference": "Patient/Patient-ZelmaHadjkiss-Example",
+    "reference": "Patient/Patient-KayBurbridge-Example",
     "identifier": {
       "system": "https://fhir.nhs.uk/Id/nhs-number",
       "value": "9449307555"
@@ -24,11 +24,5 @@
       "value": "RA257630"
     }
   },
-  "valueQuantity": {
-    "value": 5,
-    "unit": "%",
-    "system": "http://unitsofmeasure.org",
-    "code": "%"
-  },
-  "effectiveDateTime": "2023-09-08"
+  "effectiveDateTime": "2023-09-08T10:00:00Z"
 }

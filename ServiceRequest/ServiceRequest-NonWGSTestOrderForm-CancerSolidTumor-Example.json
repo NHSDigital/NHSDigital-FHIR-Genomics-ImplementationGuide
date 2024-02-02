@@ -19,12 +19,6 @@
       "valueReference": {
         "reference": "PractitionerRole/PractitionerRole-AnnaLaneKingstonPathology-Example"
       }
-    },
-    {
-      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AdditionalContact",
-      "valueReference": {
-        "reference": "PractitionerRole/PractitionerRole-JamesTaylor-Example"
-      }
     }
   ],
   "status": "active",
@@ -82,11 +76,12 @@
     }
   ],
   "supportingInfo": [
+   
     {
-      "reference": "Observation/Observation-RiskOfInfection-Example"
+      "reference": "Observation/Observation-Cellularity-Example"
     },
     {
-      "reference": "Observation/Observation-MultipleTumors-Example"
+      "reference": "Observation/Observation-TumorType-Example"
     },
     {
       "reference": "Observation/Observation-Necrosis-Example"
@@ -97,7 +92,7 @@
   ],
   "specimen": [
     {
-      "reference": "Specimen/Specimen-CancerSolidTumor-Example"
+      "reference": "Specimen/Specimen-SolidTumor-Example"
     }
   ],
   "note": [
