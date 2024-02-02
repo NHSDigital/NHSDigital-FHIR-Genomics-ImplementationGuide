@@ -1,6 +1,6 @@
 {
     "resourceType": "Task",
-    "id": "Task-NonWGSRareDiseaseTestOrderRejected-InsufficientSample-Example",
+    "id": "Task-NonWGSRareDiseaseTestOrder-InsufficientSample-Example",
     "status": "rejected",
     "statusReason": {
         "coding": [

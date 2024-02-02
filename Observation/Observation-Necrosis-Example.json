@@ -6,8 +6,8 @@
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "6574001",
-        "display": "Necrosis (morphologic abnormality)"
+        "code": "405921002",
+        "display": "Percentage of neoplasm involved by necrosis (observable entity)"
       }
     ]
   },
