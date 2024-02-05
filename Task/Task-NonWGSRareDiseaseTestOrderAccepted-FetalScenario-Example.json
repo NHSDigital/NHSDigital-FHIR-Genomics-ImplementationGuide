@@ -23,7 +23,7 @@
         ]
     },
     "focus": {
-        "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-FetalScenario-Example"
+        "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderFormUpdated-FetalScenario-Example"
     },
     "for": {
         "reference": "Patient/Patient-FoetusOfRyanneBoulder-Example",

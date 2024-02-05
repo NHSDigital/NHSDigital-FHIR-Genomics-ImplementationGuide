@@ -104,14 +104,14 @@
     {
       "reference": "Specimen/Specimen-BloodEDTA-Example"
     },
-    {
-      "reference": "Specimen/Specimen-ParentSaliva-Example"
-    }
+		{
+			"reference": "Specimen/Specimen-RyanneBoulderSaliva-Example"
+		},
+		{
+			"reference": "Specimen/Specimen-RyanneBoulderPartnerSaliva-Example"
+		}
 	],
 	"note": [
-      {
-        "text": "Samples provided"
-      },
 		{
 			"text": "No family history of relevant testing"
 		},
