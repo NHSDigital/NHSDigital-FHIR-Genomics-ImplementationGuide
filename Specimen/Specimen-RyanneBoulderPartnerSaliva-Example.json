@@ -1,6 +1,6 @@
 {
   "resourceType": "Specimen",
-  "id": "Specimen-RyanneBoulderParnerSaliva-Example",
+  "id": "Specimen-RyanneBoulderPartnerSaliva-Example",
   "identifier": [
     {
       "system": "https://fhir.kingstonhospital.nhs.uk//Id/specimenId",
