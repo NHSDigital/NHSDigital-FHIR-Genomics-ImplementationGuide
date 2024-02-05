@@ -43,10 +43,6 @@
       "display": "Awaiting Record of Discussion and Specimen"
     },
     {
-      "code": "AwaitingRoDAndSpecimen",
-      "display": "Awaiting Record of Discussion and Specimen"
-    },
-    {
       "code": "InvalidRequest",
       "display": "Invalid Request"
     },
