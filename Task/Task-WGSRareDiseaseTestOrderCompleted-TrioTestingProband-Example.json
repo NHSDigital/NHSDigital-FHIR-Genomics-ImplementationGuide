@@ -1,6 +1,6 @@
 {
   "resourceType": "Task",
-  "id": "Task-WGSRareDiseaseTestOrderComplemented-TrioTestingProband-Example",
+  "id": "Task-WGSRareDiseaseTestOrderCompleted-TrioTestingProband-Example",
   "status": "completed",
   "intent": "order",
   "priority": "routine",
