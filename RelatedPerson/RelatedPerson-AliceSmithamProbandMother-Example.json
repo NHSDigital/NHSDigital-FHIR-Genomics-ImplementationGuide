@@ -23,25 +23,5 @@
         }
       ]
     }
-  ],
-  "name": [
-    {
-      "given": [
-        "Alice"
-      ],
-      "family": "Smitham"
-    }
-  ],
-  "gender": "female",
-  "birthDate": "1983-03-22",
-  "address": [
-    {
-      "line": [
-        "Union Mills",
-        "9 Dewsbury Rd"
-      ],
-      "city": "Leeds",
-      "postalCode": "LS11 5DD"
-    }
   ]
 }

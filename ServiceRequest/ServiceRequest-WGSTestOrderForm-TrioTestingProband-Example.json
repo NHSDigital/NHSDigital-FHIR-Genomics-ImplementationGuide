@@ -1,6 +1,18 @@
 {
   "resourceType": "ServiceRequest",
   "id": "ServiceRequest-WGSTestOrderForm-TrioTestingProband-Example",
+  "identifier": [
+    {
+      "system": "https://fhir.leedssth.nhs.uk//Id/grouptestId",
+      "value": "RR-REQ12764",
+      "assigner": {
+        "identifier": {
+          "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+          "value": "RR8"
+        }
+      }
+    }
+  ],
   "extension": [
     {
       "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage",
@@ -15,14 +27,6 @@
       }
     }
   ],
-  "requisition": {
-    "assigner": {
-      "identifier": {
-        "system": "https://fhir.leedsth.nhs.uk/Id/grouptestId",
-        "value": "RR8F1792"
-      }
-    }
-  },
   "status": "active",
   "intent": "order",
   "category": [
@@ -56,7 +60,7 @@
   },
   "authoredOn": "2023-09-15T15:00:00Z",
   "requester": {
-    "reference": "PractitionerRole/PractitionerRole-EugeneSmith-Example"
+    "reference": "PractitionerRole/PractitionerRole-EugeneSmithLeedsSTH-Example"
   },
   "reasonCode": [
     {
@@ -112,15 +116,16 @@
       "reference": "Observation/Observation-NoTransfusion-Example"
     },
     {
-      "reference": "Observation/Observation-RiskOfInfection-Example"
+      "reference": "Specimen/Specimen-PheobeSmitham-Example"
+    },
+    {
+      "reference": "Specimen/Specimen-PheobeSmithamFather-Example"
+    },
+    {
+      "reference": "Specimen/Specimen-PheobeSmithamMother-Example"
     },
     {
       "reference": "Consent/Consent-RoDAvailable-Example"
-    }
-  ],
-  "specimen": [
-    {
-      "reference": "Specimen/Specimen-BloodEDTA-WithCollectoinDetails-Example"
     }
   ],
   "note": [

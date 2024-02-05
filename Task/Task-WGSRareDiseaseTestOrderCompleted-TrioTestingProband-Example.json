@@ -1,32 +1,15 @@
 {
   "resourceType": "Task",
   "id": "Task-WGSRareDiseaseTestOrderAccepted-TrioTestingProband-Example",
-  "groupIdentifier": {
-    "assigner": {
-      "identifier": {
-        "system": "https://fhir.leedsth.nhs.uk/Id/grouptestId",
-        "value": "RR8F1792"
-      }
-    }
-  },
   "status": "completed",
-  "businessStatus": {
-    "coding": [
-      {
-        "system": "https://fhir.nhs.uk/CodeSystem/business-status-genomics",
-        "code": "SpecimenReceived",
-        "display": "Specimen Received"
-      }
-    ]
-  },
   "intent": "order",
   "priority": "routine",
   "code": {
     "coding": [
       {
         "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
-        "code": "ProduceFinalReport",
-        "display": "Produce Final Report"
+        "code": "DistributeReport",
+        "display": "Distribute Report"
       }
     ]
   },
@@ -43,7 +26,7 @@
   "authoredOn": "2023-09-15T15:00:00Z",
   "lastModified": "2023-10-16T15:50:00Z",
   "requester": {
-    "reference": "PractitionerRole/PractitionerRole-EugeneSmith-Example"
+    "reference": "PractitionerRole/PractitionerRole-EugeneSmithLeedsSTH-Example"
   },
   "owner": {
     "identifier": {
@@ -56,5 +39,21 @@
     {
       "text": "Optional Free Text field to record any additional details"
     }
-  ]
+  ],
+      "output": [
+        {
+          "type": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "1054161000000101",
+                "display": "Genetic report (record artifact)"
+              }
+            ]
+          },
+          "valueReference": {
+            "reference": "DiagnosticReport/DiagnosticReport-PhoebeSmithGeneticReport-Example"
+          }
+        }
+      ]
 }

@@ -1,12 +1,12 @@
 {
   "resourceType": "RelatedPerson",
   "id": "RelatedPerson-JamesLawrenceProbandFather-Example",
-  "identifier": [
-    {
-      "system": "https://fhir.nhs.uk/Id/nhs-number",
-      "value": "9449307636"
-    }
-  ],
+    "identifier": [
+      {
+        "system": "https://fhir.nhs.uk/Id/nhs-number",
+        "value": "9449307636"
+      }
+    ],
   "patient": {
     "identifier": {
       "system": "https://fhir.nhs.uk/Id/nhs-number",
@@ -22,26 +22,6 @@
           "display": "Father"
         }
       ]
-    }
-  ],
-  "name": [
-    {
-      "given": [
-        "James"
-      ],
-      "family": "Lawrence"
-    }
-  ],
-  "gender": "male",
-  "birthDate": "1981-08-03",
-  "address": [
-    {
-      "line": [
-        "1 Middlemead Close",
-        "Bookham"
-      ],
-      "city": "Surrey",
-      "postalCode": "KT23 3EB"
     }
   ]
 }

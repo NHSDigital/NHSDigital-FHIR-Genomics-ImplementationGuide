@@ -1,19 +1,11 @@
 {
   "resourceType": "Task",
-  "id": "Task-WGSRareDiseaseTestOrderAccepted-ProbandFather-Example",
-  "groupIdentifier": {
-    "assigner": {
-      "identifier": {
-        "system": "https://fhir.leedsth.nhs.uk/Id/grouptestId",
-        "value": "RR8F1792"
-      }
-    }
-  },
-  "status": "accepted",
-  "businessStatus": {
+  "id": "Task-WGSRareDiseaseTestOrderHold-TrioTestingProband-Example",
+  "status": "on-hold",
+  "statusReason": {
     "coding": [
       {
-        "system": "https://fhir.nhs.uk/CodeSystem/business-status-genomics",
+        "system": "https://fhir.nhs.uk/CodeSystem/task-statusReason-genomics",
         "code": "AwaitingRoDAndSpecimen",
         "display": "Awaiting Record of Discussion and Specimen"
       }
@@ -31,19 +23,19 @@
     ]
   },
   "focus": {
-    "reference": "ServiceRequest/ServiceRequest-WGSTestOrderForm-TrioTestingProbandFather-Example"
+    "reference": "ServiceRequest/ServiceRequest-WGSTestOrderForm-TrioTestingProband-Example"
   },
   "for": {
-    "reference": "Patient/Patient-JamesLawrenceProbandFather-Example",
+    "reference": "Patient/Patient-PheobeSmitham-Example",
     "identifier": {
       "system": "https://fhir.nhs.uk/Id/nhs-number",
-      "value": "9449307636"
+      "value": "9449307539"
     }
   },
   "authoredOn": "2023-09-15T15:00:00Z",
   "lastModified": "2023-09-18T15:00:00Z",
   "requester": {
-    "reference": "PractitionerRole/PractitionerRole-EugeneSmith-Example"
+    "reference": "PractitionerRole/PractitionerRole-EugeneSmithLeedsSTH-Example"
   },
   "owner": {
     "identifier": {

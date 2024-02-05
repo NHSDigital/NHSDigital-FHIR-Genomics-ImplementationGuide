@@ -1,19 +1,11 @@
 {
   "resourceType": "Task",
   "id": "Task-WGSRareDiseaseTestOrderAccepted-TrioTestingProband-Example",
-  "groupIdentifier": {
-    "assigner": {
-      "identifier": {
-        "system": "https://fhir.leedsth.nhs.uk/Id/grouptestId",
-        "value": "RR8F1792"
-      }
-    }
-  },
   "status": "accepted",
-  "businessStatus": {
+  "statusReason": {
     "coding": [
       {
-        "system": "https://fhir.nhs.uk/CodeSystem/business-status-genomics",
+        "system": "https://fhir.nhs.uk/CodeSystem/task-statusReason-genomics",
         "code": "SpecimenReceived",
         "display": "Specimen Received"
       }
@@ -25,8 +17,8 @@
     "coding": [
       {
         "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
-        "code": "RequestGenomicTest",
-        "display": "Request Genomic Test"
+        "code": "ProcessGenomicTestRequest",
+        "display": "Process Genomic Test Requestt"
       }
     ]
   },
@@ -43,7 +35,7 @@
   "authoredOn": "2023-09-15T15:00:00Z",
   "lastModified": "2023-09-18T15:00:00Z",
   "requester": {
-    "reference": "PractitionerRole/PractitionerRole-EugeneSmith-Example"
+    "reference": "PractitionerRole/PractitionerRole-EugeneSmithLeedsSTH-Example"
   },
   "owner": {
     "identifier": {
@@ -56,5 +48,91 @@
     {
       "text": "Optional Free Text field to record any additional details"
     }
-  ]
+  ],
+    "input": [
+      {
+        "type": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "445295009",
+              "display": "Blood specimen with EDTA"
+            }
+          ]
+        },
+        "valueReference": {
+          "reference": "Specimen/Specimen-PheobeSmitham-Example"
+        }
+      },
+      {
+        "type": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "445295009",
+              "display": "Blood specimen with EDTA"
+            }
+          ]
+        },
+        "valueReference": {
+          "reference": "Specimen/Specimen-PheobeSmithamFather-Example"
+        }
+      },
+      {
+        "type": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "445295009",
+              "display": "Blood specimen with EDTA"
+            }
+          ]
+        },
+        "valueReference": {
+          "reference": "Specimen/Specimen-PheobeSmithamMother-Example"
+        }
+      },
+      {
+        "type": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "886971000000109",
+              "display": "Consent for treatment record"
+            }
+          ]
+        },
+        "valueReference": {
+          "reference": "Consent/Consent-RoD-PheobeSmitham-Example"
+        }
+      },
+      {
+        "type": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "886971000000109",
+              "display": "Consent for treatment record"
+            }
+          ]
+        },
+        "valueReference": {
+          "reference": "Consent/Consent-RoD-PheobeSmithamFather-Example"
+        }
+      },
+      {
+        "type": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "886971000000109",
+              "display": "Consent for treatment record"
+            }
+          ]
+        },
+        "valueReference": {
+          "reference": "Consent/Consent-RoD-PheobeSmithamMother-Example"
+        }
+      }
+    ]
 }
