@@ -125,7 +125,10 @@
       "reference": "Specimen/Specimen-PheobeSmithamMother-Example"
     },
     {
-      "reference": "Consent/Consent-RoDAvailable-Example"
+      "reference": "Consent/Consent-RoD-PheobeSmitham-Example"
+    },
+    {
+      "reference": "Consent/Consent-RoD-PheobeSmithamMother-Example"
     }
   ],
   "note": [

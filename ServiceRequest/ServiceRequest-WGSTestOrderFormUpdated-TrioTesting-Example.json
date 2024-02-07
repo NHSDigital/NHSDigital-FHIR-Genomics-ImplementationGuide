@@ -83,7 +83,25 @@
   ],
   "supportingInfo": [
     {
-      "reference": "Observation/Observation-IntellectualDisabilityMild-Example"
+      "reference": "Observation/Observation-GenomicEthnicity-Example"
+    },
+    {
+      "reference": "Observation/Observation-NoPregnancy-Example"
+    },
+    {
+      "reference": "Observation/Observation-DiseaseStatus-Example"
+    },
+    {
+      "reference": "Observation/Observation-DiseasePenetrance-Example"
+    },
+    {
+      "reference": "Observation/Observation-IntellectualDisabilityProfound-Example"
+    },
+    {
+      "reference": "Observation/Observation-AutisticBehaviour-Example"
+    },
+    {
+      "reference": "Observation/Observation-DelayedSpeech-Example"
     },
     {
       "reference": "Observation/Observation-NonConsanguinousUnion-Example"
@@ -98,12 +116,22 @@
       "reference": "Observation/Observation-NoTransfusion-Example"
     },
     {
-      "reference": "Consent/Consent-RoDAvailable-Example"
-    }
-  ],
-  "specimen": [
+      "reference": "Specimen/Specimen-PheobeSmitham-Example"
+    },
     {
-      "reference": "Specimen/Specimen-BloodEDTA-WithCollectoinDetails-Example"
+      "reference": "Specimen/Specimen-PheobeSmithamFather-Example"
+    },
+    {
+      "reference": "Specimen/Specimen-PheobeSmithamMother-Example"
+    },
+    {
+      "reference": "Consent/Consent-RoD-PheobeSmitham-Example"
+    },
+    {
+      "reference": "Consent/Consent-RoD-PheobeSmithamMother-Example"
+    },
+    {
+      "reference": "Consent/Consent-RoD-PheobeSmithamFather-Example"
     }
   ],
   "note": [
