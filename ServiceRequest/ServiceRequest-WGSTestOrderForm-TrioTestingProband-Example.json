@@ -92,10 +92,13 @@
       "reference": "Observation/Observation-DiseaseStatus-Example"
     },
     {
-      "reference": "Observation/Observation-DiseasePenetrance-Example"
+      "reference": "Observation/Observation-DiseasePenetrancePheobeSmitham-Example"
     },
     {
       "reference": "Observation/Observation-IntellectualDisabilityProfound-Example"
+    },
+    {
+      "reference": "Observation/Observation-IntellectualDisabilityMild-Example"
     },
     {
       "reference": "Observation/Observation-AutisticBehaviour-Example"
@@ -104,7 +107,13 @@
       "reference": "Observation/Observation-DelayedSpeech-Example"
     },
     {
-      "reference": "Observation/Observation-NonConsanguinousUnion-Example"
+      "reference": "Observation/Observation-NonConsanguinousUnionProband-Example"
+    },
+    {
+      "reference": "Observation/Observation-NonConsanguinousUnionProbandFather-Example"
+    },
+    {
+      "reference": "Observation/Observation-NonConsanguinousUnionMother-Example"
     },
     {
       "reference": "FamilyMemberHistory/FamilyMemberHistory-NonConsanguinousUnion-Example"
@@ -113,7 +122,19 @@
       "reference": "Observation/Observation-NoBoneMarrowTransplant-Example"
     },
     {
+      "reference": "Observation/Observation-NoBoneMarrowTransplantProbandFather-Example"
+    },
+    {
+      "reference": "Observation/Observation-NoBoneMarrowTransplantProbandMother-Example"
+    },
+    {
       "reference": "Observation/Observation-NoTransfusion-Example"
+    },
+    {
+      "reference": "Observation/Observation-NoTransfusionProbandFather-Example"
+    },
+    {
+      "reference": "Observation/Observation-NoTransfusionProbandMother-Example"
     },
     {
       "reference": "Specimen/Specimen-PheobeSmitham-Example"

@@ -26,7 +26,7 @@
   },
   "source": {
     "type": "RelatedPerson",
-    "reference":"RelatedPerson/RelatedPerson-AliceSmithamProbandMother-Example",
+    "reference": "RelatedPerson/RelatedPerson-AliceSmithamProbandMother-Example",
     "identifier": {
       "system": "https://fhir.nhs.uk/Id/nhs-number",
       "value": "9449307246"
@@ -113,6 +113,28 @@
           "valueBoolean": true
         }
       ]
+    },
+    {
+      "item": [
+        {
+          "linkId": "consulteeNamecombined",
+          "answer": [
+            {
+              "valueString": "Alice Smith"
+            }
+          ]
+        },
+        {
+          "linkId": "dateConsulteeCompletedForm",
+          "answer": [
+            {
+              "valueDateTime": "2023-09-15"
+            }
+          ]
+        }
+      ],
+      "linkId": "consulteeValidation",
+      "text": "Consultee Validation"
     },
     {
       "linkId": "healthcareProfessionalValidation",

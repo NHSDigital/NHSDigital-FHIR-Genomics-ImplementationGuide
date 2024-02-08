@@ -1,6 +1,6 @@
 {
 	"resourceType": "Consent",
-	"id": "Consent-RoD-PheobeSmithamFather-Example",
+	"id": "Consent-RoD-PheobeSmithamMother-Example",
 	"status": "active",
 	"scope": {
 		"coding": [
@@ -22,6 +22,9 @@
 			]
 		}
 	],
+  "patient": {
+    "reference": "Patient/Patient-PheobeSmithamMother-Example"
+  },
 	"sourceReference": {
 		"reference": "QuestionnaireResponse/QuestionnaireResponse-RoD-PheobeSmithamMother-Example"
 	},

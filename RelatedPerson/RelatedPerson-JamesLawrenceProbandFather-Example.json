@@ -1,12 +1,12 @@
 {
   "resourceType": "RelatedPerson",
   "id": "RelatedPerson-JamesLawrenceProbandFather-Example",
-    "identifier": [
-      {
-        "system": "https://fhir.nhs.uk/Id/nhs-number",
-        "value": "9449307636"
-      }
-    ],
+  "identifier": [
+    {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307636"
+    }
+  ],
   "patient": {
     "identifier": {
       "system": "https://fhir.nhs.uk/Id/nhs-number",

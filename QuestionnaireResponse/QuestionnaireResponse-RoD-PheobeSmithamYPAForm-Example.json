@@ -118,7 +118,7 @@
           "text": "5. Are you happy to take part?",
           "answer": [
             {
-              "valueBoolean": false
+              "valueBoolean": true
             }
           ]
         }
