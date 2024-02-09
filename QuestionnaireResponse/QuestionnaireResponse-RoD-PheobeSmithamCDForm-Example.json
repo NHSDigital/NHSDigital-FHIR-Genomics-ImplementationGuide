@@ -1,6 +1,6 @@
 {
   "resourceType": "QuestionnaireResponse",
-  "id": "QuestionnaireResponse-RoD-ConsulteeDeclarationForm-Example",
+  "id": "QuestionnaireResponse-RoD-PheobeSmithamCDForn-Example",
   "questionnaire": "https://fhir.nhs.uk/Questionnaire/Questionnaire-RoD-ConsulteeDeclarationForm-Example",
   "status": "completed",
   "basedOn": [
@@ -9,13 +9,14 @@
     }
   ],
   "subject": {
+    "reference": "Patient/Patient-PheobeSmitham-Example",
     "identifier": {
       "system": "https://fhir.nhs.uk/Id/nhs-number",
       "value": "9449307539"
     },
     "display": "A Patient"
   },
-  "authored": "2024-01-25",
+  "authored": "2023-09-15",
   "author": {
     "type": "PractitionerRole",
     "identifier": {
@@ -24,10 +25,11 @@
     }
   },
   "source": {
-    "type": "PractitionerRole",
+    "type": "RelatedPerson",
+    "reference": "RelatedPerson/RelatedPerson-AliceSmithamProbandMother-Example",
     "identifier": {
-      "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
-      "value": "999999999999"
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307246"
     }
   },
   "item": [
@@ -108,42 +110,31 @@
       "text": "Consent obtained remotely, no consultee signature",
       "answer": [
         {
-          "valueBoolean": false
+          "valueBoolean": true
         }
       ]
     },
     {
-      "linkId": "consulteeValidation",
-      "text": "Consultee Validation",
       "item": [
         {
           "linkId": "consulteeNamecombined",
-          "text": "Your Name(i.e, the Consultee)",
           "answer": [
             {
-              "valueString": "James Goldsmith"
+              "valueString": "Alice Smith"
             }
           ]
         },
         {
           "linkId": "dateConsulteeCompletedForm",
-          "text": "Date",
           "answer": [
             {
               "valueDateTime": "2023-09-15"
             }
           ]
-        },
-        {
-          "linkId": "consulteeSignature",
-          "text": "Signature",
-          "answer": [
-            {
-              "valueString": "JamesG"
-            }
-          ]
         }
-      ]
+      ],
+      "linkId": "consulteeValidation",
+      "text": "Consultee Validation"
     },
     {
       "linkId": "healthcareProfessionalValidation",
@@ -158,7 +149,7 @@
               "text": "Healthcare professional name",
               "answer": [
                 {
-                  "valueString": "Mathew Arnold"
+                  "valueString": "Dr. Eugene Smith"
                 }
               ]
             },
@@ -167,7 +158,7 @@
               "text": "Signature",
               "answer": [
                 {
-                  "valueString": "MathewA"
+                  "valueString": "EugeneSmith"
                 }
               ]
             },

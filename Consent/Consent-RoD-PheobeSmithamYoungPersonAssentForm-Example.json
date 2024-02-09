@@ -1,6 +1,6 @@
 {
 	"resourceType": "Consent",
-	"id": "Consent-RoDYoungPersonAssentFormAvailable-Example",
+	"id": "Consent-RoD-PheobeSmithamYoungPersonAssentForm-Example",
 	"status": "active",
 	"scope": {
 		"coding": [
@@ -22,11 +22,11 @@
 			]
 		}
 	],
-		"patient": {
-			"reference": "Patient/Patient-PheobeSmitham-Example"
-		},
+  "patient": {
+    "reference": "Patient/Patient-PheobeSmitham-Example"
+  },
 	"sourceReference": {
-		"reference": "QuestionnaireResponse/QuestionnaireResponse-RoD-YoungPersonAssentForm-Example"
+		"reference": "QuestionnaireResponse/QuestionnaireResponse-RoD-PheobeSmithamYPAForm-Example"
 	},
 	"policy": [
 		{

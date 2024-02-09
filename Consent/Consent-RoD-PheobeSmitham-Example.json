@@ -1,6 +1,6 @@
 {
 	"resourceType": "Consent",
-	"id": "Consent-RoDYoungPersonAssentFormAvailable-Example",
+	"id": "Consent-RoD-PheobeSmitham-Example",
 	"status": "active",
 	"scope": {
 		"coding": [
@@ -22,16 +22,16 @@
 			]
 		}
 	],
-		"patient": {
-			"reference": "Patient/Patient-PheobeSmitham-Example"
-		},
+	"patient":{
+		"reference":"Patient/Patient-PheobeSmitham-Example"
+	},
 	"sourceReference": {
-		"reference": "QuestionnaireResponse/QuestionnaireResponse-RoD-YoungPersonAssentForm-Example"
+		"reference": "QuestionnaireResponse/QuestionnaireResponse-RoD-PheobeSmithamCDForn-Example"
 	},
 	"policy": [
 		{
 			"authority": "https://www.england.nhs.uk",
-			"uri": "https://www.england.nhs.uk/wp-content/uploads/2021/09/nhs-genomic-medicine-service-young-persons-assent-form.pdf"
+			"uri": "https://www.england.nhs.uk/wp-content/uploads/2021/09/nhs-genomic-medicine-service-genomic-consultee-declaration-1.pdf"
 		}
 	]
 }
