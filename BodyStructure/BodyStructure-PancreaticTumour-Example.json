@@ -1,6 +1,6 @@
 {
 	"resourceType": "BodyStructure",
-	"id": "UKCore-BodyStructure-PancreaticTumour-Example",
+	"id": "BodyStructure-PancreaticTumour-Example",
 	"morphology": {
 		"coding": [
 			{
