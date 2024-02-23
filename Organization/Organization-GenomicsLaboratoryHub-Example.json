@@ -1,6 +1,6 @@
 {
 	"resourceType": "Organization",
-	"id": "UKCore-Organization-699X0-Example",
+	"id": "Organization-GenomicsLaboratoryHub-Example",
 	"identifier": [
 		{
 			"system": "https://fhir.nhs.uk/Id/ods-organization-code",
