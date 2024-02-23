@@ -1,6 +1,6 @@
 {
 	"resourceType": "Practitioner",
-	"id": "6e1a8ea3-3a59-40aa-b943-5c896a30e43a",
+	"id": "Practitioner-LucyHale-Example",
 	"identifier": [
 		{
 			"use": "official",
