@@ -1,6 +1,6 @@
 {
 	"resourceType": "MessageHeader",
-	"id": "a4409d7c-b613-477c-b623-87e60406c2f0",
+	"id": "MessageHeader-TestRequest-Example",
 	"eventCoding": {
 		"system": "https://fhir.nhs.uk/CodeSystem/message-events-genomics",
 		"code": "genomictestrequest",

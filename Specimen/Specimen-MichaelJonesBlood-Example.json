@@ -1,6 +1,6 @@
 {
 	"resourceType": "Specimen",
-	"id": "UKCore-Specimen-MichaelJonesBlood-Example-Minimal",
+	"id": "Specimen-MichaelJonesBlood-Example",
 	"accessionIdentifier": {
 		"system": "https://www.christie.nhs.uk/path",
 		"value": "Spec123456"
