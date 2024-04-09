@@ -104,7 +104,7 @@
 				},
 				{
 					"type": "Bundle",
-					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Bundle", 
+					"profile": "http://hl7.org/fhir/StructureDefinition/Bundle", 
 					"documentation": "For posting FHIR transaction bundles (http://hl7.org/fhir/R4B/http.html#transaction) to the server.",
 					"interaction": [
 						{
@@ -280,7 +280,7 @@
 				},
 				{
 					"type": "MessageDefinition",
-					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-MessageDefinition-Genomics",
+					"profile": "http://hl7.org/fhir/StructureDefinition/MessageDefinition",
 					"documentation": "For searching supported MessageDefinitions",
 					"interaction": [
 						{
@@ -416,7 +416,7 @@
 				},
 				{
 					"type": "MessageHeader",
-					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-MessageHeader-Genomics",
+					"profile": "http://hl7.org/fhir/StructureDefinition/MessageHeader",
 					"documentation": "Endpoints for interacting with MessageHeader resources",
 					"interaction": [
 						{
