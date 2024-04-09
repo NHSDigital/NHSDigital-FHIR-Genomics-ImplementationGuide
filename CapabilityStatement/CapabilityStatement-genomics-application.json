@@ -566,7 +566,7 @@
 				},
 				{
 					"type": "Task",
-					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Task",
+					"profile": "http://hl7.org/fhir/StructureDefinition/Task",
 					"documentation": "Endpoints for interacting with Task resources",
 					"interaction": [
 						{
@@ -1540,7 +1540,7 @@
 				},
 				{
 					"type": "Questionnaire",
-					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire",
+					"profile": "http://hl7.org/fhir/StructureDefinition/Questionnaire",
 					"documentation": "For searching supported Questionnaires",
 					"interaction": [
 						{

@@ -85,7 +85,7 @@
 				},
 				{
 					"type": "Task",
-					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Task"
+					"profile": "http://hl7.org/fhir/StructureDefinition/Task"
 				},
 				{
 					"type": "ServiceRequest",
@@ -141,7 +141,7 @@
 				},
 				{
 					"type": "Questionnaire",
-					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire"
+					"profile": "http://hl7.org/fhir/StructureDefinition/Questionnaire"
 				},
 				{
 					"type": "QuestionnaireResponse",
