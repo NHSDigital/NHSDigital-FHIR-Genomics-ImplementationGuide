@@ -2,10 +2,10 @@
 	"resourceType": "MessageHeader",
 	"id": "MessageHeader-TestRequest-Example",
 	"eventCoding": {
-		"system": "https://fhir.nhs.uk/CodeSystem/message-events-genomics",
-		"code": "genomictestrequest",
-		"display": "Genomic Test Request"
-	},
+    "system": "http://snomed.info/sct",
+    "code": "405825005",
+    "display": "Molecular genetic test"
+  },
 	"source": {
 		"endpoint": "https://www.christie.nhs.uk/ehr"
 	},

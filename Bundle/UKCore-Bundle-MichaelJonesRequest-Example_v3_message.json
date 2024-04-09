@@ -14,9 +14,9 @@
                 "resourceType": "MessageHeader",
                 "id": "a4409d7c-b613-477c-b623-87e60406c2f0",
                 "eventCoding": {
-                    "system": "https://fhir.nhs.uk/CodeSystem/message-events-genomics",
-                    "code": "genomictestrequest",
-                    "display": "Genomic Test Request"
+                    "system": "http://snomed.info/sct",
+                    "code": "405825005",
+                    "display": "Molecular genetic test"
                 },
                 "destination":  [
                     {
