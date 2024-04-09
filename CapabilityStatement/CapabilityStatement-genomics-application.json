@@ -65,7 +65,7 @@
 			"resource":  [
 				{
 					"type": "AuditEvent",
-					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-AuditEvent",
+					"profile": "http://hl7.org/fhir/StructureDefinition/AuditEvent",
 					"documentation": "For searching recorded AuditEvents",
 					"interaction": [
 						{
@@ -523,7 +523,7 @@
 				},
 				{
 					"type": "CapabilityStatement",
-					"profile": "https://hl7.org/fhir/StructureDefinition/CapabilityStatement",
+					"profile": "http://hl7.org/fhir/StructureDefinition/CapabilityStatement",
 					"documentation": "For searching provided CapabilityStatements",
 					"interaction": [
 						{
@@ -1253,7 +1253,7 @@
 				},
 				{
 					"type": "Consent",
-					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Consent",
+					"profile": "http://hl7.org/fhir/StructureDefinition/Consent",
 					"documentation": "Endpoints for interacting with Consent resources",
 					"interaction": [
 						{
@@ -1658,7 +1658,7 @@
 				},
 				{
 					"type": "OperationOutcome",
-					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-OperationOutcome",
+					"profile": "http://fhir.hl7.org.uk/StructureDefinition/UKCore-OperationOutcome",
 					"documentation": "For searching historical OperationOutcomes",
 					"interaction": [
 						{

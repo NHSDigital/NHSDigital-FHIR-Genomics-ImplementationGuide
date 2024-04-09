@@ -33,7 +33,7 @@
 			"resource": [
 				{
 					"type": "AuditEvent",
-					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-AuditEvent"
+					"profile": "http://hl7.org/fhir/StructureDefinition/AuditEvent"
 				},
 				{
 					"type": "Bundle",
@@ -81,7 +81,7 @@
 				},
 				{
 					"type": "CapabilityStatement",
-					"profile": "https://hl7.org/fhir/StructureDefinition/CapabilityStatement"
+					"profile": "http://hl7.org/fhir/StructureDefinition/CapabilityStatement"
 				},
 				{
 					"type": "Task",
@@ -121,7 +121,7 @@
 				},
 				{
 					"type": "Consent",
-					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Consent"
+					"profile": "http://hl7.org/fhir/StructureDefinition/Consent"
 				},
 				{
 					"type": "Condition",
@@ -149,7 +149,7 @@
 				},
 				{
 					"type": "OperationDefinition",
-					"profile": "https://hl7.org/fhir/StructureDefinition/OperationDefinition"
+					"profile": "http://hl7.org/fhir/StructureDefinition/OperationDefinition"
 				},
 				{
 					"type": "OperationOutcome",
