@@ -1587,7 +1587,7 @@
 				},
 				{
 					"type": "QuestionnaireResponse",
-					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse",
+					"profile": "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse",
 					"documentation": "Endpoints for interacting with QuestionnaireResponse resources",
 					"interaction": [
 						{
@@ -1658,7 +1658,7 @@
 				},
 				{
 					"type": "OperationOutcome",
-					"profile": "http://fhir.hl7.org.uk/StructureDefinition/UKCore-OperationOutcome",
+					"profile": "http://hl7.org/fhir/StructureDefinition/OperationOutcome",
 					"documentation": "For searching historical OperationOutcomes",
 					"interaction": [
 						{
@@ -1726,7 +1726,7 @@
 				},
 				{
 					"type": "Provenance",
-					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Provenance",
+					"profile": "http://hl7.org/fhir/StructureDefinition/Provenance",
 					"documentation": "For searching stored Provenance resources",
 					"interaction": [
 						{

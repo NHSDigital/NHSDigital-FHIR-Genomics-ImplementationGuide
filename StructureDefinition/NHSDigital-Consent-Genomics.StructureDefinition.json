@@ -91,7 +91,7 @@
             "targetProfile": [
               "https://fhir.hl7.org.uk/StructureDefinition/UKCore-DocumentReference",
               "http://hl7.org/fhir/StructureDefinition/Contract",
-              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse",
+              "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Consent-Genomics"
             ],
             "aggregation": [
