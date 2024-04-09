@@ -81,7 +81,7 @@
 				},
 				{
 					"type": "CapabilityStatement",
-					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-CapabilityStatement"
+					"profile": "https://hl7.org/fhir/StructureDefinition/CapabilityStatement"
 				},
 				{
 					"type": "Task",
@@ -149,7 +149,7 @@
 				},
 				{
 					"type": "OperationDefinition",
-					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-OperationDefinition"
+					"profile": "https://hl7.org/fhir/StructureDefinition/OperationDefinition"
 				},
 				{
 					"type": "OperationOutcome",
