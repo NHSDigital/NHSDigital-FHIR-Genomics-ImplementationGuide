@@ -1,0 +1,61 @@
+{
+  "resourceType": "Bundle",
+  "id": "Bundle-TransactionResponseError-Example",
+  "meta": {
+    "lastUpdated": "2024-01-30T12:01:24Z"
+  },
+  "type": "transaction-response",
+  "entry": [
+    {
+      "response": {
+        "status": "422 Unprocessable Entity",
+        "outcome": {
+          "resourceType":"OperationOutcome",
+          "meta":{
+           "lastUpdated":"2024-01-30T12:01:24Z"
+          },
+          "issue":[
+            {
+              "severity":"error",
+              "code":"processing",
+              "details":{
+                "coding":[
+                  {
+                    "system": "http://hl7.org/fhir/java-core-messageId",
+                    "code": "Validation_VAL_Profile_Minimum"
+                  }
+                ]
+              },
+              "diagnostics": "ServiceRequest.status: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ServiceRequest|4.0.1)",
+              "location": [
+                  "Bundle.entry[1].resource.ofType(ServiceRequest)"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "response": {
+        "status": "200 OK",
+        "lastModified": "2024-01-30T12:01:24Z",
+        "outcome": {
+          "resourceType": "OperationOutcome",
+          "meta": {
+            "lastUpdated": "2024-01-30T12:01:24Z"
+          },
+          "issue": [
+            {
+              "severity": "information",
+              "code": "informational",
+              "diagnostics": "No issues detected during validation. Resource not created as request contains an error",
+              "location": [
+                "Bundle.entry[1].resource.ofType(Patient)"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
