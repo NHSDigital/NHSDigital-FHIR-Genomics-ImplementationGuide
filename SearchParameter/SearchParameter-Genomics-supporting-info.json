@@ -3,7 +3,7 @@
 	"id": "SearchParameter-Genomics-supporting-info",
 	"url": "https://fhir.nhs.uk/SearchParameter/supporting-info",
 	"version": "0.0.1",
-	"name": "supporting-info",
+	"name": "SupportingInfo",
 	"status": "draft",
 	"experimental": false,
 	"date": "2023-06-27T09:56:00+00:00",
