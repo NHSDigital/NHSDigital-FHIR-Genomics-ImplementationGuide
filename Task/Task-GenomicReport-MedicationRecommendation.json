@@ -1,0 +1,27 @@
+{
+  "resourceType" : "Task",
+  "id" : "Task-GenomicReport-MedicationRecommendation",
+  "meta" : {
+    "profile" : [
+      "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/followup-recommendation"
+    ]
+  },
+  "status" : "requested",
+  "intent" : "proposal",
+  "code" : {
+    "coding" : [
+      {
+        "system" : "http://loinc.org",
+        "code" : "LA14021-2",
+        "display" : "Confirmatory testing recommended"
+      }
+    ]
+  },
+  "description" : "Testing of Pheobe's parents is recommended (via referral to the clinical genetics service) in order to confirm that both are heterozygous carriers of the missense variant.",
+  "for" : {
+    "reference" : "Patient/Patient-PheobeSmitham-Example"
+  },
+  "reasonReference" : {
+    "reference" : "Observation/Observation-GenomicImplication-Therapeutic"
+  }
+}

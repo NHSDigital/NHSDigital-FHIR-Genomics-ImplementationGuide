@@ -1,0 +1,190 @@
+{
+  "resourceType": "Observation",
+  "id": "Observation-GenomicsVariant-SLC52A2",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/variant"
+    ]
+  },
+  "status": "final",
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/ServiceRequest-WGSTestOrderFormUpdated-TrioTesting-Example"
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "GE"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "69548-6"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "699866005",
+        "display": "Brown-Vialetto-Van Laere syndrome"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-PheobeSmitham-Example"
+  },
+  "effectiveDateTime": "2023-09-16",
+  "performer": [
+    {
+      "identifier": {
+        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+        "value": "R0A"
+      }
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "LA9633-4",
+        "display": "Present"
+      }
+    ]
+  },
+  "method": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "LA26398-0",
+        "display": "Sequencing"
+      }
+    ]
+  },
+  "specimen": {
+    "reference": "Specimen/Specimen-PheobeSmitham-Example"
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "48018-6"
+          }
+        ],
+        "text": "SLC52A2"
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://www.genenames.org",
+            "code": "HGNC:30224",
+            "display": "SLC52A2"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "53034-5"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "LA6705-3",
+            "display": "homozygous"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "94186-4"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "LA4489-6",
+            "display": "Unknown"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "81290-9"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://varnomen.hgvs.org",
+            "code": "NM_001363118.2:c.916G>A"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "48001-2"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "text": "Biallelic Pathogenic:SLC52A2 missense variant"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "48002-0"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "LA6683-2",
+            "display": "Germline"
+          }
+        ],
+        "text": "Pathogenic"
+      }
+    }
+  ]
+}
