@@ -84,9 +84,9 @@
       "valueCodeableConcept": {
         "coding": [
           {
-            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-            "code": "9346",
-            "display": "riboflavin"
+            "system": "http://snomed.info/sct",
+            "code": "777436008",
+            "display": "Riboflavin"
           }
         ]
       }
