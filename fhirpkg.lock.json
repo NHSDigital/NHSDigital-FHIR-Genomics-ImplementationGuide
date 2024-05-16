@@ -2,9 +2,9 @@
   "updated": "2024-05-16T09:14:29.5276199+01:00",
   "dependencies": {
     "fhir.r4.ukcore.stu2": "2.0.0",
-    "hl7.fhir.r4.core": "4.0.1"
+    "hl7.fhir.r4.core": "4.0.1",
+    "hl7.fhir.uv.genomics-reporting": "3.0.1-SNAPSHOT"
   },
   "missing": {
-    "hl7.fhir.uv.genomics-reporting": "3.0.1-SNAPSHOT"
   }
 }
