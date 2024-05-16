@@ -1,0 +1,117 @@
+{
+  "resourceType": "DiagnosticReport",
+  "id": "DiagnosticReport-GenomicReport-VariantAssessment",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-report"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-reference",
+      "valueReference": {
+        "reference": "Procedure/Procedure-GenomicsReport-GenomicStudy"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/recommended-action",
+      "valueReference": {
+        "reference": "Task/Task-GenomicReport-MedicationRecommendation",
+        "display": "Confirmatory testing recommended"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact",
+      "valueRelatedArtifact": {
+                "type": "citation",
+                "display": "Johnson et al 2012 (PMID22740598)"
+              }
+            
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact",
+      "valueRelatedArtifact": {
+                "type": "citation",
+                "display": "Foley et al 2014 (PMID22740598)"
+              }
+            
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-report-note",
+      "valueAnnotation": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/annotation-code",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/coded-annotation-types-cs",
+                  "code": "test-disclaimer"
+                }
+              ]
+            }
+          }
+        ],
+        "text": "This test was developed and its performance determined by this laboratory. It has not been cleared or approved by UK Food and Drug Administration.\nSince FDA Approval is not required for clinical use of this test, this laboratory has established and validated the test's accuracy and precision,\npursuant to the requirement of CLIA '88. This laboratory is licensed and/or accredited under CLIA and CAP (CAP# xxxxxxx / CLIA# xxxxxxxxxx)."
+      }
+    }
+  ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/ServiceRequest-WGSTestOrderFormUpdated-TrioTesting-Example"
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "GE"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "51969-4"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-PheobeSmitham-Example"
+  },
+  "effectiveDateTime": "2023-09-16T00:00:00-05:00",
+  "issued": "2023-10-16T00:00:00-05:00",
+  "performer": [
+    {
+      "identifier": {
+        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+        "value": "R0A"
+      }
+    }
+  ],
+  "result": [
+    {
+      "reference": "Observation/Observation-GenomicsVariant-SLC52A2",
+      "display": "Brown-Vialetto-Van Laere syndrome type 2"
+    },
+    {
+      "reference": "Observation/Observation-GenomicImplication-Therapeutic"
+    }
+  ],
+  "conclusion": "Pheobe is homozygous for a pathogenic SLC52A2 missense variant (details below) previously reported by Johnson et al 2012 (PMID22740598). Biallelic pathogenic SLC52A2 variants cause autosomal recessive Brown-Vialetto-Van Laere syndrome type 2 (MIM614707).",
+  "conclusionCode": [
+    {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "LA6576-8",
+          "display": "Positive"
+        }
+      ]
+    }
+  ]
+}

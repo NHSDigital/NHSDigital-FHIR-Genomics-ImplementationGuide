@@ -90,7 +90,7 @@
       "valueCodeableConcept": {
         "coding": [
           {
-            "system": "http://www.genenames.org",
+            "system": "http://www.genenames.org/",
             "code": "HGNC:30224",
             "display": "SLC52A2"
           }
