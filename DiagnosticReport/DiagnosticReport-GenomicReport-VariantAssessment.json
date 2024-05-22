@@ -10,7 +10,7 @@
     {
       "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/recommended-action",
       "valueReference": {
-        "reference": "Task/Task-GenomicReport-MedicationRecommendation",
+        "reference": "Task/Task-GenomicReport-FollowupRecommendation",
         "display": "Confirmatory testing recommended"
       }
     },
