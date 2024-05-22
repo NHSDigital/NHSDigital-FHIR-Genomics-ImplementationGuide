@@ -8,12 +8,6 @@
   },
   "extension": [
     {
-      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-reference",
-      "valueReference": {
-        "reference": "Procedure/Procedure-GenomicsReport-GenomicStudy"
-      }
-    },
-    {
       "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/recommended-action",
       "valueReference": {
         "reference": "Task/Task-GenomicReport-MedicationRecommendation",

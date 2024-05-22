@@ -140,6 +140,24 @@
         "coding": [
           {
             "system": "http://loinc.org",
+            "code": "81290-9"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://varnomen.hgvs.org",
+            "code": "NM_001363118.2:c.916G>A"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
             "code": "48001-2"
           }
         ]
