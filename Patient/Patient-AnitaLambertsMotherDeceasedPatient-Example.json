@@ -3,18 +3,6 @@
   "id": "Patient-AnitaLambertsMotherDeceasedPatient-Example",
   "extension": [
     {
-      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BirthSex",
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "system": "http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender",
-            "code": "F",
-            "display": "Female"
-          }
-        ]
-      }
-    },
-    {
       "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EthnicCategory",
       "valueCodeableConcept": {
         "coding": [
