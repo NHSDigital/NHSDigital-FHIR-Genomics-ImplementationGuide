@@ -124,7 +124,7 @@
         "type": {
           "coding": [
             {
-              "system": "http://snomed.info/sct",
+              "system": "https://fhir.nhs.uk/CodeSystem/AdditionalInfoTypeGenomics",
               "code": "Consent",
               "display": "Consent"
             }
