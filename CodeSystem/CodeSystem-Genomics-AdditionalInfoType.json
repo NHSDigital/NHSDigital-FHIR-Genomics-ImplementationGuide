@@ -25,29 +25,34 @@
   "content": "complete",
   "concept": [
     {
+      "code": "Consent",
+      "display": "Consent",
+      "definition": "Consent for treatment record"
+    },
+    {
       "code": "ConsignmentNumber",
       "display": "Consignment Number",
       "definition": "The specimen consignment number"
     },
     {
-      "code": "RackNumber",
+      "code": "DiagnosticReport",
+      "display": "DiagnosticReport",
+      "definition": "The DiagnosticReport generated upon the task completion"
+    },
+    {
+      "code": "RackId",
       "display": "Rack Number",
       "definition": "The specimen rack number"
     },
     {
-      "code": "WellIdNum",
-      "display": "Well Identification Number",
-      "definition": "The specimen well identification number"
-    },
-    {
       "code": "Specimen",
       "display": "Specimen",
-      "definition": "The specimen provided for the Task execution"
+      "definition": "The specimen provided for the task execution"
     },
     {
-      "code": "DiagnosticReport",
-      "display": "DiagnosticReport",
-      "definition": "The DiagnosticReport generated upon the Task completion"
+      "code": "WellId",
+      "display": "Well Identification Number",
+      "definition": "The specimen well identification number"
     }
   ]
 }

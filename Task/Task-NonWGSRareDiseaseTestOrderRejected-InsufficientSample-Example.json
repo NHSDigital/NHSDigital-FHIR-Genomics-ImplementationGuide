@@ -49,13 +49,13 @@
             "text": "Please provide additional sample of X"
         }
     ],
-    "output":  [
+    "output": [
         {
             "type": {
-                "coding":  [
+                "coding": [
                     {
-                        "system": "http://snomed.info/sct",
-                        "code": "123038009",
+                        "system": "https://fhir.nhs.uk/CodeSystem/AdditionalInfoTypeGenomics",
+                        "code": "Specimen",
                         "display": "Specimen"
                     }
                 ]
