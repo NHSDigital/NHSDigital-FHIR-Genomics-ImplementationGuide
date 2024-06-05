@@ -40,11 +40,10 @@
             "text": "Free to capture additional comments"
         }
     ],
-    
-    "input":  [
+    "input": [
         {
             "type": {
-                "coding":  [
+                "coding": [
                     {
                         "system": "https://fhir.nhs.uk/CodeSystem/AdditionalInfoTypeGenomics",
                         "code": "Specimen",
