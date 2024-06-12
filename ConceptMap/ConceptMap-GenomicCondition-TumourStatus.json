@@ -1,10 +1,10 @@
 {
   "resourceType": "ConceptMap",
-  "id": "GenomicCondition-TumourStatus",
-  "url": "https://fhir.nhs.uk/ConceptMap/GenomicCondition-TumourStatus",
+  "id": "GenomicCondition-TumoursStatus",
+  "url": "https://fhir.nhs.uk/ConceptMap/GenomicCondition-TumoursStatus",
   "version": "0.1.0",
-  "name": "GenomicConditionTumourStatus",
-  "title": "Genomic Condition Tumour Status",
+  "name": "GenomicConditionTumoursStatus",
+  "title": "Genomic Condition Tumours Status",
   "status": "draft",
   "date": "2024-06-11T00:00:00.000Z",
   "publisher": "NHS England",
@@ -28,7 +28,7 @@
       "target": "http://snomed.info/sct",
       "element": [
         {
-          "code": "261665006",
+          "code": "solid",
           "display": "SOLID",
           "target": [
             {
@@ -39,7 +39,7 @@
           ]
         },
         {
-          "code": "261665006",
+          "code": "primary",
           "display": "PRIMARY",
           "target": [
             {
@@ -50,7 +50,7 @@
           ]
         },
         {
-          "code": "261665006",
+          "code": "metastatic",
           "display": "METASTATIC",
           "target": [
             {
@@ -61,7 +61,7 @@
           ]
         },
         {
-          "code": "261665006",
+          "code": "unknown",
           "display": "UNKNOWN",
           "target": [
             {
