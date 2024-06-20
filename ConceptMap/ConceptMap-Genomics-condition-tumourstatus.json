@@ -1,10 +1,10 @@
 {
   "resourceType": "ConceptMap",
-  "id": "England-ConditionTumourStatus",
-  "url": "https://fhir.nhs.uk/England/ConceptMap/England-ConditionTumourStatus",
+  "id": "genomics-condition-tumourstatus",
+  "url": "https://fhir.nhs.uk/ConceptMap/genomics-condition-tumourstatus",
   "version": "0.1.0",
-  "name": "EnglandConditionTumourStatus",
-  "title": "England Condition Tumour Status",
+  "name": "GenomicsConditionTumourStatus",
+  "title": "Genomics Condition Tumour Status",
   "status": "draft",
   "date": "2024-06-11T00:00:00.000Z",
   "publisher": "NHS England",
@@ -43,7 +43,7 @@
           "target": [
             {
               "code": "63161005",
-              "display": "Primary",
+              "display": "Principal (qualifier value",
               "equivalence": "equivalent"
             }
           ]
