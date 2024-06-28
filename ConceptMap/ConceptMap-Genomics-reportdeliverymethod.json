@@ -31,9 +31,7 @@
           "display": "POSTAL",
           "target": [
             {
-              "code": "other",
-              "display": "OTHER",
-              "equivalence": "equivalent"
+              "equivalence": "unmatched"
             }
           ]
         },
@@ -59,17 +57,17 @@
             }
           ]
         },
-          {
-            "code": "other",
-            "display": "OTHER",
-            "target": [
-              {
-                "code": "other",
-                "display": "Other",
-                "equivalence": "equivalent"
-              }
-            ]
-          }
+        {
+          "code": "other",
+          "display": "OTHER",
+          "target": [
+            {
+              "code": "other",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
       ]
     }
   ]
