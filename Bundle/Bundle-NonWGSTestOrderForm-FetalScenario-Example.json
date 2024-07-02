@@ -644,15 +644,13 @@
           ]
         },
         "valueCodeableConcept": {
-          "code": {
-            "coding": [
-              {
-                "system": "http://snomed.info/sct",
-                "code": "263903005",
-                "display": "Transplant (qualifier value)"
-              }
-            ]
-          }
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "263903005",
+              "display": "Transplant (qualifier value)"
+            }
+          ]
         },
         "subject": {
           "reference": "Patient/Patient-RyanneBoulder-Example",

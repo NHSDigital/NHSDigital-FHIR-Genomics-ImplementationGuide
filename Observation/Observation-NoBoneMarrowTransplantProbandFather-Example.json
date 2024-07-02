@@ -12,15 +12,13 @@
     ]
   },
   "valueCodeableConcept": {
-    "code": {
-      "coding": [
-        {
-          "system": "http://snomed.info/sct",
-          "code": "4457155009",
-          "display": "Blood and marrow transplantation (qualifier value)"
-        }
-      ]
-    }
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "4457155009",
+        "display": "Blood and marrow transplantation (qualifier value)"
+      }
+    ]
   },
   "subject": {
     "reference": "Patient/Patient-PheobeSmithamFather-Example",

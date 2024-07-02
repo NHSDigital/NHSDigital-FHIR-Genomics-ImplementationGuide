@@ -12,15 +12,13 @@
     ]
   },
   "valueCodeableConcept": {
-    "code": {
-      "coding": [
-        {
-          "system": "http://snomed.info/sct",
-          "code": "303955003",
-          "display": "Transfusion - action (qualifier value)"
-        }
-      ]
-    }
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "303955003",
+        "display": "Transfusion - action (qualifier value)"
+      }
+    ]
   },
   "subject": {
     "reference": "Patient/Patient-MeirLieberman-Example",

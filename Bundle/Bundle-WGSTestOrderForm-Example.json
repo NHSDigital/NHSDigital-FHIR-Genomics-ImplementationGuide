@@ -465,15 +465,13 @@
           ]
         },
         "valueCodeableConcept": {
-          "code": {
-            "coding": [
-              {
-                "system": "http://snomed.info/sct",
-                "code": "4457155009",
-                "display": "Blood and marrow transplantation (qualifier value)"
-              }
-            ]
-          }
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "4457155009",
+              "display": "Blood and marrow transplantation (qualifier value)"
+            }
+          ]
         },
         "subject": {
           "reference": "Patient/Patient-LindsaySorrell-Example",
@@ -505,15 +503,13 @@
           ]
         },
         "valueCodeableConcept": {
-          "code": {
-            "coding": [
-              {
-                "system": "http://snomed.info/sct",
-                "code": "303955003",
-                "display": "Transfusion - action (qualifier value)"
-              }
-            ]
-          }
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "303955003",
+              "display": "Transfusion - action (qualifier value)"
+            }
+          ]
         },
         "subject": {
           "reference": "Patient/Patient-LindsaySorrell-Example",
