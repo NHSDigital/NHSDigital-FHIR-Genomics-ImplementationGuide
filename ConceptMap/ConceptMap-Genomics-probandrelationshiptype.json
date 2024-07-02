@@ -29,7 +29,7 @@
       "element": [
         {
           "code": "biological-aunt",
-          "display": "BIOLOGICALAUNT",
+          "display": "BIOLOGICAL AUNT",
           "target": [
             {
               "code": "AUNT",
@@ -40,7 +40,7 @@
         },
         {
           "code": "biological-brother",
-          "display": "BIOLOGICALBROTHER",
+          "display": "BIOLOGICAL BROTHER",
           "target": [
             {
               "code": "NBRO",
@@ -51,7 +51,7 @@
         },
         {
           "code": "biological-child",
-          "display": "BIOLOGICALCHILD",
+          "display": "BIOLOGICAL CHILD",
           "target": [
             {
               "code": "NCHILD",
@@ -62,7 +62,7 @@
         },
         {
           "code": "biological-cousin",
-          "display": "BIOLOGICALCOUSIN",
+          "display": "BIOLOGICAL COUSIN",
           "target": [
             {
               "code": "COUSN",
@@ -73,7 +73,7 @@
         },
         {
           "code": "biological-daughter",
-          "display": "BIOLOGICALDAUGHTER",
+          "display": "BIOLOGICAL DAUGHTER",
           "target": [
             {
               "code": "DAU",
@@ -84,7 +84,7 @@
         },
         {
           "code": "biological-father",
-          "display": "BIOLOGICALFATHER",
+          "display": "BIOLOGICAL FATHER",
           "target": [
             {
               "code": "NFTH",
@@ -95,7 +95,7 @@
         },
         {
           "code": "biological-grandfather",
-          "display": "BIOLOGICALGRANDFATHER",
+          "display": "BIOLOGICAL GRANDFATHER",
           "target": [
             {
               "code": "GRFTH",
@@ -106,7 +106,7 @@
         },
         {
           "code": "biological-grandmother",
-          "display": "BIOLOGICALGRANDMOTHER",
+          "display": "BIOLOGICAL GRANDMOTHER",
           "target": [
             {
               "code": "GRMTH",
@@ -117,7 +117,7 @@
         },
         {
           "code": "biological-mother",
-          "display": "BIOLOGICALMOTHER",
+          "display": "BIOLOGICAL MOTHER",
           "target": [
             {
               "code": "NMTH",
@@ -128,7 +128,7 @@
         },
         {
           "code": "biological-sister",
-          "display": "BIOLOGICALSISTER",
+          "display": "BIOLOGICAL SISTER",
           "target": [
             {
               "code": "NSIS",
@@ -139,7 +139,7 @@
         },
         {
           "code": "biological-son",
-          "display": "BIOLOGICALSON",
+          "display": "BIOLOGICAL SON",
           "target": [
             {
               "code": "SON",
@@ -150,7 +150,7 @@
         },
         {
           "code": "biological-uncle",
-          "display": "BIOLOGICALUNCLE",
+          "display": "BIOLOGICAL UNCLE",
           "target": [
             {
               "code": "UNCLE",
