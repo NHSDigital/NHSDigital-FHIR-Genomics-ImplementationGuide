@@ -1,0 +1,138 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "genomics-reasonfortesting",
+  "url": "https://fhir.nhs.uk/ConceptMap/genomics-reasonfortesting",
+  "version": "0.1.0",
+  "name": "GenomicsReasonforTesting",
+  "title": "Genomics Reason for Testing",
+  "status": "draft",
+  "date": "2024-07-03T18:35:00.000Z",
+  "publisher": "NHS England",
+  "contact": [
+    {
+      "name": "NHS England",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "interoperabilityteam@nhs.net"
+        }
+      ]
+    }
+  ],
+  "description": "A ConceptMap used for the translation and recording of concepts from MDS source data(code-options) to equivalent Snomed CT codes, and FHIR spec.",
+  "purpose": "ConceptMap used for the translation and recording of concept for ServiceRequest.reasonCode field,i.e, reasons for requesting a genomics test",
+  "copyright": "Copyright © 2023+ NHS England Licensed under the Apache License, Version 2.0 (the \\\"License\\\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \\\"AS IS\\\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html.",
+  "targetUri": "http://snomed.info/sct?fhir_vs=isa/138875005",
+  "group": [
+    {
+      "target": "http://snomed.info/sct",
+      "element": [
+        {
+          "code": "diagnostic",
+          "display": "DIAGNOSTIC",
+          "target": [
+            {
+              "code": "165196007",
+              "display": "Procedures related to diagnosis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "predictive",
+          "display": "PREDICTIVE",
+          "target": [
+            {
+              "code": "2931005",
+              "display": "Probable diagnosis",
+              "equivalence": "subsumes"
+            }
+          ]
+        },
+        {
+          "display": "CARRIER",
+          "target": [
+            {
+              "code": "29679002",
+              "display": "Carrier of disorder",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "dna-storage",
+          "display": "DNASTORAGE",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "first-diagnosis",
+          "display": "FIRST DIAGNOSIS",
+          "target": [
+            {
+              "code": "48318009",
+              "display": "Prior diagnosis",
+              "equivalence": "subsumes"
+            }
+          ]
+        },
+        {
+          "code": "relapse",
+          "display": "RELAPSE",
+          "target": [
+            {
+              "code": "414482001",
+              "display": "Indication for relapse",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "staging-or-prognosis",
+          "display": "STAGING OR PROGNOSIS",
+          "target": [
+            {
+              "code": "410595004",
+              "display": "Prognosis context",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "disease-monitoring-mechanism",
+          "display": "DISEASE MONITORING MRD CHIMERISM",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "follow-up",
+          "display": "FOLLOWUP",
+          "target": [
+            {
+              "code": "308273005",
+              "display": "Follow-up status",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "unknown",
+          "display": "UNKNOWN",
+          "target": [
+            {
+              "code": "261665006",
+              "display": "Unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
