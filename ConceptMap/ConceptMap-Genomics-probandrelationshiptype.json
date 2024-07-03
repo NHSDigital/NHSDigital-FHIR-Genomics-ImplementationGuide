@@ -34,7 +34,7 @@
             {
               "code": "AUNT",
               "display": "aunt",
-              "equivalence": "equivalent"
+              "equivalence": "subsumes"
             }
           ]
         },
@@ -67,7 +67,7 @@
             {
               "code": "COUSN",
               "display": "cousin",
-              "equivalence": "equivalent"
+              "equivalence": "subsumes"
             }
           ]
         },
@@ -100,7 +100,7 @@
             {
               "code": "GRFTH",
               "display": "grandfather",
-              "equivalence": "equivalent"
+              "equivalence": "subsumes"
             }
           ]
         },
@@ -111,7 +111,7 @@
             {
               "code": "GRMTH",
               "display": "grandmother",
-              "equivalence": "equivalent"
+              "equivalence": "subsumes"
             }
           ]
         },
@@ -155,7 +155,7 @@
             {
               "code": "UNCLE",
               "display": "uncle",
-              "equivalence": "equivalent"
+              "equivalence": "subsumes"
             }
           ]
         }
