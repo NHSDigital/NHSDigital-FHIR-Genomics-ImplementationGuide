@@ -26,43 +26,78 @@
   "concept": [
     {
       "code": "carrier",
-      "display": "Carrier"
+      "display": "Carrier",
+      "definition": "Primary test request"
     },
     {
       "code": "diagnostic",
-      "display": "Diagnostic"
+      "display": "Diagnostic",
+      "definition": "Primary test request"
     },
     {
       "code": "disease-monitoring-mrdmechanism",
-      "display": "Disease Monitoring MRD CHIMERISM"
+      "display": "Disease Monitoring MRD CHIMERISM",
+      "definition": "Primary test request"
     },
     {
       "code": "dna-storage",
-      "display": "DNA Storage"
+      "display": "DNA Storage",
+      "definition": "Primary test request"
     },
     {
       "code": "first-diagnosis",
-      "display": "First Diagnosis"
+      "display": "First Diagnosis",
+      "definition": "Primary test request"
     },
     {
       "code": "follow-up",
-      "display": "Follow Up"
+      "display": "Follow Up",
+      "definition": "Primary test request"
     },
     {
       "code": "predictive",
-      "display": "Predictive"
+      "display": "Predictive",
+      "definition": "Primary test request"
     },
     {
       "code": "relapse",
-      "display": "RELAPSE"
+      "display": "Relapse",
+      "definition": "Primary test request"
     },
     {
       "code": "staging-or-prognosis",
-      "display": "Staging or Prognosis"
+      "display": "Staging or Prognosis",
+      "definition": "Primary test request"
     },
     {
       "code": "unknown",
-      "display": "Unknown"
+      "display": "Unknown",
+      "definition": "Primary test request"
+    },
+    {
+      "code": "change-in-presentation",
+      "display": "Change In Presentation",
+      "definition": "Re-analysis test request"
+    },
+    {
+      "code": "newly-affected-family-member",
+      "display": "Newly Affected Family Member",
+      "definition": "Re-analysis test request"
+    },
+    {
+      "code": "new-pregnancy",
+      "display": "New Pregnancy",
+      "definition": "Re-analysis test request"
+    },
+    {
+      "code": "new-treatment-clinical-management",
+      "display": "New Treatment/Clinical Management",
+      "definition": "Re-analysis test request"
+    },
+    {
+      "code": "recently-deceased-to-inform-family",
+      "display": "Recently Deceased To Inform Family",
+      "definition": "Re-analysis test request"
     }
   ]
 }
