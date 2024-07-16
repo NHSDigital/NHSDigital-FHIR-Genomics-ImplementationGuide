@@ -65,9 +65,9 @@
           "display": "UNKNOWN",
           "target": [
             {
-              "code": "261665006",
-              "display": "UNKNOWN",
-              "equivalence": "equivalent"
+              "code": "5447007",
+              "display": "Transfusion (procedure)",
+              "equivalence": "specializes"
             }
           ]
         }
