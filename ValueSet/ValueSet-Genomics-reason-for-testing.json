@@ -36,6 +36,7 @@
       },
       {
         "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
+        "version": "0.1.0",
         "concept": [
           {
             "code": "carrier"
