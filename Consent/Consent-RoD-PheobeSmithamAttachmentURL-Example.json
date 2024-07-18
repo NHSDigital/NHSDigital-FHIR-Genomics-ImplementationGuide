@@ -26,7 +26,7 @@
 		"reference":"Patient/Patient-PheobeSmitham-Example"
 	},
 	"sourceAttachment": {
-		"url": "https://cts5j3.axshare.com/?id=mt03ha&p=child-_record_of_discussion"
+		"url": "https://github.com/NHSDigital/NHSDigital-FHIR-Genomics-ImplementationGuide/blob/b399f605cb8469e68bea8655b1791e4d1fe3fdd3/documents/PheobeSmitham-record-of-discussion-form.pdf"
 	},
 	"policy": [
 		{
