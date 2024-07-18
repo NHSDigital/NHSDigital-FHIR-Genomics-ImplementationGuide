@@ -25,9 +25,13 @@
   "content": "complete",
   "concept": [
     {
-      "code": "carrier",
-      "display": "Carrier",
+      "code": "primary-test-request",
+      "dsplay": "Primary Test Request",
       "concept": [
+        {
+          "code": "carrier",
+          "display": "Carrier"
+        },
         {
           "code": "diagnostic",
           "display": "Diagnostic"
@@ -63,24 +67,30 @@
       ]
     },
     {
-      "code": "change-in-presentation",
-      "display": "Change In Presentation"
-    },
-    {
-      "code": "newly-affected-family-member",
-      "display": "Newly Affected Family Member"
-    },
-    {
-      "code": "new-pregnancy",
-      "display": "New Pregnancy"
-    },
-    {
-      "code": "new-treatment-clinical-management",
-      "display": "New Treatment/Clinical Management"
-    },
-    {
-      "code": "recently-deceased-to-inform-family",
-      "display": "Recently Deceased To Inform Family"
+      "code": "reanalysis-test-request",
+      "dsplay": "Reanalysis Test Request",
+      "concept": [
+        {
+          "code": "change-in-presentation",
+          "display": "Change In Presentation"
+        },
+        {
+          "code": "newly-affected-family-member",
+          "display": "Newly Affected Family Member"
+        },
+        {
+          "code": "new-pregnancy",
+          "display": "New Pregnancy"
+        },
+        {
+          "code": "new-treatment-clinical-management",
+          "display": "New Treatment/Clinical Management"
+        },
+        {
+          "code": "recently-deceased-to-inform-family",
+          "display": "Recently Deceased To Inform Family"
+        }
+      ]
     }
   ]
 }

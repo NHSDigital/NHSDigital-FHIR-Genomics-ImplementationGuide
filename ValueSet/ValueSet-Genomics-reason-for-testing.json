@@ -25,23 +25,7 @@
     "include": [
       {
         "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
-        "version": "0.1.0",
-        "filter": [
-          {
-            "property": "concept",
-            "op": "is-a",
-            "value": "carrier"
-          }
-        ]
-      },
-      {
-        "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
-        "version": "0.1.0",
-        "concept": [
-          {
-            "code": "carrier"
-          }
-        ]
+        "version": "0.1.0"
       }
     ]
   }
