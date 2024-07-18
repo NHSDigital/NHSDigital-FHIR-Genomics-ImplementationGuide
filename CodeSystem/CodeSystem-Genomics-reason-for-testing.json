@@ -26,7 +26,7 @@
   "concept": [
     {
       "code": "primary-test-request",
-      "dsplay": "Primary Test Request",
+      "display": "Primary Test Request",
       "concept": [
         {
           "code": "carrier",
@@ -68,7 +68,7 @@
     },
     {
       "code": "reanalysis-test-request",
-      "dsplay": "Reanalysis Test Request",
+      "display": "Reanalysis Test Request",
       "concept": [
         {
           "code": "change-in-presentation",
