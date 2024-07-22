@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "NHSDigital-ServiceRequestGenomics",
+  "id": "NHSDigital-ServiceRequest-Genomics",
   "url": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-ServiceRequest-Genomics",
   "version": "0.2.0",
   "name": "NHSDigital_ServiceRequest_Genomics",
