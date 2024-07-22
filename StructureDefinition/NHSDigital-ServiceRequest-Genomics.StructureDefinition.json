@@ -167,7 +167,6 @@
       {
         "id": "ServiceRequest.orderDetail",
         "path": "ServiceRequest.orderDetail",
-        "min": 1,
         "binding": {
           "strength": "preferred",
           "valueSet": "https://fhir.nhs.uk/ValueSet/genomics-types-of-reanalysistest"
