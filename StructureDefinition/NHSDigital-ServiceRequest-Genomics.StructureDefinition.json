@@ -186,10 +186,7 @@
         "path": "ServiceRequest.orderDetail",
         "sliceName": "genomicTestDirectory",
         "short": "Genomic Test Directory codes",
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory"
-        }
+        "fixedUri": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory"
       },
       {
         "id": "ServiceRequest.quantity[x]",
