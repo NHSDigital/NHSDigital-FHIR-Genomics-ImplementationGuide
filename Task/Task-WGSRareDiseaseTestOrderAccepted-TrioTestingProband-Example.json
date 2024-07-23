@@ -6,7 +6,7 @@
     "coding": [
       {
         "system": "https://fhir.nhs.uk/CodeSystem/business-status-genomics",
-        "code": "Sample Received",
+        "code": "SampleReceived",
         "display": "Sample Received"
       }
     ]
