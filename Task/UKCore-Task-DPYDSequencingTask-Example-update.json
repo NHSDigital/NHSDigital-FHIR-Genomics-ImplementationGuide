@@ -16,7 +16,7 @@
 		}
 	],
 	"status": "accepted",
-	"statusReason": { 
+	"businessStatus": { 
 		"coding": [
 			{ 
 				"system": "https://fhir.nhs.uk/CodeSystem/business-status-genomics", 

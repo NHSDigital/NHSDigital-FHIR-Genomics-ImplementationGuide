@@ -6,8 +6,8 @@
         "coding": [
             {
                 "system": "https://fhir.nhs.uk/CodeSystem/task-statusReason-genomics",
-                "code": "SpecimenQualityNotOK",
-                "display": "Specimen Quality Not OK"
+                "code": "SampleSubOptimal",
+                "display": "Sample Sub-Optimal"
             }
         ]
     },

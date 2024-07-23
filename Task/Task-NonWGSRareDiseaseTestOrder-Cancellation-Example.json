@@ -6,8 +6,8 @@
     "coding": [
       {
         "system": "https://fhir.nhs.uk/CodeSystem/task-statusReason-genomics",
-        "code": "TestNoLongerRequired",
-        "display": "Test No Longer Required"
+        "code": "TaskNoLongerRequired",
+        "display": "Task No Longer Required"
       }
     ]
   },

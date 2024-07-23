@@ -5,7 +5,7 @@
   "statusReason": { 
     "coding": [
       { 
-        "system": "https://fhir.nhs.uk/CodeSystem/business-status-genomics", 
+        "system": "https://fhir.nhs.uk/CodeSystem/task-statusReason-genomics", 
         "code": "AwaitingSample", 
         "display": "Awaiting Sample"
       }
