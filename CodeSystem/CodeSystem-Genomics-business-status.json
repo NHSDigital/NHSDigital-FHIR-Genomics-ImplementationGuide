@@ -8,11 +8,11 @@
       "value": "business-status-genomics"
     }
   ],
-  "version": "0.2.0",
+  "version": "0.3.0",
   "name": "BusinessStatusGenomics",
   "title": "Business Status Genomics",
   "status": "draft",
-  "date": "2022-11-25",
+  "date": "2024-07-23",
   "publisher": "NHS Digital",
   "contact": [
     {
@@ -32,32 +32,72 @@
   "content": "complete",
   "concept": [
     {
-      "code": "AwaitingSpecimen",
-      "display": "Awaiting Specimen"
+      "code": "DeterminingTestRecoverability",
+      "display": "Determining Test Recoverability"
     },
     {
-      "code": "AwaitingRoDAndSpecimen",
-      "display": "Awaiting Record of Discussion and Specimen"
+      "code": "TestRecoverable",
+      "display": "Test Recoverable"
     },
     {
-      "code": "SpecimenReceived",
-      "display": "Specimen Received"
+      "code": "NotifyingRequesterOfFailure",
+      "display": "Notifying Requester Of Failure"
+    },
+    {
+      "code": "SampleRequested",
+      "display": "Sample Requested (from external lab)"
+    },
+    {
+      "code": "SampleAvailabilityConfirmed",
+      "display": "Sample Availability Confirmed"
+    },
+    {
+      "code": "SampleBookedIntoLab",
+      "display": "Sample Booked Into Lab"
+    },
+    {
+      "code": "VariantsPrioritiesListRequired",
+      "display": "Variants Priorities List Required"
+    },
+    {
+      "code": "VariantsPrioritiesListRetrieved",
+      "display": "Variants Priorities List Retrieved"
+    },
+    {
+      "code": "PreviousGenomicSequenceDataRequired",
+      "display": "Previous Genomic Sequence Data Required"
+    },
+    {
+      "code": "PreviousGenomicSequenceDataRetrieved",
+      "display": "Previous Genomic Sequence Data Retrieved"
+    },
+    {
+      "code": "RemoteSamplePrepRequired",
+      "display": "Remote Sample Prep Required"
+    },
+    {
+      "code": "SampleSent",
+      "display": "Sample Sent"
+    },
+    {
+      "code": "SampleReceived",
+      "display": "Sample Received"
+    },
+    {
+      "code": "SampleStored",
+      "display": "Sample Stored"
+    },
+    {
+      "code": "FurtherSamplePrepRequired",
+      "display": "Further Sample Prep Required"
     },
     {
       "code": "RemoteProcessingRequired",
       "display": "Remote Processing Required"
     },
     {
-      "code": "AlignSequencing",
-      "display": "Align Sequencing"
-    },
-    {
-      "code": "RemoteGeneticDataProcessingRequired",
-      "display": "Remote Genetic Data Processing Required"
-    },
-    {
-      "code": "VariantsIdentified",
-      "display": "Variants Identified"
+      "code": "RemoteGenomicDataProcessingRequired",
+      "display": "Remote Genomic Data Processing Required"
     },
     {
       "code": "RemoteInterpretationRequired",
@@ -72,12 +112,12 @@
       "display": "Further Clinical Details Provided"
     },
     {
-      "code": "ReflexTestRequired",
-      "display": "Reflex Test Required"
+      "code": "ReflexConfirmatoryTestRequired",
+      "display": "Reflex/Confirmatory Test Required"
     },
     {
-      "code": "ReflexTestComplete",
-      "display": "Reflex Test Complete"
+      "code": "ReflexConfirmatoryTestComplete",
+      "display": "Reflex/Confirmatory Test Complete"
     }
   ]
 }

@@ -2,12 +2,12 @@
   "resourceType": "Task",
   "id": "Task-WGSRareDiseaseTestOrderAccepted-Example",
   "status": "on-hold",
-  "businessStatus": { 
+  "statusReason": { 
     "coding": [
       { 
         "system": "https://fhir.nhs.uk/CodeSystem/business-status-genomics", 
-        "code": "AwaitingRoDAndSpecimen", 
-        "display": "Awaiting Record of Discussion and Specimen"
+        "code": "AwaitingRoDAndOrSample", 
+        "display": "Awaiting Record of Discussion and/or Sample"
       }
     ]
   },
