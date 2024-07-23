@@ -167,9 +167,28 @@
       {
         "id": "ServiceRequest.orderDetail",
         "path": "ServiceRequest.orderDetail",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "coding.system"
+            }
+          ],
+          "rules": "open"
+        },
         "binding": {
           "strength": "preferred",
           "valueSet": "https://fhir.nhs.uk/ValueSet/genomics-types-of-reanalysistest"
+        }
+      },
+      {
+        "id": "ServiceRequest.orderDetail:genomicTestDirectory",
+        "path": "ServiceRequest.orderDetail",
+        "sliceName": "genomicTestDirectory",
+        "short": "Genomic Test Directory codes",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory"
         }
       },
       {
