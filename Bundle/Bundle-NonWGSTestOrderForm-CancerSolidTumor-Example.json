@@ -528,8 +528,8 @@
             "coding": [
               {
                 "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
-                "code": "new-treatment-clinical-management",
-                "display": "New Treatment/Clinical Management"
+                "code": "relapse",
+                "display": "Relapae"
               }
             ]
           }
