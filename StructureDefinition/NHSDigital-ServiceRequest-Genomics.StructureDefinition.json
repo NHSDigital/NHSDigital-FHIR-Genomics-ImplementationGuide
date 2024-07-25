@@ -175,6 +175,51 @@
         "min": 1
       },
       {
+        "id": "ServiceRequest.orderDetail.coding",
+        "path": "ServiceRequest.orderDetail.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "ServiceRequest.orderDetail.coding:genomicTestDirectory",
+        "path": "ServiceRequest.orderDetail.coding",
+        "sliceName": "genomicTestDirectory"
+      },
+      {
+        "id": "ServiceRequest.orderDetail.coding:genomicTestDirectory.system",
+        "path": "ServiceRequest.orderDetail.coding.system",
+        "short": "Genomics Test Directory codes",
+        "fixedUri": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory"
+      },
+      {
+        "id": "ServiceRequest.orderDetail.coding:genomicsTestPanelCode",
+        "path": "ServiceRequest.orderDetail.coding",
+        "sliceName": "genomicsTestPanelCode"
+      },
+      {
+        "id": "ServiceRequest.orderDetail.coding:genomicsTestPanelCode.system",
+        "path": "ServiceRequest.orderDetail.coding.system",
+        "short": "Genomics Test Panel Code",
+        "fixedUri": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestPanelCode"
+      },
+      {
+        "id": "ServiceRequest.orderDetail.coding:genomicsTypesofReanalysisTest",
+        "path": "ServiceRequest.orderDetail.coding",
+        "sliceName": "genomicsTypesofReanalysisTest",
+        "binding": {
+          "strength": "preferred",
+          "description": "Types of re-analysis test in Genomics",
+          "valueSet": "https://fhir.nhs.uk/ValueSet/genomics-types-of-reanalysistest"
+        }
+      },
+      {
         "id": "ServiceRequest.quantity[x]",
         "path": "ServiceRequest.quantity[x]",
         "max": "0"
