@@ -6,8 +6,8 @@
     "coding": [
       {
         "system": "https://fhir.nhs.uk/CodeSystem/task-statusReason-genomics", 
-        "code": "NoSampleProvided", 
-        "display": "NoSampleProvided"
+        "code": "no-sample-provided", 
+        "display": "no-sample-provided"
       }
     ]
   },
@@ -17,7 +17,7 @@
     "coding": [
       { 
         "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics", 
-        "code": "RequestSampleAlignment", 
+        "code": "request-sample-alignment", 
         "display": "Request & Sample Alignment"
       }
     ]

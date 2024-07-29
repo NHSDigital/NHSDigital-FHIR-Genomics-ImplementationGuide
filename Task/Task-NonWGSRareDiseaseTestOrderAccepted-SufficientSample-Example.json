@@ -6,7 +6,7 @@
         "coding": [
             {
                 "system": "https://fhir.nhs.uk/CodeSystem/business-status-genomics",
-                "code": "SampleReceived",
+                "code": "sample-received",
                 "display": "Sample Received"
             }
         ]
@@ -17,7 +17,7 @@
         "coding": [
             {
                 "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
-                "code": "ProcessGenomicTestRequest",
+                "code": "process-genomic-test-request",
                 "display": "Process Genomic Test Request"
             }
         ]

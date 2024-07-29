@@ -32,51 +32,51 @@
   "content": "complete",
   "concept": [
     {
-      "code": "FurtherInformationNeeded",
+      "code": "further-information-needed",
       "display": "Further Information Needed"
     },
     {
-      "code": "AwaitingSample",
+      "code": "awaiting-sample",
       "display": "Awaiting Sample"
     },
     {
-      "code": "AwaitingRoDAndOrSample",
+      "code": "awaiting-rod-and-or-sample",
       "display": "Awaiting Record of Discussion and/or Sample"
     },
     {
-      "code": "InvalidRequest",
+      "code": "invalid-request",
       "display": "Invalid Request"
     },
     {
-      "code": "PipelineError",
+      "code": "pipeline-error",
       "display": "Pipeline Error"
     },
     {
-      "code": "TimeForTaskExceeded",
+      "code": "time-for-task-exceeded",
       "display": "Time For Task Exceeded"
     },
     {
-      "code": "UnableToInterpret",
+      "code": "unable-to-interpret",
       "display": "Unable To Interpret"
     },
     {
-      "code": "SampleSubOptimal",
+      "code": "sample-sub-optimal",
       "display": "Sample Sub-Optimal"
     },
     {
-      "code": "TaskNoLongerRequired",
+      "code": "task-no-longer-required",
       "display": "Task No Longer Required"
     },
     {
-      "code": "NoSampleProvided",
+      "code": "no-sample-provided",
       "display": "No Sample Provided"
     },
     {
-      "code": "ScheduledDelay",
+      "code": "scheduled-delay",
       "display": "Scheduled Delay"
     },
     {
-      "code": "AwaitingOrderDetail",
+      "code": "awaiting-order-detail",
       "display": "Awaiting Order Detail"
     }
   ]
