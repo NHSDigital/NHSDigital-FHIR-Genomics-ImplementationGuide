@@ -32,19 +32,19 @@
 	"content": "complete",
 	"concept": [
 		{
-			"code": "LiketoDiscussLater",
+			"code": "like-to-discuss-later",
 			"display": "Patient would like to discuss at a later date"
 		},
 		{
-			"code": "PatientLackCapacity",
+			"code": "patient-lack-capacity",
 			"display": "Patient lacks capacity and no consultee available"
 		},
 		{
-			"code": "InappropriatetoDiscuss",
+			"code": "inappropriate-to-discuss",
 			"display": "Inappropriate to have discussion"
 		},
 		{
-			"code": "Other",
+			"code": "other",
 			"display": "Other"
 		}
 	]
