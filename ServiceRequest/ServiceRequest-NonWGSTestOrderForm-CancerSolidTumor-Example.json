@@ -61,7 +61,7 @@
         {
           "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
           "code": "relapse",
-          "display": "Relapae"
+          "display": "Relapse"
         }
       ]
     }
