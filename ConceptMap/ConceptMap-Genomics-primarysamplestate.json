@@ -34,7 +34,7 @@
             {
               "code": "87612001",
               "display": "Blood (substance)",
-              "equivalence": "equivalence"
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -45,7 +45,7 @@
             {
               "code": "48469005",
               "display": "Cytologic material (specimen)",
-              "equivalence": "equivalence"
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -66,7 +66,7 @@
           "target": [
             {
               "code": "441479001|Fresh tissue specimen (specimen)| : 276823002 | Type of specimen (attribute) | = 261014004|Frozen (qualifier value)|",
-              "equivalence": "equivalence"
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -77,7 +77,7 @@
             {
               "code": "441479001",
               "display": "Fresh tissue specimen (specimen)",
-              "equivalence": "equivalence"
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -88,7 +88,7 @@
             {
               "code": "441479001",
               "display": "Unfixed tissue specimen",
-              "equivalence": "equivalence"
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -99,7 +99,7 @@
             {
               "code": "74964007",
               "display": "Other (qualifier value)",
-              "equivalence": "equivalence"
+              "equivalence": "equivalent"
             }
           ]
         }
