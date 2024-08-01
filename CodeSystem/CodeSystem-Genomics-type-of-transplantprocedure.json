@@ -1,0 +1,160 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "typeoftransplantprocedure-genomics",
+  "url": "https://fhir.nhs.uk/CodeSystem/typeoftransplantprocedure-genomics",
+  "version": "0.1.0",
+  "name": "TypeofTransplantProcedureGenomics",
+  "title": "Type of Transplant Procedure Genomics",
+  "status": "draft",
+  "date": "2024-07-12T00:00:00.000Z",
+  "publisher": "NHS England",
+  "contact": [
+    {
+      "name": "NHS England",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "interoperabilityteam@nhs.net"
+        }
+      ]
+    }
+  ],
+  "description": "A set of codes use to identify the type of transponrt procedure that patient may undergo in genomics.",
+  "copyright": "Copyright © 2023+ NHS England Licensed under the Apache License, Version 2.0 (the \\\"License\\\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \\\"AS IS\\\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html.",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "bone-marrow",
+      "display": "BONE MARROW"
+    },
+    {
+      "code": "stem-cell",
+      "display": "STEM CELL"
+    },
+    {
+      "code": "kidney",
+      "display": "KIDNEY"
+    },
+    {
+      "code": "enbloc-kidney",
+      "display": "EN-BLOCKIDNEY"
+    },
+    {
+      "code": "double-kidney",
+      "display": "DOUBLE KIDNEY"
+    },
+    {
+      "code": "pancreas",
+      "display": "PANCREAS ONLY"
+    },
+    {
+      "code": "pancreas-islets",
+      "display": "PANCREAS ISLETS"
+    },
+    {
+      "code": "liver",
+      "display": "LIVER"
+    },
+    {
+      "code": "heart",
+      "display": "HEART"
+    },
+    {
+      "code": "lung",
+      "display": "LUNG"
+    },
+    {
+      "code": "double-lung",
+      "display": "DOUBLE LUNG"
+    },
+    {
+      "code": "bilateral-single-lung",
+      "display": "BILATERAL SINGLE LUNG"
+    },
+    {
+      "code": "partial-lung",
+      "display": "PARTIAL LUNG"
+    },
+    {
+      "code": "ocular-tissue",
+      "display": "OCULAR TISSUE"
+    },
+    {
+      "code": "liver-and-kidney",
+      "display": "LIVER AND KIDNEY"
+    },
+    {
+      "code": "liver-kidney-and-pancreas",
+      "display": "LIVER KIDNEY AND PANCREAS"
+    },
+    {
+      "code": "kidney-and-pancreas",
+      "display": "KIDNEY AND PANCREAS"
+    },
+    {
+      "code": "kidney-and-pancreas-islets",
+      "display": "KIDNEY AND PANCREAS ISLETS"
+    },
+    {
+      "code": "heart-and-kidney",
+      "display": "HEART AND KIDNEY"
+    },
+    {
+      "code": "lung-and-kidney",
+      "display": "LUNG AND KIDNEY"
+    },
+    {
+      "code": "pancreas-liver-and-kidney",
+      "display": "PANCREAS LIVER AND KIDNEY"
+    },
+    {
+      "code": "pancreas-kidney",
+      "display": "PANCREAS KIDNEY"
+    },
+    {
+      "code": "pancreas-and-liver",
+      "display": "PANCREAS AND LIVER"
+    },
+    {
+      "code": "if-liver-only",
+      "display": "IF LIVER ONLY"
+    },
+    {
+      "code": "if-liver-bowel-pancreas",
+      "display": "IF LIVER BOWEL PANCREAS"
+    },
+    {
+      "code": "if-multivisceral",
+      "display": "IF MULTIVISCERAL"
+    },
+    {
+      "code": "heart-lung-and-liver",
+      "display": "HEART LUNG AND LIVER"
+    },
+    {
+      "code": "liver-and-pancreas",
+      "display": "LIVER AND PANCREAS"
+    },
+    {
+      "code": "heart-and-liver",
+      "display": "HEART AND LIVER"
+    },
+    {
+      "code": "lung-and-liver",
+      "display": "LUNG AND LIVER"
+    },
+    {
+      "code": "heart-lung",
+      "display": "HEART LUNG"
+    },
+    {
+      "code": "lung-and-kidney-and-liver",
+      "display": "LUNG AND KIDNEY AND LIVER"
+    },
+    {
+      "code": "heart-lung-and-kidney",
+      "display": "HEART LUNG AND KIDNEY"
+    }
+  ]
+}
