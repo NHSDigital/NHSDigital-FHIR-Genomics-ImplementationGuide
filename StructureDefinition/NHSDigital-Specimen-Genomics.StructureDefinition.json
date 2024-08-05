@@ -24,24 +24,9 @@
         ]
       },
       {
-        "id": "Specimen.extension",
-        "path": "Specimen.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "rules": "open"
-        },
-        "min": 0
-      },
-      {
         "id": "Specimen.extension:state",
         "path": "Specimen.extension",
         "sliceName": "state",
-        "min": 0,
         "max": "1",
         "type": [
           {
@@ -140,34 +125,6 @@
         "id": "Specimen.collection",
         "path": "Specimen.collection",
         "min": 1
-      },
-      {
-        "id": "Specimen.collection.extension",
-        "path": "Specimen.collection.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "rules": "open"
-        },
-        "min": 0
-      },
-      {
-        "id": "Specimen.collection.extension:specimen-specialHandling",
-        "path": "Specimen.collection.extension",
-        "sliceName": "specimen-specialHandling",
-        "min": 0,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/StructureDefinition/specimen-specialHandling"
-            ]
-          }
-        ]
       },
       {
         "id": "Specimen.collection.collector",
