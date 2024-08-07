@@ -33,18 +33,6 @@
   "differential": {
     "element": [
       {
-        "id": "Specimen",
-        "path": "Specimen",
-        "constraint": [
-          {
-            "key": "gen-1",
-            "severity": "error",
-            "human": "Condition - condition MUST be present if extension:specimen-specialHandling is present",
-            "expression": "(collection.extension('http://hl7.org/fhir/StructureDefinition/specimen-specialHandling').exists().not() or (collection.extension('http://hl7.org/fhir/StructureDefinition/specimen-specialHandling').exists() and condition.exists()))"
-          }
-        ]
-      },
-      {
         "id": "Specimen.extension:state",
         "path": "Specimen.extension",
         "sliceName": "state",
@@ -152,7 +140,7 @@
         "path": "Specimen.collection.extension",
         "sliceName": "specialHandling",
         "binding": {
-          "strength": "extensible",
+          "strength": "preferred",
           "valueSet": "https://fhir.nhs.uk/ValueSet/genomics-specimen-collection-specialhandling"
         }
       },
