@@ -1,15 +1,24 @@
 {
   "resourceType": "Task",
-  "id": "Task-WGSRareDiseaseTestOrderCompleted-TrioTestingProband-Example",
-  "status": "completed",
+  "id": "Task-WGSRareDiseaseTestOrderAccepted-TrioTestingMother-Example",
+  "status": "accepted",
+  "businessStatus": {
+    "coding": [
+      {
+        "system": "https://fhir.nhs.uk/CodeSystem/business-status-genomics",
+        "code": "sample-received",
+        "display": "Sample Received"
+      }
+    ]
+  },
   "intent": "order",
   "priority": "routine",
   "code": {
     "coding": [
       {
         "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
-        "code": "distribute-report",
-        "display": "Distribute Report"
+        "code": "request-sample-alignment",
+        "display": "Request & Sample Alignment"
       }
     ]
   },
@@ -17,14 +26,14 @@
     "reference": "ServiceRequest/ServiceRequest-WGSTestOrderFormUpdated-TrioTestingProband-Example"
   },
   "for": {
-    "reference": "Patient/Patient-PheobeSmitham-Example",
+    "reference": "Patient/Patient-PheobeSmithamMother-Example",
     "identifier": {
       "system": "https://fhir.nhs.uk/Id/nhs-number",
-      "value": "9449307539"
+      "value": "9449307246"
     }
   },
   "authoredOn": "2023-09-15T15:00:00Z",
-  "lastModified": "2023-10-16T15:50:00Z",
+  "lastModified": "2023-09-18T15:00:00Z",
   "requester": {
     "reference": "PractitionerRole/PractitionerRole-EugeneSmithLeedsSTH-Example"
   },
@@ -46,13 +55,27 @@
         "coding": [
           {
             "system": "https://fhir.nhs.uk/CodeSystem/AdditionalInfoTypeGenomics",
-            "code": "DiagnosticReport",
-            "display": "DiagnosticReport"
+            "code": "Specimen",
+            "display": "Specimen"
           }
         ]
       },
       "valueReference": {
-        "reference": "DiagnosticReport/DiagnosticReport-PhoebeSmithGeneticReport-Example"
+        "reference": "Specimen/Specimen-PheobeSmithamMother-Example"
+      }
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "https://fhir.nhs.uk/CodeSystem/AdditionalInfoTypeGenomics",
+            "code": "Consent",
+            "display": "Consent"
+          }
+        ]
+      },
+      "valueReference": {
+        "reference": "Consent/Consent-RoD-PheobeSmithamMother-Example"
       }
     }
   ]

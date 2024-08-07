@@ -1,6 +1,6 @@
 {
 	"resourceType": "Specimen",
-	"id": "Specimen-MichaelJonesBloodWithCollectoinDetails-Example",
+	"id": "Specimen-MichaelJonesBloodWithCollectionDetails-Example",
 	"identifier": [
 		{
 			"system": "https://www.christie.nhs.uk/path",

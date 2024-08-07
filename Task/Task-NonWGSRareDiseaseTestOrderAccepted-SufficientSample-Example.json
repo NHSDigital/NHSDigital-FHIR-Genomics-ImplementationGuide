@@ -6,8 +6,8 @@
         "coding": [
             {
                 "system": "https://fhir.nhs.uk/CodeSystem/business-status-genomics",
-                "code": "sample-received",
-                "display": "Sample Received"
+                "code": "sample-preparation",
+                "display": "Sample Preparation"
             }
         ]
     },
@@ -64,9 +64,7 @@
                 "system": "https://www.royalmail.com/track-your-item#/",
                 "value": "HZ970705811GB"
             }
-        }
-    ],
-    "output": [
+        },
         {
             "type": {
                 "coding": [

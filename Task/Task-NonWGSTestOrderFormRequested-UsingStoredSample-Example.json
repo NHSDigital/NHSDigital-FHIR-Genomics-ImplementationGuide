@@ -1,20 +1,20 @@
 {
     "resourceType": "Task",
-    "id": "Task-TestOrderFormAccepted-StorageOfMaterial-Example",
-    "status": "accepted",
+    "id": "Task-NonWGSTestOrderFormRequested-UsingStoredSample-Example",
+    "status": "requested",
     "intent": "order",
     "priority": "routine",
     "code": {
         "coding": [
             {
                 "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
-                "code": "request-sample-alignment",
-                "display": "Request & Sample Alignment"
+                "code": "sample-preparation",
+                "display": "Sample Preparation"
             }
         ]
     },
     "focus": {
-        "reference": "ServiceRequest/ServiceRequest-TestOrderForm-StorageOfMaterial-Example"
+        "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-UsingStoredSample-Example"
     },
     "for": {
         "reference": "Patient/Patient-TimMclullichs-Example",
@@ -23,8 +23,7 @@
             "value": "8449303452"
         }
     },
-    "authoredOn": "2023-10-31T08:54:00Z",
-    "lastModified": "2023-10-31T15:43:00Z",
+    "authoredOn": "2023-11-02T15:43:00Z",
     "requester": {
         "reference": "PractitionerRole/PractitionerRole-OscarShields-Example"
     },
@@ -37,7 +36,7 @@
     },
     "note": [
         {
-            "text": "sample recieved and placed to be placed in storage"
+            "text": "Test critieria met and sample to be used from storage"
         }
     ],
     "input": [
@@ -53,6 +52,27 @@
             },
             "valueReference": {
                 "reference": "Specimen/Specimen-BloodEDTA-WithCollectionDetails-Example"
+            }
+        },
+        {
+            "type": {
+                "coding": [
+                    {
+                        "system": "https://fhir.nhs.uk/CodeSystem/AdditionalInfoTypeGenomics",
+                        "code": "WellId",
+                        "display": "Well Identification Number"
+                    }
+                ]
+            },
+            "valueIdentifier": {
+                "system": "https://www.guysandstthomas.nhs.uk/WellId",
+                "value": "RJ1-WID-9449307555",
+                "assigner": {
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                        "value": "RJ1"
+                    }
+                }
             }
         }
     ]
