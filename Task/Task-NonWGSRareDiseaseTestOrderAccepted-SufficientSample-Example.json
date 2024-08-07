@@ -6,8 +6,8 @@
         "coding": [
             {
                 "system": "https://fhir.nhs.uk/CodeSystem/business-status-genomics",
-                "code": "sample-preparation",
-                "display": "Sample Preparation"
+                "code": "sample-received",
+                "display": "Sample Received"
             }
         ]
     },
@@ -17,8 +17,8 @@
         "coding": [
             {
                 "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
-                "code": "process-genomic-test-request",
-                "display": "Process Genomic Test Request"
+                "code": "sample-preparation",
+                "display": "Sample Preparation"
             }
         ]
     },
