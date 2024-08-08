@@ -25,7 +25,7 @@
   "targetUri": "http://terminology.hl7.org/ValueSet/condition-clinical",
   "group": [
     {
-      "target": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+      "target": "http://terminology.hl7.org/CodeSystem/condition-clinical|5.0.0",
       "element": [
         {
           "code": "affected",
@@ -35,7 +35,7 @@
               "code": "active",
               "display": "Active",
               "equivalence": "inexact",
-              "comment": "Although, the relationship is inexact, Active is the recommended concept to indicate/record that disesase status is affected. "
+              "comment": "Although, the relationship is inexact, Active is the recommended concept to indicate/record that disease status is affected."
             }
           ]
         },
@@ -47,7 +47,7 @@
               "code": "inactive",
               "display": "Inactive",
               "equivalence": "inexact",
-              "comment": "Although, the relationship is inexact, Inactive is the recommended concept to indicate/record that disesase status is unaffected. "
+              "comment": "Although, the relationship is inexact, Inactive is the recommended concept to indicate/record that disease status is unaffected."
             }
           ]
         },
