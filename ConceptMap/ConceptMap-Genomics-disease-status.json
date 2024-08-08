@@ -25,7 +25,7 @@
   "targetUri": "http://terminology.hl7.org/ValueSet/condition-clinical",
   "group": [
     {
-      "target": "http://terminology.hl7.org/CodeSystem/condition-clinical|5.0.0",
+      "target": "http://terminology.hl7.org/CodeSystem/condition-clinical",
       "element": [
         {
           "code": "affected",
@@ -56,9 +56,10 @@
           "display": "Unknown",
           "target": [
             {
-              "code": "unknown",
-              "display": "Unknown",
-              "equivalence": "equivalent"
+              
+                "equivalence": "unmatched",
+                "comment":"When disease status is unknown, clinical status should be omitted from the Condition resource."
+              
             }
           ]
         }
