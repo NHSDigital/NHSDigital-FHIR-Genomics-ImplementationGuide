@@ -1,6 +1,6 @@
 {
   "resourceType": "Specimen",
-  "id": "Specimen-BloodEDTA-WithCollectoinDetails-Example",
+  "id": "Specimen-BloodEDTA-WithCollectionDetails-Example",
   "identifier": [
     {
       "system": "https://fhir.leedsth.nhs.uk/Id/specimenId",
