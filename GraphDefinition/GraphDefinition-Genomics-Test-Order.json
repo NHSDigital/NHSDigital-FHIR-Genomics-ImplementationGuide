@@ -1,10 +1,11 @@
 {
   "resourceType": "GraphDefinition",
-  "id": "GraphDefinition-Genomics-Test-Order",
+  "id": "GraphDefinition-Genomics-test-order",
   "url": "https://fhir.nhs.uk/GraphDefinition/genomics-test-order",
   "name": "GenomicsTestOrder",
+  "version": "0.2.0",
   "status": "draft",
-  "date": "2024-05-16",
+  "date": "2024-08-09",
   "publisher" : "NHS England",
   "description": "GraphDefinition for defining and retrieving the full set of resources relevant to a Genomic Test Order",
   "start": "ServiceRequest",

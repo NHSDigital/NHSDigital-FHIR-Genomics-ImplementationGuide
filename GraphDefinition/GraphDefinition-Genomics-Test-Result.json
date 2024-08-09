@@ -1,8 +1,9 @@
 {
   "resourceType": "GraphDefinition",
-  "id": "GraphDefinition-Genomics-Test-Result",
+  "id": "GraphDefinition-genomics-test-result",
   "url": "https://fhir.nhs.uk/GraphDefinition/genomics-test-result",
   "name": "GenomicsTestResult",
+  "version": "0.1.0",
   "status": "draft",
   "date": "2024-08-09",
   "publisher" : "NHS England",
