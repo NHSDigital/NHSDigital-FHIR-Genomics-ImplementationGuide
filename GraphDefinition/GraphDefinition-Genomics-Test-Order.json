@@ -364,6 +364,17 @@
           ]
         }
       ]
+    },
+    {
+      "description": "Specimen resources referencing this ServiceRequest",
+      "min": 0,
+      "max": "*",
+      "target": [
+        {
+          "type": "Specimen",
+          "params": "request={ref}"
+        }
+      ]
     }
   ]
 }
