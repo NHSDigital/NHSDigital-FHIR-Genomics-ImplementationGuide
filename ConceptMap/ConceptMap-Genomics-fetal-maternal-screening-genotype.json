@@ -81,6 +81,17 @@
               "equivalence": "equivalent"
             }
           ]
+        },
+        {
+          "code": "other",
+          "display": "OTHER",
+          "target": [
+            {
+              "code": "other",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
         }
       ]
     }
