@@ -67,7 +67,7 @@
       "path": "DiagnosticReport.basedOn",
       "description": "Link to request this DiagnosticReport is in fulfillment of",
       "min": 1,
-      "max": 1,
+      "max": "1",
       "target": [
         {
           "type": "ServiceRequest"
@@ -78,10 +78,10 @@
       "path": "DiagnosticReport.subject",
       "description": "Link to the patient the report is concerning",
       "min": 1,
-      "max": 1,
+      "max": "1",
       "target": [
         {
-          "type": "Patient",
+          "type": "Patient"
         }
       ]
     },
@@ -98,7 +98,7 @@
               "path": "Specimen.subject",
               "description": "Link to the patient the specimen is from",
               "min": 1,
-              "max": 1,
+              "max": "1",
               "target": [
                 {
                   "type": "Patient"
@@ -109,7 +109,7 @@
               "path": "Specimen.parent",
               "description": "Link to parent specimen resource",
               "min": 0,
-              "max": 1,
+              "max": "1",
               "target": [
                 {
                   "type": "Specimen"
@@ -120,7 +120,7 @@
               "path": "Specimen.collection.collector",
               "description": "Link to collector of the specimen",
               "min": 0,
-              "max": 1,
+              "max": "1",
               "target": [
                 {
                   "type": "PractitionerRole"
@@ -132,7 +132,7 @@
               "sliceName": "bodySiteReference",
               "description": "Link to the body structure detailing the morphology and topography of the specimen",
               "min": 0,
-              "max": 1,
+              "max": "1",
               "target": [
                 {
                   "type": "BodyStructure"
@@ -156,7 +156,7 @@
               "path": "Observation.performer",
               "description": "Optional link to actor who performed the observation (could be Patient, PractitionerRole or RelatedPerson)",
               "min": 0,
-              "max": 1,
+              "max": "1",
               "target": [
                 {
                   "type": "Resource"
