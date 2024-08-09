@@ -54,8 +54,8 @@
           "display": "E coli 0157",
           "target": [
             {
-              "code": "993081000000109",
-              "display": "Escherichia coli 0157 screening test (observable entity)",
+              "code": "127531000119106",
+              "display": "Infection caused by Escherichia coli O157 (disorder)",
               "equivalence": "equivalent"
             }
           ]
