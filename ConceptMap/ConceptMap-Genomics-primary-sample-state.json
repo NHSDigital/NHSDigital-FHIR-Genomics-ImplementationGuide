@@ -1,12 +1,12 @@
 {
   "resourceType": "ConceptMap",
-  "id": "genomics-samplepreparation",
-  "url": "https://fhir.nhs.uk/ConceptMap/samplepreparation",
+  "id": "genomics-primary-sample-state",
+  "url": "https://fhir.nhs.uk/ConceptMap/genomics-primary-sample-state",
   "version": "0.0.1",
-  "name": "GenomicsSamplePreparation",
-  "title": "Genomics Sample Preparation",
+  "name": "GenomicsPrimarySampleState",
+  "title": "GenomicsPrimarySampleState",
   "status": "draft",
-  "date": "2024-08-02T00:00:00.000Z",
+  "date": "2024-08-13T00:00:00.000Z",
   "publisher": "NHS England",
   "contact": [
     {
@@ -20,43 +20,41 @@
     }
   ],
   "description": "A ConceptMap used for the translation and recording of concepts from MDS source data(code-options) to equivalent Snomed CT codes, and FHIR spec.",
-  "purpose": "ConceptMap used for the translation and recording of sample preparation, i.e., Specimen.processing",
+  "purpose": "ConceptMap used for the translation and recording the concepts on method of sample preservation. This is intended for the element Specimen.processing",
   "copyright": "Copyright © 2023+ NHS England Licensed under the Apache License, Version 2.0 (the \\\"License\\\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \\\"AS IS\\\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html.",
-  "targetUri": "http://snomed.info/sct",
+  "targetUri": "http://snomed.info/sct?fhir_vs=ecl/%3C%20260787004%20",
   "group": [
     {
       "target": "http://snomed.info/sct",
       "element": [
         {
-          "code": "blood",
-          "display": "Blood",
+          "code": "DNA-stabiliser",
+          "display": "DNA Stabiliser",
           "target": [
             {
-              "code": "119297000",
-              "display": "Blood specimen (specimen)",
+              "code": "706052002",
+              "display": "Evacuated blood collection tube (physical object)",
               "equivalence": "equivalent"
             }
           ]
         },
         {
-          "code": "cytology",
-          "display": "Cytology",
+          "code": "edta",
+          "display": "EDTA",
           "target": [
             {
-              "code": "706057008",
-              "display": "Cytology specimen container (physical object)",
+              "code": "702282003",
+              "display": "Non-evacuated blood collection tube, EDTA",
               "equivalence": "equivalent"
             }
           ]
         },
         {
-          "code": "ffpe-curls",
-          "display": "FFPE Curls",
+          "code": "ffpe-curls/scrolls",
+          "display": "FFPE Curls/Scrolls",
           "target": [
             {
-              "code": "441652008",
-              "display": "Formalin-fixed paraffin-embedded tissue specimen (specimen)",
-              "equivalence": "subsumes"
+              "equivalence": "unmatched"
             }
           ]
         },
@@ -65,19 +63,17 @@
           "display": "FFPE Slides",
           "target": [
             {
-              "code": "441652008",
-              "display": "Formalin-fixed paraffin-embedded tissue specimen (specimen)",
-              "equivalence": "subsumes"
+              "equivalence": "unmatched"
             }
           ]
         },
         {
-          "code": "ffpe-tissue-block",
-          "display": "FFPE Tissue Block",
+          "code": "fresh-cells",
+          "display": "Fresh Cells",
           "target": [
             {
-              "code": "441652008",
-              "display": "Formalin-fixed paraffin-embedded tissue specimen (specimen)",
+              "code": "706049005",
+              "display": "Blood tube (physical object)",
               "equivalence": "subsumes"
             }
           ]
@@ -87,19 +83,19 @@
           "display": "Fresh Tissue",
           "target": [
             {
-              "code": "441479001",
-              "display": "Fresh tissue specimen (specimen)",
+              "code": "434464009",
+              "display": "Tissue cassette (physical object)",
               "equivalence": "equivalent"
             }
           ]
         },
         {
-          "code": "nucleic-acid",
-          "display": "Nucleic Acid",
+          "code": "lithium-heparin",
+          "display": "Lithium Heparin",
           "target": [
             {
-              "code": "448789008",
-              "display": "Nucleic acid specimen (specimen)",
+              "code": "702284002",
+              "display": "Non-evacuated blood collection tube, lithium heparin (physical object)",
               "equivalence": "equivalent"
             }
           ]
@@ -109,9 +105,33 @@
           "display": "Other",
           "target": [
             {
-              "code": "74964007",
-              "display": "Other (qualifier value)",
+              "code": "260787004",
+              "display": "Physical object (physical object)",
+              "equivalence": "wider",
+              "comment": "Any other suitable device/equipment that is different alternative concepts provided in this Conceptmap"
+            }
+          ]
+        },
+        {
+          "code": "RNA-stabiliser",
+          "display": "RNA Stabiliser",
+          "target": [
+            {
+              "code": "702280006",
+              "display": "Evacuated blood collection tube, ribonucleic acid stabilizer (physical object)",
               "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "streck",
+          "display": "Streck",
+          "target": [
+            {
+              "code": "706052002",
+              "display": "Non-evacuated blood collection tube, EDTA",
+              "equivalence": "inexact",
+              "comment":"Streck tube (or EDTA tube) are alternative names."
             }
           ]
         }
