@@ -418,7 +418,7 @@
       }
     },
     {
-      "fullUrl": "http://example.org/fhir/Observation/Observation-PregnancyConfirmation-Example",
+      "fullUrl": "http://example.org/fhir/Observation/Observation-HistoryOfFetalLoss-Example",
       "resource": {
         "resourceType": "Observation",
         "id": "Observation-HistoryOfFetalLoss-Example",
