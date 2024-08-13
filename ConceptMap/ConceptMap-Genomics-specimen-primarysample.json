@@ -1,0 +1,109 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "genomics-primarysample",
+  "url": "https://fhir.nhs.uk/ConceptMap/primarysample",
+  "version": "0.0.1",
+  "name": "GenomicsPrimarySample",
+  "title": "Genomics Primary Sample",
+  "status": "draft",
+  "date": "2024-08-13T00:00:00.000Z",
+  "publisher": "NHS England",
+  "contact": [
+    {
+      "name": "NHS England",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "interoperabilityteam@nhs.net"
+        }
+      ]
+    }
+  ],
+  "description": "A ConceptMap used for the translation and recording of concepts from MDS source data(code-options) to equivalent Snomed CT codes, and FHIR spec.",
+  "purpose": "ConceptMap used for the translation and recording of concepts for primary sample types.This intended for element Specimen.type",
+  "copyright": "Copyright © 2023+ NHS England Licensed under the Apache License, Version 2.0 (the \\\"License\\\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \\\"AS IS\\\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html.",
+  "targetUri": "http://snomed.info/sct?fhir_vs=ecl/%3C%3C%20123038009%20",
+  "group": [
+    {
+      "target": "http://snomed.info/sct",
+      "element": [
+        {
+          "code": "amniotic fluid",
+          "display": "Amniotic Fluid",
+          "target": [
+            {
+              "code": "119373006",
+              "display": "Amniotic fluid",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "blood",
+          "display": "Blood",
+          "target": [
+            {
+              "code": "119297000",
+              "display": "Blood specimen",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "fixed-tissue",
+          "display": "Fixed Tissue",
+          "target": [
+            {
+              "code": "119376003",
+              "display": "Tissue specimen (specimen)",
+              "equivalence": "subsumes"
+            }
+          ]
+        },
+        {
+          "code": "fresh-frozen",
+          "display": "Fresh Frozen",
+          "target": [
+            {
+              "code": "441479001|Fresh tissue specimen (specimen)| : 276823002 | Type of specimen (attribute) | = 261014004|Frozen (qualifier value)|",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "fresh-tissue",
+          "display": "Fresh Tissue",
+          "target": [
+            {
+              "code": "441479001",
+              "display": "Fresh tissue specimen (specimen)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "fresh-unfixed",
+          "display": "Fresh Unfixed",
+          "target": [
+            {
+              "code": "441479001",
+              "display": "Unfixed tissue specimen",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "other",
+          "display": "Other",
+          "target": [
+            {
+              "code": "74964007",
+              "display": "Other (qualifier value)",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
