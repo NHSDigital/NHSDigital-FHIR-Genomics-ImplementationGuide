@@ -38,7 +38,8 @@
       {
         "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
         "code": "R14",
-        "display": "Acutely unwell children with a likely monogenic disorder"
+        "display": "Acutely unwell children with a likely monogenic disorder",
+        "version": "7"
       }
     ]
   },
@@ -89,9 +90,6 @@
       "reference": "Observation/Observation-NonConsanguinousUnion-Example"
     },
     {
-      "reference": "FamilyMemberHistory/FamilyMemberHistory-NonConsanguinousUnion-Example"
-    },
-    {
       "reference": "Observation/Observation-NoBoneMarrowTransplant-Example"
     },
     {
@@ -118,11 +116,6 @@
     },
     {
       "text": "E.g.  non genetic investigations are pathognomonic of a single gene disorder, R26 previously ordered on the child  and molecular testing needed to guide management"
-    }
-  ],
-  "relevantHistory": [
-    {
-      "reference": "Provenance/Provenance-WGSTestOrderForm-DirectToLab-Example"
     }
   ]
 }

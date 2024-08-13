@@ -44,7 +44,8 @@
 			{
 				"system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
 				"code": "R67.1",
-				"display": "Monogenic hearing loss"
+				"display": "Monogenic hearing loss",
+        "version": "7"
 			}
 		]
 	},
@@ -85,9 +86,6 @@
 			"reference": "Observation/Observation-DiseaseStatus-Example"
 		},
 		{
-			"reference": "FamilyMemberHistory/FamilyMemberHistory-NonConsanguinousUnion-Example"
-		},
-		{
 			"reference": "Observation/Observation-NoTransplant-Example"
 		},
 		{
@@ -103,11 +101,6 @@
 		},
 		{
 			"text": "Free text for diagnosis/reason for referral, relevant information including family history, phenotypic details/ HPO Terms/ Patient in need of test...example"
-		}
-	],
-	"relevantHistory": [
-		{
-			"reference": "Provenance/Provenance-ServiceRequestUpdate-Example"
 		}
 	]
 }

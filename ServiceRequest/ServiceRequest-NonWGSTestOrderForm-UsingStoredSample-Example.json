@@ -34,7 +34,8 @@
       {
         "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
         "code": "R134",
-        "display": "Familial Hypercholesterolaemia"
+        "display": "Familial Hypercholesterolaemia",
+        "version": "7"
       }
     ]
   },
@@ -71,9 +72,6 @@
       "reference": "Observation/Observation-NonConsanguinousUnion-Example"
     },
     {
-      "reference": "FamilyMemberHistory/FamilyMemberHistory-NonConsanguinousUnion-Example"
-    },
-    {
       "reference": "Observation/Observation-NoBoneMarrowTransplant-Example"
     },
     {
@@ -91,7 +89,7 @@
   ],
   "specimen": [
     {
-      "reference": "Specimen/Specimen-BloodEDTA-WithCollectoinDetails-Example",
+      "reference": "Specimen/Specimen-BloodEDTA-WithCollectionDetails-Example",
       "identifier": [
         {
           "system": "https://fhir.bwc.nhs.uk//Id/specimenId",

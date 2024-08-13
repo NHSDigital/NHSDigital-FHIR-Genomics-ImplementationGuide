@@ -34,7 +34,8 @@
       {
         "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
         "code": "R187",
-        "display": "Cystic Fibrosis"
+        "display": "Cystic Fibrosis",
+        "version": "7"
       }
     ]
   },
@@ -80,9 +81,6 @@
     },
     {
       "reference": "Observation/Observation-NonConsanguinousUnion-Example"
-    },
-    {
-      "reference": "FamilyMemberHistory/FamilyMemberHistory-NonConsanguinousUnion-Example"
     },
     {
       "reference": "Observation/Observation-NoBoneMarrowTransplant-Example"
