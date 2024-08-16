@@ -189,7 +189,7 @@
               "code": "123038009",
               "display": "Specimen (specimen)",
               "equivalence": "equivalent",
-              "comment": "Any other descendat of 123038009|Specimen (specimen) not listed on this code"
+              "comment": "Any other descendat of 123038009|Specimen (specimen) not listed on this code. This should be provided by free text."
             }
           ]
         },
