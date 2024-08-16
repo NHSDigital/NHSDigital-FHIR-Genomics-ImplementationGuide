@@ -108,7 +108,7 @@
               "code": "260787004",
               "display": "Physical object (physical object)",
               "equivalence": "wider",
-              "comment": "Any other suitable device/equipment that is different alternative concepts provided in this Conceptmap. To be provided by free text"
+              "comment": "Any other suitable device/equipment that is an alternative to concepts provided in this Conceptmap. This should be provided by free text."
             }
           ]
         },
