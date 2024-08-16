@@ -4,7 +4,7 @@
   "url": "https://fhir.nhs.uk/ConceptMap/genomics-primary-sample-state",
   "version": "0.0.1",
   "name": "GenomicsPrimarySampleState",
-  "title": "GenomicsPrimarySampleState",
+  "title": "Genomics Primary Sample State",
   "status": "draft",
   "date": "2024-08-13T00:00:00.000Z",
   "publisher": "NHS England",
