@@ -125,8 +125,8 @@
             {
               "code": "123038009",
               "display": "Specimen (specimen)",
-              "equivalence": "equivalent",
-              "comment": "Any other suitable Specimen type not listed on this code. This should be provided by free text."
+              "equivalence": "wider",
+              "comment": "Any other suitable Specimen types not listed on this code. This should be provided by free text."
             }
           ]
         }
