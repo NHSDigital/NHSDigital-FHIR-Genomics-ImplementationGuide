@@ -188,8 +188,8 @@
             {
               "code": "123038009",
               "display": "Specimen (specimen)",
-              "equivalence": "equivalent",
-              "comment": "Any other descendant of 123038009|Specimen (specimen) not listed on this code. This should be provided by free text."
+              "equivalence": "wider",
+              "comment": "Any other suitable descendant of 123038009|Specimen (specimen) not listed on this code. This should be provided by free text."
             }
           ]
         },
