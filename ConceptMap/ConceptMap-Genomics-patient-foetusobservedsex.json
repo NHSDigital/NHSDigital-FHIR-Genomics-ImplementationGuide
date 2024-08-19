@@ -54,9 +54,7 @@
           "display": "Undetermined",
           "target": [
             {
-              "code": "unmatched",
-              "display": "Unmatched",
-              "equivalence": "equivalent"
+              "equivalence": "unmatched"
             }
           ]
         },
