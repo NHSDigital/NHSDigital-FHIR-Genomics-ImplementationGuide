@@ -32,7 +32,7 @@
           "display": "Female",
           "target": [
             {
-              "code": "female",
+              "code": "F",
               "display": "Female",
               "equivalence": "equivalent"
             }
@@ -43,7 +43,7 @@
           "display": "Male",
           "target": [
             {
-              "code": "male",
+              "code": "M",
               "display": "Male",
               "equivalence": "equivalent"
             }
@@ -63,7 +63,7 @@
           "display": "Unknown",
           "target": [
             {
-              "code": "unknown",
+              "code": "UN",
               "display": "Unknown",
               "equivalence": "equivalent"
             }
