@@ -25,14 +25,14 @@
   "targetUri": "http://hl7.org/fhir/ValueSet/administrative-gender",
   "group": [
     {
-      "target": "http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender",
+      "target": "http://hl7.org/fhir/administrative-gender",
       "element": [
         {
           "code": "female",
           "display": "Female",
           "target": [
             {
-              "code": "F",
+              "code": "female",
               "display": "Female",
               "equivalence": "equivalent"
             }
@@ -43,7 +43,7 @@
           "display": "Male",
           "target": [
             {
-              "code": "M",
+              "code": "male",
               "display": "Male",
               "equivalence": "equivalent"
             }
@@ -54,7 +54,10 @@
           "display": "Undetermined",
           "target": [
             {
-              "equivalence": "unmatched"
+              "code": "other",
+              "display": "Other",
+              "equivalence": "inexact",
+              "comment": "The relationship here should be recorded as inexact, this is the only relevant concept from the required CodeSystem"
             }
           ]
         },
@@ -63,7 +66,7 @@
           "display": "Unknown",
           "target": [
             {
-              "code": "UN",
+              "code": "unknown",
               "display": "Unknown",
               "equivalence": "equivalent"
             }
