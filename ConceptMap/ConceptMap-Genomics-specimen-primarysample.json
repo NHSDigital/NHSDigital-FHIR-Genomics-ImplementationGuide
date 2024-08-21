@@ -33,7 +33,7 @@
           "target": [
             {
               "code": "119373006",
-              "display": "Amniotic fluid",
+              "display": "Amniotic fluid specimen (specimen)",
               "equivalence": "equivalent"
             }
           ]
@@ -65,8 +65,8 @@
           "display": "Bone Marrrow Aspirate",
           "target": [
             {
-              "code": "167913002",
-              "display": "Bone marrow source",
+              "code": "396997002",
+              "display": "Specimen from bone marrow obtained by aspiration",
               "equivalence": "equivalent"
             }
           ]
@@ -189,7 +189,7 @@
               "code": "123038009",
               "display": "Specimen (specimen)",
               "equivalence": "wider",
-              "comment": "Any other suitable descendant of 123038009|Specimen (specimen) not listed on this code. This should be provided by free text."
+              "comment": "Any other suitable descendant of 123038009|Specimen (specimen) not listed on this code. This should be provided by free text if no suitable SNOMED CT is found."
             }
           ]
         },
@@ -209,8 +209,8 @@
           "display": "Peritoneal",
           "target": [
             {
-              "code": "122571007",
-              "display": "Pericardial fluid specimen (specimen)",
+              "code": "430250001",
+              "display": "Specimen from peritoneum (specimen)",
               "equivalence": "equivalent"
             }
           ]
