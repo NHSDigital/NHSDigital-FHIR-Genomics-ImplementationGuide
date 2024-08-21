@@ -25,7 +25,7 @@
  "targetUri": "http://hl7.org/fhir/ValueSet/patient-fetalstatus",
   "group": [
     {
-      "target": "http://hl7.org/fhir/patient-bornstatus",
+      "target": "http://hl7.org/fhir/patient-fetalstatus",
       "element": [
         {
           "code": "fetal",
