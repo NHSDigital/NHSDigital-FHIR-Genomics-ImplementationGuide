@@ -101,7 +101,7 @@
               "code": "71388002",
               "display": "Procedure (procedure)",
               "equivalence": "wider",
-              "comment": "Any other suitable procedure that is an alternative to the concepts provided in this Conceptmap. This should be provided by free text."
+              "comment": "Any other suitable procedure that is an alternative to the concepts provided in this code. This should be provided by free text."
             }
           ]
         },
