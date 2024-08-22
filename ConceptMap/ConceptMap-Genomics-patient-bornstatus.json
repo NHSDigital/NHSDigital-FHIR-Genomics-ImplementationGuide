@@ -43,7 +43,8 @@
           "display": "Unregistered Neonate",
           "target": [
             {
-              "equivalence": "unmatched"
+              "equivalence": "unmatched",
+              "comment":"No suitable SNOMDED CT code is found. This should be captured by recording the birthDate on the Patient resource (Patient.birthDate)."
             }
           ]
         }
