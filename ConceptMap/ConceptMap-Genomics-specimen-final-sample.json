@@ -45,12 +45,14 @@
             {
               "code": "258566005",
               "display": "Deoxyribonucleic acid specimen (specimen)",
-              "equivalence": "narrower"
+              "equivalence": "narrower",
+              "comment":"The source concept expect that the specimen here should be either of DNA or RNA specimen. Additional notes should be provided in Specimen.note on the specimen ootion used."
             },
             {
               "code": "441673008",
               "display": "Ribonucleic acid specimen (specimen)",
-              "equivalence": "narrower"
+              "equivalence": "narrower",
+              "comment": "The source concept expect that the specimen here should be either of DNA or RNA specimen. Additional notes should be provided in Specimen.note on the specimen ootion used."
             }
           ]
         },
@@ -81,7 +83,8 @@
           "display": "ctDNA",
           "target": [
             {
-              "equivalence": "unmatched"
+              "equivalence": "unmatched",
+              "comment": "No suitable SNOMED CT code is found for this concept at this time. Thus, this concept should be recored under Specimen.type as free text as Circulating Tumour DNA"
             }
           ]
         },
@@ -113,8 +116,15 @@
           "target": [
             {
               "code": "787150001",
-              "display": "Stained slide of tissue section",
-              "equivalence": "equivalent"
+              "display": "Stained slide of tissue section (specimen)",
+              "equivalence": "narrower",
+              "comment": "An appropriate concept should be selected to indicate either stained or unstained."
+            },
+            {
+              "code": "787149001",
+              "display": "Unstained slide of tissue section (specimen)",
+              "equivalence": "narrower",
+              "comment": "An appropriate concept should be selected to indicate either stained or unstained."
             }
           ]
         },
@@ -126,7 +136,7 @@
               "code": "123038009",
               "display": "Specimen (specimen)",
               "equivalence": "wider",
-              "comment": "Any other suitable Specimen types not listed on this code. This should be provided by free text."
+              "comment": "Any other suitable Specimen types not listed on this code. This should be provided by free text if no suitable SNOMED CT is found."
             }
           ]
         }
