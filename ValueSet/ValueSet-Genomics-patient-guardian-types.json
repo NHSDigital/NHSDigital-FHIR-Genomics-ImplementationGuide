@@ -38,6 +38,7 @@
 			},
 			{
 				"system": "https://fhir.nhs.uk/CodeSystem/patient-consultee-genomics",
+				"version": "0.2.0",
 				"concept": [
 					{
 						"code": "consultee",
