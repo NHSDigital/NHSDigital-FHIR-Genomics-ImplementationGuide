@@ -1,21 +1,27 @@
 {
   "resourceType": "Observation",
-  "id": "Observation-CellularityKayBurbridge-Example",
+  "id": "Observation-CellularityPatrickSammy-Example",
   "status": "final",
   "code": {
     "text": "Cellularity"
   },
   "subject": {
-    "reference": "Patient/Patient-KayBurbridge-Example",
+    "reference": "Patient/Patient-PatrickSammy-Example",
     "identifier": {
       "system": "https://fhir.nhs.uk/Id/nhs-number",
-      "value": "8449303541"
+      "value": "9449307873"
     }
   },
   "specimen": {
     "identifier": {
-      "system": "https://fhir.add.nhs.uk/Id/specimenId",
-      "value": "699F01231423"
+      "system": "urn:oid:2.16.840.1.113883.2.1.3.2.4.18.24",
+      "value": "RR81234",
+      "assigner": {
+        "identifier": {
+          "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+          "value": "696B0"
+        }
+      }
     }
   },
   "valueCodeableConcept": {
@@ -27,5 +33,5 @@
       }
     ]
   },
-  "effectiveDateTime": "2023-11-01T11:00:00Z"
+  "effectiveDateTime": "2023-08-29"
 }
