@@ -7,6 +7,7 @@
     }
   ],
   "patient": {
+    "reference": "Patient/UKCore-Patient-MichaelJones-Example",
     "identifier": {
       "system": "https://fhir.nhs.uk/Id/nhs-number",
       "value": "9999999999"

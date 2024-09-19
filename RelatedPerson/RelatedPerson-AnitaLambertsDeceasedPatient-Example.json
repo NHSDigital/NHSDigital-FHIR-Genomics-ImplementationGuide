@@ -8,6 +8,7 @@
     }
   ],
   "patient": {
+    "reference": "Patient/Patient-AnitaLambertsDeceasedPatient-Example",
     "identifier": {
       "system": "https://fhir.nhs.uk/Id/nhs-number",
       "value": "8449303649"
