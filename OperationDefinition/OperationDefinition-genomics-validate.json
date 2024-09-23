@@ -51,7 +51,7 @@
       "use": "in",
       "min": 0,
       "max": "1",
-      "documentation": "The GraphDefinition to validate the set of resources against, e.g. if used at the instance level for ServiceRequest, the genomic-test-order graphdefinition will pull all references required to compile a full genomic test order and validate the complete bundle of resources rather than the ServiceRequest in isolation.\r\nSHALL match the canonical URL segment used to invoke the graph, e.g. genomic-test-order. The GraphDefinition SHALL be accessible by the server, either as a resource on the server itself or retrievable via the canonical URL, e.g. through a public FHIR registry.",
+      "documentation": "The GraphDefinition to validate the set of resources against, e.g. if used at the instance level for ServiceRequest, the genomic-test-order graphdefinition will pull all references required to compile a full genomic test order and validate the complete bundle of resources rather than the ServiceRequest in isolation.\r\nThe graph parameter SHALL match the canonical URL segment used to invoke the graph, e.g. genomic-test-order. The GraphDefinition SHALL be accessible by the server, either as a resource on the server itself or retrievable via the canonical URL, e.g. through a public FHIR registry.",
       "type": "string",
       "searchType": "string"
     },
