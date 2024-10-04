@@ -297,8 +297,8 @@
               "coding": [
                 {
                   "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory",
-                  "code": "nhs",
-                  "display": "NHS"
+                  "code": "nhs-england",
+                  "display": "NHS England"
                 }
               ]
             }
@@ -811,6 +811,7 @@
           }
         ],
         "patient": {
+          "reference": "Patient/Patient-FoetusOfRyanneBoulder-Example",
           "identifier": {
             "system": "urn:oid:2.16.840.1.113883.2.1.3.2.4.18.24",
             "value": "FT-RWT13521",
@@ -857,6 +858,7 @@
           }
         ],
         "patient": {
+          "reference": "Patient/Patient-FoetusOfRyanneBoulder-Example",
           "identifier": {
             "system": "urn:oid:2.16.840.1.113883.2.1.3.2.4.18.24",
             "value": "FT-RWT13521",

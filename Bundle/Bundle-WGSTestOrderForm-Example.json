@@ -212,8 +212,8 @@
               "coding": [
                 {
                   "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory",
-                  "code": "nhs",
-                  "display": "NHS"
+                  "code": "nhs-england",
+                  "display": "NHS England"
                 }
               ]
             }
@@ -497,7 +497,8 @@
         "code": {
           "coding": [
             {
-              "system": "https://hpo.jax.org/app/",
+              "system": "http://human-phenotype-ontology.org",
+              "version": "20221005",
               "code": "HP:0005562",
               "display": "Multiple renal cysts"
             }
@@ -527,7 +528,8 @@
         "code": {
           "coding": [
             {
-              "system": "https://hpo.jax.org/app/",
+              "system": "http://human-phenotype-ontology.org",
+              "version": "20221005",
               "code": "HP:0000090",
               "display": "Nephronophthisis"
             }
@@ -557,7 +559,8 @@
         "code": {
           "coding": [
             {
-              "system": "https://hpo.jax.org/app/",
+              "system": "http://human-phenotype-ontology.org",
+              "version": "20221005",
               "code": "HP:0001407",
               "display": "Hepatic cysts"
             }
@@ -587,7 +590,8 @@
         "code": {
           "coding": [
             {
-              "system": "https://hpo.jax.org/app/",
+              "system": "http://human-phenotype-ontology.org",
+              "version": "20221005",
               "code": "HP:0000105",
               "display": "Enlarged kidney"
             }
@@ -617,7 +621,8 @@
         "code": {
           "coding": [
             {
-              "system": "https://hpo.jax.org/app/",
+              "system": "http://human-phenotype-ontology.org",
+              "version": "20221005",
               "code": "HP:0000083",
               "display": "Renal insufficiency"
             }

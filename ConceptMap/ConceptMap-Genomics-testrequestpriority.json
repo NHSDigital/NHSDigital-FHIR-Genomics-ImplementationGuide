@@ -1,7 +1,7 @@
 {
   "resourceType": "ConceptMap",
   "id": "genomics-testrequestpriority",
-  "url": "https://fhir.nhs.uk/ConceptMap/testrequestpriority",
+  "url": "https://fhir.nhs.uk/ConceptMap/genomics-testrequestpriority",
   "version": "0.0.1",
   "name": "GenomicsTestRequestPriority",
   "title": "Genomics Test Request Priority",
@@ -25,6 +25,7 @@
   "targetUri": "http://hl7.org/fhir/ValueSet/request-priority",
   "group": [
     {
+      "source": "https://future.nhs.uk/NHSgenomics/view?objectId=222250117",
       "target": "http://hl7.org/fhir/request-priority",
       "element": [
         {
