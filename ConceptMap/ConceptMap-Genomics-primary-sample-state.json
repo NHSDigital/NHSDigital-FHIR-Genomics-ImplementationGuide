@@ -84,7 +84,7 @@
           "display": "Frozen",
           "target": [
             {
-              "code": "frozen",
+              "code": "FROZ",
               "display": "Frozen",
               "equivalence": "equivalent"
             }
