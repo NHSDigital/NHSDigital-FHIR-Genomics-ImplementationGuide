@@ -8,8 +8,8 @@
         "coding": [
           {
             "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory",
-            "code": "nhs",
-            "display": "NHS"
+            "code": "nhs-england",
+            "display": "NHS England"
           }
         ]
       }
@@ -34,7 +34,8 @@
       {
         "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
         "code": "R138",
-        "display": "Sudden Cardiac Death"
+        "display": "Sudden Cardiac Death",
+        "version": "7"
       }
     ]
   },
@@ -53,9 +54,9 @@
     {
       "coding": [
         {
-          "system": "http://snomed.info/sct",
-          "code": "103693007",
-          "display": "Diagnostic procedure"
+          "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
+          "code": "diagnostic",
+          "display": "Diagnostic"
         }
       ]
     }
@@ -68,22 +69,16 @@
       "reference": "Observation/Observation-NoPregnancy-Example"
     },
     {
-      "reference": "Observation/Observation-DiseaseStatus-Example"
+      "reference": "Condition/Condition-MonogenicHearingLoss-Example"
     },
     {
       "reference": "Observation/Observation-NonConsanguinousUnion-Example"
-    },
-    {
-      "reference": "FamilyMemberHistory/FamilyMemberHistory-NonConsanguinousUnion-Example"
     },
     {
       "reference": "Observation/Observation-NoBoneMarrowTransplant-Example"
     },
     {
       "reference": "Observation/Observation-NoTransfusion-Example"
-    },
-    {
-      "reference": "Observation/Observation-RiskOfInfection-Example"
     }
   ],
   "specimen": [

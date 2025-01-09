@@ -12,8 +12,8 @@
         "coding": [
           {
             "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory",
-            "code": "nhs",
-            "display": "NHS"
+            "code": "nhs-england",
+            "display": "NHS England"
           }
         ]
       }
@@ -38,7 +38,8 @@
       {
         "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
         "code": "R67.1",
-        "display": "Monogenic hearing loss"
+        "display": "Monogenic hearing loss",
+        "version": "7"
       }
     ]
   },
@@ -57,9 +58,9 @@
     {
       "coding": [
         {
-          "system": "http://snomed.info/sct",
-          "code": "103693007",
-          "display": "Diagnostic procedure"
+          "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
+          "code": "diagnostic",
+          "display": "Diagnostic"
         }
       ]
     }
@@ -72,22 +73,16 @@
       "reference": "Observation/Observation-NoPregnancy-Example"
     },
     {
-      "reference": "Observation/Observation-DiseaseStatus-Example"
+      "reference": "Condition/Condition-MonogenicHearingLoss-Example"
     },
     {
       "reference": "Observation/Observation-NonConsanguinousUnion-Example"
-    },
-    {
-      "reference": "FamilyMemberHistory/FamilyMemberHistory-NonConsanguinousUnion-Example"
     },
     {
       "reference": "Observation/Observation-NoBoneMarrowTransplant-Example"
     },
     {
       "reference": "Observation/Observation-NoTransfusion-Example"
-    },
-    {
-      "reference": "Observation/Observation-RiskOfInfection-Example"
     },
     {
       "reference": "Observation/Observation-NatureAndAgeOfHearingLoss-Example"
@@ -104,11 +99,6 @@
     },
     {
       "text": "Free text for diagnosis/reason for referral, relevant information including family history, phenotypic details/ HPO Terms Patient in need of test...example"
-    }
-  ],
-  "relevantHistory": [
-    {
-      "reference": "Provenance/Provenance-ServiceRequest-NonWGSTestOrderFormCancellation-Example"
     }
   ]
 }

@@ -1,11 +1,11 @@
 {
   "resourceType": "CapabilityStatement",
-  "id": "genomics-requirements",
+  "id": "CapabilityStatement-Genomics-requirements",
   "url": "https://fhir.nhs.uk/CapabilityStatement/genomics-requirements",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "GenomicsRequirements",
   "status": "draft",
-  "date": "2022-11-25T00:00:00+00:00",
+  "date": "2024-08-09T00:00:00+00:00",
   "publisher": "digital.nhs.uk",
   "description": "Conformance requirements for NHS Digital Genomics Implementation Guide",
   "kind": "requirements",
@@ -40,8 +40,20 @@
           "profile": "http://hl7.org/fhir/StructureDefinition/Bundle"
         },
         {
+          "type": "Composition",
+          "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Composition"
+        },
+        {
+          "type": "DocumentReference",
+          "profile": "http://hl7.org/fhir/StructureDefinition/DocumentReference"
+        },
+        {
           "type": "CodeSystem",
           "profile": "http://hl7.org/fhir/StructureDefinition/CodeSystem"
+        },
+        {
+          "type": "GraphDefinition",
+          "profile": "http://hl7.org/fhir/StructureDefinition/GraphDefinition"
         },
         {
           "type": "ConceptMap",
@@ -85,11 +97,7 @@
         },
         {
           "type": "Task",
-          "profile": "http://hl7.org/fhir/StructureDefinition/Task",
-          "supportedProfile": [
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/followup-recommendation",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/medication-recommendation"
-          ]
+          "profile": "http://hl7.org/fhir/StructureDefinition/Task"
         },
         {
           "type": "ServiceRequest",
@@ -109,10 +117,7 @@
         },
         {
           "type": "DiagnosticReport",
-          "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport",
-          "supportedProfile": [
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-report"
-          ]
+          "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport"
         },
         {
           "type": "FamilyMemberHistory",
@@ -120,26 +125,8 @@
         },
         {
           "type": "Observation",
-          "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation",
-          "supportedProfile": [
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/diagnostic-implication",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genotype",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/haplotype",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/molecular-biomarker",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/molecular-consequence",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/sequence-phase-relationship",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/therapeutic-implication",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/variant"
-          ]
+          "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation"
         },
-        {
-          "type": "Procedure",
-          "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure",
-          "supportedProfile": [
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis"
-          ]
-        }
         {
           "type": "Patient",
           "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient"
@@ -184,13 +171,6 @@
           "type": "BodyStructure",
           "profile": "http://hl7.org/fhir/StructureDefinition/BodyStructure"
         },
-        {
-          "type": "DocumentReference",
-          "profile": "https://hl7.org/fhir/StructureDefinition/DocumentReference",
-          "supportedProfile": [
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-data-file"
-          ]
-        }
         {
           "type": "Provenance",
           "profile": "http://hl7.org/fhir/StructureDefinition/Provenance"

@@ -1,11 +1,11 @@
 {
   "resourceType": "CapabilityStatement",
-  "id": "CapabilityStatement-genomics-application",
-  "url": "https://fhir.nhs.uk/CapabilityStatement/CapabilityStatement-genomics-application",
-  "version": "0.1.0",
+  "id": "CapabilityStatement-Genomics-application",
+  "url": "https://fhir.nhs.uk/CapabilityStatement/genomics-application",
+  "version": "0.2.0",
   "name": "CapabilityStatementGenomicsApplication",
   "status": "draft",
-  "date": "2023-02-27T00:00:00+00:00",
+  "date": "2024-08-09T00:00:00+00:00",
   "publisher": "NHS England",
   "description": "Sample server capability for the Genomic Medicine Service",
   "kind": "instance",
@@ -157,6 +157,29 @@
             {
               "name": "title",
               "type": "string"
+            }
+          ]
+        },
+        {
+          "type": "GraphDefinition",
+          "profile": "http://hl7.org/fhir/StructureDefinition/GraphDefinition",
+          "documentation": "For searching supported GraphDefinitions",
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "name": "start",
+              "type": "token"
             }
           ]
         },
@@ -567,10 +590,6 @@
         {
           "type": "Task",
           "profile": "http://hl7.org/fhir/StructureDefinition/Task",
-          "supportedProfile": [
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/followup-recommendation",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/medication-recommendation"
-          ],
           "documentation": "Endpoints for interacting with Task resources",
           "interaction": [
             {
@@ -754,1206 +773,1020 @@
               "type": "token"
             },
             {
-              "name": "supporting-info",
-              "type": "reference"
-            }
-          ]
-        },
-        {
-          "type": "PractitionerRole",
-          "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole",
-          "documentation": "Endpoints for interacting with PractitionerRole resources",
-          "interaction": [
-            {
-              "code": "read"
-            },
-            {
-              "code": "vread"
-            },
-            {
-              "code": "update"
-            },
-            {
-              "code": "patch"
-            },
-            {
-              "code": "delete"
-            },
-            {
-              "code": "history-instance"
-            },
-            {
-              "code": "create"
-            },
-            {
-              "code": "search-type"
-            }
-          ],
-          "versioning": "versioned",
-          "readHistory": true,
-          "conditionalCreate": true,
-          "referencePolicy": [
-            "resolves"
-          ],
-          "searchParam": [
-            {
-              "name": "endpoint",
-              "type": "reference"
-            },
-            {
-              "name": "identifier",
-              "type": "token"
-            },
-            {
-              "name": "organization",
-              "type": "reference"
-            },
-            {
-              "name": "practitioner",
-              "type": "reference"
-            },
-            {
-              "name": "specialty",
-              "type": "token"
-            },
-            {
-              "name": "telecom",
-              "type": "token"
-            }
-          ]
-        },
-        {
-          "type": "Practitioner",
-          "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner",
-          "documentation": "Endpoints for interacting with Practitioner resources",
-          "interaction": [
-            {
-              "code": "read"
-            },
-            {
-              "code": "vread"
-            },
-            {
-              "code": "update"
-            },
-            {
-              "code": "patch"
-            },
-            {
-              "code": "delete"
-            },
-            {
-              "code": "history-instance"
-            },
-            {
-              "code": "create"
-            },
-            {
-              "code": "search-type"
-            }
-          ],
-          "versioning": "versioned",
-          "readHistory": true,
-          "conditionalCreate": true,
-          "referencePolicy": [
-            "resolves"
-          ],
-          "searchParam": [
-            {
-              "name": "name",
-              "type": "string"
-            },
-            {
-              "name": "identifier",
-              "type": "token"
-            }
-          ]
-        },
-        {
-          "type": "Organization",
-          "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization",
-          "documentation": "Endpoints for interacting with PractitionerRole resources",
-          "interaction": [
-            {
-              "code": "read"
-            },
-            {
-              "code": "vread"
-            },
-            {
-              "code": "update"
-            },
-            {
-              "code": "patch"
-            },
-            {
-              "code": "delete"
-            },
-            {
-              "code": "history-instance"
-            },
-            {
-              "code": "create"
-            },
-            {
-              "code": "search-type"
-            }
-          ],
-          "versioning": "versioned",
-          "readHistory": true,
-          "conditionalCreate": true,
-          "referencePolicy": [
-            "resolves"
-          ],
-          "searchParam": [
-            {
-              "name": "address",
-              "type": "string"
-            },
-            {
-              "name": "endpoint",
-              "type": "reference"
-            },
-            {
-              "name": "identifier",
-              "type": "token"
-            },
-            {
-              "name": "name",
-              "type": "string"
-            },
-            {
-              "name": "partof",
-              "type": "reference"
-            },
-            {
-              "name": "type",
-              "type": "token"
-            }
-          ]
-        },
-        {
-          "type": "DiagnosticReport",
-          "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport",
-          "supportedProfile": [
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-report"
-          ],
-          "documentation": "Endpoints for interacting with DiagnosticReport resources",
-          "interaction": [
-            {
-              "code": "read"
-            },
-            {
-              "code": "vread"
-            },
-            {
-              "code": "update", 
-              "documentation": "Allows a DiagnosticReport to be updated. Could also be used to notify requesters that a DiagnosticReport has been updated, if proactive notification is implemented."
-            },
-            {
-              "code": "patch"
-            },
-            {
-              "code": "delete"
-            },
-            {
-              "code": "history-instance"
-            },
-            {
-              "code": "create",
-              "documentation": "Allows a DiagnosticReport to be created on the service. Triggers notification to the requester that a DiagnosticReport is available."
-            },
-            {
-              "code": "search-type",
-              "documentation": "Not required for alpha build, but could be used to retrieve historical diagnostic reports."
-            }
-          ],
-          "versioning": "versioned",
-          "readHistory": true,
-          "conditionalCreate": true,
-          "referencePolicy": [
-            "resolves"
-          ],
-          "searchParam": [
-            {
-              "name": "based-on",
-              "type": "reference"
-            },
-            {
-              "name": "category",
-              "type": "token"
-            },
-            {
-              "name": "code",
-              "type": "token"
-            },
-            {
-              "name": "conclusion",
-              "type": "token"
-            },
-            {
-              "name": "date",
-              "type": "date"
-            },
-            {
-              "name": "identifier",
-              "type": "token"
-            },
-            {
-              "name": "issued",
-              "type": "date"
-            },
-            {
-              "name": "subject",
-              "type": "reference"
-            },
-            {
-              "name": "performer",
-              "type": "reference"
-            },
-            {
-              "name": "result",
-              "type": "reference"
-            },
-            {
-              "name": "results-interpreter",
-              "type": "reference"
-            },
-            {
-              "name": "specimen",
-              "type": "reference"
-            },
-            {
-              "name": "status",
-              "type": "token"
-            }
-          ]
-        },
-        {
-          "type": "FamilyMemberHistory",
-          "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-FamilyMemberHistory",
-          "documentation": "Endpoints for interacting with FamilyMemberHistory resources",
-          "interaction": [
-            {
-              "code": "read"
-            },
-            {
-              "code": "vread"
-            },
-            {
-              "code": "update"
-            },
-            {
-              "code": "patch"
-            },
-            {
-              "code": "delete"
-            },
-            {
-              "code": "history-instance"
-            },
-            {
-              "code": "create"
-            },
-            {
-              "code": "search-type"
-            }
-          ],
-          "versioning": "versioned",
-          "readHistory": true,
-          "conditionalCreate": true,
-          "referencePolicy": [
-            "resolves"
-          ],
-          "searchParam": [
-            {
-              "name": "code",
-              "type": "token"
-            },
-            {
-              "name": "date",
-              "type": "date"
-            },
-            {
-              "name": "identifier",
-              "type": "token"
-            },
-            {
-              "name": "patient",
-              "type": "reference"
-            },
-            {
-              "name": "relationship",
-              "type": "token"
-            },
-            {
-              "name": "sex",
-              "type": "token"
-            },
-            {
-              "name": "status",
-              "type": "token"
-            }
-          ]
-        },
-        {
-          "type": "Observation",
-          "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation",
-          "supportedProfile": [
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/diagnostic-implication",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genotype",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/haplotype",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/molecular-biomarker",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/molecular-consequence",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/sequence-phase-relationship",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/therapeutic-implication",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/variant"
-          ],
-          "documentation": "Endpoints for interacting with Observation resources",
-          "interaction": [
-            {
-              "code": "read"
-            },
-            {
-              "code": "vread"
-            },
-            {
-              "code": "update"
-            },
-            {
-              "code": "patch"
-            },
-            {
-              "code": "delete"
-            },
-            {
-              "code": "history-instance"
-            },
-            {
-              "code": "create"
-            },
-            {
-              "code": "search-type"
-            }
-          ],
-          "versioning": "versioned",
-          "readHistory": true,
-          "conditionalCreate": true,
-          "referencePolicy": [
-            "resolves"
-          ],
-          "searchParam": [
-            {
-              "name": "based-on",
-              "type": "reference"
-            },
-            {
-              "name": "category",
-              "type": "token"
-            },
-            {
-              "name": "code",
-              "type": "token"
-            },
-            {
-              "name": "component-code",
-              "type": "token"
-            },
-            {
-              "name": "data-absent-reason",
-              "type": "token"
-            },
-            {
-              "name": "date",
-              "type": "date"
-            },
-            {
-              "name": "focus",
-              "type": "reference"
-            },
-            {
-              "name": "identifier",
-              "type": "token"
-            },
-            {
-              "name": "subject",
-              "type": "reference"
-            },
-            {
-              "name": "performer",
-              "type": "reference"
-            },
-            {
-              "name": "specimen",
-              "type": "reference"
-            },
-            {
-              "name": "value-string",
-              "type": "string"
-            },
-            {
-              "name": "status",
-              "type": "token"
-            }
-          ]
-        },
-        {
-          "type": "Patient",
-          "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient",
-          "documentation": "Endpoints for interacting with Patient resources",
-          "interaction": [
-            {
-              "code": "read"
-            },
-            {
-              "code": "vread"
-            },
-            {
-              "code": "update"
-            },
-            {
-              "code": "patch"
-            },
-            {
-              "code": "delete"
-            },
-            {
-              "code": "history-instance"
-            },
-            {
-              "code": "create"
-            },
-            {
-              "code": "search-type"
-            }
-          ],
-          "versioning": "versioned",
-          "readHistory": true,
-          "conditionalCreate": true,
-          "referencePolicy": [
-            "resolves"
-          ],
-          "searchParam": [
-            {
-              "name": "address",
-              "type": "string"
-            },
-            {
-              "name": "birthdate",
-              "type": "date"
-            },
-            {
-              "name": "death-date",
-              "type": "token"
-            },
-            {
-              "name": "gender",
-              "type": "token"
-            },
-            {
-              "name": "general-practitioner",
-              "type": "reference"
-            },
-            {
-              "name": "identifier",
-              "type": "token"
-            },
-            {
-              "name": "link",
-              "type": "reference"
-            },
-            {
-              "name": "name",
-              "type": "string"
-            },
-            {
-              "name": "organization",
-              "type": "reference"
-            },
-            {
-              "name": "telecom",
-              "type": "token"
-            }
-          ]
-        },
-        {
-          "type": "Procedure",
-          "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure",
-          "supportedProfile": [
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis"
-          ],
-          "documentation": "Endpoints for interacting with Procedure resources",
-          "interaction": [
-            {
-              "code": "read"
-            },
-            {
-              "code": "vread"
-            },
-            {
-              "code": "update"
-            },
-            {
-              "code": "patch"
-            },
-            {
-              "code": "delete"
-            },
-            {
-              "code": "history-instance"
-            },
-            {
-              "code": "create"
-            },
-            {
-              "code": "search-type"
-            }
-          ],
-          "versioning": "versioned",
-          "readHistory": true,
-          "conditionalCreate": true,
-          "referencePolicy": [
-            "resolves"
-          ],
-          "searchParam": [
-            {
-              "name": "category",
-              "type": "token"
-            },
-            {
-              "name": "code",
-              "type": "token"
-            },
-            {
-              "name": "date",
-              "type": "date"
-            },
-            {
-              "name": "part-of",
-              "type": "reference"
-            },
-            {
-              "name": "subject",
-              "type": "reference"
-            },
-            {
-              "name": "performer",
-              "type": "reference"
-            },
-            {
-              "name": "reason-code",
-              "type": "token"
-            },
-            {
-              "name": "reason-reference",
-              "type": "reference"
-            },
-            {
-              "name": "status",
-              "type": "token"
-            }
-          ]
-        },
-        {
-          "type": "Consent",
-          "profile": "http://hl7.org/fhir/StructureDefinition/Consent",
-          "documentation": "Endpoints for interacting with Consent resources",
-          "interaction": [
-            {
-              "code": "read"
-            },
-            {
-              "code": "vread"
-            },
-            {
-              "code": "update"
-            },
-            {
-              "code": "patch"
-            },
-            {
-              "code": "delete"
-            },
-            {
-              "code": "history-instance"
-            },
-            {
-              "code": "create"
-            },
-            {
-              "code": "search-type"
-            }
-          ],
-          "versioning": "versioned",
-          "readHistory": true,
-          "conditionalCreate": true,
-          "referencePolicy": [
-            "resolves"
-          ],
-          "searchParam": [
-            {
-              "name": "action",
-              "type": "token"
-            },
-            {
-              "name": "actor",
-              "type": "reference"
-            },
-            {
-              "name": "category",
-              "type": "token"
-            },
-            {
-              "name": "consentor",
-              "type": "reference"
-            },
-            {
-              "name": "identifier",
-              "type": "token"
-            },
-            {
-              "name": "organization",
-              "type": "reference"
-            },
-            {
-              "name": "patient",
-              "type": "reference"
-            },
-            {
-              "name": "period",
-              "type": "date"
-            }
-          ]
-        },
-        {
-          "type": "Condition",
-          "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition",
-          "documentation": "Endpoints for interacting with Condition resources",
-          "interaction": [
-            {
-              "code": "read"
-            },
-            {
-              "code": "vread"
-            },
-            {
-              "code": "update"
-            },
-            {
-              "code": "patch"
-            },
-            {
-              "code": "delete"
-            },
-            {
-              "code": "history-instance"
-            },
-            {
-              "code": "create"
-            },
-            {
-              "code": "search-type"
-            }
-          ],
-          "versioning": "versioned",
-          "readHistory": true,
-          "conditionalCreate": true,
-          "referencePolicy": [
-            "resolves"
-          ],
-          "searchParam": [
-            {
-              "name": "asserter",
-              "type": "reference"
-            },
-            {
-              "name": "category",
-              "type": "token"
-            },
-            {
-              "name": "clinical-status",
-              "type": "token"
-            },
-            {
-              "name": "code",
-              "type": "token"
-            },
-            {
-              "name": "identifier",
-              "type": "token"
-            },
-            {
-              "name": "onset-info",
-              "type": "string"
-            },
-            {
-              "name": "subject",
-              "type": "reference"
-            },
-            {
-              "name": "recorded-date",
-              "type": "date"
-            },
-            {
-              "name": "severity",
-              "type": "token"
-            },
-            {
-              "name": "stage",
-              "type": "token"
-            },
-            {
-              "name": "verification-status",
-              "type": "token"
-            }
-          ]
-        },
-        {
-          "type": "ResearchSubject",
-          "profile": "http://hl7.org/fhir/StructureDefinition/ResearchSubject"
-        },
-        {
-          "type": "RelatedPerson",
-          "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-RelatedPerson-Genomics",
-          "documentation": "Endpoints for interacting with RelatedPerson resources",
-          "interaction": [
-            {
-              "code": "read"
-            },
-            {
-              "code": "vread"
-            },
-            {
-              "code": "update"
-            },
-            {
-              "code": "patch"
-            },
-            {
-              "code": "delete"
-            },
-            {
-              "code": "history-instance"
-            },
-            {
-              "code": "create"
-            },
-            {
-              "code": "search-type"
-            }
-          ],
-          "versioning": "versioned",
-          "readHistory": true,
-          "conditionalCreate": true,
-          "referencePolicy": [
-            "resolves"
-          ],
-          "searchParam": [
-            {
-              "name": "patient",
-              "type": "reference"
-            },
-            {
-              "name": "relationship",
-              "type": "token"
-            }
-          ]
-        },
-        {
-          "type": "Specimen",
-          "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen",
-          "documentation": "Endpoints for interacting with Specimen resources",
-          "interaction": [
-            {
-              "code": "read"
-            },
-            {
-              "code": "vread"
-            },
-            {
-              "code": "update",
-              "documentation": "To enable updates to specimens"
-            },
-            {
-              "code": "patch"
-            },
-            {
-              "code": "delete"
-            },
-            {
-              "code": "history-instance"
-            },
-            {
-              "code": "create",
-              "documentation": "To allow a user to add a Specimen, which should also be added to the relevant ServiceRequest/Task through a PUT"
-            },
-            {
-              "code": "search-type",
-              "documentation": "To enable a user to retrieve specimens, enables specimen tracking"
-            }
-          ],
-          "versioning": "versioned",
-          "readHistory": true,
-          "conditionalCreate": true,
-          "referencePolicy": [
-            "resolves"
-          ],
-          "searchParam": [
-            {
-              "name": "accession",
-              "type": "token"
-            },
-            {
-              "name": "bodysite",
-              "type": "token"
-            },
-            {
-              "name": "collected",
-              "type": "date"
-            },
-            {
-              "name": "collector",
-              "type": "reference"
-            },
-            {
-              "name": "container-id",
-              "type": "token"
-            },
-            {
-              "name": "identifier",
-              "type": "token"
-            },
-            {
-              "name": "parent",
-              "type": "reference"
-            },
-            {
-              "name": "subject",
-              "type": "reference"
-            },
-            {
-              "name": "status",
-              "type": "token"
-            },
-            {
-              "name": "type",
-              "type": "token"
-            }
-          ]
-        },
-        {
-          "type": "Questionnaire",
-          "profile": "http://hl7.org/fhir/StructureDefinition/Questionnaire",
-          "documentation": "For searching supported Questionnaires",
-          "interaction": [
-            {
-              "code": "read"
-            },
-            {
-              "code": "search-type"
-            }
-          ],
-          "searchParam": [
-            {
-              "name": "date",
-              "type": "date"
-            },
-            {
-              "name": "description",
-              "type": "string"
-            },
-            {
-              "name": "effective",
-              "type": "date"
-            },
-            {
-              "name": "identifier",
-              "type": "token"
-            },
-            {
-              "name": "name",
-              "type": "string"
-            },
-            {
-              "name": "status",
-              "type": "token"
-            },
-            {
-              "name": "title",
-              "type": "string"
-            },
-            {
-              "name": "version",
-              "type": "token"
-            }
-          ]
-        },
-        {
-          "type": "QuestionnaireResponse",
-          "profile": "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse",
-          "documentation": "Endpoints for interacting with QuestionnaireResponse resources",
-          "interaction": [
-            {
-              "code": "read"
-            },
-            {
-              "code": "vread"
-            },
-            {
-              "code": "update"
-            },
-            {
-              "code": "patch"
-            },
-            {
-              "code": "delete"
-            },
-            {
-              "code": "history-instance"
-            },
-            {
-              "code": "create"
-            },
-            {
-              "code": "search-type"
-            }
-          ],
-          "versioning": "versioned",
-          "readHistory": true,
-          "conditionalCreate": true,
-          "referencePolicy": [
-            "resolves"
-          ],
-          "searchParam": [
-            {
-              "name": "author",
-              "type": "reference"
-            },
-            {
-              "name": "authored",
-              "type": "date"
-            },
-            {
-              "name": "identifier",
-              "type": "token"
-            },
-            {
-              "name": "subject",
-              "type": "reference"
-            },
-            {
-              "name": "questionnaire",
-              "type": "reference"
-            },
-            {
-              "name": "source",
-              "type": "reference"
-            },
-            {
-              "name": "status",
-              "type": "token"
-            }
-          ]
-        },
-        {
-          "type": "OperationDefinition",
-          "profile": "https://hl7.org/fhir/StructureDefinition/OperationDefinition"
-        },
-        {
-          "type": "OperationOutcome",
-          "profile": "http://hl7.org/fhir/StructureDefinition/OperationOutcome",
-          "documentation": "For searching historical OperationOutcomes",
-          "interaction": [
-            {
-              "code": "read"
-            },
-            {
-              "code": "search-type"
-            }
-          ]
-        },
-        {
-          "type": "DocumentReference",
-          "profile": "https://hl7.org/fhir/StructureDefinition/DocumentReference",
-          "supportedProfile": [
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-data-file"
-          ],
-          "documentation": "Endpoints for interacting with DocumentReference resources",
-          "interaction": [
-            {
-              "code": "read"
-            },
-            {
-              "code": "vread"
-            },
-            {
-              "code": "update"
-            },
-            {
-              "code": "patch"
-            },
-            {
-              "code": "delete"
-            },
-            {
-              "code": "history-instance"
-            },
-            {
-              "code": "create"
-            },
-            {
-              "code": "search-type"
-            }
-          ],
-          "versioning": "versioned",
-          "readHistory": true,
-          "conditionalCreate": true,
-          "referencePolicy": [
-            "resolves"
-          ],
-          "searchParam": [
-            {
-              "name": "authenticator",
-              "type": "reference"
-            },
-            {
-              "name": "author",
-              "type": "reference"
-            },
-            {
-              "name": "category",
-              "type": "token"
-            },
-            {
-              "name": "contenttype",
-              "type": "token"
-            },
-            {
-              "name": "custodian",
-              "type": "reference"
-            },
-            {
-              "name": "date",
-              "type": "date"
-            },
-            {
-              "name": "identifier",
-              "type": "token"
-            },
-            {
-              "name": "location",
-              "type": "uri"
-            },
-            {
-              "name": "related",
-              "type": "reference"
-            },
-            {
-              "name": "relatesto",
-              "type": "reference"
-            },
-            {
-              "name": "status",
-              "type": "token"
-            },
-            {
-              "name": "subject",
-              "type": "reference"
-            },
-            {
-              "name": "type",
-              "type": "token"
-            }
-          ]
-        },
-        {
-          "type": "BodyStructure",
-          "profile": "http://hl7.org/fhir/StructureDefinition/BodyStructure",
-          "documentation": "Endpoints for interacting with BodyStructure resources",
-          "interaction": [
-            {
-              "code": "read"
-            },
-            {
-              "code": "vread"
-            },
-            {
-              "code": "update"
-            },
-            {
-              "code": "patch"
-            },
-            {
-              "code": "delete"
-            },
-            {
-              "code": "history-instance"
-            },
-            {
-              "code": "create"
-            },
-            {
-              "code": "search-type"
-            }
-          ],
-          "versioning": "versioned",
-          "readHistory": true,
-          "conditionalCreate": true,
-          "referencePolicy": [
-            "resolves"
-          ],
-          "searchParam": [
-            {
-              "name": "identifier",
-              "type": "token"
-            },
-            {
-              "name": "location",
-              "type": "token"
-            },
-            {
-              "name": "morphology",
-              "type": "token"
-            },
-            {
-              "name": "patient",
-              "type": "reference"
-            }
-          ]
-        },
-        {
-          "type": "Provenance",
-          "profile": "http://hl7.org/fhir/StructureDefinition/Provenance",
-          "documentation": "For searching stored Provenance resources",
-          "interaction": [
-            {
-              "code": "read"
-            },
-            {
-              "code": "search-type"
-            }
-          ],
-          "searchParam": [
-            {
-              "name": "agent",
-              "type": "reference"
-            },
-            {
-              "name": "entity",
-              "type": "reference"
-            },
-            {
-              "name": "target",
-              "type": "reference"
-            },
-            {
-              "name": "recorded",
-              "type": "date"
-            }
-          ]
-        }
-      ]
-    }
-  ]
+							"name": "supporting-info",
+							"type": "reference"
+						}
+					]
+				},
+				{
+					"type": "PractitionerRole",
+					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole",
+					"documentation": "Endpoints for interacting with PractitionerRole resources",
+					"interaction": [
+						{
+							"code": "read"
+						},
+						{
+							"code": "vread"
+						},
+						{
+							"code": "update"
+						},
+						{
+							"code": "patch"
+						},
+						{
+							"code": "delete"
+						},
+						{
+							"code": "history-instance"
+						},
+						{
+							"code": "create"
+						},
+						{
+							"code": "search-type"
+						}
+					],
+					"versioning": "versioned",
+					"readHistory": true,
+					"conditionalCreate": true,
+					"referencePolicy": [
+						"resolves"
+					],
+					"searchParam": [
+						{
+							"name": "endpoint",
+							"type": "reference"
+						},
+						{
+							"name": "identifier",
+							"type": "token"
+						},
+						{
+							"name": "organization",
+							"type": "reference"
+						},
+						{
+							"name": "practitioner",
+							"type": "reference"
+						},
+						{
+							"name": "specialty",
+							"type": "token"
+						},
+						{
+							"name": "telecom",
+							"type": "token"
+						}
+					]
+				},
+				{
+					"type": "Practitioner",
+					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner",
+					"documentation": "Endpoints for interacting with Practitioner resources",
+					"interaction": [
+						{
+							"code": "read"
+						},
+						{
+							"code": "vread"
+						},
+						{
+							"code": "update"
+						},
+						{
+							"code": "patch"
+						},
+						{
+							"code": "delete"
+						},
+						{
+							"code": "history-instance"
+						},
+						{
+							"code": "create"
+						},
+						{
+							"code": "search-type"
+						}
+					],
+					"versioning": "versioned",
+					"readHistory": true,
+					"conditionalCreate": true,
+					"referencePolicy": [
+						"resolves"
+					],
+					"searchParam": [
+						{
+							"name": "name",
+							"type": "string"
+						},
+						{
+							"name": "identifier",
+							"type": "token"
+						}
+					]
+				},
+				{
+					"type": "Organization",
+					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization",
+					"documentation": "Endpoints for interacting with PractitionerRole resources",
+					"interaction": [
+						{
+							"code": "read"
+						},
+						{
+							"code": "vread"
+						},
+						{
+							"code": "update"
+						},
+						{
+							"code": "patch"
+						},
+						{
+							"code": "delete"
+						},
+						{
+							"code": "history-instance"
+						},
+						{
+							"code": "create"
+						},
+						{
+							"code": "search-type"
+						}
+					],
+					"versioning": "versioned",
+					"readHistory": true,
+					"conditionalCreate": true,
+					"referencePolicy": [
+						"resolves"
+					],
+					"searchParam": [
+						{
+							"name": "address",
+							"type": "string"
+						},
+						{
+							"name": "endpoint",
+							"type": "reference"
+						},
+						{
+							"name": "identifier",
+							"type": "token"
+						},
+						{
+							"name": "name",
+							"type": "string"
+						},
+						{
+							"name": "partof",
+							"type": "reference"
+						},
+						{
+							"name": "type",
+							"type": "token"
+						}
+					]
+				},
+				{
+					"type": "DiagnosticReport",
+					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport",
+					"documentation": "Endpoints for interacting with DiagnosticReport resources",
+					"interaction": [
+						{
+							"code": "read"
+						},
+						{
+							"code": "vread"
+						},
+						{
+							"code": "update", 
+							"documentation": "Allows a DiagnosticReport to be updated. Could also be used to notify requesters that a DiagnosticReport has been updated, if proactive notification is implemented."
+						},
+						{
+							"code": "patch"
+						},
+						{
+							"code": "delete"
+						},
+						{
+							"code": "history-instance"
+						},
+						{
+							"code": "create",
+							"documentation": "Allows a DiagnosticReport to be created on the service. Triggers notification to the requester that a DiagnosticReport is available."
+						},
+						{
+							"code": "search-type",
+							"documentation": "Not required for alpha build, but could be used to retrieve historical diagnostic reports."
+						}
+					],
+					"versioning": "versioned",
+					"readHistory": true,
+					"conditionalCreate": true,
+					"referencePolicy": [
+						"resolves"
+					],
+					"searchParam": [
+						{
+							"name": "based-on",
+							"type": "reference"
+						},
+						{
+							"name": "category",
+							"type": "token"
+						},
+						{
+							"name": "code",
+							"type": "token"
+						},
+						{
+							"name": "conclusion",
+							"type": "token"
+						},
+						{
+							"name": "date",
+							"type": "date"
+						},
+						{
+							"name": "identifier",
+							"type": "token"
+						},
+						{
+							"name": "issued",
+							"type": "date"
+						},
+						{
+							"name": "subject",
+							"type": "reference"
+						},
+						{
+							"name": "performer",
+							"type": "reference"
+						},
+						{
+							"name": "result",
+							"type": "reference"
+						},
+						{
+							"name": "results-interpreter",
+							"type": "reference"
+						},
+						{
+							"name": "specimen",
+							"type": "reference"
+						},
+						{
+							"name": "status",
+							"type": "token"
+						}
+					]
+				},
+				{
+					"type": "FamilyMemberHistory",
+					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-FamilyMemberHistory",
+					"documentation": "Endpoints for interacting with FamilyMemberHistory resources",
+					"interaction": [
+						{
+							"code": "read"
+						},
+						{
+							"code": "vread"
+						},
+						{
+							"code": "update"
+						},
+						{
+							"code": "patch"
+						},
+						{
+							"code": "delete"
+						},
+						{
+							"code": "history-instance"
+						},
+						{
+							"code": "create"
+						},
+						{
+							"code": "search-type"
+						}
+					],
+					"versioning": "versioned",
+					"readHistory": true,
+					"conditionalCreate": true,
+					"referencePolicy": [
+						"resolves"
+					],
+					"searchParam": [
+						{
+							"name": "code",
+							"type": "token"
+						},
+						{
+							"name": "date",
+							"type": "date"
+						},
+						{
+							"name": "identifier",
+							"type": "token"
+						},
+						{
+							"name": "patient",
+							"type": "reference"
+						},
+						{
+							"name": "relationship",
+							"type": "token"
+						},
+						{
+							"name": "sex",
+							"type": "token"
+						},
+						{
+							"name": "status",
+							"type": "token"
+						}
+					]
+				},
+				{
+					"type": "Observation",
+					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation",
+					"documentation": "Endpoints for interacting with Observation resources",
+					"interaction": [
+						{
+							"code": "read"
+						},
+						{
+							"code": "vread"
+						},
+						{
+							"code": "update"
+						},
+						{
+							"code": "patch"
+						},
+						{
+							"code": "delete"
+						},
+						{
+							"code": "history-instance"
+						},
+						{
+							"code": "create"
+						},
+						{
+							"code": "search-type"
+						}
+					],
+					"versioning": "versioned",
+					"readHistory": true,
+					"conditionalCreate": true,
+					"referencePolicy": [
+						"resolves"
+					],
+					"searchParam": [
+						{
+							"name": "based-on",
+							"type": "reference"
+						},
+						{
+							"name": "category",
+							"type": "token"
+						},
+						{
+							"name": "code",
+							"type": "token"
+						},
+						{
+							"name": "component-code",
+							"type": "token"
+						},
+						{
+							"name": "data-absent-reason",
+							"type": "token"
+						},
+						{
+							"name": "date",
+							"type": "date"
+						},
+						{
+							"name": "focus",
+							"type": "reference"
+						},
+						{
+							"name": "identifier",
+							"type": "token"
+						},
+						{
+							"name": "subject",
+							"type": "reference"
+						},
+						{
+							"name": "performer",
+							"type": "reference"
+						},
+						{
+							"name": "specimen",
+							"type": "reference"
+						},
+						{
+							"name": "value-string",
+							"type": "string"
+						},
+						{
+							"name": "status",
+							"type": "token"
+						}
+					]
+				},
+				{
+					"type": "Patient",
+					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient",
+					"documentation": "Endpoints for interacting with Patient resources",
+					"interaction": [
+						{
+							"code": "read"
+						},
+						{
+							"code": "vread"
+						},
+						{
+							"code": "update"
+						},
+						{
+							"code": "patch"
+						},
+						{
+							"code": "delete"
+						},
+						{
+							"code": "history-instance"
+						},
+						{
+							"code": "create"
+						},
+						{
+							"code": "search-type"
+						}
+					],
+					"versioning": "versioned",
+					"readHistory": true,
+					"conditionalCreate": true,
+					"referencePolicy": [
+						"resolves"
+					],
+					"searchParam": [
+						{
+							"name": "address",
+							"type": "string"
+						},
+						{
+							"name": "birthdate",
+							"type": "date"
+						},
+						{
+							"name": "death-date",
+							"type": "token"
+						},
+						{
+							"name": "gender",
+							"type": "token"
+						},
+						{
+							"name": "general-practitioner",
+							"type": "reference"
+						},
+						{
+							"name": "identifier",
+							"type": "token"
+						},
+						{
+							"name": "link",
+							"type": "reference"
+						},
+						{
+							"name": "name",
+							"type": "string"
+						},
+						{
+							"name": "organization",
+							"type": "reference"
+						},
+						{
+							"name": "telecom",
+							"type": "token"
+						}
+					]
+				},
+				{
+					"type": "Consent",
+					"profile": "http://hl7.org/fhir/StructureDefinition/Consent",
+					"documentation": "Endpoints for interacting with Consent resources",
+					"interaction": [
+						{
+							"code": "read"
+						},
+						{
+							"code": "vread"
+						},
+						{
+							"code": "update"
+						},
+						{
+							"code": "patch"
+						},
+						{
+							"code": "delete"
+						},
+						{
+							"code": "history-instance"
+						},
+						{
+							"code": "create"
+						},
+						{
+							"code": "search-type"
+						}
+					],
+					"versioning": "versioned",
+					"readHistory": true,
+					"conditionalCreate": true,
+					"referencePolicy": [
+						"resolves"
+					],
+					"searchParam": [
+						{
+							"name": "action",
+							"type": "token"
+						},
+						{
+							"name": "actor",
+							"type": "reference"
+						},
+						{
+							"name": "category",
+							"type": "token"
+						},
+						{
+							"name": "consentor",
+							"type": "reference"
+						},
+						{
+							"name": "identifier",
+							"type": "token"
+						},
+						{
+							"name": "organization",
+							"type": "reference"
+						},
+						{
+							"name": "patient",
+							"type": "reference"
+						},
+						{
+							"name": "period",
+							"type": "date"
+						}
+					]
+				},
+				{
+					"type": "Condition",
+					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition",
+					"documentation": "Endpoints for interacting with Condition resources",
+					"interaction": [
+						{
+							"code": "read"
+						},
+						{
+							"code": "vread"
+						},
+						{
+							"code": "update"
+						},
+						{
+							"code": "patch"
+						},
+						{
+							"code": "delete"
+						},
+						{
+							"code": "history-instance"
+						},
+						{
+							"code": "create"
+						},
+						{
+							"code": "search-type"
+						}
+					],
+					"versioning": "versioned",
+					"readHistory": true,
+					"conditionalCreate": true,
+					"referencePolicy": [
+						"resolves"
+					],
+					"searchParam": [
+						{
+							"name": "asserter",
+							"type": "reference"
+						},
+						{
+							"name": "category",
+							"type": "token"
+						},
+						{
+							"name": "clinical-status",
+							"type": "token"
+						},
+						{
+							"name": "code",
+							"type": "token"
+						},
+						{
+							"name": "identifier",
+							"type": "token"
+						},
+						{
+							"name": "onset-info",
+							"type": "string"
+						},
+						{
+							"name": "subject",
+							"type": "reference"
+						},
+						{
+							"name": "recorded-date",
+							"type": "date"
+						},
+						{
+							"name": "severity",
+							"type": "token"
+						},
+						{
+							"name": "stage",
+							"type": "token"
+						},
+						{
+							"name": "verification-status",
+							"type": "token"
+						}
+					]
+				},
+				{
+					"type": "ResearchSubject",
+					"profile": "http://hl7.org/fhir/StructureDefinition/ResearchSubject"
+				},
+				{
+					"type": "RelatedPerson",
+					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-RelatedPerson-Genomics",
+					"documentation": "Endpoints for interacting with RelatedPerson resources",
+					"interaction": [
+						{
+							"code": "read"
+						},
+						{
+							"code": "vread"
+						},
+						{
+							"code": "update"
+						},
+						{
+							"code": "patch"
+						},
+						{
+							"code": "delete"
+						},
+						{
+							"code": "history-instance"
+						},
+						{
+							"code": "create"
+						},
+						{
+							"code": "search-type"
+						}
+					],
+					"versioning": "versioned",
+					"readHistory": true,
+					"conditionalCreate": true,
+					"referencePolicy": [
+						"resolves"
+					],
+					"searchParam": [
+						{
+							"name": "patient",
+							"type": "reference"
+						},
+						{
+							"name": "relationship",
+							"type": "token"
+						}
+					]
+				},
+				{
+					"type": "Specimen",
+					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen",
+					"documentation": "Endpoints for interacting with Specimen resources",
+					"interaction": [
+						{
+							"code": "read"
+						},
+						{
+							"code": "vread"
+						},
+						{
+							"code": "update",
+							"documentation": "To enable updates to specimens"
+						},
+						{
+							"code": "patch"
+						},
+						{
+							"code": "delete"
+						},
+						{
+							"code": "history-instance"
+						},
+						{
+							"code": "create",
+							"documentation": "To allow a user to add a Specimen, which should also be added to the relevant ServiceRequest/Task through a PUT"
+						},
+						{
+							"code": "search-type",
+							"documentation": "To enable a user to retrieve specimens, enables specimen tracking"
+						}
+					],
+					"versioning": "versioned",
+					"readHistory": true,
+					"conditionalCreate": true,
+					"referencePolicy": [
+						"resolves"
+					],
+					"searchParam": [
+						{
+							"name": "accession",
+							"type": "token"
+						},
+						{
+							"name": "bodysite",
+							"type": "token"
+						},
+						{
+							"name": "collected",
+							"type": "date"
+						},
+						{
+							"name": "collector",
+							"type": "reference"
+						},
+						{
+							"name": "container-id",
+							"type": "token"
+						},
+						{
+							"name": "identifier",
+							"type": "token"
+						},
+						{
+							"name": "parent",
+							"type": "reference"
+						},
+						{
+							"name": "subject",
+							"type": "reference"
+						},
+						{
+							"name": "status",
+							"type": "token"
+						},
+						{
+							"name": "type",
+							"type": "token"
+						}
+					]
+				},
+				{
+					"type": "Questionnaire",
+					"profile": "http://hl7.org/fhir/StructureDefinition/Questionnaire",
+					"documentation": "For searching supported Questionnaires",
+					"interaction": [
+						{
+							"code": "read"
+						},
+						{
+							"code": "search-type"
+						}
+					],
+					"searchParam": [
+						{
+							"name": "date",
+							"type": "date"
+						},
+						{
+							"name": "description",
+							"type": "string"
+						},
+						{
+							"name": "effective",
+							"type": "date"
+						},
+						{
+							"name": "identifier",
+							"type": "token"
+						},
+						{
+							"name": "name",
+							"type": "string"
+						},
+						{
+							"name": "status",
+							"type": "token"
+						},
+						{
+							"name": "title",
+							"type": "string"
+						},
+						{
+							"name": "version",
+							"type": "token"
+						}
+					]
+				},
+				{
+					"type": "QuestionnaireResponse",
+					"profile": "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse",
+					"documentation": "Endpoints for interacting with QuestionnaireResponse resources",
+					"interaction": [
+						{
+							"code": "read"
+						},
+						{
+							"code": "vread"
+						},
+						{
+							"code": "update"
+						},
+						{
+							"code": "patch"
+						},
+						{
+							"code": "delete"
+						},
+						{
+							"code": "history-instance"
+						},
+						{
+							"code": "create"
+						},
+						{
+							"code": "search-type"
+						}
+					],
+					"versioning": "versioned",
+					"readHistory": true,
+					"conditionalCreate": true,
+					"referencePolicy": [
+						"resolves"
+					],
+					"searchParam": [
+						{
+							"name": "author",
+							"type": "reference"
+						},
+						{
+							"name": "authored",
+							"type": "date"
+						},
+						{
+							"name": "identifier",
+							"type": "token"
+						},
+						{
+							"name": "subject",
+							"type": "reference"
+						},
+						{
+							"name": "questionnaire",
+							"type": "reference"
+						},
+						{
+							"name": "source",
+							"type": "reference"
+						},
+						{
+							"name": "status",
+							"type": "token"
+						}
+					]
+				},
+				{
+					"type": "OperationDefinition",
+					"profile": "https://hl7.org/fhir/StructureDefinition/OperationDefinition"
+				},
+				{
+					"type": "OperationOutcome",
+					"profile": "http://hl7.org/fhir/StructureDefinition/OperationOutcome",
+					"documentation": "For searching historical OperationOutcomes",
+					"interaction": [
+						{
+							"code": "read"
+						},
+						{
+							"code": "search-type"
+						}
+					]
+				},
+				{
+					"type": "BodyStructure",
+					"profile": "http://hl7.org/fhir/StructureDefinition/BodyStructure",
+					"documentation": "Endpoints for interacting with BodyStructure resources",
+					"interaction": [
+						{
+							"code": "read"
+						},
+						{
+							"code": "vread"
+						},
+						{
+							"code": "update"
+						},
+						{
+							"code": "patch"
+						},
+						{
+							"code": "delete"
+						},
+						{
+							"code": "history-instance"
+						},
+						{
+							"code": "create"
+						},
+						{
+							"code": "search-type"
+						}
+					],
+					"versioning": "versioned",
+					"readHistory": true,
+					"conditionalCreate": true,
+					"referencePolicy": [
+						"resolves"
+					],
+					"searchParam": [
+						{
+							"name": "identifier",
+							"type": "token"
+						},
+						{
+							"name": "location",
+							"type": "token"
+						},
+						{
+							"name": "morphology",
+							"type": "token"
+						},
+						{
+							"name": "patient",
+							"type": "reference"
+						}
+					]
+				},
+				{
+					"type": "Provenance",
+					"profile": "http://hl7.org/fhir/StructureDefinition/Provenance",
+					"documentation": "For searching stored Provenance resources",
+					"interaction": [
+						{
+							"code": "read"
+						},
+						{
+							"code": "search-type"
+						}
+					],
+					"searchParam": [
+						{
+							"name": "agent",
+							"type": "reference"
+						},
+						{
+							"name": "entity",
+							"type": "reference"
+						},
+						{
+							"name": "target",
+							"type": "reference"
+						},
+						{
+							"name": "recorded",
+							"type": "date"
+						}
+					]
+				}
+			]
+		}
+	]
 }

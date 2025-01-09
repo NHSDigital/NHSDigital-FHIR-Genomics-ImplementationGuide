@@ -8,8 +8,8 @@
         "coding": [
             {
                 "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
-                "code": "ProcessGenomicTestRequest",
-                "display": "Process Genomic Test Request"
+                "code": "request-sample-alignment",
+                "display": "Request & Sample Alignment"
             }
         ]
     },
@@ -39,19 +39,19 @@
             "text": "Test critieria met and sample to be used from storage"
         }
     ],
-    "output": [
+    "input": [
         {
             "type": {
                 "coding": [
                     {
-                        "system": "http://snomed.info/sct",
-                        "code": "445295009",
-                        "display": "Blood specimen with EDTA"
+                        "system": "https://fhir.nhs.uk/CodeSystem/AdditionalInfoTypeGenomics",
+                        "code": "Specimen",
+                        "display": "Specimen"
                     }
                 ]
             },
             "valueReference": {
-                "reference": "Specimen/Specimen-BloodEDTA-WithCollectoinDetails-Example"
+                "reference": "Specimen/Specimen-BloodEDTA-WithCollectionDetails-Example"
             }
         }
     ]

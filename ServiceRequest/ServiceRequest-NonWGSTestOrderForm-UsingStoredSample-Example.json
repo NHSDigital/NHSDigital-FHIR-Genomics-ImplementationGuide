@@ -8,8 +8,8 @@
         "coding": [
           {
             "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory",
-            "code": "nhs",
-            "display": "NHS"
+            "code": "nhs-england",
+            "display": "NHS England"
           }
         ]
       }
@@ -34,7 +34,8 @@
       {
         "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
         "code": "R134",
-        "display": "Familial Hypercholesterolaemia"
+        "display": "Familial Hypercholesterolaemia",
+        "version": "7"
       }
     ]
   },
@@ -53,9 +54,9 @@
     {
       "coding": [
         {
-          "system": "http://snomed.info/sct",
-          "code": "1186936003",
-          "display": "Storage of specimen"
+          "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
+          "code": "dna-storage",
+          "display": "DNA Storage"
         }
       ]
     }
@@ -65,13 +66,10 @@
       "reference": "Observation/Observation-GenomicEthnicity-Example"
     },
     {
-      "reference": "Observation/Observation-DiseaseStatus-Example"
+      "reference": "Condition/Condition-MonogenicHearingLoss-Example"
     },
     {
       "reference": "Observation/Observation-NonConsanguinousUnion-Example"
-    },
-    {
-      "reference": "FamilyMemberHistory/FamilyMemberHistory-NonConsanguinousUnion-Example"
     },
     {
       "reference": "Observation/Observation-NoBoneMarrowTransplant-Example"
@@ -91,7 +89,7 @@
   ],
   "specimen": [
     {
-      "reference": "Specimen/Specimen-BloodEDTA-WithCollectoinDetails-Example",
+      "reference": "Specimen/Specimen-BloodEDTA-WithCollectionDetails-Example",
       "identifier": [
         {
           "system": "https://fhir.bwc.nhs.uk//Id/specimenId",

@@ -85,7 +85,6 @@
 						]
 					}
 				],
-				"gender": "male",
 				"birthDate": "1989-12-08",
 				"address": [
 					{
@@ -110,8 +109,8 @@
 							"coding": [
 						    {
 									"system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory",
-									"code": "nhs",
-									"display": "NHS"
+									"code": "nhs-england",
+									"display": "NHS England"
 								}
 							]
 						}

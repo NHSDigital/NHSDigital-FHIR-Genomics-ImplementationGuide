@@ -8,8 +8,8 @@
 				"coding": [
 					{
 						"system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory",
-						"code": "nhs",
-						"display": "NHS"
+						"code": "nhs-england",
+						"display": "NHS England"
 					}
 				]
 			}
@@ -34,7 +34,8 @@
 			{
 				"system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
 				"code": "R21",
-				"display": "Fetal anomalies with a likely genetic cause"
+				"display": "Fetal anomalies with a likely genetic cause",
+        "version": "7"
 			}
 		]
 	},
@@ -61,23 +62,19 @@
 		{
 			"coding": [
 				{
-					"system": "http://snomed.info/sct",
-					"code": "243787009",
-					"display": "Antenatal screening"
+					"system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
+					"code": "staging-or-prognosis",
+					"display": "Staging or Prognosis"
 				}
 			]
 		}
 	],
 	"supportingInfo": [
-
 		{
 			"reference": "Observation/Observation-HistoryOfFetalLoss-Example"
 		},
 		{
 			"reference": "Observation/Observation-NonConsanguinousUnion-Example"
-		},
-		{
-			"reference": "FamilyMemberHistory/FamilyMemberHistory-NonConsanguinousUnionRyanneBoulder-Example"
 		},
 		{
 			"reference": "Observation/Observation-GenomicEthnicity-Example"
@@ -96,7 +93,25 @@
 		},
 		{
 			"reference": "Procedure/Procedure-InVitroFertilisation-Example"
-		}
+		},
+    {
+      "reference": "RelatedPerson/RelatedPerson-RyanneBoulder-Example"
+    },
+    {
+      "reference": "Patient/Patient-RyanneBoulder-Example"
+    },
+    {
+      "reference": "RelatedPerson/RelatedPerson-RyanneBoulderPartner-Example"
+    },
+    {
+      "reference": "Patient/Patient-RyanneBoulderPartner-Example"
+    },
+    {
+      "reference": "Specimen/Specimen-BloodEDTA-Example"
+    },
+    {
+      "reference": "Specimen/Specimen-RyanneBoulderSaliva-Example"
+    }
 	],
 	"note": [
 		{

@@ -6,8 +6,8 @@
         "coding": [
             {
                 "system": "https://fhir.nhs.uk/CodeSystem/task-statusReason-genomics",
-                "code": "SpecimenQualityNotOK",
-                "display": "Specimen Quality Not OK"
+                "code": "sample-sub-optimal",
+                "display": "Sample Sub-Optimal"
             }
         ]
     },
@@ -17,8 +17,8 @@
         "coding": [
             {
                 "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
-                "code": "RequestSampleAlignment",
-                "display": "Request & Sample Alignment"
+                "code": "sample-preparation",
+                "display": "Sample Preparation"
             }
         ]
     },
@@ -49,13 +49,34 @@
             "text": "Please provide additional sample of X"
         }
     ],
-    "output":  [
+    "input": [
         {
             "type": {
-                "coding":  [
+                "coding": [
                     {
-                        "system": "http://snomed.info/sct",
-                        "code": "123038009",
+                        "system": "https://fhir.nhs.uk/CodeSystem/AdditionalInfoTypeGenomics",
+                        "code": "RackId",
+                        "display": "Rack Number"
+                    }
+                ]
+            },
+            "valueIdentifier": {
+                "system": "https://www.guysandstthomas.nhs.uk/RackId",
+                "value": "RJ1-RAX01-9449307555",
+                "assigner": {
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                        "value": "RJ1"
+                    }
+                }
+            }
+        },
+        {
+            "type": {
+                "coding": [
+                    {
+                        "system": "https://fhir.nhs.uk/CodeSystem/AdditionalInfoTypeGenomics",
+                        "code": "Specimen",
                         "display": "Specimen"
                     }
                 ]

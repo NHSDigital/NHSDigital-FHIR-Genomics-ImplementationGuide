@@ -6,9 +6,9 @@
       "reference": "ServiceRequest-NonWGSTestOrderForm-FatherOfFayMutlow-Example"
     }
   ],
-  "meta":{
-    "versionId":"2",
-    "lastUpdated":"2023-10-06T09:00:00Z"
+  "meta": {
+    "versionId": "2",
+    "lastUpdated": "2023-10-06T09:00:00Z"
   },
   "extension": [
     {
@@ -17,8 +17,8 @@
         "coding": [
           {
             "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory",
-            "code": "nhs",
-            "display": "NHS"
+            "code": "nhs-england",
+            "display": "NHS England"
           }
         ]
       }
@@ -43,17 +43,19 @@
       {
         "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
         "code": "R134",
-        "display": "Familial Hypercholesterolaemia"
+        "display": "Familial Hypercholesterolaemia",
+        "version": "7"
       }
     ]
   },
-  "orderDetail":[
+  "orderDetail": [
     {
       "coding": [
         {
           "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
           "code": "R242.1",
-          "display": "Predictive testing for known familial mutation(s)"
+          "display": "Predictive testing for known familial mutation(s)",
+          "version": "7"
         }
       ]
     }
@@ -73,9 +75,9 @@
     {
       "coding": [
         {
-          "system": "http://snomed.info/sct",
-          "code": "473145005",
-          "display": "Possible familial hypercholesterolemia"
+          "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
+          "code": "predictive",
+          "display": "Predictive"
         }
       ]
     }
@@ -88,13 +90,10 @@
       "reference": "Observation/Observation-NoPregnancy-Example"
     },
     {
-      "reference": "Observation/Observation-DiseaseStatus-Example"
+      "reference": "Condition/Condition-MonogenicHearingLoss-Example"
     },
     {
       "reference": "Observation/Observation-NonConsanguinousUnion-Example"
-    },
-    {
-      "reference": "FamilyMemberHistory/FamilyMemberHistory-NonConsanguinousUnion-Example"
     },
     {
       "reference": "Observation/Observation-NoTransplant-Example"
@@ -123,11 +122,6 @@
     },
     {
       "text": "Father tested positive for FH. Confirmation required if daughter is postive for FH"
-    }
-  ],
-  "relevantHistory": [
-    {
-      "reference": "Provenance/Provenance-ServiceRequestUpdate-Example"
     }
   ]
 }

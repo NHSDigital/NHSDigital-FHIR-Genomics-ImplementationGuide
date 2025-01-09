@@ -139,7 +139,6 @@
             "family": "Seo"
           }
         ],
-        "gender": "female",
         "birthDate": "2011-01-26",
         "deceasedBoolean": false,
         "address": [
@@ -229,8 +228,8 @@
               "coding": [
                 {
                   "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory",
-                  "code": "nhs",
-                  "display": "NHS"
+                  "code": "nhs-england",
+                  "display": "NHS England"
                 }
               ]
             }
@@ -254,7 +253,8 @@
             {
               "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
               "code": "R387",
-              "display": "Re-analysis"
+              "display": "Re-analysis",
+              "version": "7"
             }
           ]
         },
@@ -264,7 +264,8 @@
               {
                 "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
                 "code": "R59",
-                "display": "Early onset or syndromic epilepsy"
+                "display": "Early onset or syndromic epilepsy",
+                "version": "7"
               }
             ]
           }
@@ -284,9 +285,9 @@
           {
             "coding": [
               {
-                "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
-                "code": "719641000000101",
-                "display": "Data analysis (qualifier value)"
+                "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
+                "code": "new-treatment-clinical-management",
+                "display": "New Treatment/Clinical Management"
               }
             ],
             "text": "Significant new treatment and or clinical management implication for the patient.Please provide details/treatment for management of epilepsy"
@@ -297,16 +298,13 @@
             "reference": "Observation/Observation-GenomicEthnicity-Example"
           },
           {
-            "reference": "Observation/Observation-DiseaseStatus-Example"
+            "reference": "Condition/Condition-MonogenicHearingLoss-Example"
           },
           {
             "reference": "Observation/Observation-NoPregnancy-Example"
           },
           {
             "reference": "Observation/Observation-NonConsanguinousUnion-Example"
-          },
-          {
-            "reference": "FamilyMemberHistory/FamilyMemberHistory-NonConsanguinousUnion-Example"
           },
           {
             "reference": "Observation/Observation-NoBoneMarrowTransplant-Example"
@@ -344,8 +342,8 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "77386006",
-              "display": "Pregnancy"
+              "code": "60001007",
+              "display": "Not pregnant (finding)"
             }
           ]
         },
@@ -356,8 +354,7 @@
             "value": "9449307559"
           }
         },
-        "effectiveDateTime": "2023-09-06",
-        "valueBoolean": false
+        "effectiveDateTime": "2023-09-06"
       },
       "request": {
         "method": "POST",
@@ -365,17 +362,35 @@
       }
     },
     {
-      "fullUrl": "http://example.org/fhir/Observation/Observation-DiseaseStatus-Example",
+      "fullUrl": "http://example.org/fhir/Condition/Condition-MonogenicHearingLoss-Example",
       "resource": {
-        "resourceType": "Observation",
-        "id": "Observation-DiseaseStatus-Example",
-        "status": "final",
+        "resourceType": "Condition",
+        "id": "Condition-MonogenicHearingLoss-Example",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "inactive",
+              "display": "inactive"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "provisional",
+              "display": "Provisional"
+            }
+          ]
+        },
         "code": {
           "coding": [
             {
               "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
               "code": "R67.2",
-              "display": "Monogenic hearing loss"
+              "display": "Monogenic hearing loss",
+              "version": "7"
             }
           ]
         },
@@ -385,57 +400,11 @@
             "system": "https://fhir.nhs.uk/Id/nhs-number",
             "value": "9449307559"
           }
-        },
-        "effectiveDateTime": "2023-09-06",
-        "valueCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "103310001",
-              "display": "Patient not affected"
-            }
-          ]
         }
       },
       "request": {
         "method": "POST",
-        "url": "Observation"
-      }
-    },
-    {
-      "fullUrl": "http://example.org/fhir/FamilyMemberHistory/FamilyMemberHistory-NonConsanguinousUnion-Example",
-      "resource": {
-        "resourceType": "FamilyMemberHistory",
-        "id": "FamilyMemberHistory-NonConsanguinousUnion-Example",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/family-member-history-genetics-observation",
-            "valueReference": {
-              "reference": "Observation/Observation-NonConsanguinousUnion-Example"
-            }
-          }
-        ],
-        "status": "completed",
-        "patient": {
-          "reference": "Patient/Patient-DemeizaSeo-Example",
-          "identifier": {
-            "system": "https://fhir.nhs.uk/Id/nhs-number",
-            "value": "9449307559"
-          }
-        },
-        "relationship": {
-          "coding": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
-              "code": "PRN",
-              "display": "parent"
-            }
-          ]
-        }
-      },
-      "request": {
-        "method": "POST",
-        "url": "FamilyMemberHistory"
+        "url": "Condition"
       }
     },
     {
@@ -448,8 +417,8 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "842009",
-              "display": "Consanguinity"
+              "code": "160475008",
+              "display": "Family history: Consanguinity (situation)"
             }
           ]
         },
@@ -478,8 +447,17 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "23719005",
-              "display": "Transplantation of bone marrow"
+              "code": "416128008",
+              "display": "No history of procedure (situation)"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "445715009",
+              "display": "Blood and marrow transplantation (qualifier value)"
             }
           ]
         },
@@ -490,8 +468,7 @@
             "value": "9449307559"
           }
         },
-        "effectiveDateTime": "2023-08-05",
-        "valueBoolean": false
+        "effectiveDateTime": "2023-08-05"
       },
       "request": {
         "method": "POST",
@@ -508,8 +485,17 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "5447007",
-              "display": "Transfusion"
+              "code": "416128008",
+              "display": "No history of procedure (situation)"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "303955003",
+              "display": "Transfusion - action (qualifier value)"
             }
           ]
         },
@@ -520,8 +506,7 @@
             "value": "9449307559"
           }
         },
-        "effectiveDateTime": "2023-09-06",
-        "valueBoolean": false
+        "effectiveDateTime": "2023-09-06"
       },
       "request": {
         "method": "POST",

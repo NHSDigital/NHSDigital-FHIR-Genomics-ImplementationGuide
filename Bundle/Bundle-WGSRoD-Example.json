@@ -37,11 +37,21 @@
 						"authority": "https://www.england.nhs.uk",
 						"uri": "https://www.england.nhs.uk/publication/nhs-genomic-medicine-service-record-of-discussion-form"
 					}
-				]
+				],
+        "provision": {
+          "data": [
+            {
+              "meaning": "instance",
+              "reference": { 
+                "reference":  "ServiceRequest/ServiceRequest-WGSTestOrderForm-Example"
+              }
+            }
+          ]
+        }
 			},
 			"request": {
-        "method": "POST",
-        "url": "Consent"
+        "method": "PUT",
+        "url": "Consent/Consent-RoDToFollow-Example"
       }
 		},
 		{
@@ -203,7 +213,7 @@
 											{
 												"valueCoding": {
 													"system": "https://fhir.nhs.uk/CodeSystem/patient-choice-category-genomics",
-													"code": "AdultOwnChoice",
+													"code": "adult-own-choice",
 													"display": "Adult(made their own choice)"
 												}
 											}

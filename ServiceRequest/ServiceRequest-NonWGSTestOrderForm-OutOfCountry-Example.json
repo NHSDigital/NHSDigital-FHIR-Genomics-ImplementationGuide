@@ -8,8 +8,8 @@
         "coding": [
           {
             "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory",
-            "code": "nhs",
-            "display": "NHS"
+            "code": "nhs-england",
+            "display": "NHS England"
           }
         ]
       }
@@ -40,7 +40,8 @@
       {
         "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
         "code": "M3.2",
-        "display": "Breast Cancer (Oncotype DX)"
+        "display": "Breast Cancer (Oncotype DX)",
+        "version": "9"
       }
     ]
   },
@@ -59,9 +60,9 @@
     {
       "coding": [
         {
-          "system": "http://snomed.info/sct",
-          "code": "103693007",
-          "display": "Diagnostic procedure"
+          "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
+          "code": "diagnostic",
+          "display": "Diagnostic"
         }
       ]
     }
@@ -76,7 +77,6 @@
     }
   ],
   "supportingInfo": [
-
     {
       "reference": "Observation/Observation-CellularityKayBurbridge-Example"
     },

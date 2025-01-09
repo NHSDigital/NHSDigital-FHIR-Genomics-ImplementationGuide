@@ -2,12 +2,12 @@
     "resourceType": "Task",
     "id": "Task-NonWGSRareDiseaseTestOrderAccepted-SufficientSample-Example",
     "status": "accepted",
-    "statusReason": {
+    "businessStatus": {
         "coding": [
             {
-                "system": "https://fhir.nhs.uk/CodeSystem/task-statusReason-genomics",
-                "code": "SpecimenReceived",
-                "display": "Specimen Received"
+                "system": "https://fhir.nhs.uk/CodeSystem/business-status-genomics",
+                "code": "sample-received",
+                "display": "Sample Received"
             }
         ]
     },
@@ -17,8 +17,8 @@
         "coding": [
             {
                 "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
-                "code": "ProcessGenomicTestRequest",
-                "display": "Process Genomic Test Request"
+                "code": "sample-preparation",
+                "display": "Sample Preparation"
             }
         ]
     },
@@ -49,13 +49,28 @@
             "text": "Optional Free Text field to record any additional details"
         }
     ],
-    "output": [
+    "input": [
         {
             "type": {
-                "coding":  [
+                "coding": [
                     {
-                        "system": "http://snomed.info/sct",
-                        "code": "123038009",
+                        "system": "https://fhir.nhs.uk/CodeSystem/AdditionalInfoTypeGenomics",
+                        "code": "ConsignmentNumber",
+                        "display": "Consignment Number"
+                    }
+                ]
+            },
+            "valueIdentifier": {
+                "system": "https://www.royalmail.com/track-your-item#/",
+                "value": "HZ970705811GB"
+            }
+        },
+        {
+            "type": {
+                "coding": [
+                    {
+                        "system": "https://fhir.nhs.uk/CodeSystem/AdditionalInfoTypeGenomics",
+                        "code": "Specimen",
                         "display": "Specimen"
                     }
                 ]

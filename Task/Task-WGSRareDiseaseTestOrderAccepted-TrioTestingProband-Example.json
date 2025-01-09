@@ -2,12 +2,12 @@
   "resourceType": "Task",
   "id": "Task-WGSRareDiseaseTestOrderAccepted-TrioTestingProband-Example",
   "status": "accepted",
-  "statusReason": {
+  "businessStatus": {
     "coding": [
       {
-        "system": "https://fhir.nhs.uk/CodeSystem/task-statusReason-genomics",
-        "code": "SpecimenReceived",
-        "display": "Specimen Received"
+        "system": "https://fhir.nhs.uk/CodeSystem/business-status-genomics",
+        "code": "sample-received",
+        "display": "Sample Received"
       }
     ]
   },
@@ -17,8 +17,8 @@
     "coding": [
       {
         "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
-        "code": "ProcessGenomicTestRequest",
-        "display": "Process Genomic Test Requestt"
+        "code": "request-sample-alignment",
+        "display": "Request & Sample Alignment"
       }
     ]
   },
@@ -49,90 +49,34 @@
       "text": "Optional Free Text field to record any additional details"
     }
   ],
-    "input": [
-      {
-        "type": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "445295009",
-              "display": "Blood specimen with EDTA"
-            }
-          ]
-        },
-        "valueReference": {
-          "reference": "Specimen/Specimen-PheobeSmitham-Example"
-        }
+  "input": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "https://fhir.nhs.uk/CodeSystem/AdditionalInfoTypeGenomics",
+            "code": "Specimen",
+            "display": "Specimen"
+          }
+        ]
       },
-      {
-        "type": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "445295009",
-              "display": "Blood specimen with EDTA"
-            }
-          ]
-        },
-        "valueReference": {
-          "reference": "Specimen/Specimen-PheobeSmithamFather-Example"
-        }
-      },
-      {
-        "type": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "445295009",
-              "display": "Blood specimen with EDTA"
-            }
-          ]
-        },
-        "valueReference": {
-          "reference": "Specimen/Specimen-PheobeSmithamMother-Example"
-        }
-      },
-      {
-        "type": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "886971000000109",
-              "display": "Consent for treatment record"
-            }
-          ]
-        },
-        "valueReference": {
-          "reference": "Consent/Consent-RoD-PheobeSmitham-Example"
-        }
-      },
-      {
-        "type": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "886971000000109",
-              "display": "Consent for treatment record"
-            }
-          ]
-        },
-        "valueReference": {
-          "reference": "Consent/Consent-RoD-PheobeSmithamFather-Example"
-        }
-      },
-      {
-        "type": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "886971000000109",
-              "display": "Consent for treatment record"
-            }
-          ]
-        },
-        "valueReference": {
-          "reference": "Consent/Consent-RoD-PheobeSmithamMother-Example"
-        }
+      "valueReference": {
+        "reference": "Specimen/Specimen-PheobeSmitham-Example"
       }
-    ]
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "https://fhir.nhs.uk/CodeSystem/AdditionalInfoTypeGenomics",
+            "code": "Consent",
+            "display": "Consent"
+          }
+        ]
+      },
+      "valueReference": {
+        "reference": "Consent/Consent-RoD-PheobeSmitham-Example"
+      }
+    }
+  ]
 }

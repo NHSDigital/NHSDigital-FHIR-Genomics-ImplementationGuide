@@ -6,8 +6,8 @@
     "coding": [
       { 
         "system": "https://fhir.nhs.uk/CodeSystem/business-status-genomics", 
-        "code": "SpecimenReceived", 
-        "display": "Specimen Received"
+        "code": "sample-received", 
+        "display": "Sample Received"
       }
     ]
   },
@@ -17,7 +17,7 @@
     "coding": [
       { 
         "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics", 
-        "code": "SamplePreparation", 
+        "code": "sample-preparation", 
         "display": "Sample Preparation"
       }
     ]
@@ -49,8 +49,8 @@
       "type": {
         "coding":  [
           {
-            "system": "http://snomed.info/sct",
-            "code": "123038009",
+            "system": "https://fhir.nhs.uk/CodeSystem/AdditionalInfoTypeGenomics",
+            "code": "Specimen",
             "display": "Specimen"
           }
         ]

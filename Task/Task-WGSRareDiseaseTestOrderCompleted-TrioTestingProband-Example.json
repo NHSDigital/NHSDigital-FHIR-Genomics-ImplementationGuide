@@ -8,7 +8,7 @@
     "coding": [
       {
         "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
-        "code": "DistributeReport",
+        "code": "distribute-report",
         "display": "Distribute Report"
       }
     ]
@@ -40,20 +40,20 @@
       "text": "Optional Free Text field to record any additional details"
     }
   ],
-      "output": [
-        {
-          "type": {
-            "coding": [
-              {
-                "system": "http://snomed.info/sct",
-                "code": "1054161000000101",
-                "display": "Genetic report (record artifact)"
-              }
-            ]
-          },
-          "valueReference": {
-            "reference": "DiagnosticReport/DiagnosticReport-PhoebeSmithGeneticReport-Example"
+  "input": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "https://fhir.nhs.uk/CodeSystem/AdditionalInfoTypeGenomics",
+            "code": "DiagnosticReport",
+            "display": "DiagnosticReport"
           }
-        }
-      ]
+        ]
+      },
+      "valueReference": {
+        "reference": "DiagnosticReport/DiagnosticReport-PhoebeSmithGeneticReport-Example"
+      }
+    }
+  ]
 }

@@ -1,13 +1,8 @@
 {
   "resourceType": "CodeSystem",
+  "id": "task-code-genomics",
   "url": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
-  "identifier": [
-    {
-      "system": "https://fhir.nhs.uk/identifier/CodeSystem",
-      "value": "task-code-genomics"
-    }
-  ],
-  "version": "0.2.0",
+  "version": "0.3.0",
   "name": "TaskCodeGenomics",
   "title": "Task Code Genomics",
   "status": "draft",
@@ -26,12 +21,12 @@
     }
   ],
   "description": "A set of codes use to identify the type of task for Genomic Order Management",
-  "copyright": "Copyright © 2023 NHS England",
+  "copyright": "Copyright © 2023+ NHS England Licensed under the Apache License, Version 2.0 (the \\\"License\\\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \\\"AS IS\\\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html.",
   "caseSensitive": true,
   "content": "complete",
   "concept": [
     {
-      "code": "ProcessGenomicTestRequest",
+      "code": "process-genomic-test-request",
       "display": "Process Genomic Test Request",
       "designation": [
         {
@@ -45,7 +40,7 @@
       ]
     },
     {
-      "code": "RequestSampleAlignment",
+      "code": "request-sample-alignment",
       "display": "Request & Sample Alignment",
       "designation": [
         {
@@ -59,7 +54,7 @@
       ]
     },
     {
-      "code": "SamplePreparation",
+      "code": "sample-preparation",
       "display": "Sample Preparation",
       "designation": [
         {
@@ -73,7 +68,7 @@
       ]
     },
     {
-      "code": "SampleProcessing",
+      "code": "sample-processing",
       "display": "Sample Processing",
       "designation": [
         {
@@ -87,7 +82,7 @@
       ]
     },
     {
-      "code": "GeneticGenomicDataProcessing",
+      "code": "genetic-genomic-data-processing",
       "display": "Genetic/Genomic Data Processing",
       "designation": [
         {
@@ -101,7 +96,7 @@
       ]
     },
     {
-      "code": "Interpretation",
+      "code": "interpretation",
       "display": "Interpretation",
       "designation": [
         {
@@ -115,7 +110,7 @@
       ]
     },
     {
-      "code": "ProduceInterimReport",
+      "code": "produce-interim-report",
       "display": "Produce Interim Report",
       "designation": [
         {
@@ -129,7 +124,7 @@
       ]
     },
     {
-      "code": "GenomicMDT",
+      "code": "genomic-mdt",
       "display": "Genomic MDT",
       "designation": [
         {
@@ -143,7 +138,7 @@
       ]
     },
     {
-      "code": "ProduceFinalReport",
+      "code": "produce-final-report",
       "display": "Produce Final Report",
       "designation": [
         {
@@ -157,7 +152,7 @@
       ]
     },
     {
-      "code": "DistributeReport",
+      "code": "distribute-report",
       "display": "Distribute Report",
       "designation": [
         {

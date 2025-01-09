@@ -12,8 +12,8 @@
         "coding": [
           {
             "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory",
-            "code": "nhs",
-            "display": "NHS"
+            "code": "nhs-england",
+            "display": "NHS England"
           }
         ]
       }
@@ -38,7 +38,8 @@
       {
         "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
         "code": "M91.4",
-        "display": "Acute Lymphoblastic Leukaemia (FISH)"
+        "display": "Acute Lymphoblastic Leukaemia (FISH)",
+        "version": "9"
       }
     ]
   },
@@ -57,9 +58,9 @@
     {
       "coding": [
         {
-          "system": "http://snomed.info/sct",
-          "code": "441308009",
-          "display": "New diagnosis"
+          "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
+          "code": "diagnostic",
+          "display": "Diagnostic"
         }
       ]
     }
@@ -95,9 +96,6 @@
       "reference": "Observation/Observation-Platelets-Example"
     },
     {
-      "reference": "Observation/Observation-RiskOfInfection-Example"
-    },
-    {
       "reference": "Observation/Observation-WhiteBloodCell-Example"
     },
     {
@@ -115,11 +113,6 @@
     },
     {
       "text": "No Previous Relevant Test Report"
-    }
-  ],
-  "relevantHistory": [
-    {
-      "reference": "Provenance/Provenance-ServiceRequest-NonWGSTestOrderForm-HaemOncology-Example"
     }
   ]
 }

@@ -13,8 +13,8 @@
         "coding": [
           {
             "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory",
-            "code": "nhs",
-            "display": "NHS"
+            "code": "nhs-england",
+            "display": "NHS England"
           }
         ]
       }
@@ -38,7 +38,8 @@
       {
         "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
         "code": "R442",
-        "display": "Variant Re-interpretation"
+        "display": "Variant Re-interpretation",
+        "version": "7"
       }
     ]
   },
@@ -48,7 +49,17 @@
         {
           "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
           "code": "R59",
-          "display": "Early onset or syndromic epilepsy"
+          "display": "Early onset or syndromic epilepsy",
+          "version": "7"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "https://fhir.nhs.uk/CodeSystem/types-of-reanalysistest-genomics",
+          "code": "original-gene-panels",
+          "display": "Original Gene Panels"
         }
       ]
     }
@@ -68,8 +79,8 @@
     {
       "coding": [
         {
-          "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
-          "code": "261004008",
+          "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
+          "code": "diagnostic",
           "display": "Diagnostic"
         }
       ]
@@ -80,16 +91,13 @@
       "reference": "Observation/Observation-GenomicEthnicity-Example"
     },
     {
-      "reference": "Observation/Observation-DiseaseStatus-Example"
+      "reference": "Condition/Condition-MonogenicHearingLoss-Example"
     },
     {
       "reference": "Observation/Observation-NoPregnancy-Example"
     },
     {
       "reference": "Observation/Observation-NonConsanguinousUnion-Example"
-    },
-    {
-      "reference": "FamilyMemberHistory/FamilyMemberHistory-NonConsanguinousUnion-Example"
     },
     {
       "reference": "Observation/Observation-NoBoneMarrowTransplant-Example"

@@ -8,8 +8,8 @@
 				"coding": [
 					{
 						"system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory",
-						"code": "nhs",
-						"display": "NHS"
+						"code": "nhs-england",
+						"display": "NHS England"
 					}
 				]
 			}
@@ -40,7 +40,8 @@
 			{
 				"system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
 				"code": "R193.4",
-				"display": "Cystic renal disease"
+				"display": "Cystic renal disease",
+        "version": "7"
 			}
 		]
 	},
@@ -59,9 +60,9 @@
 		{
 			"coding": [
 				{
-					"system": "http://snomed.info/sct",
-					"code": "103693007",
-					"display": "Diagnostic procedure"
+					"system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
+					"code": "diagnostic",
+					"display": "Diagnostic"
 				}
 			]
 		}
@@ -71,13 +72,10 @@
 			"reference": "Observation/Observation-GenomicEthnicity-Example"
 		},
 		{
-			"reference": "Observation/Observation-DiseaseStatus-Example"
+			"reference": "Condition/Condition-MonogenicHearingLoss-Example"
 		},
 		{
 			"reference": "Observation/Observation-NoPregnancy-Example"
-		},
-		{
-			"reference": "FamilyMemberHistory/FamilyMemberHistory-NonConsanguinousUnion-Example"
 		},
 		{
 			"reference": "Observation/Observation-NoBoneMarrowTransplant-Example"

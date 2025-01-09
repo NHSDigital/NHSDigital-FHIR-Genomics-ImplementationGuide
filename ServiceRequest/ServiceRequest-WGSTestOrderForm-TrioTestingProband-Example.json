@@ -20,8 +20,8 @@
         "coding": [
           {
             "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory",
-            "code": "nhs",
-            "display": "NHS"
+            "code": "nhs-england",
+            "display": "NHS England"
           }
         ]
       }
@@ -46,7 +46,8 @@
       {
         "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
         "code": "R98.2",
-        "display": "Likely inborn error of metabolism"
+        "display": "Likely inborn error of metabolism",
+        "version": "7"
       }
     ],
     "text": "This is a Trio Testing, comprising 3 family members with their respective specimen`s & Record Of Discussion`s"
@@ -66,11 +67,16 @@
     {
       "coding": [
         {
-          "system": "http://snomed.info/sct",
-          "code": "103693007",
-          "display": "Diagnostic procedure"
+          "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
+          "code": "diagnostic",
+          "display": "Diagnostic"
         }
       ]
+    }
+  ],
+  "reasonReference": [
+    {
+      "reference": "Condition/Condition-InbornErrorOfMetabolism-Example"
     }
   ],
   "performer": [
@@ -83,13 +89,10 @@
   ],
   "supportingInfo": [
     {
-      "reference": "Observation/Observation-GenomicEthnicity-Example"
+      "reference": "Observation/Observation-AutisticBehaviour-Example"
     },
     {
-      "reference": "Observation/Observation-NoPregnancy-Example"
-    },
-    {
-      "reference": "Observation/Observation-DiseaseStatus-Example"
+      "reference": "Observation/Observation-DelayedSpeechLanguageDevt-Example"
     },
     {
       "reference": "Observation/Observation-DiseasePenetrancePheobeSmitham-Example"
@@ -98,58 +101,79 @@
       "reference": "Observation/Observation-IntellectualDisabilityProfound-Example"
     },
     {
-      "reference": "Observation/Observation-IntellectualDisabilityMild-Example"
-    },
-    {
-      "reference": "Observation/Observation-AutisticBehaviour-Example"
-    },
-    {
-      "reference": "Observation/Observation-DelayedSpeech-Example"
-    },
-    {
       "reference": "Observation/Observation-NonConsanguinousUnionProband-Example"
-    },
-    {
-      "reference": "Observation/Observation-NonConsanguinousUnionProbandFather-Example"
-    },
-    {
-      "reference": "Observation/Observation-NonConsanguinousUnionMother-Example"
-    },
-    {
-      "reference": "FamilyMemberHistory/FamilyMemberHistory-NonConsanguinousUnion-Example"
-    },
-    {
-      "reference": "Observation/Observation-NoBoneMarrowTransplant-Example"
-    },
-    {
-      "reference": "Observation/Observation-NoBoneMarrowTransplantProbandFather-Example"
-    },
-    {
-      "reference": "Observation/Observation-NoBoneMarrowTransplantProbandMother-Example"
-    },
-    {
-      "reference": "Observation/Observation-NoTransfusion-Example"
-    },
-    {
-      "reference": "Observation/Observation-NoTransfusionProbandFather-Example"
-    },
-    {
-      "reference": "Observation/Observation-NoTransfusionProbandMother-Example"
     },
     {
       "reference": "Specimen/Specimen-PheobeSmitham-Example"
     },
     {
-      "reference": "Specimen/Specimen-PheobeSmithamFather-Example"
+      "reference": "Observation/Observation-GenomicEthnicity-Example"
+    },
+    {
+      "reference": "Observation/Observation-NoPregnancy-Example"
+    },
+    {
+      "reference": "Condition/Condition-MonogenicHearingLoss-Example"
+    },
+    {
+      "reference": "Observation/Observation-NoBoneMarrowTransplant-Example"
+    },
+    {
+      "reference": "Observation/Observation-NoTransfusion-Example"
+    },
+    {
+      "reference": "Patient/Patient-PheobeSmithamMother-Example"
+    },
+    {
+      "reference": "RelatedPerson/RelatedPerson-AliceSmithamProbandMother-Example"
     },
     {
       "reference": "Specimen/Specimen-PheobeSmithamMother-Example"
     },
     {
+      "reference": "Observation/Observation-NonConsanguinousUnionMother-Example"
+    },
+    {
+      "reference": "Observation/Observation-NoTransfusionProbandMother-Example"
+    },
+    {
+      "reference": "Observation/Observation-NoBoneMarrowTransplantProbandMother-Example"
+    },
+    {
+      "reference": "Patient/Patient-PheobeSmithamFather-Example"
+    },
+    {
+      "reference": "RelatedPerson/RelatedPerson-JamesLawrenceProbandFather-Example"
+    },
+    {
+      "reference": "Observation/Observation-NonConsanguinousUnionProbandFather-Example"
+    },
+    {
+      "reference": "Observation/Observation-NoTransfusionProbandFather-Example"
+    },
+    {
+      "reference": "Observation/Observation-NoBoneMarrowTransplantProbandFather-Example"
+    },
+    {
+      "reference": "Observation/Observation-IntellectualDisabilityMild-Example"
+    },
+    {
       "reference": "Consent/Consent-RoD-PheobeSmitham-Example"
     },
     {
+      "reference": "Consent/Consent-RoD-PheobeSmithamYoungPersonAssentForm-Example"
+    },
+    {
       "reference": "Consent/Consent-RoD-PheobeSmithamMother-Example"
+    },
+    {
+      "reference": "QuestionnaireResponse/QuestionnaireResponse-RoD-PheobeSmithamCDForn-Example"
+    },
+    {
+      "reference": "QuestionnaireResponse/QuestionnaireResponse-RoD-PheobeSmithamYPAForm-Example"
+    },
+    {
+      "reference": "QuestionnaireResponse/QuestionnaireResponse-RoD-PheobeSmithamMother-Example"
     }
   ],
   "note": [
