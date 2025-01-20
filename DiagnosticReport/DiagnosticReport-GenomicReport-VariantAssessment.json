@@ -17,18 +17,16 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact",
       "valueRelatedArtifact": {
-                "type": "citation",
-                "display": "Johnson et al 2012 (PMID22740598)"
-              }
-            
+        "type": "citation",
+        "display": "Johnson et al 2012 (PMID22740598)"
+      }
     },
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact",
       "valueRelatedArtifact": {
-                "type": "citation",
-                "display": "Foley et al 2014 (PMID22740598)"
-              }
-            
+        "type": "citation",
+        "display": "Foley et al 2014 (PMID22740598)"
+      }
     },
     {
       "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-report-note",
@@ -46,7 +44,7 @@
             }
           }
         ],
-        "text": "This test was developed and its performance determined by this laboratory. It has not been cleared or approved by UK Food and Drug Administration.\nSince FDA Approval is not required for clinical use of this test, this laboratory has established and validated the test's accuracy and precision,\npursuant to the requirement of CLIA '88. This laboratory is licensed and/or accredited under CLIA and CAP (CAP# xxxxxxx / CLIA# xxxxxxxxxx)."
+        "text": "Proband whole genome sequencing by the 100,000 Genomics Project with analysis of the PanelApp Paediatric motor neuronopathies (version 1.6) gene panel followed by in-house Sanger sequencing confirmation. Please note that the sensitivity of this test is limited by the types of detectable pathogenic variants, regions of low read depth coverage and incomplete ascertainment of disease-gene associations. Further information including read depth coverage is available on request. *Variants are classified using the ACMG/AMP guidelines (Richards et al 2015 PMID25741868)."
       }
     }
   ],
@@ -77,8 +75,8 @@
   "subject": {
     "reference": "Patient/Patient-PheobeSmitham-Example"
   },
-  "effectiveDateTime": "2023-09-16T00:00:00-05:00",
-  "issued": "2023-10-16T00:00:00-05:00",
+  "effectiveDateTime": "2023-10-16T00:00:00-05:00",
+  "issued": "2023-09-16T00:00:00-05:00",
   "performer": [
     {
       "identifier": {
@@ -106,6 +104,16 @@
           "display": "Positive"
         }
       ]
+    }
+  ],
+  "presentedForm": [
+    {
+      "contentType": "application/pdf",
+      "language": "en-GB",
+      "url": "https://cts5j3.axshare.com/?id=mhxwul&p=final_report_issued_test_complete&g=1",
+      "size": 43272,
+      "title": "Genomic Report for Pheobe Smitham",
+      "creation": "2023-10-16"
     }
   ]
 }

@@ -65,8 +65,8 @@
         "coding": [
           {
             "system": "http://loinc.org",
-            "code": "LA6677-4",
-            "display": "Responsive"
+            "code": "LA9661-5",
+            "display": "Presumed responsive"
           }
         ]
       }
