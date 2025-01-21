@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "Observation-GenomicsVariant-SLC52A2",
+  "id": "Observation-GenomicsVariantSLC52A2",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/variant"
@@ -35,11 +35,6 @@
       {
         "system": "http://loinc.org",
         "code": "69548-6"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "code": "699866005",
-        "display": "Brown-Vialetto-Van Laere syndrome"
       }
     ]
   },
@@ -82,10 +77,66 @@
         "coding": [
           {
             "system": "http://loinc.org",
+            "code": "48004-6"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://hgvs-nomenclature.org/stable/",
+            "code": "NM_024531.4:c.9163>A p.(Gly306Arg)",
+            "display": "NM_024531.4:c.9163>A p.(Gly306Arg)"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "81290-9"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://hgvs-nomenclature.org/stable/",
+            "code": "Chr8:g.1455840683>A",
+            "display": "Chr8:g.1455840683>A"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "81252-9"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://www.sequenceontology.org",
+            "code": "SO:0001583",
+            "display": "missense_variant"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
             "code": "48018-6"
           }
-        ],
-        "text": "SLC52A2"
+        ]
       },
       "valueCodeableConcept": {
         "coding": [
@@ -140,19 +191,6 @@
         "coding": [
           {
             "system": "http://loinc.org",
-            "code": "48001-2"
-          }
-        ]
-      },
-      "valueCodeableConcept": {
-        "text": "Biallelic Pathogenic:SLC52A2 missense variant"
-      }
-    },
-    {
-      "code": {
-        "coding": [
-          {
-            "system": "http://loinc.org",
             "code": "48002-0"
           }
         ]
@@ -164,8 +202,7 @@
             "code": "LA6683-2",
             "display": "Germline"
           }
-        ],
-        "text": "Pathogenic"
+        ]
       }
     }
   ]

@@ -102,6 +102,11 @@
           "system": "http://loinc.org",
           "code": "LA6576-8",
           "display": "Positive"
+        },
+        {
+          "system": "http://snomed.info/sct",
+          "code": "699866005",
+          "display": "Brown-Vialetto-Van Laere syndrome"
         }
       ]
     }
