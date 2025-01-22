@@ -84,7 +84,7 @@
       "valueCodeableConcept": {
         "coding": [
           {
-            "system": "https://hgvs-nomenclature.org/stable/",
+            "system": "http://varnomen.hgvs.org",
             "code": "NM_024531.4:c.9163>A p.(Gly306Arg)",
             "display": "NM_024531.4:c.9163>A p.(Gly306Arg)"
           }
@@ -103,7 +103,7 @@
       "valueCodeableConcept": {
         "coding": [
           {
-            "system": "https://hgvs-nomenclature.org/stable/",
+            "system": "http://varnomen.hgvs.org",
             "code": "Chr8:g.1455840683>A",
             "display": "Chr8:g.1455840683>A"
           }
