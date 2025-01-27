@@ -3,7 +3,8 @@
   "id": "DiagnosticReport-GenomicVariantAssessment-Example",
   "meta": {
     "profile": [
-      "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-report"
+      "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-report",
+      "https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport"
     ]
   },
   "extension": [
@@ -46,21 +47,6 @@
         ],
         "text": "Proband whole genome sequencing by the 100,000 Genomics Project with analysis of the PanelApp Paediatric motor neuronopathies (version 1.6) gene panel followed by in-house Sanger sequencing confirmation. Please note that the sensitivity of this test is limited by the types of detectable pathogenic variants, regions of low read depth coverage and incomplete ascertainment of disease-gene associations. Further information including read depth coverage is available on request. *Variants are classified using the ACMG/AMP guidelines (Richards et al 2015 PMID25741868)."
       }
-    },
-    {
-      "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media",
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media",
-          "valueString": "gdgdg"
-        },
-        {
-          "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media",
-          "valueReference": {
-            "reference": "http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender"
-          }
-        }
-      ]
     }
   ],
   "basedOn": [
@@ -97,6 +83,27 @@
       "identifier": {
         "system": "https://fhir.nhs.uk/Id/ods-organization-code",
         "value": "R0A"
+      }
+    }
+  ],
+  "media": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media.link",
+          "valueReference": {
+            "reference": "DocumentReference/DocumentReference-StructureReporting-Example"
+          }
+        }
+      ],
+      "link": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "valueCode": "unsupported"
+          }
+        ],
+        "display": "unsupported"
       }
     }
   ],
