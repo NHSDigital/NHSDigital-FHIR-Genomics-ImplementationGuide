@@ -88,6 +88,15 @@
   ],
   "media": [
     {
+      "link": {
+        "display": "unsupported",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "valueCode": "unsupported"
+          }
+        ]
+      },
       "extension": [
         {
           "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media.link",
@@ -95,16 +104,7 @@
             "reference": "DocumentReference/DocumentReference-StructureReporting-Example"
           }
         }
-      ],
-      "link": {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
-            "valueCode": "unsupported"
-          }
-        ],
-        "display": "unsupported"
-      }
+      ]
     }
   ],
   "result": [
