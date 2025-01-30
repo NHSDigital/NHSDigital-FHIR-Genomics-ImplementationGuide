@@ -89,7 +89,8 @@
   "media": [
     {
       "link": {
-        "display": "unsupported",
+        "type":"DocumentReference",
+        "display": "Reference to DocumentReferences are not supported within media.link in DiagnosticReport R4 resource",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
