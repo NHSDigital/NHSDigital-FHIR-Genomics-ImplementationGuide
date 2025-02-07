@@ -76,21 +76,15 @@
     }
   ],
   "supportingInfo": [
-   
-   
     {
       "reference": "Observation/Observation-TumorType-Example"
     },
-   
     {
       "reference": "Observation/Observation-PercentageMalignantNuclei-Example"
     },
     {
-      "reference": "BodyStructure/BodyStructure-BodySiteLocationAbdomen-Example"
-    },
-      {
-        "reference": "Consent/Consent-RoDToFollow-Example"
-      }
+      "reference": "Consent/Consent-RoDToFollow-Example"
+    }
   ],
   "specimen": [
     {
