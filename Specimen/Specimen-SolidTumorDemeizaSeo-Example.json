@@ -72,7 +72,7 @@
   ],
   "request": [
     {
-      "reference": "ServiceRequest/ServiceRequest-WGS"
+      "reference": "ServiceRequest/ServiceRequest-WGSTestOrderForm-CancerSolidTumor-Example"
     }
   ]
 }
