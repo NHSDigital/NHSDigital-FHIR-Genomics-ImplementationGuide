@@ -30,6 +30,11 @@
           "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory",
           "code": "cancer-wgs",
           "display": "Cancer - WGS"
+        },
+        {
+          "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
+          "code": "diagnostic",
+          "display": "Diagnostic"
         }
       ]
     }
