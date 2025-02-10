@@ -1,0 +1,1076 @@
+{
+  "resourceType": "Bundle",
+  "id": "Bundle-EULabGenomicReport-Example",
+  "meta": {
+    "profile": [
+      "http://hl7.eu/fhir/laboratory/StructureDefinition/Bundle-eu-lab"
+    ]
+  },
+  "identifier": {
+    "system": "https://fhir.nhs.uk/Id/GMSReport",
+    "value": "c73ece32-b439-40c0-9659-fd51a21deef2"
+  },
+  "type": "document",
+  "timestamp": "2023-10-16T00:00:00-05:00",
+  "entry": [
+    {
+      "fullURL": "https://int.api.service.nhs.uk/genomic-order-management-service/FHIR/R4/Composition/Composition-EULabGenomicReport-Example",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "Composition-EULabGenomicReport-Example",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Composition-eu-lab"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.eu/fhir/StructureDefinition/composition-basedOn-order-or-requisition",
+            "valueReference": {
+              "reference": "ServiceRequest/ServiceRequest-WGSTestOrderFormUpdated-TrioTesting-Example"
+            }
+          },
+          {
+            "url": "http://hl7.eu/fhir/StructureDefinition/information-recipient",
+            "valueReference": {
+              "reference": "PractitionerRole/PractitionerRole-EugeneSmith-Example"
+            }
+          },
+          {
+            "url": "http://hl7.eu/fhir/laboratory/StructureDefinition/composition-diagnosticReportReference",
+            "valueReference": {
+              "reference": "DiagnosticReport/DiagnosticReport-GenomicVariantAssessment-Example"
+            }
+          }
+        ],
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "51969-4",
+              "display": "Genetic analysis report"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "26436-6",
+                "display": "Laboratory studies (set)"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "1236877003",
+                "display": "Genetic pathology"
+              }
+            ]
+          }
+        ],
+        "subject": {
+              "reference": "Patient/Patient-PheobeSmitham-Example"
+        },
+        "author": [
+          {
+            "identifier": {
+              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+              "value": "R0A"
+            }
+          }
+        ],
+        "title": "Example Genomic Laboratory (Single) Report",
+        "section": [
+          {
+            "title": "Therapeutic Implication",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26436-6",
+                  "display": "Laboratory studies (set)"
+                }
+              ]
+            },
+            "entry": {
+              "reference": "Observation/Observation-GenomicTherapeuticImplication-Example"
+            }
+          },
+          {
+            "title": "Genomic Variant",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26436-6",
+                  "display": "Laboratory studies (set)"
+                }
+              ]
+            },
+            "entry": {
+              "reference": "Observation-GenomicsVariantSLC52A2-Example"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullURL": "https://int.api.service.nhs.uk/genomic-order-management-service/FHIR/R4/DiagnosticReport/DiagnosticReport-GenomicVariantAssessment-Example",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "DiagnosticReport-GenomicVariantAssessment-Example",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-report",
+            "https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport",
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/DiagnosticReport-eu-lab"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition",
+            "valueReference": {
+              "reference": "Composition/Composition-EULabGenomicReport-Example"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/recommended-action",
+            "valueReference": {
+              "reference": "Task/Task-FollowupRecommendationReport-Example",
+              "display": "Confirmatory testing recommended"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact",
+            "valueRelatedArtifact": {
+              "type": "citation",
+              "display": "Johnson et al 2012 (PMID22740598)"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact",
+            "valueRelatedArtifact": {
+              "type": "citation",
+              "display": "Foley et al 2014 (PMID22740598)"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-report-note",
+            "valueAnnotation": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/annotation-code",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/coded-annotation-types-cs",
+                        "code": "test-disclaimer"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "Proband whole genome sequencing by the 100,000 Genomics Project with analysis of the PanelApp Paediatric motor neuronopathies (version 1.6) gene panel followed by in-house Sanger sequencing confirmation. Please note that the sensitivity of this test is limited by the types of detectable pathogenic variants, regions of low read depth coverage and incomplete ascertainment of disease-gene associations. Further information including read depth coverage is available on request. *Variants are classified using the ACMG/AMP guidelines (Richards et al 2015 PMID25741868)."
+            }
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/ServiceRequest-WGSTestOrderFormUpdated-TrioTesting-Example"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "GE"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "1236877003",
+                "display": "Genetic pathology"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "51969-4",
+              "display": "Genetic analysis report"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/Patient-PheobeSmitham-Example"
+        },
+        "effectiveDateTime": "2023-10-16T00:00:00-05:00",
+        "issued": "2023-09-16T00:00:00-05:00",
+        "performer": [
+          {
+            "identifier": {
+              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+              "value": "R0A"
+            }
+          }
+        ],
+        "media": [
+          {
+            "link": {
+              "type":"DocumentReference",
+              "display": "Reference to DocumentReferences are not supported within media.link in DiagnosticReport R4 StructureDefinition.",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                  "valueCode": "unsupported"
+                }
+              ]
+            },
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media.link",
+                "valueReference": {
+                  "reference": "DocumentReference/DocumentReference-StructureReporting-Example"
+                }
+              }
+            ]
+          }
+        ],
+        "result": [
+          {
+            "reference": "Observation/Observation-GenomicsVariant-SLC52A2",
+            "display": "Brown-Vialetto-Van Laere syndrome type 2"
+          },
+          {
+            "reference": "Observation/Observation-GenomicTherapeuticImplication-Example"
+          }
+        ],
+        "conclusion": "Pheobe is homozygous for a pathogenic SLC52A2 missense variant (details below) previously reported by Johnson et al 2012 (PMID22740598). Biallelic pathogenic SLC52A2 variants cause autosomal recessive Brown-Vialetto-Van Laere syndrome type 2 (MIM614707).",
+        "conclusionCode": [
+          {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "LA6576-8",
+                "display": "Positive"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "699866005",
+                "display": "Brown-Vialetto-Van Laere syndrome"
+              }
+            ]
+          }
+        ],
+        "presentedForm": [
+          {
+            "contentType": "application/pdf",
+            "language": "en-GB",
+            "url": "https://cts5j3.axshare.com/?id=mhxwul&p=final_report_issued_test_complete&g=1",
+            "size": 43272,
+            "title": "Genomic Report for Pheobe Smitham",
+            "creation": "2023-10-16"
+          }
+        ]
+      }
+    },
+    {
+      "fullURL": "https://int.api.service.nhs.uk/genomic-order-management-service/FHIR/R4/Patient/Patient-PheobeSmitham-Example",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "Patient-PheobeSmitham-Example",
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BirthSex",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender",
+                  "code": "F",
+                  "display": "Female"
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EthnicCategory",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland",
+                  "code": "A",
+                  "display": "White - British"
+                }
+              ]
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449307539",
+            "extension": [
+              {
+                "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatusEngland",
+                      "version": "2.2.0",
+                      "code": "01",
+                      "display": "Number present and verified"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "system": "urn:oid:2.16.840.1.113883.2.1.3.2.4.18.24",
+            "value": "RR12764",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "RR8"
+              }
+            }
+          }
+        ],
+        "name": [
+          {
+            "given": [
+              "Pheobe"
+            ],
+            "family": "Smitham"
+          }
+        ],
+        "birthDate": "2013-09-27",
+        "deceasedBoolean": true,
+        "address": [
+          {
+            "line": [
+              "Union Mills",
+              "9, Dewsbury Rd",
+              "Leeds"
+            ],
+            "postalCode": "LS11 5DD"
+          }
+        ],
+        "generalPractitioner": [
+          {
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+              "value": "G9999999"
+            },
+            "display": "Dr. Aero Smith"
+          },
+          {
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/ODS-code",
+              "value": "TP123"
+            },
+            "display": "Test GP Practice"
+          }
+        ],
+        "link": [
+          {
+            "other": {
+              "reference": "https://api.service.nhs.uk/personal-demographics/FHIR/R4/Patient/9449307539"
+            },
+            "type": "seealso"
+          }
+        ]
+      }
+    },
+    {
+      "fullURL": "https://int.api.service.nhs.uk/genomic-order-management-service/FHIR/R4/Observation/Observation-GenomicTherapeuticImplication-Example",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "Observation-GenomicTherapeuticImplication-Example",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/therapeutic-implication"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "GE"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+              "code": "therapeutic-implication"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/Patient-PheobeSmitham-Example"
+        },
+        "effectiveDateTime": "2023-09-16",
+        "performer": [
+          {
+            "identifier": {
+              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+              "value": "R0A"
+            }
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "Observation/Observation-GenomicsVariantSLC52A2-Example"
+          }
+        ],
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+                  "code": "therapeutic-implication",
+                  "display": "Therapeutic Implication"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "LA9661-5",
+                  "display": "Presumed responsive"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "51963-7",
+                  "display": "Medication assessed"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "777436008",
+                  "display": "Riboflavin"
+                }
+              ]
+            }
+          }
+        ],
+        "note" : [{
+          "text" : "High dose riboflavin supplementation has been reported to ameliorate the progression of this disorder (Foley et al 2014 PMID22740598)"
+        }]
+      }
+    },
+    {
+      "fullURL": "https://int.api.service.nhs.uk/genomic-order-management-service/FHIR/R4/Observation/Observation-GenomicsVariantSLC52A2-Example",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "Observation-GenomicsVariantSLC52A2-Example",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/variant"
+          ]
+        },
+        "status": "final",
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/ServiceRequest-WGSTestOrderFormUpdated-TrioTesting-Example"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "GE"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "69548-6"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/Patient-PheobeSmitham-Example"
+        },
+        "effectiveDateTime": "2023-09-16",
+        "performer": [
+          {
+            "identifier": {
+              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+              "value": "R0A"
+            }
+          }
+        ],
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LA9633-4",
+              "display": "Present"
+            }
+          ]
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LA26398-0",
+              "display": "Sequencing"
+            }
+          ]
+        },
+        "specimen": {
+          "reference": "Specimen/Specimen-PheobeSmitham-Example"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48004-6"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://varnomen.hgvs.org",
+                  "code": "NM_024531.4:c.9163>A p.(Gly306Arg)"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "81290-9"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://varnomen.hgvs.org",
+                  "code": "Chr8:g.1455840683>A"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "81252-9"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://www.sequenceontology.org",
+                  "code": "SO:0001583",
+                  "display": "missense_variant"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48018-6"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://www.genenames.org/",
+                  "code": "HGNC:30224",
+                  "display": "SLC52A2"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "53034-5"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "LA6705-3",
+                  "display": "homozygous"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "94186-4"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "LA4489-6",
+                  "display": "Unknown"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48002-0"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "LA6683-2",
+                  "display": "Germline"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullURL": "https://int.api.service.nhs.uk/genomic-order-management-service/FHIR/R4/Specimen/Specimen-PheobeSmitham-Example",
+      "resource": {
+        "resourceType": "Specimen",
+        "id": "Specimen-PheobeSmitham-Example",
+          "extension": [
+            {
+              "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-SampleCategory",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-SampleCategory",
+                    "code": "germline",
+                    "display": "Germline"
+                  }
+                ]
+              }
+            }
+          ],
+        "identifier": [
+          {
+            "system": "https://fhir.leedssth.nhs.uk//Id/specimenId",
+            "value": "RGD-69050-P-RR12764"
+          }
+        ],
+        "status": "available",
+        "type": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "445295009",
+              "display": "Blood specimen with EDTA"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/Patient-PheobeSmitham-Example",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449307539"
+          }
+        },
+        "collection": {
+          "collector": {
+            "identifier": {
+              "system": "https://fhir.nhs.uk/Id/sds-user-id",
+              "value": "9999999998"
+            },
+            "display": "Phletobomist-Lois Lane"
+          },
+          "collectedDateTime": "2023-09-17"
+        },
+        "request": [
+          {
+            "reference": "ServiceRequest/ServiceRequest-WGSTestOrderForm-TrioTestingProband-Example"
+          }
+        ]
+      }
+    },
+    {
+      "fullURL": "https://int.api.service.nhs.uk/genomic-order-management-service/FHIR/R4/ServiceRequest/ServiceRequest-WGSTestOrderFormUpdated-TrioTesting-Example",
+      "resource": {
+        "resourceType": "ServiceRequest",
+        "id": "ServiceRequest-WGSTestOrderFormUpdated-TrioTesting-Example",
+        "meta": {
+          "versionId": "2",
+          "lastUpdated": "2023-10-09T09:15:00Z"
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory",
+                  "code": "nhs-england",
+                  "display": "NHS England"
+                }
+              ]
+            }
+          }
+        ],
+        "requisition": {
+          "assigner": {
+            "identifier": {
+              "system": "https://fhir.leedsth.nhs.uk/Id/grouptestId",
+              "value": "RR8F1792"
+            }
+          }
+        },
+        "status": "active",
+        "intent": "order",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory",
+                "code": "rare-disease-wgs",
+                "display": "Rare Disease - WGS"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
+                "code": "diagnostic",
+                "display": "Diagnostic"
+              }
+            ]
+          }
+        ],
+        "priority": "routine",
+        "code": {
+          "coding": [
+            {
+              "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
+              "code": "R98.2",
+              "display": "Likely inborn error of metabolism",
+              "version": "7"
+            }
+          ],
+          "text": "This is a Trio Testing, comprising 3 family members with their respective specimen`s & Record Of Discussion`s"
+        },
+        "subject": {
+          "reference": "Patient/Patient-PheobeSmitham-Example",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449307539"
+          }
+        },
+        "authoredOn": "2023-09-15T15:00:00Z",
+        "requester": {
+          "reference": "PractitionerRole/PractitionerRole-EugeneSmith-Example"
+        },
+        "reasonReference": [
+          {
+            "reference": "Condition/Condition-InbornErrorOfMetabolism-Example"
+          }
+        ],
+        "performer": [
+          {
+            "identifier": {
+              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+              "value": "R0A"
+            }
+          }
+        ],
+        "supportingInfo": [
+          {
+            "reference": "Observation/Observation-AutisticBehaviour-Example"
+          },
+          {
+            "reference": "Observation/Observation-DelayedSpeechLanguageDevt-Example"
+          },
+          {
+            "reference": "Observation/Observation-DiseasePenetrancePheobeSmitham-Example"
+          },
+          {
+            "reference": "Observation/Observation-IntellectualDisabilityProfound-Example"
+          },
+          {
+            "reference": "Observation/Observation-NonConsanguinousUnionProband-Example"
+          },
+          {
+            "reference": "Specimen/Specimen-PheobeSmitham-Example"
+          },
+          {
+            "reference": "Observation/Observation-GenomicEthnicity-Example"
+          },
+          {
+            "reference": "Observation/Observation-NoPregnancy-Example"
+          },
+          {
+            "reference": "Condition/Condition-MonogenicHearingLoss-Example"
+          },
+          {
+            "reference": "Observation/Observation-NoBoneMarrowTransplant-Example"
+          },
+          {
+            "reference": "Observation/Observation-NoTransfusion-Example"
+          },
+          {
+            "reference": "Patient/Patient-PheobeSmithamMother-Example"
+          },
+          {
+            "reference": "RelatedPerson/RelatedPerson-AliceSmithamProbandMother-Example"
+          },
+          {
+            "reference": "Specimen/Specimen-PheobeSmithamMother-Example"
+          },
+          {
+            "reference": "Observation/Observation-NonConsanguinousUnionMother-Example"
+          },
+          {
+            "reference": "Observation/Observation-NoTransfusionProbandMother-Example"
+          },
+          {
+            "reference": "Observation/Observation-NoBoneMarrowTransplantProbandMother-Example"
+          },
+          {
+            "reference": "Patient/Patient-PheobeSmithamFather-Example"
+          },
+          {
+            "reference": "RelatedPerson/RelatedPerson-JamesLawrenceProbandFather-Example"
+          },
+          {
+            "reference": "Observation/Observation-NonConsanguinousUnionProbandFather-Example"
+          },
+          {
+            "reference": "Observation/Observation-NoTransfusionProbandFather-Example"
+          },
+          {
+            "reference": "Observation/Observation-NoBoneMarrowTransplantProbandFather-Example"
+          },
+          {
+            "reference": "Observation/Observation-IntellectualDisabilityMild-Example"
+          },
+          {
+            "reference": "Consent/Consent-RoD-PheobeSmitham-Example"
+          },
+          {
+            "reference": "Consent/Consent-RoD-PheobeSmithamYoungPersonAssentForm-Example"
+          },
+          {
+            "reference": "Consent/Consent-RoD-PheobeSmithamMother-Example"
+          },
+          {
+            "reference": "QuestionnaireResponse/QuestionnaireResponse-RoD-PheobeSmithamCDForn-Example"
+          },
+          {
+            "reference": "QuestionnaireResponse/QuestionnaireResponse-RoD-PheobeSmithamYPAForm-Example"
+          },
+          {
+            "reference": "QuestionnaireResponse/QuestionnaireResponse-RoD-PheobeSmithamMother-Example"
+          },
+          {
+            "reference": "Consent/Consent-RoD-PheobeSmithamFather-Example"
+          },
+          {
+            "reference": "QuestionnaireResponse/QuestionnaireResponse-RoD-PheobeSmithamFather-Example"
+          },
+          {
+            "reference": "Specimen/Specimen-PheobeSmithamFather-Example"
+          }
+        ],
+        "note": [
+          {
+            "text": "No family history of genomic testing"
+          },
+          {
+            "text": "Free text for diagnosis/reason for referral, relevant information including family history, phenotypic details/ HPO Terms/ E.g. Not eligible for R14 or R98. Agreed with testing laboratory at Manchester. Father lives in surrey. Father to have sample taken locally and sent to MFT."
+          }
+        ]
+      }
+    },
+    {
+      "fullURL": "https://int.api.service.nhs.uk/genomic-order-management-service/FHIR/R4/Task/Task-FollowupRecommendationReport-Example",
+      "resource": {
+        "resourceType": "Task",
+        "id": "Task-FollowupRecommendationReport-Example",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/followup-recommendation"
+          ]
+        },
+        "status": "requested",
+        "intent": "proposal",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LA14021-2",
+              "display": "Confirmatory testing recommended"
+            }
+          ]
+        },
+        "description": "Testing of Pheobe's parents is recommended (via referral to the clinical genetics service) in order to confirm that both are heterozygous carriers of the missense variant.",
+        "for": {
+          "reference": "Patient/Patient-PheobeSmitham-Example"
+        },
+        "reasonReference": {
+          "reference": "Observation/Observation-GenomicImplication-Therapeutic"
+        },
+        "input": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                  "code": "NFTH",
+                  "display": "natural father"
+                }
+              ]
+            },
+            "valueReference": {
+              "reference": "Patient/Patient-PheobeSmithamFather-Example"
+            }
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                  "code": "NMTH",
+                  "display": "natural mother"
+                }
+              ]
+            },
+            "valueReference": {
+              "reference": "Patient/Patient-PheobeSmithamMother-Example"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullURL": "https://int.api.service.nhs.uk/genomic-order-management-service/FHIR/R4/DocumentReference/DocumentReference-StructureReporting-Example",
+      "resource": {
+        "resourceType": "DocumentReference",
+        "id": "DocumentReference-StructureReporting-Example",
+        "status": "current",
+        "docStatus": "final",
+        "subject": {
+          "reference": "Patient/Patient-PheobeSmitham-Example",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449307539"
+          }
+        },
+        "date": "2023-10-16T09:45:00Z",
+        "author": [
+          {
+            "identifier": {
+              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+              "value": "R0A"
+            }
+          }
+        ],
+        "description": "Phenotype Report",
+        "content": [
+          {
+            "attachment": {
+              "contentType": "application/json",
+              "url": "drs://drs.genomicsengland.nhs.uk/ga4gh/drs/v1/objects/42375e7d-071c-4eb3-b1c8-cec11e245cf0",
+              "title": "-Structure Data Capture JSON report"
+            }
+          }
+        ],
+        "context": {
+          "related": [
+            {
+              "reference": "ServiceRequest/ServiceRequest-WGSTestOrderFormUpdated-TrioTesting-Example"
+            },
+            {
+              "reference": "Specimen/Specimen-PheobeSmitham-Example"
+            },
+            {
+              "reference": "Specimen/Specimen-PheobeSmithamFather-Example"
+            },
+            {
+              "reference": "Specimen/Specimen-PheobeSmithamMother-Example"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

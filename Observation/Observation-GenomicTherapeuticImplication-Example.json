@@ -47,7 +47,7 @@
   ],
   "derivedFrom": [
     {
-      "reference": "Observation/Oservation-GenomicsVariant-SLC52A2"
+      "reference": "Observation/Observation-GenomicsVariantSLC52A2-Example"
     }
   ],
   "component": [
