@@ -70,7 +70,7 @@
   "title": "Example Genomic Laboratory (Single) Report",
   "section": [
     {
-      "title": "Therapeutic Implication",
+      "title": "Results",
       "code": {
         "coding": [
           {
@@ -80,24 +80,14 @@
           }
         ]
       },
-      "entry": {
-        "reference": "Observation/Observation-GenomicTherapeuticImplication-Example"
-      }
-    },
-    {
-      "title": "Genomic Variant",
-      "code": {
-        "coding": [
-          {
-            "system": "http://snomed.info/sct",
-            "code": "26436-6",
-            "display": "Laboratory studies (set)"
-          }
-        ]
-      },
-      "entry": {
-        "reference": "Observation-GenomicsVariantSLC52A2-Example"
-      }
+      "entry": [
+        {
+          "reference": "Observation/Observation-GenomicTherapeuticImplication-Example"
+        },
+        {
+          "reference": "Observation-GenomicsVariantSLC52A2-Example"
+        }
+      ]
     }
   ]
 }

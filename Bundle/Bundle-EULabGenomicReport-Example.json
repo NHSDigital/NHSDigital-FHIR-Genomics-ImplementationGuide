@@ -14,7 +14,7 @@
   "timestamp": "2023-10-16T00:00:00-05:00",
   "entry": [
     {
-      "fullURL": "https://int.api.service.nhs.uk/genomic-order-management-service/FHIR/R4/Composition/Composition-EULabGenomicReport-Example",
+      "fullUrl": "https://int.api.service.nhs.uk/genomic-order-management-service/FHIR/R4/Composition/Composition-EULabGenomicReport-Example",
       "resource": {
         "resourceType": "Composition",
         "id": "Composition-EULabGenomicReport-Example",
@@ -120,7 +120,7 @@
       }
     },
     {
-      "fullURL": "https://int.api.service.nhs.uk/genomic-order-management-service/FHIR/R4/DiagnosticReport/DiagnosticReport-GenomicVariantAssessment-Example",
+      "fullUrl": "https://int.api.service.nhs.uk/genomic-order-management-service/FHIR/R4/DiagnosticReport/DiagnosticReport-GenomicVariantAssessment-Example",
       "resource": {
         "resourceType": "DiagnosticReport",
         "id": "DiagnosticReport-GenomicVariantAssessment-Example",
@@ -287,7 +287,7 @@
       }
     },
     {
-      "fullURL": "https://int.api.service.nhs.uk/genomic-order-management-service/FHIR/R4/Patient/Patient-PheobeSmitham-Example",
+      "fullUrl": "https://int.api.service.nhs.uk/genomic-order-management-service/FHIR/R4/Patient/Patient-PheobeSmitham-Example",
       "resource": {
         "resourceType": "Patient",
         "id": "Patient-PheobeSmitham-Example",
@@ -395,7 +395,7 @@
       }
     },
     {
-      "fullURL": "https://int.api.service.nhs.uk/genomic-order-management-service/FHIR/R4/Observation/Observation-GenomicTherapeuticImplication-Example",
+      "fullUrl": "https://int.api.service.nhs.uk/genomic-order-management-service/FHIR/R4/Observation/Observation-GenomicTherapeuticImplication-Example",
       "resource": {
         "resourceType": "Observation",
         "id": "Observation-GenomicTherapeuticImplication-Example",
@@ -496,7 +496,7 @@
       }
     },
     {
-      "fullURL": "https://int.api.service.nhs.uk/genomic-order-management-service/FHIR/R4/Observation/Observation-GenomicsVariantSLC52A2-Example",
+      "fullUrl": "https://int.api.service.nhs.uk/genomic-order-management-service/FHIR/R4/Observation/Observation-GenomicsVariantSLC52A2-Example",
       "resource": {
         "resourceType": "Observation",
         "id": "Observation-GenomicsVariantSLC52A2-Example",
@@ -706,7 +706,7 @@
       }
     },
     {
-      "fullURL": "https://int.api.service.nhs.uk/genomic-order-management-service/FHIR/R4/Specimen/Specimen-PheobeSmitham-Example",
+      "fullUrl": "https://int.api.service.nhs.uk/genomic-order-management-service/FHIR/R4/Specimen/Specimen-PheobeSmitham-Example",
       "resource": {
         "resourceType": "Specimen",
         "id": "Specimen-PheobeSmitham-Example",
@@ -765,7 +765,7 @@
       }
     },
     {
-      "fullURL": "https://int.api.service.nhs.uk/genomic-order-management-service/FHIR/R4/ServiceRequest/ServiceRequest-WGSTestOrderFormUpdated-TrioTesting-Example",
+      "fullUrl": "https://int.api.service.nhs.uk/genomic-order-management-service/FHIR/R4/ServiceRequest/ServiceRequest-WGSTestOrderFormUpdated-TrioTesting-Example",
       "resource": {
         "resourceType": "ServiceRequest",
         "id": "ServiceRequest-WGSTestOrderFormUpdated-TrioTesting-Example",
@@ -962,7 +962,7 @@
       }
     },
     {
-      "fullURL": "https://int.api.service.nhs.uk/genomic-order-management-service/FHIR/R4/Task/Task-FollowupRecommendationReport-Example",
+      "fullUrl": "https://int.api.service.nhs.uk/genomic-order-management-service/FHIR/R4/Task/Task-FollowupRecommendationReport-Example",
       "resource": {
         "resourceType": "Task",
         "id": "Task-FollowupRecommendationReport-Example",
@@ -1022,7 +1022,7 @@
       }
     },
     {
-      "fullURL": "https://int.api.service.nhs.uk/genomic-order-management-service/FHIR/R4/DocumentReference/DocumentReference-StructureReporting-Example",
+      "fullUrl": "https://int.api.service.nhs.uk/genomic-order-management-service/FHIR/R4/DocumentReference/DocumentReference-StructureReporting-Example",
       "resource": {
         "resourceType": "DocumentReference",
         "id": "DocumentReference-StructureReporting-Example",
