@@ -32,6 +32,15 @@
           "display": "Cancer - WGS"
         }
       ]
+    },
+    {
+      "coding": [
+        {
+          "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
+          "code": "diagnostic",
+          "display": "Diagnostic"
+        }
+      ]
     }
   ],
   "priority": "routine",
@@ -41,11 +50,6 @@
         "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
         "code": "M89.108",
         "display": "Multi Target NGS Panel Small Variant"
-      },
-      {
-        "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
-        "code": "diagnostic",
-        "display": "Diagnostic"
       }
     ]
   },
