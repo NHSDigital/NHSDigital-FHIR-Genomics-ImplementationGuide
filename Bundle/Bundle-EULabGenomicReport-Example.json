@@ -76,6 +76,7 @@
         "subject": {
               "reference": "Patient/Patient-PheobeSmitham-Example"
         },
+        "date": "2023-10-16T00:00:00-05:00"
         "author": [
           {
             "identifier": {
@@ -87,34 +88,24 @@
         "title": "Example Genomic Laboratory (Single) Report",
         "section": [
           {
-            "title": "Therapeutic Implication",
+            "title": "Results",
             "code": {
               "coding": [
                 {
-                  "system": "http://snomed.info/sct",
+                  "system": "http://loinc.org",
                   "code": "26436-6",
                   "display": "Laboratory studies (set)"
                 }
               ]
             },
-            "entry": {
-              "reference": "Observation/Observation-GenomicTherapeuticImplication-Example"
-            }
-          },
-          {
-            "title": "Genomic Variant",
-            "code": {
-              "coding": [
-                {
-                  "system": "http://snomed.info/sct",
-                  "code": "26436-6",
-                  "display": "Laboratory studies (set)"
-                }
-              ]
-            },
-            "entry": {
-              "reference": "Observation-GenomicsVariantSLC52A2-Example"
-            }
+            "entry": [
+              {
+                "reference": "Observation/Observation-GenomicTherapeuticImplication-Example"
+              },
+              {
+                "reference": "Observation-GenomicsVariantSLC52A2-Example"
+              }
+            ]
           }
         ]
       }
