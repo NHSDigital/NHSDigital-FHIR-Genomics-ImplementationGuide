@@ -43,13 +43,9 @@
         "display": "Multi Target NGS Panel Small Variant"
       },
       {
-        "coding": [
-          {
-            "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
-            "code": "diagnostic",
-            "display": "Diagnostic"
-          }
-        ]
+        "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
+        "code": "diagnostic",
+        "display": "Diagnostic"
       }
     ]
   },
@@ -60,7 +56,7 @@
       "value": "9449306559"
     }
   },
-  "authoredOn": "2023-09-28",
+  "authoredOn": "2023-09-08",
   "requester": {
     "reference": "PractitionerRole/PractitionerRole-HazelSmithKingstonPathology-Example"
   },
@@ -83,9 +79,9 @@
     {
       "reference": "Observation/Observation-NucleatedCellCount-Example"
     },
-      {
-        "reference": "Observation/Observation-PatrickSammyNoBoneMarrowTransplant-Example"
-      },
+    {
+      "reference": "Observation/Observation-PatrickSammyNoBoneMarrowTransplant-Example"
+    },
     {
       "reference": "Consent/Consent-RoDToFollow-Example"
     }
