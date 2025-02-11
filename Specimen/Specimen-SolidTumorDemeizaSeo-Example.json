@@ -8,8 +8,8 @@
         "coding": [
           {
             "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-SampleCategory",
-            "code": "tumour",
-            "display": "Tumour"
+            "code": "solid-tumour",
+            "display": "Solid Tumour"
           }
         ],
         "text": "Solid Tumour"
