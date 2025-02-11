@@ -103,7 +103,7 @@
                 "reference": "Observation/Observation-GenomicTherapeuticImplication-Example"
               },
               {
-                "reference": "Observation-GenomicsVariantSLC52A2-Example"
+                "reference": "Observation/Observation-GenomicsVariantSLC52A2-Example"
               }
             ]
           }
@@ -474,8 +474,8 @@
               "coding": [
                 {
                   "system": "http://snomed.info/sct",
-                  "code": "777436008",
-                  "display": "Riboflavin"
+                  "code": "438481000124108",
+                  "display": "Riboflavin supplement"
                 }
               ]
             }
@@ -776,6 +776,12 @@
                 }
               ]
             }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/GMSOrder",
+            "value": "RR8F1792"
           }
         ],
         "requisition": {

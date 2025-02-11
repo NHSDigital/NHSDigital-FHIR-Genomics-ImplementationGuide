@@ -19,6 +19,12 @@
       }
     }
   ],
+  "identifier": [
+    {
+      "system": "https://fhir.nhs.uk/Id/GMSOrder",
+      "value": "RR8F1792"
+    }
+  ],
   "requisition": {
     "assigner": {
       "identifier": {

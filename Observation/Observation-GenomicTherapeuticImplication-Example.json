@@ -85,8 +85,8 @@
         "coding": [
           {
             "system": "http://snomed.info/sct",
-            "code": "777436008",
-            "display": "Riboflavin"
+            "code": "438481000124108",
+            "display": "Riboflavin supplement"
           }
         ]
       }
