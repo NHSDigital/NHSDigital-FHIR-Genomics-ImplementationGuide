@@ -22,7 +22,7 @@
     "reference": "Patient/Patient-PheobeSmitham-Example"
   },
   "reasonReference": {
-    "reference": "Observation/Observation-GenomicImplication-Therapeutic"
+    "reference": "Observation/Observation-GenomicTherapeuticImplication-Example"
   },
   "input": [
     {
