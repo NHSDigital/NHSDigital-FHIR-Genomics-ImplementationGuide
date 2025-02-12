@@ -27,19 +27,19 @@
           {
             "url": "http://hl7.eu/fhir/StructureDefinition/composition-basedOn-order-or-requisition",
             "valueReference": {
-              "reference": "ServiceRequest/ServiceRequest-WGSTestOrderFormUpdated-TrioTesting-Example"
+              "reference": "http://example.org/fhir/ServiceRequest/ServiceRequest-WGSTestOrderFormUpdated-TrioTesting-Example"
             }
           },
           {
             "url": "http://hl7.eu/fhir/StructureDefinition/information-recipient",
             "valueReference": {
-              "reference": "PractitionerRole/PractitionerRole-EugeneSmith-Example"
+              "reference": "http://example.org/fhir/PractitionerRole/PractitionerRole-EugeneSmith-Example"
             }
           },
           {
             "url": "http://hl7.eu/fhir/laboratory/StructureDefinition/composition-diagnosticReportReference",
             "valueReference": {
-              "reference": "DiagnosticReport/DiagnosticReport-GenomicVariantAssessment-Example"
+              "reference": "http://example.org/fhir/DiagnosticReport/DiagnosticReport-GenomicVariantAssessment-Example"
             }
           }
         ],
@@ -74,7 +74,7 @@
           }
         ],
         "subject": {
-              "reference": "Patient/Patient-PheobeSmitham-Example"
+              "reference": "http://example.org/fhir/Patient/Patient-PheobeSmitham-Example"
         },
         "date": "2023-10-16T00:00:00-05:00",
         "author": [
@@ -100,10 +100,10 @@
             },
             "entry": [
               {
-                "reference": "Observation/Observation-GenomicTherapeuticImplication-Example"
+                "reference": "http://example.org/fhir/Observation/Observation-GenomicTherapeuticImplication-Example"
               },
               {
-                "reference": "Observation/Observation-GenomicsVariantSLC52A2-Example"
+                "reference": "http://example.org/fhir/Observation/Observation-GenomicsVariantSLC52A2-Example"
               }
             ]
           }
@@ -126,13 +126,13 @@
           {
             "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition",
             "valueReference": {
-              "reference": "Composition/Composition-EULabGenomicReport-Example"
+              "reference": "http://example.org/fhir/Composition/Composition-EULabGenomicReport-Example"
             }
           },
           {
             "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/recommended-action",
             "valueReference": {
-              "reference": "Task/Task-FollowupRecommendationReport-Example",
+              "reference": "http://example.org/fhir/Task/Task-FollowupRecommendationReport-Example",
               "display": "Confirmatory testing recommended"
             }
           },
@@ -172,7 +172,7 @@
         ],
         "basedOn": [
           {
-            "reference": "ServiceRequest/ServiceRequest-WGSTestOrderFormUpdated-TrioTesting-Example"
+            "reference": "http://example.org/fhir/ServiceRequest/ServiceRequest-WGSTestOrderFormUpdated-TrioTesting-Example"
           }
         ],
         "status": "final",
@@ -205,7 +205,7 @@
           ]
         },
         "subject": {
-          "reference": "Patient/Patient-PheobeSmitham-Example"
+          "reference": "http://example.org/fhir/Patient/Patient-PheobeSmitham-Example"
         },
         "effectiveDateTime": "2023-10-16T00:00:00-05:00",
         "issued": "2023-09-16T00:00:00-05:00",
@@ -233,7 +233,7 @@
               {
                 "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media.link",
                 "valueReference": {
-                  "reference": "DocumentReference/DocumentReference-StructureReporting-Example"
+                  "reference": "http://example.org/fhir/DocumentReference/DocumentReference-StructureReporting-Example"
                 }
               }
             ]
@@ -241,11 +241,11 @@
         ],
         "result": [
           {
-            "reference": "Observation/Observation-GenomicsVariant-SLC52A2",
+            "reference": "http://example.org/fhir/Observation/Observation-GenomicsVariant-SLC52A2",
             "display": "Brown-Vialetto-Van Laere syndrome type 2"
           },
           {
-            "reference": "Observation/Observation-GenomicTherapeuticImplication-Example"
+            "reference": "http://example.org/fhir/Observation/Observation-GenomicTherapeuticImplication-Example"
           }
         ],
         "conclusion": "Pheobe is homozygous for a pathogenic SLC52A2 missense variant (details below) previously reported by Johnson et al 2012 (PMID22740598). Biallelic pathogenic SLC52A2 variants cause autosomal recessive Brown-Vialetto-Van Laere syndrome type 2 (MIM614707).",
@@ -423,7 +423,7 @@
           ]
         },
         "subject": {
-          "reference": "Patient/Patient-PheobeSmitham-Example"
+          "reference": "http://example.org/fhir/Patient/Patient-PheobeSmitham-Example"
         },
         "effectiveDateTime": "2023-09-16",
         "performer": [
@@ -436,7 +436,7 @@
         ],
         "derivedFrom": [
           {
-            "reference": "Observation/Observation-GenomicsVariantSLC52A2-Example"
+            "reference": "http://example.org/fhir/Observation/Observation-GenomicsVariantSLC52A2-Example"
           }
         ],
         "component": [
@@ -499,7 +499,7 @@
         "status": "final",
         "basedOn": [
           {
-            "reference": "ServiceRequest/ServiceRequest-WGSTestOrderFormUpdated-TrioTesting-Example"
+            "reference": "http://example.org/fhir/ServiceRequest/ServiceRequest-WGSTestOrderFormUpdated-TrioTesting-Example"
           }
         ],
         "category": [
@@ -529,7 +529,7 @@
           ]
         },
         "subject": {
-          "reference": "Patient/Patient-PheobeSmitham-Example"
+          "reference": "http://example.org/fhir/Patient/Patient-PheobeSmitham-Example"
         },
         "effectiveDateTime": "2023-09-16",
         "performer": [
@@ -559,7 +559,7 @@
           ]
         },
         "specimen": {
-          "reference": "Specimen/Specimen-PheobeSmitham-Example"
+          "reference": "http://example.org/fhir/Specimen/Specimen-PheobeSmitham-Example"
         },
         "component": [
           {
@@ -732,7 +732,7 @@
           ]
         },
         "subject": {
-          "reference": "Patient/Patient-PheobeSmitham-Example",
+          "reference": "http://example.org/fhir/Patient/Patient-PheobeSmitham-Example",
           "identifier": {
             "system": "https://fhir.nhs.uk/Id/nhs-number",
             "value": "9449307539"
@@ -750,7 +750,7 @@
         },
         "request": [
           {
-            "reference": "ServiceRequest/ServiceRequest-WGSTestOrderForm-TrioTestingProband-Example"
+            "reference": "http://example.org/fhir/ServiceRequest/ServiceRequest-WGSTestOrderForm-TrioTestingProband-Example"
           }
         ]
       }
@@ -827,7 +827,7 @@
           "text": "This is a Trio Testing, comprising 3 family members with their respective specimen`s & Record Of Discussion`s"
         },
         "subject": {
-          "reference": "Patient/Patient-PheobeSmitham-Example",
+          "reference": "http://example.org/fhir/Patient/Patient-PheobeSmitham-Example",
           "identifier": {
             "system": "https://fhir.nhs.uk/Id/nhs-number",
             "value": "9449307539"
@@ -835,11 +835,11 @@
         },
         "authoredOn": "2023-09-15T15:00:00Z",
         "requester": {
-          "reference": "PractitionerRole/PractitionerRole-EugeneSmith-Example"
+          "reference": "http://example.org/fhir/PractitionerRole/PractitionerRole-EugeneSmith-Example"
         },
         "reasonReference": [
           {
-            "reference": "Condition/Condition-InbornErrorOfMetabolism-Example"
+            "reference": "http://example.org/fhir/Condition/Condition-InbornErrorOfMetabolism-Example"
           }
         ],
         "performer": [
@@ -852,100 +852,100 @@
         ],
         "supportingInfo": [
           {
-            "reference": "Observation/Observation-AutisticBehaviour-Example"
+            "reference": "http://example.org/fhir/Observation/Observation-AutisticBehaviour-Example"
           },
           {
-            "reference": "Observation/Observation-DelayedSpeechLanguageDevt-Example"
+            "reference": "http://example.org/fhir/Observation/Observation-DelayedSpeechLanguageDevt-Example"
           },
           {
-            "reference": "Observation/Observation-DiseasePenetrancePheobeSmitham-Example"
+            "reference": "http://example.org/fhir/Observation/Observation-DiseasePenetrancePheobeSmitham-Example"
           },
           {
-            "reference": "Observation/Observation-IntellectualDisabilityProfound-Example"
+            "reference": "http://example.org/fhir/Observation/Observation-IntellectualDisabilityProfound-Example"
           },
           {
-            "reference": "Observation/Observation-NonConsanguinousUnionProband-Example"
+            "reference": "http://example.org/fhir/Observation/Observation-NonConsanguinousUnionProband-Example"
           },
           {
-            "reference": "Specimen/Specimen-PheobeSmitham-Example"
+            "reference": "http://example.org/fhir/Specimen/Specimen-PheobeSmitham-Example"
           },
           {
-            "reference": "Observation/Observation-GenomicEthnicity-Example"
+            "reference": "http://example.org/fhir/Observation/Observation-GenomicEthnicity-Example"
           },
           {
-            "reference": "Observation/Observation-NoPregnancy-Example"
+            "reference": "http://example.org/fhir/Observation/Observation-NoPregnancy-Example"
           },
           {
-            "reference": "Condition/Condition-MonogenicHearingLoss-Example"
+            "reference": "http://example.org/fhir/Condition/Condition-MonogenicHearingLoss-Example"
           },
           {
-            "reference": "Observation/Observation-NoBoneMarrowTransplant-Example"
+            "reference": "http://example.org/fhir/Observation/Observation-NoBoneMarrowTransplant-Example"
           },
           {
-            "reference": "Observation/Observation-NoTransfusion-Example"
+            "reference": "http://example.org/fhir/Observation/Observation-NoTransfusion-Example"
           },
           {
-            "reference": "Patient/Patient-PheobeSmithamMother-Example"
+            "reference": "http://example.org/fhir/Patient/Patient-PheobeSmithamMother-Example"
           },
           {
-            "reference": "RelatedPerson/RelatedPerson-AliceSmithamProbandMother-Example"
+            "reference": "http://example.org/fhir/RelatedPerson/RelatedPerson-AliceSmithamProbandMother-Example"
           },
           {
-            "reference": "Specimen/Specimen-PheobeSmithamMother-Example"
+            "reference": "http://example.org/fhir/Specimen/Specimen-PheobeSmithamMother-Example"
           },
           {
-            "reference": "Observation/Observation-NonConsanguinousUnionMother-Example"
+            "reference": "http://example.org/fhir/Observation/Observation-NonConsanguinousUnionMother-Example"
           },
           {
-            "reference": "Observation/Observation-NoTransfusionProbandMother-Example"
+            "reference": "http://example.org/fhir/Observation/Observation-NoTransfusionProbandMother-Example"
           },
           {
-            "reference": "Observation/Observation-NoBoneMarrowTransplantProbandMother-Example"
+            "reference": "http://example.org/fhir/Observation/Observation-NoBoneMarrowTransplantProbandMother-Example"
           },
           {
-            "reference": "Patient/Patient-PheobeSmithamFather-Example"
+            "reference": "http://example.org/fhir/Patient/Patient-PheobeSmithamFather-Example"
           },
           {
-            "reference": "RelatedPerson/RelatedPerson-JamesLawrenceProbandFather-Example"
+            "reference": "http://example.org/fhir/RelatedPerson/RelatedPerson-JamesLawrenceProbandFather-Example"
           },
           {
-            "reference": "Observation/Observation-NonConsanguinousUnionProbandFather-Example"
+            "reference": "http://example.org/fhir/Observation/Observation-NonConsanguinousUnionProbandFather-Example"
           },
           {
-            "reference": "Observation/Observation-NoTransfusionProbandFather-Example"
+            "reference": "http://example.org/fhir/Observation/Observation-NoTransfusionProbandFather-Example"
           },
           {
-            "reference": "Observation/Observation-NoBoneMarrowTransplantProbandFather-Example"
+            "reference": "http://example.org/fhir/Observation/Observation-NoBoneMarrowTransplantProbandFather-Example"
           },
           {
-            "reference": "Observation/Observation-IntellectualDisabilityMild-Example"
+            "reference": "http://example.org/fhir/Observation/Observation-IntellectualDisabilityMild-Example"
           },
           {
-            "reference": "Consent/Consent-RoD-PheobeSmitham-Example"
+            "reference": "http://example.org/fhir/Consent/Consent-RoD-PheobeSmitham-Example"
           },
           {
-            "reference": "Consent/Consent-RoD-PheobeSmithamYoungPersonAssentForm-Example"
+            "reference": "http://example.org/fhir/Consent/Consent-RoD-PheobeSmithamYoungPersonAssentForm-Example"
           },
           {
-            "reference": "Consent/Consent-RoD-PheobeSmithamMother-Example"
+            "reference": "http://example.org/fhir/Consent/Consent-RoD-PheobeSmithamMother-Example"
           },
           {
-            "reference": "QuestionnaireResponse/QuestionnaireResponse-RoD-PheobeSmithamCDForn-Example"
+            "reference": "http://example.org/fhir/QuestionnaireResponse/QuestionnaireResponse-RoD-PheobeSmithamCDForn-Example"
           },
           {
-            "reference": "QuestionnaireResponse/QuestionnaireResponse-RoD-PheobeSmithamYPAForm-Example"
+            "reference": "http://example.org/fhir/QuestionnaireResponse/QuestionnaireResponse-RoD-PheobeSmithamYPAForm-Example"
           },
           {
-            "reference": "QuestionnaireResponse/QuestionnaireResponse-RoD-PheobeSmithamMother-Example"
+            "reference": "http://example.org/fhir/QuestionnaireResponse/QuestionnaireResponse-RoD-PheobeSmithamMother-Example"
           },
           {
-            "reference": "Consent/Consent-RoD-PheobeSmithamFather-Example"
+            "reference": "http://example.org/fhir/Consent/Consent-RoD-PheobeSmithamFather-Example"
           },
           {
-            "reference": "QuestionnaireResponse/QuestionnaireResponse-RoD-PheobeSmithamFather-Example"
+            "reference": "http://example.org/fhir/QuestionnaireResponse/QuestionnaireResponse-RoD-PheobeSmithamFather-Example"
           },
           {
-            "reference": "Specimen/Specimen-PheobeSmithamFather-Example"
+            "reference": "http://example.org/fhir/Specimen/Specimen-PheobeSmithamFather-Example"
           }
         ],
         "note": [
@@ -981,10 +981,10 @@
         },
         "description": "Testing of Pheobe's parents is recommended (via referral to the clinical genetics service) in order to confirm that both are heterozygous carriers of the missense variant.",
         "for": {
-          "reference": "Patient/Patient-PheobeSmitham-Example"
+          "reference": "http://example.org/fhir/Patient/Patient-PheobeSmitham-Example"
         },
         "reasonReference": {
-          "reference": "Observation/Observation-GenomicImplication-Therapeutic"
+          "reference": "http://example.org/fhir/Observation/Observation-GenomicImplication-Therapeutic"
         },
         "input": [
           {
@@ -998,7 +998,7 @@
               ]
             },
             "valueReference": {
-              "reference": "Patient/Patient-PheobeSmithamFather-Example"
+              "reference": "http://example.org/fhir/Patient/Patient-PheobeSmithamFather-Example"
             }
           },
           {
@@ -1012,7 +1012,7 @@
               ]
             },
             "valueReference": {
-              "reference": "Patient/Patient-PheobeSmithamMother-Example"
+              "reference": "http://example.org/fhir/Patient/Patient-PheobeSmithamMother-Example"
             }
           }
         ]
@@ -1026,7 +1026,7 @@
         "status": "current",
         "docStatus": "final",
         "subject": {
-          "reference": "Patient/Patient-PheobeSmitham-Example",
+          "reference": "http://example.org/fhir/Patient/Patient-PheobeSmitham-Example",
           "identifier": {
             "system": "https://fhir.nhs.uk/Id/nhs-number",
             "value": "9449307539"
@@ -1054,16 +1054,16 @@
         "context": {
           "related": [
             {
-              "reference": "ServiceRequest/ServiceRequest-WGSTestOrderFormUpdated-TrioTesting-Example"
+              "reference": "http://example.org/fhir/ServiceRequest/ServiceRequest-WGSTestOrderFormUpdated-TrioTesting-Example"
             },
             {
-              "reference": "Specimen/Specimen-PheobeSmitham-Example"
+              "reference": "http://example.org/fhir/Specimen/Specimen-PheobeSmitham-Example"
             },
             {
-              "reference": "Specimen/Specimen-PheobeSmithamFather-Example"
+              "reference": "http://example.org/fhir/Specimen/Specimen-PheobeSmithamFather-Example"
             },
             {
-              "reference": "Specimen/Specimen-PheobeSmithamMother-Example"
+              "reference": "http://example.org/fhir/Specimen/Specimen-PheobeSmithamMother-Example"
             }
           ]
         }
