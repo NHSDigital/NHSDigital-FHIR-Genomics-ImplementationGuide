@@ -53,8 +53,8 @@
     "coding": [
       {
         "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
-        "code": "M89.108",
-        "display": "Multi Target NGS Panel Small Variant"
+        "code": "M89.109",
+        "display": "Acute Leukaemia Other"
       }
     ]
   },
@@ -76,23 +76,6 @@
         "value": "RJZ"
       },
       "display": "KING'S COLLEGE HOSPITAL NHS FOUNDATION TRUST"
-    }
-  ],
-  "supportingInfo": [
-    {
-      "reference": "Condition/Condition-AcuteMyeloidLeukaemia-Example"
-    },
-    {
-      "reference": "Observation/Observation-BlastPercentage-Example"
-    },
-    {
-      "reference": "Observation/Observation-NucleatedCellCount-Example"
-    },
-    {
-      "reference": "Observation/Observation-PatrickSammyNoBoneMarrowTransplant-Example"
-    },
-    {
-      "reference": "Consent/Consent-RoDToFollow-Example"
     }
   ],
   "specimen": [

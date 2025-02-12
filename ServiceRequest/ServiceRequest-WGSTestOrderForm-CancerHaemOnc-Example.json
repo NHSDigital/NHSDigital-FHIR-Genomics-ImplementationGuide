@@ -49,7 +49,7 @@
       {
         "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
         "code": "M89.108",
-        "display": "Multi Target NGS Panel Small Variant"
+        "display": "Acute Leukaemia Other"
       }
     ]
   },
