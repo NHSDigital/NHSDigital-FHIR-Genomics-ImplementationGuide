@@ -117,9 +117,9 @@
         "id": "DiagnosticReport-GenomicVariantAssessment-Example",
         "meta": {
           "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/DiagnosticReport-eu-lab",
             "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-report",
-            "https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport",
-            "http://hl7.eu/fhir/laboratory/StructureDefinition/DiagnosticReport-eu-lab"
+            "https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport"            
           ]
         },
         "extension": [
