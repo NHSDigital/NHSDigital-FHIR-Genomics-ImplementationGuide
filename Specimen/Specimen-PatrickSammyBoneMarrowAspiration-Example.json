@@ -1,6 +1,20 @@
 {
   "resourceType": "Specimen",
   "id": "Specimen-PatrickSammyBoneMarrowAspiration-Example",
+  "extension": [
+    {
+      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-SampleCategory",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-SampleCategory",
+            "code": "liquid-tumour",
+            "display": "Liquid Tumour"
+          }
+        ]
+      }
+    }
+  ],
   "identifier": [
     {
       "system": "urn:oid:2.16.840.1.113883.2.1.3.2.4.18.24",
@@ -37,6 +51,17 @@
     "reference": "Patient/Patient-PatrickSammy-Example"
   },
   "receivedTime": "2023-09-11T11:00:00Z",
+  "condition": [
+    {
+      "coding": [
+        {
+          "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-BiopsyState",
+          "code": "fresh-frozen",
+          "display": "Fresh Frozen"
+        }
+      ]
+    }
+  ],
   "request": [
     {
       "reference": "ServiceRequest/ServiceRequest-WGSTestOrderForm-CancerHaemOnc-Example"
