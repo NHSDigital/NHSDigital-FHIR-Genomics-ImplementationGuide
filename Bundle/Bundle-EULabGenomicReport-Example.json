@@ -39,7 +39,7 @@
           {
             "url": "http://hl7.eu/fhir/laboratory/StructureDefinition/composition-diagnosticReportReference",
             "valueReference": {
-              "reference": "DiagnosticReport/DiagnosticReport-GenomicVariantAssessment-Example"
+              "reference": "DiagnosticReport-GenomicVariantAssessment-Example"
             }
           }
         ],
