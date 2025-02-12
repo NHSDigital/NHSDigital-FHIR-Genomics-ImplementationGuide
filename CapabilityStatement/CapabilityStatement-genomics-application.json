@@ -953,7 +953,7 @@
         },
         {
           "type": "DiagnosticReport",
-          "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport",
+          "profile": "http://hl7.eu/fhir/laboratory/StructureDefinition/DiagnosticReport-eu-lab",
           "documentation": "Endpoints for interacting with DiagnosticReport resources",
           "interaction": [
             {
@@ -1114,7 +1114,7 @@
         },
         {
           "type": "Observation",
-          "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation",
+          "profile": "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab,
           "documentation": "Endpoints for interacting with Observation resources",
           "interaction": [
             {
@@ -1205,7 +1205,7 @@
         },
         {
           "type": "Patient",
-          "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient",
+          "profile": "http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-eu-lab",
           "documentation": "Endpoints for interacting with Patient resources",
           "interaction": [
             {
