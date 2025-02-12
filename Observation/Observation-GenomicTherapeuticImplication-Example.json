@@ -4,7 +4,7 @@
   "meta": {
     "profile": [
       "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/therapeutic-implication",
-      "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-eu-lab"
+      "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
     ]
   },
   "status": "final",
