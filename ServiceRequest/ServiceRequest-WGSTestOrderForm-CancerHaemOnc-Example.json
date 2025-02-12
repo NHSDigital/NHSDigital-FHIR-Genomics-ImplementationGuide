@@ -92,9 +92,6 @@
   ],
   "specimen": [
     {
-      "reference": "Specimen/Specimen-PatrickSammyBloodEDTA-Example"
-    },
-    {
       "reference": "Specimen/Specimen-PatrickSammyBoneMarrowAspiration-Example"
     }
   ],
