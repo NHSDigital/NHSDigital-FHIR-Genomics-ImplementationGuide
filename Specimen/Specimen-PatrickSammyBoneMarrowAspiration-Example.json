@@ -55,9 +55,9 @@
     {
       "coding": [
         {
-          "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-BiopsyState",
-          "code": "fresh-frozen",
-          "display": "Fresh Frozen"
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0493",
+          "code": "FROZ",
+          "display": "Frozen"
         }
       ]
     }
