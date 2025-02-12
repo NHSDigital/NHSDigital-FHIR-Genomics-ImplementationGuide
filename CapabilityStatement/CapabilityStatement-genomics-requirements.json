@@ -117,7 +117,7 @@
         },
         {
           "type": "DiagnosticReport",
-          "profile": "http://hl7.eu/fhir/laboratory/StructureDefinition/DiagnosticReport-eu-lab"
+          "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport"
         },
         {
           "type": "FamilyMemberHistory",
@@ -125,11 +125,11 @@
         },
         {
           "type": "Observation",
-          "profile": "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+          "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation"
         },
         {
           "type": "Patient",
-          "profile": "http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-eu-lab"
+          "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient"
         },
         {
           "type": "Consent",
