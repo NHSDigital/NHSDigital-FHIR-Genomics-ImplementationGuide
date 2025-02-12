@@ -3,6 +3,7 @@
   "id": "Observation-GenomicTherapeuticImplication-Example",
   "meta": {
     "profile": [
+      "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/therapeutic-implication",
       "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
     ]
   },
