@@ -14,7 +14,7 @@
   "timestamp": "2023-10-16T00:00:00-05:00",
   "entry": [
     {
-      "fullUrl": "/Composition/Composition-EULabGenomicReport-Example",
+      "fullUrl": "http://example.org/fhir/Composition/Composition-EULabGenomicReport-Example",
       "resource": {
         "resourceType": "Composition",
         "id": "Composition-EULabGenomicReport-Example",
@@ -111,7 +111,7 @@
       }
     },
     {
-      "fullUrl": "/DiagnosticReport/DiagnosticReport-GenomicVariantAssessment-Example",
+      "fullUrl": "http://example.org/fhir/DiagnosticReport/DiagnosticReport-GenomicVariantAssessment-Example",
       "resource": {
         "resourceType": "DiagnosticReport",
         "id": "DiagnosticReport-GenomicVariantAssessment-Example",
@@ -278,7 +278,7 @@
       }
     },
     {
-      "fullUrl": "/Patient/Patient-PheobeSmitham-Example",
+      "fullUrl": "http://example.org/fhir/Patient/Patient-PheobeSmitham-Example",
       "resource": {
         "resourceType": "Patient",
         "id": "Patient-PheobeSmitham-Example",
@@ -386,7 +386,7 @@
       }
     },
     {
-      "fullUrl": "/Observation/Observation-GenomicTherapeuticImplication-Example",
+      "fullUrl": "http://example.org/fhir/Observation/Observation-GenomicTherapeuticImplication-Example",
       "resource": {
         "resourceType": "Observation",
         "id": "Observation-GenomicTherapeuticImplication-Example",
@@ -487,7 +487,7 @@
       }
     },
     {
-      "fullUrl": "/Observation/Observation-GenomicsVariantSLC52A2-Example",
+      "fullUrl": "http://example.org/fhir/Observation/Observation-GenomicsVariantSLC52A2-Example",
       "resource": {
         "resourceType": "Observation",
         "id": "Observation-GenomicsVariantSLC52A2-Example",
@@ -697,7 +697,7 @@
       }
     },
     {
-      "fullUrl": "/Specimen/Specimen-PheobeSmitham-Example",
+      "fullUrl": "http://example.org/fhir/Specimen/Specimen-PheobeSmitham-Example",
       "resource": {
         "resourceType": "Specimen",
         "id": "Specimen-PheobeSmitham-Example",
@@ -756,7 +756,7 @@
       }
     },
     {
-      "fullUrl": "/ServiceRequest/ServiceRequest-WGSTestOrderFormUpdated-TrioTesting-Example",
+      "fullUrl": "http://example.org/fhir/ServiceRequest/ServiceRequest-WGSTestOrderFormUpdated-TrioTesting-Example",
       "resource": {
         "resourceType": "ServiceRequest",
         "id": "ServiceRequest-WGSTestOrderFormUpdated-TrioTesting-Example",
@@ -959,7 +959,7 @@
       }
     },
     {
-      "fullUrl": "/Task/Task-FollowupRecommendationReport-Example",
+      "fullUrl": "http://example.org/fhir/Task/Task-FollowupRecommendationReport-Example",
       "resource": {
         "resourceType": "Task",
         "id": "Task-FollowupRecommendationReport-Example",
@@ -1019,7 +1019,7 @@
       }
     },
     {
-      "fullUrl": "/DocumentReference/DocumentReference-StructureReporting-Example",
+      "fullUrl": "http://example.org/fhir/DocumentReference/DocumentReference-StructureReporting-Example",
       "resource": {
         "resourceType": "DocumentReference",
         "id": "DocumentReference-StructureReporting-Example",
