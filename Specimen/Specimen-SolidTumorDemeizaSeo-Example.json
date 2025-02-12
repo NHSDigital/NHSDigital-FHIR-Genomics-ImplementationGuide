@@ -62,9 +62,9 @@
     {
       "coding": [
         {
-          "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-BiopsyState",
-          "code": "fresh-frozen",
-          "display": "Fresh Frozen"
+          "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PrimarySampleState",
+          "code": "fresh",
+          "display": "Fresh"
         }
       ]
     }
