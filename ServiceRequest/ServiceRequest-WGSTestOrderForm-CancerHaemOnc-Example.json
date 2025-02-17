@@ -81,7 +81,7 @@
       "reference": "Observation/Observation-BlastPercentage-Example"
     },
     {
-      "reference": "Observation/Observation-NucleatedCellCount-Example"
+      "reference": "Observation/Observation-NucleatedCellCountWGSSample-Example"
     },
     {
       "reference": "Observation/Observation-PatrickSammyNoBoneMarrowTransplant-Example"
