@@ -59,12 +59,6 @@
       "documentation": "The Variant information as a FHIR Observation"
     },
     {
-      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/therapeutic-implication",
-      "mode": "target",
-      "alias": "TherapeuticImplication",
-      "documentation": "The therapeutic implication information as a FHIR Observation"
-    },
-    {
       "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/diagnostic-implication",
       "mode": "target",
       "alias": "DiagnosticImplication",
@@ -81,11 +75,6 @@
       "mode": "target",
       "alias": "GenomicStudyAnalysis",
       "documentation": "Analysis metadata recorded through a profile on Procedure"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/Range",
-      "mode": "target",
-      "alias": "Range"
     }
   ],
   "group": [
@@ -158,7 +147,7 @@
                   "valueString": "http://www.genenames.org"
                 },
                 {
-                  "valueString": "%a"
+                  "valueId": "a"
                 }
               ]
             }
@@ -328,7 +317,7 @@
                   "valueString": "http://www.genenames.org"
                 },
                 {
-                  "valueString": "%a"
+                  "valueId": "a"
                 }
               ]
             }
@@ -376,7 +365,7 @@
                   "valueString": "http://www.sequenceontology.org"
                 },
                 {
-                  "valueString": "%a"
+                  "valueId": "a"
                 }
               ]
             }
@@ -425,7 +414,7 @@
               "transform": "copy",
               "parameter": [
                 {
-                  "valueString": "%a"
+                  "valueId": "a"
                 }
               ]
             },
@@ -459,7 +448,7 @@
               "transform": "copy",
               "parameter": [
                 {
-                  "valueString": "%b"
+                  "valueId": "b"
                 }
               ]
             }
@@ -504,11 +493,34 @@
             {
               "context": "component",
               "contextType": "variable",
+              "variable": "range",
               "element": "value",
               "transform": "create",
               "parameter": [
                 {
-                  "valueString": "Range(%a, %b)"
+                  "valueString": "Range"
+                }
+              ]
+            },
+            {
+              "context": "range",
+              "contextType": "variable",
+              "element": "low",
+              "transform": "copy",
+              "parameter": [
+                {
+                  "valueId": "a"
+                }
+              ]
+            },
+            {
+              "context": "range",
+              "contextType": "variable",
+              "element": "high",
+              "transform": "copy",
+              "parameter": [
+                {
+                  "valueId": "b"
                 }
               ]
             }
@@ -555,7 +567,7 @@
                   "valueString": "http://www.genenames.org"
                 },
                 {
-                  "valueString": "%a"
+                  "valueId": "a"
                 }
               ]
             }
@@ -602,7 +614,7 @@
                   "valueString": "http://www.genenames.org"
                 },
                 {
-                  "valueString": "%a"
+                  "valueId": "a"
                 }
               ]
             }
@@ -649,7 +661,7 @@
                   "valueString": "http://loinc.org"
                 },
                 {
-                  "valueString": "%a"
+                  "valueId": "a"
                 }
               ]
             }
@@ -699,7 +711,7 @@
                   "valueString": "http://www.genenames.org"
                 },
                 {
-                  "valueString": "%a"
+                  "valueId": "a"
                 }
               ]
             }
@@ -782,7 +794,7 @@
               "transform": "qty",
               "parameter": [
                 {
-                  "valueString": "%a"
+                  "valueId": "a"
                 },
                 {
                   "valueString": "{ratio}"
@@ -924,7 +936,7 @@
               "transform": "copy",
               "parameter": [
                 {
-                  "valueString": "%a"
+                  "valueId": "a"
                 }
               ]
             },
@@ -958,7 +970,7 @@
               "transform": "copy",
               "parameter": [
                 {
-                  "valueString": "%b"
+                  "valueId": "b"
                 }
               ]
             }
@@ -1130,7 +1142,7 @@
               "transform": "copy",
               "parameter": [
                 {
-                  "valueString": "%b"
+                  "valueId": "b"
                 }
               ]
             },
@@ -1164,7 +1176,7 @@
               "transform": "copy",
               "parameter": [
                 {
-                  "valueString": "%a"
+                  "valueId": "a"
                 }
               ]
             }
@@ -2110,66 +2122,6 @@
               "context": "extension",
               "contextType": "variable",
               "element": "value",
-              "transform": "copy",
-              "parameter": [
-                {
-                  "valueId": "b"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Range",
-      "typeMode": "none",
-      "input": [
-        {
-          "name": "low",
-          "type": "integer",
-          "mode": "source"
-        },
-        {
-          "name": "high",
-          "type": "integer",
-          "mode": "source"
-        },
-        {
-          "name": "Range",
-          "type": "Range",
-          "mode": "target"
-        }
-      ],
-      "rule": [
-        {
-          "name": "ConvertRange",
-          "source": [
-            {
-              "context": "low",
-              "variable": "a"
-            },
-            {
-              "context": "high",
-              "variable": "b"
-            }
-          ],
-          "target": [
-            {
-              "context": "Range",
-              "contextType": "variable",
-              "element": "low",
-              "transform": "copy",
-              "parameter": [
-                {
-                  "valueId": "a"
-                }
-              ]
-            },
-            {
-              "context": "Range",
-              "contextType": "variable",
-              "element": "high",
               "transform": "copy",
               "parameter": [
                 {
