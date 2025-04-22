@@ -1210,7 +1210,24 @@
                   "valueString": "''"
                 },
                 {
-                  "valueString": "%a%b"
+                  "valueId": "a"
+                }
+              ]
+            },
+            {
+              "context": "code",
+              "contextType": "variable",
+              "element": "coding",
+              "variable": "coding"
+            },
+            {
+              "context": "coding",
+              "contextType": "variable",
+              "element": "display",
+              "transform": "append",
+              "parameter": [
+                {
+                  "valueId": "b"
                 }
               ]
             },
@@ -1221,7 +1238,7 @@
               "transform": "copy",
               "parameter": [
                 {
-                  "valueString": "%c"
+                  "valueId": "c"
                 }
               ]
             }
@@ -1355,7 +1372,7 @@
                   "valueString": "http://loinc.org"
                 },
                 {
-                  "valueString": "%a"
+                  "valueId": "a"
                 }
               ]
             }
@@ -1517,7 +1534,7 @@
               "transform": "copy",
               "parameter": [
                 {
-                  "valueString": "%a"
+                  "valueId": "a"
                 }
               ]
             },
@@ -1528,7 +1545,7 @@
               "transform": "append",
               "parameter": [
                 {
-                  "valueString": "%b"
+                  "valueId": "b"
                 }
               ]
             },
@@ -1562,7 +1579,7 @@
               "transform": "copy",
               "parameter": [
                 {
-                  "valueString": "%c"
+                  "valueId": "c"
                 }
               ]
             },
@@ -1573,7 +1590,7 @@
               "transform": "append",
               "parameter": [
                 {
-                  "valueString": "%d"
+                  "valueId": "d"
                 }
               ]
             }
@@ -1597,7 +1614,7 @@
               "transform": "append",
               "parameter": [
                 {
-                  "valueString": "%a"
+                  "valueId": "a"
                 }
               ]
             }
@@ -1707,7 +1724,7 @@
               "transform": "pointer",
               "parameter": [
                 {
-                  "valueString": "%a"
+                  "valueId": "a"
                 }
               ]
             }
@@ -1816,7 +1833,7 @@
                   "valueString": "http://loinc.org"
                 },
                 {
-                  "valueString": "%a"
+                  "valueId": "a"
                 }
               ]
             }
@@ -2062,7 +2079,7 @@
                   "valueString": "http://www.sequenceontology.org"
                 },
                 {
-                  "valueString": "%a"
+                  "valueId": "a"
                 }
               ]
             },
@@ -2096,7 +2113,7 @@
               "transform": "copy",
               "parameter": [
                 {
-                  "valueString": "%b"
+                  "valueId": "b"
                 }
               ]
             }
@@ -2145,7 +2162,7 @@
               "transform": "copy",
               "parameter": [
                 {
-                  "valueString": "%a"
+                  "valueId": "a"
                 }
               ]
             },
@@ -2156,7 +2173,7 @@
               "transform": "copy",
               "parameter": [
                 {
-                  "valueString": "%b"
+                  "valueId": "b"
                 }
               ]
             }
