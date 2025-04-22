@@ -83,39 +83,9 @@
       "documentation": "Analysis metadata recorded through a profile on Procedure"
     },
     {
-      "url": "http://hl7.org/fhir/StructureDefinition/Coding",
-      "mode": "target",
-      "alias": "Coding"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/CodeableConcept",
-      "mode": "target",
-      "alias": "CodeableConcept"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/Annotation",
-      "mode": "target",
-      "alias": "Annotation"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/Annotation",
-      "mode": "target",
-      "alias": "Annotation"
-    },
-    {
       "url": "http://hl7.org/fhir/StructureDefinition/Range",
       "mode": "target",
       "alias": "Range"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/Quantity",
-      "mode": "target",
-      "alias": "Quantity"
-    },
-    {
-      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/workflow-relatedArtifactComponent",
-      "mode": "target",
-      "alias": "workflow-relatedArtifactComponent"
     }
   ],
   "group": [
