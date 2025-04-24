@@ -691,12 +691,6 @@
               "transform": "cc",
               "parameter": [
                 {
-                  "valueString": "''"
-                },
-                {
-                  "valueString": "''"
-                },
-                {
                   "valueString": "RNA change"
                 }
               ]
@@ -830,12 +824,6 @@
               "transform": "cc",
               "parameter": [
                 {
-                  "valueString": "''"
-                },
-                {
-                  "valueString": "''"
-                },
-                {
                   "valueString": "Part of fusion"
                 }
               ]
@@ -871,12 +859,6 @@
               "variable": "code",
               "transform": "cc",
               "parameter": [
-                {
-                  "valueString": "''"
-                },
-                {
-                  "valueString": "''"
-                },
                 {
                   "valueString": "Fusion exon"
                 }
@@ -918,12 +900,6 @@
               "variable": "code",
               "transform": "cc",
               "parameter": [
-                {
-                  "valueString": "''"
-                },
-                {
-                  "valueString": "''"
-                },
                 {
                   "valueString": "Conservation Score"
                 }
@@ -1000,12 +976,6 @@
               "variable": "code",
               "transform": "cc",
               "parameter": [
-                {
-                  "valueString": "''"
-                },
-                {
-                  "valueString": "''"
-                },
                 {
                   "valueString": "Read depth"
                 }
@@ -1216,12 +1186,6 @@
               "transform": "cc",
               "parameter": [
                 {
-                  "valueString": "''"
-                },
-                {
-                  "valueString": "''"
-                },
-                {
                   "valueId": "a"
                 }
               ]
@@ -1281,12 +1245,6 @@
               "transform": "cc",
               "parameter": [
                 {
-                  "valueString": "''"
-                },
-                {
-                  "valueString": "''"
-                },
-                {
                   "valueString": "Strand bias ratio"
                 }
               ]
@@ -1323,12 +1281,6 @@
               "variable": "code",
               "transform": "cc",
               "parameter": [
-                {
-                  "valueString": "''"
-                },
-                {
-                  "valueString": "''"
-                },
                 {
                   "valueString": "Strand bias p-value"
                 }
@@ -1474,12 +1426,6 @@
               "variable": "code",
               "transform": "cc",
               "parameter": [
-                {
-                  "valueString": "''"
-                },
-                {
-                  "valueString": "''"
-                },
                 {
                   "valueString": "Overall activity score"
                 }
@@ -1657,12 +1603,6 @@
               "transform": "cc",
               "parameter": [
                 {
-                  "valueString": "''"
-                },
-                {
-                  "valueString": "''"
-                },
-                {
                   "valueString": "Genotype quality"
                 }
               ]
@@ -1699,12 +1639,6 @@
               "variable": "code",
               "transform": "cc",
               "parameter": [
-                {
-                  "valueString": "''"
-                },
-                {
-                  "valueString": "''"
-                },
                 {
                   "valueString": "Genotype probability"
                 }
@@ -1910,12 +1844,6 @@
               "variable": "code",
               "transform": "cc",
               "parameter": [
-                {
-                  "valueString": "''"
-                },
-                {
-                  "valueString": "''"
-                },
                 {
                   "valueString": "Activity value"
                 }
