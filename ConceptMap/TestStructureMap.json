@@ -111,7 +111,7 @@
               "context": "source",
               "min": 1,
               "max": "1",
-              "element": "Gene symbol",
+              "element": "geneRep",
               "variable": "a"
             }
           ],
@@ -159,7 +159,7 @@
             {
               "context": "queried",
               "max": "1",
-              "element": "Bioinformatic analysis workflow",
+              "element": "bioinformaticAnalysisWorkflow",
               "variable": "a"
             }
           ],
@@ -183,7 +183,7 @@
               "transform": "evaluate",
               "parameter": [
                 {
-                  "valueString": "'http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-protocol-performed'"
+                  "valueString": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-protocol-performed"
                 }
               ]
             },
@@ -202,7 +202,7 @@
               "context": "queried",
               "min": 1,
               "max": "1",
-              "element": "Reference genome",
+              "element": "referenceGenome",
               "variable": "a"
             }
           ],
@@ -241,7 +241,7 @@
           "source": [
             {
               "context": "queried",
-              "element": "Variant identification",
+              "element": "variantIdentification",
               "variable": "a"
             }
           ],
@@ -328,7 +328,7 @@
           "source": [
             {
               "context": "queried",
-              "element": "Structured variant",
+              "element": "structuredVariant",
               "max": "1",
               "variable": "a"
             }
@@ -376,12 +376,12 @@
           "source": [
             {
               "context": "queried",
-              "element": "Transcript reference sequence",
+              "element": "transcriptReferenceSequence",
               "variable": "a"
             },
             {
               "context": "queried",
-              "element": "Best transcript candidate",
+              "element": "bestTranscriptCandidate",
               "variable": "b"
             }
           ],
@@ -437,7 +437,7 @@
               "transform": "evaluate",
               "parameter": [
                 {
-                  "valueString": "'http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/workflow-relatedArtifactComponent'"
+                  "valueString": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/workflow-relatedArtifactComponent"
                 }
               ]
             },
@@ -459,12 +459,12 @@
           "source": [
             {
               "context": "queried",
-              "element": "DNA region name",
+              "element": "DNARegionName",
               "variable": "a"
             },
             {
               "context": "queried",
-              "element": "Distance from splicing site",
+              "element": "distanceFromSplicingSite",
               "variable": "b"
             }
           ],
@@ -531,7 +531,7 @@
           "source": [
             {
               "context": "queried",
-              "element": "DNA change",
+              "element": "DNAChange",
               "variable": "a"
             }
           ],
@@ -578,7 +578,7 @@
           "source": [
             {
               "context": "queried",
-              "element": "Amino acid change",
+              "element": "AminoAcidChange",
               "variable": "a"
             }
           ],
@@ -959,7 +959,7 @@
               "transform": "evaluate",
               "parameter": [
                 {
-                  "valueString": "'http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/workflow-relatedArtifactComponent'"
+                  "valueString": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/workflow-relatedArtifactComponent"
                 }
               ]
             },
@@ -1165,7 +1165,7 @@
               "transform": "evaluate",
               "parameter": [
                 {
-                  "valueString": "'http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/workflow-relatedArtifactComponent'"
+                  "valueString": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/workflow-relatedArtifactComponent"
                 }
               ]
             },
@@ -1580,7 +1580,7 @@
               "transform": "evaluate",
               "parameter": [
                 {
-                  "valueString": "'http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/workflow-relatedArtifactComponent'"
+                  "valueString": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/workflow-relatedArtifactComponent"
                 }
               ]
             },
@@ -1997,7 +1997,7 @@
               "transform": "evaluate",
               "parameter": [
                 {
-                  "valueString": "'http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/workflow-relatedArtifactComponent'"
+                  "valueString": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/workflow-relatedArtifactComponent"
                 }
               ]
             },
@@ -2114,7 +2114,7 @@
               "transform": "evaluate",
               "parameter": [
                 {
-                  "valueString": "'http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/workflow-relatedArtifactComponent'"
+                  "valueString": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/workflow-relatedArtifactComponent"
                 }
               ]
             },
