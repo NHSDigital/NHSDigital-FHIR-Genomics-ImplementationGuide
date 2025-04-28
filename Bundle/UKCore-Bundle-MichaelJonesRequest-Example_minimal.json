@@ -158,7 +158,7 @@
 							{ 
 								"system": "http://snomed.info/sct", 
 								"code": "363418001", 
-								"display": "Malignant neoplasm of pancreas"
+								"display": "Malignant neoplasm of pancreas (disorder)"
 							}
 						]
 					}
