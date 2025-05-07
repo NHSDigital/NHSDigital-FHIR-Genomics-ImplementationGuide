@@ -1,6 +1,6 @@
 {
   "resourceType": "Specimen",
-  "id": "Specimen-CancerSolidTumor-Example",
+  "id": "Specimen-SolidTumor-Example",
   "identifier": [
     {
       "system": "https://fhir.add.nhs.uk/Id/specimenId",
@@ -48,9 +48,9 @@
     {
       "coding": [
         {
-          "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-BiopsyState",
-          "code": "fresh-unfixed",
-          "display": "Fresh Unfixed"
+          "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PrimarySampleState",
+          "code": "fresh",
+          "display": "Fresh"
         }
       ]
     }
