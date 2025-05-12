@@ -42,15 +42,6 @@
 			"coding": [
 				{
 					"system": "http://snomed.info/sct",
-					"code": "363418001",
-					"display": "Malignant neoplasm of pancreas (disorder)"
-				}
-			]
-		},
-		{
-			"coding": [
-				{
-					"system": "http://snomed.info/sct",
 					"code": "405824009",
 					"display": "Genetic test"
 				}
