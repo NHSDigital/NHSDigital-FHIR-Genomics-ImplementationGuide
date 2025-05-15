@@ -206,11 +206,7 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/6.0/StructureDefinition/extension-Patient.fetalStatus",
-            "valueCode": {
-              "system": "http://hl7.org/fhir/patient-fetalstatus",
-              "code": "unknown",
-              "display": "Unknown"
-            }
+            "valueCode": "unknown"
           }
         ],
         "identifier": [
