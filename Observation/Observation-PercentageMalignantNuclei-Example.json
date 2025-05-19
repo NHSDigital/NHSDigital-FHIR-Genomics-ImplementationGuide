@@ -6,8 +6,8 @@
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "1255076007",
-        "display": "Percent of cell nuclei positive for proliferation marker protein Ki-67 in primary malignant neoplasm of stomach by immunohistochemistry (observable entity)"
+        "code": "1015521000000107",
+        "display": "Percentage blast cells"
       }
     ]
   },
