@@ -314,7 +314,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "60001007",
-              "display": "Not pregnant (finding)"
+              "display": "Not pregnant"
             }
           ]
         },
@@ -389,7 +389,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "160475008",
-              "display": "Family history: Consanguinity (situation)"
+              "display": "Family history: Consanguinity"
             }
           ]
         },
@@ -419,7 +419,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "416128008",
-              "display": "No history of procedure (situation)"
+              "display": "No history of procedure"
             }
           ]
         },
@@ -428,7 +428,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "263903005",
-              "display": "Transplant (qualifier value)"
+              "display": "Transplant"
             }
           ]
         },
@@ -457,7 +457,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "416128008",
-              "display": "No history of procedure (situation)"
+              "display": "No history of procedure"
             }
           ]
         },
@@ -466,7 +466,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "303955003",
-              "display": "Transfusion - action (qualifier value)"
+              "display": "Transfusion - action"
             }
           ]
         },
@@ -532,8 +532,8 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "445295009",
-              "display": "Blood specimen with EDTA"
+              "code": "119297000",
+              "display": "Blood specimen"
             }
           ]
         },

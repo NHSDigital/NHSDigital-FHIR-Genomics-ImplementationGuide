@@ -7,7 +7,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "872541000000104",
-        "display": "Dutch Lipid Clinic Network diagnostic criteria for familial hypercholesterolaemia score (observable entity)"
+        "display": "Dutch Lipid Clinic Network diagnostic criteria for familial hypercholesterolaemia score"
       }
     ],
     "text": "Dutch or (Welsh) Lipid score"
