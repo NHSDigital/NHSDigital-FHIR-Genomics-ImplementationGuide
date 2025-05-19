@@ -34,7 +34,7 @@
           "target": [
             {
               "code": "409498004",
-              "display": "Anthrax (disorder)",
+              "display": "Anthrax",
               "equivalence": "equivalent"
             }
           ]
@@ -45,7 +45,7 @@
           "target": [
             {
               "code": "75702008",
-              "display": "Brucellosis (disorder)",
+              "display": "Brucellosis",
               "equivalence": "equivalent"
             }
           ]
@@ -56,7 +56,7 @@
           "target": [
             {
               "code": "127531000119106",
-              "display": "Infection caused by Escherichia coli O157 (disorder)",
+              "display": "Infection caused by Escherichia coli O157",
               "equivalence": "equivalent"
             }
           ]
@@ -67,7 +67,7 @@
           "target": [
             {
               "code": "111407006",
-              "display": "Hemolytic uremic syndrome (disorder)",
+              "display": "Hemolytic uremic syndrome",
               "equivalence": "equivalent"
             }
           ]
@@ -78,7 +78,7 @@
           "target": [
             {
               "code": "86406008",
-              "display": "Human immunodeficiency virus infection (disorder)",
+              "display": "Human immunodeficiency virus infection",
               "equivalence": "equivalent"
             }
           ]
@@ -89,7 +89,7 @@
           "target": [
             {
               "code": "228388006",
-              "display": "Intravenous drug user (finding)",
+              "display": "Intravenous drug user",
               "equivalence": "equivalent"
             }
           ]
@@ -100,7 +100,7 @@
           "target": [
             {
               "code": "792004",
-              "display": "Jakob-Creutzfeldt disease (disorder)",
+              "display": "Jakob-Creutzfeldt disease",
               "equivalence": "equivalent"
             }
           ]
@@ -111,7 +111,7 @@
           "target": [
             {
               "code": "428111003",
-              "display": "Melioidosis (disorder)",
+              "display": "Melioidosis",
               "equivalence": "equivalent"
             }
           ]
@@ -122,7 +122,7 @@
           "target": [
             {
               "code": "56717001",
-              "display": "Tuberculosis (disorder)",
+              "display": "Tuberculosis",
               "equivalence": "equivalent"
             }
           ]
@@ -133,7 +133,7 @@
           "target": [
             {
               "code": "4834000",
-              "display": "Typhoid fever (disorder)",
+              "display": "Typhoid fever",
               "equivalence": "equivalent"
             }
           ]
@@ -144,7 +144,7 @@
           "target": [
             {
               "code": "3738000",
-              "display": "Viral hepatitis (disorder)",
+              "display": "Viral hepatitis",
               "equivalence": "equivalent"
             }
           ]

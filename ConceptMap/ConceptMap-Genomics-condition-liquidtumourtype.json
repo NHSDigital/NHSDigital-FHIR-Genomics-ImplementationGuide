@@ -33,7 +33,7 @@
           "target": [
             {
               "code": "91861009",
-              "display": "Acute myeloid leukemia (disorder)",
+              "display": "Acute myeloid leukemia",
               "equivalence": "equivalent"
             }
           ]
@@ -44,7 +44,7 @@
           "target": [
             {
               "code": "91857003",
-              "display": "Acute lymphoid leukemia, disease (disorder)",
+              "display": "Acute lymphoid leukemia, disease",
               "equivalence": "equivalent"
             }
           ]

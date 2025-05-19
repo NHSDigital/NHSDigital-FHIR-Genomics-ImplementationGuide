@@ -34,7 +34,7 @@
           "target": [
             {
               "code": "75540009",
-              "display": "High (qualifier value)",
+              "display": "High",
               "equivalence": "equivalent"
             }
           ]
@@ -45,7 +45,7 @@
           "target": [
             {
               "code": "62482003",
-              "display": "Low (qualifier value)",
+              "display": "Low",
               "equivalence": "equivalent"
             }
           ]
@@ -56,7 +56,7 @@
           "target": [
             {
               "code": "255508009",
-              "display": "Medium (qualifier value)",
+              "display": "Medium",
               "equivalence": "equivalent"
             }
           ]
@@ -67,7 +67,7 @@
           "target": [
             {
               "code": "260360000",
-              "display": "Very high (qualifier value)",
+              "display": "Very high",
               "equivalence": "equivalent"
             }
           ]
@@ -78,7 +78,7 @@
           "target": [
             {
               "code": "260360000",
-              "display": "Very low (qualifier value)",
+              "display": "Very low",
               "equivalence": "equivalent"
             }
           ]

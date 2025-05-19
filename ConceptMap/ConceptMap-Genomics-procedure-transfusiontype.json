@@ -34,7 +34,7 @@
           "target": [
             {
               "code": "71493000",
-              "display": "Transfusion of packed red blood cells (procedure)",
+              "display": "Transfusion of packed red blood cells",
               "equivalence": "equivalent"
             }
           ]
@@ -45,7 +45,7 @@
           "target": [
             {
               "code": "13569004",
-              "display": "Transfusion of plasma (procedure)",
+              "display": "Transfusion of plasma",
               "equivalence": "equivalent"
             }
           ]
@@ -56,7 +56,7 @@
           "target": [
             {
               "code": "12719002",
-              "display": "Platelet transfusion (procedure)",
+              "display": "Platelet transfusion",
               "equivalence": "equivalent"
             }
           ]
@@ -67,7 +67,7 @@
           "target": [
             {
               "code": "5447007",
-              "display": "Transfusion (procedure)",
+              "display": "Transfusion",
               "equivalence": "specializes"
             }
           ]
