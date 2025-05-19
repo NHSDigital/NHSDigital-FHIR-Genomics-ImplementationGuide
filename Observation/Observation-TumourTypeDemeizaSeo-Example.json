@@ -6,8 +6,8 @@
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "116061001",
-        "display": "Solid pseudopapillary carcinoma (morphologic abnormality)"
+        "code": "369757002",
+        "display": "Solid tumor configuration"
       }
     ]
   },
