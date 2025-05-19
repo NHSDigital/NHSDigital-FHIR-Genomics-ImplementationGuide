@@ -35,6 +35,11 @@
       {
         "system": "http://loinc.org",
         "code": "69548-6"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "414755005",
+        "display": "Molecular, genetic AND/OR cellular observable"
       }
     ]
   },
@@ -56,6 +61,11 @@
         "system": "http://loinc.org",
         "code": "LA9633-4",
         "display": "Present"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "52101004",
+        "display": "Present"
       }
     ]
   },
@@ -65,6 +75,11 @@
         "system": "http://loinc.org",
         "code": "LA26398-0",
         "display": "Sequencing"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "117040002",
+        "display": "Nucleic acid sequencing"
       }
     ]
   },
