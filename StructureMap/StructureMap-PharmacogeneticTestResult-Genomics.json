@@ -180,10 +180,10 @@
               "context": "extension",
               "contextType": "variable",
               "element": "url",
-              "transform": "evaluate",
+              "transform": "copy",
               "parameter": [
                 {
-                  "valueString": "'http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-protocol-performed'"
+                  "valueString": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-protocol-performed"
                 }
               ]
             },
@@ -434,10 +434,10 @@
               "context": "extension",
               "contextType": "variable",
               "element": "url",
-              "transform": "evaluate",
+              "transform": "copy",
               "parameter": [
                 {
-                  "valueString": "'http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/workflow-relatedArtifactComponent'"
+                  "valueString": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/workflow-relatedArtifactComponent"
                 }
               ]
             },
@@ -956,10 +956,10 @@
               "context": "extension",
               "contextType": "variable",
               "element": "url",
-              "transform": "evaluate",
+              "transform": "copy",
               "parameter": [
                 {
-                  "valueString": "'http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/workflow-relatedArtifactComponent'"
+                  "valueString": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/workflow-relatedArtifactComponent"
                 }
               ]
             },
@@ -1162,10 +1162,10 @@
               "context": "extension",
               "contextType": "variable",
               "element": "url",
-              "transform": "evaluate",
+              "transform": "copy",
               "parameter": [
                 {
-                  "valueString": "'http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/workflow-relatedArtifactComponent'"
+                  "valueString": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/workflow-relatedArtifactComponent"
                 }
               ]
             },
@@ -1577,10 +1577,10 @@
               "context": "extension",
               "contextType": "variable",
               "element": "url",
-              "transform": "evaluate",
+              "transform": "copy",
               "parameter": [
                 {
-                  "valueString": "'http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/workflow-relatedArtifactComponent'"
+                  "valueString": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/workflow-relatedArtifactComponent"
                 }
               ]
             },
@@ -1994,10 +1994,10 @@
               "context": "extension",
               "contextType": "variable",
               "element": "url",
-              "transform": "evaluate",
+              "transform": "copy",
               "parameter": [
                 {
-                  "valueString": "'http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/workflow-relatedArtifactComponent'"
+                  "valueString": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/workflow-relatedArtifactComponent"
                 }
               ]
             },
@@ -2111,10 +2111,10 @@
               "context": "extension",
               "contextType": "variable",
               "element": "url",
-              "transform": "evaluate",
+              "transform": "copy",
               "parameter": [
                 {
-                  "valueString": "'http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/workflow-relatedArtifactComponent'"
+                  "valueString": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/workflow-relatedArtifactComponent"
                 }
               ]
             },
