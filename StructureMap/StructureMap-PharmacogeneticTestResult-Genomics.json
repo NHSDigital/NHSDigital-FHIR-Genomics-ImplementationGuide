@@ -1,0 +1,2137 @@
+{
+  "resourceType": "StructureMap",
+  "id": "StructureMap-PharmacogeneticTestResult-Genomics",
+  "url": "https://fhir.nhs.uk/StructureMap/StructureMap-PharmacogeneticTestResult-Genomics",
+  "version": "0.1.0",
+  "name": "StructureMapPharmacogeneticTestResultGenomics",
+  "title": "StructureMap PharmacogeneticTestResult Genomics",
+  "status": "draft",
+  "date": "2025-02-14T00:00:00.000Z",
+  "publisher": "NHS England",
+  "contact": [
+    {
+      "name": "NHS England",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "interoperabilityteam@nhs.net"
+        }
+      ]
+    }
+  ],
+  "description": "StructureMap to transform from the OpenEHR Pharmacogenetic Test Result archetype to a set of FHIR Observations, most likely attached as results to a structured DiagnosticReport. Only 1 level of references from the root PGx result archetype are explored for conciseness/readability",
+  "copyright": "Copyright © 2023+ NHS England Licensed under the Apache License, Version 2.0 (the \\\"License\\\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \\\"AS IS\\\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html.",
+  "structure": [
+    {
+      "url": "https://ckm.openehr.org/ckm/archetypes/1013.1.7066",
+      "mode": "source",
+      "alias": "PharmacogeneticTestResult",
+      "documentation": "The OpenEHR PGx logical model"
+    },
+    {
+      "url": "https://ckm.openehr.org/ckm/archetypes/1013.1.3748",
+      "mode": "source",
+      "alias": "KnowledgeBaseReference",
+      "documentation": "The OpenEHR model for citation of a digital resource"
+    },
+    {
+      "url": "https://ckm.openehr.org/ckm/archetypes/1013.1.3759",
+      "mode": "source",
+      "alias": "GenomicVariantResult",
+      "documentation": "The OpenEHR model for a variant"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genotype",
+      "mode": "target",
+      "alias": "Genotype",
+      "documentation": "The Genotype information as a FHIR Observation"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/haplotype",
+      "mode": "target",
+      "alias": "Haplotype",
+      "documentation": "The Haplotype information as a FHIR Observation"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/variant",
+      "mode": "target",
+      "alias": "Variant",
+      "documentation": "The Variant information as a FHIR Observation"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/diagnostic-implication",
+      "mode": "target",
+      "alias": "DiagnosticImplication",
+      "documentation": "The phenotypic/implication information as a FHIR Observation"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/molecular-consequence",
+      "mode": "target",
+      "alias": "MolecularConsequence",
+      "documentation": "The observed effect of variants as a FHIR Observation"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis",
+      "mode": "target",
+      "alias": "GenomicStudyAnalysis",
+      "documentation": "Analysis metadata recorded through a profile on Procedure"
+    }
+  ],
+  "group": [
+    {
+      "name": "VariantInformation",
+      "typeMode": "types",
+      "input": [
+        {
+          "name": "source",
+          "type": "PharmacogeneticTestResult",
+          "mode": "source"
+        },
+        {
+          "name": "queried",
+          "type": "GenomicVariantResult",
+          "mode": "source"
+        },
+        {
+          "name": "target",
+          "type": "Variant",
+          "mode": "target"
+        },
+        {
+          "name": "produced",
+          "type": "GenomicStudyAnalysis",
+          "mode": "target"
+        }
+      ],
+      "rule": [
+        {
+          "name": "Genesymbol",
+          "source": [
+            {
+              "context": "source",
+              "min": 1,
+              "max": "1",
+              "element": "Gene symbol",
+              "variable": "a"
+            }
+          ],
+          "target": [
+            {
+              "context": "target",
+              "contextType": "variable",
+              "element": "component",
+              "variable": "component"
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "code",
+              "variable": "code",
+              "transform": "cc",
+              "parameter": [
+                {
+                  "valueString": "http://loinc.org"
+                },
+                {
+                  "valueString": "48018-6"
+                }
+              ]
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "value",
+              "transform": "cc",
+              "parameter": [
+                {
+                  "valueString": "http://www.genenames.org"
+                },
+                {
+                  "valueId": "a"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bioinformaticanalysisworkflow",
+          "source": [
+            {
+              "context": "queried",
+              "max": "1",
+              "element": "Bioinformatic analysis workflow",
+              "variable": "a"
+            }
+          ],
+          "target": [
+            {
+              "context": "produced",
+              "contextType": "variable",
+              "element": "extension",
+              "variable": "extension",
+              "transform": "create",
+              "parameter": [
+                {
+                  "valueString": "Extension"
+                }
+              ]
+            },
+            {
+              "context": "extension",
+              "contextType": "variable",
+              "element": "url",
+              "transform": "copy",
+              "parameter": [
+                {
+                  "valueString": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-protocol-performed"
+                }
+              ]
+            },
+            {
+              "context": "extension",
+              "contextType": "variable",
+              "element": "value",
+              "transform": "copy"
+            }
+          ]
+        },
+        {
+          "name": "Referencegenome",
+          "source": [
+            {
+              "context": "queried",
+              "min": 1,
+              "max": "1",
+              "element": "Reference genome",
+              "variable": "a"
+            }
+          ],
+          "target": [
+            {
+              "context": "target",
+              "contextType": "variable",
+              "element": "component",
+              "variable": "component"
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "code",
+              "variable": "code",
+              "transform": "cc",
+              "parameter": [
+                {
+                  "valueString": "http://loinc.org"
+                },
+                {
+                  "valueString": "48013-7"
+                }
+              ]
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "value",
+              "transform": "copy"
+            }
+          ]
+        },
+        {
+          "name": "Variantidentification",
+          "source": [
+            {
+              "context": "queried",
+              "element": "Variant identification",
+              "variable": "a"
+            }
+          ],
+          "target": [
+            {
+              "context": "target",
+              "contextType": "variable",
+              "element": "component",
+              "variable": "component"
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "code",
+              "variable": "code",
+              "transform": "cc",
+              "parameter": [
+                {
+                  "valueString": "http://loinc.org"
+                },
+                {
+                  "valueString": "81252-9"
+                }
+              ]
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "value",
+              "transform": "copy"
+            }
+          ]
+        },
+        {
+          "name": "Variant",
+          "source": [
+            {
+              "context": "queried",
+              "element": "Variant",
+              "max": "1",
+              "variable": "a"
+            }
+          ],
+          "target": [
+            {
+              "context": "target",
+              "contextType": "variable",
+              "element": "component",
+              "variable": "component"
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "code",
+              "variable": "code",
+              "transform": "cc",
+              "parameter": [
+                {
+                  "valueString": "http://loinc.org"
+                },
+                {
+                  "valueString": "81290-9"
+                }
+              ]
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "value",
+              "transform": "cc",
+              "parameter": [
+                {
+                  "valueString": "http://www.genenames.org"
+                },
+                {
+                  "valueId": "a"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Structuredvariant",
+          "source": [
+            {
+              "context": "queried",
+              "element": "Structured variant",
+              "max": "1",
+              "variable": "a"
+            }
+          ],
+          "target": [
+            {
+              "context": "target",
+              "contextType": "variable",
+              "element": "component",
+              "variable": "component"
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "code",
+              "variable": "code",
+              "transform": "cc",
+              "parameter": [
+                {
+                  "valueString": "http://loinc.org"
+                },
+                {
+                  "valueString": "48019-4"
+                }
+              ]
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "value",
+              "transform": "cc",
+              "parameter": [
+                {
+                  "valueString": "http://www.sequenceontology.org"
+                },
+                {
+                  "valueId": "a"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Transcriptreferencesequence",
+          "source": [
+            {
+              "context": "queried",
+              "element": "Transcript reference sequence",
+              "variable": "a"
+            },
+            {
+              "context": "queried",
+              "element": "Best transcript candidate",
+              "variable": "b"
+            }
+          ],
+          "target": [
+            {
+              "context": "target",
+              "contextType": "variable",
+              "element": "component",
+              "variable": "component"
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "code",
+              "variable": "code",
+              "transform": "cc",
+              "parameter": [
+                {
+                  "valueString": "http://loinc.org"
+                },
+                {
+                  "valueString": "51958-7"
+                }
+              ]
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "value",
+              "transform": "copy",
+              "parameter": [
+                {
+                  "valueId": "a"
+                }
+              ]
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "extension",
+              "variable": "extension",
+              "transform": "create",
+              "parameter": [
+                {
+                  "valueString": "Extension"
+                }
+              ]
+            },
+            {
+              "context": "extension",
+              "contextType": "variable",
+              "element": "url",
+              "transform": "copy",
+              "parameter": [
+                {
+                  "valueString": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/workflow-relatedArtifactComponent"
+                }
+              ]
+            },
+            {
+              "context": "extension",
+              "contextType": "variable",
+              "element": "value",
+              "transform": "copy",
+              "parameter": [
+                {
+                  "valueId": "b"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "DNAregionname",
+          "source": [
+            {
+              "context": "queried",
+              "element": "DNA region name",
+              "variable": "a"
+            },
+            {
+              "context": "queried",
+              "element": "Distance from splicing site",
+              "variable": "b"
+            }
+          ],
+          "target": [
+            {
+              "context": "target",
+              "contextType": "variable",
+              "element": "component",
+              "variable": "component"
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "code",
+              "variable": "code",
+              "transform": "cc",
+              "parameter": [
+                {
+                  "valueString": "http://loinc.org"
+                },
+                {
+                  "valueString": "81254-5"
+                }
+              ]
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "variable": "range",
+              "element": "value",
+              "transform": "create",
+              "parameter": [
+                {
+                  "valueString": "Range"
+                }
+              ]
+            },
+            {
+              "context": "range",
+              "contextType": "variable",
+              "element": "low",
+              "transform": "copy",
+              "parameter": [
+                {
+                  "valueId": "a"
+                }
+              ]
+            },
+            {
+              "context": "range",
+              "contextType": "variable",
+              "element": "high",
+              "transform": "copy",
+              "parameter": [
+                {
+                  "valueId": "b"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "DNAchange",
+          "source": [
+            {
+              "context": "queried",
+              "element": "DNA change",
+              "variable": "a"
+            }
+          ],
+          "target": [
+            {
+              "context": "target",
+              "contextType": "variable",
+              "element": "component",
+              "variable": "component"
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "code",
+              "variable": "code",
+              "transform": "cc",
+              "parameter": [
+                {
+                  "valueString": "http://loinc.org"
+                },
+                {
+                  "valueString": "48004-6"
+                }
+              ]
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "value",
+              "transform": "cc",
+              "parameter": [
+                {
+                  "valueString": "http://www.genenames.org"
+                },
+                {
+                  "valueId": "a"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Aminoacidchange",
+          "source": [
+            {
+              "context": "queried",
+              "element": "Amino acid change",
+              "variable": "a"
+            }
+          ],
+          "target": [
+            {
+              "context": "target",
+              "contextType": "variable",
+              "element": "component",
+              "variable": "component"
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "code",
+              "variable": "code",
+              "transform": "cc",
+              "parameter": [
+                {
+                  "valueString": "http://loinc.org"
+                },
+                {
+                  "valueString": "48005-3"
+                }
+              ]
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "value",
+              "transform": "cc",
+              "parameter": [
+                {
+                  "valueString": "http://www.genenames.org"
+                },
+                {
+                  "valueId": "a"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Aminoacidchangetype",
+          "source": [
+            {
+              "context": "queried",
+              "element": "Amino acid change type",
+              "variable": "a"
+            }
+          ],
+          "target": [
+            {
+              "context": "target",
+              "contextType": "variable",
+              "element": "component",
+              "variable": "component"
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "code",
+              "variable": "code",
+              "transform": "cc",
+              "parameter": [
+                {
+                  "valueString": "http://loinc.org"
+                },
+                {
+                  "valueString": "48006-1"
+                }
+              ]
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "value",
+              "transform": "cc",
+              "parameter": [
+                {
+                  "valueString": "http://loinc.org"
+                },
+                {
+                  "valueId": "a"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "RNAchange",
+          "source": [
+            {
+              "context": "queried",
+              "element": "RNA change",
+              "variable": "a"
+            }
+          ],
+          "target": [
+            {
+              "context": "target",
+              "contextType": "variable",
+              "element": "component",
+              "variable": "component"
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "code",
+              "variable": "code",
+              "transform": "cc",
+              "parameter": [
+                {
+                  "valueString": "''"
+                },
+                {
+                  "valueString": "''"
+                },
+                {
+                  "valueString": "RNA change"
+                }
+              ]
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "value",
+              "transform": "cc",
+              "parameter": [
+                {
+                  "valueString": "http://www.genenames.org"
+                },
+                {
+                  "valueId": "a"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Genename",
+          "source": [
+            {
+              "context": "queried",
+              "element": "Gene name",
+              "variable": "a"
+            }
+          ],
+          "target": [
+            {
+              "context": "target",
+              "contextType": "variable",
+              "element": "component",
+              "variable": "component"
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "code",
+              "variable": "code",
+              "transform": "cc",
+              "parameter": [
+                {
+                  "valueString": "http://loinc.org"
+                },
+                {
+                  "valueString": "48018-6"
+                }
+              ]
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "value",
+              "transform": "copy"
+            }
+          ]
+        },
+        {
+          "name": "Copynumberoverlap",
+          "source": [
+            {
+              "context": "queried",
+              "element": "Copy number overlap",
+              "variable": "a"
+            }
+          ],
+          "target": [
+            {
+              "context": "target",
+              "contextType": "variable",
+              "element": "component",
+              "variable": "component"
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "code",
+              "variable": "code",
+              "transform": "cc",
+              "parameter": [
+                {
+                  "valueString": "http://loinc.org"
+                },
+                {
+                  "valueString": "82155-3"
+                }
+              ]
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "value",
+              "transform": "qty",
+              "parameter": [
+                {
+                  "valueId": "a"
+                },
+                {
+                  "valueString": "{ratio}"
+                },
+                {
+                  "valueString": "http://unitsofmeasure.org"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Partoffusion",
+          "source": [
+            {
+              "context": "queried",
+              "element": "Part of fusion",
+              "variable": "a"
+            }
+          ],
+          "target": [
+            {
+              "context": "target",
+              "contextType": "variable",
+              "element": "component",
+              "variable": "component"
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "code",
+              "variable": "code",
+              "transform": "cc",
+              "parameter": [
+                {
+                  "valueString": "''"
+                },
+                {
+                  "valueString": "''"
+                },
+                {
+                  "valueString": "Part of fusion"
+                }
+              ]
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "value",
+              "transform": "copy"
+            }
+          ]
+        },
+        {
+          "name": "Fusionexon",
+          "source": [
+            {
+              "context": "queried",
+              "element": "Fusion exon",
+              "variable": "a"
+            }
+          ],
+          "target": [
+            {
+              "context": "target",
+              "contextType": "variable",
+              "element": "component",
+              "variable": "component"
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "code",
+              "variable": "code",
+              "transform": "cc",
+              "parameter": [
+                {
+                  "valueString": "''"
+                },
+                {
+                  "valueString": "''"
+                },
+                {
+                  "valueString": "Fusion exon"
+                }
+              ]
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "value",
+              "transform": "copy"
+            }
+          ]
+        },
+        {
+          "name": "ConservationScore",
+          "source": [
+            {
+              "context": "queried",
+              "element": "Score",
+              "variable": "a"
+            },
+            {
+              "context": "queried",
+              "element": "Conservation score knowledge base",
+              "variable": "b"
+            }
+          ],
+          "target": [
+            {
+              "context": "target",
+              "contextType": "variable",
+              "element": "component",
+              "variable": "component"
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "code",
+              "variable": "code",
+              "transform": "cc",
+              "parameter": [
+                {
+                  "valueString": "''"
+                },
+                {
+                  "valueString": "''"
+                },
+                {
+                  "valueString": "Conservation Score"
+                }
+              ]
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "value",
+              "transform": "copy",
+              "parameter": [
+                {
+                  "valueId": "a"
+                }
+              ]
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "extension",
+              "variable": "extension",
+              "transform": "create",
+              "parameter": [
+                {
+                  "valueString": "Extension"
+                }
+              ]
+            },
+            {
+              "context": "extension",
+              "contextType": "variable",
+              "element": "url",
+              "transform": "copy",
+              "parameter": [
+                {
+                  "valueString": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/workflow-relatedArtifactComponent"
+                }
+              ]
+            },
+            {
+              "context": "extension",
+              "contextType": "variable",
+              "element": "value",
+              "transform": "copy",
+              "parameter": [
+                {
+                  "valueId": "b"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Readdepth",
+          "source": [
+            {
+              "context": "queried",
+              "max": "1",
+              "element": "Read depth",
+              "variable": "a"
+            }
+          ],
+          "target": [
+            {
+              "context": "target",
+              "contextType": "variable",
+              "element": "component",
+              "variable": "component"
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "code",
+              "variable": "code",
+              "transform": "cc",
+              "parameter": [
+                {
+                  "valueString": "''"
+                },
+                {
+                  "valueString": "''"
+                },
+                {
+                  "valueString": "Read depth"
+                }
+              ]
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "value",
+              "transform": "copy"
+            }
+          ]
+        },
+        {
+          "name": "Alleledepth",
+          "source": [
+            {
+              "context": "queried",
+              "max": "1",
+              "element": "Allele depth",
+              "variable": "a"
+            }
+          ],
+          "target": [
+            {
+              "context": "target",
+              "contextType": "variable",
+              "element": "component",
+              "variable": "component"
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "code",
+              "variable": "code",
+              "transform": "cc",
+              "parameter": [
+                {
+                  "valueString": "http://loinc.org"
+                },
+                {
+                  "valueString": "82121-5"
+                }
+              ]
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "value",
+              "transform": "copy"
+            }
+          ]
+        },
+        {
+          "name": "Allelefrequency",
+          "source": [
+            {
+              "context": "queried",
+              "max": "1",
+              "element": "Allele frequency",
+              "variable": "a"
+            }
+          ],
+          "target": [
+            {
+              "context": "target",
+              "contextType": "variable",
+              "element": "component",
+              "variable": "component"
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "code",
+              "variable": "code",
+              "transform": "cc",
+              "parameter": [
+                {
+                  "valueString": "http://loinc.org"
+                },
+                {
+                  "valueString": "81258-6"
+                }
+              ]
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "value",
+              "transform": "copy"
+            }
+          ]
+        },
+        {
+          "name": "Populationallelefrequencydetails",
+          "source": [
+            {
+              "context": "queried",
+              "element": "Population allele frequency knowledge base",
+              "variable": "a"
+            },
+            {
+              "context": "queried",
+              "element": "Population allele frequency",
+              "variable": "b"
+            }
+          ],
+          "target": [
+            {
+              "context": "target",
+              "contextType": "variable",
+              "element": "component",
+              "variable": "component"
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "code",
+              "variable": "code",
+              "transform": "cc",
+              "parameter": [
+                {
+                  "valueString": "http://loinc.org"
+                },
+                {
+                  "valueString": "92821-8"
+                }
+              ]
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "value",
+              "transform": "copy",
+              "parameter": [
+                {
+                  "valueId": "b"
+                }
+              ]
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "extension",
+              "variable": "extension",
+              "transform": "create",
+              "parameter": [
+                {
+                  "valueString": "Extension"
+                }
+              ]
+            },
+            {
+              "context": "extension",
+              "contextType": "variable",
+              "element": "url",
+              "transform": "copy",
+              "parameter": [
+                {
+                  "valueString": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/workflow-relatedArtifactComponent"
+                }
+              ]
+            },
+            {
+              "context": "extension",
+              "contextType": "variable",
+              "element": "value",
+              "transform": "copy",
+              "parameter": [
+                {
+                  "valueId": "a"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "VCFqualityfilter",
+          "source": [
+            {
+              "context": "queried",
+              "element": "Filter name",
+              "variable": "a"
+            },
+            {
+              "context": "queried",
+              "element": "Description",
+              "variable": "b"
+            },
+            {
+              "context": "queried",
+              "element": "Filter passed",
+              "variable": "c"
+            }
+          ],
+          "target": [
+            {
+              "context": "target",
+              "contextType": "variable",
+              "element": "component",
+              "variable": "component"
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "code",
+              "variable": "code",
+              "transform": "cc",
+              "parameter": [
+                {
+                  "valueString": "''"
+                },
+                {
+                  "valueString": "''"
+                },
+                {
+                  "valueId": "a"
+                }
+              ]
+            },
+            {
+              "context": "code",
+              "contextType": "variable",
+              "element": "coding",
+              "variable": "coding"
+            },
+            {
+              "context": "coding",
+              "contextType": "variable",
+              "element": "display",
+              "transform": "append",
+              "parameter": [
+                {
+                  "valueId": "b"
+                }
+              ]
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "value",
+              "transform": "copy",
+              "parameter": [
+                {
+                  "valueId": "c"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Strandbiasratio",
+          "source": [
+            {
+              "context": "queried",
+              "element": "Strand bias ratio",
+              "max": "1",
+              "variable": "a"
+            }
+          ],
+          "target": [
+            {
+              "context": "target",
+              "contextType": "variable",
+              "element": "component",
+              "variable": "component"
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "code",
+              "variable": "code",
+              "transform": "cc",
+              "parameter": [
+                {
+                  "valueString": "''"
+                },
+                {
+                  "valueString": "''"
+                },
+                {
+                  "valueString": "Strand bias ratio"
+                }
+              ]
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "value",
+              "transform": "copy"
+            }
+          ]
+        },
+        {
+          "name": "Strandbiaspvalue",
+          "source": [
+            {
+              "context": "queried",
+              "element": "Strand bias p-value",
+              "max": "1",
+              "variable": "a"
+            }
+          ],
+          "target": [
+            {
+              "context": "target",
+              "contextType": "variable",
+              "element": "component",
+              "variable": "component"
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "code",
+              "variable": "code",
+              "transform": "cc",
+              "parameter": [
+                {
+                  "valueString": "''"
+                },
+                {
+                  "valueString": "''"
+                },
+                {
+                  "valueString": "Strand bias p-value"
+                }
+              ]
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "value",
+              "transform": "copy"
+            }
+          ]
+        },
+        {
+          "name": "Allelicstate",
+          "source": [
+            {
+              "context": "queried",
+              "element": "Allelic state",
+              "max": "1",
+              "variable": "a"
+            }
+          ],
+          "target": [
+            {
+              "context": "target",
+              "contextType": "variable",
+              "element": "component",
+              "variable": "component"
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "code",
+              "variable": "code",
+              "transform": "cc",
+              "parameter": [
+                {
+                  "valueString": "http://loinc.org"
+                },
+                {
+                  "valueString": "53034-5"
+                }
+              ]
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "value",
+              "transform": "cc",
+              "parameter": [
+                {
+                  "valueString": "http://loinc.org"
+                },
+                {
+                  "valueId": "a"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Additionaldetails",
+          "source": [
+            {
+              "context": "queried",
+              "element": "Additional details",
+              "variable": "a"
+            }
+          ],
+          "target": [
+            {
+              "context": "target",
+              "contextType": "variable",
+              "element": "note",
+              "transform": "copy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "GenotypeInformation",
+      "typeMode": "types",
+      "input": [
+        {
+          "name": "source",
+          "type": "PharmacogeneticTestResult",
+          "mode": "source"
+        },
+        {
+          "name": "queried",
+          "type": "KnowledgeBaseReference",
+          "mode": "source"
+        },
+        {
+          "name": "target",
+          "type": "Genotype",
+          "mode": "target"
+        }
+      ],
+      "rule": [
+        {
+          "name": "Diplotype",
+          "source": [
+            {
+              "context": "source",
+              "element": "Diplotype",
+              "max": "1",
+              "variable": "a"
+            }
+          ],
+          "target": [
+            {
+              "context": "target",
+              "contextType": "variable",
+              "element": "value",
+              "transform": "copy"
+            }
+          ]
+        },
+        {
+          "name": "Overallactivityscore",
+          "source": [
+            {
+              "context": "source",
+              "element": "Overall activity score",
+              "max": "1",
+              "variable": "a"
+            }
+          ],
+          "target": [
+            {
+              "context": "target",
+              "contextType": "variable",
+              "element": "component",
+              "variable": "component"
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "code",
+              "variable": "code",
+              "transform": "cc",
+              "parameter": [
+                {
+                  "valueString": "''"
+                },
+                {
+                  "valueString": "''"
+                },
+                {
+                  "valueString": "Overall activity score"
+                }
+              ]
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "value",
+              "transform": "copy"
+            }
+          ]
+        },
+        {
+          "name": "Genomicregion",
+          "source": [
+            {
+              "context": "source",
+              "element": "Genomic region",
+              "variable": "a"
+            },
+            {
+              "context": "source",
+              "element": "Allele covered",
+              "variable": "b"
+            },
+            {
+              "context": "queried",
+              "element": "Knowledge base URI",
+              "variable": "c"
+            },
+            {
+              "context": "queried",
+              "element": "Item name",
+              "variable": "d"
+            }
+          ],
+          "target": [
+            {
+              "context": "target",
+              "contextType": "variable",
+              "element": "component",
+              "variable": "component"
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "code",
+              "variable": "code",
+              "transform": "cc",
+              "parameter": [
+                {
+                  "valueString": "http://loinc.org"
+                },
+                {
+                  "valueString": "48018-6"
+                }
+              ]
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "value",
+              "transform": "copy",
+              "parameter": [
+                {
+                  "valueId": "a"
+                }
+              ]
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "value",
+              "transform": "append",
+              "parameter": [
+                {
+                  "valueId": "b"
+                }
+              ]
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "extension",
+              "variable": "extension",
+              "transform": "create",
+              "parameter": [
+                {
+                  "valueString": "Extension"
+                }
+              ]
+            },
+            {
+              "context": "extension",
+              "contextType": "variable",
+              "element": "url",
+              "transform": "copy",
+              "parameter": [
+                {
+                  "valueString": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/workflow-relatedArtifactComponent"
+                }
+              ]
+            },
+            {
+              "context": "extension",
+              "contextType": "variable",
+              "element": "value",
+              "transform": "copy",
+              "parameter": [
+                {
+                  "valueId": "c"
+                }
+              ]
+            },
+            {
+              "context": "extension",
+              "contextType": "variable",
+              "element": "value",
+              "transform": "append",
+              "parameter": [
+                {
+                  "valueId": "d"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Genotype",
+          "source": [
+            {
+              "context": "queried",
+              "element": "Genotype",
+              "max": "1",
+              "variable": "a"
+            }
+          ],
+          "target": [
+            {
+              "context": "target",
+              "contextType": "variable",
+              "element": "value",
+              "transform": "append",
+              "parameter": [
+                {
+                  "valueId": "a"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Genotypequality",
+          "source": [
+            {
+              "context": "queried",
+              "element": "Genotype quality",
+              "max": "1",
+              "variable": "a"
+            }
+          ],
+          "target": [
+            {
+              "context": "target",
+              "contextType": "variable",
+              "element": "component",
+              "variable": "component"
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "code",
+              "variable": "code",
+              "transform": "cc",
+              "parameter": [
+                {
+                  "valueString": "''"
+                },
+                {
+                  "valueString": "''"
+                },
+                {
+                  "valueString": "Genotype quality"
+                }
+              ]
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "value",
+              "transform": "copy"
+            }
+          ]
+        },
+        {
+          "name": "Genotypeprobability",
+          "source": [
+            {
+              "context": "queried",
+              "element": "Genotype probability",
+              "max": "1",
+              "variable": "a"
+            }
+          ],
+          "target": [
+            {
+              "context": "target",
+              "contextType": "variable",
+              "element": "component",
+              "variable": "component"
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "code",
+              "variable": "code",
+              "transform": "cc",
+              "parameter": [
+                {
+                  "valueString": "''"
+                },
+                {
+                  "valueString": "''"
+                },
+                {
+                  "valueString": "Genotype probability"
+                }
+              ]
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "value",
+              "transform": "copy"
+            }
+          ]
+        },
+        {
+          "name": "Specimenidentifier",
+          "source": [
+            {
+              "context": "queried",
+              "element": "Specimen identifier",
+              "max": "1",
+              "variable": "a"
+            }
+          ],
+          "target": [
+            {
+              "context": "target",
+              "contextType": "variable",
+              "element": "specimen",
+              "transform": "pointer",
+              "parameter": [
+                {
+                  "valueId": "a"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DiagnosticImplicationInformation",
+      "typeMode": "types",
+      "input": [
+        {
+          "name": "source",
+          "type": "PharmacogeneticTestResult",
+          "mode": "source"
+        },
+        {
+          "name": "queried",
+          "type": "GenomicVariantResult",
+          "mode": "source"
+        },
+        {
+          "name": "target",
+          "type": "DiagnosticImplication",
+          "mode": "target"
+        }
+      ],
+      "rule": [
+        {
+          "name": "Phenotype",
+          "source": [
+            {
+              "context": "source",
+              "element": "Phenotype",
+              "variable": "a"
+            }
+          ],
+          "target": [
+            {
+              "context": "target",
+              "contextType": "variable",
+              "element": "component",
+              "variable": "component"
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "code",
+              "variable": "code",
+              "transform": "cc",
+              "parameter": [
+                {
+                  "valueString": "http://loinc.org"
+                },
+                {
+                  "valueString": "81259-4"
+                }
+              ]
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "value",
+              "transform": "copy"
+            }
+          ]
+        },
+        {
+          "name": "ACMGclassification",
+          "source": [
+            {
+              "context": "source",
+              "element": "ACMG classification",
+              "variable": "a"
+            }
+          ],
+          "target": [
+            {
+              "context": "target",
+              "contextType": "variable",
+              "element": "component",
+              "variable": "component"
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "code",
+              "variable": "code",
+              "transform": "cc",
+              "parameter": [
+                {
+                  "valueString": "http://loinc.org"
+                },
+                {
+                  "valueString": "53037-8"
+                }
+              ]
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "value",
+              "transform": "cc",
+              "parameter": [
+                {
+                  "valueString": "http://loinc.org"
+                },
+                {
+                  "valueId": "a"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "HaplotypeInformation",
+      "typeMode": "types",
+      "input": [
+        {
+          "name": "source",
+          "type": "PharmacogeneticTestResult",
+          "mode": "source"
+        },
+        {
+          "name": "target",
+          "type": "Haplotype",
+          "mode": "target"
+        }
+      ],
+      "rule": [
+        {
+          "name": "Allelehaplotype",
+          "source": [
+            {
+              "context": "source",
+              "element": "Allele haplotype",
+              "variable": "a"
+            }
+          ],
+          "target": [
+            {
+              "context": "target",
+              "contextType": "variable",
+              "element": "value",
+              "transform": "copy"
+            }
+          ]
+        },
+        {
+          "name": "Activityvalue",
+          "source": [
+            {
+              "context": "source",
+              "element": "Activity value",
+              "variable": "a"
+            }
+          ],
+          "target": [
+            {
+              "context": "target",
+              "contextType": "variable",
+              "element": "component",
+              "variable": "component"
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "code",
+              "variable": "code",
+              "transform": "cc",
+              "parameter": [
+                {
+                  "valueString": "''"
+                },
+                {
+                  "valueString": "''"
+                },
+                {
+                  "valueString": "Activity value"
+                }
+              ]
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "value",
+              "transform": "copy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MolecularConsequenceInformation",
+      "typeMode": "types",
+      "input": [
+        {
+          "name": "queried",
+          "type": "GenomicVariantResult",
+          "mode": "source"
+        },
+        {
+          "name": "target",
+          "type": "MolecularConsequence",
+          "mode": "target"
+        }
+      ],
+      "rule": [
+        {
+          "name": "Predictedimpactknowledgebase",
+          "source": [
+            {
+              "context": "queried",
+              "element": "Predicted impact knowledge base",
+              "variable": "a"
+            }
+          ],
+          "target": [
+            {
+              "context": "target",
+              "contextType": "variable",
+              "element": "component",
+              "variable": "component"
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "code",
+              "variable": "code",
+              "transform": "cc",
+              "parameter": [
+                {
+                  "valueString": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs"
+                },
+                {
+                  "valueString": "feature-consequence"
+                }
+              ]
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "extension",
+              "variable": "extension",
+              "transform": "create",
+              "parameter": [
+                {
+                  "valueString": "Extension"
+                }
+              ]
+            },
+            {
+              "context": "extension",
+              "contextType": "variable",
+              "element": "url",
+              "transform": "copy",
+              "parameter": [
+                {
+                  "valueString": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/workflow-relatedArtifactComponent"
+                }
+              ]
+            },
+            {
+              "context": "extension",
+              "contextType": "variable",
+              "element": "value",
+              "transform": "copy"
+            }
+          ]
+        },
+        {
+          "name": "score",
+          "source": [
+            {
+              "context": "queried",
+              "element": "score",
+              "variable": "a"
+            }
+          ],
+          "target": [
+            {
+              "context": "target",
+              "contextType": "variable",
+              "element": "value",
+              "transform": "copy"
+            }
+          ]
+        },
+        {
+          "name": "Qualitativeprediction",
+          "source": [
+            {
+              "context": "queried",
+              "element": "Qualitative prediction",
+              "variable": "a"
+            }
+          ],
+          "target": [
+            {
+              "context": "target",
+              "contextType": "variable",
+              "element": "interpretation",
+              "transform": "copy"
+            }
+          ]
+        },
+        {
+          "name": "Impact",
+          "source": [
+            {
+              "context": "queried",
+              "element": "Impact",
+              "variable": "a"
+            },
+            {
+              "context": "queried",
+              "element": "Source",
+              "variable": "b"
+            }
+          ],
+          "target": [
+            {
+              "context": "target",
+              "contextType": "variable",
+              "element": "component",
+              "variable": "component"
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "code",
+              "variable": "code",
+              "transform": "cc",
+              "parameter": [
+                {
+                  "valueString": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs"
+                },
+                {
+                  "valueString": "functional-effect"
+                }
+              ]
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "value",
+              "transform": "cc",
+              "parameter": [
+                {
+                  "valueString": "http://www.sequenceontology.org"
+                },
+                {
+                  "valueId": "a"
+                }
+              ]
+            },
+            {
+              "context": "component",
+              "contextType": "variable",
+              "element": "extension",
+              "variable": "extension",
+              "transform": "create",
+              "parameter": [
+                {
+                  "valueString": "Extension"
+                }
+              ]
+            },
+            {
+              "context": "extension",
+              "contextType": "variable",
+              "element": "url",
+              "transform": "copy",
+              "parameter": [
+                {
+                  "valueString": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/workflow-relatedArtifactComponent"
+                }
+              ]
+            },
+            {
+              "context": "extension",
+              "contextType": "variable",
+              "element": "value",
+              "transform": "copy",
+              "parameter": [
+                {
+                  "valueId": "b"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
