@@ -34,7 +34,7 @@
           "target": [
             {
               "code": "234389001",
-              "display": "Alpha-beta thalassemia (disorder)",
+              "display": "Alpha-beta thalassemia",
               "equivalence": "equivalent"
             }
           ]
@@ -45,7 +45,7 @@
           "target": [
             {
               "code": "76050008",
-              "display": "Hemoglobin C trait (disorder)",
+              "display": "Hemoglobin C trait",
               "equivalence": "equivalent"
             }
           ]
@@ -67,7 +67,7 @@
           "target": [
             {
               "code": "35434009",
-              "display": "Sickle cell-hemoglobin C disease (disorder)",
+              "display": "Sickle cell-hemoglobin C disease",
               "equivalence": "equivalent"
             }
           ]
@@ -78,7 +78,7 @@
           "target": [
             {
               "code": "127040003",
-              "display": "Sickle cell-hemoglobin SS disease (disorder)",
+              "display": "Sickle cell-hemoglobin SS disease",
               "equivalence": "equivalent"
             }
           ]

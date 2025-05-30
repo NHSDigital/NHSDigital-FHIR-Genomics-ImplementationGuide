@@ -34,7 +34,7 @@
           "target": [
             {
               "code": "95820000",
-              "display": "Bilateral hearing loss (disorder)",
+              "display": "Bilateral hearing loss",
               "equivalence": "equivalent"
             }
           ]
@@ -45,7 +45,7 @@
           "target": [
             {
               "code": "473424007",
-              "display": "Hearing loss of left ear (disorder)",
+              "display": "Hearing loss of left ear",
               "equivalence": "equivalent"
             }
           ]
@@ -56,7 +56,7 @@
           "target": [
             {
               "code": "473423001",
-              "display": "Hearing loss of right ear (disorder)",
+              "display": "Hearing loss of right ear",
               "equivalence": "equivalent"
             }
           ]

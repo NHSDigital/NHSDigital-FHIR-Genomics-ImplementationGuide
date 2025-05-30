@@ -16,8 +16,8 @@
 		"coding": [
 			{ 
 				"system": "http://snomed.info/sct", 
-				"code": "87612001", 
-				"display": "Blood (substance)"
+				"code": "119297000", 
+				"display": "Blood specimen"
 			}
 		]
 	},
@@ -54,7 +54,7 @@
 				{
 					"system": "http://snomed.info/sct", 
 					"code": "14975008", 
-					"display": "Forearm structure (body structure)"
+					"display": "Forearm structure"
 				}
 			]
 		}
@@ -85,7 +85,7 @@
 					{
 						"system": "http://snomed.info/sct", 
 						"code": "706067003", 
-						"display": "Blood collection/transfer device (physical object)"
+						"display": "Blood collection/transfer device"
 					}
 				]
 			},

@@ -23,7 +23,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "75540009",
-        "display": "High (qualifier value)"
+        "display": "High"
       }
     ]
   },

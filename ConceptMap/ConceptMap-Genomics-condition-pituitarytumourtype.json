@@ -33,7 +33,7 @@
           "target": [
             {
               "code": "254957009",
-              "display": "Somatotroph adenoma (disorder)",
+              "display": "Somatotroph adenoma",
               "equivalence": "equivalent"
             }
           ]
@@ -44,7 +44,7 @@
           "target": [
             {
               "code": "134209002",
-              "display": "Prolactinoma (disorder)",
+              "display": "Prolactinoma",
               "equivalence": "equivalent"
             }
           ]
@@ -55,7 +55,7 @@
           "target": [
             {
               "code": "254962005",
-              "display": "Functionless pituitary adenoma (disorder)",
+              "display": "Functionless pituitary adenoma",
               "equivalence": "equivalent"
             }
           ]
@@ -66,7 +66,7 @@
           "target": [
             {
               "code": "190502001",
-              "display": "Pituitary-dependent Cushing's disease (disorder)",
+              "display": "Pituitary-dependent Cushing's disease",
               "equivalence": "equivalent"
             }
           ]

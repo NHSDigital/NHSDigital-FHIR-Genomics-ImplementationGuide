@@ -2,11 +2,11 @@
   "resourceType": "ConceptMap",
   "id": "genomics-condition-solidtumourtype",
   "url": "https://fhir.nhs.uk/ConceptMap/genomics-condition-solidtumourtype",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "GenomicsConditionSolidTumourType",
   "title": "Genomics Condition Solid Tumour Type",
   "status": "draft",
-  "date": "2024-06-11T00:00:00.000Z",
+  "date": "2025-05-19T00:00:00.000Z",
   "publisher": "NHS England",
   "contact": [
     {
@@ -32,8 +32,8 @@
           "display": "SOLID",
           "target": [
             {
-              "code": "35702001",
-              "display": "Solid (qualifier value)",
+              "code": "369757002",
+              "display": "Solid tumor configuration",
               "equivalence": "equivalent"
             }
           ]
@@ -43,8 +43,8 @@
           "display": "PRIMARY",
           "target": [
             {
-              "code": "63161005",
-              "display": "Principal (qualifier value)",
+              "code": "372087000",
+              "display": "Primary malignant neoplasm",
               "equivalence": "equivalent"
             }
           ]
@@ -54,8 +54,8 @@
           "display": "METASTATIC",
           "target": [
             {
-              "code": "1505291000004100",
-              "display": "Discontinuous metastatic spread (qualifier value)",
+              "code": "14799000",
+              "display": "Neoplasm, metastatic",
               "equivalence": "equivalent"
             }
           ]

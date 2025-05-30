@@ -7,7 +7,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "416128008",
-        "display": "No history of procedure (situation)"
+        "display": "No history of procedure"
       }
     ]
   },
@@ -16,7 +16,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "445715009",
-        "display": "Blood and marrow transplantation (qualifier value)"
+        "display": "Blood and marrow transplantation"
       }
     ]
   },

@@ -432,7 +432,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "161743003",
-              "display": "Past pregnancy history of stillbirth (situation)"
+              "display": "Past pregnancy history of stillbirth"
             }
           ],
           "text": "Is the testing for a fetal loss from 24+0 or more weeks of gestation?"
@@ -534,7 +534,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "160475008",
-              "display": "Family history: Consanguinity (situation)"
+              "display": "Family history: Consanguinity"
             }
           ]
         },
@@ -572,7 +572,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "416128008",
-              "display": "No history of procedure (situation)"
+              "display": "No history of procedure"
             }
           ]
         },
@@ -581,7 +581,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "263903005",
-              "display": "Transplant (qualifier value)"
+              "display": "Transplant"
             }
           ]
         },
@@ -736,8 +736,8 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "445295009",
-              "display": "Blood specimen with EDTA"
+              "code": "119297000",
+              "display": "Blood specimen"
             }
           ]
         },
@@ -751,6 +751,19 @@
         "request": [
           {
             "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-FetalScenario-Example"
+          }
+        ],
+        "container": [
+          {
+            "additiveCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "69519002",
+                  "display": "EDTA"
+                }
+              ]
+            }
           }
         ]
       },

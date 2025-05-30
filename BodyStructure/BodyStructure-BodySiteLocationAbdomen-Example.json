@@ -6,7 +6,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "369755005",
-        "display": "Multiple tumors (qualifier value)"
+        "display": "Multiple tumors"
       }
     ]
   },
@@ -15,7 +15,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "818983003",
-        "display": "Structure of abdominopelvic cavity and/or content of abdominopelvic cavity and/or anterior abdominal wall (body structure)"
+        "display": "Structure of abdominopelvic cavity and/or content of abdominopelvic cavity and/or anterior abdominal wall"
       }
     ]
   },
