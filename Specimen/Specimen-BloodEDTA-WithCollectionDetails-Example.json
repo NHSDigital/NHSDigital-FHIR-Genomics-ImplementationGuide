@@ -38,5 +38,18 @@
     {
       "reference": "ServiceRequest/ServiceRequest-SavedTestOrderUpdated-CascadeTesting-Example"
     }
+  ],
+  "container": [
+    {
+      "additiveCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "69519002",
+            "display": "EDTA"
+          }
+        ]
+      }
+    }
   ]
 }

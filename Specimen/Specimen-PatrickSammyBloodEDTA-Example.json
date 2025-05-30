@@ -50,5 +50,18 @@
       "code": "mL",
       "value": 2.5
     }
-  }
+  },
+  "container": [
+    {
+      "additiveCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "69519002",
+            "display": "EDTA"
+          }
+        ]
+      }
+    }
+  ]
 }
