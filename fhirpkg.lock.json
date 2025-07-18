@@ -1,5 +1,5 @@
 {
-  "updated": "2025-07-18T10:38:20.8820407+01:00",
+  "updated": "2025-07-18T12:19:49.4056575+01:00",
   "dependencies": {
     "fhir.r4.ukcore.stu3.currentbuild": "0.0.18-pre-release",
     "hl7.fhir.r4.core": "4.0.1",
@@ -9,7 +9,7 @@
     "hl7.fhir.uv.extensions.r4": "5.2.0",
     "hl7.fhir.uv.ips": "1.1.0",
     "fhir.dicom": "2022.4.20221006",
-    "hl7.fhir.eu.extensions.r4": "0.1.1-ballot"
+    "hl7.fhir.eu.extensions.r4": "https://simplifier.net/download/package/hl7.fhir.eu.extensions.r4/0.1.1-ballot"
   },
   "missing": {}
 }
