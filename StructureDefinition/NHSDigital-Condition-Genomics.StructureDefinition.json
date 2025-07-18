@@ -12,45 +12,27 @@
   "differential": {
     "element": [
       {
-        "id": "Condition.extension",
-        "path": "Condition.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "rules": "open"
-        },
-        "min": 0
-      },
-      {
         "id": "Condition.extension:conditionEpisode",
         "path": "Condition.extension",
         "sliceName": "conditionEpisode",
-        "min": 0,
         "max": "0"
       },
       {
         "id": "Condition.extension:problemSignificance",
         "path": "Condition.extension",
         "sliceName": "problemSignificance",
-        "min": 0,
         "max": "0"
       },
       {
         "id": "Condition.extension:relatedClinicalContent",
         "path": "Condition.extension",
         "sliceName": "relatedClinicalContent",
-        "min": 0,
         "max": "1"
       },
       {
         "id": "Condition.extension:relatedProblemHeader",
         "path": "Condition.extension",
         "sliceName": "relatedProblemHeader",
-        "min": 0,
         "max": "0"
       },
       {

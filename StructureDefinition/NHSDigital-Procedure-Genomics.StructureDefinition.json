@@ -12,24 +12,9 @@
   "differential": {
     "element": [
       {
-        "id": "Procedure.extension",
-        "path": "Procedure.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "rules": "open"
-        },
-        "min": 0
-      },
-      {
         "id": "Procedure.extension:AnaestheticIssues",
         "path": "Procedure.extension",
         "sliceName": "AnaestheticIssues",
-        "min": 0,
         "max": "0"
       },
       {

@@ -67,10 +67,6 @@
         "isModifier": false
       },
       {
-        "id": "ServiceRequest.extension:priorityReason.value[x]",
-        "path": "ServiceRequest.extension.value[x]"
-      },
-      {
         "id": "ServiceRequest.extension:priorityReason.value[x].coding",
         "path": "ServiceRequest.extension.value[x].coding",
         "slicing": {
