@@ -8,7 +8,7 @@
     "hl7.fhir.uv.extensions.r4": "5.2.0",
     "hl7.fhir.uv.ips": "1.1.0",
     "fhir.dicom": "2022.4.20221006",
-    "hl7.fhir.eu.extensions.r4": "0.1.1-ballot"
+    "hl7.fhir.eu.extensions.r4": "0.1.0"
   },
   "missing": {}
 }
