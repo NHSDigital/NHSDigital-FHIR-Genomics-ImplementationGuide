@@ -3,7 +3,7 @@
  "id": "mds-questiontag-genomics",
  "url": "https://fhir.nhs.uk/CodeSystem/mds-questiontag-genomics",
  "version": "0.1.0",
- "name": "mdsQuestionTagGenomics",
+ "name": "MDSQuestionTagGenomics",
  "title": "MDS Question Tag Genomics",
  "status": "draft",
  "date": "2025-07-29T00:00:00.000Z",
