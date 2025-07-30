@@ -1,7 +1,7 @@
 {
  "resourceType": "ValueSet",
  "id": "genomics-mdsquestiontag",
- "url": "https://fhir.nhs.uk/ValueSet/genomics-reasonfortesting",
+ "url": "https://fhir.nhs.uk/ValueSet/genomics-mdsquestiontag",
  "version": "0.1.0",
  "name": "GenomicsmdsQuestionTag",
  "title": "Genomics MDS Question Tag",
