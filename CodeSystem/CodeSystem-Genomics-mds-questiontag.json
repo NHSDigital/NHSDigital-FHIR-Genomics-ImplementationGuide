@@ -19,14 +19,16 @@
    ]
   }
  ],
- "description": "A set of codes use to map MDS Dataset to FHIR Resources.This is intended to be used on Resource.meta.tag.",
+ "description": "A set of codes used to map MDS Dataset to FHIR Resources.This is intended to be used on Resource.meta.tag.",
  "copyright": "Copyright © 2025+ NHS England Licensed under the Apache License, Version 2.0 (the \\\"License\\\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \\\"AS IS\\\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html.",
  "caseSensitive": true,
+ "hierarchyMeaning": "grouped-by",
  "content": "complete",
  "concept": [
   {
    "code": "datagroup-healthcare-professional",
    "display": "Healthcare Professional",
+   "definition":"Data group - Healthcare professional",
    "concept": [
     {
      "code": "HCP-1",
@@ -103,6 +105,7 @@
   {
    "code": "datagroup-patient",
    "display": "Patient",
+     "definition": "Data group - Patient",
    "concept": [
     {
      "code": "P-1",
@@ -299,6 +302,7 @@
   {
    "code": "datagroup-fetus",
    "display": "Fetus",
+     "definition": "Data group - Fetus",
    "concept": [
     {
      "code": "F-1",
@@ -335,6 +339,7 @@
   {
    "code": "datagroup-record-of-discussion",
    "display": "Record of Discussion",
+     "definition": "Data group - Record of discussion",
    "concept": [
     {
      "code": "ROD-1",
@@ -406,6 +411,7 @@
   {
    "code": "datagroup-test-request",
    "display": "Test Request",
+     "definition": "Data group - Test Request",
    "concept": [
     {
      "code": "TR-1",
@@ -507,6 +513,7 @@
   {
    "code": "datagroup-primary-sample",
    "display": "Primary Sample",
+     "definition": "Data group - Primary Sample",
    "concept": [
     {
      "code": "PS-1",
@@ -633,6 +640,7 @@
   {
    "code": "datagroup-sample-preparation",
    "display": "Sample Preparation",
+     "definition": "Data group - Sample Preparation",
    "concept": [
     {
      "code": "SP-1",
@@ -679,6 +687,7 @@
   {
    "code": "datagroup-final-sample",
    "display": "Final Sample",
+     "definition": "Data group - Final Sample",
    "concept": [
     {
      "code": "FS-1",
@@ -730,6 +739,7 @@
   {
    "code": "datagroup-previous-genomic-report",
    "display": "Previous Genomic Report",
+     "definition": "Data group - Previous Genomic Report",
    "concept": [
     {
      "code": "PGR-1",
@@ -846,6 +856,7 @@
   {
    "code": "datagroup-relevant-clinical-report",
    "display": "Relevant Clinical Report",
+     "definition": "Data group - Relevant Clinical Report ",
    "concept": [
     {
      "code": "RCP-1",
@@ -947,6 +958,7 @@
   {
    "code": "datagroup-patient-clinical-information",
    "display": "Patient Clinical Information",
+     "definition": "Data group - Patient Clinical Information",
    "concept": [
     {
      "code": "PCI-1",
@@ -1123,6 +1135,7 @@
   {
    "code": "further-supporting-information",
    "display": "Further Supporting Information",
+   "definition": "Data group - Further Supporting Information",
    "concept": [
     {
      "code": "FSI-1",
