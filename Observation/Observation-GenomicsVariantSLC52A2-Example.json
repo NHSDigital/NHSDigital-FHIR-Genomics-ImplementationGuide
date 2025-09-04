@@ -116,6 +116,15 @@
       "code": "81252-9"
      }
     ]
+   },
+   "valueCodeableConcept": {
+    "coding": [
+     {
+      "system": "http://purl.obolibrary.org/obo",
+      "code": "SO_0001583",
+      "display": "missense_variant"
+     }
+    ]
    }
   },
   {
