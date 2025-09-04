@@ -20,6 +20,7 @@
         "id": "Composition-EULabGenomicReport-Example",
         "meta": {
           "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Composition-eu-lab",
             "http://hl7.eu/fhir/laboratory/StructureDefinition/Composition-eu-lab"
           ]
         },
@@ -392,7 +393,8 @@
         "id": "Observation-GenomicTherapeuticImplication-Example",
         "meta": {
           "profile": [
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/therapeutic-implication"
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/therapeutic-implication",
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab "
           ]
         },
         "status": "final",
@@ -610,9 +612,9 @@
             "valueCodeableConcept": {
               "coding": [
                 {
-                  "system": "http://www.sequenceontology.org",
-                  "code": "SO:0001583",
-                  "display": "missense_variant"
+                 "system": "http://purl.obolibrary.org/obo",
+                "code": "SO_0001583",
+                "display": "missense_variant"
                 }
               ]
             }
@@ -701,6 +703,11 @@
       "resource": {
         "resourceType": "Specimen",
         "id": "Specimen-PheobeSmitham-Example",
+          "meta": {
+            "profile": [
+              "http://hl7.eu/fhir/laboratory/StructureDefinition/Specimen-eu-lab"
+            ]
+          },
           "extension": [
             {
               "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-SampleCategory",
@@ -965,7 +972,9 @@
         "id": "Task-FollowupRecommendationReport-Example",
         "meta": {
           "profile": [
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/followup-recommendation"
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/followup-recommendation",
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/followup-recommendation",
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/medication-recommendation"
           ]
         },
         "status": "requested",
