@@ -121,8 +121,8 @@
       "valueCodeableConcept": {
         "coding": [
           {
-            "system": "http://www.sequenceontology.org",
-            "code": "SO:0001583",
+            "system": "http://purl.obolibrary.org/obo",
+            "code": "SO_0001583",
             "display": "missense_variant"
           }
         ]
