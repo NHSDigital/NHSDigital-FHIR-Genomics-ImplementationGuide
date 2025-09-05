@@ -1,0 +1,94 @@
+{
+  "resourceType": "Composition",
+  "id": "Composition-EULabGenomicReport-Example",
+  "meta": {
+    "profile": [
+      "http://hl7.eu/fhir/laboratory/StructureDefinition/Composition-eu-lab"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.eu/fhir/StructureDefinition/composition-basedOn-order-or-requisition",
+      "valueReference": {
+        "reference": "ServiceRequest/ServiceRequest-WGSTestOrderFormUpdated-TrioTesting-Example"
+      }
+    },
+    {
+      "url": "http://hl7.eu/fhir/StructureDefinition/information-recipient",
+      "valueReference": {
+        "reference": "PractitionerRole/PractitionerRole-EugeneSmith-Example"
+      }
+    },
+    {
+      "url": "http://hl7.eu/fhir/laboratory/StructureDefinition/composition-diagnosticReportReference",
+      "valueReference": {
+        "reference": "DiagnosticReport/DiagnosticReport-GenomicVariantAssessment-Example"
+      }
+    }
+  ],
+  "status": "final",
+  "type": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "51969-4",
+        "display": "Genetic analysis report"
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "26436-6",
+          "display": "Laboratory studies (set)"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1236877003",
+          "display": "Genetic pathology"
+        }
+      ]
+    }
+  ],
+  "subject": {
+        "reference": "Patient/Patient-PheobeSmitham-Example"
+  },
+  "date": "2023-10-16T00:00:00-05:00",
+  "author": [
+    {
+      "identifier": {
+        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+        "value": "R0A"
+      }
+    }
+  ],
+  "title": "Example Genomic Laboratory (Single) Report",
+  "section": [
+    {
+      "title": "Results",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "26436-6",
+            "display": "Laboratory studies (set)"
+          }
+        ]
+      },
+      "entry": [
+        {
+          "reference": "Observation/Observation-GenomicTherapeuticImplication-Example"
+        },
+        {
+          "reference": "Observation-GenomicsVariantSLC52A2-Example"
+        }
+      ]
+    }
+  ]
+}
