@@ -1,0 +1,194 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "genomics-chromosomal-sex",
+  "url": "https://fhir.nhs.uk/ConceptMap/genomics-chromosomal-sex",
+  "version": "0.1.0",
+  "name": "GenomicsChromosomalSex",
+  "title": "Genomics Chromosomal Sex",
+  "status": "draft",
+  "date": "2025-09-05T10:33:00.000Z",
+  "publisher": "NHS England",
+  "contact": [
+    {
+      "name": "NHS England",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "interoperabilityteam@nhs.net"
+        }
+      ]
+    }
+  ],
+  "description": "A ConceptMap used for the translation and recording of concepts from MDS source data(code-options) to equivalent Snomed CT codes, and FHIR spec.",
+  "purpose": "ConceptMap used for the translation and recording of concepts for fetal maternal screening genotype. This is intended for the element Condition.code. An appropriate SNOMED CT code or free text should be used to record the Genotype.",
+  "copyright": "Copyright © 2025+ NHS England Licensed under the Apache License, Version 2.0 (the \\\"License\\\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \\\"AS IS\\\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html.",
+  "targetUri": "http://snomed.info/sct",
+  "group": [
+    {
+      "source": "https://future.nhs.uk/NHSgenomics/view?objectId=222250117",
+      "target": "http://snomed.info/sct",
+      "element": [
+        {
+          "code": "male",
+          "display": "MALE",
+          "target": [
+            {
+              "code": "248153007",
+              "display": "Male",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "female",
+          "display": "FEMALE",
+          "target": [
+            {
+              "code": "248152002",
+              "display": "Female",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "indeterminate",
+          "display": "INDETERMINATE",
+          "target": [
+            {
+              "code": "32570681000036106",
+              "display": "Indeterminate sex",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "XX",
+          "display": "XX",
+          "target": [
+            {
+              "code": "734875008",
+              "display": "Karyotype 46, XX",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "XO",
+          "display": "XO",
+          "target": [
+            {
+              "code": "710008008",
+              "display": "XO syndrome",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "XY",
+          "display": "XY",
+          "target": [
+            {
+              "code": "734876009",
+              "display": "Karyotype 46, XY",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "XXY",
+          "display": "XXY",
+          "target": [
+            {
+              "code": "405769009",
+              "display": "XXY syndrome",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "XYY",
+          "display": "XYY",
+          "target": [
+            {
+              "code": "50749006",
+              "display": "XYY syndrome",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "XXX",
+          "display": "XXX",
+          "target": [
+            {
+              "code": "35111009",
+              "display": "XXX syndrome",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "XXXX",
+          "display": "XXXX",
+          "target": [
+            {
+              "code": "10567003",
+              "display": "XXXX syndrome",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "XXXY",
+          "display": "XXXY",
+          "target": [
+            {
+              "code": "78317008",
+              "display": "XXXY syndrome",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "XXYY",
+          "display": "XXYY",
+          "target": [
+            {
+              "code": "403760006",
+              "display": "XXYY syndrome",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "unknown",
+          "display": "UNKNOWN",
+          "target": [
+            {
+              "code": "184115007",
+              "display": "Patient sex unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "https://future.nhs.uk/NHSgenomics/view?objectId=222250117",
+      "target": "http://terminology.hl7.org/CodeSystem/sex-parameter-for-clinical-use",
+      "element": [
+        {
+          "code": "other",
+          "display": "OTHER",
+          "target": [
+            {
+              "code": "specified",
+              "display": "Apply specified setting or reference range",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
