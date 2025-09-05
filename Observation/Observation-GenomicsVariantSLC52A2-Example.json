@@ -3,7 +3,8 @@
   "id": "Observation-GenomicsVariantSLC52A2-Example",
   "meta": {
     "profile": [
-      "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/variant"
+      "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/variant",
+      "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
     ]
   },
   "status": "final",
@@ -120,8 +121,8 @@
       "valueCodeableConcept": {
         "coding": [
           {
-            "system": "http://www.sequenceontology.org",
-            "code": "SO:0001583",
+            "system": "http://purl.obolibrary.org/obo",
+            "code": "SO_0001583",
             "display": "missense_variant"
           }
         ]
