@@ -393,8 +393,8 @@
         "id": "Observation-GenomicTherapeuticImplication-Example",
         "meta": {
           "profile": [
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/therapeutic-implication",
-            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab",
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/therapeutic-implication"
           ]
         },
         "status": "final",
@@ -497,8 +497,9 @@
         "id": "Observation-GenomicsVariantSLC52A2-Example",
         "meta": {
           "profile": [
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/variant",
-            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab",
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/variant"
+            
           ]
         },
         "status": "final",
