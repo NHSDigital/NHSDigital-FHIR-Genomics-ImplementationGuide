@@ -74,11 +74,12 @@
           }
         ],
         "subject": {
-              "reference": "Patient/Patient-PheobeSmitham-Example"
+          "reference": "Patient/Patient-PheobeSmitham-Example"
         },
-        "date": "2023-10-16T00:00:00-05:00",
+        "date": "2023-10-16T13:30:00+00:00",
         "author": [
           {
+            "reference": "Organization/Organization-R0A-Example",
             "identifier": {
               "system": "https://fhir.nhs.uk/Id/ods-organization-code",
               "value": "R0A"
@@ -220,7 +221,7 @@
         "media": [
           {
             "link": {
-              "type":"DocumentReference",
+              "type": "DocumentReference",
               "display": "Reference to DocumentReferences are not supported within media.link in DiagnosticReport R4 StructureDefinition.",
               "extension": [
                 {
@@ -426,7 +427,7 @@
         "subject": {
           "reference": "Patient/Patient-PheobeSmitham-Example"
         },
-        "effectiveDateTime": "2023-09-16",
+        "effectiveDateTime": "2023-09-16T09:45:00Z",
         "performer": [
           {
             "identifier": {
@@ -482,11 +483,13 @@
             }
           }
         ],
-        "note" : [{
-          "text" : "High dose riboflavin supplementation has been reported to ameliorate the progression of this disorder (Foley et al 2014 PMID22740598)"
-        }]
+        "note": [
+          {
+            "text": "High dose riboflavin supplementation has been reported to ameliorate the progression of this disorder (Foley et al 2014 PMID22740598)"
+          }
+        ]
       }
-    }, 
+    },
     {
       "fullUrl": "http://example.org/fhir/Observation/Observation-GenomicsVariantSLC52A2-Example",
       "resource": {
@@ -533,9 +536,10 @@
         "subject": {
           "reference": "Patient/Patient-PheobeSmitham-Example"
         },
-        "effectiveDateTime": "2023-09-16",
+        "effectiveDateTime": "2023-09-16T09:45:00Z",
         "performer": [
           {
+            "reference": "Organization/Organization-R0A-Example",
             "identifier": {
               "system": "https://fhir.nhs.uk/Id/ods-organization-code",
               "value": "R0A"
@@ -703,25 +707,25 @@
       "resource": {
         "resourceType": "Specimen",
         "id": "Specimen-PheobeSmitham-Example",
-            "meta": {
-              "profile": [
-                "http://hl7.eu/fhir/laboratory/StructureDefinition/Specimen-eu-lab"
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Specimen-eu-lab"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-SampleCategory",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-SampleCategory",
+                  "code": "germline",
+                  "display": "Germline"
+                }
               ]
-            },
-          "extension": [
-            {
-              "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-SampleCategory",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-SampleCategory",
-                    "code": "germline",
-                    "display": "Germline"
-                  }
-                ]
-              }
             }
-          ],
+          }
+        ],
         "identifier": [
           {
             "system": "https://fhir.leedssth.nhs.uk//Id/specimenId",

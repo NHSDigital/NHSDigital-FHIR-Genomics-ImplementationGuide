@@ -42,9 +42,10 @@
   "subject": {
     "reference": "Patient/Patient-PheobeSmitham-Example"
   },
-  "effectiveDateTime": "2023-09-16",
+  "effectiveDateTime": "2023-09-16T09:45:00Z",
   "performer": [
     {
+      "reference": "Organization/Organization-R0A-Example",
       "identifier": {
         "system": "https://fhir.nhs.uk/Id/ods-organization-code",
         "value": "R0A"
