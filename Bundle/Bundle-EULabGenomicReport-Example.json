@@ -392,7 +392,8 @@
         "id": "Observation-GenomicTherapeuticImplication-Example",
         "meta": {
           "profile": [
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/therapeutic-implication"
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/therapeutic-implication",
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
           ]
         },
         "status": "final",
@@ -485,7 +486,7 @@
           "text" : "High dose riboflavin supplementation has been reported to ameliorate the progression of this disorder (Foley et al 2014 PMID22740598)"
         }]
       }
-    },
+    }, 
     {
       "fullUrl": "http://example.org/fhir/Observation/Observation-GenomicsVariantSLC52A2-Example",
       "resource": {
@@ -493,7 +494,8 @@
         "id": "Observation-GenomicsVariantSLC52A2-Example",
         "meta": {
           "profile": [
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/variant"
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/variant",
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
           ]
         },
         "status": "final",
@@ -701,6 +703,11 @@
       "resource": {
         "resourceType": "Specimen",
         "id": "Specimen-PheobeSmitham-Example",
+            "meta": {
+              "profile": [
+                "http://hl7.eu/fhir/laboratory/StructureDefinition/Specimen-eu-lab"
+              ]
+            },
           "extension": [
             {
               "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-SampleCategory",
@@ -965,7 +972,8 @@
         "id": "Task-FollowupRecommendationReport-Example",
         "meta": {
           "profile": [
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/followup-recommendation"
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/followup-recommendation",
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/medication-recommendation"
           ]
         },
         "status": "requested",

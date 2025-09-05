@@ -86,7 +86,7 @@
           "reference": "Observation/Observation-GenomicTherapeuticImplication-Example"
         },
         {
-          "reference": "Observation-GenomicsVariantSLC52A2-Example"
+          "reference": "Observation/Observation-GenomicsVariantSLC52A2-Example"
         }
       ]
     }
