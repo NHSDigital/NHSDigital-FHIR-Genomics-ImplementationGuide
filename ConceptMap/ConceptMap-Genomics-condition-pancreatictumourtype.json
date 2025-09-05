@@ -2,11 +2,11 @@
   "resourceType": "ConceptMap",
   "id": "genomics-condition-pancreatictumourtype",
   "url": "https://fhir.nhs.uk/ConceptMap/genomics-condition-pancreatictumourtype",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "GenomicsConditionPancreaticTumourType",
   "title": "Genomics Condition Pancreatic Tumour Type",
   "status": "draft",
-  "date": "2024-06-11T00:00:00.000Z",
+  "date": "2025-09-05T11:00:00.000Z",
   "publisher": "NHS England",
   "contact": [
     {
@@ -33,7 +33,7 @@
           "target": [
             {
               "code": "20955008",
-              "display": "Insulinoma, malignant (morphologic abnormality)",
+              "display": "Insulinoma, malignant",
               "equivalence": "equivalent"
             }
           ]
@@ -44,7 +44,7 @@
           "target": [
             {
               "code": "19756007",
-              "display": "Gastrinoma, malignant (morphologic abnormality)",
+              "display": "Gastrinoma, malignant",
               "equivalence": "equivalent"
             }
           ]
@@ -55,7 +55,7 @@
           "target": [
             {
               "code": "66515009",
-              "display": "Glucagonoma, malignant (morphologic abnormality)",
+              "display": "Glucagonoma, malignant",
               "equivalence": "equivalent"
             }
           ]
@@ -66,7 +66,7 @@
           "target": [
             {
               "code": "31131002",
-              "display": "Vipoma, malignant (morphologic abnormality)",
+              "display": "Vipoma, malignant",
               "equivalence": "equivalent"
             }
           ]

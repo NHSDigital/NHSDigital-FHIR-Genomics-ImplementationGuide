@@ -34,8 +34,8 @@
                     "coding": [
                         {
                             "system": "http://snomed.info/sct",
-                            "code": "445295009",
-                            "display": "Blood specimen with EDTA"
+                            "code": "119297000",
+                            "display": "Blood specimen"
                         }
                     ]
                 },

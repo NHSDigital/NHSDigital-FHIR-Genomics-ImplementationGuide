@@ -2,11 +2,11 @@
   "resourceType": "ConceptMap",
   "id": "genomics-primarysample",
   "url": "https://fhir.nhs.uk/ConceptMap/genomics-primarysample",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "name": "GenomicsPrimarySample",
   "title": "Genomics Primary Sample",
   "status": "draft",
-  "date": "2024-08-15T00:00:00.000Z",
+  "date": "2025-09-05T11:00:00.000Z",
   "publisher": "NHS England",
   "contact": [
     {
@@ -34,7 +34,7 @@
           "target": [
             {
               "code": "119373006",
-              "display": "Amniotic fluid specimen (specimen)",
+              "display": "Amniotic fluid specimen",
               "equivalence": "equivalent"
             }
           ]
@@ -89,7 +89,7 @@
           "target": [
             {
               "code": "258450006",
-              "display": "Cerebrospinal fluid specimen (specimen)",
+              "display": "Cerebrospinal fluid specimen",
               "equivalence": "equivalent"
             }
           ]
@@ -100,7 +100,7 @@
           "target": [
             {
               "code": "122556008",
-              "display": "Cord blood specimen (specimen)",
+              "display": "Cord blood specimen",
               "equivalence": "equivalent"
             }
           ]
@@ -144,7 +144,7 @@
           "target": [
             {
               "code": "127462005",
-              "display": "Specimen from heart (specimen)",
+              "display": "Specimen from heart",
               "equivalence": "equivalent"
             }
           ]
@@ -155,7 +155,7 @@
           "target": [
             {
               "code": "127473003",
-              "display": "Specimen from kidney (specimen)",
+              "display": "Specimen from kidney",
               "equivalence": "equivalent"
             }
           ]
@@ -166,7 +166,7 @@
           "target": [
             {
               "code": "119383005",
-              "display": "Specimen from liver (specimen)",
+              "display": "Specimen from liver",
               "equivalence": "equivalent"
             }
           ]
@@ -188,7 +188,7 @@
           "target": [
             {
               "code": "123038009",
-              "display": "Specimen (specimen)",
+              "display": "Specimen",
               "equivalence": "wider",
               "comment": "Any other suitable descendant of 123038009|Specimen (specimen) not listed on this code. This should be provided by free text if no suitable SNOMED CT is found."
             }
@@ -200,7 +200,7 @@
           "target": [
             {
               "code": "122571007",
-              "display": "Pericardial fluid specimen (specimen)",
+              "display": "Pericardial fluid specimen",
               "equivalence": "equivalent"
             }
           ]
@@ -211,7 +211,7 @@
           "target": [
             {
               "code": "430250001",
-              "display": "Specimen from peritoneum (specimen)",
+              "display": "Specimen from peritoneum",
               "equivalence": "equivalent"
             }
           ]
@@ -222,7 +222,7 @@
           "target": [
             {
               "code": "418564007",
-              "display": "Pleural fluid specimen (specimen)",
+              "display": "Pleural fluid specimen",
               "equivalence": "equivalent"
             }
           ]
@@ -244,7 +244,7 @@
           "target": [
             {
               "code": "119342007",
-              "display": "Saliva specimen (specimen)",
+              "display": "Saliva specimen",
               "equivalence": "equivalent"
             }
           ]
@@ -255,7 +255,7 @@
           "target": [
             {
               "code": "119331003",
-              "display": "Skeletal muscle specimen (specimen)",
+              "display": "Skeletal muscle specimen",
               "equivalence": "equivalent"
             }
           ]
@@ -266,7 +266,7 @@
           "target": [
             {
               "code": "608969007",
-              "display": "Specimen from skin (specimen)",
+              "display": "Specimen from skin",
               "equivalence": "equivalent"
             }
           ]
@@ -277,7 +277,7 @@
           "target": [
             {
               "code": "433308004",
-              "display": "Specimen from spleen (specimen)",
+              "display": "Specimen from spleen",
               "equivalence": "equivalent"
             }
           ]
@@ -288,7 +288,7 @@
           "target": [
             {
               "code": "258435002",
-              "display": "Tumor tissue specimen (specimen)",
+              "display": "Tumor tissue specimen",
               "equivalence": "equivalent"
             }
           ]
@@ -299,7 +299,7 @@
           "target": [
             {
               "code": "122575003",
-              "display": "Urine specimen (specimen)",
+              "display": "Urine specimen",
               "equivalence": "equivalent"
             }
           ]

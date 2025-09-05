@@ -2,11 +2,11 @@
   "resourceType": "ConceptMap",
   "id": "genomics-procedure-transfusiontype",
   "url": "https://fhir.nhs.uk/ConceptMap/genomics-procedure-transfusiontype",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "GenomicsProcedureTransfusionType",
   "title": "Genomics Procedure Transfusion Type",
   "status": "draft",
-  "date": "2024-07-12T00:00:00.000Z",
+  "date": "2025-09-05T11:00:00.000Z",
   "publisher": "NHS England",
   "contact": [
     {
@@ -34,7 +34,7 @@
           "target": [
             {
               "code": "71493000",
-              "display": "Transfusion of packed red blood cells (procedure)",
+              "display": "Transfusion of packed red blood cells",
               "equivalence": "equivalent"
             }
           ]
@@ -45,7 +45,7 @@
           "target": [
             {
               "code": "13569004",
-              "display": "Transfusion of plasma (procedure)",
+              "display": "Transfusion of plasma",
               "equivalence": "equivalent"
             }
           ]
@@ -56,7 +56,7 @@
           "target": [
             {
               "code": "12719002",
-              "display": "Platelet transfusion (procedure)",
+              "display": "Platelet transfusion",
               "equivalence": "equivalent"
             }
           ]
@@ -67,7 +67,7 @@
           "target": [
             {
               "code": "5447007",
-              "display": "Transfusion (procedure)",
+              "display": "Transfusion",
               "equivalence": "specializes"
             }
           ]
