@@ -241,7 +241,7 @@
         ],
         "result": [
           {
-            "reference": "Observation/Observation-GenomicsVariant-SLC52A2",
+            "reference": "Observation/Observation-GenomicTherapeuticImplication-Example",
             "display": "Brown-Vialetto-Van Laere syndrome type 2"
           },
           {
