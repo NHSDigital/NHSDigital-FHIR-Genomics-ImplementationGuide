@@ -6,7 +6,7 @@
   "name": "GenomicsChromosomalSex",
   "title": "Genomics Chromosomal Sex",
   "status": "draft",
-  "date": "2024-08-08T18:15:00.000Z",
+  "date": "2025-09-05T10:33:00.000Z",
   "publisher": "NHS England",
   "contact": [
     {
@@ -29,7 +29,7 @@
       "target": "http://snomed.info/sct",
       "element": [
         {
-          "code": "MALE",
+          "code": "male",
           "display": "MALE",
           "target": [
             {
@@ -40,7 +40,7 @@
           ]
         },
         {
-          "code": "FEMALE",
+          "code": "female",
           "display": "FEMALE",
           "target": [
             {
@@ -51,7 +51,7 @@
           ]
         },
         {
-          "code": "INDETERMINATE",
+          "code": "indeterminate",
           "display": "INDETERMINATE",
           "target": [
             {
@@ -161,7 +161,7 @@
           ]
         },
         {
-          "code": "UNKNOWN",
+          "code": "unknown",
           "display": "UNKNOWN",
           "target": [
             {
@@ -178,7 +178,7 @@
       "target": "http://terminology.hl7.org/CodeSystem/sex-parameter-for-clinical-use",
       "element": [
         {
-          "code": "OTHER",
+          "code": "other",
           "display": "OTHER",
           "target": [
             {
