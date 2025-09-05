@@ -1,11 +1,6 @@
 {
   "resourceType": "Bundle",
   "id": "Bundle-EULabGenomicReport-Example",
-  "meta": {
-    "profile": [
-      "http://hl7.eu/fhir/laboratory/StructureDefinition/Bundle-eu-lab"
-    ]
-  },
   "identifier": {
     "system": "https://fhir.nhs.uk/Id/GMSReport",
     "value": "c73ece32-b439-40c0-9659-fd51a21deef2"
@@ -270,7 +265,6 @@
             "contentType": "application/pdf",
             "language": "en-GB",
             "url": "https://cts5j3.axshare.com/?id=mhxwul&p=final_report_issued_test_complete&g=1",
-            "size": 43272,
             "title": "Genomic Report for Pheobe Smitham",
             "creation": "2023-10-16"
           }
