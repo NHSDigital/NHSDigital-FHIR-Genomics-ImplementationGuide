@@ -2,11 +2,11 @@
   "resourceType": "ConceptMap",
   "id": "genomics-fetal-maternal-screening-genotype",
   "url": "https://fhir.nhs.uk/ConceptMap/genomics-fetal-maternal-screening-genotype",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "GenomicsFetalMaternalScreeningGenotype",
   "title": "Genomics Fetal Maternal Screening Genotype",
   "status": "draft",
-  "date": "2024-08-08T18:15:00.000Z",
+  "date": "2025-09-05T11:00:00.000Z",
   "publisher": "NHS England",
   "contact": [
     {

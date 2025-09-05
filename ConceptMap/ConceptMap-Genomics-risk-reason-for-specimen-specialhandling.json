@@ -2,11 +2,11 @@
   "resourceType": "ConceptMap",
   "id": "genomics-risk-reason-for-specimen-specialhandling",
   "url": "https://fhir.nhs.uk/ConceptMap/genomics-risk-reason-for-specimen-specialhandling",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "name": "GenomicsRiskReasonForSpecimenSpecialHandling",
   "title": "Genomics Risk Reason for Specimen Special Handling",
   "status": "draft",
-  "date": "2024-08-09T18:45:00.000Z",
+  "date": "2025-09-05T11:00:00.000Z",
   "publisher": "NHS England",
   "contact": [
     {

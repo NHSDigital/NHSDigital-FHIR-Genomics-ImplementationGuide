@@ -4,9 +4,9 @@
   "url": "https://fhir.nhs.uk/ConceptMap/genomics-typeof-transplantprocedure",
   "name": "GenomicsTypeofTransplantProcedure",
   "title": "Genomics Type of Transplant Procedure",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "status": "draft",
-  "date": "2024-08-12T17:40:00.000Z",
+  "date": "2025-09-05T11:00:00.000Z",
   "publisher": "NHS England",
   "contact": [
     {

@@ -2,11 +2,11 @@
   "resourceType": "ConceptMap",
   "id": "genomics-specimen-tumourcellularity",
   "url": "https://fhir.nhs.uk/ConceptMap/genomics-specimen-tumourcellularity",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "GenomicsSpecimenTumourCellularity",
   "title": "Genomics Specimen Tumour Cellularity",
   "status": "draft",
-  "date": "2024-08-05T00:00:00.000Z",
+  "date": "2025-09-05T11:00:00.000Z",
   "publisher": "NHS England",
   "contact": [
     {

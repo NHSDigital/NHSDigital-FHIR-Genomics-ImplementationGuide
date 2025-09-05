@@ -2,11 +2,11 @@
   "resourceType": "ConceptMap",
   "id": "genomics-condition-liquidtumourtype",
   "url": "https://fhir.nhs.uk/ConceptMap/genomics-condition-liquidtumourtype",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "name": "GenomicsConditionLiquidTumourType",
   "title": "Genomics Condition Liquid Tumour Type",
   "status": "draft",
-  "date": "2024-06-11T00:00:00.000Z",
+  "date": "2025-09-05T11:00:00.000Z",
   "publisher": "NHS England",
   "contact": [
     {
