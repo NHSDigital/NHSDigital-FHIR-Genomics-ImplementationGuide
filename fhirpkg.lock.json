@@ -1,5 +1,5 @@
 {
-  "updated": "2025-09-05T12:25:10.566496+01:00",
+  "updated": "2025-09-05T12:37:12.6177925+01:00",
   "dependencies": {
     "fhir.r4.ukcore.stu3.currentbuild": "0.0.18-pre-release",
     "hl7.fhir.r4.core": "4.0.1",
