@@ -1,13 +1,11 @@
 {
-  "updated": "2024-05-16T10:18:19.8963748+01:00",
+  "updated": "2025-09-05T16:50:14.2433205+01:00",
   "dependencies": {
     "fhir.r4.ukcore.stu3.currentbuild": "0.0.18-pre-release",
     "hl7.fhir.r4.core": "4.0.1",
     "hl7.fhir.uv.genomics-reporting": "3.0.0-ballot",
-    "hl7.terminology.r4": "5.3.0",
-    "hl7.fhir.uv.extensions.r4": "1.0.0"
+    "hl7.fhir.uv.ips": "1.1.0",
+    "hl7.fhir.eu.laboratory": "0.1.0-ballot"
   },
   "missing": {}
 }
-
-
