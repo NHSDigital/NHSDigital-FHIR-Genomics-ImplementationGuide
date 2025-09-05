@@ -13,11 +13,6 @@
       "resource": {
         "resourceType": "Composition",
         "id": "Composition-EULabGenomicReport-Example",
-        "meta": {
-          "profile": [
-            "http://hl7.eu/fhir/laboratory/StructureDefinition/Composition-eu-lab"
-          ]
-        },
         "extension": [
           {
             "url": "http://hl7.eu/fhir/StructureDefinition/composition-basedOn-order-or-requisition",
