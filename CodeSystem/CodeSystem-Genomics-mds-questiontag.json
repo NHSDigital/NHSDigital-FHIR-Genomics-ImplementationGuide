@@ -1,0 +1,1148 @@
+{
+ "resourceType": "CodeSystem",
+ "id": "mds-questiontag-genomics",
+ "url": "https://fhir.nhs.uk/CodeSystem/mds-questiontag-genomics",
+ "version": "0.1.0",
+ "name": "MDSQuestionTagGenomics",
+ "title": "MDS Question Tag Genomics",
+ "status": "draft",
+ "date": "2025-07-29T00:00:00.000Z",
+ "publisher": "NHS England",
+ "contact": [
+  {
+   "name": "NHS England",
+   "telecom": [
+    {
+     "system": "email",
+     "value": "interoperabilityteam@nhs.net"
+    }
+   ]
+  }
+ ],
+ "description": "A set of codes used to map MDS Dataset to FHIR Resources.This is intended to be used on Resource.meta.tag.",
+ "copyright": "Copyright © 2025+ NHS England Licensed under the Apache License, Version 2.0 (the \\\"License\\\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \\\"AS IS\\\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html.",
+ "caseSensitive": true,
+ "hierarchyMeaning": "grouped-by",
+ "content": "complete",
+ "concept": [
+  {
+   "code": "datagroup-healthcare-professional",
+   "display": "Healthcare Professional",
+   "definition":"Data group - Healthcare professional",
+   "concept": [
+    {
+     "code": "HCP-1",
+     "display": "HCP - Genomic test order role",
+     "definition": "HCP's function within the genomic test ordering process"
+    },
+    {
+     "code": "HCP-2",
+     "display": "HCP - Full name",
+     "definition": "HCP's full name."
+    },
+    {
+     "code": "HCP-3",
+     "display": "HCP - Job title",
+     "definition": "HCP's job title."
+    },
+    {
+     "code": "HCP-4",
+     "display": "HCP - Current specialty",
+     "definition": "HCP's current specialty."
+    },
+    {
+     "code": "HCP-5",
+     "display": "HCP - Phone",
+     "definition": "HCP's phone number."
+    },
+    {
+     "code": "HCP-6",
+     "display": "HCP - Email address",
+     "definition": "HCP's email address."
+    },
+    {
+     "code": "HCP-7",
+     "display": "HCP - Organisation name",
+     "definition": "HCP's organisation name."
+    },
+    {
+     "code": "HCP-8",
+     "display": "HCP - Organisation address",
+     "definition": "HCP's organisation address."
+    },
+    {
+     "code": "HCP-9",
+     "display": "HCP - Organisation ODS code",
+     "definition": "HCP's organisation ODS code (ORGANISATION IDENTIFIER (CODE OF ORDERING ENTITY))"
+    },
+    {
+     "code": "HCP-10",
+     "display": "HCP - Department name",
+     "definition": "HCP's department name."
+    },
+    {
+     "code": "HCP-11",
+     "display": "HCP - Professional registration number",
+     "definition": "HCP's professional registration number such as their GMC number."
+    },
+    {
+     "code": "HCP-12",
+     "display": "HCP - Professional registration number type",
+     "definition": "HCP's professional registration number type such as 'GMC'."
+    },
+    {
+     "code": "HCP-13",
+     "display": "HCP - Genomic report delivery method",
+     "definition": "HCP's report preferred delivery method."
+    },
+    {
+     "code": "HCP-14",
+     "display": "HCP - Central email for address and reporting (many)",
+     "definition": "Central email address provided by a HCP."
+    }
+   ]
+  },
+  {
+   "code": "datagroup-patient",
+   "display": "Patient",
+     "definition": "Data group - Patient",
+   "concept": [
+    {
+     "code": "P-1",
+     "display": "Patient - Title",
+     "definition": "Patient's title."
+    },
+    {
+     "code": "P-2",
+     "display": "Patient - First name",
+     "definition": "Patient's first name."
+    },
+    {
+     "code": "P-3",
+     "display": "Patient - Surname",
+     "definition": "Patient's last name."
+    },
+    {
+     "code": "P-4",
+     "display": "Patient - Date of birth",
+     "definition": "Patient's date of birth."
+    },
+    {
+     "code": "P-5",
+     "display": "Patient - Address",
+     "definition": "Patient's home address."
+    },
+    {
+     "code": "P-6",
+     "display": "Patient - Postcode",
+     "definition": "Patient's home postcode."
+    },
+    {
+     "code": "P-7",
+     "display": "Patient - Country",
+     "definition": "Patient's home country."
+    },
+    {
+     "code": "P-8",
+     "display": "Patient - Life status at time of request",
+     "definition": "Patient's alive or deceased status when ordering the test."
+    },
+    {
+     "code": "P-9",
+     "display": "Patient - Ethnicity",
+     "definition": "Patient's ethnicity. Includes 'other' / 'not stated'."
+    },
+    {
+     "code": "P-10",
+     "display": "Patient - Sex registered at birth",
+     "definition": "Patient's phenotypic sex classification. Physical characteristic. Currently determined by the Dr at birth. Gender for PLCM."
+    },
+    {
+     "code": "P-11",
+     "display": "Patient - Organisation responsible for GP practice ODS code",
+     "definition": "ODS code of organisation responsible for the GP Practice where the patient is registered."
+    },
+    {
+     "code": "P-12",
+     "display": "Patient - GP practice's ODS Code",
+     "definition": "Patient's GP practice ODS code. Includes 'N/A' and 'Not Known'."
+    },
+    {
+     "code": "P-13",
+     "display": "Patient - Is from consanguineous union",
+     "definition": "The fact of the patient's biological parents being descended from the same ancestor."
+    },
+    {
+     "code": "P-14",
+     "display": "Patient - GP's full name",
+     "definition": "Patient's GP's full name."
+    },
+    {
+     "code": "P-15",
+     "display": "Patient - NHS number",
+     "definition": "Patient's NHS number."
+    },
+    {
+     "code": "P-16",
+     "display": "Patient - Local identifier",
+     "definition": "Patient's identification code other than NHS number. (LOCAL PATIENT IDENTIFIER (EXTENDED))"
+    },
+    {
+     "code": "P-17",
+     "display": "Patient - Reason for unavailable NHS number",
+     "definition": "Reason for an NHS number not being provided."
+    },
+    {
+     "code": "P-18",
+     "display": "Patient - Relationship to proband",
+     "definition": "This patient's relationship to the primary patient."
+    },
+    {
+     "code": "P-19",
+     "display": "Patient - Gender Identity",
+     "definition": "Patient's stated gender, determined by the patient."
+    },
+    {
+     "code": "P-20",
+     "display": "Patient - Date of death",
+     "definition": "Patient's date/time of death."
+    },
+    {
+     "code": "P-21",
+     "display": "Patient - Chromosomal sex",
+     "definition": "Patient's genomic / karyotypic characteristic. Determined by genomic testing."
+    },
+    {
+     "code": "P-22",
+     "display": "Patient - Pregnancy gestation period",
+     "definition": "Patient's term of active pregnancy at point of test request."
+    },
+    {
+     "code": "P-23",
+     "display": "Patient - Fetal gestation",
+     "definition": "Stage during patient pregnancy at which it terminated."
+    },
+    {
+     "code": "P-24",
+     "display": "Patient - Estimated delivery date (EDD)",
+     "definition": "Patient's estimated delivery date."
+    },
+    {
+     "code": "P-25",
+     "display": "Patient - Pregnancy type",
+     "definition": "Type of conception"
+    },
+    {
+     "code": "P-26",
+     "display": "Patient - IVF age of egg donor",
+     "definition": "The age of the patient who donated the egg at the time of donation."
+    },
+    {
+     "code": "P-27",
+     "display": "Patient - Diagnosed with or being treated for cancer",
+     "definition": "Has the patient been diagnosed with or are they being treated for cancer."
+    },
+    {
+     "code": "P-28",
+     "display": "Patient - Had transplant",
+     "definition": "Has the patient ever had a transplant."
+    },
+    {
+     "code": "P-29",
+     "display": "Patient - Type of transplant",
+     "definition": "What type of transplant the patient had."
+    },
+    {
+     "code": "P-30",
+     "display": "Patient - Transplant date",
+     "definition": "When the patient had the transplant."
+    },
+    {
+     "code": "P-31",
+     "display": "Patient - Had transfusion in the last 6 weeks",
+     "definition": "Has the patient had a transfusion in the last 6 weeks."
+    },
+    {
+     "code": "P-32",
+     "display": "Patient - Type of transfusion",
+     "definition": "What type of transfusion the patient has had."
+    },
+    {
+     "code": "P-33",
+     "display": "Patient - Transfusion date",
+     "definition": "When the patient had the transfusion."
+    },
+    {
+     "code": "P-34",
+     "display": "Patient - Height (m)",
+     "definition": "Patient's height."
+    },
+    {
+     "code": "P-35",
+     "display": "Patient - Withheld identity reason",
+     "definition": "Confirmation why the patient is withholding identity details."
+    },
+    {
+     "code": "P-36",
+     "display": "Patient - GP's professional registration number",
+     "definition": "Patient's GP's professional registration number."
+    },
+    {
+     "code": "P-37",
+     "display": "Patient - Pedigree / Family identifier",
+     "definition": "Patient's pedigree or family identifying id."
+    },
+    {
+     "code": "P-38",
+     "display": "Patient - Pregnancy status",
+     "definition": "Patient's pregnancy status."
+    }
+   ]
+  },
+  {
+   "code": "datagroup-fetus",
+   "display": "Fetus",
+     "definition": "Data group - Fetus",
+   "concept": [
+    {
+     "code": "F-1",
+     "display": "Fetus - Local identifier",
+     "definition": "Fetus' identification code other than NHS number."
+    },
+    {
+     "code": "F-2",
+     "display": "Fetus - Observed sex",
+     "definition": "Fetus' phenotypic sex classification. Estimated physical characteristic. Currently determined by ultrasound. Gender for PLCM."
+    },
+    {
+     "code": "F-3",
+     "display": "Fetus - Chromosomal sex",
+     "definition": "Fetus' genomic / karyotypic characteristic. Determined by genomic testing."
+    },
+    {
+     "code": "F-4",
+     "display": "Fetus - Are multiple fetuses being tested",
+     "definition": "Confirmation that multiple fetuses are being tested."
+    },
+    {
+     "code": "F-5",
+     "display": "Fetus - Is testing for fetal loss from 24 weeks of gestation",
+     "definition": "Confirmation that the test is for a loss of pregnancy after 24 weeks gestation."
+    },
+    {
+     "code": "F-6",
+     "display": "Fetus - Life status at time of request",
+     "definition": "Fetus' alive or deceased status details at the point of test ordering."
+    }
+   ]
+  },
+  {
+   "code": "datagroup-record-of-discussion",
+   "display": "Record of Discussion",
+     "definition": "Data group - Record of discussion",
+   "concept": [
+    {
+     "code": "ROD-1",
+     "display": "RoD - Included",
+     "definition": "Has RoD been included with request."
+    },
+    {
+     "code": "ROD-2",
+     "display": "RoD - Patient category",
+     "definition": "Confirmation of who made the RoD decisions."
+    },
+    {
+     "code": "ROD-3",
+     "display": "RoD - Recording clinician name",
+     "definition": "Name of the clinician who recorded the RoD details."
+    },
+    {
+     "code": "ROD-4",
+     "display": "RoD - Record of discussion form - copy attached",
+     "definition": "Marker to confirm on a test request form that an RoD has been included."
+    },
+    {
+     "code": "ROD-5",
+     "display": "RoD - Patient choice status",
+     "definition": "Indication of the patient consenting to the genomic test request."
+    },
+    {
+     "code": "ROD-6",
+     "display": "RoD - Has research participation been discussed",
+     "definition": "Marker to confirm RoD conversation has taken place."
+    },
+    {
+     "code": "ROD-7",
+     "display": "RoD - Remote consent",
+     "definition": "Where consent has been recorded on behalf of the patient via remote confirmation."
+    },
+    {
+     "code": "ROD-8",
+     "display": "RoD - Test type",
+     "definition": "If the test is WGS cancer or WGS rare disease."
+    },
+    {
+     "code": "ROD-9",
+     "display": "RoD - Research opt out reason",
+     "definition": "Why patient has opted out of research."
+    },
+    {
+     "code": "ROD-10",
+     "display": "RoD - Responsible clinician name",
+     "definition": "Name of the clinician who is responsible for the patient's genomic test request."
+    },
+    {
+     "code": "ROD-11",
+     "display": "RoD - Patient conversation taken place, ROD form to follow",
+     "definition": "Marker to confirm RoD conversation has taken place but will be sent separately."
+    },
+    {
+     "code": "ROD-12",
+     "display": "RoD - Signature",
+     "definition": "Copy of wet signature or valid e-signature."
+    },
+    {
+     "code": "ROD-13",
+     "display": "RoD - Document/Link",
+     "definition": "A copy of/or link to the previous genomic or non-genomic report."
+    }
+   ]
+  },
+  {
+   "code": "datagroup-test-request",
+   "display": "Test Request",
+     "definition": "Data group - Test Request",
+   "concept": [
+    {
+     "code": "TR-1",
+     "display": "Test Request - Test request id",
+     "definition": "Unique id to identify this test request."
+    },
+    {
+     "code": "TR-2",
+     "display": "Test Request - Payment status",
+     "definition": "How the test request is funded"
+    },
+    {
+     "code": "TR-3",
+     "display": "Test Request - Date and time request sent",
+     "definition": "Date and time the test request was sent from the requesting clinician (TEST REQUEST DATE)."
+    },
+    {
+     "code": "TR-4",
+     "display": "Test Request - Reason for testing",
+     "definition": "The reason for a genomic test."
+    },
+    {
+     "code": "TR-5",
+     "display": "Test Request - High level test identifier",
+     "definition": "The high level id which identifies the requested test. Options provided by Test Directory."
+    },
+    {
+     "code": "TR-6",
+     "display": "Test Request - High level test identifier description",
+     "definition": "The high level name of the CI referred to."
+    },
+    {
+     "code": "TR-7",
+     "display": "Test Request - Low level test identifier",
+     "definition": "The low level CITT code which identifies the requested test. Options provided by Test Directory (TEST IDENTIFIER OR TEST CODE)."
+    },
+    {
+     "code": "TR-8",
+     "display": "Test Request - Low level test identifier description",
+     "definition": "The low level CITT name of the considered test."
+    },
+    {
+     "code": "TR-9",
+     "display": "Test Request - Low level multipurpose test identifier",
+     "definition": "The low level code which identifies the test to be actioned when the CITT code is multipurpose (CLINICAL INDICATION)."
+    },
+    {
+     "code": "TR-10",
+     "display": "Test Request - Low level multipurpose test identifier description",
+     "definition": "The low level name of the test to be actioned when the CITT code is multipurpose."
+    },
+    {
+     "code": "TR-11",
+     "display": "Test Request - Count of patients to be tested",
+     "definition": "Count of patients to be tested including the proband/primary patient."
+    },
+    {
+     "code": "TR-12",
+     "display": "Test Request - Urgency reason",
+     "definition": "The test request urgency reason."
+    },
+    {
+     "code": "TR-13",
+     "display": "Test Request - Reason for reanalysis",
+     "definition": "The reason reanalysis has been requested."
+    },
+    {
+     "code": "TR-14",
+     "display": "Test Request - Detail of reason for reanalysis",
+     "definition": "Further detail associated to the reason reanalysis has been requested."
+    },
+    {
+     "code": "TR-15",
+     "display": "Test Request - Type of reanalysis",
+     "definition": "The type of reanalysis which has been requested."
+    },
+    {
+     "code": "TR-16",
+     "display": "Test Request - DNA storage information",
+     "definition": "If the reason for testing is DNA storage, this captures further detail."
+    },
+    {
+     "code": "TR-17",
+     "display": "Test Request - Is urgent",
+     "definition": "Confirmation if the test request is urgent."
+    },
+    {
+     "code": "TR-18",
+     "display": "Test Request - Date report required by",
+     "definition": "The date a completed genomic report is required by."
+    },
+    {
+     "code": "TR-19",
+     "display": "Test Request - Recipient ODS code",
+     "definition": "ODS code of the first organisation which receives the genomic test request."
+    }
+   ]
+  },
+  {
+   "code": "datagroup-primary-sample",
+   "display": "Primary Sample",
+     "definition": "Data group - Primary Sample",
+   "concept": [
+    {
+     "code": "PS-1",
+     "display": "Primary Sample - Destination organisation ODS code",
+     "definition": "Destination for primary sample."
+    },
+    {
+     "code": "PS-2",
+     "display": "Primary Sample - Id (many)",
+     "definition": "Id of primary sample provided, linked to the stated assigning authority."
+    },
+    {
+     "code": "PS-3",
+     "display": "Primary Sample - Id assigning authority ODS code (many)",
+     "definition": "Authority who assigned the primary sample id."
+    },
+    {
+     "code": "PS-4",
+     "display": "Primary Sample - Received date",
+     "definition": "Date at which a primary sample was received at a laboratory (SAMPLE RECEIPT DATE)."
+    },
+    {
+     "code": "PS-5",
+     "display": "Primary Sample - Sample storage details",
+     "definition": "Where a primary sample is in storage or where it needs to be stored."
+    },
+    {
+     "code": "PS-6",
+     "display": "Primary Sample - Volume",
+     "definition": "Volume of provided primary sample."
+    },
+    {
+     "code": "PS-7",
+     "display": "Primary Sample - Test request Id",
+     "definition": "The id of the associated genomic test being requested."
+    },
+    {
+     "code": "PS-8",
+     "display": "Primary Sample - Patient NHS number",
+     "definition": "Patient NHS number."
+    },
+    {
+     "code": "PS-9",
+     "display": "Primary Sample - Patient local identifier",
+     "definition": "Patient identification code other than NHS number."
+    },
+    {
+     "code": "PS-10",
+     "display": "Primary Sample - Obtained date",
+     "definition": "Date at which a specimen/biopsy was obtained from patient."
+    },
+    {
+     "code": "PS-11",
+     "display": "Primary Sample - Primary sample",
+     "definition": "Initial sample from patient submitted into a laboratory."
+    },
+    {
+     "code": "PS-12",
+     "display": "Primary Sample - Primary sample state",
+     "definition": "How the primary sample is preserved."
+    },
+    {
+     "code": "PS-13",
+     "display": "Primary Sample - Necrosis",
+     "definition": "% necrotic cells in primary sample."
+    },
+    {
+     "code": "PS-14",
+     "display": "Primary Sample - Nucleated cell count",
+     "definition": "Nucleated cell count in the primary sample  (Solid Tumour and Haem-Onc)."
+    },
+    {
+     "code": "PS-15",
+     "display": "Primary Sample - Tumour nuclear content",
+     "definition": "Neoplastic cell content in the primary sample(Solid Tumour) - sourced at local lab. (%)"
+    },
+    {
+     "code": "PS-16",
+     "display": "Primary Sample - Tumour cellularity",
+     "definition": "The proportion of the primary sample which is tumour nuclei."
+    },
+    {
+     "code": "PS-17",
+     "display": "Primary Sample - Solid tumour morphology",
+     "definition": "The histology and likely course of development of a tumour."
+    },
+    {
+     "code": "PS-18",
+     "display": "Primary Sample - Solid tumour topography",
+     "definition": "The tumour sample site. e.g. from colon, stomach etc."
+    },
+    {
+     "code": "PS-19",
+     "display": "Primary Sample - Biopsy site",
+     "definition": "Site where the primary sample was taken from."
+    },
+    {
+     "code": "PS-20",
+     "display": "Primary Sample - Skin/Bone sample affected",
+     "definition": "If the skin or bone provided is unaffected or affected."
+    },
+    {
+     "code": "PS-21",
+     "display": "Primary Sample - Maternal cell contamination (MCC)",
+     "definition": "Confirmation if MCC remains in the primary sample."
+    },
+    {
+     "code": "PS-22",
+     "display": "Primary Sample - Option for all products of conception",
+     "definition": "Future management for products of conception."
+    },
+    {
+     "code": "PS-23",
+     "display": "Primary Sample - Blasts %",
+     "definition": "Blast count in the primary sample (Haemonc) - sourced at local SIHMDS."
+    },
+    {
+     "code": "PS-24",
+     "display": "Primary Sample - High infection risk reason",
+     "definition": "The high contamination risk reason for a primary sample."
+    }
+   ]
+  },
+  {
+   "code": "datagroup-sample-preparation",
+   "display": "Sample Preparation",
+     "definition": "Data group - Sample Preparation",
+   "concept": [
+    {
+     "code": "SP-1",
+     "display": "Sample Preparation - Parent primary sample id",
+     "definition": "Id of primary sample this derived from"
+    },
+    {
+     "code": "SP-2",
+     "display": "Sample Preparation - Id (many)",
+     "definition": "Id of sample preparation provided, linked to the stated assigning authority. Occurs multiple times (SAMPLE IDENTIFIER)."
+    },
+    {
+     "code": "SP-3",
+     "display": "Sample Preparation - Id assigning authority ODS code (many)",
+     "definition": "Authority who assigned the sample preparation id(ORGANISATION IDENTIFIER (CODE OF HISTOPATHOLOGY LABORATORY ENTITY))"
+    },
+    {
+     "code": "SP-4",
+     "display": "Sample Preparation - Sample storage details",
+     "definition": "Where sample preparation is in storage or where it needs to be stored."
+    },
+    {
+     "code": "SP-5",
+     "display": "Sample Preparation - Volume",
+     "definition": "Volume of provided sample preparation."
+    },
+    {
+     "code": "SP-6",
+     "display": "Sample Preparation - Performed date",
+     "definition": "Date at which the sample preparation was completed."
+    },
+    {
+     "code": "SP-7",
+     "display": "Sample Preparation - Received date",
+     "definition": "Date at which sample preparation was received at a laboratory (SAMPLE RECEIPT DATE)."
+    },
+    {
+     "code": "SP-8",
+     "display": "Sample Preparation - Sample preparation",
+     "definition": "Cell separation applied to a primary sample."
+    }
+   ]
+  },
+  {
+   "code": "datagroup-final-sample",
+   "display": "Final Sample",
+     "definition": "Data group - Final Sample",
+   "concept": [
+    {
+     "code": "FS-1",
+     "display": "Final Sample - Parent primary sample id",
+     "definition": "Id of primary this derived from."
+    },
+    {
+     "code": "FS-2",
+     "display": "Final Sample - Parent sample preparation id",
+     "definition": "Id of sample preparation this derived from."
+    },
+    {
+     "code": "FS-3",
+     "display": "Final Sample - Id (many)",
+     "definition": "Id of final sample provided, linked to the associated assigning authority. Occurs multiple times (SAMPLE IDENTIFIER)."
+    },
+    {
+     "code": "FS-4",
+     "display": "Final Sample - Id assigning authority ODS code (many)",
+     "definition": "Authority who assigned the final sample id ORGANISATION IDENTIFIER (CODE OF HISTOPATHOLOGY LABORATORY ENTITY)."
+    },
+    {
+     "code": "FS-5",
+     "display": "Final Sample - Sample storage details",
+     "definition": "Where a final sample is in storage or where it needs to be stored."
+    },
+    {
+     "code": "FS-6",
+     "display": "Final Sample - Volume",
+     "definition": "Volume of provided final sample."
+    },
+    {
+     "code": "FS-7",
+     "display": "Final Sample - Performed date",
+     "definition": "Date at which the final sample was extracted."
+    },
+    {
+     "code": "FS-8",
+     "display": "Final Sample - Received date",
+     "definition": "Date at which a final sample was received at a laboratory (SAMPLE RECEIPT DATE)."
+    },
+    {
+     "code": "FS-9",
+     "display": "Final Sample - Final sample",
+     "definition": "Material to be genomically tested."
+    }
+   ]
+  },
+  {
+   "code": "datagroup-previous-genomic-report",
+   "display": "Previous Genomic Report",
+     "definition": "Data group - Previous Genomic Report",
+   "concept": [
+    {
+     "code": "PGR-1",
+     "display": "Previous Genomic Report - Report referral summary",
+     "definition": "Referring clinician's summary of the previous genomic report to support test request."
+    },
+    {
+     "code": "PGR-2",
+     "display": "Previous Genomic Report - Report file/link",
+     "definition": "A copy of/or link to the previous genomic report."
+    },
+    {
+     "code": "PGR-3",
+     "display": "Previous Genomic Report - Test performed date",
+     "definition": "The date a previous genomic test was performed."
+    },
+    {
+     "code": "PGR-4",
+     "display": "Previous Genomic Report - Report identifier",
+     "definition": "The identifier for the previous genomic report."
+    },
+    {
+     "code": "PGR-5",
+     "display": "Previous Genomic Report - Patient's first name",
+     "definition": "The first name of the patient on the previous genomic report."
+    },
+    {
+     "code": "PGR-6",
+     "display": "Previous Genomic Report - Patient's surname",
+     "definition": "The surname of the patient on the previous genomic report."
+    },
+    {
+     "code": "PGR-7",
+     "display": "Previous Genomic Report - Patient's address",
+     "definition": "The address of the patient on the previous genomic report."
+    },
+    {
+     "code": "PGR-8",
+     "display": "Previous Genomic Report - Patient's post code",
+     "definition": "The postcode of the patient on the previous genomic report."
+    },
+    {
+     "code": "PGR-9",
+     "display": "Previous Genomic Report - Patient's country",
+     "definition": "The country of the patient on the previous genomic report."
+    },
+    {
+     "code": "PGR-10",
+     "display": "Previous Genomic Report - Patient's date of birth",
+     "definition": "The date of birth of the patient on the previous genomic report."
+    },
+    {
+     "code": "PGR-11",
+     "display": "Previous Genomic Report - Patient's NHS number",
+     "definition": "The NHS number of the patient on the previous genomic report."
+    },
+    {
+     "code": "PGR-12",
+     "display": "Previous Genomic Report - Patient's alternative identifier",
+     "definition": "The alternative identifier of the patient on the previous genomic report."
+    },
+    {
+     "code": "PGR-13",
+     "display": "Previous Genomic Report - Patient's relationship to requesting patient",
+     "definition": "The relationship of the patient on the previous genomic report to the requesting patient."
+    },
+    {
+     "code": "PGR-14",
+     "display": "Previous Genomic Report - Patient's clinical genetic number",
+     "definition": "The individual clinical genetic number of the patient on the previous genomic report."
+    },
+    {
+     "code": "PGR-15",
+     "display": "Previous Genomic Report - Patient's pedigree number",
+     "definition": "The pedigree number of the patient on the previous genomic report which links their family."
+    },
+    {
+     "code": "PGR-16",
+     "display": "Previous Genomic Report - Report lab test number",
+     "definition": "The lab test number from the previous genomic report."
+    },
+    {
+     "code": "PGR-17",
+     "display": "Previous Genomic Report - Report of genetic analysis",
+     "definition": "The clinical outcomes from the previous genomic report."
+    },
+    {
+     "code": "PGR-18",
+     "display": "Previous Genomic Report - Report performer full name",
+     "definition": "The full name of the individual that authored the previous genomic test report."
+    },
+    {
+     "code": "PGR-19",
+     "display": "Previous Genomic Report - Report performer organisation ODS code",
+     "definition": "The organisation ODS code of the individual that authored the previous genomic test report."
+    },
+    {
+     "code": "PGR-20",
+     "display": "Previous Genomic Report - Original requester full name",
+     "definition": "The full name of the individual that requested the previous genomic test report."
+    },
+    {
+     "code": "PGR-21",
+     "display": "Previous Genomic Report - Original requester organisation ODS code",
+     "definition": "The organisation ODS code of the individual that requested the previous genomic test report."
+    },
+    {
+     "code": "PGR-22",
+     "display": "Previous Genomic Report - Original requester reason for request",
+     "definition": "The reason for requesting the previous genomic test report."
+    }
+   ]
+  },
+  {
+   "code": "datagroup-relevant-clinical-report",
+   "display": "Relevant Clinical Report",
+     "definition": "Data group - Relevant Clinical Report ",
+   "concept": [
+    {
+     "code": "RCP-1",
+     "display": "Relevant Clinical Report - Report title",
+     "definition": "Title of relevant clinical report."
+    },
+    {
+     "code": "RCP-2",
+     "display": "Relevant Clinical Report - Report referral summary",
+     "definition": "Referring clinician's summary of the previous relevant clinical report to support test request."
+    },
+    {
+     "code": "RCP-3",
+     "display": "Relevant Clinical Report - Report file/link",
+     "definition": "A copy of/or link to the relevant clinical report."
+    },
+    {
+     "code": "RCP-4",
+     "display": "Relevant Clinical Report - Test performed date",
+     "definition": "The date a relevant clinical report was performed."
+    },
+    {
+     "code": "RCP-5",
+     "display": "Relevant Clinical Report - Report identifier",
+     "definition": "The identifier for the relevant clinical report."
+    },
+    {
+     "code": "RCP-6",
+     "display": "Relevant Clinical Report - Test type",
+     "definition": "A name that describes the relevant clinical report."
+    },
+    {
+     "code": "RCP-7",
+     "display": "Relevant Clinical Report - Test result value comparator",
+     "definition": "A comparator that may be used to indicate whether the actual value is greater or less than the stated value. Applies to numeric values only."
+    },
+    {
+     "code": "RCP-8",
+     "display": "Relevant Clinical Report - Test result value unit of measure",
+     "definition": "The name and code of the unit of measure associated with the test result value. Applies to numeric values only."
+    },
+    {
+     "code": "RCP-9",
+     "display": "Relevant Clinical Report - Test result reference range low",
+     "definition": "The reference range low value."
+    },
+    {
+     "code": "RCP-10",
+     "display": "Relevant Clinical Report - Test result reference range high",
+     "definition": "The reference range high value."
+    },
+    {
+     "code": "RCP-11",
+     "display": "Relevant Clinical Report - Test result test method",
+     "definition": "The method of testing/observation that was used."
+    },
+    {
+     "code": "RCP-12",
+     "display": "Relevant Clinical Report - Test result reference range text",
+     "definition": "A human readable text-based description to provide additional information about the reference range. For example, the target population that the reference range applies to and/or differences based on factors such as age or sex."
+    },
+    {
+     "code": "RCP-13",
+     "display": "Relevant Clinical Report - Test result clinical summary",
+     "definition": "A human readable text-based clinical interpretation of the test result and any additional notes provided by the performing organisation."
+    },
+    {
+     "code": "RCP-14",
+     "display": "Relevant Clinical Report - Report result",
+     "definition": "Reference to the result(s)/result groups contained in the relevant clinical report"
+    },
+    {
+     "code": "RCP-15",
+     "display": "Relevant Clinical Report - Report performer full name",
+     "definition": "The full name of the individual that authored the relevant clinical report."
+    },
+    {
+     "code": "RCP-16",
+     "display": "Relevant Clinical Report - Report performer organisation ODS code",
+     "definition": "The identifier of the org which authored the patient's relevant clinical report."
+    },
+    {
+     "code": "RCP-17",
+     "display": "Relevant Clinical Report - Original requester full name",
+     "definition": "The full name of the individual that requested the relevant clinical report."
+    },
+    {
+     "code": "RCP-18",
+     "display": "Relevant Clinical Report - Original requester organisation ODS code",
+     "definition": "The organisation ODS code of the individual that requested the relevant clinical report."
+    },
+    {
+     "code": "RCP-19",
+     "display": "Relevant Clinical Report - Original requester reason for request",
+     "definition": "The reason for requesting the relevant clinical report."
+    }
+   ]
+  },
+  {
+   "code": "datagroup-patient-clinical-information",
+   "display": "Patient Clinical Information",
+     "definition": "Data group - Patient Clinical Information",
+   "concept": [
+    {
+     "code": "PCI-1",
+     "display": "Genomic Ethnicity",
+     "definition": "Patient's ethnicity where 'Patient - Ethnicity field' doesn't provide an adequate description. E.g Ashkenazi Jewish"
+    },
+    {
+     "code": "PCI-2",
+     "display": "Disease Status",
+     "definition": "If the patient is affected, unaffected, or it is unknown."
+    },
+    {
+     "code": "PCI-3",
+     "display": "Date of Diagnosis",
+     "definition": "The patient's date of diagnosis."
+    },
+    {
+     "code": "PCI-4",
+     "display": "Age at disease onset",
+     "definition": "The age when a change in patients' health was first noted in line with suspected diagnosis."
+    },
+    {
+     "code": "PCI-5",
+     "display": "Known/Suspected Disease",
+     "definition": "Disease a patient is believed, known to have, or be at risk of developing."
+    },
+    {
+     "code": "PCI-6",
+     "display": "Phenotypic details (many)",
+     "definition": "The HPO (or alternative ontology as appropriate) term names for the observable disease traits."
+    },
+    {
+     "code": "PCI-7",
+     "display": "Symptoms at onset",
+     "definition": "The patient's symptoms at onset."
+    },
+    {
+     "code": "PCI-8",
+     "display": "Disease penetrance",
+     "definition": "Confirms if all individuals with a disease show clinical symptoms or if there are carriers who do not."
+    },
+    {
+     "code": "PCI-9",
+     "display": "Has multiple tumours",
+     "definition": "Does the patient have multiple tumours."
+    },
+    {
+     "code": "PCI-10",
+     "display": "Count of tumours",
+     "definition": "How many tumours the patient has."
+    },
+    {
+     "code": "PCI-11",
+     "display": "Site of tumour (many)",
+     "definition": "Location of the tumours on the body."
+    },
+    {
+     "code": "PCI-12",
+     "display": "Solid Tumour Type",
+     "definition": "The patient's solid tumour type."
+    },
+    {
+     "code": "PCI-13",
+     "display": "Liquid Tumour Type",
+     "definition": "The patient's liquid tumour type."
+    },
+    {
+     "code": "PCI-14",
+     "display": "Tumour sites - Body image diagram",
+     "definition": "Image attachment of body with tumour sites highlighted."
+    },
+    {
+     "code": "PCI-15",
+     "display": "Pedigree details / Relevant family history",
+     "definition": "The patient's pedigree/family history details (inc family history of cancer)."
+    },
+    {
+     "code": "PCI-16",
+     "display": "Pedigree diagram",
+     "definition": "Image attachment of pedigree details"
+    },
+    {
+     "code": "PCI-17",
+     "display": "Laterality of hearing loss",
+     "definition": "Laterality of the hearing loss i.e. bilateral or unilateral."
+    },
+    {
+     "code": "PCI-18",
+     "display": "Fetal maternal screening genotype",
+     "definition": "Maternal screening genotype for haemoglobinopathy testing."
+    },
+    {
+     "code": "PCI-19",
+     "display": "Is patient on TKI therapy",
+     "definition": "If the patient is on tyrosine kinase inhibitor therapy."
+    },
+    {
+     "code": "PCI-20",
+     "display": "Is patient in treatment free remission",
+     "definition": "If the patient is in treatment free remission."
+    },
+    {
+     "code": "PCI-21",
+     "display": "Legal considerations",
+     "definition": "Legal considerations for a given request."
+    },
+    {
+     "code": "PCI-22",
+     "display": "Fetal paternal screening genotype",
+     "definition": "Paternal screening genotype for haemoglobinopathy testing."
+    },
+    {
+     "code": "PCI-23",
+     "display": "Expected Maternity Unit - Organisation name",
+     "definition": "Requesting clinician's organisation name."
+    },
+    {
+     "code": "PCI-24",
+     "display": "Expected Maternity Unit - Organisation address",
+     "definition": "Requesting clinician's organisation address."
+    },
+    {
+     "code": "PCI-25",
+     "display": "Expected Maternity Unit - Organisation ODS code",
+     "definition": "Requesting clinician's organisation ODS code."
+    },
+    {
+     "code": "PCI-26",
+     "display": "Expected Maternity Unit - Department name",
+     "definition": "Requesting clinician's department name."
+    },
+    {
+     "code": "PCI-27",
+     "display": "Growth history",
+     "definition": "Summary passage of text to highlight patient centile history e.g. head circumference, weight, etc."
+    },
+    {
+     "code": "PCI-28",
+     "display": "Severity of hearing loss",
+     "definition": "Free text regarding hearing loss"
+    },
+    {
+     "code": "PCI-29",
+     "display": "Retinal degeneration",
+     "definition": "Free text regarding retinal degeneration"
+    },
+    {
+     "code": "PCI-30",
+     "display": "Risk factors",
+     "definition": "Toxic medication - Prematurity (risk factor for hearing loss) e.g. Baby early birth - Ototoxic medication."
+    },
+    {
+     "code": "PCI-31",
+     "display": "Suspected inborn error type(s)",
+     "definition": "Suspected inborn error type(s)"
+    },
+    {
+     "code": "PCI-32",
+     "display": "Abnormal infection history site",
+     "definition": "Abnormal infection history site organism"
+    },
+    {
+     "code": "PCI-33",
+     "display": "Abnormal infection history site organism",
+     "definition": "Abnormal infection history site organism"
+    },
+    {
+     "code": "PCI-34",
+     "display": "Is on ig replacement",
+     "definition": "If the patient is on immunoglobin replacement treatment."
+    }
+   ]
+  },
+  {
+   "code": "further-supporting-information",
+   "display": "Further Supporting Information",
+   "definition": "Data group - Further Supporting Information",
+   "concept": [
+    {
+     "code": "FSI-1",
+     "display": "Further Supporting Information",
+     "definition": "Supporting information which has not been captured elsewhere."
+    }
+   ]
+  }
+ ]
+}

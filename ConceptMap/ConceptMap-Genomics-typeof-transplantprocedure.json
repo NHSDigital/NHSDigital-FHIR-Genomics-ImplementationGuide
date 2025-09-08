@@ -4,9 +4,9 @@
   "url": "https://fhir.nhs.uk/ConceptMap/genomics-typeof-transplantprocedure",
   "name": "GenomicsTypeofTransplantProcedure",
   "title": "Genomics Type of Transplant Procedure",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "status": "draft",
-  "date": "2024-08-12T17:40:00.000Z",
+  "date": "2025-09-05T11:00:00.000Z",
   "publisher": "NHS England",
   "contact": [
     {
@@ -33,7 +33,7 @@
           "target": [
             {
               "code": "232660006",
-              "display": "Bilateral sequential single lung transplant (procedure)",
+              "display": "Bilateral sequential single lung transplant",
               "equivalence": "equivalent"
             }
           ]
@@ -44,7 +44,7 @@
           "target": [
             {
               "code": "23719005",
-              "display": "Transplantation of bone marrow (procedure)",
+              "display": "Transplantation of bone marrow",
               "equivalence": "equivalent"
             }
           ]
@@ -55,7 +55,7 @@
           "target": [
             {
               "code": "70536003",
-              "display": "Transplant of kidney (procedure)",
+              "display": "Transplant of kidney",
               "equivalence": "narrower",
               "comment": "When this concept is used, further notes should be provided that this transplation procedure is for double kidney. Respective procedures should be recorded in a separate Procedure resource."
             }
@@ -67,7 +67,7 @@
           "target": [
             {
               "code": "232658009",
-              "display": "Double lung transplant (procedure)",
+              "display": "Double lung transplant",
               "equivalence": "equivalent"
             }
           ]
@@ -88,7 +88,7 @@
           "target": [
             {
               "code": "32413006",
-              "display": "Transplantation of heart (procedure)",
+              "display": "Transplantation of heart",
               "equivalence": "equivalent"
             }
           ]
@@ -99,13 +99,13 @@
           "target": [
             {
               "code": "32413006",
-              "display": "Transplantation of heart (procedure)",
+              "display": "Transplantation of heart",
               "equivalence": "narrower",
               "comment": "When this concept is used, further notes should be provided to state that this transplantation procedure is for a combined heart and kidney transplant procedure. Respective procedures should be recorded in a separate Procedure resource."
             },
             {
               "code": "70536003",
-              "display": "Transplant of kidney (procedure)",
+              "display": "Transplant of kidney",
               "equivalence": "narrower",
               "comment": "When this concept is used, further notes should be provided to state that this transplantation procedure is for combined heart and kidney procedure. Respective procedures should be recorded in a separate Procedure resource."
             }
@@ -117,13 +117,13 @@
           "target": [
             {
               "code": "32413006",
-              "display": "Transplantation of heart (procedure)",
+              "display": "Transplantation of heart",
               "equivalence": "narrower",
               "comment": "When this concept is used, further notes should be provided to state that it is a combined transplant procedure. Respective procedures should be recorded in a separate Procedure resource."
             },
             {
               "code": "18027006",
-              "display": "Transplantation of liver (procedure)",
+              "display": "Transplantation of liver",
               "equivalence": "narrower",
               "comment": "When this concept is used, further notes should be provided to state that it is a combined transplant procedure. Respective procedures should be recorded in a separate Procedure resource."
             }
@@ -146,19 +146,19 @@
           "target": [
             {
               "code": "32413006",
-              "display": "Transplantation of heart (procedure)",
+              "display": "Transplantation of heart",
               "equivalence": "narrower",
               "comment": "When this concept is used, further notes should be provided to state that it is a combined transplant procedure. Respective procedures should be recorded in a separate Procedure resource."
             },
             {
               "code": "88039007",
-              "display": "Transplant of lung (procedure)",
+              "display": "Transplant of lung",
               "equivalence": "narrower",
               "comment": "When this concept is used, further notes should be provided to state that it is a combined transplant procedure. Respective procedures should be recorded in a separate Procedure resource."
             },
             {
               "code": "70536003",
-              "display": "Transplant of kidney (procedure)",
+              "display": "Transplant of kidney",
               "equivalence": "narrower",
               "comment": "When this concept is used, further notes should be provided to state that it is a combined transplant procedure. Respective procedures should be recorded in a separate Procedure resource."
             }
@@ -170,19 +170,19 @@
           "target": [
             {
               "code": "32413006",
-              "display": "Transplantation of heart (procedure)",
+              "display": "Transplantation of heart",
               "equivalence": "narrower",
               "comment": "When this concept is used, further notes should be provided to state that it is a combined transplant procedure. Respective procedures should be recorded in a separate Procedure resource."
             },
             {
               "code": "88039007",
-              "display": "Transplant of lung (procedure)",
+              "display": "Transplant of lung",
               "equivalence": "narrower",
               "comment": "When this concept is used, further notes should be provided to state that it is a combined transplant procedure. Respective procedures should be recorded in a separate Procedure resource."
             },
             {
               "code": "18027006",
-              "display": "Transplantation of liver (procedure)",
+              "display": "Transplantation of liver",
               "equivalence": "narrower",
               "comment": "When this concept is used, further notes should be provided to state that it is a combined transplant procedure. Respective procedures should be recorded in a separate Procedure resource."
             }
@@ -194,19 +194,19 @@
           "target": [
             {
               "code": "18027006",
-              "display": "Transplantation of liver (procedure)",
+              "display": "Transplantation of liver",
               "equivalence": "narrower",
               "comment": "A negative IF (Incompatible Factor) Blood test is a precondition to carrying out this combined procedure. The IF Blood test (250406009|Blood Incompatible(finding)) should be recorded in an observation resource. When this concept is used, further notes should be provided to state that it is a combined transplant procedure. Respective procedures should be recorded in a separate Procedure resource."
             },
             {
               "code": "56283009",
-              "display": "Transplantation of small intestine (procedure)",
+              "display": "Transplantation of small intestine",
               "equivalence": "narrower",
               "comment": "A negative IF (Incompatible Factor) Blood test is a precondition to carrying out this combined procedure. The IF Blood test (250406009|Blood Incompatible(finding)) should be recorded in an observation resource. When this concept is used, further notes should be provided to state that it is a combined transplant procedure. Respective procedures should be recorded in a separate Procedure resource."
             },
             {
               "code": "62438007",
-              "display": "Transplantation of pancreas (procedure)",
+              "display": "Transplantation of pancreas",
               "equivalence": "narrower",
               "comment": "A negative IF (Incompatible Factor) Blood test is a precondition to carrying out this combined procedure. The IF Blood test (250406009|Blood Incompatible(finding)) should be recorded in an observation resource. When this concept is used, further notes should be provided to state that it is a combined transplant procedure. Respective procedures should be recorded in a separate Procedure resource."
             }
@@ -218,7 +218,7 @@
           "target": [
             {
               "code": "18027006",
-              "display": "Transplantation of liver (procedure)",
+              "display": "Transplantation of liver",
               "equivalence": "equivalent",
               "comment": "A negative IF (Incompatible Factor) Blood test is a precondition to carrying out this procedure. The IF Blood test (250406009|Blood Incompatible(finding)) should be recorded in an observation resource.The procedures should be recorded in a separate Procedure resource."
             }
@@ -230,7 +230,7 @@
           "target": [
             {
               "code": "118158008",
-              "display": "Gastrointestinal tract transplantation (procedure)",
+              "display": "Gastrointestinal tract transplantation",
               "equivalence": "equivalent",
               "comment": "A negative IF (Incompatible Factor) Blood test is a precondition to carrying out this procedure. The IF Blood test (250406009|Blood Incompatible(finding)) should be recorded in an observation resource.The procedures should be recorded in a separate Procedure resource."
             }
@@ -242,7 +242,7 @@
           "target": [
             {
               "code": "70536003",
-              "display": "Transplant of kidney (procedure)",
+              "display": "Transplant of kidney",
               "equivalence": "equivalent"
             }
           ]
@@ -253,7 +253,7 @@
           "target": [
             {
               "code": "6471000179103",
-              "display": "Transplantation of kidney and pancreas (procedure)",
+              "display": "Transplantation of kidney and pancreas",
               "equivalence": "equivalent",
               "comment": "When this concept is used, further notes should be provided to state that it is a combined transplant procedure. Respective procedures should be recorded in a separate Procedure resource."
             }
@@ -265,19 +265,19 @@
           "target": [
             {
               "code": "70536003",
-              "display": "Transplant of kidney (procedure)",
+              "display": "Transplant of kidney",
               "equivalence": "narrower",
               "comment": "When this concept is used, further notes should be provided to state that it is a combined transplant procedure. Respective procedures should be recorded in a separate Procedure resource."
             },
             {
               "code": "128531006",
-              "display": "Islet cell transplant (procedure)",
+              "display": "Islet cell transplant",
               "equivalence": "narrower",
               "comment": "When this concept is used, further notes should be provided to state that it is a combined transplant procedure. Respective procedures should be recorded in a separate Procedure resource."
             },
             {
               "code": "62438007",
-              "display": "Transplantation of pancreas (procedure)",
+              "display": "Transplantation of pancreas",
               "equivalence": "narrower",
               "comment": "When this concept is used, further notes should be provided to state that it is a combined transplant procedure. Respective procedures should be recorded in a separate Procedure resource."
             }
@@ -289,7 +289,7 @@
           "target": [
             {
               "code": "18027006",
-              "display": "Transplantation of liver (procedure)",
+              "display": "Transplantation of liver",
               "equivalence": "equivalent"
             }
           ]
@@ -300,13 +300,13 @@
           "target": [
             {
               "code": "18027006",
-              "display": "Transplantation of liver (procedure)",
+              "display": "Transplantation of liver",
               "equivalence": "narrower",
               "comment": "When this concept is used, further notes should be provided to state that it is a combined transplant procedure. Respective procedures should be recorded in a separate Procedure resource."
             },
             {
               "code": "70536003",
-              "display": "Transplant of kidney (procedure)",
+              "display": "Transplant of kidney",
               "equivalence": "narrower",
               "comment": "When this concept is used, further notes should be provided to state that it is a combined transplant procedure. Respective procedures should be recorded in a separate Procedure resource."
             }
@@ -318,13 +318,13 @@
           "target": [
             {
               "code": "18027006",
-              "display": "Transplantation of liver (procedure)",
+              "display": "Transplantation of liver",
               "equivalence": "narrower",
               "comment": "When this concept is used, further notes should be provided to state that it is a combined transplant procedure. Respective procedures should be recorded in a separate Procedure resource."
             },
             {
               "code": "62438007",
-              "display": "Transplantation of pancreas (procedure)",
+              "display": "Transplantation of pancreas",
               "equivalence": "narrower",
               "comment": "When this concept is used, further notes should be provided to state that it is a combined transplant procedure. Respective procedures should be recorded in a separate Procedure resource."
             }
@@ -336,19 +336,19 @@
           "target": [
             {
               "code": "18027006",
-              "display": "Transplantation of liver (procedure)",
+              "display": "Transplantation of liver",
               "equivalence": "narrower",
               "comment": "When this concept is used, further notes should be provided to state that it is a combined transplant procedure. Respective procedures should be recorded in a separate Procedure resource."
             },
             {
               "code": "70536003",
-              "display": "Transplant of kidney (procedure)",
+              "display": "Transplant of kidney",
               "equivalence": "narrower",
               "comment": "When this concept is used, further notes should be provided to state that it is a combined transplant procedure. Respective procedures should be recorded in a separate Procedure resource."
             },
             {
               "code": "62438007",
-              "display": "Transplantation of pancreas (procedure)",
+              "display": "Transplantation of pancreas",
               "equivalence": "narrower",
               "comment": "When this concept is used, further notes should be provided to state that it is a combined transplant procedure. Respective procedures should be recorded in a separate Procedure resource."
             }
@@ -360,7 +360,7 @@
           "target": [
             {
               "code": "88039007",
-              "display": "Transplant of lung (procedure)",
+              "display": "Transplant of lung",
               "equivalence": "equivalent"
             }
           ]
@@ -371,13 +371,13 @@
           "target": [
             {
               "code": "88039007",
-              "display": "Transplant of lung (procedure)",
+              "display": "Transplant of lung",
               "equivalence": "narrower",
               "comment": "When this concept is used, further notes should be provided to state that it is a combined transplant procedure. Respective procedures should be recorded in a separate Procedure resource."
             },
             {
               "code": "70536003",
-              "display": "Transplant of kidney (procedure)",
+              "display": "Transplant of kidney",
               "equivalence": "narrower",
               "comment": "When this concept is used, further notes should be provided to state that it is a combined transplant procedure. Respective procedures should be recorded in a separate Procedure resource."
             }
@@ -389,19 +389,19 @@
           "target": [
             {
               "code": "88039007",
-              "display": "Transplant of lung (procedure)",
+              "display": "Transplant of lung",
               "equivalence": "narrower",
               "comment": "When this concept is used, further notes should be provided to state that it is a combined transplant procedure. Respective procedures should be recorded in a separate Procedure resource."
             },
             {
               "code": "70536003",
-              "display": "Transplant of kidney (procedure)",
+              "display": "Transplant of kidney",
               "equivalence": "narrower",
               "comment": "When this concept is used, further notes should be provided to state that it is a combined transplant procedure. Respective procedures should be recorded in a separate Procedure resource."
             },
             {
               "code": "18027006",
-              "display": "Transplantation of liver (procedure)",
+              "display": "Transplantation of liver",
               "equivalence": "narrower",
               "comment": "When this concept is used, further notes should be provided to state that it is a combined transplant procedure. Respective procedures should be recorded in a separate Procedure resource."
             }
@@ -413,13 +413,13 @@
           "target": [
             {
               "code": "88039007",
-              "display": "Transplant of lung (procedure)",
+              "display": "Transplant of lung",
               "equivalence": "narrower",
               "comment": "When this concept is used, further notes should be provided to state that it is a combined transplant procedure. Respective procedures should be recorded in a separate Procedure resource."
             },
             {
               "code": "18027006",
-              "display": "Transplantation of liver (procedure)",
+              "display": "Transplantation of liver",
               "equivalence": "narrower",
               "comment": "When this concept is used, further notes should be provided to state that it is a combined transplant procedure. Respective procedures should be recorded in a separate Procedure resource."
             }
@@ -431,7 +431,7 @@
           "target": [
             {
               "code": "120095006",
-              "display": "Eye structure transplantation (procedure)",
+              "display": "Eye structure transplantation",
               "equivalence": "wider"
             }
           ]
@@ -442,7 +442,7 @@
           "target": [
             {
               "code": "62438007",
-              "display": "Transplantation of pancreas (procedure)",
+              "display": "Transplantation of pancreas",
               "equivalence": "equivalent"
             }
           ]
@@ -453,13 +453,13 @@
           "target": [
             {
               "code": "62438007",
-              "display": "Transplantation of pancreas (procedure)",
+              "display": "Transplantation of pancreas",
               "equivalence": "narrower",
               "comment": "When this concept is used, further notes should be provided to state that it is a combined transplant procedure. Respective procedures should be recorded in a separate Procedure resource."
             },
             {
               "code": "62438007",
-              "display": "Transplantation of pancreas (procedure)",
+              "display": "Transplantation of pancreas",
               "equivalence": "narrower",
               "comment": "When this concept is used, further notes should be provided to state that it is a combined transplant procedure. Respective procedures should be recorded in a separate Procedure resource."
             }
@@ -471,13 +471,13 @@
           "target": [
             {
               "code": "62438007",
-              "display": "Transplantation of pancreas (procedure)",
+              "display": "Transplantation of pancreas",
               "equivalence": "narrower",
               "comment": "When this concept is used, further notes should be provided to state that it is a combined transplant procedure. Respective procedures should be recorded in a separate Procedure resource."
             },
             {
               "code": "128531006",
-              "display": "Islet cell transplant (procedure)",
+              "display": "Islet cell transplant",
               "equivalence": "narrower",
               "comment": "When this concept is used, further notes should be provided to state that it is a combined transplant procedure. Respective procedures should be recorded in a separate Procedure resource."
             }
@@ -489,7 +489,7 @@
           "target": [
             {
               "code": "6471000179103",
-              "display": "Transplantation of kidney and pancreas (procedure)",
+              "display": "Transplantation of kidney and pancreas",
               "equivalence": "equivalent"
             }
           ]
@@ -500,19 +500,19 @@
           "target": [
             {
               "code": "62438007",
-              "display": "Transplantation of pancreas (procedure)",
+              "display": "Transplantation of pancreas",
               "equivalence": "narrower",
               "comment": "When this concept is used, further notes should be provided to state that it is a combined transplant procedure. Respective procedures should be recorded in a separate Procedure resource."
             },
             {
               "code": "62438007",
-              "display": "Transplantation of pancreas (procedure)",
+              "display": "Transplantation of pancreas",
               "equivalence": "narrower",
               "comment": "When this concept is used, further notes should be provided to state that it is a combined transplant procedure. Respective procedures should be recorded in a separate Procedure resource."
             },
             {
               "code": "70536003",
-              "display": "Transplant of kidney (procedure)",
+              "display": "Transplant of kidney",
               "equivalence": "narrower",
               "comment": "When this concept is used, further notes should be provided to state that it is a combined transplant procedure. Respective procedures should be recorded in a separate Procedure resource."
             }
@@ -524,7 +524,7 @@
           "target": [
             {
               "code": "429332008",
-              "display": "Transplantation of single lobe of lung (procedure)",
+              "display": "Transplantation of single lobe of lung",
               "equivalence": "equivalent"
             }
           ]
@@ -535,7 +535,7 @@
           "target": [
             {
               "code": "285581000000102",
-              "display": "Transplantation of stem cells (procedure)",
+              "display": "Transplantation of stem cells",
               "equivalence": "equivalent"
             }
           ]

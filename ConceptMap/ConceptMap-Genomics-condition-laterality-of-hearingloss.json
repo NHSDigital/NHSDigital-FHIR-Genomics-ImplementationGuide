@@ -2,11 +2,11 @@
   "resourceType": "ConceptMap",
   "id": "genomics-laterality-of-hearingloss",
   "url": "https://fhir.nhs.uk/ConceptMap/genomics-laterality-of-hearingloss",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "GenomicsLateralityofHearingLoss",
   "title": "Genomics Laterality of Hearing Loss",
   "status": "draft",
-  "date": "2024-08-22T16:00:00.000Z",
+  "date": "2025-09-05T11:00:00.000Z",
   "publisher": "NHS England",
   "contact": [
     {
@@ -34,7 +34,7 @@
           "target": [
             {
               "code": "95820000",
-              "display": "Bilateral hearing loss (disorder)",
+              "display": "Bilateral hearing loss",
               "equivalence": "equivalent"
             }
           ]
@@ -45,7 +45,7 @@
           "target": [
             {
               "code": "473424007",
-              "display": "Hearing loss of left ear (disorder)",
+              "display": "Hearing loss of left ear",
               "equivalence": "equivalent"
             }
           ]
@@ -56,7 +56,7 @@
           "target": [
             {
               "code": "473423001",
-              "display": "Hearing loss of right ear (disorder)",
+              "display": "Hearing loss of right ear",
               "equivalence": "equivalent"
             }
           ]
