@@ -3,7 +3,11 @@
   "id": "ServiceRequest-WGSTestOrderFormUpdated-TrioTesting-Example",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2023-10-09T09:15:00Z"
+    "lastUpdated": "2023-10-09T09:15:00Z",
+    "profile": [
+      "http://hl7.eu/fhir/laboratory/StructureDefinition/ServiceRequest-eu-lab",
+      "https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest"
+    ]
   },
   "extension": [
     {
