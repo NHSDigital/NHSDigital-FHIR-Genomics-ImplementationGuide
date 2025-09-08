@@ -6,7 +6,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "369755005",
-        "display": "Multiple tumors (qualifier value)"
+        "display": "Multiple tumors"
       }
     ]
   },
@@ -15,7 +15,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "76752008",
-        "display": "Breast structure (body structure)"
+        "display": "Breast structure"
       }
     ]
   },

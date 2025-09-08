@@ -7,7 +7,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "416128008",
-        "display": "No history of procedure (situation)"
+        "display": "No history of procedure"
       }
     ]
   },
@@ -16,7 +16,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "303955003",
-        "display": "Transfusion - action (qualifier value)"
+        "display": "Transfusion - action"
       }
     ]
   },
@@ -27,5 +27,5 @@
       "value": "9449307636"
     }
   },
-  "effectiveDateTime": "2023-09-15T15:00:00Z",
+  "effectiveDateTime": "2023-09-15T15:00:00Z"
 }

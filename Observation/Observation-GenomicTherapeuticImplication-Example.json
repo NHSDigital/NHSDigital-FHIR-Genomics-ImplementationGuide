@@ -3,7 +3,8 @@
   "id": "Observation-GenomicTherapeuticImplication-Example",
   "meta": {
     "profile": [
-      "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/therapeutic-implication"
+      "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/therapeutic-implication",
+      "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
     ]
   },
   "status": "final",
@@ -47,7 +48,7 @@
   ],
   "derivedFrom": [
     {
-      "reference": "Observation/Oservation-GenomicsVariant-SLC52A2"
+      "reference": "Observation/Observation-GenomicsVariantSLC52A2-Example"
     }
   ],
   "component": [
@@ -85,8 +86,8 @@
         "coding": [
           {
             "system": "http://snomed.info/sct",
-            "code": "777436008",
-            "display": "Riboflavin"
+            "code": "438481000124108",
+            "display": "Riboflavin supplement"
           }
         ]
       }
