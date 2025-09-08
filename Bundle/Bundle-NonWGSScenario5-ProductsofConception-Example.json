@@ -167,13 +167,6 @@
     "link": [
      {
       "other": {
-       "reference": "urn:uuid:037d8ff3-da35-4fad-9d28-7a120d4fffe9",
-       "type": "RelatedPerson"
-      },
-      "type": "seealso"
-     },
-     {
-      "other": {
        "reference": "https://int.api.service.nhs.uk/personal-demographics/FHIR/R4/Patient/9449308322"
       },
       "type": "seealso"
@@ -222,7 +215,16 @@
       "family": "Fetus A of MUM"
      }
     ],
-    "gender": "female"
+    "gender": "female",
+    "link": [
+     {
+      "other": {
+       "reference": "urn:uuid:037d8ff3-da35-4fad-9d28-7a120d4fffe9",
+       "type": "RelatedPerson"
+      },
+      "type": "seealso"
+     }
+    ]
    },
    "response": {
     "status": "200 OK",
