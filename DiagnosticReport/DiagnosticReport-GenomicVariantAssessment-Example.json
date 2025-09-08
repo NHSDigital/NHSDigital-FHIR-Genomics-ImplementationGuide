@@ -70,6 +70,11 @@
       {
         "system": "http://loinc.org",
         "code": "51969-4"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "1054161000000101",
+        "display": "Genetic report"
       }
     ]
   },
@@ -126,6 +131,15 @@
           "code": "LA6576-8",
           "display": "Positive"
         },
+        {
+          "system": "http://snomed.info/sct",
+          "code": "10828004",
+          "display": "Positive"
+        }
+      ]
+    },
+    {
+      "coding": [
         {
           "system": "http://snomed.info/sct",
           "code": "699866005",

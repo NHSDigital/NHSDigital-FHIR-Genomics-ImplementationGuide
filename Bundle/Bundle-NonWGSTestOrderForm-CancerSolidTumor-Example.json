@@ -317,7 +317,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "128462008",
-              "display": "Metastatic malignant neoplasm (disorder)"
+              "display": "Metastatic malignant neoplasm"
             }
           ]
         },
@@ -347,7 +347,7 @@
                 {
                   "system": "http://snomed.info/sct",
                   "code": "369755005",
-                  "display": "Multiple tumors (qualifier value)"
+                  "display": "Multiple tumors"
                 }
               ]
             },
@@ -372,7 +372,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "6574001",
-              "display": "Necrosis (morphologic abnormality)"
+              "display": "Necrosis"
             }
           ]
         },
