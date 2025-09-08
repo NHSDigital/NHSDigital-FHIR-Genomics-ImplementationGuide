@@ -4,10 +4,17 @@
   "meta": {
     "profile": [
       "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-report",
-      "https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport"
+      "https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport",
+      "http://hl7.eu/fhir/laboratory/StructureDefinition/DiagnosticReport-eu-lab"
     ]
   },
   "extension": [
+    {
+      "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition",
+      "valueReference": {
+        "reference": "Composition/Composition-EULabGenomicReport-Example"
+      }
+    },
     {
       "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/recommended-action",
       "valueReference": {
@@ -63,13 +70,23 @@
           "code": "GE"
         }
       ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1236877003",
+          "display": "Genetic pathology"
+        }
+      ]
     }
   ],
   "code": {
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "51969-4"
+        "code": "51969-4",
+        "display": "Genetic analysis report"
       },
       {
         "system": "http://snomed.info/sct",
@@ -89,6 +106,11 @@
         "system": "https://fhir.nhs.uk/Id/ods-organization-code",
         "value": "R0A"
       }
+    }
+  ],
+  "specimen": [
+    {
+      "reference": "Specimen/Specimen-PheobeSmitham-Example"
     }
   ],
   "media": [
@@ -115,11 +137,11 @@
   ],
   "result": [
     {
-      "reference": "Observation/Observation-GenomicsVariant-SLC52A2",
+      "reference": "Observation/Observation-GenomicsVariantSLC52A2-Example",
       "display": "Brown-Vialetto-Van Laere syndrome type 2"
     },
     {
-      "reference": "Observation/Observation-GenomicImplication-Therapeutic"
+      "reference": "Observation/Observation-GenomicTherapeuticImplication-Example"
     }
   ],
   "conclusion": "Pheobe is homozygous for a pathogenic SLC52A2 missense variant (details below) previously reported by Johnson et al 2012 (PMID22740598). Biallelic pathogenic SLC52A2 variants cause autosomal recessive Brown-Vialetto-Van Laere syndrome type 2 (MIM614707).",
