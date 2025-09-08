@@ -32,7 +32,7 @@
 			{ 
 				"system": "http://snomed.info/sct", 
 				"code": "4321000179101", 
-				"display": "Hematology report (record artifact)"
+				"display": "Hematology report"
 			}
 		]
 	},
@@ -64,7 +64,7 @@
 				{ 
 					"system": "http://snomed.info/sct", 
 					"code": "738542003", 
-					"display": "Dihydropyrimidine dehydrogenase poor metabolizer (finding)"
+					"display": "Dihydropyrimidine dehydrogenase poor metabolizer"
 				}
 			]
 		}

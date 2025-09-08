@@ -2,11 +2,11 @@
   "resourceType": "ConceptMap",
   "id": "genomics-finalsample",
   "url": "https://fhir.nhs.uk/ConceptMap/genomics-finalsample",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "name": "GenomicsFinalSample",
   "title": "Genomics Final Sample",
   "status": "draft",
-  "date": "2024-10-01T18:00:00.000Z",
+  "date": "2025-09-05T11:00:00.000Z",
   "publisher": "NHS England",
   "contact": [
     {
@@ -33,7 +33,7 @@
           "target": [
             {
               "code": "258566005",
-              "display": "Deoxyribonucleic acid specimen (specimen)",
+              "display": "Deoxyribonucleic acid specimen",
               "equivalence": "equivalent"
             }
           ]
@@ -44,7 +44,7 @@
           "target": [
             {
               "code": "441673008",
-              "display": "Ribonucleic acid specimen (specimen)",
+              "display": "Ribonucleic acid specimen",
               "equivalence": "equivalent"
             }
           ]
@@ -55,7 +55,7 @@
           "target": [
             {
               "code": "70016006",
-              "display": "Complementary deoxyribonucleic acid (substance)",
+              "display": "Complementary deoxyribonucleic acid",
               "equivalence": "equivalent"
             }
           ]
@@ -76,7 +76,7 @@
           "target": [
             {
               "code": "70016006",
-              "display": "Cell free deoxyribonucleic acid (substance)",
+              "display": "Cell free deoxyribonucleic acid",
               "equivalence": "equivalent"
             }
           ]
@@ -87,7 +87,7 @@
           "target": [
             {
               "code": "702451000",
-              "display": "Cultured cells (substance)",
+              "display": "Cultured cells",
               "equivalence": "equivalent"
             }
           ]
@@ -98,13 +98,13 @@
           "target": [
             {
               "code": "787150001",
-              "display": "Stained slide of tissue section (specimen)",
+              "display": "Stained slide of tissue section",
               "equivalence": "narrower",
               "comment": "An appropriate concept should be selected to indicate either stained or unstained."
             },
             {
               "code": "787149001",
-              "display": "Unstained slide of tissue section (specimen)",
+              "display": "Unstained slide of tissue section",
               "equivalence": "narrower",
               "comment": "An appropriate concept should be selected to indicate either stained or unstained."
             }
@@ -116,7 +116,7 @@
           "target": [
             {
               "code": "123038009",
-              "display": "Specimen (specimen)",
+              "display": "Specimen",
               "equivalence": "wider",
               "comment": "Any other suitable Specimen types not listed on this code. This should be provided by free text if no suitable SNOMED CT is found."
             }

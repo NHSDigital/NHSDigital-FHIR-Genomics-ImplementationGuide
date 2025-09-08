@@ -10,8 +10,8 @@
 		"coding": [
 			{ 
 				"system": "http://snomed.info/sct", 
-				"code": "87612001", 
-				"display": "Blood (substance)"
+				"code": "119297000", 
+				"display": "Blood specimen"
 			}
 		]
 	},

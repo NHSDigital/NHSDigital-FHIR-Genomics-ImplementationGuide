@@ -61,7 +61,7 @@
 				{ 
 					"system": "http://snomed.info/sct", 
 					"code": "159282002", 
-					"display": "Laboratory technician (occupation)"
+					"display": "Laboratory technician"
 				}
 			]
 		}
