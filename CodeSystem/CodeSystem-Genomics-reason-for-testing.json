@@ -2,11 +2,11 @@
   "resourceType": "CodeSystem",
   "id": "reasonfortesting-genomics",
   "url": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "ReasonforTestingGenomics",
   "title": "Reason for Testing Genomics",
   "status": "draft",
-  "date": "2024-07-09T00:00:00.000Z",
+  "date": "2025-09-09T00:00:00.000Z",
   "publisher": "NHS England",
   "contact": [
     {
@@ -91,6 +91,10 @@
           "display": "Recently Deceased To Inform Family"
         }
       ]
+    },
+    {
+      "code": "other",
+      "display": "Other"
     }
   ]
 }
