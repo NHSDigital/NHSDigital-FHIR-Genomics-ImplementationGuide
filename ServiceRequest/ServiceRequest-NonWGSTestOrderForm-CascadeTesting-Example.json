@@ -3,7 +3,7 @@
   "id": "ServiceRequest-NonWGSTestOrderForm-CascadeTesting-Example",
   "basedOn": [
     {
-      "reference": "ServiceRequest-NonWGSTestOrderForm-FatherOfFayMutlow-Example"
+      "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-FatherOfFayMutlow-Example"
     }
   ],
   "extension": [
