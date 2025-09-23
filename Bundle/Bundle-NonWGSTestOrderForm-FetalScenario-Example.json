@@ -121,7 +121,7 @@
                   "coding": [
                     {
                       "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatusEngland",
-                      "version": "2.2.0",
+                      "version": "1.1.1",
                       "code": "01",
                       "display": "Number present and verified"
                     }
