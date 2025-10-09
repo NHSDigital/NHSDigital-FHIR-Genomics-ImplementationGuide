@@ -206,7 +206,7 @@
         "identifier": [
           {
             "system": "urn:oid:2.16.840.1.113883.2.1.3.2.4.18.24",
-            "value": "FoetusA",
+            "value": "Fetus-A-8955713713",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -227,7 +227,7 @@
       "request": {
         "method": "POST",
         "url": "Patient",
-        "ifNoneExist": "Patient?identifier=urn:oid:2.16.840.1.113883.2.1.3.2.4.18.24|FoetusA"
+        "ifNoneExist": "Patient?identifier=urn:oid:2.16.840.1.113883.2.1.3.2.4.18.24|Fetus-A-8955713713"
       }
     },
     {
@@ -718,11 +718,11 @@
           "reference": "Patient/849705be-9ed3-499c-ab8a-5579dd02d305",
           "identifier": {
             "system": "urn:oid:2.16.840.1.113883.2.1.3.2.4.18.24",
-            "value": "8955713713",
+            "value": "Fetus-A-8955713713",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                "value": "RAX"
+                "value": "RAX01"
               }
             }
           }
