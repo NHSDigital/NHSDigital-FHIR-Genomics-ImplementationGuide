@@ -1,6 +1,12 @@
 {
   "resourceType": "Patient",
   "id": "Patient-PheobeSmitham-Example",
+  "meta": {
+    "profile": [
+      "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient",
+      "http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-eu-lab"
+    ]
+  },
   "extension": [
     {
       "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BirthSex",
@@ -38,7 +44,7 @@
             "coding": [
               {
                 "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatusEngland",
-                "version": "2.2.0",
+                "version": "1.1.1",
                 "code": "01",
                 "display": "Number present and verified"
               }
