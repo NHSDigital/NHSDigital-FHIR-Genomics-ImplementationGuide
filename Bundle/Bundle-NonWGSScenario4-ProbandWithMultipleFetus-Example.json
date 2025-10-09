@@ -18,9 +18,9 @@
     "organization": {
      "identifier": {
       "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-      "value": "RAX"
+      "value": "RAX01"
      },
-     "display": "Kingston Hospital NHS Foundation Trust"
+     "display": "Kingston Hospital"
     },
     "specialty": [
      {

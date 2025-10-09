@@ -18,9 +18,9 @@
         "organization": {
           "identifier": {
             "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-            "value": "RYJ02"
+            "value": "RAX01"
           },
-          "display": "Charing Cross Hospital"
+          "display": "Kingston Hospital"
         },
         "specialty": [
           {
