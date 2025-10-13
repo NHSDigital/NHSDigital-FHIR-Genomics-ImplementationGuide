@@ -1,0 +1,43 @@
+{
+  "resourceType": "NamingSystem",
+  "id": "genomics-specimen-number",
+  "name": "GenomicsSpecimenNumber",
+  "status": "draft",
+  "kind": "identifier",
+  "date": "2025-10-13",
+  "publisher": "NHS England",
+  "contact": [
+    {
+      "name": "NHS England",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "interoperabilityteam@nhs.net",
+          "use": "work",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "name": "NHS Genomic Medicine Service",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "england.genomics@nhs.net",
+          "use": "work",
+          "rank": 1
+        }
+      ]
+    }
+  ],
+  "responsible": "NHS Genomic Interop Programme",
+  "description": "Genomic Medicine Service Unique Specimen Number",
+	"usage": "Assigned by central GMS system on receipt of a Specimen resource",
+  "uniqueId":  [
+    {
+      "type": "uri",
+      "value": "https://fhir.nhs.uk/Id/GMSSpecimen",
+      "preferred": true
+    }
+  ]
+}
