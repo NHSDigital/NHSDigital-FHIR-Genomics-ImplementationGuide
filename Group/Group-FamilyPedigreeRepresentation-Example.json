@@ -1,0 +1,42 @@
+{
+ "resourceType": "Group",
+ "id": "Group-FamilyPedigreeRepresentation-Example",
+ "identifier": [
+  {
+   "system": "https://fhir.nhs.uk/Id/genomics-pedigree-number",
+   "value": "P12345"
+  }
+ ],
+ "active": true,
+ "type": "person",
+ "actual": true,
+ "name": "Family Pedigree Representation",
+ "member": [
+  {
+   "entity": {
+    "reference": "Patient/Patient-PheobeSmitham-Example"
+   },
+   "period": {
+    "start": "2023-10-01"
+   }
+  },
+  {
+   "entity": {
+    "reference": "Patient/Patient-PheobeSmithamFather-Example"
+   },
+   "period": {
+    "start": "2023-10-01"
+   }
+  },
+  {
+   "entity": {
+    "reference": "Patient/Patient-PheobeSmithamMother-Example"
+   },
+   "period": {
+    "start": "2025-10-01",
+    "end":"2025-10-01"
+   },
+   "inactive":true
+  }
+ ]
+}
