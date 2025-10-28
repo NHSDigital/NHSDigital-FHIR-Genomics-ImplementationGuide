@@ -3,7 +3,13 @@
   "id": "Observation-NeoplasticCell-Example",
   "status": "final",
   "code": {
-    "text":"Approximate Neoplastic cell % in sample"
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "371510003",
+        "display": "Proportion of specimen involved by tumour"
+      }
+    ]
   },
   "subject": {
     "reference": "Patient/Patient-ZelmaHadjkiss-Example",
