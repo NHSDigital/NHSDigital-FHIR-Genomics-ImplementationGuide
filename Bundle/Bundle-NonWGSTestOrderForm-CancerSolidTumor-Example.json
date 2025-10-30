@@ -316,8 +316,8 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "128462008",
-              "display": "Metastatic malignant neoplasm"
+              "code": "371510003",
+              "display": "Proportion of specimen involved by tumour"
             }
           ]
         },
@@ -371,8 +371,8 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "6574001",
-              "display": "Necrosis"
+              "code": "405921002",
+              "display": "Percentage of neoplasm involved by necrosis"
             }
           ]
         },
