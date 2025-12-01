@@ -10,8 +10,7 @@
   "description": "Sample server capability for the Genomic Medicine Service",
   "kind": "instance",
   "implementationGuide":  [
-      "https://simplifier.net/guide/fhir-genomics-implementation-guide",
-      "https://simplifier.net/guide/nhsdigital"
+      "https://fhir.nhs.uk/ImplementationGuide/FHIR-Genomics-Implementation-Guide"
   ],
   "fhirVersion": "4.0.1",
   "format":  [
