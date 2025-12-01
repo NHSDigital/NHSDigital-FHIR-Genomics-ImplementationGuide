@@ -1,0 +1,130 @@
+{
+  "resourceType": "CapabilityStatement",
+  "id": "CapabilityStatement-DGTS-application",
+  "url": "https://fhir.nhs.uk/CapabilityStatement/DGTS-application",
+  "version": "0.1.0",
+  "name": "CapabilityStatementDGTSApplication",
+  "status": "draft",
+  "date": "2025-11-26T00:00:00+00:00",
+  "publisher": "NHS England",
+  "description": "Sample server capability for the Digital Genomic Test Services API",
+  "kind": "instance",
+  "implementationGuide":  [
+      "https://simplifier.net/guide/fhir-genomics-implementation-guide"
+  ],
+  "fhirVersion": "4.0.1",
+  "format":  [
+      "application/fhir+json"
+  ],
+  "implementation": {
+    "description": "Exemplar CapabilityStatement for the GMS DGTS FHIR API"
+  },
+  "rest":  [
+    {
+      "mode": "server",
+      "documentation": "RESTful endpoints supported by the DGTS FHIR API",
+      "resource":  [
+        {
+          "type": "PlanDefinition",
+          "profile": "http://hl7.org/fhir/StructureDefinition/PlanDefinition",
+          "documentation": "For searching DGTS Test Packages",
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "context",
+              "type": "token"
+            },
+            {
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "name": "url",
+              "type": "uri"
+            },
+            {
+              "name": "version",
+              "type": "token"
+            }
+          ]
+        },
+        {
+          "type": "ActivityDefinition",
+          "profile": "http://hl7.org/fhir/StructureDefinition/ActivityDefinition",
+          "documentation": "For searching DGTS Genomic Test",
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "composed-of",
+              "type": "reference"
+            },
+            {
+              "name": "context",
+              "type": "token"
+            },
+            {
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "name": "status",
+              "type": "token"
+            },
+            {
+              "name": "url",
+              "type": "uri"
+            },
+            {
+              "name": "version",
+              "type": "token"
+            }
+          ],
+          "operation": [
+            {
+              "name": "$data-requirements"
+              "definition": "http://hl7.org/fhir/OperationDefinition/ActivityDefinition-data-requirements"
+            }
+          ]
+        },
+        {
+          "type": "Library",
+          "profile": "http://hl7.org/fhir/StructureDefinition/Library", 
+          "documentation": "Data requirements for DGTS Genomic Tests",
+          "interaction": [
+            {
+              "code": "read"
+            }
+          ]
+        },
+        {
+          "type": "SpecimenDefinition",
+          "profile": "http://hl7.org/fhir/StructureDefinition/SpecimenDefinition", 
+          "documentation": "Specimen requirements for DGTS Genomic Tests",
+          "interaction": [
+            {
+              "code": "read"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
