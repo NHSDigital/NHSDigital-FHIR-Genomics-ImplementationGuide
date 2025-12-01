@@ -1,0 +1,35 @@
+{
+ "resourceType": "Procedure",
+ "id": "Procedure-GenomicStudy-Example",
+ "extension": [
+  {
+   "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-ext",
+   "valueReference": {
+    "reference": "Procedure/Procedure-PGXGenomicStudyAnalysis-Example",
+    "display": "PGX Genomic Study Analysis"
+   }
+  }
+ ],
+ "status": "completed",
+ "category": {
+  "coding": [
+   {
+    "system": "http://snomed.info/sct",
+    "code": "405824009",
+    "display": "Genetic test"
+   }
+  ]
+ },
+ "code": {
+  "coding": [
+   {
+    "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/genomic-study-type-cs",
+    "code": "struc-var",
+    "display": "Structural variation detection"
+   }
+  ]
+ },
+ "subject": {
+  "reference": "Patient/Patient-PheobeSmitham-Example"
+ }
+}
