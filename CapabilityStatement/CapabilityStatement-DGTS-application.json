@@ -99,7 +99,7 @@
           ],
           "operation": [
             {
-              "name": "$data-requirements"
+              "name": "$data-requirements",
               "definition": "http://hl7.org/fhir/OperationDefinition/ActivityDefinition-data-requirements"
             }
           ]

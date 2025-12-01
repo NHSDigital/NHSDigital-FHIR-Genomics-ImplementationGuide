@@ -23,13 +23,13 @@
           {
             "code": "400",
             "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode",
-						"display": "Neurology"
-						
+            "display": "Neurology"
+            
           }
         ]
       }
     },
-		{
+    {
       "code": {
         "code": "user",
         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
@@ -39,13 +39,13 @@
           {
             "code": "420",
             "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode",
-						"display": "Paediatrics"
-						
+            "display": "Paediatrics"
+            
           }
         ]
       }
     },
-		{
+    {
       "code": {
         "code": "user",
         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
@@ -55,26 +55,26 @@
           {
             "code": "311",
             "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode",
-						"display": "Clinical Genetics"
-						
+            "display": "Clinical Genetics"
+            
           }
         ]
       }
     },
-		{
-			"code": {
-				"code": "focus",
-				"system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
-			},
-			"valueCodeableConcept": {
-				"coding": [
-					{
-						"code": "diagnostic",
-						"system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics"
-					}
-				]
-			}
-		}
+    {
+      "code": {
+        "code": "focus",
+        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "diagnostic",
+            "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics"
+          }
+        ]
+      }
+    }
   ],
   "goal": [
     {
@@ -93,25 +93,25 @@
     {
       "definitionCanonical": "http://fhir.nhs.uk/ActivityDefinition/GT1"
     },
-		{
+    {
       "definitionCanonical": "http://fhir.nhs.uk/ActivityDefinition/GT36"
     },
-		{
+    {
       "definitionCanonical": "http://fhir.nhs.uk/ActivityDefinition/GT103"
     },
-		{
+    {
       "definitionCanonical": "http://fhir.nhs.uk/ActivityDefinition/GT417"
     },
-		{
+    {
       "definitionCanonical": "http://fhir.nhs.uk/ActivityDefinition/GT732"
     },
-		{
+    {
       "definitionCanonical": "http://fhir.nhs.uk/ActivityDefinition/GT858"
     },
-		{
+    {
       "definitionCanonical": "http://fhir.nhs.uk/ActivityDefinition/GT897"
     },
-		{
+    {
       "definitionCanonical": "http://fhir.nhs.uk/ActivityDefinition/GT1124"
     }
   ]
