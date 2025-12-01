@@ -10,7 +10,7 @@
   "description": "Sample server capability for the Digital Genomic Test Services API",
   "kind": "instance",
   "implementationGuide":  [
-      "https://simplifier.net/guide/fhir-genomics-implementation-guide"
+      "https://fhir.nhs.uk/ImplementationGuide/FHIR-Genomics-Implementation-Guide"
   ],
   "fhirVersion": "4.0.1",
   "format":  [
@@ -99,7 +99,7 @@
           ],
           "operation": [
             {
-              "name": "$data-requirements"
+              "name": "$data-requirements",
               "definition": "http://hl7.org/fhir/OperationDefinition/ActivityDefinition-data-requirements"
             }
           ]

@@ -31,7 +31,7 @@
     "coding": [
       {
         "code": "targeted-variant-analysis",
-        "system": "http://hl7.org/fhir/genomicstudy-methodtype"
+        "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/genomic-study-method-type-cs"
       }
     ]
   },

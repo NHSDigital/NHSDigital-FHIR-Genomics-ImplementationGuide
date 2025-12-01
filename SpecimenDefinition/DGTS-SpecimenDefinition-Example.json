@@ -1,39 +1,41 @@
 {
-	"resourceType": "SpecimenDefinition",
-	"id": "DGTS-SpecimenDefinition-Example",
-	"typeCollected": {
-		"coding": [
-			{
-				"code": "germline",
-				"system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-SampleCategory"
-			}
-		]
-	},
-	"typeTested": [
-		{
-			"type": {
-				"coding": [
-					{
-						"code": "119297000",
-						"system": "http://snomed.info/sct",
-						"display": "Blood specimen"
-					}
-				]
-			},
-			"preference": "preferred",
-			"container": {
-				"additive": [
-					{
-						"additiveCodeableConcept" [
-							{
-								"system": "http://terminology.hl7.org/CodeSystem/v2-0371",
-								"code": "EDTK15",
-								"display": "Potassium/K EDTA 15%"
-							}
-						]
-					}
-				]
-			}
-		}
-	]
+  "resourceType": "SpecimenDefinition",
+  "id": "DGTS-SpecimenDefinition-Example",
+  "typeCollected": {
+    "coding": [
+      {
+        "code": "germline",
+        "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-SampleCategory"
+      }
+    ]
+  },
+  "typeTested": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "119297000",
+            "system": "http://snomed.info/sct",
+            "display": "Blood specimen"
+          }
+        ]
+      },
+      "preference": "preferred",
+      "container": {
+        "additive": [
+          {
+            "additiveCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0371",
+                  "code": "EDTK15",
+                  "display": "Potassium/K EDTA 15%"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
 }
