@@ -91,18 +91,9 @@
  "category": {
   "coding": [
    {
-    "system": "http://snomed.info/sct",
-    "code": "405824009",
-    "display": "Genetic test"
-   }
-  ]
- },
- "code": {
-  "coding": [
-   {
-    "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/genomic-study-type-cs",
-    "code": "struc-var",
-    "display": "Structural variation detection"
+    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+    "code": "laboratory",
+    "display": "Laboratory"
    }
   ]
  },
