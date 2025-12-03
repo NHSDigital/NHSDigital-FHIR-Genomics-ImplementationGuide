@@ -1,0 +1,26 @@
+{
+ "resourceType": "Procedure",
+ "id": "Procedure-GenomicStudy-Example",
+ "extension": [
+  {
+   "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-ext",
+   "valueReference": {
+    "reference": "Procedure/Procedure-PGXGenomicStudyAnalysis-Example",
+    "display": "PGX Genomic Study Analysis"
+   }
+  }
+ ],
+ "status": "completed",
+ "category": {
+  "coding": [
+   {
+    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+    "code": "laboratory",
+    "display": "Laboratory"
+   }
+  ]
+ },
+ "subject": {
+  "reference": "Patient/Patient-PheobeSmitham-Example"
+ }
+}

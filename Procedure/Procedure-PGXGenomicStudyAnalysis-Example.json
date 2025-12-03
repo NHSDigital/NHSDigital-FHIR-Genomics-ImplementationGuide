@@ -1,0 +1,103 @@
+{
+ "resourceType": "Procedure",
+ "id": "Procedure-PGXGenomicStudyAnalysis-Example",
+ "extension": [
+  {
+   "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-device",
+   "extension": [
+    {
+     "url": "device",
+     "valueReference": {
+      "reference": "Device/Device-SampleCollectionKit-Example",
+      "display": "DNA Sample Collection Kit (Saliva/Buccal Swab)"
+     }
+    }
+   ]
+  },
+  {
+   "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-device",
+   "extension": [
+    {
+     "url": "device",
+     "valueReference": {
+      "reference": "Device/Device-DNAExtractionSystem-Example",
+      "display": "Automated DNA Extraction System"
+     }
+    }
+   ]
+  },
+  {
+   "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-device",
+   "extension": [
+    {
+     "url": "device",
+     "valueReference": {
+      "reference": "Device/Device-BioAnalyzerSystem-Example",
+      "display": "Quality Control System (Bioanalyzer/Qubit)"
+     }
+    }
+   ]
+  },
+  {
+   "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-device",
+   "extension": [
+    {
+     "url": "device",
+     "valueReference": {
+      "reference": "Device/Device-Sequencerillumina-Example",
+      "display": "Illumina NextSeq 2000 Sequencer"
+     }
+    }
+   ]
+  },
+  {
+   "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-device",
+   "extension": [
+    {
+     "url": "device",
+     "valueReference": {
+      "reference": "Device/Device-BioinformaticsPipeline-Example",
+      "display": "Bioinformatics Analysis Pipeline v5.2"
+     }
+    }
+   ]
+  },
+  {
+   "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-device",
+   "extension": [
+    {
+     "url": "device",
+     "valueReference": {
+      "reference": "Device/Device-VariantSnnotationTool-Example",
+      "display": "Variant Annotation & Interpretation Software"
+     }
+    }
+   ]
+  },
+  {
+   "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-device",
+   "extension": [
+    {
+     "url": "device",
+     "valueReference": {
+      "reference": "Device/Device-GenomicReportingSystem-Example",
+      "display": "Genomic Reporting System"
+     }
+    }
+   ]
+  }
+ ],
+ "status": "completed",
+ "category": {
+  "coding": [
+   {
+    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+    "code": "laboratory",
+    "display": "Laboratory"
+   }
+  ]
+ },
+ "subject": {
+  "reference": "Patient/Patient-PheobeSmitham-Example"
+ }
+}
