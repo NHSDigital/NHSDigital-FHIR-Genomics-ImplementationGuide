@@ -4,8 +4,13 @@
   "url": "http://fhir.nhs.uk/ActivityDefinition/GT1",
   "identifier": [
     {
-      "system": "http://fhir.nhs.uk/Id/Genomics-DGTS",
+      "system": "https://fhir.nhs.uk/Id/England-DigitalGenomicTestServices",
       "value": "GT1"
+    },
+    {
+      "system": "https://fhir.nhs.uk/Id/England-GenomicTestDirectory",
+      "value": "R47.2",
+      "use": "old"
     }
   ],
   "title": "15q11 critical region (AS/PWS) - MLPA or equivalent",

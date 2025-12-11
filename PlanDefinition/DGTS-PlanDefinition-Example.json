@@ -4,8 +4,13 @@
   "url": "http://fhir.nhs.uk/PlanDefinition/TP231",
   "identifier": [
     {
-      "system": "http://fhir.nhs.uk/Id/Genomics-DGTS-TestPackage",
+      "system": "https://fhir.nhs.uk/Id/England-DigitalGenomicTestServices",
       "value": "TP231"
+    },
+    {
+      "system": "https://fhir.nhs.uk/Id/England-GenomicTestDirectory",
+      "value": "R47",
+      "use": "old"
     }
   ],
   "title": "Angelman syndrome",

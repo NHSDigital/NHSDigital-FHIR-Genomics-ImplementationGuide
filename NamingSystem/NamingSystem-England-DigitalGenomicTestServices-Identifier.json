@@ -1,0 +1,43 @@
+{
+  "resourceType": "NamingSystem",
+  "id": "England-DigitalGenomicTestServices-Identifier",
+  "name": "EnglandDigitalGenomicTestServicesIdentifier",
+  "status": "draft",
+  "kind": "identifier",
+  "date": "2025-12-11",
+  "publisher": "NHS England",
+  "contact": [
+    {
+      "name": "NHS England",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "interoperabilityteam@nhs.net",
+          "use": "work",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "name": "NHS Genomic Medicine Service",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "england.genomics@nhs.net",
+          "use": "work",
+          "rank": 1
+        }
+      ]
+    }
+  ],
+  "responsible": "NHS Genomic Interop Programme",
+  "description": "NamingSystem for Digital Genomic Test Services",
+	"usage": "Used to define the system for Genomic Test Services codes within ActivityDefinition and PlanDefinition resources",
+  "uniqueId":  [
+    {
+      "type": "uri",
+      "value": "https://fhir.nhs.uk/Id/England-DigitalGenomicTestServices",
+      "preferred": true
+    }
+  ]
+}
