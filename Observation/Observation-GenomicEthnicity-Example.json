@@ -1,6 +1,15 @@
 {
 	"resourceType": "Observation",
 	"id": "Observation-GenomicEthnicity-Example",
+	"meta": {
+		"tag": [
+			{
+				"system": "https://fhir.nhs.uk/CodeSystem/mds-questiontag-genomics",
+				"code": "PCI-1",
+				"display": "Patient clinical information - Genomic ethnicity"
+			}
+		]
+	},
 	"status": "preliminary",
 	"code": {
 		"coding": [

@@ -1,6 +1,15 @@
 {
 	"resourceType": "Observation",
 	"id": "Observation-NatureAndAgeOfHearingLoss-Example",
+		"meta": {
+			"tag": [
+				{
+					"system": "https://fhir.nhs.uk/CodeSystem/mds-questiontag-genomics",
+					"code": "PCI-17",
+					"display": "Patient clinical information - Laterality of hearing loss"
+				}
+			]
+		},
 	"status": "final",
 	"code": {
 		"coding": [
