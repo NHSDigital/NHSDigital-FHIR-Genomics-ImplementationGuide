@@ -144,7 +144,7 @@
     },
     {
      "code": "P-10",
-     "display": "Patient - Sex registered at birth",
+     "display": "Patient - Sex defined at birth",
      "definition": "Patient's phenotypic sex classification as defined at birth based on physical characteristic."
     },
     {
@@ -204,7 +204,7 @@
     },
     {
      "code": "P-37",
-     "display": "Patient - Pedigree / Family identifier",
+     "display": "Patient - Locaal Pedigree / Family identifier",
      "definition": "Patient's pedigree or family identifying id."
     },
     {
@@ -263,12 +263,12 @@
     },
     {
      "code": "TR-4",
-     "display": "Test request - Requesting reason rare disease",
+     "display": "Test Request - Requesting reason rare disease",
      "definition": "The reason for a rare disease genomic test."
     },
     {
      "code": "TR-38",
-     "display": "Test request - Requesting reason cancer",
+     "display": "Test Request - Requesting reason cancer",
      "definition": "The reason for a cancer genomic test."
     },
     {
@@ -303,37 +303,37 @@
     },
     {
      "code": "TR-21",
-     "display": "Test request - Genomic package id",
+     "display": "Test Request - Genomic package id",
      "definition": "Id of the package requested."
     },
     {
      "code": "TR-22",
-     "display": "Test request - Genomic package name",
+     "display": "Test Request - Genomic package name",
      "definition": "Name of the package requested."
     },
     {
      "code": "TR-23",
-     "display": "Test request - Genomic package version",
+     "display": "Test Request - Genomic package version",
      "definition": "Version of the package requested."
     },
     {
      "code": "TR-24",
-     "display": "Test request - Genomic test id",
+     "display": "Test Request - Genomic test id",
      "definition": "Id of the test requested."
     },
     {
      "code": "TR-25",
-     "display": "Test request - Genomic test name",
+     "display": "Test Request - Genomic test name",
      "definition": "Name of the test requested."
     },
     {
      "code": "TR-26",
-     "display": "Test request - Genomic test version",
+     "display": "Test Request - Genomic test version",
      "definition": "Version of the test requested."
     },
     {
      "code": "TR-27",
-     "display": "Test request - Additional panels",
+     "display": "Test Request - Additional panels",
      "definition": "Additional panels to test."
     },
     {
@@ -358,12 +358,12 @@
     },
     {
      "code": "TR-13",
-     "display": "Test Request - Reason for reanalysis",
+     "display": "Test Request - Reanalysis reason",
      "definition": "The reason reanalysis has been requested."
     },
     {
      "code": "TR-14",
-     "display": "Test Request - Detail of reason for reanalysis",
+     "display": "Test Request - Detail of reason for request",
      "definition": "Further detail associated to the reason reanalysis has been requested."
     },
     {
@@ -378,47 +378,47 @@
     },
     {
      "code": "TR-35",
-     "display": "Test request - Purpose of linking",
+     "display": "Test Request - Purpose of linking",
      "definition": "The reason a given test request has been linked to another test request."
     },
     {
      "code": "TR-36",
-     "display": "Test request - Central email address for reporting",
+     "display": "Test Request - Central email address for reporting",
      "definition": "Central email address for contingency in the event of not being able to obtain a report via the requester."
     },
     {
      "code": "TR-20",
-     "display": "Test request - Genomic report delivery method",
-     "definition": "Test request - Genomic report delivery method"
+     "display": "Test Request - Genomic report delivery method",
+     "definition": "Test Request - Genomic report delivery method"
     },
     {
      "code": "TR-30",
-     "display": "Test request - Add private genomic request and report to NHS record",
+     "display": "Test Request - Add private genomic request and report to NHS record",
      "definition": "Confirmation if the content of a private genomic test request should be added to an NHS record."
     },
     {
      "code": "TR-31",
-     "display": "Test request - Test request form version",
+     "display": "Test Request - Test request form version",
      "definition": "Version of the test order form completed and submitted."
     },
     {
      "code": "TR-32",
-     "display": "Test request - File / Link to file",
+     "display": "Test Request - File / Link to file",
      "definition": "Upload of a file or a link to a file for adding documents such as previous genomic reports to a test order."
     },
     {
      "code": "TR-33",
-     "display": "Test request - File detail",
+     "display": "Test Request - File detail",
      "definition": "Detail to provide context to an uploaded file or document link."
     },
     {
      "code": "TR-34",
-     "display": "Test request - Clinical utility",
+     "display": "Test Request - Clinical utility",
      "definition": "Clinical benefit to patient of obtaining a requested genomic report."
     },
     {
      "code": "TR-39",
-     "display": "Test request - Linked test request reference",
+     "display": "Test Request - Linked test request reference",
      "definition": "The reference to any associated test requests"
     }
    ]
@@ -619,7 +619,7 @@
     },
     {
      "code": "PCI-6",
-     "display": "Patient clinical information - Phenotypic details (many)",
+     "display": "Patient clinical information - Phenotypic details",
      "definition": "The HPO (or alternative ontology as appropriate) term names for the observable disease traits."
     },
     {
