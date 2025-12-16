@@ -42,7 +42,7 @@
     },
     {
      "code": "HCP-13",
-     "display": "HCP - Surname",
+     "display": "HCP - surname",
      "definition": "HCP'surname "
     },
     {
@@ -431,27 +431,27 @@
     {
      "code": "NGRL-1",
      "display": "NGRL consent - Date of NGRL consent",
-     "definition": "NGRL consent - Date of NGRL consent"
+     "definition": "The date NGRL consent was provided."
     },
     {
      "code": "NGRL-2",
      "display": "NGRL consent - Patient has made their own choice to consent to the NGRL",
-     "definition": "NGRL consent - Patient has made their own choice to consent to the NGRL"
+     "definition": "Confirmation if the patient to be tested has provided NGRL consent themselves."
     },
     {
      "code": "NGRL-3",
      "display": "NGRL consent - Patient representative name (if patient cannot make their own choice)",
-     "definition": "NGRL consent - Patient representative name (if patient cannot make their own choice)"
+     "definition": "The name of the patient representative."
     },
     {
      "code": "NGRL-4",
      "display": "NGRL consent - I confirm that the patient (or their representative) agree to have their genomic and healthcare data used for research",
-     "definition": "NGRL consent - I confirm that the patient (or their representative) agree to have their genomic and healthcare data used for research"
+     "definition": "The outcome of the patient or their representative’s choice in consenting to including their data used for research in the NGRL."
     },
     {
      "code": "NGRL-5",
      "display": "NGRL consent - NGRL consent document link",
-     "definition": "NGRL consent - NGRL consent document link"
+     "definition":"A URL where a copy of a completed NGRL consent form may be found."
     }
    ]
   },
@@ -463,87 +463,87 @@
     {
      "code": "PS-2",
      "display": "Primary Sample - Local identifier",
-     "definition": "Id of primary sample provided, linked to the stated assigning authority."
+     "definition": "Local ids applied to a sample"
     },
     {
      "code": "PS-3",
      "display": "Primary Sample - ODS code of organisation which assigned local id",
-     "definition": "Authority who assigned the primary sample id."
+     "definition": "ODS code of the organisation which assigned the local sample id."
     },
     {
      "code": "PS-10",
      "display": "Primary Sample - Obtained date",
-     "definition": "Primary Sample - Obtained date"
+     "definition": "Date at which a specimen/biopsy was obtained from patient."
     },
     {
      "code": "PS-11",
      "display": "Primary Sample - Primary sample",
-     "definition": "Primary Sample - Primary sample"
+     "definition": "The primary sample material."
     },
     {
      "code": "PS-12",
      "display": "Primary Sample - Primary sample state",
-     "definition": "Primary Sample - Primary sample state"
+     "definition": "The state of the primary sample."
     },
     {
      "code": "PS-25",
      "display": "Primary Sample - Preservative/Container",
-     "definition": "Primary Sample - Preservative/Container"
+     "definition": "How the primary sample is preserved."
     },
     {
      "code": "PS-30",
      "display": "Primary Sample - Block identifier",
-     "definition": "Primary Sample - Block identifier"
+     "definition": "Sample block identifier"
     },
     {
      "code": "PS-31",
      "display": "Primary Sample - Fixative type",
-     "definition": "Primary Sample - Fixative type"
+     "definition": "Sample fixative type"
     },
     {
      "code": "PS-32",
      "display": "Primary Sample - Hours to fixation",
-     "definition": "Primary Sample - Hours to fixation"
+     "definition": "Sample hours to fixation"
     },
     {
      "code": "PS-33",
      "display": "Primary Sample - Hours in fixative",
-     "definition": "Primary Sample - Hours in fixative"
+     "definition": "Sample hours in fixative"
     },
     {
      "code": "PS-34",
      "display": "Primary Sample - Tumour enrichment method",
-     "definition": "Primary Sample - Tumour enrichment method"
+     "definition": "Method used for tumour enrichment."
     },
     {
      "code": "PS-13",
      "display": "Primary Sample - Necrosis",
-     "definition": "Primary Sample - Necrosis"
+     "definition": "% necrotic (dead) cells in primary sample."
     },
     {
      "code": "PS-14",
      "display": "Primary Sample - Nucleated cell count",
-     "definition": "Primary Sample - Nucleated cell count."
+     "definition": "Nucleated (with nucleous) cell (non tumour and tumour) count in the primary sample  (Solid Tumour and Haem-Onc)."
     },
     {
      "code": "PS-15",
      "display": "Primary Sample - Tumour nuclear content in whole section",
-     "definition": "Primary Sample - Tumour nuclear content in whole section"
+     "definition": "Neoplastic (tumour) cell content in the primary sample whole section(Solid Tumour) - sourced at local lab. (%)"
     },
     {
      "code": "PS-26",
      "display": "Primary Sample - Tumour nuclear content in marked area",
-     "definition": "Primary Sample - Tumour nuclear content in marked area"
+     "definition": "Neoplastic (tumour) cell content in the primary sample marked area(Solid Tumour) - sourced at local lab. (%)"
     },
     {
      "code": "PS-17",
      "display": "Primary Sample - Solid tumour morphology",
-     "definition": "Primary Sample - Solid tumour morphology"
+     "definition": "The histology and likely course of development of a tumour."
     },
     {
      "code": "PS-18",
      "display": "Primary Sample - Solid tumour topography",
-     "definition": "Primary Sample - Solid tumour topography"
+     "definition": "The tumour sample site. e.g. from colon, stomach etc."
     },
     {
      "code": "PS-29",
@@ -553,17 +553,17 @@
     {
      "code": "PS-19",
      "display": "Primary Sample - Biopsy site",
-     "definition": "Primary Sample - Biopsy site"
+     "definition": "Digital confirmation that the sample is a biopsy."
     },
     {
      "code": "PS-21",
      "display": "Primary Sample - Observed maternal cell contamination (MCC)",
-     "definition": "Primary Sample - Observed maternal cell contamination (MCC)"
+     "definition": "An observed outcome which may indicate MCC"
     },
     {
      "code": "PS-27",
      "display": "Primary Sample - Test confirmed maternal cell contamination (MCC)",
-     "definition": "Primary Sample - Test confirmed maternal cell contamination (MCC)"
+     "definition": "Analytically confirmed MCC levels"
     },
     {
      "code": "PS-22",
@@ -573,22 +573,22 @@
     {
      "code": "PS-23",
      "display": "Primary Sample - Blasts %",
-     "definition": "Primary Sample - Blasts %"
+     "definition": "Future management for products of conception."
     },
     {
      "code": "PS-24",
      "display": "Primary Sample - High infection risk reason",
-     "definition": "Primary Sample - High infection risk reason"
+     "definition": "The high contamination risk reason for a primary sample."
     },
     {
      "code": "PS-28",
      "display": "Primary Sample - Patient life status at the time of collection",
-     "definition": "Primary Sample - Patient life status at the time of collection"
+     "definition": "If the patient was alive or deceased at the point of collecting a sample."
     },
     {
      "code": "PS-35",
      "display": "Primary Sample - Solid tumour type",
-     "definition": "Primary Sample - Solid tumour type"
+     "definition": "The origin or context of a tumour sample."
     }
    ]
   },
@@ -625,7 +625,7 @@
     {
      "code": "PCI-7",
      "display": "Patient clinical information - Symptoms",
-     "definition": "The patient's symptoms at onset."
+     "definition": "The patient's symptoms"
     },
     {
      "code": "PCI-10",
@@ -660,7 +660,7 @@
     {
      "code": "PCI-18",
      "display": "Patient clinical information - Fetal haemoglobinopathy maternal screening genotype",
-     "definition": "Patient clinical information - Fetal haemoglobinopathy maternal screening genotype"
+     "definition": "Maternal screening genotype for haemoglobinopathy testing."
     },
     {
      "code": "PCI-21",
@@ -670,7 +670,7 @@
     {
      "code": "PCI-22",
      "display": "Patient clinical information - Fetal haemoglobinopathy paternal screening genotype",
-     "definition": "Patient clinical information - Fetal haemoglobinopathy paternal screening genotype"
+     "definition": "Paternal screening genotype for haemoglobinopathy testing"
     },
     {
      "code": "PCI-23",
@@ -735,72 +735,72 @@
     {
      "code": "PCI-35",
      "display": "Patient clinical information - Current and previous treatment detail",
-     "definition": "Patient clinical information - Current and previous treatment detail"
+     "definition": "Detail regarding relevant current and previous medical treatments."
     },
     {
      "code": "PCI-36",
      "display": "Patient clinical information - Pregnancy status",
-     "definition": "Patient clinical information - Pregnancy status"
+     "definition": "Patient`s pregnancy status"
     },
     {
      "code": "PCI-37",
      "display": "Patient clinical information - Pregnancy type",
-     "definition": "Patient clinical information - Pregnancy type"
+     "definition": "Type of conception"
     },
     {
      "code": "PCI-38",
      "display": "Patient clinical information - Pregnancy gestation period",
-     "definition": "Patient clinical information - Pregnancy gestation period"
+     "definition": "Patient's term of active pregnancy at point of test request."
     },
     {
      "code": "PCI-39",
      "display": "Patient clinical information - Fetal gestation",
-     "definition": "Patient clinical information - Fetal gestation"
+     "definition": "Stage during patient pregnancy at which it terminated."
     },
     {
      "code": "PCI-40",
      "display": "Patient clinical information - Estimated delivery date (EDD)",
-     "definition": "Patient clinical information - Estimated delivery date (EDD)"
+     "definition": "Patient's estimated delivery date."
     },
     {
      "code": "PCI-41",
      "display": "Patient clinical information - IVF age of egg donor",
-     "definition": "Patient clinical information - IVF age of egg donor"
+     "definition": "The age of the patient who donated the egg at the time of donation."
     },
     {
      "code": "PCI-42",
      "display": "Patient clinical information - Had transplant",
-     "definition": "Patient clinical information - Had transplant"
+     "definition": "Has the patient ever had a transplant."
     },
     {
      "code": "PCI-43",
      "display": "Patient clinical information - Type of transplant",
-     "definition": "Patient clinical information - Type of transplant"
+     "definition": "What type of transplant the patient had."
     },
     {
      "code": "PCI-44",
      "display": "Patient clinical information - Transplant date",
-     "definition": "Patient clinical information - Transplant date"
+     "definition": "When the patient had the transplant."
     },
     {
      "code": "PCI-45",
      "display": "Patient clinical information - Had transfusion in the last 6 weeks",
-     "definition": "Patient clinical information - Had transfusion in the last 6 weeks"
+     "definition": "Has the patient had a transfusion in the last 6 weeks."
     },
     {
      "code": "PCI-46",
      "display": "Patient clinical information - Type of transfusion",
-     "definition": "Patient clinical information - Type of transfusion"
+     "definition": "What type of transfusion the patient has had."
     },
     {
      "code": "PCI-47",
      "display": "Patient clinical information - Transfusion date",
-     "definition": "Patient clinical information - Transfusion date"
+     "definition": "When the patient had the transfusion."
     },
     {
      "code": "PCI-48",
      "display": "Patient clinical information - Height (m)",
-     "definition": "Patient clinical information - Height (m)"
+     "definition": "Patient's height."
     }
    ]
   },
@@ -824,22 +824,22 @@
     {
      "code": "HE-1",
      "display": "Treatment function code (TFC)",
-     "definition": "Treatment function code (TFC)"
+     "definition": "The identifier for the clinical specialty or service under which the patient is being treated."
     },
     {
      "code": "HE-2",
      "display": "Hospital provider spell identifier",
-     "definition": "Hospital provider spell identifier"
+     "definition": "The identifier for the patient's continuous period of care in a hospital provider setting, from admission to discharge."
     },
     {
      "code": "HE-3",
      "display": "Outpatient attendance identifier",
-     "definition": "Outpatient attendance identifier"
+     "definition": "The identifier for the patient's specific outpatient appointment at which the genomic test may have been ordered."
     },
     {
      "code": "HE-4",
      "display": "Hospital point of delivery code",
-     "definition": "Hospital point of delivery code"
+     "definition": "The identifier that defines the type of care setting in which the genomic test was requested."
     }
    ]
   }
