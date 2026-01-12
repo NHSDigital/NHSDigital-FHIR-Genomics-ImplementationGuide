@@ -1,6 +1,15 @@
 {
 	"resourceType": "Observation",
 	"id": "Observation-PregnancyConfirmation-Example",
+	"meta": {
+		"tag": [
+			{
+				"system": "https://fhir.nhs.uk/CodeSystem/mds-questiontag-genomics",
+				"code": "PCI-36",
+				"display": "Patient clinical information - Pregnancy status"
+			}
+		]
+	},
 	"status": "final",
 	"code": {
 		"coding": [

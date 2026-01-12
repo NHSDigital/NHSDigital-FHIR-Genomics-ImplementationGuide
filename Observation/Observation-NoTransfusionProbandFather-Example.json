@@ -1,31 +1,40 @@
 {
-  "resourceType": "Observation",
-  "id": "Observation-NoTransfusionProbandFather-Example",
-  "status": "final",
-  "code": {
-    "coding": [
-      {
-        "system": "http://snomed.info/sct",
-        "code": "416128008",
-        "display": "No history of procedure"
-      }
-    ]
-  },
-  "valueCodeableConcept": {
-    "coding": [
-      {
-        "system": "http://snomed.info/sct",
-        "code": "303955003",
-        "display": "Transfusion - action"
-      }
-    ]
-  },
-  "subject": {
-    "reference": "Patient/Patient-PheobeSmithamFather-Example",
-    "identifier": {
-      "system": "https://fhir.nhs.uk/Id/nhs-number",
-      "value": "9449307636"
-    }
-  },
-  "effectiveDateTime": "2023-09-15T15:00:00Z"
+ "resourceType": "Observation",
+ "id": "Observation-NoTransfusionProbandFather-Example",
+ "meta": {
+  "tag": [
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/mds-questiontag-genomics",
+    "code": "PCI-45",
+    "display": "Patient clinical information - Had transfusion in the last 6 weeks"
+   }
+  ]
+ },
+ "status": "final",
+ "code": {
+  "coding": [
+   {
+    "system": "http://snomed.info/sct",
+    "code": "416128008",
+    "display": "No history of procedure"
+   }
+  ]
+ },
+ "valueCodeableConcept": {
+  "coding": [
+   {
+    "system": "http://snomed.info/sct",
+    "code": "303955003",
+    "display": "Transfusion - action"
+   }
+  ]
+ },
+ "subject": {
+  "reference": "Patient/Patient-PheobeSmithamFather-Example",
+  "identifier": {
+   "system": "https://fhir.nhs.uk/Id/nhs-number",
+   "value": "9449307636"
+  }
+ },
+ "effectiveDateTime": "2023-09-15T15:00:00Z"
 }

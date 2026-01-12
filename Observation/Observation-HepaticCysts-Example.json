@@ -1,24 +1,33 @@
 {
-	"resourceType": "Observation",
-	"id": "Observation-HepaticCysts-Example",
-	"status": "final",
-	"code": {
-		"coding": [
-			{
-				"system": "http://human-phenotype-ontology.org",
-				"version": "20221005",
-				"code": "HP:0001407",
-				"display": "Hepatic cysts"
-			}
-		]
-	},
-	"subject": {
-		"reference": "Patient/Patient-LindsaySorrell-Example",
-		"identifier": {
-			"system": "https://fhir.nhs.uk/Id/nhs-number",
-			"value": "9449307946"
-		}
-	},
-	"effectiveDateTime": "2023-08-05",
-	"valueBoolean": false
+ "resourceType": "Observation",
+ "id": "Observation-HepaticCysts-Example",
+ "meta": {
+  "tag": [
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/mds-questiontag-genomics",
+    "code": "PCI-6",
+    "display": "Patient clinical information - Phenotypic details"
+   }
+  ]
+ },
+ "status": "final",
+ "code": {
+  "coding": [
+   {
+    "system": "http://human-phenotype-ontology.org",
+    "version": "20221005",
+    "code": "HP:0001407",
+    "display": "Hepatic cysts"
+   }
+  ]
+ },
+ "subject": {
+  "reference": "Patient/Patient-LindsaySorrell-Example",
+  "identifier": {
+   "system": "https://fhir.nhs.uk/Id/nhs-number",
+   "value": "9449307946"
+  }
+ },
+ "effectiveDateTime": "2023-08-05",
+ "valueBoolean": false
 }

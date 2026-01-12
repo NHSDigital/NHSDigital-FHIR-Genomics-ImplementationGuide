@@ -1,31 +1,40 @@
 {
-  "resourceType": "Observation",
-  "id": "Observation-CellularityKayBurbridge-Example",
-  "status": "final",
-  "code": {
-    "text": "Cellularity"
-  },
-  "subject": {
-    "reference": "Patient/Patient-KayBurbridge-Example",
-    "identifier": {
-      "system": "https://fhir.nhs.uk/Id/nhs-number",
-      "value": "8449303541"
-    }
-  },
-  "specimen": {
-    "identifier": {
-      "system": "https://fhir.add.nhs.uk/Id/specimenId",
-      "value": "699F01231423"
-    }
-  },
-  "valueCodeableConcept": {
-    "coding": [
-      {
-        "system": "http://snomed.info/sct",
-        "code": "75540009",
-        "display": "High"
-      }
-    ]
-  },
-  "effectiveDateTime": "2023-11-01T11:00:00Z"
+ "resourceType": "Observation",
+ "id": "Observation-CellularityKayBurbridge-Example",
+ "meta": {
+  "tag": [
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/mds-questiontag-genomics",
+    "code": "PS-14",
+    "display": "Primary Sample - Nucleated cell count"
+   }
+  ]
+ },
+ "status": "final",
+ "code": {
+  "text": "Cellularity"
+ },
+ "subject": {
+  "reference": "Patient/Patient-KayBurbridge-Example",
+  "identifier": {
+   "system": "https://fhir.nhs.uk/Id/nhs-number",
+   "value": "8449303541"
+  }
+ },
+ "specimen": {
+  "identifier": {
+   "system": "https://fhir.add.nhs.uk/Id/specimenId",
+   "value": "699F01231423"
+  }
+ },
+ "valueCodeableConcept": {
+  "coding": [
+   {
+    "system": "http://snomed.info/sct",
+    "code": "75540009",
+    "display": "High"
+   }
+  ]
+ },
+ "effectiveDateTime": "2023-11-01T11:00:00Z"
 }

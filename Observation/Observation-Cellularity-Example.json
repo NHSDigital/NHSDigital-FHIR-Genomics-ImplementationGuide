@@ -1,31 +1,40 @@
 {
-  "resourceType": "Observation",
-  "id": "Observation-Cellularity-Example",
-  "status": "final",
-  "code": {
-    "text": "Cellularity"
-  },
-  "subject": {
-    "reference": "Patient/Patient-ZelmaHadjkiss-Example",
-    "identifier": {
-      "system": "https://fhir.nhs.uk/Id/nhs-number",
-      "value": "9449307555"
-    }
-  },
-  "specimen": {
-    "identifier": {
-      "system": "https://fhir.add.nhs.uk/Id/specimenId",
-      "value": "RA257630"
-    }
-  },
-  "valueCodeableConcept": {
-    "coding": [
-      {
-        "system": "http://snomed.info/sct",
-        "code": "75540009",
-        "display": "High"
-      }
-    ]
-  },
-  "effectiveDateTime": "2023-09-08T10:00:00Z"
+ "resourceType": "Observation",
+ "id": "Observation-Cellularity-Example",
+ "meta": {
+  "tag": [
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/mds-questiontag-genomics",
+    "code": "PS-14",
+    "display": "Primary Sample - Nucleated cell count"
+   }
+  ]
+ },
+ "status": "final",
+ "code": {
+  "text": "Cellularity"
+ },
+ "subject": {
+  "reference": "Patient/Patient-ZelmaHadjkiss-Example",
+  "identifier": {
+   "system": "https://fhir.nhs.uk/Id/nhs-number",
+   "value": "9449307555"
+  }
+ },
+ "specimen": {
+  "identifier": {
+   "system": "https://fhir.add.nhs.uk/Id/specimenId",
+   "value": "RA257630"
+  }
+ },
+ "valueCodeableConcept": {
+  "coding": [
+   {
+    "system": "http://snomed.info/sct",
+    "code": "75540009",
+    "display": "High"
+   }
+  ]
+ },
+ "effectiveDateTime": "2023-09-08T10:00:00Z"
 }

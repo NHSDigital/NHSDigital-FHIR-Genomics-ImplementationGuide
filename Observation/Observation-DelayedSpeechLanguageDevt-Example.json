@@ -1,6 +1,15 @@
 {
 	"resourceType": "Observation",
 	"id": "Observation-DelayedSpeechLanguageDevt-Example",
+	"meta": {
+		"tag": [
+			{
+				"system": "https://fhir.nhs.uk/CodeSystem/mds-questiontag-genomics",
+				"code": "PCI-31",
+				"display": "Patient clinical information - Suspected inborn error type(s)"
+			}
+		]
+	},
 	"status": "final",
 	"code": {
 		"coding": [

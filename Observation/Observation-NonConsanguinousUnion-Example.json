@@ -1,6 +1,15 @@
 {
 	"resourceType": "Observation",
 	"id": "Observation-NonConsanguinousUnion-Example",
+	"meta": {
+		"tag": [
+			{
+				"system": "https://fhir.nhs.uk/CodeSystem/mds-questiontag-genomics",
+				"code": "P-13",
+				"display": "Patient - Is from consanguineous union"
+			}
+		]
+	},
 	"status": "final",
 	"code": {
 		"coding": [
