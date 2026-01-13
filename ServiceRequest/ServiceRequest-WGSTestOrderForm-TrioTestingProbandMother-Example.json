@@ -1,6 +1,6 @@
 {
  "resourceType": "ServiceRequest",
- "id": "ServiceRequest-WGSTestOrderForm-TrioTestingProband-Example",
+ "id": "ServiceRequest-WGSTestOrderForm-TrioTestingProbandMother-Example",
  "identifier": [
   {
    "system": "https://fhir.nhs.uk/Id/GMSOrder",

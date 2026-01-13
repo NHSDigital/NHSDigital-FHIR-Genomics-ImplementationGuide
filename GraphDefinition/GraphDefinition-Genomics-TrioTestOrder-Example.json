@@ -1,0 +1,95 @@
+{
+  "resourceType": "GraphDefinition",
+  "id": "GraphDefinition-GenomicsTrioTestOrder-Example",
+  "url": "https://fhir.nhs.uk/GraphDefinition/genomics-trio-test-order",
+  "name": "GenomicsTrioTestOrder",
+  "version": "0.1.0",
+  "status": "draft",
+  "date": "2026-01-13",
+  "publisher": "NHS England",
+  "description": "GraphDefinition for retrieving all resources relevant to a Genomic Trio Test Order (proband, father, mother). Starts from ServiceRequest and traverses all key references.",
+  "start": "ServiceRequest",
+  "link": [
+    {
+      "path": "ServiceRequest.subject",
+      "description": "Link to the patient the request is for (proband, father, or mother)",
+      "min": 1,
+      "max": "1",
+      "target": [
+        {
+          "type": "Patient"
+        }
+      ]
+    },
+    {
+      "path": "ServiceRequest.requester",
+      "description": "Link to the requester of the genomic test order",
+      "min": 1,
+      "max": "1",
+      "target": [
+        {
+          "type": "PractitionerRole"
+        }
+      ]
+    },
+    {
+      "path": "ServiceRequest.reasonReference",
+      "description": "Optional link to the primary condition constituting the reason for testing",
+      "min": 0,
+      "max": "*",
+      "target": [
+        {
+          "type": "Condition"
+        }
+      ]
+    },
+    {
+      "path": "ServiceRequest.supportingInfo",
+      "description": "Link to additional clinical information to support processing/interpretation of the request",
+      "min": 0,
+      "max": "*",
+      "target": [
+        {
+          "type": "RelatedPerson"
+        },
+        {
+          "type": "Observation"
+        },
+        {
+          "type": "Specimen"
+        },
+        {
+          "type": "Consent"
+        },
+        {
+          "type": "QuestionnaireResponse"
+        },
+        {
+          "type": "Condition"
+        }
+      ]
+    },
+    {
+      "path": "ServiceRequest.specimen",
+      "description": "Optional link to specimen where this has already been collected/ordered prior to request submission",
+      "min": 0,
+      "max": "*",
+      "target": [
+        {
+          "type": "Specimen"
+        }
+      ]
+    },
+    {
+      "description": "Other ServiceRequests in the trio with the same requisition identifier",
+      "min": 2,
+      "max": "*",
+      "target": [
+        {
+          "type": "ServiceRequest",
+          "params": "requisition={ServiceRequest.requisition}"
+        }
+      ]
+    }
+  ]
+}
