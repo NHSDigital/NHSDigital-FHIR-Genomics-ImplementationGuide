@@ -21,7 +21,7 @@
    "valueCodeableConcept": {
     "coding": [
      {
-      "system": "https://fhir.nhs.uk/CodeSystem/genomics-patient-role",
+      "system": "https://fhir.nhs.uk/CodeSystem/patient-role-genomics",
       "code": "proband",
       "display": "Proband"
      }
