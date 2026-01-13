@@ -4,7 +4,7 @@
  "identifier": [
   {
    "system": "https://fhir.nhs.uk/Id/GMSOrder",
-   "value": "RR8F1792"
+   "value": "RR8F1794"
   }
  ],
  "extension": [
@@ -14,8 +14,8 @@
     "coding": [
      {
       "system": "https://fhir.nhs.uk/CodeSystem/genomics-patient-role",
-      "code": "proband",
-      "display": "Proband"
+      "code": "consultand",
+      "display": "Consultand"
      }
     ]
    }
@@ -75,13 +75,13 @@
     "version": "7"
    }
   ],
-  "text": "This is a Trio Testing, this ServiceRequest generates a Requisition ID that linked the proband and consultands"
+  "text": "This is a Trio Testing, this ServiceRequest inherit  a Requisition ID that linkedit to the proband ServiceRequest"
  },
  "subject": {
   "reference": "Patient/Patient-PheobeSmitham-Example",
   "identifier": {
    "system": "https://fhir.nhs.uk/Id/nhs-number",
-   "value": "9449307539"
+   "value": "9449307246"
   }
  },
  "authoredOn": "2026-01-13T15:00:00Z",
@@ -103,52 +103,28 @@
  ],
  "supportingInfo": [
   {
-   "reference": "Observation/Observation-AutisticBehaviour-Example"
+   "reference": "Patient/Patient-PheobeSmithamMother-Example"
   },
   {
-   "reference": "Observation/Observation-DelayedSpeechLanguageDevt-Example"
+   "reference": "RelatedPerson/elatedPerson-AliceSmithamProbandMother-Example"
   },
   {
-   "reference": "Observation/Observation-DiseasePenetrancePheobeSmitham-Example"
+   "reference": "Observation/Observation-NonConsanguinousUnionProbandMother-Example"
   },
   {
-   "reference": "Observation/Observation-IntellectualDisabilityProfound-Example"
+   "reference": "Observation/Observation-NoTransfusionProbandMother-Example"
   },
   {
-   "reference": "Observation/Observation-NonConsanguinousUnionProband-Example"
+   "reference": "Observation/Observation-NoBoneMarrowTransplantProbandMother-Example"
   },
   {
-   "reference": "Specimen/Specimen-PheobeSmitham-Example"
+   "reference": "Specimen/Specimen-PheobeSmithamMother-Example"
   },
   {
-   "reference": "Observation/Observation-GenomicEthnicity-Example"
+   "reference": "Consent/Consent-RoD-PheobeSmithamMother-Example"
   },
   {
-   "reference": "Observation/Observation-NoPregnancy-Example"
-  },
-  {
-   "reference": "Condition/Condition-MonogenicHearingLoss-Example"
-  },
-  {
-   "reference": "Observation/Observation-NoBoneMarrowTransplant-Example"
-  },
-  {
-   "reference": "Observation/Observation-NoTransfusion-Example"
-  },
-  {
-   "reference": "Observation/Observation-IntellectualDisabilityMild-Example"
-  },
-  {
-   "reference": "Consent/Consent-RoD-PheobeSmitham-Example"
-  },
-  {
-   "reference": "Consent/Consent-RoD-PheobeSmithamYoungPersonAssentForm-Example"
-  },
-  {
-   "reference": "QuestionnaireResponse/QuestionnaireResponse-RoD-PheobeSmithamCDForn-Example"
-  },
-  {
-   "reference": "QuestionnaireResponse/QuestionnaireResponse-RoD-PheobeSmithamYPAForm-Example"
+   "reference": "QuestionnaireResponse/QuestionnaireResponse-RoD-PheobeSmithamMother-Example"
   }
  ],
  "note": [
@@ -156,7 +132,7 @@
    "text": "No family history of genomic testing"
   },
   {
-   "text": "Free text for diagnosis/reason for referral, relevant information including family history, phenotypic details/ HPO Terms/ E.g. Not eligible for R14 or R98. Agreed with testing laboratory at Manchester. Father lives in surrey. Father to have sample taken locally and sent to MFT."
+   "text": "Free text for diagnosis/reason for referral, relevant information including family history, phenotypic details/ HPO Terms/ E.g. Not eligible for R14 or R98."
   }
  ]
 }

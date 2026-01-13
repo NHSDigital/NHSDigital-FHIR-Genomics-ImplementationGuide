@@ -1,20 +1,12 @@
 {
  "resourceType": "ServiceRequest",
- "id": "ServiceRequest-WGSTestOrderFormUpdated-TrioTesting-Example",
+ "id": "ServiceRequest-WGSTestOrderForm-TrioTestingProbandFather-Example",
  "identifier": [
   {
    "system": "https://fhir.nhs.uk/Id/GMSOrder",
-   "value": "RR8F1792"
+   "value": "RR8F1793"
   }
  ],
- "meta": {
-  "versionId": "2",
-  "lastUpdated": "2026-01-13T09:15:00Z",
-  "profile": [
-   "http://hl7.eu/fhir/laboratory/StructureDefinition/ServiceRequest-eu-lab",
-   "https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest"
-  ]
- },
  "extension": [
   {
    "url": "https://fhir.nhs.uk/England/StructureDefinition/Extension-Genomic-Patient-Role",
@@ -22,8 +14,8 @@
     "coding": [
      {
       "system": "https://fhir.nhs.uk/CodeSystem/genomics-patient-role",
-      "code": "proband",
-      "display": "Proband"
+      "code": "consultand",
+      "display": "Consultand"
      }
     ]
    }
@@ -83,18 +75,18 @@
     "version": "7"
    }
   ],
-  "text": "This is a Trio Testing, this ServiceRequest generates a Requisition ID that linked the proband and consultands"
+  "text": "This is a Trio Testing, this ServiceRequest inherit  a Requisition ID that linkedit to the proband ServiceRequest"
  },
  "subject": {
-  "reference": "Patient/Patient-PheobeSmitham-Example",
+  "reference": "Patient/Patient-PheobeSmithamFather-Example",
   "identifier": {
    "system": "https://fhir.nhs.uk/Id/nhs-number",
-   "value": "9449307539"
+   "value": "9449307636"
   }
  },
- "authoredOn": "2026-01-15T15:00:00Z",
+ "authoredOn": "2026-01-13T15:00:00Z",
  "requester": {
-  "reference": "PractitionerRole/PractitionerRole-EugeneSmith-Example"
+  "reference": "PractitionerRole/PractitionerRole-EugeneSmithLeedsSTH-Example"
  },
  "reasonReference": [
   {
@@ -111,52 +103,28 @@
  ],
  "supportingInfo": [
   {
-   "reference": "Observation/Observation-AutisticBehaviour-Example"
+   "reference": "Patient/Patient-PheobeSmithamFather-Example"
   },
   {
-   "reference": "Observation/Observation-DelayedSpeechLanguageDevt-Example"
+   "reference": "RelatedPerson/RelatedPerson-JamesLawrenceProbandFather-Example"
   },
   {
-   "reference": "Observation/Observation-DiseasePenetrancePheobeSmitham-Example"
+   "reference": "Observation/Observation-NonConsanguinousUnionProbandFather-Example"
   },
   {
-   "reference": "Observation/Observation-IntellectualDisabilityProfound-Example"
+   "reference": "Observation/Observation-NoTransfusionProbandFather-Example"
   },
   {
-   "reference": "Observation/Observation-NonConsanguinousUnionProband-Example"
+   "reference": "Observation/Observation-NoBoneMarrowTransplantProbandFather-Example"
   },
   {
-   "reference": "Specimen/Specimen-PheobeSmitham-Example"
+   "reference": "Specimen/Specimen-PheobeSmithamFather-Example"
   },
   {
-   "reference": "Observation/Observation-GenomicEthnicity-Example"
+   "reference": "Consent/Consent-RoD-PheobeSmithamFather-Example"
   },
   {
-   "reference": "Observation/Observation-NoPregnancy-Example"
-  },
-  {
-   "reference": "Condition/Condition-MonogenicHearingLoss-Example"
-  },
-  {
-   "reference": "Observation/Observation-NoBoneMarrowTransplant-Example"
-  },
-  {
-   "reference": "Observation/Observation-NoTransfusion-Example"
-  },
-  {
-   "reference": "Observation/Observation-IntellectualDisabilityMild-Example"
-  },
-  {
-   "reference": "Consent/Consent-RoD-PheobeSmitham-Example"
-  },
-  {
-   "reference": "Consent/Consent-RoD-PheobeSmithamYoungPersonAssentForm-Example"
-  },
-  {
-   "reference": "QuestionnaireResponse/QuestionnaireResponse-RoD-PheobeSmithamCDForn-Example"
-  },
-  {
-   "reference": "QuestionnaireResponse/QuestionnaireResponse-RoD-PheobeSmithamYPAForm-Example"
+   "reference": "QuestionnaireResponse/QuestionnaireResponse-RoD-PheobeSmithamFather-Example"
   }
  ],
  "note": [
