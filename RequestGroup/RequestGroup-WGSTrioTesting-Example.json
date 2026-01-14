@@ -1,0 +1,46 @@
+{
+ "resourceType": "RequestGroup",
+ "id": "RequestGroup-WGSTrioTesting-Example",
+ "identifier": [
+  {
+   "system": "https://fhir.leedssth.nhs.uk//Id/grouptestId",
+   "value": "RR-REQ12764",
+   "assigner": {
+    "identifier": {
+     "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+     "value": "RR8"
+    }
+   }
+  }
+ ],
+ "status": "active",
+ "intent": "order",
+ "subject": {
+  "reference": "Patient/Patient-PheobeSmitham-Example",
+  "identifier": {
+   "system": "https://fhir.nhs.uk/Id/nhs-number",
+   "value": "9449307539"
+  }
+ },
+ "authoredOn": "2026-01-13T12:00:00Z",
+ "action": [
+  {
+   "title": "Proband Genomic Test",
+   "resource": {
+    "reference": "ServiceRequest/ServiceRequest-WGSTestOrderForm-TrioTestingProband-Example"
+   }
+  },
+  {
+   "title": "Consultand-GenomicTest-Father",
+   "resource": {
+    "reference": "ServiceRequest/ServiceRequest-WGSTestOrderForm-TrioTestingProbandFather-Example"
+   }
+  },
+  {
+   "title": "Consultand-GenomicTest-Mother",
+   "resource": {
+    "reference": "ServiceRequest/ServiceRequest-WGSTestOrderForm-TrioTestingProbandMother-Example"
+   }
+  }
+ ]
+}
