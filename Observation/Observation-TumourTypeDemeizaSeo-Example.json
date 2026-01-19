@@ -5,8 +5,8 @@
   "tag": [
    {
     "system": "https://fhir.nhs.uk/CodeSystem/mds-questiontag-genomics",
-    "code": "PS-26",
-    "display": "Primary Sample - Tumour nuclear content in marked area"
+    "code": "PS-35",
+    "display": "Primary Sample - Solid tumour type"
    }
   ]
  },

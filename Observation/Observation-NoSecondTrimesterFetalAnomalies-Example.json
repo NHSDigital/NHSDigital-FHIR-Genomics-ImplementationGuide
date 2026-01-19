@@ -5,8 +5,8 @@
   "tag": [
    {
     "system": "https://fhir.nhs.uk/CodeSystem/mds-questiontag-genomics",
-    "code": "PCI-39",
-    "display": "Patient clinical information - Fetal gestation"
+    "code": "PCI-7",
+    "display": "Patient clinical information - Symptoms"
    }
   ]
  },

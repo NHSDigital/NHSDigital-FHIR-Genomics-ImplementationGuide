@@ -5,8 +5,8 @@
   "tag": [
    {
     "system": "https://fhir.nhs.uk/CodeSystem/mds-questiontag-genomics",
-    "code": "PCI-2",
-    "display": "Patient clinical information - Disease status"
+    "code": "PCI-7",
+    "display": "Patient clinical information - Symptoms"
    }
   ]
  },

@@ -12,7 +12,13 @@
  },
  "status": "final",
  "code": {
-  "text": "Cellularity"
+  "coding": [
+   {
+    "system": "http://snomed.info/sct",
+    "code": "1022461000000100",
+    "display": "Nucleated red blood cell count"
+   }
+  ]
  },
  "subject": {
   "reference": "Patient/Patient-KayBurbridge-Example",

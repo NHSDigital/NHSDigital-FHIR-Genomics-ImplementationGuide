@@ -1,15 +1,6 @@
 {
  "resourceType": "Observation",
  "id": "Observation-Platelets-Example",
- "meta": {
-  "tag": [
-   {
-    "system": "https://fhir.nhs.uk/CodeSystem/mds-questiontag-genomics",
-    "code": "PS-14",
-    "display": "Primary Sample - Nucleated cell count"
-   }
-  ]
- },
  "status": "final",
  "code": {
   "coding": [

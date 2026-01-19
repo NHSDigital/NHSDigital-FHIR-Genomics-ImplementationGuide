@@ -5,13 +5,6 @@
   "profile": [
    "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/therapeutic-implication",
    "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
-  ],
-  "tag": [
-   {
-    "system": "https://fhir.nhs.uk/CodeSystem/mds-questiontag-genomics",
-    "code": "TR-39",
-    "display": "Test request - Linked test request reference"
-   }
   ]
  },
  "status": "final",

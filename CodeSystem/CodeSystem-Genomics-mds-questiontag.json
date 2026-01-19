@@ -204,7 +204,7 @@
     },
     {
      "code": "P-37",
-     "display": "Patient - Locaal Pedigree / Family identifier",
+     "display": "Patient - Local Pedigree / Family identifier",
      "definition": "Patient's pedigree or family identifying id."
     },
     {
