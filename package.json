@@ -3,11 +3,11 @@
   "description": "FHIR Genomics Implementation Guide",
   "author": "nhsdigital",
   "dependencies": {
-    "fhir.r4.ukcore.stu3.currentbuild": "0.24.0-pre-release",
     "hl7.fhir.r4.core": "4.0.1",
     "hl7.fhir.uv.genomics-reporting": "3.0.0-ballot",
     "hl7.fhir.uv.ips": "1.1.0",
     "hl7.fhir.eu.laboratory": "0.1.0-ballot",
+    "fhir.r4.ukcore.stu3.currentbuild": "0.24.0-pre-release",
     "ihe.iti.pcf": "1.0.0-comment"
   },
   "fhirVersions": [
