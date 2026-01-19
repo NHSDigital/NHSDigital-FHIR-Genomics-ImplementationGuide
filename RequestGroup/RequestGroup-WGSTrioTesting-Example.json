@@ -25,19 +25,16 @@
  "authoredOn": "2026-01-13T12:00:00Z",
  "action": [
   {
-   "title": "Proband Genomic Test",
    "resource": {
     "reference": "ServiceRequest/ServiceRequest-WGSTestOrderForm-TrioTestingProband-Example"
    }
   },
   {
-   "title": "Consultand-GenomicTest-Father",
    "resource": {
     "reference": "ServiceRequest/ServiceRequest-WGSTestOrderForm-TrioTestingProbandFather-Example"
    }
   },
   {
-   "title": "Consultand-GenomicTest-Mother",
    "resource": {
     "reference": "ServiceRequest/ServiceRequest-WGSTestOrderForm-TrioTestingProbandMother-Example"
    }

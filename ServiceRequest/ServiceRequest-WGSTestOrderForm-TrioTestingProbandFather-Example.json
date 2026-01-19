@@ -103,9 +103,6 @@
  ],
  "supportingInfo": [
   {
-   "reference": "Patient/Patient-PheobeSmithamFather-Example"
-  },
-  {
    "reference": "RelatedPerson/RelatedPerson-JamesLawrenceProbandFather-Example"
   },
   {

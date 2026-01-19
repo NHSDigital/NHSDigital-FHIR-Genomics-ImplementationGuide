@@ -763,6 +763,10 @@
        "name": "requester",
        "type": "reference"
       },
+        {
+         "name": "requisition",
+         "type": "token"
+        },
       {
        "name": "specimen",
        "type": "reference"
