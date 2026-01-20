@@ -1,6 +1,15 @@
 {
 	"resourceType": "Observation",
 	"id": "Observation-DelayedSpeechLanguageDevt-Example",
+	"meta": {
+		"tag": [
+			{
+				"system": "https://fhir.nhs.uk/CodeSystem/mds-questiontag-genomics",
+				"code": "PCI-6",
+				"display": "Patient clinical information - Phenotypic details"
+			}
+		]
+	},
 	"status": "final",
 	"code": {
 		"coding": [

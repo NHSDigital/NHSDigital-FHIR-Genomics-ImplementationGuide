@@ -1,6 +1,35 @@
 {
 	"resourceType": "Observation",
 	"id": "Observation-PregnancyConfirmation-Example",
+	"meta": {
+		"tag": [
+			{
+				"system": "https://fhir.nhs.uk/CodeSystem/mds-questiontag-genomics",
+				"code": "PCI-36",
+				"display": "Patient clinical information - Pregnancy status"
+			},
+			{
+				"system": "https://fhir.nhs.uk/CodeSystem/mds-questiontag-genomics",
+				"code": "PCI-37",
+				"display": "Patient clinical information - Pregnancy type"
+			},
+			{
+				"system": "https://fhir.nhs.uk/CodeSystem/mds-questiontag-genomics",
+				"code": "PCI-38",
+				"display": "Patient clinical information - Pregnancy gestation period"
+			},
+			{
+				"system": "https://fhir.nhs.uk/CodeSystem/mds-questiontag-genomics",
+				"code": "PCI-39",
+				"display": "Patient clinical information - Fetal gestation"
+			},
+			{
+				"system": "https://fhir.nhs.uk/CodeSystem/mds-questiontag-genomics",
+				"code": "PCI-40",
+				"display": "Patient clinical information - Estimated delivery date (EDD)"
+			}
+		]
+	},
 	"status": "final",
 	"code": {
 		"coding": [

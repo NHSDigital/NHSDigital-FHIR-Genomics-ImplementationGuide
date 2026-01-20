@@ -1,6 +1,15 @@
 {
 	"resourceType": "Observation",
 	"id": "Observation-DiseasePenetrance-Example",
+	"meta": {
+		"tag": [
+			{
+				"system": "https://fhir.nhs.uk/CodeSystem/mds-questiontag-genomics",
+				"code": "PCI-15",
+				"display": "Patient clinical information - Pedigree details / Relevant family history"
+			}
+		]
+	},
 	"status": "final",
 	"code": {
 		"coding": [
@@ -8,7 +17,7 @@
 				"system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
 				"code": "R14",
 				"display": "Acutely unwell children with a likely monogenic disorder",
-        "version": "7"
+				"version": "7"
 			}
 		]
 	},
