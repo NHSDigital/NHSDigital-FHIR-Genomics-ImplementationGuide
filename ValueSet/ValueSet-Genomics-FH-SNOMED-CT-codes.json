@@ -1,0 +1,77 @@
+{
+  "resourceType": "ValueSet",
+  "id": "genomics-FH-SNOMED-CT-codes",
+  "url": "https://fhir.nhs.uk/ValueSet/genomics-FH-SNOMED-CT-codes",
+  "version": "0.1.0",
+  "name": "GenomicsFHSNOMEDCTCodes",
+  "title": "Genomics FH SNOMED CT Codes",
+  "status": "draft",
+  "date": "2026-20-01T14:15:00+00:00",
+  "publisher": "NHS England",
+  "contact": [
+    {
+      "name": "NHS England",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "interoperabilityteam@nhs.net"
+        }
+      ]
+    }
+  ],
+  "description": "A ValueSet to identify the SNOMED-CT codes for use in Familial hypercholesterolaemia reporting as recommended by The National Cholesterol Working Group",
+  "copyright": "Copyright © 2026+ NHS England Licensed under the Apache License, Version 2.0 (the \\\\\\\"License\\\\\\\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \\\\\\\"AS IS\\\\\\\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept" : [
+          {
+            "code" : "163841000237109",
+            "display" : "Familial hypercholesterolaemia comprehensive genetic test result"
+          },
+          {
+            "code" : "163851000237107",
+            "display" : "Familial hypercholesterolaemia targeted genetic test result"
+          },
+          {
+            "code" : "204871000237101",
+            "display" : "Apolipoprotein B gene mutation positive"
+          },
+          {
+            "code" : "204901000237101",
+            "display" : "Apolipoprotein E gene mutation positive"
+          },
+          {
+            "code" : "204881000237104",
+            "display" : "Proprotein convertase subtilisin/kexin type 9 gene mutation positive"
+          },
+          {
+            "code" : "204891000237102",
+            "display" : "Low density lipoprotein receptor gene mutation positive"
+          },
+          {
+            "code" : "204931000237105",
+            "display" : "Genetic variant causing familial hypercholesterolaemia not detected"
+          },
+          {
+            "code" : "1669121000000107",
+            "display" : "Genetic variant of uncertain significance for familial hypercholesterolaemia detected"
+          },
+          {
+            "code" : "238078005",
+            "display" : "Familial hypercholesterolemia - homozygous"
+          },
+          {
+            "code" : "238079002",
+            "display" : "Familial hypercholesterolemia - heterozygous"
+          },
+          {
+            "code" : "403830007",
+            "display" : "Familial hypercholesterolemia due to homozygous low density lipoprotein receptor mutation"
+          }
+        ]
+      }
+    ]
+  }
+}
