@@ -1886,7 +1886,7 @@
        "type": "token"
       },
       {
-       "name": "subject",
+       "name": "patient",
        "type": "reference"
       },
       {
