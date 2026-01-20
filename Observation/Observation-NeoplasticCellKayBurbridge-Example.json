@@ -5,8 +5,8 @@
   "tag": [
    {
     "system": "https://fhir.nhs.uk/CodeSystem/mds-questiontag-genomics",
-    "code": "PCI-15",
-    "display": "Patient clinical information - Pedigree details / Relevant family history"
+    "code": "PS-15",
+    "display": "Primary Sample - Tumour nuclear content in whole section"
    }
   ]
  },
