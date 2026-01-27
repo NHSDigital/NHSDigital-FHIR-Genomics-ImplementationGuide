@@ -222,17 +222,17 @@
     "supportingInfo": [
      {
       "reference": "Observation/2a6e7070-5ea2-4ef3-96b6-607b474fcc0b"
-     },
-     {
-      "reference": "Observation/4512e4e9-9b42-4464-b52f-81e5f7e380b0"
      }
     ],
     "specimen": [
      {
       "reference": "Specimen/9fa291ba-d9a4-46a9-87e5-486bcaae47fa"
      }
-    ]
+    ],
     "note": [
+     {
+      "text": "Samples are to be provided at a later date"
+     },
      {
       "text": "Free text for diagnosis/reason for referral, relevant information including family history, phenotypic details/ HPO Terms/ E.g. large echogenic kidneys with normal bladder"
      }
