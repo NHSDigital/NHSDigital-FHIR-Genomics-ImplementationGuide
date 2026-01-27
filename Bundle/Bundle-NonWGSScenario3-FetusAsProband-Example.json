@@ -225,14 +225,13 @@
      },
      {
       "reference": "Observation/4512e4e9-9b42-4464-b52f-81e5f7e380b0"
-     },
-     {
-      "reference": "RelatedPerson/6473db02-3c45-42f0-9b8c-9d063753f86b"
-     },
+     }
+    ],
+    "specimen": [
      {
       "reference": "Specimen/9fa291ba-d9a4-46a9-87e5-486bcaae47fa"
      }
-    ],
+    ]
     "note": [
      {
       "text": "Free text for diagnosis/reason for referral, relevant information including family history, phenotypic details/ HPO Terms/ E.g. large echogenic kidneys with normal bladder"
@@ -418,6 +417,9 @@
      },
      {
       "reference": "Procedure/1ee371f7-00c5-4787-a910-89dc42cbbf47"
+     },
+     {
+      "reference": "RelatedPerson/6473db02-3c45-42f0-9b8c-9d063753f86b"
      }
     ],
     "note": [
