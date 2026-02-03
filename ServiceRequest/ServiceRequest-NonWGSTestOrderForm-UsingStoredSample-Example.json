@@ -88,18 +88,16 @@
   "specimen": [
     {
       "reference": "Specimen/Specimen-BloodEDTA-WithCollectionDetails-Example",
-      "identifier": [
-        {
-          "system": "https://fhir.bwc.nhs.uk//Id/specimenId",
-          "value": "RQ3-RTH-698C0-17543",
-          "assigner": {
-            "identifier": {
-              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-              "value": "RQ3"
-            }
+      "identifier": {
+        "system": "https://fhir.bwc.nhs.uk//Id/specimenId",
+        "value": "RQ3-RTH-698C0-17543",
+        "assigner": {
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "RQ3"
           }
         }
-      ]
+      }
     }
   ],
   "note": [
