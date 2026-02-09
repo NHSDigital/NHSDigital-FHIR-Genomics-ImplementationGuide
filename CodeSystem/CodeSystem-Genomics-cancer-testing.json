@@ -1,0 +1,77 @@
+{
+ "resourceType": "CodeSystem",
+ "id": "cancer-testing-genomics",
+ "url": "https://fhir.nhs.uk/CodeSystem/cancer-testing-genomics",
+ "version": "0.1.0",
+ "name": "CancerTestingGenomics",
+ "title": "Cancer Testing Genomics",
+ "status": "draft",
+ "date": "2026-02-06T00:00:00.000Z",
+ "publisher": "NHS England",
+ "contact": [
+  {
+   "name": "NHS England",
+   "telecom": [
+    {
+     "system": "email",
+     "value": "interoperabilityteam@nhs.net"
+    }
+   ]
+  }
+ ],
+ "description": "CodeSystem used to identify Genomic test requested based on cancer suspicion/treatment.",
+ "copyright": "Copyright © 2026+ NHS England Licensed under the Apache License, Version 2.0 (the \\\"License\\\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \\\"AS IS\\\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html.",
+ "caseSensitive": true,
+ "content": "complete",
+ "count": 12,
+ "concept": [
+  {
+   "code": "sample-storage",
+   "display": "Sample storage"
+  },
+  {
+   "code": "diagnostic",
+   "display": "Diagnostic"
+  },
+  {
+   "code": "differential-diagnosis",
+   "display": "Differential diagnosis"
+  },
+  {
+   "code": "prognostic",
+   "display": "Prognostic"
+  },
+  {
+   "code": "treatment-determining",
+   "display": "Treatment determining"
+  },
+  {
+   "code": "disease-monitoring",
+   "display": "Disease monitoring"
+  },
+  {
+   "code": "relapse-recurrence",
+   "display": "Relapse or recurrence"
+  },
+  {
+   "code": "remission",
+   "display": "Remission"
+  },
+  {
+   "code": "transformation",
+   "display": "Transformation"
+  },
+  {
+   "code": "research-trial-eligibility",
+   "display": "Research or trial eligibility"
+  },
+  {
+   "code": "pharmacogenomics",
+   "display": "Pharmacogenomics"
+  },
+  {
+   "code": "other",
+   "display": "Other"
+  }
+ ]
+}
