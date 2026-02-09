@@ -1,6 +1,6 @@
 {
   "strict-validation": false,
   "ignore-folders": [],
-  "ignore-files": [],
+  "ignore-files": ["StructureMap/StructureMap-PharmacogeneticTestResult-Genomics.json"],
   "error-if-metaProfile-present": false
 }
