@@ -1,0 +1,34 @@
+{
+  "resourceType": "DocumentReference",
+  "id": "1e6aef26-d201-43d1-b54c-087cd4ee5c24",
+	"meta" : {
+    "profile" : [
+      "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-data-file"
+    ]
+  },
+  "status": "current",
+  "subject": {
+    "identifier": {
+      "system": "urn:oid:2.16.840.1.113883.2.1.3.2.4.18.24",
+      "value": "SomePatientIdentifier"
+    }
+  },
+  "author": [
+    {
+      "identifier": {
+        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+        "value": "699M0"
+      },
+      "display": "NHS EAST GENOMIC LABORATORY HUB"
+    }
+  ],
+  "content": [
+    {
+      "attachment": {
+        "contentType": "application/gzip",
+        "url": "https://002-cen.s3.eu-west-2.amazonaws.com/grch38/haplotyper_normalised_v0.3/140103896-25301R0078-25NGCEN64-9527-F-99347387_markdup_recalibrated_Haplotyper.vcf.gz",
+        "title": "140103896-25301R0078-25NGCEN64-9527-F-99347387_markdup_recalibrated_Haplotyper.vcf.gz"
+      }
+    }
+  ]
+}
