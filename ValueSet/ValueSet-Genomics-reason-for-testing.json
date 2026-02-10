@@ -24,29 +24,8 @@
  "compose": {
   "include": [
    {
-    "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
-    "version": "0.3.0",
-    "filter": [
-     {
-      "property": "concept",
-      "op": "is-a",
-      "value": "primary-test-request"
-     }
-    ]
-   },
-   {
-    "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
-    "version": "0.3.0",
-    "concept": [
-     {
-      "code": "reanalysis-test-request",
-      "display": "Reanalysis Test Request"
-     },
-     {
-      "code": "other",
-      "display": "Other"
-     }
-    ]
+    "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
+    "version": "0.1.0"
    },
    {
     "system": "https://fhir.nhs.uk/CodeSystem/cancer-testing-genomics",
@@ -64,86 +43,51 @@
  },
  "expansion": {
   "identifier": "urn:uuid:3f2a1b9c-2d75-45cc-8ea3-2e747e4b61d4",
-  "timestamp": "2026-02-09T00:00:00Z",
-  "total": 37,
+  "timestamp": "2026-02-10T00:00:00Z",
+  "total": 30,
   "contains": [
    {
-    "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
-    "code": "carrier",
-    "display": "Carrier"
+    "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
+    "code": "sample-storage",
+    "display": "Sample storage"
    },
    {
-    "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
+    "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
     "code": "diagnostic",
     "display": "Diagnostic"
    },
    {
-    "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
-    "code": "disease-monitoring-mrdmechanism",
-    "display": "Disease monitoring MRD CHIMERISM"
+    "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
+    "code": "carrier",
+    "display": "Carrier"
    },
    {
-    "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
-    "code": "dna-storage",
-    "display": "DNA storage"
-   },
-   {
-    "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
-    "code": "follow-up",
-    "display": "Follow up"
-   },
-   {
-    "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
+    "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
     "code": "predictive",
     "display": "Predictive"
    },
    {
-    "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
-    "code": "relapse",
-    "display": "Relapse"
+    "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
+    "code": "prenatal-diagnosis",
+    "display": "Prenatal diagnosis"
    },
    {
-    "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
-    "code": "staging-or-prognosis",
-    "display": "Staging or Prognosis"
+    "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
+    "code": "family-member-to-aid-interpretation",
+    "display": "Family member to aid interpretation of a relative's result/variant"
    },
    {
-    "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
-    "code": "unknown",
-    "display": "Unknown"
+    "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
+    "code": "reanalysis",
+    "display": "Reanalysis"
    },
    {
-    "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
-    "code": "reanalysis-test-request",
-    "display": "Reanalysis test request"
+    "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
+    "code": "pharmacogenomics",
+    "display": "Pharmacogenomics"
    },
    {
-    "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
-    "code": "change-in-presentation",
-    "display": "Change in presentation"
-   },
-   {
-    "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
-    "code": "newly-affected-family-member",
-    "display": "Newly affected family member"
-   },
-   {
-    "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
-    "code": "new-pregnancy",
-    "display": "New pregnancy"
-   },
-   {
-    "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
-    "code": "new-treatment-clinical-management",
-    "display": "New treatment/clinical management"
-   },
-   {
-    "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
-    "code": "recently-deceased-to-inform-family",
-    "display": "Recently deceased to inform family"
-   },
-   {
-    "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
+    "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
     "code": "other",
     "display": "Other"
    },

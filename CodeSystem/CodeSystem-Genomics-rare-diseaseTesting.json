@@ -1,0 +1,65 @@
+{
+ "resourceType": "CodeSystem",
+ "id": "rare-diseaseTesting-genomics",
+ "url": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
+ "version": "0.1.0",
+ "name": "RareDiseaseTestingGenomics",
+ "title": "Rare Disease Testing Genomics",
+ "status": "draft",
+ "date": "2026-02-10T00:00:00.000Z",
+ "publisher": "NHS England",
+ "contact": [
+  {
+   "name": "NHS England",
+   "telecom": [
+    {
+     "system": "email",
+     "value": "interoperabilityteam@nhs.net"
+    }
+   ]
+  }
+ ],
+ "description": "CodeSystem used to identify Genomic test requested based on rare disease suspicion/treatment.",
+ "copyright": "Copyright © 2026+ NHS England Licensed under the Apache License, Version 2.0 (the \\\"License\\\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \\\"AS IS\\\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html.",
+ "caseSensitive": true,
+ "content": "complete",
+ "count": 12,
+ "concept": [
+  {
+   "code": "sample-storage",
+   "display": "Sample storage"
+  },
+  {
+   "code": "diagnostic",
+   "display": "Diagnostic"
+  },
+  {
+   "code": "carrier",
+   "display": "Carrier"
+  },
+  {
+   "code": "predictive",
+   "display": "Predictive"
+  },
+  {
+   "code": "prenatal-diagnosis",
+   "display": "Prenatal diagnosis"
+  },
+  {
+   "code": "family-member-to-aid-interpretation",
+   "display": "Family member to aid interpretation of a relative's result/variant"
+  },
+  {
+   "code": "reanalysis",
+   "display": "Reanalysis"
+  },
+  {
+   "code": "pharmacogenomics",
+   "display": "Pharmacogenomics"
+  },
+  {
+   "code": "other",
+   "display": "Other"
+  }
+ ]
+}
