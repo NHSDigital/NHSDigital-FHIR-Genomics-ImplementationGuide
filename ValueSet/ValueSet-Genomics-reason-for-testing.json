@@ -1,32 +1,201 @@
 {
-  "resourceType": "ValueSet",
-  "id": "genomics-reasonfortesting",
-  "url": "https://fhir.nhs.uk/ValueSet/genomics-reasonfortesting",
-  "version": "0.2.0",
-  "name": "GenomicsReasonforTesting",
-  "title": "Genomics Reason for Testing",
-  "status": "draft",
-  "date": "2025-09-09T00:00:00.000Z",
-  "publisher": "NHS England",
-  "contact": [
+ "resourceType": "ValueSet",
+ "id": "genomics-reasonfortesting",
+ "url": "https://fhir.nhs.uk/ValueSet/genomics-reasonfortesting",
+ "version": "0.3.0",
+ "name": "GenomicsReasonforTesting",
+ "title": "Genomics Reason for Testing",
+ "status": "draft",
+ "date": "2026-02-09T00:00:00.000Z",
+ "publisher": "NHS England",
+ "contact": [
+  {
+   "name": "NHS England",
+   "telecom": [
     {
-      "name": "NHS England",
-      "telecom": [
-        {
-          "system": "email",
-          "value": "interoperabilityteam@nhs.net"
-        }
-      ]
+     "system": "email",
+     "value": "interoperabilityteam@nhs.net"
     }
-  ],
-  "description": "A ValueSet use to identify the reason for requesting a genomics test.",
-  "copyright": "Copyright © 2023+ NHS England Licensed under the Apache License, Version 2.0 (the \\\\\\\"License\\\\\\\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \\\\\\\"AS IS\\\\\\\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html.",
-  "compose": {
-    "include": [
-      {
-        "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
-        "version": "0.2.0"
-      }
-    ]
+   ]
   }
+ ],
+ "description": "A Composite ValueSet of reasons for requesting or linking genomics test.",
+ "copyright": "Copyright © 2023+ NHS England Licensed under the Apache License, Version 2.0 (the \\\\\\\"License\\\\\\\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \\\\\\\"AS IS\\\\\\\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html.",
+ "compose": {
+  "include": [
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
+    "version": "0.1.0"
+   },
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/cancer-testing-genomics",
+    "version": "0.1.0"
+   },
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/clinical-utility-genomics",
+    "version": "0.1.0"
+   },
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/test-associationReason-genomics",
+    "version": "0.1.0"
+   }
+  ]
+ },
+ "expansion": {
+  "identifier": "urn:uuid:3f2a1b9c-2d75-45cc-8ea3-2e747e4b61d4",
+  "timestamp": "2026-02-10T00:00:00Z",
+  "total": 30,
+  "contains": [
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
+    "code": "sample-storage",
+    "display": "Sample storage"
+   },
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
+    "code": "diagnostic",
+    "display": "Diagnostic"
+   },
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
+    "code": "carrier",
+    "display": "Carrier"
+   },
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
+    "code": "predictive",
+    "display": "Predictive"
+   },
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
+    "code": "prenatal-diagnosis",
+    "display": "Prenatal diagnosis"
+   },
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
+    "code": "family-member-to-aid-interpretation",
+    "display": "Family member to aid interpretation of a relative's result/variant"
+   },
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
+    "code": "reanalysis",
+    "display": "Reanalysis"
+   },
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
+    "code": "pharmacogenomics",
+    "display": "Pharmacogenomics"
+   },
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
+    "code": "other",
+    "display": "Other"
+   },
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/cancer-testing-genomics",
+    "code": "sample-storage",
+    "display": "Sample storage"
+   },
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/cancer-testing-genomics",
+    "code": "diagnostic",
+    "display": "Diagnostic"
+   },
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/cancer-testing-genomics",
+    "code": "differential-diagnosis",
+    "display": "Differential diagnosis"
+   },
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/cancer-testing-genomics",
+    "code": "prognostic",
+    "display": "Prognostic"
+   },
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/cancer-testing-genomics",
+    "code": "treatment-determining",
+    "display": "Treatment determining"
+   },
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/cancer-testing-genomics",
+    "code": "disease-monitoring",
+    "display": "Disease monitoring"
+   },
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/cancer-testing-genomics",
+    "code": "relapse-recurrence",
+    "display": "Relapse or recurrence"
+   },
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/cancer-testing-genomics",
+    "code": "remission",
+    "display": "Remission"
+   },
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/cancer-testing-genomics",
+    "code": "transformation",
+    "display": "Transformation"
+   },
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/cancer-testing-genomics",
+    "code": "research-trial-eligibility",
+    "display": "Research or trial eligibility"
+   },
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/cancer-testing-genomics",
+    "code": "pharmacogenomics",
+    "display": "Pharmacogenomics"
+   },
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/cancer-testing-genomics",
+    "code": "other",
+    "display": "Other"
+   },
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/clinical-utility-genomics",
+    "code": "patient-management",
+    "display": "Patient management"
+   },
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/clinical-utility-genomics",
+    "code": "reproductive-decision-making",
+    "display": "Reproductive decision making"
+   },
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/clinical-utility-genomics",
+    "code": "unaffected-relatives-seeking-predictive-testing",
+    "display": "Unaffected relatives seeking predictive testing"
+   },
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/test-associationReason-genomics",
+    "code": "reanalysis",
+    "display": "Re-analysis"
+   },
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/test-associationReason-genomics",
+    "code": "reinterpretation",
+    "display": "Re-interpretation"
+   },
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/test-associationReason-genomics",
+    "code": "retest",
+    "display": "Re-test"
+   },
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/test-associationReason-genomics",
+    "code": "follow-on-test",
+    "display": "Follow on test"
+   },
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/test-associationReason-genomics",
+    "code": "family-associated",
+    "display": "Family associated"
+   },
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/test-associationReason-genomics",
+    "code": "germline-later",
+    "display": "Germline later"
+   }
+  ]
+ }
 }
