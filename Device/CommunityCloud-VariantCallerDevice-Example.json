@@ -1,0 +1,15 @@
+{
+  "resourceType": "Device",
+  "id": "04a7b32d-2270-4e4e-a1bb-80f0eaa0c4cc",
+  "deviceName": [
+    {
+      "type": "user-friendly-name",
+      "name": "Sentieon Haplotyper"
+    }
+  ],
+  "version": [
+    {
+      "value": "202308.03"
+    }
+  ]
+}

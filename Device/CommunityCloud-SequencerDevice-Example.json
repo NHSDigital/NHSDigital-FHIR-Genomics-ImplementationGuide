@@ -1,0 +1,23 @@
+{
+  "resourceType": "Device",
+  "id": "44ae1fac-d147-43fb-87ba-35f6bc056f51",
+  "manufacturer": "Illumina",
+  "deviceName": [
+    {
+      "type": "user-friendly-name",
+      "name": "Novaseq 6000"
+    }
+  ],
+  "property": [
+    {
+      "type": {
+        "text": "Sequencing assay name"
+      },
+      "valueCode": [
+        {
+          "text": "CEN"
+        }
+      ]
+    }
+  ]
+}
