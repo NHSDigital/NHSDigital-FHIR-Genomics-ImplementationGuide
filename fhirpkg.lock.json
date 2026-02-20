@@ -6,7 +6,7 @@
     "hl7.fhir.uv.ips": "1.1.0",
     "fhir.dicom": "2022.4.20221006",
     "hl7.fhir.eu.laboratory": "0.1.0-ballot",
-    "fhir.r4.ukcore.stu3.currentbuild": "0.24.0-pre-release",
+    "fhir.r4.ukcore.stu3.currentbuild": "0.27.0-pre-release",
     "ihe.iti.pcf": "1.0.0-comment",
     "us.nlm.vsac": "0.9.0",
     "ihe.iti.balp": "1.1.1",
