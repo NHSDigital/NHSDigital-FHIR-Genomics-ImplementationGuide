@@ -1,0 +1,320 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:1e6aef26-d201-43d1-b54c-087cd4ee5c24",
+      "resource": {
+        "resourceType": "DocumentReference",
+        "id": "1e6aef26-d201-43d1-b54c-087cd4ee5c24",
+        "meta" : {
+          "profile" : [
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-data-file"
+          ]
+        },
+        "status": "current",
+        "subject": {
+          "identifier": {
+            "system": "urn:oid:2.16.840.1.113883.2.1.3.2.4.18.24",
+            "value": "SomePatientIdentifier"
+          }
+        },
+        "author": [
+          {
+            "identifier": {
+              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+              "value": "699M0"
+            },
+            "display": "NHS EAST GENOMIC LABORATORY HUB"
+          }
+        ],
+        "content": [
+          {
+            "attachment": {
+              "contentType": "application/gzip",
+              "url": "https://002-cen.s3.eu-west-2.amazonaws.com/grch38/haplotyper_normalised_v0.3/140103896-25301R0078-25NGCEN64-9527-F-99347387_markdup_recalibrated_Haplotyper.vcf.gz",
+              "title": "140103896-25301R0078-25NGCEN64-9527-F-99347387_markdup_recalibrated_Haplotyper.vcf.gz"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "DocumentReference"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b6c3ebd7-53e4-450b-b46f-0e9f83d995e6",
+      "resource": {
+        "resourceType": "Specimen",
+        "id": "b6c3ebd7-53e4-450b-b46f-0e9f83d995e6",
+        "identifier": [
+          {
+            "system": "urn:oid:2.16.840.1.113883.2.1.3.2.4.18.19",
+            "value": "140103896-25301R0078"
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "24851008",
+              "display": "Deoxyribonucleic acid"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Specimen"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:04a7b32d-2270-4e4e-a1bb-80f0eaa0c4cc",
+      "resource": {
+        "resourceType": "Device",
+        "id": "04a7b32d-2270-4e4e-a1bb-80f0eaa0c4cc",
+        "deviceName": [
+          {
+            "type": "user-friendly-name",
+            "name": "Sentieon Haplotyper"
+          }
+        ],
+        "version": [
+          {
+            "value": "202308.03"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Device"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1e73bfaf-b851-463f-98df-c2b6582a948e",
+      "resource": {
+        "resourceType": "Device",
+        "id": "1e73bfaf-b851-463f-98df-c2b6582a948e",
+        "deviceName": [
+          {
+            "type": "user-friendly-name",
+            "name": "Dias"
+          }
+        ],
+        "version": [
+          {
+            "value": "eggd_conductor_dias_CEN_config_v2.5.2"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Device"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:44ae1fac-d147-43fb-87ba-35f6bc056f51",
+      "resource": {
+        "resourceType": "Device",
+        "id": "44ae1fac-d147-43fb-87ba-35f6bc056f51",
+        "manufacturer": "Illumina",
+        "deviceName": [
+          {
+            "type": "user-friendly-name",
+            "name": "Novaseq 6000"
+          }
+        ],
+        "property": [
+          {
+            "type": {
+              "text": "Sequencing assay name"
+            },
+            "valueCode": [
+              {
+                "text": "CEN"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Device"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:9bc12bd5-8e06-4f10-949e-512bb623552e",
+      "resource": {
+        "resourceType" : "Procedure",
+        "id" : "9bc12bd5-8e06-4f10-949e-512bb623552e",
+        "meta" : {
+          "profile" : [
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis"
+          ]
+        },
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-specimen",
+            "valueReference" : {
+              "reference" : "urn:uuid:b6c3ebd7-53e4-450b-b46f-0e9f83d995e6"
+            }
+          },
+          {
+            "extension" : [
+              {
+                "url" : "device",
+                "valueReference" : {
+                  "reference" : "urn:uuid:44ae1fac-d147-43fb-87ba-35f6bc056f51"
+                }
+              },
+              {
+                "url" : "function",
+                "valueCodeableConcept" : {
+                  "text" : "Sequencing platform"
+                }
+              }
+            ],
+            "url" : "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-device"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "device",
+                "valueReference" : {
+                  "reference" : "urn:uuid:1e73bfaf-b851-463f-98df-c2b6582a948e"
+                }
+              },
+              {
+                "url" : "function",
+                "valueCodeableConcept" : {
+                  "text" : "Bioinformatics Pipeline"
+                }
+              }
+            ],
+            "url" : "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-device"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "device",
+                "valueReference" : {
+                  "reference" : "urn:uuid:04a7b32d-2270-4e4e-a1bb-80f0eaa0c4cc"
+                }
+              },
+              {
+                "url" : "function",
+                "valueCodeableConcept" : {
+                  "text" : "Bioinformatics Variant Caller"
+                }
+              }
+            ],
+            "url" : "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-device"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "type",
+                "valueCodeableConcept" : {
+                  "coding" : [
+                    {
+                      "system" : "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/genomic-study-data-format-cs",
+                      "code" : "vcf",
+                      "display" : "VCF"
+                    }
+                  ]
+                }
+              },
+              {
+                "url" : "file",
+                "valueReference" : {
+                  "reference" : "urn:uuid:1e6aef26-d201-43d1-b54c-087cd4ee5c24"
+                }
+              }
+            ],
+            "url" : "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-output"
+          }
+        ],
+        "status" : "completed",
+        "category" : {
+          "coding" : [
+            {
+              "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+              "code" : "laboratory"
+            }
+          ]
+        },
+        "subject" : {
+          "identifier" : {
+            "system": "urn:oid:2.16.840.1.113883.2.1.3.2.4.18.24",
+            "value": "SomePatientIdentifier"
+          }
+        },
+        "performedDateTime" : "2025-11-25T17:49:00Z"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Procedure"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:fc708a88-9a59-4efd-9ff7-c028cf2b9491",
+      "resource": {
+        "resourceType" : "Procedure",
+        "id" : "fc708a88-9a59-4efd-9ff7-c028cf2b9491",
+        "meta" : {
+          "profile" : [
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study"
+          ]
+        },
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-ext",
+            "valueReference" : {
+              "reference" : "urn:uuid:9bc12bd5-8e06-4f10-949e-512bb623552e"
+            }
+          }
+        ],
+        "status" : "completed",
+        "category" : {
+          "coding" : [
+            {
+              "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+              "code" : "laboratory"
+            }
+          ]
+        },
+        "code" : {
+          "text": "Small"
+        },
+        "subject" : {
+          "identifier" : {
+          "system": "urn:oid:2.16.840.1.113883.2.1.3.2.4.18.24",
+          "value": "SomePatientIdentifier"
+        }
+        },
+        "performedDateTime" : "2025-11-25T17:49:00Z",
+        "reasonCode" : [
+          {
+            "coding" : [
+              {
+                "system" : "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
+                "code" : "R134",
+                "display" : "Familial Hypercholesterolaemia"
+              }
+            ]
+          }
+        ],
+        "note" : [
+          {
+            "text" : "Rare Disease"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Procedure"
+      }
+    }
+  ]
+}

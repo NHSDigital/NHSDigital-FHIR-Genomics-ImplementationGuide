@@ -1,0 +1,15 @@
+{
+  "resourceType": "Device",
+  "id": "1e73bfaf-b851-463f-98df-c2b6582a948e",
+  "deviceName": [
+    {
+      "type": "user-friendly-name",
+      "name": "Dias"
+    }
+  ],
+  "version": [
+    {
+      "value": "eggd_conductor_dias_CEN_config_v2.5.2"
+    }
+  ]
+}
