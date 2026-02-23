@@ -6,7 +6,7 @@
     "hl7.fhir.r4.core": "4.0.1",
     "hl7.fhir.uv.genomics-reporting": "3.0.0-ballot",
     "hl7.fhir.eu.laboratory": "0.1.0-ballot",
-    "fhir.r4.ukcore.stu3.currentbuild": "0.27.0-pre-release",
+    "fhir.r4.ukcore.stu3.currentbuild": "0.26.0-pre-release",
     "ihe.iti.pcf": "1.0.0-comment"
   },
   "fhirVersions": [
