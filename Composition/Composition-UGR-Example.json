@@ -1,0 +1,110 @@
+{
+  "resourceType": "Composition",
+  "id": "Composition-UGR-Example",
+  "identifier": {
+    "system": "https://fhir.nhs.uk/Id/England-UnifiedGenomicRecord",
+    "value": "5acd7cf9-284e-4443-9763-2d1d8d524660"
+  },
+  "status": "final",
+  "type": {
+    "coding": [{
+        "system": "http://snomed.info/sct",
+        "code": "824321000000109",
+        "display": "Summary record"
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "321401000000106",
+          "display": "Genomics"
+        }
+      ]
+    }
+  ],
+  "subject": {
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307539"
+    }
+  },
+  "date": "2026-02-26T08:22:00Z",
+  "author": [
+    {
+      "identifier": {
+        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+        "value": "X26"
+      }
+    }
+  ],
+  "title": "Unified Genomic Record Summary",
+  "confidentiality": "R",
+  "custodian": {
+    "identifier": {
+        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+        "value": "X26"
+      }
+  },
+  "section": [{
+      "title": "Patient demographics",
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Pheobe Smitham, Female, DOB: 2013-09-27</div>"
+      },
+      "code": {
+        "coding": [{
+            "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings",
+            "code": "patient-demographics",
+            "display": "Patient demographics"
+          }
+        ]
+      },
+      "entry": [{
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449307539"
+          }
+        }
+      ]
+    }, {
+      "title": "Investigations and procedures requested",
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Test for R98.2, Likely inborn error of metabolism, 2026-01-13</div>"
+      },
+      "code": {
+        "coding": [{
+            "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings",
+            "code": "investigations-and-procedures-requested",
+            "display": "Investigations and procedures requested"
+          }
+        ]
+      },
+      "entry": [{
+          "reference": "ServiceRequest/ServiceRequest-WGSTestOrderForm-TrioTestingProband-Example"
+        }
+      ]
+    }, {
+      "title": "Investigation results",
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Positive for Brown-Vialetto-Van Laere syndrome</div>"
+      },
+      "code": {
+        "coding": [{
+            "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings",
+            "code": "investigation-results",
+            "display": "Investigation results"
+          }
+        ]
+      },
+      "entry": [{
+          "reference": "DiagnosticReport/DiagnosticReport-GenomicVariantAssessment-Example"
+        }
+      ]
+    }
+  ]
+}
