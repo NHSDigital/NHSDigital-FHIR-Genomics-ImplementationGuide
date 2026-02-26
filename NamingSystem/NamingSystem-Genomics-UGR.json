@@ -1,0 +1,43 @@
+{
+  "resourceType": "NamingSystem",
+  "id": "genomics-ugr",
+  "name": "GenomicsUGR",
+  "status": "draft",
+  "kind": "identifier",
+  "date": "2026-02-26",
+  "publisher": "NHS England",
+  "contact": [
+    {
+      "name": "NHS England",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "interoperabilityteam@nhs.net",
+          "use": "work",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "name": "NHS Genomic Medicine Service",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "england.genomics@nhs.net",
+          "use": "work",
+          "rank": 1
+        }
+      ]
+    }
+  ],
+  "responsible": "NHS Genomic Interop Programme",
+  "description": "Unified Genomic Record Identifier",
+	"usage": "For the identifier assigned to a UGR composition resource",
+  "uniqueId":  [
+    {
+      "type": "uri",
+      "value": "https://fhir.nhs.uk/Id/genomics-ugr",
+      "preferred": true
+    }
+  ]
+}
