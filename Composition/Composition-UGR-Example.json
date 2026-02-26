@@ -2,7 +2,7 @@
   "resourceType": "Composition",
   "id": "Composition-UGR-Example",
   "identifier": {
-    "system": "https://fhir.nhs.uk/Id/genomics-ugr",
+    "system": "https://fhir.nhs.uk/Id/England-UnifiedGenomicRecord",
     "value": "5acd7cf9-284e-4443-9763-2d1d8d524660"
   },
   "status": "final",

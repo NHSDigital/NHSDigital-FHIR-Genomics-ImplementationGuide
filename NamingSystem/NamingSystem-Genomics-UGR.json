@@ -1,7 +1,7 @@
 {
   "resourceType": "NamingSystem",
-  "id": "genomics-ugr",
-  "name": "GenomicsUGR",
+  "id": "England-UnifiedGenomicRecord-Identifier",
+  "name": "EnglandUnifiedGenomicRecordIdentifier",
   "status": "draft",
   "kind": "identifier",
   "date": "2026-02-26",
@@ -36,7 +36,7 @@
   "uniqueId":  [
     {
       "type": "uri",
-      "value": "https://fhir.nhs.uk/Id/genomics-ugr",
+      "value": "https://fhir.nhs.uk/Id/England-UnifiedGenomicRecord",
       "preferred": true
     }
   ]
