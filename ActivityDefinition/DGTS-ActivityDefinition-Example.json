@@ -1,59 +1,60 @@
 {
-  "resourceType": "ActivityDefinition",
-  "id": "DGTS-ActivityDefinition-Example",
-  "url": "http://fhir.nhs.uk/ActivityDefinition/GT1",
-  "identifier": [
-    {
-      "system": "https://fhir.nhs.uk/Id/England-DigitalGenomicTestServices",
-      "value": "GT1"
-    },
-    {
-      "system": "https://fhir.nhs.uk/Id/England-GenomicTestDirectory",
-      "value": "R47.2",
-      "use": "old"
-    }
-  ],
-  "title": "15q11 critical region (AS/PWS) - MLPA or equivalent",
-  "version": "1.0",
-  "status": "active",
-  "experimental": false,
-  "useContext": [
-    {
-      "code": {
-        "code": "focus"
-      },
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "code": "diagnostic",
-            "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics"
-          }
-        ]
-      }
-    }
-  ],
-  "code": {
-    "coding": [
-      {
-        "code": "targeted-variant-analysis",
-        "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/genomic-study-method-type-cs"
-      }
-    ]
+ "resourceType": "ActivityDefinition",
+ "id": "DGTS-ActivityDefinition-Example",
+ "url": "http://fhir.nhs.uk/ActivityDefinition/GT1",
+ "identifier": [
+  {
+   "system": "https://fhir.nhs.uk/Id/England-DigitalGenomicTestServices",
+   "value": "GT1"
   },
-  "library": [
-    "http://fhir.nhs.uk/Library/GT1"
-  ],
-  "specimenRequirement": [
-    {
-      "reference": "SpecimenDefinition/DGTS-SpecimenDefinition-Example"
-    }
-  ],
-  "relatedArtifact": [
-    {
-      "type": "composed-of",
-      "url": "https://panelapp.genomicsengland.co.uk/panels/1313",
-      "label": "Carney complex",
-      "display": "GMS Rare Disease"
-    }
+  {
+   "system": "https://fhir.nhs.uk/Id/England-GenomicTestDirectory",
+   "value": "R47.2",
+   "use": "old"
+  }
+ ],
+ "title": "15q11 critical region (AS/PWS) - MLPA or equivalent",
+ "version": "1.0",
+ "status": "active",
+ "experimental": false,
+ "useContext": [
+  {
+   "code": {
+    "code": "focus"
+   },
+   "valueCodeableConcept": {
+    "coding": [
+     {
+      "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
+      "code": "diagnostic",
+      "display": "Diagnostic"
+     }
+    ]
+   }
+  }
+ ],
+ "code": {
+  "coding": [
+   {
+    "code": "targeted-variant-analysis",
+    "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/genomic-study-method-type-cs"
+   }
   ]
+ },
+ "library": [
+  "http://fhir.nhs.uk/Library/GT1"
+ ],
+ "specimenRequirement": [
+  {
+   "reference": "SpecimenDefinition/DGTS-SpecimenDefinition-Example"
+  }
+ ],
+ "relatedArtifact": [
+  {
+   "type": "composed-of",
+   "url": "https://panelapp.genomicsengland.co.uk/panels/1313",
+   "label": "Carney complex",
+   "display": "GMS Rare Disease"
+  }
+ ]
 }

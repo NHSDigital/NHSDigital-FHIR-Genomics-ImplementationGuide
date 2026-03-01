@@ -1,111 +1,111 @@
 {
-  "resourceType": "ServiceRequest",
-  "id": "ServiceRequest-NonWGSTestOrderForm-UsingStoredSample-Example",
-  "extension": [
-    {
-      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage",
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory",
-            "code": "nhs-england",
-            "display": "NHS England"
-          }
-        ]
-      }
-    }
-  ],
-  "status": "active",
-  "intent": "order",
-  "category": [
-    {
-      "coding": [
-        {
-          "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory",
-          "code": "rare-disease-non-wgs",
-          "display": "Rare Disease - Non-WGS"
-        }
-      ]
-    },
-    {
-      "coding": [
-        {
-          "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
-          "code": "dna-storage",
-          "display": "DNA Storage"
-        }
-      ]
-    }
-  ],
-  "priority": "routine",
-  "code": {
+ "resourceType": "ServiceRequest",
+ "id": "ServiceRequest-NonWGSTestOrderForm-UsingStoredSample-Example",
+ "extension": [
+  {
+   "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage",
+   "valueCodeableConcept": {
     "coding": [
-      {
-        "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
-        "code": "R134",
-        "display": "Familial Hypercholesterolaemia",
-        "version": "7"
-      }
+     {
+      "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory",
+      "code": "nhs-england",
+      "display": "NHS England"
+     }
     ]
+   }
+  }
+ ],
+ "status": "active",
+ "intent": "order",
+ "category": [
+  {
+   "coding": [
+    {
+     "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory",
+     "code": "rare-disease-non-wgs",
+     "display": "Rare Disease - Non-WGS"
+    }
+   ]
   },
-  "subject": {
-    "reference": "Patient/Patient-TimMclullichs-Example",
-    "identifier": {
-      "system": "https://fhir.nhs.uk/Id/nhs-number",
-      "value": "8449303452"
+  {
+   "coding": [
+    {
+     "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
+     "code": "sample-storage",
+     "display": "Sample storage"
     }
-  },
-  "authoredOn": "2023-11-02T11:00:00Z",
-  "requester": {
-    "reference": "PractitionerRole/PractitionerRole-OscarShields-Example"
-  },
-  "supportingInfo": [
-    {
-      "reference": "Observation/Observation-GenomicEthnicity-Example"
-    },
-    {
-      "reference": "Condition/Condition-MonogenicHearingLoss-Example"
-    },
-    {
-      "reference": "Observation/Observation-NonConsanguinousUnion-Example"
-    },
-    {
-      "reference": "Observation/Observation-NoBoneMarrowTransplant-Example"
-    },
-    {
-      "reference": "Observation/Observation-NoTransfusion-Example"
-    },
-    {
-      "reference": "Observation/Observation-DutchLipidScore-Example"
-    },
-    {
-      "reference": "Observation/Observation-QueryXanthoma-Example"
-    },
-    {
-      "reference": "Observation/Observation-SimonBroomeCriteria-Example"
-    }
-  ],
-  "specimen": [
-    {
-      "reference": "Specimen/Specimen-BloodEDTA-WithCollectionDetails-Example",
-      "identifier": {
-        "system": "https://fhir.bwc.nhs.uk//Id/specimenId",
-        "value": "RQ3-RTH-698C0-17543",
-        "assigner": {
-          "identifier": {
-            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-            "value": "RQ3"
-          }
-        }
-      }
-    }
-  ],
-  "note": [
-    {
-      "text": "No family history of genomic testing"
-    },
-    {
-      "text": "Free text for diagnosis/reason for referral, relevant information including family history, phenotypic details/ HPO Terms/ patient to be tested for FH, use existing DNA sample in storage"
-    }
+   ]
+  }
+ ],
+ "priority": "routine",
+ "code": {
+  "coding": [
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
+    "code": "R134",
+    "display": "Familial Hypercholesterolaemia",
+    "version": "7"
+   }
   ]
+ },
+ "subject": {
+  "reference": "Patient/Patient-TimMclullichs-Example",
+  "identifier": {
+   "system": "https://fhir.nhs.uk/Id/nhs-number",
+   "value": "8449303452"
+  }
+ },
+ "authoredOn": "2023-11-02T11:00:00Z",
+ "requester": {
+  "reference": "PractitionerRole/PractitionerRole-OscarShields-Example"
+ },
+ "supportingInfo": [
+  {
+   "reference": "Observation/Observation-GenomicEthnicity-Example"
+  },
+  {
+   "reference": "Condition/Condition-MonogenicHearingLoss-Example"
+  },
+  {
+   "reference": "Observation/Observation-NonConsanguinousUnion-Example"
+  },
+  {
+   "reference": "Observation/Observation-NoBoneMarrowTransplant-Example"
+  },
+  {
+   "reference": "Observation/Observation-NoTransfusion-Example"
+  },
+  {
+   "reference": "Observation/Observation-DutchLipidScore-Example"
+  },
+  {
+   "reference": "Observation/Observation-QueryXanthoma-Example"
+  },
+  {
+   "reference": "Observation/Observation-SimonBroomeCriteria-Example"
+  }
+ ],
+ "specimen": [
+  {
+   "reference": "Specimen/Specimen-BloodEDTA-WithCollectionDetails-Example",
+   "identifier": {
+    "system": "https://fhir.bwc.nhs.uk//Id/specimenId",
+    "value": "RQ3-RTH-698C0-17543",
+    "assigner": {
+     "identifier": {
+      "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+      "value": "RQ3"
+     }
+    }
+   }
+  }
+ ],
+ "note": [
+  {
+   "text": "No family history of genomic testing"
+  },
+  {
+   "text": "Free text for diagnosis/reason for referral, relevant information including family history, phenotypic details/ HPO Terms/ patient to be tested for FH, use existing DNA sample in storage"
+  }
+ ]
 }

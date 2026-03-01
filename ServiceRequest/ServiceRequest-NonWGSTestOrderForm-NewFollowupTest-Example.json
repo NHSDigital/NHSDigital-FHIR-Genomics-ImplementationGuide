@@ -1,109 +1,109 @@
 {
-  "resourceType": "ServiceRequest",
-  "id": "ServiceRequest-NonWGSTestOrderForm-NewFollowupTest-Example",
-  "basedOn": [
-    {
-      "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-FollowupTest-Example"
-    }
-  ],
-  "extension": [
-    {
-      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage",
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory",
-            "code": "nhs-england",
-            "display": "NHS England"
-          }
-        ]
-      }
-    }
-  ],
-  "status": "active",
-  "intent": "order",
-  "category": [
-    {
-      "coding": [
-        {
-          "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory",
-          "code": "rare-disease-non-wgs",
-          "display": "Rare Disease - Non-WGS"
-        }
-      ]
-    },
-    {
-      "coding": [
-        {
-          "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
-          "code": "diagnostic",
-          "display": "Diagnostic"
-        }
-      ]
-    }
-  ],
-  "priority": "routine",
-  "code": {
+ "resourceType": "ServiceRequest",
+ "id": "ServiceRequest-NonWGSTestOrderForm-NewFollowupTest-Example",
+ "basedOn": [
+  {
+   "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-FollowupTest-Example"
+  }
+ ],
+ "extension": [
+  {
+   "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage",
+   "valueCodeableConcept": {
     "coding": [
-      {
-        "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
-        "code": "R65.1",
-        "display": "Aminoglycoside exposure posing risk to hearing",
-        "version": "7"
-      }
-    ],
-    "text": "Follow Up Test requested to aid interpretation. M code modified to: R65.1"
+     {
+      "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory",
+      "code": "nhs-england",
+      "display": "NHS England"
+     }
+    ]
+   }
+  }
+ ],
+ "status": "active",
+ "intent": "order",
+ "category": [
+  {
+   "coding": [
+    {
+     "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory",
+     "code": "rare-disease-non-wgs",
+     "display": "Rare Disease - Non-WGS"
+    }
+   ]
   },
-  "subject": {
-    "reference": "Patient/Patient-AnitaLamberts-Example",
-    "identifier": {
-      "system": "https://fhir.nhs.uk/Id/nhs-number",
-      "value": "8449303649"
+  {
+   "coding": [
+    {
+     "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
+     "code": "diagnostic",
+     "display": "Diagnostic"
     }
+   ]
+  }
+ ],
+ "priority": "routine",
+ "code": {
+  "coding": [
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
+    "code": "R65.1",
+    "display": "Aminoglycoside exposure posing risk to hearing",
+    "version": "7"
+   }
+  ],
+  "text": "Follow Up Test requested to aid interpretation. M code modified to: R65.1"
+ },
+ "subject": {
+  "reference": "Patient/Patient-AnitaLamberts-Example",
+  "identifier": {
+   "system": "https://fhir.nhs.uk/Id/nhs-number",
+   "value": "8449303649"
+  }
+ },
+ "authoredOn": "2023-11-10T10:00:00Z",
+ "requester": {
+  "reference": "PractitionerRole/PractitionerRole-AndrewSmith-Example"
+ },
+ "performer": [
+  {
+   "identifier": {
+    "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+    "value": "RJ1"
+   }
+  }
+ ],
+ "supportingInfo": [
+  {
+   "reference": "Observation/Observation-GenomicEthnicity-Example"
   },
-  "authoredOn": "2023-11-10T10:00:00Z",
-  "requester": {
-    "reference": "PractitionerRole/PractitionerRole-AndrewSmith-Example"
+  {
+   "reference": "Observation/Observation-NoPregnancy-Example"
   },
-  "performer": [
-    {
-      "identifier": {
-        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-        "value": "RJ1"
-      }
-    }
-  ],
-  "supportingInfo": [
-    {
-      "reference": "Observation/Observation-GenomicEthnicity-Example"
-    },
-    {
-      "reference": "Observation/Observation-NoPregnancy-Example"
-    },
-    {
-      "reference": "Condition/Condition-MonogenicHearingLoss-Example"
-    },
-    {
-      "reference": "Observation/Observation-NonConsanguinousUnion-Example"
-    },
-    {
-      "reference": "Observation/Observation-NoBoneMarrowTransplant-Example"
-    },
-    {
-      "reference": "Observation/Observation-NoTransfusion-Example"
-    }
-  ],
-  "specimen": [
-    {
-      "reference": "Specimen/Specimen-BloodEDTA-Example"
-    }
-  ],
-  "note": [
-    {
-      "text": "No family history of genomic testing"
-    },
-    {
-      "text": "Free text for diagnosis/reason for referral, relevant information including family history, phenotypic details/ HPO Terms /  For example: Adult with CT-proven bronchiectasis, chronic suppurative chest infection with colonisation by Pseudomonas and Staph aureus. Intital test ordered for Cystic Fibrosis."
-    }
-  ]
+  {
+   "reference": "Condition/Condition-MonogenicHearingLoss-Example"
+  },
+  {
+   "reference": "Observation/Observation-NonConsanguinousUnion-Example"
+  },
+  {
+   "reference": "Observation/Observation-NoBoneMarrowTransplant-Example"
+  },
+  {
+   "reference": "Observation/Observation-NoTransfusion-Example"
+  }
+ ],
+ "specimen": [
+  {
+   "reference": "Specimen/Specimen-BloodEDTA-Example"
+  }
+ ],
+ "note": [
+  {
+   "text": "No family history of genomic testing"
+  },
+  {
+   "text": "Free text for diagnosis/reason for referral, relevant information including family history, phenotypic details/ HPO Terms /  For example: Adult with CT-proven bronchiectasis, chronic suppurative chest infection with colonisation by Pseudomonas and Staph aureus. Intital test ordered for Cystic Fibrosis."
+  }
+ ]
 }

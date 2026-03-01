@@ -1,118 +1,119 @@
 {
-  "resourceType": "ServiceRequest",
-  "id": "ServiceRequest-NonWGSTestOrder-VariantReinterpretation-Example",
-  "basedOn": [
-    {
-      "reference": "ServiceReques/ServiceRequest-NonWGSTestOrderForm-SyndromicEpilepsy-Example"
-    }
-  ],
-  "extension": [
-    {
-      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage",
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory",
-            "code": "nhs-england",
-            "display": "NHS England"
-          }
-        ]
-      }
-    }
-  ],
-  "status": "active",
-  "intent": "order",
-  "category": [
-    {
-      "coding": [
-        {
-          "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory",
-          "code": "rare-disease-non-wgs"
-        }
-      ]
-    },
-    {
-      "coding": [
-        {
-          "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
-          "code": "diagnostic",
-          "display": "Diagnostic"
-        }
-      ]
-    }
-  ],
-  "priority": "routine",
-  "code": {
+ "resourceType": "ServiceRequest",
+ "id": "ServiceRequest-NonWGSTestOrder-VariantReinterpretation-Example",
+ "basedOn": [
+  {
+   "reference": "ServiceReques/ServiceRequest-NonWGSTestOrderForm-SyndromicEpilepsy-Example"
+  }
+ ],
+ "extension": [
+  {
+   "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage",
+   "valueCodeableConcept": {
     "coding": [
-      {
-        "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
-        "code": "R442",
-        "display": "Variant Re-interpretation",
-        "version": "7"
-      }
+     {
+      "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory",
+      "code": "nhs-england",
+      "display": "NHS England"
+     }
     ]
+   }
+  }
+ ],
+ "status": "active",
+ "intent": "order",
+ "category": [
+  {
+   "coding": [
+    {
+     "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory",
+     "code": "rare-disease-non-wgs"
+    }
+   ]
   },
-  "orderDetail": [
+  {
+   "coding": [
     {
-      "coding": [
-        {
-          "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
-          "code": "R59",
-          "display": "Early onset or syndromic epilepsy",
-          "version": "7"
-        }
-      ]
-    },
-    {
-      "coding": [
-        {
-          "system": "https://fhir.nhs.uk/CodeSystem/types-of-reanalysistest-genomics",
-          "code": "original-gene-panels",
-          "display": "Original Gene Panels"
-        }
-      ]
+     "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
+     "code": "diagnostic",
+     "display": "Diagnostic"
     }
-  ],
-  "subject": {
-    "reference": "Patient/Patient-SalimaPomfrets-Example",
-    "identifier": {
-      "system": "https://fhir.nhs.uk/Id/nhs-number",
-      "value": "8449303444"
-    }
-  },
-  "authoredOn": "2023-10-01T10:08:00Z",
-  "requester": {
-    "reference": "PractitionerRole/PractitionerRole-GeneSmith-Example"
-  },
-  "supportingInfo": [
-    {
-      "reference": "Observation/Observation-GenomicEthnicity-Example"
-    },
-    {
-      "reference": "Condition/Condition-MonogenicHearingLoss-Example"
-    },
-    {
-      "reference": "Observation/Observation-NoPregnancy-Example"
-    },
-    {
-      "reference": "Observation/Observation-NonConsanguinousUnion-Example"
-    },
-    {
-      "reference": "Observation/Observation-NoBoneMarrowTransplant-Example"
-    },
-    {
-      "reference": "Observation/Observation-NoTransfusion-Example"
-    }
-  ],
-  "note": [
-    {
-      "text": "No sample required."
-    },
-    {
-      "text": "No family history of genomic testing"
-    },
-    {
-      "text": "Free text for diagnosis/reason for referral, relevant information including family history, phenotypic details/ HPO Terms/ For example: new evidence available that will likely change the classification of the variant- identification of additional patient(s) with the same genetic variant"
-    }
+   ]
+  }
+ ],
+ "priority": "routine",
+ "code": {
+  "coding": [
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
+    "code": "R442",
+    "display": "Variant Re-interpretation",
+    "version": "7"
+   }
   ]
+ },
+ "orderDetail": [
+  {
+   "coding": [
+    {
+     "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
+     "code": "R59",
+     "display": "Early onset or syndromic epilepsy",
+     "version": "7"
+    }
+   ]
+  },
+  {
+   "coding": [
+    {
+     "system": "https://fhir.nhs.uk/CodeSystem/types-of-reanalysistest-genomics",
+     "code": "original-gene-panels",
+     "display": "Original Gene Panels"
+    }
+   ]
+  }
+ ],
+ "subject": {
+  "reference": "Patient/Patient-SalimaPomfrets-Example",
+  "identifier": {
+   "system": "https://fhir.nhs.uk/Id/nhs-number",
+   "value": "8449303444"
+  }
+ },
+ "authoredOn": "2023-10-01T10:08:00Z",
+ "requester": {
+  "reference": "PractitionerRole/PractitionerRole-GeneSmith-Example"
+ },
+ "reasonCode": [],
+ "supportingInfo": [
+  {
+   "reference": "Observation/Observation-GenomicEthnicity-Example"
+  },
+  {
+   "reference": "Condition/Condition-MonogenicHearingLoss-Example"
+  },
+  {
+   "reference": "Observation/Observation-NoPregnancy-Example"
+  },
+  {
+   "reference": "Observation/Observation-NonConsanguinousUnion-Example"
+  },
+  {
+   "reference": "Observation/Observation-NoBoneMarrowTransplant-Example"
+  },
+  {
+   "reference": "Observation/Observation-NoTransfusion-Example"
+  }
+ ],
+ "note": [
+  {
+   "text": "No sample required."
+  },
+  {
+   "text": "No family history of genomic testing"
+  },
+  {
+   "text": "Free text for diagnosis/reason for referral, relevant information including family history, phenotypic details/ HPO Terms/ For example: new evidence available that will likely change the classification of the variant- identification of additional patient(s) with the same genetic variant"
+  }
+ ]
 }
