@@ -36,7 +36,7 @@
 		{
 			"coding": [
 				{
-					"system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
+					"system": "https://fhir.nhs.uk/CodeSystem/cancer-testing-genomics",
 					"code": "diagnostic",
 					"display": "Diagnostic"
 				}
@@ -50,7 +50,7 @@
 				"system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
 				"code": "R67.2",
 				"display": "Monogenic hearing loss",
-        "version": "7"
+				"version": "7"
 			}
 		]
 	},

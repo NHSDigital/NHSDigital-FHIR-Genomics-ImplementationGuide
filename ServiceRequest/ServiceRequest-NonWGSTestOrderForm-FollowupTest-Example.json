@@ -1,101 +1,101 @@
 {
-  "resourceType": "ServiceRequest",
-  "id": "ServiceRequest-NonWGSTestOrderForm-FollowupTest-Example",
-  "extension": [
-    {
-      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage",
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory",
-            "code": "nhs-england",
-            "display": "NHS England"
-          }
-        ]
-      }
-    }
-  ],
-  "status": "active",
-  "intent": "order",
-  "category": [
-    {
-      "coding": [
-        {
-          "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory",
-          "code": "rare-disease-non-wgs",
-          "display": "Rare Disease - Non-WGS"
-        }
-      ]
-    },
-    {
-      "coding": [
-        {
-          "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
-        "code": "diagnostic",
-        "display": "Diagnostic"
-        }
-      ]
-    }
-  ],
-  "priority": "routine",
-  "code": {
+ "resourceType": "ServiceRequest",
+ "id": "ServiceRequest-NonWGSTestOrderForm-FollowupTest-Example",
+ "extension": [
+  {
+   "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage",
+   "valueCodeableConcept": {
     "coding": [
-      {
-        "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
-        "code": "R187",
-        "display": "Cystic Fibrosis",
-        "version": "7"
-      }
+     {
+      "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory",
+      "code": "nhs-england",
+      "display": "NHS England"
+     }
     ]
+   }
+  }
+ ],
+ "status": "active",
+ "intent": "order",
+ "category": [
+  {
+   "coding": [
+    {
+     "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory",
+     "code": "rare-disease-non-wgs",
+     "display": "Rare Disease - Non-WGS"
+    }
+   ]
   },
-  "subject": {
-    "reference": "Patient/Patient-AnitaLamberts-Example",
-    "identifier": {
-      "system": "https://fhir.nhs.uk/Id/nhs-number",
-      "value": "8449303649"
+  {
+   "coding": [
+    {
+     "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
+     "code": "diagnostic",
+     "display": "Diagnostic"
     }
-  },
-  "authoredOn": "2023-11-01T10:00:00Z",
-  "requester": {
-    "reference": "PractitionerRole/PractitionerRole-GeneSmith-Example"
-  },
-  "performer": [
-    {
-      "identifier": {
-        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-        "value": "RJ1"
-      }
-    }
-  ],
-  "supportingInfo": [
-    {
-      "reference": "Observation/Observation-GenomicEthnicity-Example"
-    },
-    {
-      "reference": "Observation/Observation-NoPregnancy-Example"
-    },
-    {
-      "reference": "Condition/Condition-MonogenicHearingLoss-Example"
-    },
-    {
-      "reference": "Observation/Observation-NonConsanguinousUnion-Example"
-    },
-    {
-      "reference": "Observation/Observation-NoBoneMarrowTransplant-Example"
-    },
-    {
-      "reference": "Observation/Observation-NoTransfusion-Example"
-    }
-  ],
-  "note": [
-    {
-      "text": "Specimen to be provided later"
-    },
-    {
-      "text": "No family history of genomic testing"
-    },
-    {
-      "text": "Free text for diagnosis/reason for referral, relevant information including family history, phenotypic details/ HPO Terms / For example: Adult with CT-proven bronchiectasis, chronic suppurative chest infection with colonisation by Pseudomonas and Staph aureus"
-    }
+   ]
+  }
+ ],
+ "priority": "routine",
+ "code": {
+  "coding": [
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
+    "code": "R187",
+    "display": "Cystic Fibrosis",
+    "version": "7"
+   }
   ]
+ },
+ "subject": {
+  "reference": "Patient/Patient-AnitaLamberts-Example",
+  "identifier": {
+   "system": "https://fhir.nhs.uk/Id/nhs-number",
+   "value": "8449303649"
+  }
+ },
+ "authoredOn": "2023-11-01T10:00:00Z",
+ "requester": {
+  "reference": "PractitionerRole/PractitionerRole-GeneSmith-Example"
+ },
+ "performer": [
+  {
+   "identifier": {
+    "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+    "value": "RJ1"
+   }
+  }
+ ],
+ "supportingInfo": [
+  {
+   "reference": "Observation/Observation-GenomicEthnicity-Example"
+  },
+  {
+   "reference": "Observation/Observation-NoPregnancy-Example"
+  },
+  {
+   "reference": "Condition/Condition-MonogenicHearingLoss-Example"
+  },
+  {
+   "reference": "Observation/Observation-NonConsanguinousUnion-Example"
+  },
+  {
+   "reference": "Observation/Observation-NoBoneMarrowTransplant-Example"
+  },
+  {
+   "reference": "Observation/Observation-NoTransfusion-Example"
+  }
+ ],
+ "note": [
+  {
+   "text": "Specimen to be provided later"
+  },
+  {
+   "text": "No family history of genomic testing"
+  },
+  {
+   "text": "Free text for diagnosis/reason for referral, relevant information including family history, phenotypic details/ HPO Terms / For example: Adult with CT-proven bronchiectasis, chronic suppurative chest infection with colonisation by Pseudomonas and Staph aureus"
+  }
+ ]
 }
