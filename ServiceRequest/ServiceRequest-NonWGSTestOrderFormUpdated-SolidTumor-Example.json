@@ -41,7 +41,7 @@
    "coding": [
     {
      "system": "https://fhir.nhs.uk/CodeSystem/cancer-testing-genomics",
-     "code": "relapse-reccurence",
+     "code": "relapse-recurrence",
      "display": "Relapse or recurrence"
     }
    ]
