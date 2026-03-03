@@ -64,7 +64,6 @@
  "requester": {
   "reference": "PractitionerRole/PractitionerRole-MarySmith-Example"
  },
- "reasonCode": [],
  "supportingInfo": [
   {
    "reference": "Observation/Observation-GenomicEthnicity-Example"

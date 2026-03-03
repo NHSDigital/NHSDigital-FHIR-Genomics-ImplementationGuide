@@ -41,7 +41,7 @@
     {
      "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
      "code": "predictive",
-     "display": "Ptredictive"
+     "display": "Predictive"
     }
    ]
   }
