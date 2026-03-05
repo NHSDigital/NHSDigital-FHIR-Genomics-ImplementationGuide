@@ -1,183 +1,179 @@
 {
-  "resourceType": "DiagnosticReport",
-  "id": "DiagnosticReport-GenomicVariantAssessment-Example",
-  "meta": {
-    "profile": [
-      "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-report",
-      "https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport",
-      "http://hl7.eu/fhir/laboratory/StructureDefinition/DiagnosticReport-eu-lab"
-    ]
-  },
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition",
-      "valueReference": {
-        "reference": "Composition/Composition-EULabGenomicReport-Example"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/recommended-action",
-      "valueReference": {
-        "reference": "Task/Task-FollowupRecommendationReport-Example",
-        "display": "Confirmatory testing recommended"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact",
-      "valueRelatedArtifact": {
-        "type": "citation",
-        "display": "Johnson et al 2012 (PMID22740598)"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact",
-      "valueRelatedArtifact": {
-        "type": "citation",
-        "display": "Foley et al 2014 (PMID22740598)"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-report-note",
-      "valueAnnotation": {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/annotation-code",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/coded-annotation-types-cs",
-                  "code": "test-disclaimer"
-                }
-              ]
-            }
-          }
-        ],
-        "text": "Proband whole genome sequencing by the 100,000 Genomics Project with analysis of the PanelApp Paediatric motor neuronopathies (version 1.6) gene panel followed by in-house Sanger sequencing confirmation. Please note that the sensitivity of this test is limited by the types of detectable pathogenic variants, regions of low read depth coverage and incomplete ascertainment of disease-gene associations. Further information including read depth coverage is available on request. *Variants are classified using the ACMG/AMP guidelines (Richards et al 2015 PMID25741868)."
-      }
-    }
-  ],
-  "basedOn": [
-    {
-      "reference": "ServiceRequest/ServiceRequest-WGSTestOrderFormUpdated-TrioTesting-Example"
-    }
-  ],
-  "status": "final",
-  "category": [
-    {
-      "coding": [
-        {
-          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-          "code": "GE"
-        }
-      ]
-    },
-    {
-      "coding": [
-        {
-          "system": "http://snomed.info/sct",
-          "code": "1236877003",
-          "display": "Genetic pathology"
-        }
-      ]
-    }
-  ],
-  "code": {
-    "coding": [
-      {
-        "system": "http://loinc.org",
-        "code": "51969-4",
-        "display": "Genetic analysis report"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "code": "1054161000000101",
-        "display": "Genetic report"
-      }
-    ]
-  },
-  "subject": {
-    "reference": "Patient/Patient-PheobeSmitham-Example"
-  },
-  "effectiveDateTime": "2023-10-16T00:00:00-05:00",
-  "issued": "2023-09-16T00:00:00-05:00",
-  "performer": [
-    {
-      "identifier": {
-        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-        "value": "R0A"
-      }
-    }
-  ],
-  "specimen": [
-    {
-      "reference": "Specimen/Specimen-PheobeSmitham-Example"
-    }
-  ],
-  "media": [
-    {
-      "link": {
-        "type":"DocumentReference",
-        "display": "Reference to DocumentReferences are not supported within media.link in DiagnosticReport R4 StructureDefinition.",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
-            "valueCode": "unsupported"
-          }
-        ]
-      },
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media.link",
-          "valueReference": {
-            "reference": "DocumentReference/DocumentReference-StructureReporting-Example"
-          }
-        }
-      ]
-    }
-  ],
-  "result": [
-    {
-      "reference": "Observation/Observation-GenomicsVariantSLC52A2-Example",
-      "display": "Brown-Vialetto-Van Laere syndrome type 2"
-    },
-    {
-      "reference": "Observation/Observation-GenomicTherapeuticImplication-Example"
-    }
-  ],
-  "conclusion": "Pheobe is homozygous for a pathogenic SLC52A2 missense variant (details below) previously reported by Johnson et al 2012 (PMID22740598). Biallelic pathogenic SLC52A2 variants cause autosomal recessive Brown-Vialetto-Van Laere syndrome type 2 (MIM614707).",
-  "conclusionCode": [
-    {
-      "coding": [
-        {
-          "system": "http://loinc.org",
-          "code": "LA6576-8",
-          "display": "Positive"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "10828004",
-          "display": "Positive"
-        }
-      ]
-    },
-    {
-      "coding": [
-        {
-          "system": "http://snomed.info/sct",
-          "code": "699866005",
-          "display": "Brown-Vialetto-Van Laere syndrome"
-        }
-      ]
-    }
-  ],
-  "presentedForm": [
-    {
-      "contentType": "application/pdf",
-      "language": "en-GB",
-      "url": "https://cts5j3.axshare.com/?id=mhxwul&p=final_report_issued_test_complete&g=1",
-      "size": 43272,
-      "title": "Genomic Report for Pheobe Smitham",
-      "creation": "2023-10-16"
-    }
+ "resourceType": "DiagnosticReport",
+ "id": "DiagnosticReport-GenomicVariantAssessment-Example",
+ "meta": {
+  "profile": [
+   "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-report",
+   "https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport",
+   "http://hl7.eu/fhir/laboratory/StructureDefinition/DiagnosticReport-eu-lab"
   ]
+ },
+ "extension": [
+  {
+   "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition",
+   "valueReference": {
+    "reference": "Composition/Composition-EULabGenomicReport-Example"
+   }
+  },
+  {
+   "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/recommended-action",
+   "valueReference": {
+    "reference": "Task/Task-FollowupRecommendationReport-Example",
+    "display": "Confirmatory testing recommended"
+   }
+  },
+  {
+   "url": "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact",
+   "valueRelatedArtifact": {
+    "type": "citation",
+    "display": "Johnson et al 2012 (PMID22740598)"
+   }
+  },
+  {
+   "url": "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact",
+   "valueRelatedArtifact": {
+    "type": "citation",
+    "display": "Foley et al 2014 (PMID22740598)"
+   }
+  },
+  {
+   "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-report-note",
+   "valueAnnotation": {
+    "extension": [
+     {
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/annotation-code",
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/coded-annotation-types-cs",
+         "code": "test-disclaimer"
+        }
+       ]
+      }
+     }
+    ],
+    "text": "Proband whole genome sequencing by the 100,000 Genomics Project with analysis of the PanelApp Paediatric motor neuronopathies (version 1.6) gene panel followed by in-house Sanger sequencing confirmation. Please note that the sensitivity of this test is limited by the types of detectable pathogenic variants, regions of low read depth coverage and incomplete ascertainment of disease-gene associations. Further information including read depth coverage is available on request. *Variants are classified using the ACMG/AMP guidelines (Richards et al 2015 PMID25741868)."
+   }
+  }
+ ],
+ "basedOn": [
+  {
+   "reference": "ServiceRequest/ServiceRequest-WGSTestOrderFormUpdated-TrioTesting-Example"
+  }
+ ],
+ "status": "final",
+ "category": [
+  {
+   "coding": [
+    {
+     "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+     "code": "GE"
+    }
+   ]
+  },
+  {
+   "coding": [
+    {
+     "system": "http://snomed.info/sct",
+     "code": "1236877003",
+     "display": "Genetic pathology"
+    }
+   ]
+  }
+ ],
+ "code": {
+  "coding": [
+   {
+    "system": "http://loinc.org",
+    "code": "51969-4",
+    "display": "Genetic analysis report"
+   },
+   {
+    "system": "http://snomed.info/sct",
+    "code": "1054161000000101",
+    "display": "Genetic report"
+   }
+  ]
+ },
+ "subject": {
+  "reference": "Patient/Patient-PheobeSmitham-Example"
+ },
+ "effectiveDateTime": "2023-10-16T00:00:00-05:00",
+ "issued": "2023-09-16T00:00:00-05:00",
+ "performer": [
+  {
+   "identifier": {
+    "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+    "value": "R0A"
+   }
+  }
+ ],
+ "specimen": [
+  {
+   "reference": "Specimen/Specimen-PheobeSmitham-Example"
+  }
+ ],
+ "media": [
+  {
+   "link": {
+    "extension": [
+     {
+      "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media.link",
+      "valueReference": {
+       "reference": "DocumentReference/DocumentReference-StructureReporting-Example"
+      }
+     },
+     {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unsupported"
+     }
+    ]
+   }
+  }
+ ],
+ "result": [
+  {
+   "reference": "Observation/Observation-GenomicsVariantSLC52A2-Example",
+   "display": "Brown-Vialetto-Van Laere syndrome type 2"
+  },
+  {
+   "reference": "Observation/Observation-GenomicTherapeuticImplication-Example"
+  }
+ ],
+ "conclusion": "Pheobe is homozygous for a pathogenic SLC52A2 missense variant (details below) previously reported by Johnson et al 2012 (PMID22740598). Biallelic pathogenic SLC52A2 variants cause autosomal recessive Brown-Vialetto-Van Laere syndrome type 2 (MIM614707).",
+ "conclusionCode": [
+  {
+   "coding": [
+    {
+     "system": "http://loinc.org",
+     "code": "LA6576-8",
+     "display": "Positive"
+    },
+    {
+     "system": "http://snomed.info/sct",
+     "code": "10828004",
+     "display": "Positive"
+    }
+   ]
+  },
+  {
+   "coding": [
+    {
+     "system": "http://snomed.info/sct",
+     "code": "699866005",
+     "display": "Brown-Vialetto-Van Laere syndrome"
+    }
+   ]
+  }
+ ],
+ "presentedForm": [
+  {
+   "contentType": "application/pdf",
+   "language": "en-GB",
+   "url": "https://cts5j3.axshare.com/?id=mhxwul&p=final_report_issued_test_complete&g=1",
+   "size": 43272,
+   "title": "Genomic Report for Pheobe Smitham",
+   "creation": "2023-10-16"
+  }
+ ]
 }
