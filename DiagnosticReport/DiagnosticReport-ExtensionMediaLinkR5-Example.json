@@ -17,22 +17,16 @@
   },
   "media": [
    {
-    "extension": [
-     {
-      "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media.link",
-      "valueReference": {
-       "reference": "DocumentReference/UKCore-DocumentReference-ECG-Example"
-      }
-     }
-    ],
     "link": {
      "extension": [
       {
-       "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
-       "valueCode": "unsupported"
+       "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media.link",
+       "valueReference": {
+        "reference": "DocumentReference/UKCore-DocumentReference-ECG-Example"
+       }
       }
      ],
-     "display": "unsupported"
+     "display": "ECG PDF (DocumentReference via backported extension)"
     }
    }
   ]
