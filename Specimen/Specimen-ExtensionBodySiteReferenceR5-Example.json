@@ -1,0 +1,48 @@
+{
+ "resourceType": "Specimen",
+ "id": "Specimen-ExtensionBodySiteReferenceR5-Example",
+ "text": {
+  "status": "additional",
+  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">An example to illustrate the use of the BodySiteReference extension</div>"
+ },
+ "status": "available",
+ "type": {
+  "coding": [
+   {
+    "system": "http://snomed.info/sct",
+    "code": "119297000",
+    "display": "Blood specimen"
+   }
+  ]
+ },
+ "subject": {
+  "reference": "Patient/UKCore-Patient-RichardSmith-Example"
+ },
+ "receivedTime": "2016-02-05T11:10:00Z",
+ "collection": {
+  "collector": {
+   "reference": "Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example"
+  },
+  "collectedDateTime": "2016-02-09T16:00:00Z",
+  "method": {
+   "coding": [
+    {
+     "system": "http://snomed.info/sct",
+     "code": "28520004",
+     "display": "Venipuncture for blood test"
+    }
+   ]
+  },
+  "bodySite": {
+   "extension": [
+    {
+     "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BodySiteReference",
+     "valueReference": {
+      "reference": "BodyStructure/UKCore-BodyStructure-MedianCubitalVeinExample"
+     }
+    }
+   ],
+   "text": "vein on the inner left arm"
+  }
+ }
+}

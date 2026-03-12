@@ -1,0 +1,39 @@
+ {
+  "resourceType": "DiagnosticReport",
+  "id": "DiagnosticReport-ExtensionMediaLinkR5-Example",
+  "text": {
+   "status": "additional",
+   "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">An example to illustrate the backport extension to allow referencing a DocumentReference instance within DiagnosticReport.media.link</div>"
+  },
+  "status": "preliminary",
+  "code": {
+   "coding": [
+    {
+     "system": "http://snomed.info/sct",
+     "code": "1129261000000102",
+     "display": "Cardiac electrophysiology report"
+    }
+   ]
+  },
+  "media": [
+   {
+    "extension": [
+     {
+      "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media.link",
+      "valueReference": {
+       "reference": "DocumentReference/UKCore-DocumentReference-ECG-Example"
+      }
+     }
+    ],
+    "link": {
+     "extension": [
+      {
+       "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+       "valueCode": "unsupported"
+      }
+     ],
+     "display": "unsupported"
+    }
+   }
+  ]
+ }
