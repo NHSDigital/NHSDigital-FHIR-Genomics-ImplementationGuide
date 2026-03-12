@@ -287,6 +287,15 @@
         "display": "Rare Disease - Non-WGS"
        }
       ]
+     },
+     {
+      "coding": [
+       {
+        "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
+        "code": "prenatal-diagnosis",
+        "display": "Prenatal diagnosis"
+       }
+      ]
      }
     ],
     "priority": "urgent",
@@ -323,17 +332,6 @@
        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
        "value": "699N0"
       }
-     }
-    ],
-    "reasonCode": [
-     {
-      "coding": [
-       {
-        "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
-        "code": "staging-or-prognosis",
-        "display": "Staging or Prognosis"
-       }
-      ]
      }
     ],
     "supportingInfo": [

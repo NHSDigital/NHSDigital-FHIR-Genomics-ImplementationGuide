@@ -1,116 +1,116 @@
 {
-  "resourceType": "ServiceRequest",
-  "id": "ServiceRequest-NonWGSTestOrderForm-HaemOncologyUpdated-Example",
-  "meta": {
-    "versionId": "2",
-    "lastUpdated": "2023-09-04T15:43:00Z"
-  },
-  "extension": [
-    {
-      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage",
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory",
-            "code": "nhs-england",
-            "display": "NHS England"
-          }
-        ]
-      }
-    }
-  ],
-  "status": "active",
-  "intent": "order",
-  "category": [
-    {
-      "coding": [
-        {
-          "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory",
-          "code": "cancer-non-wgs",
-          "display": "Cancer - Non-WGS"
-        }
-      ]
-    },
-    {
-      "coding": [
-        {
-          "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
-          "code": "diagnostic",
-          "display": "Diagnostic"
-        }
-      ]
-    }
-  ],
-  "priority": "routine",
-  "code": {
+ "resourceType": "ServiceRequest",
+ "id": "ServiceRequest-NonWGSTestOrderForm-HaemOncologyUpdated-Example",
+ "meta": {
+  "versionId": "2",
+  "lastUpdated": "2023-09-04T15:43:00Z"
+ },
+ "extension": [
+  {
+   "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage",
+   "valueCodeableConcept": {
     "coding": [
-      {
-        "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
-        "code": "M91.4",
-        "display": "Acute Lymphoblastic Leukaemia (FISH)",
-        "version": "9"
-      }
+     {
+      "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory",
+      "code": "nhs-england",
+      "display": "NHS England"
+     }
     ]
+   }
+  }
+ ],
+ "status": "active",
+ "intent": "order",
+ "category": [
+  {
+   "coding": [
+    {
+     "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory",
+     "code": "cancer-non-wgs",
+     "display": "Cancer - Non-WGS"
+    }
+   ]
   },
-  "subject": {
-    "reference": "Patient/Patient-PatrickSammy-Example",
-    "identifier": {
-      "system": "https://fhir.nhs.uk/Id/nhs-number",
-      "value": "9449307873"
+  {
+   "coding": [
+    {
+     "system": "https://fhir.nhs.uk/CodeSystem/cancer-testing-genomics",
+     "code": "diagnostic",
+     "display": "Diagnostic"
     }
-  },
-  "authoredOn": "2023-09-03T10:00:00Z",
-  "requester": {
-    "reference": "PractitionerRole/PractitionerRole-HazelSmithPathology-Example"
-  },
-  "performer": [
-    {
-      "identifier": {
-        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-        "value": "RR8"
-      }
-    }
-  ],
-  "supportingInfo": [
-    {
-      "reference": "Observation/Observation-NoTransplant-Example"
-    },
-    {
-      "reference": "Observation/Observation-BlastPercentage-Example"
-    },
-    {
-      "reference": "Observation/Observation-Bruising-Example"
-    },
-    {
-      "reference": "Observation/Observation-Haemoglobin-Example"
-    },
-    {
-      "reference": "Observation/Observation-Neutrophils-Example"
-    },
-    {
-      "reference": "Observation/Observation-NucleatedCellCount-Example"
-    },
-    {
-      "reference": "Observation/Observation-Platelets-Example"
-    },
-    {
-      "reference": "Observation/Observation-WhiteBloodCell-Example"
-    },
-    {
-      "reference": "Condition/Condition-Hepatosplenomegaly-Example"
-    }
-  ],
-  "specimen": [
-    {
-      "reference": "Specimen/Specimen-BoneMarrowAspiration-Example"
-    }
-  ],
-  "note": [
-    {
-      "text": "M code modified to M91.4. Appropriate testing"
-    },
-    {
-      "text": "No Previous Relevant Test Report"
-    }
+   ]
+  }
+ ],
+ "priority": "routine",
+ "code": {
+  "coding": [
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
+    "code": "M91.4",
+    "display": "Acute Lymphoblastic Leukaemia (FISH)",
+    "version": "9"
+   }
   ]
+ },
+ "subject": {
+  "reference": "Patient/Patient-PatrickSammy-Example",
+  "identifier": {
+   "system": "https://fhir.nhs.uk/Id/nhs-number",
+   "value": "9449307873"
+  }
+ },
+ "authoredOn": "2023-09-03T10:00:00Z",
+ "requester": {
+  "reference": "PractitionerRole/PractitionerRole-HazelSmithPathology-Example"
+ },
+ "performer": [
+  {
+   "identifier": {
+    "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+    "value": "RR8"
+   }
+  }
+ ],
+ "supportingInfo": [
+  {
+   "reference": "Observation/Observation-NoTransplant-Example"
+  },
+  {
+   "reference": "Observation/Observation-BlastPercentage-Example"
+  },
+  {
+   "reference": "Observation/Observation-Bruising-Example"
+  },
+  {
+   "reference": "Observation/Observation-Haemoglobin-Example"
+  },
+  {
+   "reference": "Observation/Observation-Neutrophils-Example"
+  },
+  {
+   "reference": "Observation/Observation-NucleatedCellCount-Example"
+  },
+  {
+   "reference": "Observation/Observation-Platelets-Example"
+  },
+  {
+   "reference": "Observation/Observation-WhiteBloodCell-Example"
+  },
+  {
+   "reference": "Condition/Condition-Hepatosplenomegaly-Example"
+  }
+ ],
+ "specimen": [
+  {
+   "reference": "Specimen/Specimen-BoneMarrowAspiration-Example"
+  }
+ ],
+ "note": [
+  {
+   "text": "M code modified to M91.4. Appropriate testing"
+  },
+  {
+   "text": "No Previous Relevant Test Report"
+  }
+ ]
 }

@@ -30,9 +30,9 @@
 		{
 			"coding": [
 				{
-					"system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
-					"code": "staging-or-prognosis",
-					"display": "Staging or Prognosis"
+					"system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
+					"code": "prenatal-diagnosis",
+					"display": "Prenatal diagnosis"
 				}
 			]
 		}
@@ -44,7 +44,7 @@
 				"system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
 				"code": "R21",
 				"display": "Fetal anomalies with a likely genetic cause",
-        "version": "7"
+				"version": "7"
 			}
 		]
 	},
@@ -90,24 +90,24 @@
 		{
 			"reference": "Procedure/Procedure-InVitroFertilisation-Example"
 		},
-    {
-      "reference": "RelatedPerson/RelatedPerson-RyanneBoulder-Example"
-    },
-    {
-      "reference": "Patient/Patient-RyanneBoulder-Example"
-    },
-    {
-      "reference": "RelatedPerson/RelatedPerson-RyanneBoulderPartner-Example"
-    },
-    {
-      "reference": "Patient/Patient-RyanneBoulderPartner-Example"
-    },
-    {
-      "reference": "Specimen/Specimen-BloodEDTA-Example"
-    },
-    {
-      "reference": "Specimen/Specimen-RyanneBoulderSaliva-Example"
-    }
+		{
+			"reference": "RelatedPerson/RelatedPerson-RyanneBoulder-Example"
+		},
+		{
+			"reference": "Patient/Patient-RyanneBoulder-Example"
+		},
+		{
+			"reference": "RelatedPerson/RelatedPerson-RyanneBoulderPartner-Example"
+		},
+		{
+			"reference": "Patient/Patient-RyanneBoulderPartner-Example"
+		},
+		{
+			"reference": "Specimen/Specimen-BloodEDTA-Example"
+		},
+		{
+			"reference": "Specimen/Specimen-RyanneBoulderSaliva-Example"
+		}
 	],
 	"note": [
 		{

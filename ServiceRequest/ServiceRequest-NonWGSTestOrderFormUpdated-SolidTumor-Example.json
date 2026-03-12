@@ -40,9 +40,9 @@
   {
    "coding": [
     {
-     "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
-     "code": "relapse",
-     "display": "Relapse"
+     "system": "https://fhir.nhs.uk/CodeSystem/cancer-testing-genomics",
+     "code": "relapse-recurrence",
+     "display": "Relapse or recurrence"
     }
    ]
   }

@@ -1,123 +1,121 @@
 {
-  "resourceType": "PlanDefinition",
-  "id": "DGTS-PlanDefinition-Example",
-  "url": "http://fhir.nhs.uk/PlanDefinition/TP231",
-  "identifier": [
-    {
-      "system": "https://fhir.nhs.uk/Id/England-DigitalGenomicTestServices",
-      "value": "TP231"
-    },
-    {
-      "system": "https://fhir.nhs.uk/Id/England-GenomicTestDirectory",
-      "value": "R47",
-      "use": "old"
-    }
-  ],
-  "title": "Angelman syndrome",
-  "status": "active",
-  "experimental": false,
-  "version": "1.0",
-  "useContext": [
-    {
-      "code": {
-        "code": "user",
-        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
-      },
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "code": "400",
-            "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode",
-            "display": "Neurology"
-            
-          }
-        ]
-      }
-    },
-    {
-      "code": {
-        "code": "user",
-        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
-      },
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "code": "420",
-            "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode",
-            "display": "Paediatrics"
-            
-          }
-        ]
-      }
-    },
-    {
-      "code": {
-        "code": "user",
-        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
-      },
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "code": "311",
-            "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode",
-            "display": "Clinical Genetics"
-            
-          }
-        ]
-      }
-    },
-    {
-      "code": {
-        "code": "focus",
-        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
-      },
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "code": "diagnostic",
-            "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics"
-          }
-        ]
-      }
-    }
-  ],
-  "goal": [
-    {
-      "description": {
-        "coding": [
-          {
-            "code": "rare-disease-non-wgs",
-            "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory",
-            "display": "Rare Disease - Non-WGS"
-          }
-        ]
-      }
-    }
-  ],
-  "action": [
-    {
-      "definitionCanonical": "http://fhir.nhs.uk/ActivityDefinition/GT1"
-    },
-    {
-      "definitionCanonical": "http://fhir.nhs.uk/ActivityDefinition/GT36"
-    },
-    {
-      "definitionCanonical": "http://fhir.nhs.uk/ActivityDefinition/GT103"
-    },
-    {
-      "definitionCanonical": "http://fhir.nhs.uk/ActivityDefinition/GT417"
-    },
-    {
-      "definitionCanonical": "http://fhir.nhs.uk/ActivityDefinition/GT732"
-    },
-    {
-      "definitionCanonical": "http://fhir.nhs.uk/ActivityDefinition/GT858"
-    },
-    {
-      "definitionCanonical": "http://fhir.nhs.uk/ActivityDefinition/GT897"
-    },
-    {
-      "definitionCanonical": "http://fhir.nhs.uk/ActivityDefinition/GT1124"
-    }
-  ]
+ "resourceType": "PlanDefinition",
+ "id": "DGTS-PlanDefinition-Example",
+ "url": "http://fhir.nhs.uk/PlanDefinition/TP231",
+ "identifier": [
+  {
+   "system": "https://fhir.nhs.uk/Id/England-DigitalGenomicTestServices",
+   "value": "TP231"
+  },
+  {
+   "system": "https://fhir.nhs.uk/Id/England-GenomicTestDirectory",
+   "value": "R47",
+   "use": "old"
+  }
+ ],
+ "title": "Angelman syndrome",
+ "status": "active",
+ "experimental": false,
+ "version": "1.0",
+ "useContext": [
+  {
+   "code": {
+    "code": "user",
+    "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
+   },
+   "valueCodeableConcept": {
+    "coding": [
+     {
+      "code": "400",
+      "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode",
+      "display": "Neurology"
+     }
+    ]
+   }
+  },
+  {
+   "code": {
+    "code": "user",
+    "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
+   },
+   "valueCodeableConcept": {
+    "coding": [
+     {
+      "code": "420",
+      "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode",
+      "display": "Paediatrics"
+     }
+    ]
+   }
+  },
+  {
+   "code": {
+    "code": "user",
+    "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
+   },
+   "valueCodeableConcept": {
+    "coding": [
+     {
+      "code": "311",
+      "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode",
+      "display": "Clinical Genetics"
+     }
+    ]
+   }
+  },
+  {
+   "code": {
+    "code": "focus",
+    "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
+   },
+   "valueCodeableConcept": {
+    "coding": [
+     {
+      "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
+      "code": "diagnostic",
+      "display": "Diagnostic"
+     }
+    ]
+   }
+  }
+ ],
+ "goal": [
+  {
+   "description": {
+    "coding": [
+     {
+      "code": "rare-disease-non-wgs",
+      "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory",
+      "display": "Rare Disease - Non-WGS"
+     }
+    ]
+   }
+  }
+ ],
+ "action": [
+  {
+   "definitionCanonical": "http://fhir.nhs.uk/ActivityDefinition/GT1"
+  },
+  {
+   "definitionCanonical": "http://fhir.nhs.uk/ActivityDefinition/GT36"
+  },
+  {
+   "definitionCanonical": "http://fhir.nhs.uk/ActivityDefinition/GT103"
+  },
+  {
+   "definitionCanonical": "http://fhir.nhs.uk/ActivityDefinition/GT417"
+  },
+  {
+   "definitionCanonical": "http://fhir.nhs.uk/ActivityDefinition/GT732"
+  },
+  {
+   "definitionCanonical": "http://fhir.nhs.uk/ActivityDefinition/GT858"
+  },
+  {
+   "definitionCanonical": "http://fhir.nhs.uk/ActivityDefinition/GT897"
+  },
+  {
+   "definitionCanonical": "http://fhir.nhs.uk/ActivityDefinition/GT1124"
+  }
+ ]
 }
