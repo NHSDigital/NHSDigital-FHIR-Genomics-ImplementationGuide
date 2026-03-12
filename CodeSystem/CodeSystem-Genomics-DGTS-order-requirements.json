@@ -1,0 +1,50 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "DGTS-order-requirements-genomics",
+  "url": "https://fhir.nhs.uk/CodeSystem/DGTS-order-requirements-genomics",
+  "version": "0.1.0",
+  "name": "DGTSOrderRequirementsGenomics",
+  "title": "DGTS Order Requirements Genomics",
+  "status": "draft",
+  "date": "2026-02-26T00:00:00.000Z",
+  "publisher": "NHS England",
+  "contact": [
+    {
+      "name": "NHS England",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "interoperabilityteam@nhs.net",
+          "use": "work",
+          "rank": 1
+        }
+      ]
+    }
+  ],
+  "description": "CodeSystem used to enumerate the DGTS fields to be populated in Library resources, as parameters",
+  "copyright": "Copyright © 2026+ NHS England Licensed under the Apache License, Version 2.0 (the \\\"License\\\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \\\"AS IS\\\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html.",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "target_disease_required",
+      "display": "Target Disease Required",
+      "definition": "Indicates whether the requester must provide the patient's disease as part of the information contained in the test request. Generally, required for multipurpose tests. A value of 1 indicates yes, 0 indicates no."
+    },
+    {
+      "code": "target_gene_required",
+      "display": "Target Gene Required",
+      "definition": "Indicates whether the requester must provide the patient's target gene as part of the information contained in the test request. Generally, required for multipurpose tests."
+    },
+    {
+      "code": "target_variant_required",
+      "display": "Target Variant Required",
+      "definition": "Indicates whether the requester must provide the patient's target variant as part of the information contained in the test request. Generally, required for multipurpose tests."
+    },
+    {
+      "code": "additional_panels_available",
+      "display": "Additional Panels Available",
+      "definition": "Indicates whether a requester can request additional panels as part of their test request, must request at least one additional panel, or cannot request additional panels."
+    }
+  ]
+}
