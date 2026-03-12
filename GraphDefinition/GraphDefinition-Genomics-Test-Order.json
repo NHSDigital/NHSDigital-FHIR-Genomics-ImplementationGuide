@@ -6,12 +6,12 @@
   "version": "0.2.0",
   "status": "draft",
   "date": "2024-08-09",
-  "publisher" : "NHS England",
+  "publisher": "NHS England",
   "description": "GraphDefinition for defining and retrieving the full set of resources relevant to a Genomic Test Order",
   "start": "ServiceRequest",
   "link": [
     {
-      "path": "ServiceRequest.extension.valueReference",
+      "path": "ServiceRequest.extension('http://fhir.nhs.uk/StructureDefinition/extension-genomics-additionalContact').valueReference",
       "sliceName": "additionalContact",
       "description": "Link to additional contacts for request",
       "min": 0,
@@ -85,14 +85,14 @@
                   "params": "link={ref}"
                 }
               ]
-            } 
+            }
           ]
         },
         {
           "type": "Observation",
           "link": [
             {
-              "path": "Observation.extension.valueReference",
+              "path": "Observation.extension('http://hl7.org/fhir/StructureDefinition/bodySite').valueReference",
               "description": "Optional link to body structure related to the observation",
               "min": 0,
               "max": "1",
@@ -171,7 +171,7 @@
           "type": "FamilyMemberHistory",
           "link": [
             {
-              "path": "FamilyMemberHistory.extension.valueReference",
+              "path": "FamilyMemberHistory.extension('http://hl7.org/fhir/StructureDefinition/family-member-history-genetics-observation').valueReference",
               "sliceName": "family-member-history-genetics-observation",
               "description": "Optional link to observations related to a FamilyMemberHistory",
               "min": 0,
@@ -183,7 +183,7 @@
               ]
             },
             {
-              "path": "FamilyMemberHistory.extension.valueReference",
+              "path": "FamilyMemberHistory.extension('http://hl7.org/fhir/StructureDefinition/familymemberhistory-patient-record').valueReference",
               "sliceName": "familymemberhistory-patient-record",
               "description": "Optional link to Patient resources for related family members",
               "min": 0,
@@ -301,8 +301,7 @@
               ]
             },
             {
-              "path": "Specimen.collection.bodySite.extension.valueReference",
-              "sliceName": "bodySiteReference",
+              "path": "Specimen.collection.bodySite.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.bodySite').valueReference",
               "description": "Link to the body structure detailing the morphology and topography of the specimen",
               "min": 0,
               "max": "1",
@@ -359,8 +358,7 @@
               ]
             },
             {
-              "path": "Specimen.collection.bodySite.extension.valueReference",
-              "sliceName": "bodySiteReference",
+              "path": "Specimen.collection.bodySite.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.bodySite').valueReference",
               "description": "Link to the body structure detailing the morphology and topography of the specimen",
               "min": 0,
               "max": "1",
