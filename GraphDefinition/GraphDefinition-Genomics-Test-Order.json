@@ -11,7 +11,7 @@
   "start": "ServiceRequest",
   "link": [
     {
-      "path": "ServiceRequest.extension('http://fhir.nhs.uk/StructureDefinition/extension-genomics-additionalContact').valueReference",
+      "path": "ServiceRequest.extension.valueReference",
       "sliceName": "additionalContact",
       "description": "Link to additional contacts for request",
       "min": 0,
@@ -92,7 +92,7 @@
           "type": "Observation",
           "link": [
             {
-              "path": "Observation.extension('http://hl7.org/fhir/StructureDefinition/bodySite').valueReference",
+              "path": "Observation.extension.valueReference",
               "description": "Optional link to body structure related to the observation",
               "min": 0,
               "max": "1",
@@ -171,7 +171,7 @@
           "type": "FamilyMemberHistory",
           "link": [
             {
-              "path": "FamilyMemberHistory.extension('http://hl7.org/fhir/StructureDefinition/family-member-history-genetics-observation').valueReference",
+              "path": "FamilyMemberHistory.extension.valueReference",
               "sliceName": "family-member-history-genetics-observation",
               "description": "Optional link to observations related to a FamilyMemberHistory",
               "min": 0,
@@ -183,7 +183,7 @@
               ]
             },
             {
-              "path": "FamilyMemberHistory.extension('http://hl7.org/fhir/StructureDefinition/familymemberhistory-patient-record').valueReference",
+              "path": "FamilyMemberHistory.extension.valueReference",
               "sliceName": "familymemberhistory-patient-record",
               "description": "Optional link to Patient resources for related family members",
               "min": 0,
@@ -302,6 +302,7 @@
             },
             {
               "path": "Specimen.collection.bodySite.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.bodySite').valueReference",
+              "sliceName": "ext-R5-Specimen.co.bodySite",
               "description": "Link to the body structure detailing the morphology and topography of the specimen",
               "min": 0,
               "max": "1",
@@ -359,6 +360,7 @@
             },
             {
               "path": "Specimen.collection.bodySite.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.bodySite').valueReference",
+              "sliceName": "ext-R5-Specimen.co.bodySite",
               "description": "Link to the body structure detailing the morphology and topography of the specimen",
               "min": 0,
               "max": "1",

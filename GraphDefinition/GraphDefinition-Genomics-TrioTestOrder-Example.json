@@ -222,8 +222,8 @@
        ]
       },
       {
-       "path": "Specimen.collection.bodySite.extension.valueReference",
-       "sliceName": "bodySiteReference",
+       "path": "Specimen.collection.bodySite.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.bodySite').valueReference",
+       "sliceName": "ext-R5-Specimen.co.bodySite",
        "description": "Link to the body structure detailing the morphology and topography of the specimen",
        "min": 0,
        "max": "1",
@@ -341,8 +341,8 @@
        ]
       },
       {
-       "path": "Specimen.collection.bodySite.extension.valueReference",
-       "sliceName": "bodySiteReference",
+       "path": "Specimen.collection.bodySite.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.bodySite').valueReference",
+       "sliceName": "ext-R5-Specimen.co.bodySite",
        "description": "Link to the body structure detailing the morphology and topography of the specimen",
        "min": 0,
        "max": "1",
@@ -577,8 +577,8 @@
            ]
           },
           {
-           "path": "Specimen.collection.bodySite.extension.valueReference",
-           "sliceName": "bodySiteReference",
+           "path": "Specimen.collection.bodySite.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.bodySite').valueReference",
+           "sliceName": "ext-R5-Specimen.co.bodySite",
            "description": "Link to the body structure detailing the morphology and topography of the specimen",
            "min": 0,
            "max": "1",
@@ -696,8 +696,8 @@
            ]
           },
           {
-           "path": "Specimen.collection.bodySite.extension.valueReference",
-           "sliceName": "bodySiteReference",
+           "path": "Specimen.collection.bodySite.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.bodySite').valueReference",
+           "sliceName": "ext-R5-Specimen.co.bodySite",
            "description": "Link to the body structure detailing the morphology and topography of the specimen",
            "min": 0,
            "max": "1",
