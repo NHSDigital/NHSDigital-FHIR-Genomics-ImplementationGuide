@@ -122,12 +122,9 @@
       "valueReference": {
        "reference": "DocumentReference/DocumentReference-StructureReporting-Example"
       }
-     },
-     {
-      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
-      "valueCode": "unsupported"
      }
-    ]
+    ],
+    "display": "DocumentReference via backported extension"
    }
   }
  ],

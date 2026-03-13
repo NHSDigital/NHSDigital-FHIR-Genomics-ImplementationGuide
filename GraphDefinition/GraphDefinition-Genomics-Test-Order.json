@@ -6,7 +6,7 @@
   "version": "0.2.0",
   "status": "draft",
   "date": "2024-08-09",
-  "publisher" : "NHS England",
+  "publisher": "NHS England",
   "description": "GraphDefinition for defining and retrieving the full set of resources relevant to a Genomic Test Order",
   "start": "ServiceRequest",
   "link": [
@@ -85,7 +85,7 @@
                   "params": "link={ref}"
                 }
               ]
-            } 
+            }
           ]
         },
         {
@@ -301,8 +301,8 @@
               ]
             },
             {
-              "path": "Specimen.collection.bodySite.extension.valueReference",
-              "sliceName": "bodySiteReference",
+              "path": "Specimen.collection.bodySite.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.bodySite').valueReference",
+              "sliceName": "ext-R5-Specimen.co.bodySite",
               "description": "Link to the body structure detailing the morphology and topography of the specimen",
               "min": 0,
               "max": "1",
@@ -359,8 +359,8 @@
               ]
             },
             {
-              "path": "Specimen.collection.bodySite.extension.valueReference",
-              "sliceName": "bodySiteReference",
+              "path": "Specimen.collection.bodySite.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.bodySite').valueReference",
+              "sliceName": "ext-R5-Specimen.co.bodySite",
               "description": "Link to the body structure detailing the morphology and topography of the specimen",
               "min": 0,
               "max": "1",
