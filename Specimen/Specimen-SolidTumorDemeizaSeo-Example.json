@@ -50,7 +50,7 @@
     "bodySite": {
       "extension": [
         {
-          "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BodySiteReference",
+          "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.bodySite",
           "valueReference": {
             "reference": "BodyStructure/BodyStructure-BodySiteLocationAbdomen-Example"
           }
