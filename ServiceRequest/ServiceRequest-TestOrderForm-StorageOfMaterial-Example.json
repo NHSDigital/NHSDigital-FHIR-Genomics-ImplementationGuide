@@ -41,10 +41,15 @@
  "code": {
   "coding": [
    {
-    "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
-    "code": "R346",
-    "display": "DNA to be stored",
-    "version": "7"
+    "system": "https://fhir.nhs.uk/CodeSystem/England-DigitalGenomicTestService",
+    "code": "GT905",
+    "display": "DNA extraction and storage",
+    "extension": [
+     {
+      "url": "https://fhir.nhs.uk/England/StructureDefinition/Extension-GenomicTestCode-Version",
+      "valueDecimal": 1.0
+     }
+    ]
    }
   ]
  },
@@ -59,6 +64,23 @@
  "requester": {
   "reference": "PractitionerRole/PractitionerRole-OscarShields-Example"
  },
+ "reasonCode": [
+  {
+   "coding": [
+    {
+     "system": "https://fhir.nhs.uk/CodeSystem/England-DigitalGenomicTestService",
+     "code": "TP347",
+     "display": "Sample Storage",
+     "extension": [
+      {
+       "url": "https://fhir.nhs.uk/England/StructureDefinition/Extension-GenomicTestCode-Version",
+       "valueDecimal": 1.0
+      }
+     ]
+    }
+   ]
+  }
+ ],
  "supportingInfo": [
   {
    "reference": "Observation/Observation-GenomicEthnicity-Example"

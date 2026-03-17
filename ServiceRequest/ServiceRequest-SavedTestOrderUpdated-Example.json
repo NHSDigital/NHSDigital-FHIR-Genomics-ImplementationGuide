@@ -51,13 +51,18 @@
  "code": {
   "coding": [
    {
-    "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
-    "code": "R67.1",
-    "display": "Monogenic hearing loss",
-    "version": "7"
+    "system": "https://fhir.nhs.uk/CodeSystem/England-DigitalGenomicTestService",
+    "code": "GT488",
+    "display": "Monogenic hearing loss - Panel sequencing",
+    "extension": [
+     {
+      "url": "https://fhir.nhs.uk/England/StructureDefinition/Extension-GenomicTestCode-Version",
+      "valueDecimal": 1.0
+     }
+    ]
    }
   ]
- },
+},
  "subject": {
   "reference": "Patient/Patient-MeirLieberman-Example",
   "identifier": {
@@ -73,6 +78,23 @@
    "value": "9999999999"
   }
  },
+ "reasonCode": [
+  {
+   "coding": [
+    {
+     "system": "https://fhir.nhs.uk/CodeSystem/England-DigitalGenomicTestService",
+     "code": "TP439",
+     "display": "Monogenic hearing loss",
+     "extension": [
+      {
+       "url": "https://fhir.nhs.uk/England/StructureDefinition/Extension-GenomicTestCode-Version",
+       "valueDecimal": 1.0
+      }
+     ]
+    }
+   ]
+  }
+ ],
  "supportingInfo": [
   {
    "reference": "Observation/Observation-GenomicEthnicity-Example"

@@ -245,10 +245,15 @@
     "code": {
      "coding": [
       {
-       "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
-       "code": "R193.4",
-       "display": "Cystic renal disease",
-       "version": "7"
+       "system": "https://fhir.nhs.uk/CodeSystem/England-DigitalGenomicTestService",
+       "code": "GT497",
+       "display": "Cystic renal disease - WGS",
+       "extension": [
+        {
+         "url": "https://fhir.nhs.uk/England/StructureDefinition/Extension-GenomicTestCode-Version",
+         "valueDecimal": 1.0
+        }
+       ]
       }
      ]
     },
@@ -263,6 +268,23 @@
     "requester": {
      "reference": "PractitionerRole/PractitionerRole-HazelSmithRenal-Example"
     },
+    "reasonCode": [
+     {
+      "coding": [
+       {
+        "system": "https://fhir.nhs.uk/CodeSystem/England-DigitalGenomicTestService",
+        "code": "TP171",
+        "display": "Cystic renal disease",
+        "extension": [
+         {
+          "url": "https://fhir.nhs.uk/England/StructureDefinition/Extension-GenomicTestCode-Version",
+          "valueDecimal": 1.0
+         }
+        ]
+       }
+      ]
+     }
+    ],
     "supportingInfo": [
      {
       "reference": "Condition/Condition-MonogenicHearingLoss-Example"
@@ -367,10 +389,9 @@
     "code": {
      "coding": [
       {
-       "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
-       "code": "R67.2",
-       "display": "Monogenic hearing loss",
-       "version": "7"
+       "system": "https://fhir.nhs.uk/CodeSystem/England-DigitalGenomicTestService",
+       "code": "TP439",
+       "display": "Monogenic hearing loss"
       }
      ]
     },

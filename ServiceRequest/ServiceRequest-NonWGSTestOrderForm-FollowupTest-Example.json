@@ -38,16 +38,6 @@
   }
  ],
  "priority": "routine",
- "code": {
-  "coding": [
-   {
-    "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
-    "code": "R187",
-    "display": "Cystic Fibrosis",
-    "version": "7"
-   }
-  ]
- },
  "subject": {
   "reference": "Patient/Patient-AnitaLamberts-Example",
   "identifier": {
@@ -59,6 +49,23 @@
  "requester": {
   "reference": "PractitionerRole/PractitionerRole-GeneSmith-Example"
  },
+ "reasonCode": [
+  {
+   "coding": [
+    {
+     "system": "https://fhir.nhs.uk/CodeSystem/England-DigitalGenomicTestService",
+     "code": "TP46",
+     "display": "Cystic fibrosis - Diagnostic",
+     "extension": [
+      {
+       "url": "https://fhir.nhs.uk/England/StructureDefinition/Extension-GenomicTestCode-Version",
+       "valueDecimal": 1.0
+      }
+     ]
+    }
+   ]
+  }
+ ],
  "performer": [
   {
    "identifier": {

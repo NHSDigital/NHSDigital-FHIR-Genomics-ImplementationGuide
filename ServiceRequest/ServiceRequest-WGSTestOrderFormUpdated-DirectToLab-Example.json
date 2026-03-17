@@ -42,16 +42,6 @@
   }
  ],
  "priority": "urgent",
- "code": {
-  "coding": [
-   {
-    "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
-    "code": "R14",
-    "display": "Acutely unwell children with a likely monogenic disorder",
-    "version": "7"
-   }
-  ]
- },
  "subject": {
   "reference": "Patient/Patient-JamesMetcalfe-Example",
   "identifier": {
@@ -63,6 +53,23 @@
  "requester": {
   "reference": "PractitionerRole/PractitionerRole-EugeneSmith-Example"
  },
+ "reasonCode": [
+  {
+   "coding": [
+    {
+     "system": "https://fhir.nhs.uk/CodeSystem/England-DigitalGenomicTestService",
+     "code": "TP12",
+     "display": "Acutely unwell children with a likely monogenic disorder",
+     "extension": [
+      {
+       "url": "https://fhir.nhs.uk/England/StructureDefinition/Extension-GenomicTestCode-Version",
+       "valueDecimal": 1.0
+      }
+     ]
+    }
+   ]
+  }
+ ],
  "performer": [
   {
    "identifier": {

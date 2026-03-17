@@ -43,16 +43,6 @@
   }
  ],
  "priority": "routine",
- "code": {
-  "coding": [
-   {
-    "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
-    "code": "R134",
-    "display": "Familial Hypercholesterolaemia",
-    "version": "7"
-   }
-  ]
- },
  "subject": {
   "reference": "Patient/Patient-FayMutlow-Example",
   "identifier": {
@@ -64,6 +54,23 @@
  "requester": {
   "reference": "PractitionerRole/PractitionerRole-MarySmith-Example"
  },
+ "reasonCode": [
+  {
+   "coding": [
+    {
+     "system": "https://fhir.nhs.uk/CodeSystem/England-DigitalGenomicTestService",
+     "code": "TP442",
+     "display": "Familial hypercholesterolaemia",
+     "extension": [
+      {
+       "url": "https://fhir.nhs.uk/England/StructureDefinition/Extension-GenomicTestCode-Version",
+       "valueDecimal": 1.0
+      }
+     ]
+    }
+   ]
+  }
+ ],
  "supportingInfo": [
   {
    "reference": "Observation/Observation-GenomicEthnicity-Example"

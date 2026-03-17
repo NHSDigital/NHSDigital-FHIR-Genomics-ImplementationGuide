@@ -38,16 +38,6 @@
   }
  ],
  "priority": "routine",
- "code": {
-  "coding": [
-   {
-    "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
-    "code": "M91",
-    "display": "Acute Lymphoblastic Leukaemia",
-    "version": "9"
-   }
-  ]
- },
  "subject": {
   "reference": "Patient/Patient-PatrickSammy-Example",
   "identifier": {
@@ -59,6 +49,23 @@
  "requester": {
   "reference": "PractitionerRole/PractitionerRole-HazelSmithPathology-Example"
  },
+ "reasonCode": [
+  {
+   "coding": [
+    {
+     "system": "https://fhir.nhs.uk/CodeSystem/England-DigitalGenomicTestService",
+     "code": "TP34",
+     "display": "Acute Lymphoblastic Leukaemia - T cell",
+     "extension": [
+      {
+       "url": "https://fhir.nhs.uk/England/StructureDefinition/Extension-GenomicTestCode-Version",
+       "valueDecimal": 1.0
+      }
+     ]
+    }
+   ]
+  }
+ ],
  "supportingInfo": [
   {
    "reference": "Observation/Observation-NoTransplant-Example"

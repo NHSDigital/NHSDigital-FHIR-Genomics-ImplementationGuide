@@ -47,10 +47,15 @@
  "code": {
   "coding": [
    {
-    "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
-    "code": "M3.2",
-    "display": "Breast Cancer (Oncotype DX)",
-    "version": "9"
+    "system": "https://fhir.nhs.uk/CodeSystem/England-DigitalGenomicTestService",
+    "code": "GT1272",
+    "display": "ETV6::NTRK3 targeted assay",
+    "extension": [
+     {
+      "url": "https://fhir.nhs.uk/England/StructureDefinition/Extension-GenomicTestCode-Version",
+      "valueDecimal": 1.0
+     }
+    ]
    }
   ]
  },
@@ -65,6 +70,24 @@
  "requester": {
   "reference": "PractitionerRole/PractitionerRole-HazelSmithOncology-Example"
  },
+ "reasonCode": [
+  {
+   "coding": [
+    {
+     "system": "https://fhir.nhs.uk/CodeSystem/England-DigitalGenomicTestService",
+     "code": "TP580",
+     "display": "Breast Cancer",
+     "extension": [
+      {
+       "url": "https://fhir.nhs.uk/England/StructureDefinition/Extension-GenomicTestCode-Version",
+       "valueDecimal": 1.0
+      }
+     ]
+    }
+   ]
+   ]
+  }
+ ],
  "performer": [
   {
    "identifier": {
