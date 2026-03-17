@@ -1,0 +1,38 @@
+{
+ "resourceType": "SearchParameter",
+ "id": "England-consentGrantee",
+ "url": "https://fhir.nhs.uk/England/SearchParameter/England-consentGrantee",
+ "version": "0.1.0",
+ "name": "EnglandConsentGrantee",
+ "status": "active",
+ "date": "2026-03-05",
+ "publisher": "NHS England",
+ "contact": [
+  {
+   "name": "NHS England",
+   "telecom": [
+    {
+     "system": "email",
+     "value": "interoperabilityteam@nhs.net",
+     "use": "work",
+     "rank": 1
+    }
+   ]
+  }
+ ],
+ "description": "Search parameter use to search  by grantee(R5 extension) on Consent",
+ "code": "grantee",
+ "base": [
+  "Consent"
+ ],
+ "type": "reference",
+ "expression": "Consent.extension.where(url='http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.grantee').extension.value.reference",
+ "multipleOr": true,
+ "multipleAnd": true,
+ "target": [
+  "Organization",
+  "Practitioner",
+  "Patient",
+  "RelatedPerson"
+ ]
+}
