@@ -1,63 +1,70 @@
 {
-  "resourceType": "Specimen",
-  "id": "Specimen-TissueResection-Example",
-  "identifier": [
-    {
-      "system": "https://fhir.add.nhs.uk/Id/specimenId",
-      "value": "699F01231423"
-    }
-  ],
-  "status": "available",
-  "type": {
-    "coding": [
-      {
-        "system": "http://snomed.info/sct",
-        "code": "364611000000101",
-        "display": "Tissue resection sample"
-      }
-    ]
-  },
-  "subject": {
-    "reference": "Patient/Patient-KayBurbridge-Example",
-    "identifier": {
-      "system": "https://fhir.nhs.uk/Id/nhs-number",
-      "value": "8449303541"
-    }
-  },
-  "collection": {
-    "collector": {
-      "identifier": {
-        "system": "https://fhir.nhs.uk/Id/sds-user-id",
-        "value": "9999999998"
-      },
-      "display": "ClinicalScientist-Anna Lane"
-    },
-    "collectedDateTime": "2023-11-04T15:00:00Z",
-    "bodySite": {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.bodySite",
-          "valueReference": {
-            "reference": "BodyStructure/BodyStructure-SpecimenBodySiteLocation-Example"
-          }
-        }
-      ]
-    }
-  },
-  "condition": [
-    {
-      "coding": [
-        {
-          "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PrimarySampleState",
-          "code": "fresh",
-          "display": "Fresh"
-        }
-      ]
-    }
-  ],
-  "request": [
-    {
-      "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-OutOfCountry-Example"
-    }
+ "resourceType": "Specimen",
+ "id": "Specimen-TissueResection-Example",
+ "identifier": [
+  {
+   "system": "https://fhir.add.nhs.uk/Id/specimenId",
+   "value": "699F01231423"
+  }
+ ],
+ "status": "available",
+ "type": {
+  "coding": [
+   {
+    "system": "http://snomed.info/sct",
+    "code": "364611000000101",
+    "display": "Tissue resection sample"
+   }
   ]
+ },
+ "subject": {
+  "reference": "Patient/Patient-KayBurbridge-Example",
+  "identifier": {
+   "system": "https://fhir.nhs.uk/Id/nhs-number",
+   "value": "8449303541"
+  }
+ },
+ "collection": {
+  "extension": [
+   {
+    "url": "http://hl7.org/fhir/StructureDefinition/bodySite",
+    "valueReference": {
+     "reference": "BodyStructure/BodyStructure-SpecimenBodySiteLocation-Example"
+    }
+   }
+  ],
+  "collector": {
+   "identifier": {
+    "system": "https://fhir.nhs.uk/Id/sds-user-id",
+    "value": "9999999998"
+   },
+   "display": "ClinicalScientist-Anna Lane"
+  },
+  "collectedDateTime": "2023-11-04T15:00:00Z",
+  "bodySite": {
+   "coding": [
+    {
+     "system": "http://snomed.info/sct",
+     "code": "76752008",
+     "display": "Breast structure"
+    }
+   ]
+  }
+ },
+ "condition": [
+  {
+   "coding": [
+    {
+     "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PrimarySampleState",
+     "code": "fresh",
+     "display": "Fresh"
+    }
+   ]
+  }
+ ],
+ "request": [
+  {
+   "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-OutOfCountry-Example"
+  }
+ ]
 }
