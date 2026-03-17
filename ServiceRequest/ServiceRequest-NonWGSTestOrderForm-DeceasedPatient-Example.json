@@ -38,16 +38,6 @@
   }
  ],
  "priority": "routine",
- "code": {
-  "coding": [
-   {
-    "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
-    "code": "R138",
-    "display": "Sudden Cardiac Death",
-    "version": "7"
-   }
-  ]
- },
  "subject": {
   "reference": "Patient/Patient-AnitaLambertsDeceasedPatient-Example",
   "identifier": {
@@ -59,6 +49,23 @@
  "requester": {
   "reference": "PractitionerRole/PractitionerRole-GeneSmith-Example"
  },
+ "reasonCode": [
+  {
+   "coding": [
+    {
+     "system": "https://fhir.nhs.uk/CodeSystem/England-DigitalGenomicTestService",
+     "code": "TP119",
+     "display": "Sudden unexplained death or survivors of a cardiac event",
+     "extension": [
+      {
+       "url": "https://fhir.nhs.uk/England/StructureDefinition/Extension-GenomicTestCode-Version",
+       "valueDecimal": 1.0
+      }
+     ]
+    }
+   ]
+  }
+ ],
  "supportingInfo": [
   {
    "reference": "Observation/Observation-GenomicEthnicity-Example"

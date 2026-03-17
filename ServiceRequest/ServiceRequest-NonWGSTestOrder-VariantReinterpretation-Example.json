@@ -45,24 +45,19 @@
  "code": {
   "coding": [
    {
-    "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
-    "code": "R442",
+    "system": "https://fhir.nhs.uk/CodeSystem/England-DigitalGenomicTestService",
+    "code": "GT1013",
     "display": "Variant Re-interpretation",
-    "version": "7"
+    "extension": [
+     {
+      "url": "https://fhir.nhs.uk/England/StructureDefinition/Extension-GenomicTestCode-Version",
+      "valueDecimal": 1.0
+     }
+    ]
    }
   ]
  },
  "orderDetail": [
-  {
-   "coding": [
-    {
-     "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
-     "code": "R59",
-     "display": "Early onset or syndromic epilepsy",
-     "version": "7"
-    }
-   ]
-  },
   {
    "coding": [
     {
@@ -84,6 +79,23 @@
  "requester": {
   "reference": "PractitionerRole/PractitionerRole-GeneSmith-Example"
  },
+ "reasonCode": [
+  {
+   "coding": [
+    {
+     "system": "https://fhir.nhs.uk/CodeSystem/England-DigitalGenomicTestService",
+     "code": "TP459",
+     "display": "Paediatric disorders",
+     "extension": [
+      {
+       "url": "https://fhir.nhs.uk/England/StructureDefinition/Extension-GenomicTestCode-Version",
+       "valueDecimal": 1.0
+      }
+     ]
+    }
+   ]
+  }
+ ],
  "supportingInfo": [
   {
    "reference": "Observation/Observation-GenomicEthnicity-Example"

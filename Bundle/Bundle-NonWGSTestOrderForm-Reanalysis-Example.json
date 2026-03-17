@@ -262,25 +262,18 @@
     "code": {
      "coding": [
       {
-       "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
-       "code": "R387",
-       "display": "Re-analysis",
-       "version": "7"
+       "system": "https://fhir.nhs.uk/CodeSystem/England-DigitalGenomicTestService",
+       "code": "GT192",
+       "display": "Reanalysis of existing data",
+       "extension": [
+        {
+         "url": "https://fhir.nhs.uk/England/StructureDefinition/Extension-GenomicTestCode-Version",
+         "valueDecimal": 1.0
+        }
+       ]
       }
      ]
     },
-    "orderDetail": [
-     {
-      "coding": [
-       {
-        "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
-        "code": "R59",
-        "display": "Early onset or syndromic epilepsy",
-        "version": "7"
-       }
-      ]
-     }
-    ],
     "subject": {
      "reference": "Patient/Patient-DemeizaSeo-Example",
      "identifier": {
@@ -292,6 +285,23 @@
     "requester": {
      "reference": "PractitionerRole/PractitionerRole-HazelSmithRenal-Example"
     },
+    "reasonCode": [
+     {
+      "coding": [
+       {
+        "system": "https://fhir.nhs.uk/CodeSystem/England-DigitalGenomicTestService",
+        "code": "TP459",
+        "display": "Paediatric disorders",
+        "extension": [
+         {
+          "url": "https://fhir.nhs.uk/England/StructureDefinition/Extension-GenomicTestCode-Version",
+          "valueDecimal": 1.0
+         }
+        ]
+       }
+      ]
+     }
+    ],
     "supportingInfo": [
      {
       "reference": "Observation/Observation-GenomicEthnicity-Example"
@@ -386,10 +396,9 @@
     "code": {
      "coding": [
       {
-       "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
-       "code": "R67.2",
-       "display": "Monogenic hearing loss",
-       "version": "7"
+       "system": "https://fhir.nhs.uk/CodeSystem/England-DigitalGenomicTestService",
+       "code": "TP439",
+       "display": "Monogenic hearing loss"
       }
      ]
     },

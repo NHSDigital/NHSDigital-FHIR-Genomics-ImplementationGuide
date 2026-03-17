@@ -47,9 +47,15 @@
  "code": {
   "coding": [
    {
-    "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
-    "code": "M233.1",
-    "display": "Acute Leukaemia Other"
+    "system": "https://fhir.nhs.uk/CodeSystem/England-DigitalGenomicTestService",
+    "code": "GT469",
+    "display": "High Grade Ovarian Carcinoma WGS",
+    "extension": [
+     {
+      "url": "https://fhir.nhs.uk/England/StructureDefinition/Extension-GenomicTestCode-Version",
+      "valueDecimal": 1.0
+     }
+    ]
    }
   ]
  },
@@ -64,6 +70,23 @@
  "requester": {
   "reference": "PractitionerRole/PractitionerRole-HazelSmithKingstonPathology-Example"
  },
+ "reasonCode": [
+  {
+   "coding": [
+    {
+     "system": "https://fhir.nhs.uk/CodeSystem/England-DigitalGenomicTestService",
+     "code": "TP589",
+     "display": "Ovarian Carcinoma - Merged",
+     "extension": [
+      {
+       "url": "https://fhir.nhs.uk/England/StructureDefinition/Extension-GenomicTestCode-Version",
+       "valueDecimal": 1.0
+      }
+     ]
+    }
+   ]
+  }
+ ],
  "performer": [
   {
    "identifier": {

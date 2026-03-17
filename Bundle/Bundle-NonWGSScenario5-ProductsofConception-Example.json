@@ -302,10 +302,15 @@
     "code": {
      "coding": [
       {
-       "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
-       "version": "7",
-       "code": "R21.1",
-       "display": "Fetal anomalies with a likely genetic cause"
+       "system": "https://fhir.nhs.uk/CodeSystem/England-DigitalGenomicTestService",
+       "code": "GT1133",
+       "display": "Common aneuploidy testing",
+       "extension": [
+        {
+         "url": "https://fhir.nhs.uk/England/StructureDefinition/Extension-GenomicTestCode-Version",
+         "valueDecimal": 1.0
+        }
+       ]
       }
      ]
     },
@@ -326,6 +331,23 @@
       "value": "RYJ02"
      }
     },
+    "reasonCode": [
+     {
+      "coding": [
+       {
+        "system": "https://fhir.nhs.uk/CodeSystem/England-DigitalGenomicTestService",
+        "code": "TP289",
+        "display": "Common aneuploidy testing - prenatal",
+        "extension": [
+         {
+          "url": "https://fhir.nhs.uk/England/StructureDefinition/Extension-GenomicTestCode-Version",
+          "valueDecimal": 1.0
+         }
+        ]
+       }
+      ]
+     }
+    ],
     "performer": [
      {
       "identifier": {

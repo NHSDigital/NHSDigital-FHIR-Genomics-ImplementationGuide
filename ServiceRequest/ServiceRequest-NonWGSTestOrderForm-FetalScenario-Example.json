@@ -38,16 +38,6 @@
 		}
 	],
 	"priority": "urgent",
-	"code": {
-		"coding": [
-			{
-				"system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
-				"code": "R21",
-				"display": "Fetal anomalies with a likely genetic cause",
-				"version": "7"
-			}
-		]
-	},
 	"subject": {
 		"reference": "Patient/Patient-FoetusOfRyanneBoulder-Example",
 		"identifier": {
@@ -65,6 +55,23 @@
 	"requester": {
 		"reference": "PractitionerRole/PractitionerRole-LoisLaneKingstonClinicalGenetics-Example"
 	},
+	"reasonCode": [
+	 {
+		"coding": [
+		 {
+			"system": "https://fhir.nhs.uk/CodeSystem/England-DigitalGenomicTestService",
+			"code": "TP289",
+			"display": "Common aneuploidy testing - prenatal",
+			"extension": [
+			 {
+				"url": "https://fhir.nhs.uk/England/StructureDefinition/Extension-GenomicTestCode-Version",
+				"valueDecimal": 1.0
+			 }
+			]
+		 }
+		]
+	 }
+	],
 	"supportingInfo": [
 		{
 			"reference": "Observation/Observation-HistoryOfFetalLoss-Example"

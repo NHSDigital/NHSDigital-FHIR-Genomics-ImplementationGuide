@@ -76,11 +76,16 @@
  "priority": "routine",
  "code": {
   "coding": [
-   {
-    "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
-    "code": "R98.2",
-    "display": "Likely inborn error of metabolism",
-    "version": "7"
+  {
+    "system": "https://fhir.nhs.uk/CodeSystem/England-DigitalGenomicTestService",
+    "code": "GT317",
+    "display": "Likely inborn error of metabolism - WGS",
+    "extension": [
+     {
+      "url": "https://fhir.nhs.uk/England/StructureDefinition/Extension-GenomicTestCode-Version",
+      "valueDecimal": 1.0
+     }
+    ]
    }
   ],
   "text": "This is a Trio Testing, this ServiceRequest generates a Requisition ID that linked the proband and consultands"
@@ -96,6 +101,23 @@
  "requester": {
   "reference": "PractitionerRole/PractitionerRole-EugeneSmith-Example"
  },
+ "reasonCode": [
+  {
+   "coding": [
+    {
+     "system": "https://fhir.nhs.uk/CodeSystem/England-DigitalGenomicTestService",
+     "code": "TP229",
+     "display": "Likely inborn error of metabolism",
+     "extension": [
+      {
+       "url": "https://fhir.nhs.uk/England/StructureDefinition/Extension-GenomicTestCode-Version",
+       "valueDecimal": 1.0
+      }
+     ]
+    }
+   ]
+  }
+ ],
  "reasonReference": [
   {
    "reference": "Condition/Condition-InbornErrorOfMetabolism-Example"

@@ -14,11 +14,10 @@
 	"code": {
 		"coding": [
 			{
-				"system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
-				"code": "R67.1",
-				"display": "Monogenic hearing loss",
-        "version": "7"
-			}
+        "system": "https://fhir.nhs.uk/CodeSystem/England-DigitalGenomicTestService",
+        "code": "TP439",
+        "display": "Monogenic hearing loss"
+      }
 		]
 	},
 	"subject": {
@@ -39,8 +38,18 @@
 						"display": "Bilateral hearing loss"
 					}
 				]
-			},
-			"valueString": "hearing loss since childhood"
+			}
+		},
+		{
+			"code": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "1055225001",
+						"display": "Childhood onset sensorineural hearing loss"
+					}
+				]
+			}
 		}
 	]
 }

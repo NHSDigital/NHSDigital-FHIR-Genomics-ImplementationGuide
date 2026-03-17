@@ -1,41 +1,40 @@
 {
-	"resourceType": "Observation",
-	"id": "Observation-DiseasePenetrance-Example",
-	"meta": {
-		"tag": [
-			{
-				"system": "https://fhir.nhs.uk/CodeSystem/mds-questiontag-genomics",
-				"code": "PCI-15",
-				"display": "Patient clinical information - Pedigree details / Relevant family history"
-			}
-		]
-	},
-	"status": "final",
-	"code": {
-		"coding": [
-			{
-				"system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
-				"code": "R14",
-				"display": "Acutely unwell children with a likely monogenic disorder",
-				"version": "7"
-			}
-		]
-	},
-	"subject": {
-		"reference": "Patient/Patient-JamesMetcalfe-Example",
-		"identifier": {
-			"system": "https://fhir.nhs.uk/Id/nhs-number",
-			"value": "7449306524"
-		}
-	},
-	"effectiveDateTime": "2023-10-01",
-	"valueCodeableConcept": {
-		"coding": [
-			{
-				"system": "http://snomed.info/sct",
-				"code": "87006007",
-				"display": "Dominant autosomal hereditary disorder, incomplete penetrance"
-			}
-		]
-	}
+  "resourceType": "Observation",
+  "id": "Observation-DiseasePenetrance-Example",
+  "meta": {
+    "tag": [
+      {
+        "system": "https://fhir.nhs.uk/CodeSystem/mds-questiontag-genomics",
+        "code": "PCI-15",
+        "display": "Patient clinical information - Pedigree details / Relevant family history"
+      }
+    ]
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "87006007",
+        "display": "Dominant autosomal hereditary disorder, incomplete penetrance"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-JamesMetcalfe-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "7449306524"
+    }
+  },
+  "effectiveDateTime": "2023-10-01",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "https://fhir.nhs.uk/CodeSystem/England-DigitalGenomicTestService",
+        "code": "TP12",
+        "display": "Acutely unwell children with a likely monogenic disorder"
+      }
+    ]
+  }
 }

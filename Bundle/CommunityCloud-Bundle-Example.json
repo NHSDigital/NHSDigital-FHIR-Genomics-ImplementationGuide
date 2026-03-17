@@ -296,11 +296,11 @@
         "performedDateTime" : "2025-11-25T17:49:00Z",
         "reasonCode" : [
           {
-            "coding" : [
+            "coding": [
               {
-                "system" : "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
-                "code" : "R134",
-                "display" : "Familial Hypercholesterolaemia"
+                "system": "https://fhir.nhs.uk/CodeSystem/England-DigitalGenomicTestService",
+                "code": "TP442",
+                "display": "Familial hypercholesterolaemia"
               }
             ]
           }

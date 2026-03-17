@@ -52,9 +52,15 @@
  "code": {
   "coding": [
    {
-    "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
-    "code": "M89.109",
-    "display": "Acute Leukaemia Other"
+    "system": "https://fhir.nhs.uk/CodeSystem/England-DigitalGenomicTestService",
+    "code": "GT825",
+    "display": "WGS Follow-up Germline - Acute Leukaemia Other",
+    "extension": [
+     {
+      "url": "https://fhir.nhs.uk/England/StructureDefinition/Extension-GenomicTestCode-Version",
+      "valueDecimal": 1.0
+     }
+    ]
    }
   ]
  },
@@ -69,6 +75,23 @@
  "requester": {
   "reference": "PractitionerRole/PractitionerRole-HazelSmithKingstonPathology-Example"
  },
+ "reasonCode": [
+  {
+   "coding": [
+    {
+     "system": "https://fhir.nhs.uk/CodeSystem/England-DigitalGenomicTestService",
+     "code": "TP34",
+     "display": "Acute Lymphoblastic Leukaemia - T cell",
+     "extension": [
+      {
+       "url": "https://fhir.nhs.uk/England/StructureDefinition/Extension-GenomicTestCode-Version",
+       "valueDecimal": 1.0
+      }
+     ]
+    }
+   ]
+  }
+ ],
  "performer": [
   {
    "identifier": {
