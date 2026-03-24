@@ -48,7 +48,7 @@
   },
   "extension": [
    {
-    "url": "Specimen.collection.extension('http://hl7.org/fhir/StructureDefinition/bodySite').valueReference",
+    "url": "http://hl7.org/fhir/StructureDefinition/bodySite",
     "valueReference": {
      "reference": "BodyStructure/BodyStructure-BodySiteLocationAbdomen-Example"
     }
