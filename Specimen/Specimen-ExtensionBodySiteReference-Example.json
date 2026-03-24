@@ -1,6 +1,6 @@
 {
  "resourceType": "Specimen",
- "id": "Specimen-ExtensionBodySiteReferenceR5-Example",
+ "id": "Specimen-ExtensionBodySiteReference-Example",
  "text": {
   "status": "additional",
   "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">An example to illustrate the use of the BodySiteReference extension</div>"
@@ -23,6 +23,15 @@
   "collector": {
    "reference": "Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example"
   },
+  "extension": [
+   {
+    "url": "http://hl7.org/fhir/StructureDefinition/bodySite",
+    "valueReference": {
+     "reference": "BodyStructure/dyStructure/UKCore-BodyStructure-MedianCubitalVeinExample"
+    },
+    "text": "vein on the inner left arm"
+   }
+  ],
   "collectedDateTime": "2016-02-09T16:00:00Z",
   "method": {
    "coding": [
@@ -32,17 +41,6 @@
      "display": "Venipuncture for blood test"
     }
    ]
-  },
-  "bodySite": {
-   "extension": [
-    {
-     "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.bodySite",
-     "valueReference": {
-      "reference": "BodyStructure/UKCore-BodyStructure-MedianCubitalVeinExample"
-     }
-    }
-   ],
-   "text": "vein on the inner left arm"
   }
  }
 }
