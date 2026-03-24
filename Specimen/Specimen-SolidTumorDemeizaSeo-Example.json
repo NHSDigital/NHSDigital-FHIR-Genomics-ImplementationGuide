@@ -1,77 +1,75 @@
 {
-  "resourceType": "Specimen",
-  "id": "Specimen-SolidTumorDemeizaSeo-Example",
-  "extension": [
-    {
-      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-SampleCategory",
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-SampleCategory",
-            "code": "solid-tumour",
-            "display": "Solid Tumour"
-          }
-        ]
-      }
-    }
-  ],
-  "identifier": [
-    {
-      "system": "https://fhir.add.nhs.uk/Id/specimenId",
-      "value": "RA257631"
-    }
-  ],
-  "status": "available",
-  "type": {
+ "resourceType": "Specimen",
+ "id": "Specimen-SolidTumorDemeizaSeo-Example",
+ "extension": [
+  {
+   "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-SampleCategory",
+   "valueCodeableConcept": {
     "coding": [
-      {
-        "system": "http://snomed.info/sct",
-        "code": "364611000000101",
-        "display": "Tissue resection sample"
-      }
+     {
+      "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-SampleCategory",
+      "code": "solid-tumour",
+      "display": "Solid Tumour"
+     }
     ]
-  },
-  "subject": {
-    "reference": "Patient/Patient-DemeizaSeo-Example",
-    "identifier": {
-      "system": "https://fhir.nhs.uk/Id/nhs-number",
-      "value": "9449306559"
-    }
-  },
-  "collection": {
-    "collector": {
-      "identifier": {
-        "system": "https://fhir.nhs.uk/Id/sds-user-id",
-        "value": "9999999998"
-      },
-      "display": "ClinicalScientist-John Taylor"
-    },
-    "collectedDateTime": "2023-09-09T11:00:00Z",
-    "bodySite": {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.bodySite",
-          "valueReference": {
-            "reference": "BodyStructure/BodyStructure-BodySiteLocationAbdomen-Example"
-          }
-        }
-      ]
-    }
-  },
-  "condition": [
-    {
-      "coding": [
-        {
-          "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PrimarySampleState",
-          "code": "fresh",
-          "display": "Fresh"
-        }
-      ]
-    }
-  ],
-  "request": [
-    {
-      "reference": "ServiceRequest/ServiceRequest-WGSTestOrderForm-CancerSolidTumor-Example"
-    }
+   }
+  }
+ ],
+ "identifier": [
+  {
+   "system": "https://fhir.add.nhs.uk/Id/specimenId",
+   "value": "RA257631"
+  }
+ ],
+ "status": "available",
+ "type": {
+  "coding": [
+   {
+    "system": "http://snomed.info/sct",
+    "code": "364611000000101",
+    "display": "Tissue resection sample"
+   }
   ]
+ },
+ "subject": {
+  "reference": "Patient/Patient-DemeizaSeo-Example",
+  "identifier": {
+   "system": "https://fhir.nhs.uk/Id/nhs-number",
+   "value": "9449306559"
+  }
+ },
+ "collection": {
+  "collector": {
+   "identifier": {
+    "system": "https://fhir.nhs.uk/Id/sds-user-id",
+    "value": "9999999998"
+   },
+   "display": "ClinicalScientist-John Taylor"
+  },
+  "extension": [
+   {
+    "url": "http://hl7.org/fhir/StructureDefinition/bodySite",
+    "valueReference": {
+     "reference": "BodyStructure/BodyStructure-BodySiteLocationAbdomen-Example"
+    }
+   }
+  ],
+  "collectedDateTime": "2023-09-09T11:00:00Z"
+ },
+ "condition": [
+  {
+   "coding": [
+    {
+     "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PrimarySampleState",
+     "code": "fresh",
+     "display": "Fresh"
+    }
+   ]
+  }
+ ],
+ "request": [
+  {
+   "reference": "ServiceRequest/ServiceRequest-WGSTestOrderForm-CancerSolidTumor-Example"
+  }
+ ]
 }

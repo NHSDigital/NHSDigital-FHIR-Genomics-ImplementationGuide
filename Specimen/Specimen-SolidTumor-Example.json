@@ -1,63 +1,61 @@
 {
-  "resourceType": "Specimen",
-  "id": "Specimen-SolidTumor-Example",
-  "identifier": [
-    {
-      "system": "https://fhir.add.nhs.uk/Id/specimenId",
-      "value": "RA257630"
-    }
-  ],
-  "status": "available",
-  "type": {
-    "coding": [
-      {
-        "system": "http://snomed.info/sct",
-        "code": "364611000000101",
-        "display": "Tissue resection sample"
-      }
-    ]
-  },
-  "subject": {
-    "reference": "Patient/Patient-ZelmaHadjkiss-Example",
-    "identifier": {
-      "system": "https://fhir.nhs.uk/Id/nhs-number",
-      "value": "9449307555"
-    }
-  },
-  "collection": {
-    "collector": {
-      "identifier": {
-        "system": "https://fhir.nhs.uk/Id/sds-user-id",
-        "value": "9999999998"
-      },
-      "display": "ClinicalScientist-John Taylor"
-    },
-    "collectedDateTime": "2023-09-09T11:00:00Z",
-    "bodySite": {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.bodySite",
-          "valueReference": {
-            "reference": "BodyStructure/BodyStructure-BodySiteLocationLungs-Example"
-          }
-        }
-      ]
-    }
-  },
-  "condition": [
-    {
-      "coding": [
-        {
-          "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PrimarySampleState",
-          "code": "fresh",
-          "display": "Fresh"
-        }
-      ]
-    }
-  ],
-  "request": [
-    {
-      "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-CancerSolidTumor-Example"
-    }
+ "resourceType": "Specimen",
+ "id": "Specimen-SolidTumor-Example",
+ "identifier": [
+  {
+   "system": "https://fhir.add.nhs.uk/Id/specimenId",
+   "value": "RA257630"
+  }
+ ],
+ "status": "available",
+ "type": {
+  "coding": [
+   {
+    "system": "http://snomed.info/sct",
+    "code": "364611000000101",
+    "display": "Tissue resection sample"
+   }
   ]
+ },
+ "subject": {
+  "reference": "Patient/Patient-ZelmaHadjkiss-Example",
+  "identifier": {
+   "system": "https://fhir.nhs.uk/Id/nhs-number",
+   "value": "9449307555"
+  }
+ },
+ "collection": {
+  "collector": {
+   "identifier": {
+    "system": "https://fhir.nhs.uk/Id/sds-user-id",
+    "value": "9999999998"
+   },
+   "display": "ClinicalScientist-John Taylor"
+  },
+  "extension": [
+   {
+    "url": "http://hl7.org/fhir/StructureDefinition/bodySite",
+    "valueReference": {
+     "reference": "BodyStructure/BodyStructure-BodySiteLocationLungs-Example"
+    }
+   }
+  ],
+  "collectedDateTime": "2023-09-09T11:00:00Z"
+ },
+ "condition": [
+  {
+   "coding": [
+    {
+     "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PrimarySampleState",
+     "code": "fresh",
+     "display": "Fresh"
+    }
+   ]
+  }
+ ],
+ "request": [
+  {
+   "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-CancerSolidTumor-Example"
+  }
+ ]
 }

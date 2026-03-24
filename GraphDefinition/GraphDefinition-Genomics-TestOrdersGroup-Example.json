@@ -1,11 +1,11 @@
 {
  "resourceType": "GraphDefinition",
- "id": "GraphDefinition-GenomicsTrioTestOrder-Example",
- "url": "https://fhir.nhs.uk/GraphDefinition/genomics-trio-test-order",
- "name": "GenomicsTrioTestOrder",
- "version": "0.1.0",
+ "id": "GraphDefinition-Genomics-TestOrdersGroup-Example",
+ "url": "https://fhir.nhs.uk/GraphDefinition/genomics-test-orders-group",
+ "name": "GenomicsTestOrdersGroup",
+ "version": "0.2.0",
  "status": "draft",
- "date": "2026-01-13",
+ "date": "2026-03-24",
  "publisher": "NHS England",
  "description": "GraphDefinition for retrieving all resources relevant to a Genomic Trio Test Order (proband, father, mother). Starts from ServiceRequest and traverses all key references.",
  "start": "ServiceRequest",
@@ -222,8 +222,8 @@
        ]
       },
       {
-       "path": "Specimen.collection.bodySite.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.bodySite').valueReference",
-       "sliceName": "ext-R5-Specimen.co.bodySite",
+       "path": "Specimen.collection.extension('http://hl7.org/fhir/StructureDefinition/bodySite').valueReference",
+       "sliceName": "bodySite",
        "description": "Link to the body structure detailing the morphology and topography of the specimen",
        "min": 0,
        "max": "1",
@@ -341,8 +341,8 @@
        ]
       },
       {
-       "path": "Specimen.collection.bodySite.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.bodySite').valueReference",
-       "sliceName": "ext-R5-Specimen.co.bodySite",
+       "path": "Specimen.collection.extension('http://hl7.org/fhir/StructureDefinition/bodySite').valueReference",
+       "sliceName": "bodySite",
        "description": "Link to the body structure detailing the morphology and topography of the specimen",
        "min": 0,
        "max": "1",
@@ -577,8 +577,8 @@
            ]
           },
           {
-           "path": "Specimen.collection.bodySite.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.bodySite').valueReference",
-           "sliceName": "ext-R5-Specimen.co.bodySite",
+           "path": "Specimen.collection.extension('http://hl7.org/fhir/StructureDefinition/bodySite').valueReference",
+           "sliceName": "bodySite",
            "description": "Link to the body structure detailing the morphology and topography of the specimen",
            "min": 0,
            "max": "1",
@@ -696,8 +696,8 @@
            ]
           },
           {
-           "path": "Specimen.collection.bodySite.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.bodySite').valueReference",
-           "sliceName": "ext-R5-Specimen.co.bodySite",
+           "path": "Specimen.collection.extension('http://hl7.org/fhir/StructureDefinition/bodySite').valueReference",
+           "sliceName": "bodySite",
            "description": "Link to the body structure detailing the morphology and topography of the specimen",
            "min": 0,
            "max": "1",
