@@ -18,7 +18,11 @@
     ]
   },
   "subject": {
-    "reference": "Patient/Patient-RyanneBoulder-Example"
+    "reference": "Patient/Patient-RyanneBoulder-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307687"
+    }
   },
   "container": [
     {

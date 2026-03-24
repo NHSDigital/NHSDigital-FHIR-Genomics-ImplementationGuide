@@ -37,7 +37,11 @@
 		]
 	},
 	"subject": {
-		"reference": "Patient/f52cae9c-81eb-422c-be58-8363e72144aa"
+		"reference": "Patient/f52cae9c-81eb-422c-be58-8363e72144aa",
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9999999999"
+		}
 	},
 	"issued": "2022-07-15T09:00:00Z",
 	"performer": [

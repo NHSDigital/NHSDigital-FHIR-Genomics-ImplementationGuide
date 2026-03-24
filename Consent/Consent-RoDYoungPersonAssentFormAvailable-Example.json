@@ -22,9 +22,13 @@
       ]
     }
   ],
-    "patient": {
-      "reference": "Patient/Patient-PheobeSmitham-Example"
-    },
+  "patient": {
+    "reference": "Patient/Patient-PheobeSmitham-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307539"
+    }
+  },
   "sourceReference": {
     "reference": "QuestionnaireResponse/QuestionnaireResponse-RoD-YoungPersonAssentForm-Example"
   },
