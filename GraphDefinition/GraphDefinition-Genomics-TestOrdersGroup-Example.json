@@ -1,8 +1,8 @@
 {
  "resourceType": "GraphDefinition",
- "id": "GraphDefinition-GenomicsTrioTestOrder-Example",
- "url": "https://fhir.nhs.uk/GraphDefinition/genomics-trio-test-order",
- "name": "GenomicsTrioTestOrder",
+ "id": "GraphDefinition-Genomics-TestOrdersGroup-Example",
+ "url": "https://fhir.nhs.uk/GraphDefinition/genomics-test-orders-group",
+ "name": "GenomicsTestOrdersGroup",
  "version": "0.2.0",
  "status": "draft",
  "date": "2026-03-24",
