@@ -23,7 +23,11 @@
 		}
 	],
 	"patient":{
-		"reference":"Patient/Patient-PheobeSmitham-Example"
+		"reference":"Patient/Patient-PheobeSmitham-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307539"
+    }
 	},
 	"sourceAttachment": {
 		"url": "https://github.com/NHSDigital/NHSDigital-FHIR-Genomics-ImplementationGuide/blob/b399f605cb8469e68bea8655b1791e4d1fe3fdd3/documents/PheobeSmitham-record-of-discussion-form.pdf"

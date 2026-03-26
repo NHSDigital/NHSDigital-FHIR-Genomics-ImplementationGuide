@@ -23,7 +23,11 @@
     }
   ],
   "patient": {
-    "reference": "Patient/Patient-PheobeSmithamMother-Example"
+    "reference": "Patient/Patient-PheobeSmithamMother-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307246"
+    }
   },
   "sourceReference": {
     "reference": "QuestionnaireResponse/QuestionnaireResponse-RoD-PheobeSmithamMother-Example"

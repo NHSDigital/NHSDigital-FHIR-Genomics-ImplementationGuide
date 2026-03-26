@@ -40,7 +40,11 @@
     ]
   },
   "subject": {
-    "reference": "Patient/Patient-JamesMetcalfe-Example"
+    "reference": "Patient/Patient-JamesMetcalfe-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "7449306524",
+    }
   },
   "issued": "2023-10-18T11:10:00Z",
   "performer": [

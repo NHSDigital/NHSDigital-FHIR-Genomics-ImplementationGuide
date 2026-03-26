@@ -14,7 +14,11 @@
  "member": [
   {
    "entity": {
-    "reference": "Patient/Patient-PheobeSmitham-Example"
+    "reference": "Patient/Patient-PheobeSmitham-Example",
+    "identifier": {
+     "system": "https://fhir.nhs.uk/Id/nhs-number",
+     "value": "9449307539"
+		}
    },
    "period": {
     "start": "2023-10-01"
@@ -22,7 +26,11 @@
   },
   {
    "entity": {
-    "reference": "Patient/Patient-PheobeSmithamFather-Example"
+    "reference": "Patient/Patient-PheobeSmithamFather-Example",
+    "identifier": {
+     "system": "https://fhir.nhs.uk/Id/nhs-number",
+     "value": "9449307636"
+    }
    },
    "period": {
     "start": "2023-10-01"
@@ -31,6 +39,10 @@
   {
    "entity": {
     "reference": "Patient/Patient-PheobeSmithamMother-Example"
+    "identifier": {
+     "system": "https://fhir.nhs.uk/Id/nhs-number",
+     "value": "9449307246"
+    }
    },
    "period": {
     "start": "2025-10-01",

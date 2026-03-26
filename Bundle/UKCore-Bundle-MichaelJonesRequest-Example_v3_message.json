@@ -575,7 +575,11 @@
 					]
 				},
 				"subject": {
-					"reference": "urn:uuid:41e4b604-37f3-4799-a6b3-ab5b104f3c97"
+					"reference": "urn:uuid:41e4b604-37f3-4799-a6b3-ab5b104f3c97",
+					"identifier": {
+						"system": "https://fhir.nhs.uk/Id/nhs-number",
+						"value": "9999999999"
+					}
 				},
 				"encounter": {
 					"display": "UKCore-Encounter-OncologyConsultation-Example"
@@ -648,7 +652,11 @@
 					]
 				},
 				"subject": {
-					"reference": "urn:uuid:41e4b604-37f3-4799-a6b3-ab5b104f3c97"
+					"reference": "urn:uuid:41e4b604-37f3-4799-a6b3-ab5b104f3c97",
+					"identifier": {
+						"system": "https://fhir.nhs.uk/Id/nhs-number",
+						"value": "9999999999"
+					}
 				},
 				"receivedTime": "2022-07-13T09:00:00Z",
 				"request": [

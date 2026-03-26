@@ -32,12 +32,20 @@
 		}
 	],
 	"patient":  {
-		"reference": "Patient/UKCore-Patient-MichealJones-Example"
+		"reference": "Patient/UKCore-Patient-MichealJones-Example",
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/nhs-number",
+			"value": "9999999999"
+		}
 	},
 	"dateTime": "2022-07-11T09:00:00Z",
 	"performer": [
 		{
-			"reference": "Patient/UKCore-Patient-MichealJones-Example"
+			"reference": "Patient/UKCore-Patient-MichealJones-Example",
+			"identifier": {
+				"system": "https://fhir.nhs.uk/Id/nhs-number",
+				"value": "9999999999"
+			}
 		}
 	],
 	"organization": [
@@ -62,7 +70,11 @@
 		{
 			"verified": true,
 			"verifiedWith": {
-				"reference": "Patient/UKCore-Patient-MichealJones-Example"
+				"reference": "Patient/UKCore-Patient-MichealJones-Example",
+				"identifier": {
+					"system": "https://fhir.nhs.uk/Id/nhs-number",
+					"value": "9999999999"
+				}
 			},
 			"verificationDate": "2022-07-11T09:00:00Z"
 		}

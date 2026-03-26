@@ -40,7 +40,11 @@
     ]
   },
   "subject": {
-    "reference": "Patient/Patient-AnitaLamberts-Example"
+    "reference": "Patient/Patient-AnitaLamberts-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "8449303649",
+    }
   },
   "issued": "2023-11-24T09:45:00Z",
   "performer": [

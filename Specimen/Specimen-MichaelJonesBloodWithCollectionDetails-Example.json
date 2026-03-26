@@ -22,7 +22,11 @@
 		]
 	},
 	"subject":  {
-		"reference": "Patient?identifier=https://fhir.nhs.uk/Id/nhs-number|9999999999"
+		"reference": "Patient?identifier=https://fhir.nhs.uk/Id/nhs-number|9999999999",
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/nhs-number",
+			"value": "9999999999"
+		}
 	},
 	"receivedTime": "2022-07-13T09:00:00Z",
 	"request": [

@@ -19,7 +19,11 @@
   },
   "description": "Testing of Pheobe's parents is recommended (via referral to the clinical genetics service) in order to confirm that both are heterozygous carriers of the missense variant.",
   "for": {
-    "reference": "Patient/Patient-PheobeSmitham-Example"
+    "reference": "Patient/Patient-PheobeSmitham-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307539"
+    }
   },
   "reasonReference": {
     "reference": "Observation/Observation-GenomicTherapeuticImplication-Example"
@@ -36,7 +40,11 @@
         ]
       },
       "valueReference": {
-        "reference": "Patient/Patient-PheobeSmithamFather-Example"
+        "reference": "Patient/Patient-PheobeSmithamFather-Example",
+        "identifier": {
+          "system": "https://fhir.nhs.uk/Id/nhs-number",
+          "value": "9449307636"
+        }
       }
     },
     {
@@ -50,7 +58,11 @@
         ]
       },
       "valueReference": {
-        "reference": "Patient/Patient-PheobeSmithamMother-Example"
+        "reference": "Patient/Patient-PheobeSmithamMother-Example",
+        "identifier": {
+          "system": "https://fhir.nhs.uk/Id/nhs-number",
+          "value": "9449307246"
+        }
       }
     }
   ]

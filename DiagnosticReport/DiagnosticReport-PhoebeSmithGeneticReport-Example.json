@@ -40,7 +40,11 @@
     ]
   },
   "subject": {
-    "reference": "Patient/Patient-PheobeSmitham-Example"
+    "reference": "Patient/Patient-PheobeSmitham-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307539",
+    }
   },
   "issued": "2023-10-16T15:50:00Z",
   "performer": [
