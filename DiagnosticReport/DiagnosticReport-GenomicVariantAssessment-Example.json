@@ -122,7 +122,7 @@
    "link": {
     "extension": [
      {
-      "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media.link",
+      "url": "http://hl7.org/fhir/StructureDefinition/alternate-reference",
       "valueReference": {
        "reference": "DocumentReference/DocumentReference-StructureReporting-Example"
       }
