@@ -13,8 +13,8 @@
     "ihe.iti.pcf": "1.1.0",
     "hl7.fhir.us.mcode": "4.0.0",
     "fhir.r4.nhsengland.pathology": "0.1.4-alpha",
-    "fhir.r4.nhsengland.programme": "0.23.3-pre-release",
-    "hl7.fhir.uv.tools.r4": "1.1.2"
+    "hl7.fhir.uv.tools.r4": "1.1.2",
+    "fhir.r4.nhsengland.programme": "0.24.0-pre-release"
   },
   "fhirVersions": [
     "4.0.1"
