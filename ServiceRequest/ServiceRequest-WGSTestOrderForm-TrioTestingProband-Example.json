@@ -35,14 +35,6 @@
      }
     ]
    }
-  },
-  {
-   "url": "https://hl7.org/fhir/extensions/StructureDefinition-servicerequest-order-callback-phone-number.html",
-   "valueContactPoint": {
-    "system": "phone",
-    "value": "+44 161 123 4567",
-    "use": "work"
-   }
   }
  ],
  "requisition": {
