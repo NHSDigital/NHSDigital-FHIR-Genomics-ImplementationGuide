@@ -46,7 +46,6 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://fhir.nhs.uk/StructureDefinition/NHSEngland-ServiceRequest-Genomics",
               "http://hl7.eu/fhir/laboratory/StructureDefinition/ServiceRequest-eu-lab"
             ],
             "aggregation": [
@@ -69,7 +68,6 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://fhir.nhs.uk/StructureDefinition/NHSEngland-PractitionerRole-Genomics",
               "http://hl7.eu/fhir/laboratory/StructureDefinition/Practitioner-eu-lab",
               "http://hl7.org/fhir/StructureDefinition/Device",
               "http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-eu-lab",
@@ -97,7 +95,6 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://fhir.nhs.uk/StructureDefinition/NHSEngland-DiagnosticReport-GenomicReport",
               "http://hl7.eu/fhir/laboratory/StructureDefinition/DiagnosticReport-eu-lab"
             ],
             "aggregation": [
