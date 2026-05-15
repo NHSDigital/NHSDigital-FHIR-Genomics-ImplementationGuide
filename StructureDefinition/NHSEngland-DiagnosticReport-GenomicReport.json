@@ -327,10 +327,6 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": [
-              "https://fhir.nhs.uk/StructureDefinition/NHSEngland-Specimen-Genomics",
-              "http://hl7.org/fhir/StructureDefinition/Specimen"
-            ],
             "aggregation": [
               "referenced"
             ]
