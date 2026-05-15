@@ -116,19 +116,6 @@
         "definition": "SNOMED CT code for either a Laboratory Request (24691000000102) or Genetic report (1054161000000101)"
       },
       {
-        "id": "Composition.type.coding",
-        "path": "Composition.type.coding",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "pattern",
-              "path": "$this"
-            }
-          ],
-          "rules": "open"
-        }
-      },
-      {
         "id": "Composition.type.coding.display.extension:translation",
         "path": "Composition.type.coding.display.extension",
         "sliceName": "translation"
