@@ -266,9 +266,6 @@
       {
         "id": "Composition.section",
         "path": "Composition.section",
-        "slicing": {
-          "rules": "open"
-        },
         "definition": "To conform to EU Lab, SHOULD include references to the results that form part of the genomic report. For the UGR, will include sections that conform to the UGR folders, this work is currently in development."
       },
       {
