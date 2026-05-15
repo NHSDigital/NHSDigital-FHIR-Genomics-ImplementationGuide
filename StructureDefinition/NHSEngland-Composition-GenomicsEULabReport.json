@@ -174,15 +174,6 @@
       {
         "id": "Composition.category",
         "path": "Composition.category",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "pattern",
-              "path": "$this"
-            }
-          ],
-          "rules": "open"
-        },
         "definition": "Fixed codes for conformance to the EU Lab Composition profile (for cross border sharing of lab reports)."
       },
       {
@@ -275,7 +266,7 @@
           "discriminator": [
             {
               "type": "pattern",
-              "path": "code"
+              "path": "$this.code"
             }
           ],
           "rules": "open"
