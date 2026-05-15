@@ -40,13 +40,6 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": [
-              "https://fhir.nhs.uk/StructureDefinition/NHSEngland-Patient-Genomics",
-              "http://hl7.org/fhir/StructureDefinition/Patient",
-              "http://hl7.org/fhir/StructureDefinition/Practitioner",
-              "http://hl7.org/fhir/StructureDefinition/Group",
-              "http://hl7.org/fhir/StructureDefinition/Device"
-            ],
             "aggregation": [
               "referenced"
             ]

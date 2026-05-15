@@ -62,21 +62,6 @@
     "fixedCode": "citation"
    },
    {
-    "id": "DiagnosticReport.extension:diagnosticReportCompositionR5",
-    "path": "DiagnosticReport.extension",
-    "sliceName": "diagnosticReportCompositionR5",
-    "definition": "TBC. Only relevant for EU Lab aligned reports (included in HL7 EU Laboratory Report: DiagnosticReport Profile). A reference to the Composition which wraps this report for data sharing.",
-    "type": [
-     {
-      "code": "Extension",
-      "profile": [
-       "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition"
-      ]
-     }
-    ],
-    "isModifier": false
-   },
-   {
     "id": "DiagnosticReport.identifier",
     "path": "DiagnosticReport.identifier",
     "slicing": {

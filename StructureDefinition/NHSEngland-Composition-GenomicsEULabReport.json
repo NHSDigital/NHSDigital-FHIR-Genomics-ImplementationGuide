@@ -174,9 +174,6 @@
       {
         "id": "Composition.category",
         "path": "Composition.category",
-        "slicing": {
-          "rules": "open"
-        },
         "definition": "Fixed codes for conformance to the EU Lab Composition profile (for cross border sharing of lab reports)."
       },
       {
