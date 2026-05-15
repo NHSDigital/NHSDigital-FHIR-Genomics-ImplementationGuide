@@ -222,9 +222,6 @@
       {
         "id": "ServiceRequest.category",
         "path": "ServiceRequest.category",
-        "slicing": {
-          "rules": "open"
-        },
         "definition": "Category SHALL be populated with the reason for the request being ordered e.g. Diagnostic, Carrier, Predictive, Stored DNA etc. The final list of applicable codes which can be selected is still under review, the Genomic-ReasonforTesting ValueSet SHOULD be used for this categorisation.",
         "min": 1
       },
