@@ -31,6 +31,35 @@
         "coding": [
          {
           "system": "https://fhir.nhs.uk/CodeSystem/action-participant-role-genomics",
+          "code": "performer",
+          "display": "Performer"
+         }
+        ],
+        "text": "Performer"
+       }
+      },
+      {
+       "url": "typeReference",
+       "valueReference": {
+        "reference": "Organization/Organization-CSGLHub-Example",
+        "identifier": {
+         "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+         "value": "699P0"
+        },
+        "display": "Central and South Genomic Laboratory Hub"
+       }
+      }
+     ]
+    },
+    {
+     "url": "option",
+     "extension": [
+      {
+       "url": "role",
+       "valueCodeableConcept": {
+        "coding": [
+         {
+          "system": "https://fhir.nhs.uk/CodeSystem/action-participant-role-genomics",
           "code": "requester",
           "display": "Requester"
          }
@@ -41,7 +70,12 @@
       {
        "url": "typeReference",
        "valueReference": {
-        "reference": "PractitionerRole/PractitionerRole-HazelSmithPathology-Example"
+        "reference": "Organization/ImperialCollegeHealthcareNHSTrust-Example",
+        "identifier": {
+         "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+         "value": "RYJ"
+        },
+        "display": "Imperial College Healthcare NHS Trust"
        }
       }
      ]
