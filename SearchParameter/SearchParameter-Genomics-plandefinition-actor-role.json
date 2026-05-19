@@ -1,0 +1,20 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "SearchParameter-plandefinition-actor-role",
+  "url": "https://fhir.nhs.uk/SearchParameter/plandefinition-actor-role",
+  "version": "0.1.0",
+  "name": "PlanDefinition Actor Role",
+  "status": "draft",
+  "experimental": false,
+  "date": "2026-05-19",
+  "publisher": "NHS England",
+  "description": "Search PlanDefinition by actor option role from the R5 cross-version extension extension-PlanDefinition.actor",
+  "code": "actor-role",
+  "base": [
+    "PlanDefinition"
+  ],
+  "type": "token",
+  "expression": "PlanDefinition.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-PlanDefinition.actor').extension('option').extension('role').value",
+  "multipleOr": true,
+  "multipleAnd": true
+}

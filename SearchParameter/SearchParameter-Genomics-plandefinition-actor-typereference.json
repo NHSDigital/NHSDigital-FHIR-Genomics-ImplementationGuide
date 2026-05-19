@@ -1,0 +1,32 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "SearchParameter-plandefinition-actor-typereference",
+  "url": "https://fhir.nhs.uk/SearchParameter/plandefinition-actor-typereference",
+  "version": "0.1.0",
+  "name": "PlanDefinitionActorTypeReference",
+  "status": "draft",
+  "experimental": false,
+  "date": "2026-05-19",
+  "publisher": "NHS England",
+  "description": "Search PlanDefinition by actor option typeReference from the R5 cross-version extension extension-PlanDefinition.actor",
+  "code": "actor-type-reference",
+  "base": [
+    "PlanDefinition"
+  ],
+  "type": "reference",
+  "expression": "PlanDefinition.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-PlanDefinition.actor').extension('option').extension('typeReference').value",
+  "xpathUsage": "normal",
+  "target": [
+    "HealthcareService",
+    "Group",
+    "Organization",
+    "Location",
+    "Practitioner",
+    "PractitionerRole",
+    "Device",
+    "RelatedPerson",
+    "Patient"
+  ],
+  "multipleOr": true,
+  "multipleAnd": true
+}
