@@ -1,11 +1,6 @@
 {
   "resourceType": "Consent",
   "id": "Consent-UGRConsentForResearch-Example",
-  "meta": {
-    "profile": [
-      "https://profiles.ihe.net/ITI/PCF/StructureDefinition/IHE.PCF.consentBasic"
-    ]
-  },
   "status": "active",
   "scope": {
     "coding": [
