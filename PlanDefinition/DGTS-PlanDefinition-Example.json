@@ -13,11 +13,42 @@
    "use": "old"
   }
  ],
- "title": "Angelman syndrome",
+ "version": "1.0",
  "name": "TP321_PlanDefinition",
+ "title": "Angelman syndrome",
  "status": "active",
  "experimental": false,
- "version": "1.0",
+ "extension": [
+  {
+   "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-PlanDefinition.actor",
+   "extension": [
+    {
+     "url": "option",
+     "extension": [
+      {
+       "url": "role",
+       "valueCodeableConcept": {
+        "coding": [
+         {
+          "system": "https://fhir.nhs.uk/CodeSystem/action-participant-role-genomics",
+          "code": "requester",
+          "display": "Requester"
+         }
+        ],
+        "text": "Requester"
+       }
+      },
+      {
+       "url": "typeReference",
+       "valueReference": {
+        "reference": "PractitionerRole/PractitionerRole-HazelSmithPathology-Example"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ],
  "useContext": [
   {
    "code": {
