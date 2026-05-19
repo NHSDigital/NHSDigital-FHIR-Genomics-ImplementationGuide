@@ -51,25 +51,25 @@
         }
       },
       {
-        "id": "Consent.scope.coding:codingRoD",
+        "id": "Consent.scope.coding:codingGenomics",
         "path": "Consent.scope.coding",
-        "sliceName": "codingRoD",
+        "sliceName": "codingGenomics",
         "definition": "For WGS RoD this SHALL be fixed to the below code:"
       },
       {
-        "id": "Consent.scope.coding:codingRoD.system",
+        "id": "Consent.scope.coding:codingGenomics.system",
         "path": "Consent.scope.coding.system",
         "fixedUri": "http://terminology.hl7.org/CodeSystem/consentscope"
       },
       {
-        "id": "Consent.scope.coding:codingRoD.code",
+        "id": "Consent.scope.coding:codingGenomics.code",
         "path": "Consent.scope.coding.code",
-        "fixedCode": "research"
+        "fixedCode": "patient-privacy"
       },
       {
-        "id": "Consent.scope.coding:codingRoD.display",
+        "id": "Consent.scope.coding:codingGenomics.display",
         "path": "Consent.scope.coding.display",
-        "fixedString": "Research"
+        "fixedString": "Privacy Consent"
       },
       {
         "id": "Consent.category",
@@ -88,12 +88,46 @@
         "id": "Consent.category:categoryRoD",
         "path": "Consent.category",
         "sliceName": "categoryRoD",
+        "definition": "Fixed to `http://terminology.hl7.org/CodeSystem/v3-ActCode|RESEARCH (research information access)` for Order Management Consent for NGRL/RoD.",
+        "max": "1",
         "fixedCodeableConcept": {
           "coding": [
             {
-              "system": "http://terminology.hl7.org/CodeSystem/consentcategorycodes",
-              "code": "research",
-              "display": "Research Information Access"
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+              "code": "RESEARCH",
+              "display": "research information access"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Consent.category:categoryUGRDataAccess",
+        "path": "Consent.category",
+        "sliceName": "categoryUGRDataAccess",
+        "definition": "Fixed to `http://terminology.hl7.org/CodeSystem/v3-ActCode|INFA (information access)` for providing access to the patient's UGR for specific purposes, as described by the UGR lenses below.",
+        "max": "1",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+              "code": "INFA",
+              "display": "information access"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Consent.category:categoryUGRDataSharing",
+        "path": "Consent.category",
+        "sliceName": "categoryUGRDataSharing",
+        "definition": "Fixed to `http://terminology.hl7.org/CodeSystem/v3-ActCode|IDSCL (information disclosure)` for providing access to a relative's healthcare professional, to inform their care, e.g. in the case of familial/cascade testing.",
+        "max": "1",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+              "code": "IDSCL",
+              "display": "information disclosure"
             }
           ]
         }
@@ -117,8 +151,14 @@
         ]
       },
       {
+        "id": "Consent.dateTime",
+        "path": "Consent.dateTime",
+        "definition": "SHALL be the time the Consent record was created. For UGR Consent, likely auto-populated by the system."
+      },
+      {
         "id": "Consent.performer",
         "path": "Consent.performer",
+        "definition": "MAY reference a RelatedPerson/Patient or potentially PractitionerRole if consent is being provided via another individual e.g. a proxy, otherwise SHOULD reference the patient themself",
         "type": [
           {
             "code": "Reference",
@@ -138,9 +178,35 @@
         ]
       },
       {
+        "id": "Consent.organization",
+        "path": "Consent.organization",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Consent.organization:organizationUGR",
+        "path": "Consent.organization",
+        "sliceName": "organizationUGR",
+        "definition": "SHALL be fixed to the ODS code for NHS England (X26) as this is the managing organisation for the UGR consents.",
+        "max": "1",
+        "fixedReference": {
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "X26"
+          }
+        }
+      },
+      {
         "id": "Consent.source[x]",
         "path": "Consent.source[x]",
-        "definition": "SHALL be present for RoD entities (where the Consent resource provides metadata wrapping around a [Record of Discussion Form](https://www.england.nhs.uk/publication/nhs-genomic-medicine-service-record-of-discussion-form/). The Source element MAY either be:\r\nA pointer to the location of the PDF version of the RoD, either hosted by the source/client system\r\nAccessed via NRL (via a DocumentReference resource)\r\nEmbedded within the message payload, base64 encoded (using sourceAttachment)\r\nA reference to a QuestionnaireResponse resource (using sourceReference), if this has been collected in a structured format, using the Questionnaire-Genomic Testing RoD template."
+        "definition": "SHALL be present for RoD entities (where the Consent resource provides metadata wrapping around a [Record of Discussion Form](https://www.england.nhs.uk/publication/nhs-genomic-medicine-service-record-of-discussion-form/). The Source element MAY either be:\r\nA pointer to the location of the PDF version of the RoD, either hosted by the source/client system\r\nAccessed via NRL (via a DocumentReference resource)\r\nEmbedded within the message payload, base64 encoded (using sourceAttachment)\r\nA reference to a QuestionnaireResponse resource (using sourceReference), if this has been collected in a structured format, using the Questionnaire-Genomic Testing RoD template.\r\n\r\nNot relevant for UGR consent resources as this is generated automatically on creation of a UGR, though IHE PCF requires a reference or attachment. This MAY be a reference to a QuestionnaireResponse representing the patients consent selections, e.g. via the NHS App."
       },
       {
         "id": "Consent.policy",
@@ -171,9 +237,20 @@
         "fixedUri": "https://www.england.nhs.uk/publication/nhs-genomic-medicine-service-record-of-discussion-form"
       },
       {
+        "id": "Consent.policy:policyUGR",
+        "path": "Consent.policy",
+        "sliceName": "policyUGR",
+        "definition": "MAY be used to reference the NHS England Privacy Policy"
+      },
+      {
+        "id": "Consent.policy:policyUGR.uri",
+        "path": "Consent.policy.uri",
+        "fixedUri": "https://www.england.nhs.uk/wp-content/uploads/2018/05/nhs-england-privacy-notice-v1.77.pdf"
+      },
+      {
         "id": "Consent.provision",
         "path": "Consent.provision",
-        "definition": "Used to reference the ServiceRequest the Consent applies to. SHALL be present where the consent only applies to a specific test."
+        "definition": "Within Order Management used to reference the ServiceRequest the Consent applies to. SHALL be present where the consent only applies to a specific test.\r\n\r\nIn the context of the UGR, the top level `type` SHOULD represent the patient's overall consent to use of their data e.g. as indicated via their National Data Opt-Out selection. Sub-level `provision` elements SHOULD be used to represent exceptions to the higher level provision, though MAY be used to explicitly permit usage of data for specific purposes, where the higher-level provision is of type 'permit'. "
       },
       {
         "id": "Consent.provision.data:iData",
@@ -196,6 +273,177 @@
             ]
           }
         ]
+      },
+      {
+        "id": "Consent.provision.provision",
+        "path": "Consent.provision.provision",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Consent.provision.provision:provisionUGR",
+        "path": "Consent.provision.provision",
+        "sliceName": "provisionUGR"
+      },
+      {
+        "id": "Consent.provision.provision:provisionUGR.type",
+        "path": "Consent.provision.provision.type",
+        "min": 1
+      },
+      {
+        "id": "Consent.provision.provision:provisionUGR.period",
+        "path": "Consent.provision.provision.period",
+        "max": "0"
+      },
+      {
+        "id": "Consent.provision.provision:provisionUGR.actor",
+        "path": "Consent.provision.provision.actor",
+        "definition": "MAY be used to specify a class of individuals included within the consent statement, e.g. access for direct care by healthcare professionals, or for individuals, e.g. access to patient proxy."
+      },
+      {
+        "id": "Consent.provision.provision:provisionUGR.action",
+        "path": "Consent.provision.provision.action",
+        "max": "0"
+      },
+      {
+        "id": "Consent.provision.provision:provisionUGR.securityLabel",
+        "path": "Consent.provision.provision.securityLabel",
+        "max": "0"
+      },
+      {
+        "id": "Consent.provision.provision:provisionUGR.purpose",
+        "path": "Consent.provision.provision.purpose",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        },
+        "definition": "SHALL be used for encoding the four lenses of data access",
+        "min": 1,
+        "binding": {
+          "strength": "required"
+        }
+      },
+      {
+        "id": "Consent.provision.provision:provisionUGR.purpose:purposeDirectCare",
+        "path": "Consent.provision.provision.purpose",
+        "sliceName": "purposeDirectCare",
+        "max": "1"
+      },
+      {
+        "id": "Consent.provision.provision:provisionUGR.purpose:purposeDirectCare.system",
+        "path": "Consent.provision.provision.purpose.system",
+        "min": 1,
+        "fixedUri": "http://terminology.hl7.org/CodeSystem/v3-ActReason"
+      },
+      {
+        "id": "Consent.provision.provision:provisionUGR.purpose:purposeDirectCare.code",
+        "path": "Consent.provision.provision.purpose.code",
+        "min": 1,
+        "fixedCode": "TREAT"
+      },
+      {
+        "id": "Consent.provision.provision:provisionUGR.purpose:purposeResearch",
+        "path": "Consent.provision.provision.purpose",
+        "sliceName": "purposeResearch",
+        "max": "1"
+      },
+      {
+        "id": "Consent.provision.provision:provisionUGR.purpose:purposeResearch.system",
+        "path": "Consent.provision.provision.purpose.system",
+        "min": 1,
+        "fixedUri": "http://terminology.hl7.org/CodeSystem/v3-ActReason"
+      },
+      {
+        "id": "Consent.provision.provision:provisionUGR.purpose:purposeResearch.code",
+        "path": "Consent.provision.provision.purpose.code",
+        "min": 1,
+        "fixedCode": "HRESCH"
+      },
+      {
+        "id": "Consent.provision.provision:provisionUGR.purpose:purposePopulationHealth",
+        "path": "Consent.provision.provision.purpose",
+        "sliceName": "purposePopulationHealth",
+        "max": "1"
+      },
+      {
+        "id": "Consent.provision.provision:provisionUGR.purpose:purposePopulationHealth.system",
+        "path": "Consent.provision.provision.purpose.system",
+        "min": 1,
+        "fixedUri": "http://terminology.hl7.org/CodeSystem/v3-ActReason"
+      },
+      {
+        "id": "Consent.provision.provision:provisionUGR.purpose:purposePopulationHealth.code",
+        "path": "Consent.provision.provision.purpose.code",
+        "min": 1,
+        "fixedCode": "POPHLTH"
+      },
+      {
+        "id": "Consent.provision.provision:provisionUGR.purpose:purposeManagementInformation",
+        "path": "Consent.provision.provision.purpose",
+        "sliceName": "purposeManagementInformation",
+        "max": "1"
+      },
+      {
+        "id": "Consent.provision.provision:provisionUGR.purpose:purposeManagementInformation.system",
+        "path": "Consent.provision.provision.purpose.system",
+        "min": 1,
+        "fixedUri": "http://terminology.hl7.org/CodeSystem/v3-ActReason"
+      },
+      {
+        "id": "Consent.provision.provision:provisionUGR.purpose:purposeManagementInformation.code",
+        "path": "Consent.provision.provision.purpose.code",
+        "min": 1,
+        "fixedCode": "HOPERAT"
+      },
+      {
+        "id": "Consent.provision.provision:provisionUGR.purpose:purposeFamilyLinkage",
+        "path": "Consent.provision.provision.purpose",
+        "sliceName": "purposeFamilyLinkage",
+        "max": "1"
+      },
+      {
+        "id": "Consent.provision.provision:provisionUGR.purpose:purposeFamilyLinkage.system",
+        "path": "Consent.provision.provision.purpose.system",
+        "min": 1,
+        "fixedUri": "http://terminology.hl7.org/CodeSystem/v3-ActReason"
+      },
+      {
+        "id": "Consent.provision.provision:provisionUGR.purpose:purposeFamilyLinkage.code",
+        "path": "Consent.provision.provision.purpose.code",
+        "min": 1,
+        "fixedCode": "FAMRQT"
+      },
+      {
+        "id": "Consent.provision.provision:provisionUGR.class",
+        "path": "Consent.provision.provision.class",
+        "definition": "MAY be used to indicate the classes of data the provision applies to, where whole classes of data, e.g. DiagnosticReports, are consented to, rather than specific instances. "
+      },
+      {
+        "id": "Consent.provision.provision:provisionUGR.code",
+        "path": "Consent.provision.provision.code",
+        "max": "0"
+      },
+      {
+        "id": "Consent.provision.provision:provisionUGR.dataPeriod",
+        "path": "Consent.provision.provision.dataPeriod",
+        "max": "0"
+      },
+      {
+        "id": "Consent.provision.provision:provisionUGR.data",
+        "path": "Consent.provision.provision.data",
+        "definition": "SHOULD be used where the consent applies to specific instances of data, such as a single report or sequence.\r\n\r\n`data.meaning` MAY use any of the codes specified in the [consent-data-meaning ValueSet](https://www.hl7.org/fhir/R4/valueset-consent-data-meaning.html), as data may not be useful in isolation, e.g. a report without the referenced observations. However, the `authoredBy` code is not expected to be used for the UGR."
       }
     ]
   }
