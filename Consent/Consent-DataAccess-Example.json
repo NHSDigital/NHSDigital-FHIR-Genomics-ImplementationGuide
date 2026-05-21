@@ -1,0 +1,164 @@
+{
+  "resourceType": "Consent",
+  "id": "Consent-DataAccess-Example",
+  "status": "active",
+  "scope": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/consentscope",
+        "code": "patient-privacy",
+        "display": "Privacy Consent"
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "INFA",
+          "display": "information access"
+        }
+      ]
+    }
+  ],
+  "patient": {
+    "reference": "Patient/Patient-AnitaLamberts-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "8449303649"
+    }
+  },
+  "dateTime": "2026-05-07T09:08:30Z",
+  "performer": [
+    {
+      "reference": "Patient/Patient-AnitaLamberts-Example",
+      "identifier": {
+        "system": "https://fhir.nhs.uk/Id/nhs-number",
+        "value": "8449303649"
+      }
+    }
+  ],
+  "organization": [
+    {
+      "identifier": {
+        "system": "https://fhir.hl7.org.uk/Id/ode-organization-code",
+        "value": "X26"
+      }
+    }
+  ],
+  "sourceReference": {
+    "reference": "QuestionnaireResponse/QuestionnaireResponse-ConsentQuestionnaire-Example"
+  },
+  "policy": [
+    {
+      "uri": "https://www.england.nhs.uk/wp-content/uploads/2018/05/nhs-england-privacy-notice-v1.77.pdf"
+    }
+  ],
+  "provision": {
+    "type": "deny",
+    "provision": [
+      {
+        "type": "permit",
+        "actor": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "code": "AUCG",
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction",
+                  "display": "caregiver information receiver"
+                }
+              ]
+            },
+            "reference": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/nhs-number",
+                "value": "9999999999"
+              }
+            }
+          }
+        ],
+        "purpose": [
+          {
+            "code": "TREAT",
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason"
+          }
+        ],
+        "data": [
+          {
+            "meaning": "instance",
+            "reference": {
+              "reference": "Condition/Condition-MonogenicHearingLoss-Example"
+            }
+          }
+        ]
+      },
+      {
+        "type": "permit",
+        "actor": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "code": "IRCP",
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
+                }
+              ]
+            },
+            "reference": {
+              "reference": "Group/Group-GenomicResearchers-Example"
+            }
+          }
+        ],
+        "purpose": [
+          {
+            "code": "HRESCH",
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason"
+          }
+        ],
+        "data": [
+          {
+            "meaning": "related",
+            "reference": {
+              "reference": "DiagnosticReport/DiagnosticReport-AnitaLamberts-Example"
+            }
+          }
+        ]
+      },
+      {
+        "type": "permit",
+        "actor": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "code": "PROV",
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-RoleClass"
+                }
+              ]
+            },
+            "reference": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/sds-user-id",
+                "value": "123456789012"
+              }
+            }
+          }
+        ],
+        "purpose": [
+          {
+            "code": "TREAT",
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason"
+          }
+        ],
+        "class": [
+           {
+            "code": "DiagnosticReport",
+            "system": "http://hl7.org/fhir/resource-types"
+          }
+        ]
+      }
+    ]
+  }
+}
