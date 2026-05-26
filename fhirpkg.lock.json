@@ -11,7 +11,7 @@
     "hl7.fhir.us.mcode": "4.0.0",
     "fhir.r4.nhsengland.pathology": "0.1.4-alpha",
     "hl7.fhir.uv.tools.r4": "1.1.2",
-    "fhir.r4.nhsengland.programme": "0.24.0-pre-release",
+    "fhir.r4.nhsengland.nhse-identifiers": "0.1.1-alpha",
     "fhir.r4.ukcore.stu3.currentbuild": "0.28.0-pre-release"
   },
   "missing": {}
