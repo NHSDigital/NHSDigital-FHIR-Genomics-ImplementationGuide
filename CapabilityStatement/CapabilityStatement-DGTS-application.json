@@ -2,28 +2,28 @@
   "resourceType": "CapabilityStatement",
   "id": "CapabilityStatement-DGTS-application",
   "url": "https://fhir.nhs.uk/CapabilityStatement/DGTS-application",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "CapabilityStatementDGTSApplication",
   "status": "draft",
-  "date": "2025-11-26T00:00:00+00:00",
+  "date": "2026-06-01T00:00:00+00:00",
   "publisher": "NHS England",
   "description": "Sample server capability for the Digital Genomic Test Services API",
   "kind": "instance",
-  "implementationGuide":  [
-      "https://fhir.nhs.uk/ImplementationGuide/FHIR-Genomics-Implementation-Guide"
+  "implementationGuide": [
+    "https://fhir.nhs.uk/ImplementationGuide/FHIR-Genomics-Implementation-Guide"
   ],
   "fhirVersion": "4.0.1",
-  "format":  [
-      "application/fhir+json"
+  "format": [
+    "application/fhir+json"
   ],
   "implementation": {
     "description": "Exemplar CapabilityStatement for the GMS DGTS FHIR API"
   },
-  "rest":  [
+  "rest": [
     {
       "mode": "server",
       "documentation": "RESTful endpoints supported by the DGTS FHIR API",
-      "resource":  [
+      "resource": [
         {
           "type": "PlanDefinition",
           "profile": "http://hl7.org/fhir/StructureDefinition/PlanDefinition",
@@ -42,6 +42,14 @@
               "type": "token"
             },
             {
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "name": "status",
+              "type": "token"
+            },
+            {
               "name": "title",
               "type": "string"
             },
@@ -52,6 +60,18 @@
             {
               "name": "version",
               "type": "token"
+            },
+            {
+              "name": "actor-role",
+              "definition": "https://fhir.nhs.uk/SearchParameter/plandefinition-actor-role",
+              "type": "token",
+              "documentation": "Search PlanDefinition by actor option role from the R5 cross-version extension extension-PlanDefinition.actor"
+            },
+            {
+              "name": "actor-type-reference",
+              "definition": "https://fhir.nhs.uk/SearchParameter/plandefinition-actor-typereference",
+              "type": "reference",
+              "documentation": "Search PlanDefinition by actor option typeReference from the R5 cross-version extension extension-PlanDefinition.actor"
             }
           ]
         },
@@ -106,7 +126,7 @@
         },
         {
           "type": "Library",
-          "profile": "http://hl7.org/fhir/StructureDefinition/Library", 
+          "profile": "http://hl7.org/fhir/StructureDefinition/Library",
           "documentation": "Data requirements for DGTS Genomic Tests",
           "interaction": [
             {
@@ -116,7 +136,7 @@
         },
         {
           "type": "SpecimenDefinition",
-          "profile": "http://hl7.org/fhir/StructureDefinition/SpecimenDefinition", 
+          "profile": "http://hl7.org/fhir/StructureDefinition/SpecimenDefinition",
           "documentation": "Specimen requirements for DGTS Genomic Tests",
           "interaction": [
             {
