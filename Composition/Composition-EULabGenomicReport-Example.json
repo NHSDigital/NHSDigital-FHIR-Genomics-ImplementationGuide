@@ -80,6 +80,10 @@
  "section": [
   {
    "title": "Results",
+   "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Genomic findings.</div>"
+   },
    "code": {
     "coding": [
      {
@@ -89,32 +93,6 @@
      }
     ]
    },
-   "section": [
-    {
-     "title": "Results",
-     "text": {
-      "status": "generated",
-      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Genomic findings.</div>"
-     },
-     "code": {
-      "coding": [
-       {
-        "system": "http://loinc.org",
-        "code": "26436-6",
-        "display": "Laboratory studies (set)"
-       }
-      ]
-     },
-     "entry": [
-      {
-       "reference": "Observation/Observation-GenomicTherapeuticImplication-Example"
-      },
-      {
-       "reference": "Observation/Observation-GenomicsVariantSLC52A2-Example"
-      }
-     ]
-    }
-   ],
    "entry": [
     {
      "reference": "Observation/Observation-GenomicTherapeuticImplication-Example"
