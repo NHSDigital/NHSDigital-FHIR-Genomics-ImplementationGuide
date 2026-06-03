@@ -3,7 +3,8 @@
   "description": "FHIR Genomics Implementation Guide",
   "author": "nhsdigital",
   "dependencies": {
-
+    "hl7.fhir.r4.core": "4.0.1",
+    "fhir.r4.ukcore.stu3.currentbuild": "0.28.0-pre-release"
   },
   "fhirVersions": [
     "4.0.1"
