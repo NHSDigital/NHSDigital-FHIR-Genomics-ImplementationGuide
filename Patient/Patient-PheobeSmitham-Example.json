@@ -3,7 +3,8 @@
  "id": "Patient-PheobeSmitham-Example",
  "meta": {
   "profile": [
-   "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient"
+   "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient",
+   "http://hl7.eu/fhir/base/StructureDefinition/patient-eu"
   ]
  },
  "extension": [
