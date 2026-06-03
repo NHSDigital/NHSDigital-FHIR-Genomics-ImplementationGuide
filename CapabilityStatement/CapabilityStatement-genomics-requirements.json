@@ -45,7 +45,7 @@
     },
     {
      "type": "DocumentReference",
-     "profile": "https://fhir.nhs.uk/StructureDefinition/NHSEngland-DocumentReference-GenomicDataFile
+     "profile": "https://fhir.nhs.uk/StructureDefinition/NHSEngland-DocumentReference-GenomicDataFile"
     },
     {
      "type": "CodeSystem",
