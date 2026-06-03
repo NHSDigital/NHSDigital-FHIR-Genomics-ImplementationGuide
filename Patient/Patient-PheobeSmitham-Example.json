@@ -4,7 +4,7 @@
   "meta": {
     "profile": [
       "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient",
-      "http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-eu-lab"
+      "http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-animal-eu-lab"
     ]
   },
   "extension": [

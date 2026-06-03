@@ -2,11 +2,11 @@
   "resourceType": "StructureDefinition",
   "id": "NHSEngland-Composition-GenomicsEULabReport",
   "url": "https://fhir.nhs.uk/StructureDefinition/NHSEngland-Composition-GenomicsEULabReport",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "name": "NHSEngland_Composition_GenomicsEULabReport",
   "title": "NHSEngland Composition GenomicsEULabReport",
   "status": "active",
-  "date": "2026-04-16",
+  "date": "2026-06-03",
   "publisher": "NHS England",
   "contact": [
     {
@@ -46,7 +46,6 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://fhir.nhs.uk/StructureDefinition/NHSEngland-ServiceRequest-Genomics",
               "http://hl7.eu/fhir/laboratory/StructureDefinition/ServiceRequest-eu-lab"
             ],
             "aggregation": [
@@ -175,6 +174,11 @@
         "id": "Composition.category",
         "path": "Composition.category",
         "slicing": {
+            "discriminator": [
+    {
+      "type": "pattern",
+      "path": "$this"
+    }],
           "rules": "open"
         },
         "definition": "Fixed codes for conformance to the EU Lab Composition profile (for cross border sharing of lab reports)."
@@ -235,7 +239,6 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://fhir.nhs.uk/StructureDefinition/NHSEngland-Patient-Genomics",
               "http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-eu-lab",
               "http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-animal-eu-lab",
               "http://hl7.org/fhir/StructureDefinition/Group",
@@ -269,6 +272,11 @@
         "id": "Composition.section",
         "path": "Composition.section",
         "slicing": {
+            "discriminator": [
+    {
+      "type": "pattern",
+      "path": "$this"
+    }],
           "rules": "open"
         },
         "definition": "To conform to EU Lab, SHOULD include references to the results that form part of the genomic report. For the UGR, will include sections that conform to the UGR folders, this work is currently in development."
