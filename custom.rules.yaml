@@ -23,8 +23,7 @@
         - CONFIG #errors in dependencies e.g. loops, outdated, pre-release
         - 6006 #failure to contact term service
         - 1030 #reference loop
-        - 4000 # Eu-Lab issues
-        - 4009 ~ Extension-reference
+     
  
 - action: unique
   name: unique-canonicals
