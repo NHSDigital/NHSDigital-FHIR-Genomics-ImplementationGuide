@@ -64,6 +64,7 @@
    {
     "id": "Composition.extension:information-recipient.value[x]",
     "path": "Composition.extension.value[x]",
+    "sliceName": "valueReference",
     "type": [
      {
       "code": "Reference",
@@ -240,9 +241,9 @@
      {
       "code": "Reference",
       "targetProfile": [
-       "http://hl7.eu/fhir/base/StructureDefinition/patient-eu-core",
+       "http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-eu-lab",
        "http://hl7.org/fhir/StructureDefinition/Group",
-       "http://hl7.eu/fhir/base/StructureDefinition/location-eu-core",
+       "http://hl7.org/fhir/StructureDefinition/Location",
        "http://hl7.org/fhir/StructureDefinition/Device"
       ],
       "aggregation": [
