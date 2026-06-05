@@ -96,8 +96,7 @@
      {
       "code": "Reference",
       "targetProfile": [
-       "https://fhir.nhs.uk/StructureDefinition/NHSEngland-DiagnosticReport-GenomicReport",
-       "http://hl7.eu/fhir/laboratory/StructureDefinition/DiagnosticReport-eu-lab"
+       "https://fhir.nhs.uk/StructureDefinition/NHSEngland-DiagnosticReport-GenomicReport"
       ],
       "aggregation": [
        "referenced",
