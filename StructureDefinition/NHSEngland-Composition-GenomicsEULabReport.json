@@ -131,17 +131,7 @@
           "rules": "open"
         }
       },
-      {
-        "id": "Composition.type.coding.display.extension:translation",
-        "path": "Composition.type.coding.display.extension",
-        "sliceName": "translation"
-      },
-      {
-        "id": "Composition.type.coding.display.extension:translation.extension",
-        "path": "Composition.type.coding.display.extension.extension",
-        "min": 2
-      },
-      {
+            {
         "id": "Composition.type.coding:codingGenomics",
         "path": "Composition.type.coding",
         "sliceName": "codingGenomics",
@@ -161,40 +151,20 @@
         "path": "Composition.type.coding.display.extension.extension",
         "min": 2
       },
-      {
-        "id": "Composition.type.text.extension:translation",
-        "path": "Composition.type.text.extension",
+            {
+        "id": "Composition.type.coding.display.extension:translation",
+        "path": "Composition.type.coding.display.extension",
         "sliceName": "translation"
       },
       {
-        "id": "Composition.type.text.extension:translation.extension",
-        "path": "Composition.type.text.extension.extension",
+        "id": "Composition.type.coding.display.extension:translation.extension",
+        "path": "Composition.type.coding.display.extension.extension",
         "min": 2
       },
       {
         "id": "Composition.category",
         "path": "Composition.category",
         "definition": "Fixed codes for conformance to the EU Lab Composition profile (for cross border sharing of lab reports)."
-      },
-      {
-        "id": "Composition.category.coding.display.extension:translation",
-        "path": "Composition.category.coding.display.extension",
-        "sliceName": "translation"
-      },
-      {
-        "id": "Composition.category.coding.display.extension:translation.extension",
-        "path": "Composition.category.coding.display.extension.extension",
-        "min": 2
-      },
-      {
-        "id": "Composition.category.text.extension:translation",
-        "path": "Composition.category.text.extension",
-        "sliceName": "translation"
-      },
-      {
-        "id": "Composition.category.text.extension:translation.extension",
-        "path": "Composition.category.text.extension.extension",
-        "min": 2
       },
       {
         "id": "Composition.category:studyType",
