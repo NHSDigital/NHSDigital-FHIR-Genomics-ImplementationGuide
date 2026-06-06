@@ -30,15 +30,15 @@ implementationguides:
         installMode: STORE_AND_INSTALL
         fetchDependencies: false
       hl7-fhir-us-mcode:
-        name: hl7.fhir.us.mcode.r4
-        version: 4.0.0-ballot
+        name: hl7.fhir.us.mcode
+        version: 4.0.0
         installMode: STORE_AND_INSTALL
         fetchDependencies: true
       fhir-r4-nhsengland-pathology:
         name: fhir.r4.nhsengland.pathology
         version: 0.1.4-alpha
         installMode: STORE_AND_INSTALL
-        fetchDependencies: false
+        fetchDependencies: true
       hl7-fhir-uv-tools-r4:
         name: hl7.fhir.uv.tools.r4
         version: 1.1.2
