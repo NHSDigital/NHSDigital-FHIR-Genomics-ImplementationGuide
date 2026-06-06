@@ -198,24 +198,12 @@
         "fixedString": "Genetic report"
       },
       {
-        "id": "Composition.section",
-        "path": "Composition.section",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "code"
-            }
-          ],
-          "rules": "open"
-        },
-        "definition": "Sections included in the Genomics / UGR Composition."
-      },
-      {
         "id": "Composition.section:sectionUGR",
         "path": "Composition.section",
         "sliceName": "sectionUGR",
-        "definition": "Sections included within UGR"
+        "definition": "Sections included within UGR",
+        "min": 0,
+        "max": "*"
       },
       {
         "id": "Composition.section:sectionUGR.code",
