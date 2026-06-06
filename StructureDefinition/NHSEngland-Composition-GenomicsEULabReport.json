@@ -198,10 +198,6 @@
         "fixedString": "Genetic report"
       },
       {
-        "id": "Composition.section",
-        "path": "Composition.section"
-      },
-      {
         "id": "Composition.section:sectionUGR",
         "path": "Composition.section",
         "sliceName": "sectionUGR",
