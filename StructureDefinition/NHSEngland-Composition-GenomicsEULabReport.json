@@ -2,11 +2,11 @@
   "resourceType": "StructureDefinition",
   "id": "NHSEngland-Composition-GenomicsEULabReport",
   "url": "https://fhir.nhs.uk/StructureDefinition/NHSEngland-Composition-GenomicsEULabReport",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "name": "NHSEngland_Composition_GenomicsEULabReport",
   "title": "NHSEngland Composition GenomicsEULabReport",
   "status": "active",
-  "date": "2026-04-16",
+  "date": "2026-06-03",
   "publisher": "NHS England",
   "contact": [
     {
@@ -89,11 +89,6 @@
         "path": "Composition.extension",
         "sliceName": "diagnosticReport-reference",
         "definition": "TBC. Only relevant for EU Lab aligned reports (included in HL7 EU Laboratory Report: Composition Profile). A reference to the focal DiagnosticReport this Composition is for."
-      },
-      {
-        "id": "Composition.extension:diagnosticReport-reference.url",
-        "path": "Composition.extension.url",
-        "fixedUri": "diagnosticReport-reference"
       },
       {
         "id": "Composition.extension:diagnosticReport-reference.value[x]",
@@ -179,15 +174,6 @@
       {
         "id": "Composition.category",
         "path": "Composition.category",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "$this"
-            }
-          ],
-          "rules": "open"
-        },
         "definition": "Fixed codes for conformance to the EU Lab Composition profile (for cross border sharing of lab reports)."
       },
       {
