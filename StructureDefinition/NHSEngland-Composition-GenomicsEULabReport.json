@@ -107,7 +107,14 @@
           }
         ]
       },
+     
       {
+        "id": "Composition.status",
+        "path": "Composition.status",
+        "definition": "Fixed value of 'final'",
+        "fixedCode": "final"
+      },
+       {
         "id": "Composition.type",
         "path": "Composition.type",
         "definition": "SNOMED CT code for either a Laboratory Request (24691000000102) or Genetic report (1054161000000101)",
@@ -121,35 +128,9 @@
         }
       },
       {
-        "id": "Composition.status",
-        "path": "Composition.status",
-        "definition": "Fixed value of 'final'",
-        "fixedCode": "final"
-      },
-      {
         "id": "Composition.category",
         "path": "Composition.category",
         "definition": "Fixed codes for conformance to the EU Lab Composition profile (for cross border sharing of lab reports)."
-      },
-      {
-        "id": "Composition.category.coding.display.extension:translation",
-        "path": "Composition.category.coding.display.extension",
-        "sliceName": "translation"
-      },
-      {
-        "id": "Composition.category.coding.display.extension:translation.extension",
-        "path": "Composition.category.coding.display.extension.extension",
-        "min": 2
-      },
-      {
-        "id": "Composition.category.text.extension:translation",
-        "path": "Composition.category.text.extension",
-        "sliceName": "translation"
-      },
-      {
-        "id": "Composition.category.text.extension:translation.extension",
-        "path": "Composition.category.text.extension.extension",
-        "min": 2
       },
       {
         "id": "Composition.category:studyType",
