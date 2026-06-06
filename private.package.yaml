@@ -1,9 +1,4 @@
 implementationguides:
-      hl7-fhir-uv-extensions-r4:
-        name: hl7.fhir.uv.extensions.r4
-        version: 1.0.0
-        installMode: STORE_AND_INSTALL
-        fetchDependencies: false
       hl7-fhir-uv-xver-r5-r4:
         name: hl7.fhir.uv.xver-r5.r4
         version: 0.1.0
