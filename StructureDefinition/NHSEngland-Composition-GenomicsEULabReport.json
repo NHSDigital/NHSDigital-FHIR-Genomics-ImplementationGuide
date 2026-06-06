@@ -196,22 +196,6 @@
         "path": "Composition.title",
         "definition": "SHALL match the SNOMED CT display used within Composition.type",
         "fixedString": "Genetic report"
-      },
-      {
-        "id": "Composition.section:sectionUGR",
-        "path": "Composition.section",
-        "sliceName": "sectionUGR",
-        "definition": "Sections included within UGR",
-        "min": 0,
-        "max": "*"
-      },
-      {
-        "id": "Composition.section:sectionUGR.code",
-        "path": "Composition.section.code",
-        "binding": {
-          "strength": "extensible",
-          "valueSet": "https://fhir.hl7.org.uk/ValueSet/UKCore-CompositionSectionCode"
-        }
       }
     ]
   }
