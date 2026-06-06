@@ -33,24 +33,6 @@
   "differential": {
     "element": [
       {
-        "id": "Composition.extension:basedOn-order-or-requisition",
-        "path": "Composition.extension",
-        "sliceName": "basedOn-order-or-requisition",
-        "definition": "TBC. Only relevant for EU Lab aligned reports (included in HL7 EU Laboratory Report: Composition Profile). A reference to the ServiceRequest which this report is in response to."
-      },
-      {
-        "id": "Composition.extension:information-recipient",
-        "path": "Composition.extension",
-        "sliceName": "information-recipient",
-        "definition": "TBC. Only relevant for EU Lab aligned reports (included in HL7 EU Laboratory Report: Composition Profile). A reference to the recipient for a report, could potentially be used to reference additional recipients over the subject and original requester for the request."
-      },
-      {
-        "id": "Composition.extension:diagnosticReport-reference",
-        "path": "Composition.extension",
-        "sliceName": "diagnosticReport-reference",
-        "definition": "TBC. Only relevant for EU Lab aligned reports (included in HL7 EU Laboratory Report: Composition Profile). A reference to the focal DiagnosticReport this Composition is for."
-      },
-      {
         "id": "Composition.status",
         "path": "Composition.status",
         "definition": "Fixed value of 'final'",
