@@ -57,8 +57,7 @@
               "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-patient"
             ],
             "aggregation": [
-              "referenced",
-              "bundled"
+              "referenced"
             ]
           }
         ]
