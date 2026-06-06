@@ -33,7 +33,7 @@ implementationguides:
         name: hl7.fhir.us.mcode
         version: 4.0.0
         installMode: STORE_AND_INSTALL
-        fetchDependencies: true
+        fetchDependencies: false
       fhir-r4-nhsengland-pathology:
         name: fhir.r4.nhsengland.pathology
         version: 0.1.4-alpha
@@ -43,7 +43,6 @@ implementationguides:
         name: hl7.fhir.uv.tools.r4
         version: 1.1.2
         installMode: STORE_AND_INSTALL
-        fetchDependencies: false
       fhir-r4-nhsengland-nhse-identifiers:
         name: fhir.r4.nhsengland.nhse-identifiers
         version: 0.1.1-alpha
