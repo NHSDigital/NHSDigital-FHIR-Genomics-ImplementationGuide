@@ -92,7 +92,6 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://fhir.nhs.uk/StructureDefinition/NHSEngland-Patient-Genomics",
               "http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-eu-lab",
               "http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-animal-eu-lab",
               "http://hl7.org/fhir/StructureDefinition/Group",
