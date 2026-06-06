@@ -39,73 +39,16 @@
         "definition": "TBC. Only relevant for EU Lab aligned reports (included in HL7 EU Laboratory Report: Composition Profile). A reference to the ServiceRequest which this report is in response to."
       },
       {
-        "id": "Composition.extension:basedOn-order-or-requisition.value[x]:valueReference",
-        "path": "Composition.extension.value[x]",
-        "sliceName": "valueReference",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://fhir.nhs.uk/StructureDefinition/NHSEngland-ServiceRequest-Genomics",
-              "http://hl7.eu/fhir/laboratory/StructureDefinition/ServiceRequest-eu-lab"
-            ],
-            "aggregation": [
-              "referenced",
-              "bundled"
-            ]
-          }
-        ]
-      },
-      {
         "id": "Composition.extension:information-recipient",
         "path": "Composition.extension",
         "sliceName": "information-recipient",
         "definition": "TBC. Only relevant for EU Lab aligned reports (included in HL7 EU Laboratory Report: Composition Profile). A reference to the recipient for a report, could potentially be used to reference additional recipients over the subject and original requester for the request."
       },
       {
-        "id": "Composition.extension:information-recipient.value[x]",
-        "path": "Composition.extension.value[x]",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://fhir.nhs.uk/StructureDefinition/NHSEngland-PractitionerRole-Genomics",
-              "http://hl7.eu/fhir/laboratory/StructureDefinition/Practitioner-eu-lab",
-              "http://hl7.org/fhir/StructureDefinition/Device",
-              "http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-eu-lab",
-              "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-              "http://hl7.eu/fhir/laboratory/StructureDefinition/PractitionerRole-eu-lab",
-              "http://hl7.org/fhir/StructureDefinition/Organization"
-            ],
-            "aggregation": [
-              "referenced",
-              "bundled"
-            ]
-          }
-        ]
-      },
-      {
         "id": "Composition.extension:diagnosticReport-reference",
         "path": "Composition.extension",
         "sliceName": "diagnosticReport-reference",
         "definition": "TBC. Only relevant for EU Lab aligned reports (included in HL7 EU Laboratory Report: Composition Profile). A reference to the focal DiagnosticReport this Composition is for."
-      },
-      {
-        "id": "Composition.extension:diagnosticReport-reference.value[x]",
-        "path": "Composition.extension.value[x]",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://fhir.nhs.uk/StructureDefinition/NHSEngland-DiagnosticReport-GenomicReport",
-              "http://hl7.eu/fhir/laboratory/StructureDefinition/DiagnosticReport-eu-lab"
-            ],
-            "aggregation": [
-              "referenced",
-              "bundled"
-            ]
-          }
-        ]
       },
       {
         "id": "Composition.status",
@@ -196,6 +139,22 @@
         "path": "Composition.title",
         "definition": "SHALL match the SNOMED CT display used within Composition.type",
         "fixedString": "Genetic report"
+      },
+      {
+        "id": "Composition.section:sectionUGR",
+        "path": "Composition.section",
+        "sliceName": "sectionUGR",
+        "definition": "Sections included within UGR",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Composition.section:sectionUGR.code",
+        "path": "Composition.section.code",
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://fhir.hl7.org.uk/ValueSet/UKCore-CompositionSectionCode"
+        }
       }
     ]
   }
