@@ -131,7 +131,17 @@
           "rules": "open"
         }
       },
-            {
+      {
+        "id": "Composition.type.coding.display.extension:translation",
+        "path": "Composition.type.coding.display.extension",
+        "sliceName": "translation"
+      },
+      {
+        "id": "Composition.type.coding.display.extension:translation.extension",
+        "path": "Composition.type.coding.display.extension.extension",
+        "min": 2
+      },
+      {
         "id": "Composition.type.coding:codingGenomics",
         "path": "Composition.type.coding",
         "sliceName": "codingGenomics",
@@ -151,20 +161,40 @@
         "path": "Composition.type.coding.display.extension.extension",
         "min": 2
       },
-            {
-        "id": "Composition.type.coding.display.extension:translation",
-        "path": "Composition.type.coding.display.extension",
+      {
+        "id": "Composition.type.text.extension:translation",
+        "path": "Composition.type.text.extension",
         "sliceName": "translation"
       },
       {
-        "id": "Composition.type.coding.display.extension:translation.extension",
-        "path": "Composition.type.coding.display.extension.extension",
+        "id": "Composition.type.text.extension:translation.extension",
+        "path": "Composition.type.text.extension.extension",
         "min": 2
       },
       {
         "id": "Composition.category",
         "path": "Composition.category",
         "definition": "Fixed codes for conformance to the EU Lab Composition profile (for cross border sharing of lab reports)."
+      },
+      {
+        "id": "Composition.category.coding.display.extension:translation",
+        "path": "Composition.category.coding.display.extension",
+        "sliceName": "translation"
+      },
+      {
+        "id": "Composition.category.coding.display.extension:translation.extension",
+        "path": "Composition.category.coding.display.extension.extension",
+        "min": 2
+      },
+      {
+        "id": "Composition.category.text.extension:translation",
+        "path": "Composition.category.text.extension",
+        "sliceName": "translation"
+      },
+      {
+        "id": "Composition.category.text.extension:translation.extension",
+        "path": "Composition.category.text.extension.extension",
+        "min": 2
       },
       {
         "id": "Composition.category:studyType",
@@ -238,21 +268,6 @@
         "definition": "To conform to EU Lab, SHOULD include references to the results that form part of the genomic report. For the UGR, will include sections that conform to the UGR folders, this work is currently in development."
       },
       {
-        "id": "Composition.section:sectionUGR",
-        "path": "Composition.section",
-        "sliceName": "sectionUGR",
-        "definition": "Sections included within the UGR: patient-demographics | investigations-and-procedures-requested | investigation-results | consent-for-information-sharing |  family-history "
-      },
-      {
-        "id": "Composition.section:sectionUGR.code",
-        "path": "Composition.section.code",
-        "binding": {
-          "strength": "extensible",
-          "description": "UK Core Composition Section Codes",
-          "valueSet": "https://fhir.hl7.org.uk/ValueSet/UKCore-CompositionSectionCode"
-        }
-      },
-      {
         "id": "Composition.section.code.coding.display.extension:translation",
         "path": "Composition.section.code.coding.display.extension",
         "sliceName": "translation"
@@ -269,6 +284,41 @@
       },
       {
         "id": "Composition.section.code.text.extension:translation.extension",
+        "path": "Composition.section.code.text.extension.extension",
+        "min": 2
+      },
+      {
+        "id": "Composition.section:sectionUGR",
+        "path": "Composition.section",
+        "sliceName": "sectionUGR",
+        "definition": "Sections included within the UGR: patient-demographics | investigations-and-procedures-requested | investigation-results | consent-for-information-sharing |  family-history "
+      },
+      {
+        "id": "Composition.section:sectionUGR.code",
+        "path": "Composition.section.code",
+        "binding": {
+          "strength": "extensible",
+          "description": "UK Core Composition Section Codes",
+          "valueSet": "https://fhir.hl7.org.uk/ValueSet/UKCore-CompositionSectionCode"
+        }
+      },
+      {
+        "id": "Composition.section:sectionUGR.code.coding.display.extension:translation",
+        "path": "Composition.section.code.coding.display.extension",
+        "sliceName": "translation"
+      },
+      {
+        "id": "Composition.section:sectionUGR.code.coding.display.extension:translation.extension",
+        "path": "Composition.section.code.coding.display.extension.extension",
+        "min": 2
+      },
+      {
+        "id": "Composition.section:sectionUGR.code.text.extension:translation",
+        "path": "Composition.section.code.text.extension",
+        "sliceName": "translation"
+      },
+      {
+        "id": "Composition.section:sectionUGR.code.text.extension:translation.extension",
         "path": "Composition.section.code.text.extension.extension",
         "min": 2
       }
