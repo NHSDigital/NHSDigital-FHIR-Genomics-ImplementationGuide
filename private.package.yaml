@@ -3,7 +3,7 @@ implementationguides:
         name: hl7.fhir.uv.extensions.r4
         version: 5.3.0-ballot-tc1
         installMode: STORE_AND_INSTALL
-        fetchDependencies: false
+        fetchDependencies: true
       hl7-fhir-uv-xver-r5-r4:
         name: hl7.fhir.uv.xver-r5.r4
         version: 0.1.0
@@ -13,7 +13,7 @@ implementationguides:
         name: hl7.fhir.uv.genomics-reporting
         version: 3.0.0
         installMode: STORE_AND_INSTALL
-        fetchDependencies: false
+        fetchDependencies: true
       hl7-fhir-uv-ips:
         name: hl7.fhir.uv.ips
         version: 2.0.0
@@ -43,6 +43,7 @@ implementationguides:
         name: hl7.fhir.uv.tools.r4
         version: 1.1.2
         installMode: STORE_AND_INSTALL
+        fetchDependencies: true
       fhir-r4-nhsengland-nhse-identifiers:
         name: fhir.r4.nhsengland.nhse-identifiers
         version: 0.1.1-alpha
