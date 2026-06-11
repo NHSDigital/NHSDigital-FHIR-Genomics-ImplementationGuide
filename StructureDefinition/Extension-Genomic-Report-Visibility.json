@@ -65,7 +65,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://fhir.nhs.uk/ValueSet/report-visibility"
+          "valueSet": "https://fhir.nhs.uk/ValueSet/genomic-report-visibility"
         }
       }
     ]
