@@ -26,6 +26,10 @@
       }
     }
   ],
+   "identifier": {
+  "system": "https://fhir.nhs.uk/Id/genomic-report",
+  "value": "GR-12345"
+ },
   "status": "final",
   "type": {
     "coding": [
@@ -76,6 +80,10 @@
   "section": [
     {
       "title": "Results",
+         "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Genomic findings.</div>"
+   },
       "code": {
         "coding": [
           {
