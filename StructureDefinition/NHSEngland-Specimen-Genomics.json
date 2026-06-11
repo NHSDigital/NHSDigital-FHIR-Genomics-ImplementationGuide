@@ -2,11 +2,11 @@
   "resourceType": "StructureDefinition",
   "id": "NHSEngland-Specimen-Genomics",
   "url": "https://fhir.nhs.uk/StructureDefinition/NHSEngland-Specimen-Genomics",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "name": "NHSEngland_Specimen_Genomics",
   "title": "NHSEngland Specimen Genomics",
   "status": "active",
-  "date": "2026-04-16",
+  "date": "2026-06-03",
   "publisher": "NHS England",
   "contact": [
     {
@@ -301,19 +301,6 @@
         "path": "Specimen.container",
         "definition": "The UK Core STU3 version of Specimen backports the R5 changes to the container BackboneElement to support capturing of storage location for a sample (through `container.location`) and recursive capture of device identifiers (e.g. tube, well, rack, freezer through `container.device`).\r\nThe container.identifier should match the identifier associated with the barcode for the tube/collection device. This can be searched using the container-id SearchParameter.\r\n\r\nAdditional examples/guidance will be provided within this IG once use of the fields has been appropriately tested.\r\n\r\nSample tracking information SHOULD be added to Tasks acting on Specimen resources, e.g. Tasks marked SamplePreparation or SampleProcessing, on either the output or input elements. This information MAY include consignment number, destination, date sent etc.\r\n\r\nIf known, the container type SHOULD be populated, using the example bound ValueSet, in SNOMED CT. If an appropraite code cannot be found, the specimen container type should be populated using free text, in Specimen.container.type.text. Additional container elements, such as capacity or specimenQuantity MAY be populated if known.",
         "max": "1"
-      },
-      {
-        "id": "Specimen.container.extension:specimenContainerLocationR5",
-        "path": "Specimen.container.extension",
-        "sliceName": "specimenContainerLocationR5",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.container.location"
-            ]
-          }
-        ]
       },
       {
         "id": "Specimen.condition",

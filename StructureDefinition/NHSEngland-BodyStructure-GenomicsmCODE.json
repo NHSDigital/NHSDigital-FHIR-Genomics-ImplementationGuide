@@ -46,23 +46,6 @@
         "id": "BodyStructure.locationQualifier",
         "path": "BodyStructure.locationQualifier",
         "definition": "SHALL be provided where relevant. SHOULD use SNOMED CT encoding."
-      },
-      {
-        "id": "BodyStructure.patient",
-        "path": "BodyStructure.patient",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://fhir.nhs.uk/StructureDefinition/NHSEngland-Patient-Genomics",
-              "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-patient"
-            ],
-            "aggregation": [
-              "referenced",
-              "bundled"
-            ]
-          }
-        ]
       }
     ]
   }
