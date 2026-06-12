@@ -54,6 +54,7 @@
           {
             "code": "Reference",
             "targetProfile": [
+              "https://fhir.nhs.uk/StructureDefinition/NHSEngland-Patient-Genomics",
               "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-patient"
             ],
             "aggregation": [

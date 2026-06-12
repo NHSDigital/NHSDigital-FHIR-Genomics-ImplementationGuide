@@ -32,7 +32,6 @@ implementationguides:
         name: hl7.fhir.us.core
         version: 6.1.0
         installMode: STORE_AND_INSTALL
-
       hl7.fhir.us.mcode:
         name: hl7.fhir.us.mcode
         version: 4.0.0
