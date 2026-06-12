@@ -19,11 +19,6 @@ implementationguides:
         version: 1.1.0
         installMode: STORE_AND_INSTALL
         fetchDependencies: false
-      hl7-fhir-us-mcode:
-        name: hl7.fhir.us.mcode
-        version: 4.0.0
-        installMode: STORE_AND_INSTALL
-        fetchDependencies: false
       fhir-r4-nhsengland-pathology:
         name: fhir.r4.nhsengland.pathology
         version: 0.1.4-alpha
