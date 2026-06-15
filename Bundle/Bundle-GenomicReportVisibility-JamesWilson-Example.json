@@ -1,0 +1,65 @@
+{
+  "resourceType": "Bundle",
+  "id": "Bundle-GenomicReportVisibility-JamesWilson-Example",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "Patient-JamesWilson",
+        "gender": "male",
+        "_gender": {
+          "extension": [
+            {
+              "url": "https://fhir.nhs.uk/England/StructureDefinition/Extension-Genomic-Report-Visibility",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "https://fhir.nhs.uk/CodeSystem/genomic-report-visibility",
+                    "code": "clinical-use-only",
+                    "display": "Clinical Use Only"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "name": [
+          {
+            "given": ["James"],
+            "family": "Wilson"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ServiceRequest",
+        "id": "SR-JamesWilson",
+        "status": "active",
+        "intent": "order",
+        "subject": {
+          "reference": "Patient/Patient-JamesWilson"
+        },
+        "code": {
+          "text": "Whole Genome Sequencing"
+        },
+        "authoredOn": "2026-06-15T09:00:00Z"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "DR-JamesWilson",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/Patient-JamesWilson"
+        },
+        "code": {
+          "text": "Genomic Report"
+        },
+        "conclusion": "No clinically significant variants identified."
+      }
+    }
+  ]
+}
