@@ -1,0 +1,67 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "DGTS-testpackagemodality-genomics",
+  "url": "https://fhir.nhs.uk/CodeSystem/DGTS-testpackagemodality-genomics",
+  "version": "0.1.0",
+  "name": "DGTSTestPackageModalityGenomics",
+  "title": "DGTS Test Package Modality Genomics",
+  "status": "draft",
+  "experimental": false,
+  "date": "2026-06-15T00:00:00+00:00",
+  "publisher": "NHS England",
+  "contact": [
+    {
+      "name": "NHS England",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "interoperabilityteam@nhs.net",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "CodeSystem used to identify the clinical modality or testing domain associated with a genomic test package.",
+  "purpose": "Defines the categories of genomic testing services available through the Digital Genomic Test Service (DGTS).",
+  "copyright": "Copyright © 2026+ NHS England Licensed under the Apache License, Version 2.0 (the \\\"License\\\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \\\"AS IS\\\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html.",
+  "caseSensitive": true,
+  "content": "complete",
+  "count": 7,
+  "concept": [
+    {
+      "code": "solid-cancer",
+      "display": "Solid Cancer",
+      "definition": "Genomic testing of cancers that form solid tumours in various organs or tissues to identify genetic mutations, guide targeted treatments, predict prognosis or assess risk for inherited cancer syndromes."
+    },
+    {
+      "code": "haematological-malignancies",
+      "display": "Haematological Malignancies",
+      "definition": "Genomic testing of blood cancers to detect specific genetic abnormalities, helping to refine diagnosis, prognosis, treatment strategies and monitoring."
+    },
+    {
+      "code": "rare-and-inherited-disease",
+      "display": "Rare and Inherited Disease",
+      "definition": "Genetic testing to identify pathogenic variants causing rare genetic disorders, often used in diagnosing conditions inherited from parents or assessing genetic risks in families."
+    },
+    {
+      "code": "inherited-cancer",
+      "display": "Inherited Cancer",
+      "definition": "Genetic testing to detect mutations that predispose individuals to cancers passed through families, used to assess cancer risk and inform preventive measures."
+    },
+    {
+      "code": "pharmacogenomics",
+      "display": "Pharmacogenomics",
+      "definition": "Genetic testing to assess how an individual's genetic makeup affects their response to medications, guiding drug selection and dosage to improve efficacy and reduce adverse reactions."
+    },
+    {
+      "code": "polygenic-risk-scores",
+      "display": "Polygenic Risk Scores",
+      "definition": "Genetic testing to aid calculation based on multiple genetic variants to estimate an individual's risk of developing complex diseases, often used alongside lifestyle and environmental factors for risk prediction."
+    },
+    {
+      "code": "sample-storage",
+      "display": "Sample storage",
+      "definition": "Sample to be stored by the Genomic Laboratory Hub (GLH) for future genetic testing."
+    }
+  ]
+}

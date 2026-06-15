@@ -1,0 +1,77 @@
+{
+  "resourceType": "ValueSet",
+  "id": "DGTS-genomics-testpackagemodality",
+  "url": "https://fhir.nhs.uk/ValueSet/DGTS-genomics-testpackagemodality",
+  "version": "0.1.0",
+  "name": "DGTSGenomicsTestPackageModality",
+  "title": "DGTS Genomics Test Package Modality",
+  "status": "draft",
+  "experimental": false,
+  "date": "2026-06-15T00:00:00.000Z",
+  "publisher": "NHS England",
+  "contact": [
+    {
+      "name": "NHS England",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "interoperabilityteam@nhs.net",
+          "use": "work",
+          "rank": 1
+        }
+      ]
+    }
+  ],
+  "description": "A ValueSet used to identify the clinical modality or testing domain associated with a genomic test package within the Digital Genomic Test Service (DGTS).",
+  "copyright": "Copyright © 2026+ NHS England Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at https://www.hl7.org/fhir/license.html.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.nhs.uk/CodeSystem/DGTS-testpackagemodality-genomics",
+        "version": "0.1.0"
+      }
+    ]
+  },
+  "expansion": {
+    "timestamp": "2026-06-15T00:00:00Z",
+    "total": 7,
+    "offset": 0,
+    "contains": [
+      {
+        "system": "https://fhir.nhs.uk/CodeSystem/DGTS-testpackagemodality-genomics",
+        "code": "solid-cancer",
+        "display": "Solid Cancer"
+      },
+      {
+        "system": "https://fhir.nhs.uk/CodeSystem/DGTS-testpackagemodality-genomics",
+        "code": "haematological-malignancies",
+        "display": "Haematological Malignancies"
+      },
+      {
+        "system": "https://fhir.nhs.uk/CodeSystem/DGTS-testpackagemodality-genomics",
+        "code": "rare-and-inherited-disease",
+        "display": "Rare and Inherited Disease"
+      },
+      {
+        "system": "https://fhir.nhs.uk/CodeSystem/DGTS-testpackagemodality-genomics",
+        "code": "inherited-cancer",
+        "display": "Inherited Cancer"
+      },
+      {
+        "system": "https://fhir.nhs.uk/CodeSystem/DGTS-testpackagemodality-genomics",
+        "code": "pharmacogenomics",
+        "display": "Pharmacogenomics"
+      },
+      {
+        "system": "https://fhir.nhs.uk/CodeSystem/DGTS-testpackagemodality-genomics",
+        "code": "polygenic-risk-scores",
+        "display": "Polygenic Risk Scores"
+      },
+      {
+        "system": "https://fhir.nhs.uk/CodeSystem/DGTS-testpackagemodality-genomics",
+        "code": "sample-storage",
+        "display": "Sample storage"
+      }
+    ]
+  }
+}
