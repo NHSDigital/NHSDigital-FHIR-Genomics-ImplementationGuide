@@ -1,0 +1,62 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "DGTS-testmethod-genomics",
+  "url": "https://fhir.nhs.uk/CodeSystem/DGTS-genomictest-method-type",
+  "version": "0.1.0",
+  "name": "DGTSGenomicTestMethodType",
+  "title": "DGTS Genomic Test Method Type",
+  "status": "draft",
+  "experimental": false,
+  "date": "2026-06-15T00:00:00+00:00",
+  "publisher": "NHS England",
+  "contact": [
+    {
+      "name": "NHS England",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "interoperabilityteam@nhs.net",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "CodeSystem used to identify the genomic test methodology used to generate genomic findings or results, as defined within the Digital Genomic Test Service (DGTS).",
+  "purpose": "Defines a standard set of genomic testing methodologies for use within Digital Genomic Test Service (DGTS).",
+  "copyright": "Copyright © 2026+ NHS England Licensed under the Apache License, Version 2.0 (the \\\"License\\\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \\\"AS IS\\\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html.",
+  "caseSensitive": true,
+  "content": "complete",
+  "count": 6,
+  "concept": [
+       {
+      "code": "chromosome-analysis",
+      "display": "Chromosome analysis",
+      "definition": "Chromosome analysis, or karyotyping, is a traditional method for detecting large-scale changes in chromosomes, such as missing or extra chromosomes, by visually examining them under a microscope."
+    },
+    {
+      "code": "microarray",
+      "display": "Microarray",
+      "definition": "Microarray analysis is a method that detects copy number variants (CNVs), which are small deletions or duplications of DNA segments. It works by comparing a patient's DNA to a reference sample."
+    },
+    {
+      "code": "relative-haplotype-dosage",
+      "display": "Relative Haplotype Dosage (RHDO)",
+      "definition": "Relative Haplotype Dosage (RHDO) is a method primarily used in prenatal testing to non-invasively detect genetic variants in the fetus by analysing DNA from the mother's blood."
+    },
+    {
+      "code": "sequencing",
+      "display": "Sequencing",
+      "definition": "Sequencing is a general term for determining the order of the DNA bases in a specific region, a gene, or a whole genome."
+    },
+    {
+      "code": "targeted-assays",
+      "display": "Targeted assays",
+      "definition": "Targeted assays, or gene panels, focus on sequencing a specific, pre-selected set of genes known to be associated with a particular condition."
+    },
+      {
+      "code": "whole-genome-sequencing",
+      "display": "Whole Genome Sequencing",
+      "definition": "Whole genome sequencing is a laboratory process that determines the complete DNA sequence of a patient's genome, providing a comprehensive view of all their genetic material."
+    }
+  ]
+}
