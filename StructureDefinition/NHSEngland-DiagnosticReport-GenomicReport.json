@@ -2,11 +2,11 @@
   "resourceType": "StructureDefinition",
   "id": "NHSEngland-DiagnosticReport-GenomicReport",
   "url": "https://fhir.nhs.uk/StructureDefinition/NHSEngland-DiagnosticReport-GenomicReport",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "name": "NHSEngland_DiagnosticReport_GenomicReport",
   "title": "NHSEngland DiagnosticReport GenomicReport",
   "status": "active",
-  "date": "2026-04-16",
+  "date": "2026-06-03",
   "publisher": "NHS England",
   "contact": [
     {
@@ -60,21 +60,6 @@
         "id": "DiagnosticReport.extension:workflow-relatedArtifact.value[x].type",
         "path": "DiagnosticReport.extension.value[x].type",
         "fixedCode": "citation"
-      },
-      {
-        "id": "DiagnosticReport.extension:diagnosticReportCompositionR5",
-        "path": "DiagnosticReport.extension",
-        "sliceName": "diagnosticReportCompositionR5",
-        "definition": "TBC. Only relevant for EU Lab aligned reports (included in HL7 EU Laboratory Report: DiagnosticReport Profile). A reference to the Composition which wraps this report for data sharing.",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition"
-            ]
-          }
-        ],
-        "isModifier": false
       },
       {
         "id": "DiagnosticReport.identifier",
@@ -169,7 +154,6 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://fhir.nhs.uk/StructureDefinition/NHSEngland-ServiceRequest-Genomics",
               "http://hl7.org/fhir/StructureDefinition/CarePlan",
               "http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation",
               "http://hl7.org/fhir/StructureDefinition/MedicationRequest",
@@ -190,9 +174,6 @@
       {
         "id": "DiagnosticReport.category",
         "path": "DiagnosticReport.category",
-        "slicing": {
-          "rules": "open"
-        },
         "definition": "Potentially multiple categories to specify the specialty the report is relevant for. Different codings are expected by the Genomic Report and EU Lab profiles."
       },
       {
@@ -245,7 +226,6 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://fhir.nhs.uk/StructureDefinition/NHSEngland-Patient-Genomics",
               "http://hl7.org/fhir/StructureDefinition/Patient",
               "http://hl7.org/fhir/StructureDefinition/Group",
               "http://hl7.org/fhir/StructureDefinition/Device",
@@ -270,7 +250,6 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization",
               "http://hl7.org/fhir/StructureDefinition/Practitioner",
               "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
               "http://hl7.org/fhir/StructureDefinition/Organization",
@@ -306,7 +285,6 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://fhir.nhs.uk/StructureDefinition/NHSEngland-PractitionerRole-Genomics",
               "http://hl7.org/fhir/StructureDefinition/Practitioner",
               "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
               "http://hl7.org/fhir/StructureDefinition/Organization",
@@ -328,7 +306,6 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://fhir.nhs.uk/StructureDefinition/NHSEngland-Specimen-Genomics",
               "http://hl7.org/fhir/StructureDefinition/Specimen"
             ],
             "aggregation": [
@@ -373,7 +350,6 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://fhir.nhs.uk/StructureDefinition/NHSEngland-DocumentReference-Genomics",
               "http://hl7.org/fhir/StructureDefinition/Resource"
             ],
             "aggregation": [
