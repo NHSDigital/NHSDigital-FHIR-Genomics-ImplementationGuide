@@ -1,10 +1,10 @@
 {
   "resourceType": "CodeSystem",
   "id": "DGTS-testmethod-genomics",
-  "url": "https://fhir.nhs.uk/CodeSystem/DGTS-testmethod-genomics",
+  "url": "https://fhir.nhs.uk/CodeSystem/DGTS-genomictest-method-type",
   "version": "0.1.0",
-  "name": "DGTSTestMethodGenomics",
-  "title": "DGTS Test Method Genomics",
+  "name": "DGTSGenomicTestMethodType",
+  "title": "DGTS Genomic Test Method Type",
   "status": "draft",
   "experimental": false,
   "date": "2026-06-15T00:00:00+00:00",

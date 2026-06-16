@@ -1,7 +1,7 @@
 {
   "resourceType": "ValueSet",
   "id": "DGTS-testMethod-genomics",
-  "url": "https://fhir.nhs.uk/ValueSet/DGTS-testMethod-genomics",
+  "url": "https://fhir.nhs.uk/ValueSet/DGTS-genomictest-method-type",
   "version": "0.1.0",
   "name": "DGTSTestMethodGenomics",
   "title": "DGTS Test Method Genomics",
@@ -26,7 +26,7 @@
   "compose": {
     "include": [
       {
-        "system": "https://fhir.nhs.uk/CodeSystem/DGTS-testmethod-genomics",
+        "system": "https://fhir.nhs.uk/CodeSystem/DGTS-genomictest-method-type",
         "version": "0.1.0"
       }
     ]
@@ -37,32 +37,32 @@
     "offset": 0,
     "contains": [
       {
-        "system": "https://fhir.nhs.uk/CodeSystem/DGTS-testmethod-genomics",
+        "system": "https://fhir.nhs.uk/CodeSystem/DGTS-genomictest-method-type",
         "code": "chromosome-analysis",
         "display": "Chromosome analysis"
       },
       {
-        "system": "https://fhir.nhs.uk/CodeSystem/DGTS-testmethod-genomics",
+        "system": "https://fhir.nhs.uk/CodeSystem/DGTS-genomictest-method-type",
         "code": "microarray",
         "display": "Microarray"
       },
       {
-        "system": "https://fhir.nhs.uk/CodeSystem/DGTS-testmethod-genomics",
+        "system": "https://fhir.nhs.uk/CodeSystem/DGTS-genomictest-method-type",
         "code": "relative-haplotype-dosage",
         "display": "Relative Haplotype Dosage (RHDO)"
       },
       {
-        "system": "https://fhir.nhs.uk/CodeSystem/DGTS-testmethod-genomics",
+        "system": "https://fhir.nhs.uk/CodeSystem/DGTS-genomictest-method-type",
         "code": "sequencing",
         "display": "Sequencing"
       },
       {
-        "system": "https://fhir.nhs.uk/CodeSystem/DGTS-testmethod-genomics",
+        "system": "https://fhir.nhs.uk/CodeSystem/DGTS-genomictest-method-type",
         "code": "targeted-assays",
         "display": "Targeted assays"
       },
       {
-        "system": "https://fhir.nhs.uk/CodeSystem/DGTS-testmethod-genomics",
+        "system": "https://fhir.nhs.uk/CodeSystem/DGTS-genomictest-method-type",
         "code": "whole-genome-sequencing",
         "display": "Whole Genome Sequencing"
       }

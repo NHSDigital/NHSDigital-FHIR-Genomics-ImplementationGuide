@@ -1,7 +1,7 @@
 {
   "resourceType": "ValueSet",
   "id": "DGTS-genomics-testpackagemodality",
-  "url": "https://fhir.nhs.uk/ValueSet/DGTS-genomics-testpackagemodality",
+  "url": "https://fhir.nhs.uk/ValueSet/DGTS-testpackage-modality",
   "version": "0.1.0",
   "name": "DGTSGenomicsTestPackageModality",
   "title": "DGTS Genomics Test Package Modality",
@@ -27,7 +27,7 @@
   "compose": {
     "include": [
       {
-        "system": "https://fhir.nhs.uk/CodeSystem/DGTS-testpackagemodality-genomics",
+        "system": "https://fhir.nhs.uk/CodeSystem/DGTS-testpackage-modality",
         "version": "0.1.0"
       }
     ]
@@ -38,37 +38,37 @@
     "offset": 0,
     "contains": [
       {
-        "system": "https://fhir.nhs.uk/CodeSystem/DGTS-testpackagemodality-genomics",
+        "system": "https://fhir.nhs.uk/CodeSystem/DGTS-testpackage-modality",
         "code": "solid-cancer",
         "display": "Solid Cancer"
       },
       {
-        "system": "https://fhir.nhs.uk/CodeSystem/DGTS-testpackagemodality-genomics",
+        "system": "https://fhir.nhs.uk/CodeSystem/DGTS-testpackage-modality",
         "code": "haematological-malignancies",
         "display": "Haematological Malignancies"
       },
       {
-        "system": "https://fhir.nhs.uk/CodeSystem/DGTS-testpackagemodality-genomics",
+        "system": "https://fhir.nhs.uk/CodeSystem/DGTS-testpackage-modality",
         "code": "rare-and-inherited-disease",
         "display": "Rare and Inherited Disease"
       },
       {
-        "system": "https://fhir.nhs.uk/CodeSystem/DGTS-testpackagemodality-genomics",
+        "system": "https://fhir.nhs.uk/CodeSystem/DGTS-testpackage-modality",
         "code": "inherited-cancer",
         "display": "Inherited Cancer"
       },
       {
-        "system": "https://fhir.nhs.uk/CodeSystem/DGTS-testpackagemodality-genomics",
+        "system": "https://fhir.nhs.uk/CodeSystem/DGTS-testpackage-modality",
         "code": "pharmacogenomics",
         "display": "Pharmacogenomics"
       },
       {
-        "system": "https://fhir.nhs.uk/CodeSystem/DGTS-testpackagemodality-genomics",
+        "system": "https://fhir.nhs.uk/CodeSystem/DGTS-testpackage-modality",
         "code": "polygenic-risk-scores",
         "display": "Polygenic Risk Scores"
       },
       {
-        "system": "https://fhir.nhs.uk/CodeSystem/DGTS-testpackagemodality-genomics",
+        "system": "https://fhir.nhs.uk/CodeSystem/DGTS-testpackage-modality",
         "code": "sample-storage",
         "display": "Sample storage"
       }
