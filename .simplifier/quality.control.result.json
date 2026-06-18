@@ -1,0 +1,1093 @@
+{
+  "Timestamp": "2026-06-06T14:17:37.6221983+00:00",
+  "Series": "recommended",
+  "Type": "Simplifier",
+  "Files": [
+    {
+      "Issues": [
+        {
+          "Location": null,
+          "Severity": 0,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "PARSING",
+          "Message": "Could not parse file as a FHIR resource. One or more errors occurred. (Resource has no \u0027resourceType\u0027 property. At line 6, position 2)"
+        }
+      ],
+      "Tag": null,
+      "Length": 140,
+      "Hash": "8E6B0064324581E73BE99BE37BC4898D",
+      "FilePath": "options.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": null,
+          "Severity": 0,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "PARSING",
+          "Message": "Could not parse file as a FHIR resource. \u00270x0D\u0027 is invalid within a JSON string. The string should be correctly escaped. Path: $ | LineNumber: 47 | BytePositionInLine: 101."
+        }
+      ],
+      "Tag": null,
+      "Length": 5676,
+      "Hash": "35E8174831ED8A664990FEEB4072C382",
+      "FilePath": "CapabilityStatement\\CapabilityStatement-genomics-requirements.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": null,
+          "Severity": 0,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "PARSING",
+          "Message": "Could not parse file as a FHIR resource. \u0027\u0022\u0027 is invalid after a value. Expected either \u0027,\u0027, \u0027}\u0027, or \u0027]\u0027. Path: $ | LineNumber: 5 | BytePositionInLine: 2."
+        }
+      ],
+      "Tag": null,
+      "Length": 830,
+      "Hash": "0F057E8EF456DF25B9A9924E4D6C3AA4",
+      "FilePath": "Library\\DGTS-Library-Example.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": "AuditEvent.outcome[0]",
+          "Severity": 0,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6007",
+          "Message": "Code \u00270\u0027 does not exist in the value set \u0027Audit Event Outcome\u0027 (http://hl7.org/fhir/ValueSet/audit-event-outcome)"
+        }
+      ],
+      "Tag": null,
+      "Length": 2562,
+      "Hash": "88C15862FA86E5D4458E0B52234EC155",
+      "FilePath": "AuditEvent\\AuditEvent-ServiceRequestUpdate-Example.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": "AuditEvent.outcome[0]",
+          "Severity": 0,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6007",
+          "Message": "Code \u00270\u0027 does not exist in the value set \u0027Audit Event Outcome\u0027 (http://hl7.org/fhir/ValueSet/audit-event-outcome)"
+        }
+      ],
+      "Tag": null,
+      "Length": 2552,
+      "Hash": "31006202BAD9EB86D862563613214E0B",
+      "FilePath": "AuditEvent\\AuditEvent-TaskUpdate-Example.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": "Bundle.entry[3].resource[0]",
+          "Severity": 1,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "1030",
+          "Message": "Detected a loop: instance data inside \u0027Bundle.entry[3].resource[0]\u0027 refers back to itself."
+        }
+      ],
+      "Tag": null,
+      "Length": 19303,
+      "Hash": "F77057D9B415B6BBEF8064D6B27090DF",
+      "FilePath": "Bundle\\Bundle-WGSTestOrderForm-Example.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": "Bundle.entry[0].resource[0].content[0].attachment[0].contentType[0]",
+          "Severity": 1,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6006",
+          "Message": "Terminology service failed while validating code \u0027application/gzip\u0027: Operation validate code failed: creating the required expansion failed with message \u0022The ValueSet expander cannot find codesystem \u0027urn:ietf:bcp:13\u0027, so the expansion cannot be completed.\u0022."
+        }
+      ],
+      "Tag": null,
+      "Length": 9548,
+      "Hash": "A75F971C489B1ECB5472DD4A1077419A",
+      "FilePath": "Bundle\\CommunityCloud-Bundle-Example.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": "Bundle.entry[11].resource[0].source[0].contentType[0]",
+          "Severity": 1,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6006",
+          "Message": "Terminology service failed while validating code \u0027application/pdf\u0027: Operation validate code failed: creating the required expansion failed with message \u0022The ValueSet expander cannot find codesystem \u0027urn:ietf:bcp:13\u0027, so the expansion cannot be completed.\u0022."
+        }
+      ],
+      "Tag": null,
+      "Length": 21728,
+      "Hash": "34E26B0151E655F21F89BD9DE25E9B35",
+      "FilePath": "Bundle\\UKCore-Bundle-MichaelJonesRequest-Example_v3_message.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": "CapabilityStatement.format[0]",
+          "Severity": 1,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6006",
+          "Message": "Terminology service failed while validating code \u0027application/fhir\u002Bjson\u0027: Operation validate code failed: creating the required expansion failed with message \u0022The ValueSet expander cannot find codesystem \u0027urn:ietf:bcp:13\u0027, so the expansion cannot be completed.\u0022."
+        }
+      ],
+      "Tag": null,
+      "Length": 4538,
+      "Hash": "D5E16C43888A8A51F1A7AD3751D9F7C1",
+      "FilePath": "CapabilityStatement\\CapabilityStatement-DGTS-application.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": "CapabilityStatement.format[0]",
+          "Severity": 1,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6006",
+          "Message": "Terminology service failed while validating code \u0027application/fhir\u002Bjson\u0027: Operation validate code failed: creating the required expansion failed with message \u0022The ValueSet expander cannot find codesystem \u0027urn:ietf:bcp:13\u0027, so the expansion cannot be completed.\u0022."
+        },
+        {
+          "Location": "CapabilityStatement.rest[0].resource[36].type[0]",
+          "Severity": 0,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6007",
+          "Message": "Code \u0027RequestGroup\u0027 does not exist in the value set \u0027Resource Types\u0027 (http://hl7.org/fhir/ValueSet/resource-types)"
+        }
+      ],
+      "Tag": null,
+      "Length": 40525,
+      "Hash": "13AC8BAA1E4BFE6BB70DF5F4C4638662",
+      "FilePath": "CapabilityStatement\\CapabilityStatement-genomics-application.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": "Consent.source[0].contentType[0]",
+          "Severity": 1,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6006",
+          "Message": "Terminology service failed while validating code \u0027application/pdf\u0027: Operation validate code failed: creating the required expansion failed with message \u0022The ValueSet expander cannot find codesystem \u0027urn:ietf:bcp:13\u0027, so the expansion cannot be completed.\u0022. (for slice Attachment)"
+        }
+      ],
+      "Tag": null,
+      "Length": 1592195,
+      "Hash": "0806F3E82F3F42FBF4B8EA5CCD00BDC1",
+      "FilePath": "Consent\\Consent-RoD-PheobeSmithamAttachmentData-Example.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": "Consent.source[0].contentType[0]",
+          "Severity": 1,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6006",
+          "Message": "Terminology service failed while validating code \u0027application/pdf\u0027: Operation validate code failed: creating the required expansion failed with message \u0022The ValueSet expander cannot find codesystem \u0027urn:ietf:bcp:13\u0027, so the expansion cannot be completed.\u0022. (for slice Attachment)"
+        }
+      ],
+      "Tag": null,
+      "Length": 1650,
+      "Hash": "108CE27ECD3E369B640089312EB90990",
+      "FilePath": "Consent\\UKCore-Consent-MichaelJonesConsent-Example-minimal.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": "Consent.source[0].contentType[0]",
+          "Severity": 1,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6006",
+          "Message": "Terminology service failed while validating code \u0027application/pdf\u0027: Operation validate code failed: creating the required expansion failed with message \u0022The ValueSet expander cannot find codesystem \u0027urn:ietf:bcp:13\u0027, so the expansion cannot be completed.\u0022. (for slice Attachment)"
+        }
+      ],
+      "Tag": null,
+      "Length": 3854,
+      "Hash": "85119086EDD0863FA98952430D57987A",
+      "FilePath": "Consent\\UKCore-Consent-MichaelJonesConsent-Example.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": "DiagnosticReport.presentedForm[0].contentType[0]",
+          "Severity": 1,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6006",
+          "Message": "Terminology service failed while validating code \u0027application/pdf\u0027: Operation validate code failed: creating the required expansion failed with message \u0022The ValueSet expander cannot find codesystem \u0027urn:ietf:bcp:13\u0027, so the expansion cannot be completed.\u0022."
+        }
+      ],
+      "Tag": null,
+      "Length": 1719,
+      "Hash": "9412722682EF58C97E23D03D95913A7B",
+      "FilePath": "DiagnosticReport\\DiagnosticReport-AnitaLamberts-Example.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": "DiagnosticReport.presentedForm[0].contentType[0]",
+          "Severity": 1,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6006",
+          "Message": "Terminology service failed while validating code \u0027application/pdf\u0027: Operation validate code failed: creating the required expansion failed with message \u0022The ValueSet expander cannot find codesystem \u0027urn:ietf:bcp:13\u0027, so the expansion cannot be completed.\u0022."
+        }
+      ],
+      "Tag": null,
+      "Length": 1951,
+      "Hash": "B9D82170916BE14807942BCF5049F2C2",
+      "FilePath": "DiagnosticReport\\DiagnosticReport-FayMutlowGeneticReport-Example.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": "DiagnosticReport.presentedForm[0].contentType[0]",
+          "Severity": 1,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6006",
+          "Message": "Terminology service failed while validating code \u0027application/pdf\u0027: Operation validate code failed: creating the required expansion failed with message \u0022The ValueSet expander cannot find codesystem \u0027urn:ietf:bcp:13\u0027, so the expansion cannot be completed.\u0022."
+        }
+      ],
+      "Tag": null,
+      "Length": 4917,
+      "Hash": "BB28A4B2EB349F879599F72739545EBA",
+      "FilePath": "DiagnosticReport\\DiagnosticReport-GenomicVariantAssessment-Example.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": "DiagnosticReport.presentedForm[0].contentType[0]",
+          "Severity": 1,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6006",
+          "Message": "Terminology service failed while validating code \u0027application/pdf\u0027: Operation validate code failed: creating the required expansion failed with message \u0022The ValueSet expander cannot find codesystem \u0027urn:ietf:bcp:13\u0027, so the expansion cannot be completed.\u0022."
+        }
+      ],
+      "Tag": null,
+      "Length": 1750,
+      "Hash": "76084DDDAEE0D24D59751A5C6EA619F3",
+      "FilePath": "DiagnosticReport\\DiagnosticReport-JamesMetcalfeGeneticReport-Example.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": "DiagnosticReport.presentedForm[0].contentType[0]",
+          "Severity": 1,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6006",
+          "Message": "Terminology service failed while validating code \u0027application/pdf\u0027: Operation validate code failed: creating the required expansion failed with message \u0022The ValueSet expander cannot find codesystem \u0027urn:ietf:bcp:13\u0027, so the expansion cannot be completed.\u0022."
+        }
+      ],
+      "Tag": null,
+      "Length": 2182,
+      "Hash": "4E9AFB7508A43786A5DFEEEDD3EEB745",
+      "FilePath": "DiagnosticReport\\DiagnosticReport-PhoebeSmithGeneticReport-Example.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": "DiagnosticReport.presentedForm[0].contentType[0]",
+          "Severity": 1,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6006",
+          "Message": "Terminology service failed while validating code \u0027application/pdf\u0027: Operation validate code failed: creating the required expansion failed with message \u0022The ValueSet expander cannot find codesystem \u0027urn:ietf:bcp:13\u0027, so the expansion cannot be completed.\u0022."
+        }
+      ],
+      "Tag": null,
+      "Length": 58953,
+      "Hash": "B35B48BFFDFDA5C2F47693E33D21E1AE",
+      "FilePath": "DiagnosticReport\\UKCore-DiagnosticReport-MichaelJonesReport-Example-minimal.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": "DiagnosticReport.presentedForm[0].contentType[0]",
+          "Severity": 1,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6006",
+          "Message": "Terminology service failed while validating code \u0027application/pdf\u0027: Operation validate code failed: creating the required expansion failed with message \u0022The ValueSet expander cannot find codesystem \u0027urn:ietf:bcp:13\u0027, so the expansion cannot be completed.\u0022."
+        }
+      ],
+      "Tag": null,
+      "Length": 59504,
+      "Hash": "DAE1050E32C0589906EC2BA52B04378E",
+      "FilePath": "DiagnosticReport\\UKCore-DiagnosticReport-MichaelJonesReport-Example.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": "DocumentReference.content[0].attachment[0].contentType[0]",
+          "Severity": 1,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6006",
+          "Message": "Terminology service failed while validating code \u0027application/gzip\u0027: Operation validate code failed: creating the required expansion failed with message \u0022The ValueSet expander cannot find codesystem \u0027urn:ietf:bcp:13\u0027, so the expansion cannot be completed.\u0022."
+        }
+      ],
+      "Tag": null,
+      "Length": 1017,
+      "Hash": "9BC5D9B8200E958D294C4BC80E6A7C04",
+      "FilePath": "DocumentReference\\CommunityCloud-VCFDocumentReference-Example.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": "DocumentReference.content[0].attachment[0].contentType[0]",
+          "Severity": 1,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6006",
+          "Message": "Terminology service failed while validating code \u0027application/json\u0027: Operation validate code failed: creating the required expansion failed with message \u0022The ValueSet expander cannot find codesystem \u0027urn:ietf:bcp:13\u0027, so the expansion cannot be completed.\u0022."
+        }
+      ],
+      "Tag": null,
+      "Length": 1067,
+      "Hash": "5D99F5357AFA53DA502433466C911EC4",
+      "FilePath": "DocumentReference\\DocumentReference-PharmCAT-Example.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": "DocumentReference.content[0].attachment[0].contentType[0]",
+          "Severity": 1,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6006",
+          "Message": "Terminology service failed while validating code \u0027application/json\u0027: Operation validate code failed: creating the required expansion failed with message \u0022The ValueSet expander cannot find codesystem \u0027urn:ietf:bcp:13\u0027, so the expansion cannot be completed.\u0022."
+        }
+      ],
+      "Tag": null,
+      "Length": 1274,
+      "Hash": "918886EB8275AD2BDD83D09AE9602FBC",
+      "FilePath": "DocumentReference\\DocumentReference-StructureReporting-Example.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": "GraphDefinition.start[0]",
+          "Severity": 0,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6007",
+          "Message": "Code \u0027RequestGroup\u0027 does not exist in the value set \u0027Resource Types\u0027 (http://hl7.org/fhir/ValueSet/resource-types)"
+        },
+        {
+          "Location": "GraphDefinition.link[0].target[0].link[0].target[0].link[2].target[1].type[0]",
+          "Severity": 0,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6007",
+          "Message": "Code \u0027Resource\u0027 does not exist in the value set \u0027Resource Types\u0027 (http://hl7.org/fhir/ValueSet/resource-types)"
+        },
+        {
+          "Location": "GraphDefinition.link[0].target[0].link[0].target[0].link[6].target[0].link[0].target[0].type[0]",
+          "Severity": 0,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6007",
+          "Message": "Code \u0027Resource\u0027 does not exist in the value set \u0027Resource Types\u0027 (http://hl7.org/fhir/ValueSet/resource-types)"
+        }
+      ],
+      "Tag": null,
+      "Length": 6282,
+      "Hash": "01CF8BADBEB091DA2C155D3CA733A94D",
+      "FilePath": "GraphDefinition\\GraphDefinition-Genomics-ResultsGroup-Example.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": "GraphDefinition.link[5].target[1].link[2].target[0].type[0]",
+          "Severity": 0,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6007",
+          "Message": "Code \u0027Resource\u0027 does not exist in the value set \u0027Resource Types\u0027 (http://hl7.org/fhir/ValueSet/resource-types)"
+        },
+        {
+          "Location": "GraphDefinition.link[5].target[2].link[0].target[0].type[0]",
+          "Severity": 0,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6007",
+          "Message": "Code \u0027Resource\u0027 does not exist in the value set \u0027Resource Types\u0027 (http://hl7.org/fhir/ValueSet/resource-types)"
+        },
+        {
+          "Location": "GraphDefinition.link[5].target[2].link[1].target[0].type[0]",
+          "Severity": 0,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6007",
+          "Message": "Code \u0027Resource\u0027 does not exist in the value set \u0027Resource Types\u0027 (http://hl7.org/fhir/ValueSet/resource-types)"
+        },
+        {
+          "Location": "GraphDefinition.link[5].target[7].link[0].target[0].link[1].target[0].type[0]",
+          "Severity": 0,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6007",
+          "Message": "Code \u0027Resource\u0027 does not exist in the value set \u0027Resource Types\u0027 (http://hl7.org/fhir/ValueSet/resource-types)"
+        }
+      ],
+      "Tag": null,
+      "Length": 9242,
+      "Hash": "EC855D633487087DBCDB8C7C4FCC607F",
+      "FilePath": "GraphDefinition\\GraphDefinition-Genomics-Test-Order.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": "GraphDefinition.link[2].target[1].type[0]",
+          "Severity": 0,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6007",
+          "Message": "Code \u0027Resource\u0027 does not exist in the value set \u0027Resource Types\u0027 (http://hl7.org/fhir/ValueSet/resource-types)"
+        },
+        {
+          "Location": "GraphDefinition.link[6].target[0].link[0].target[0].type[0]",
+          "Severity": 0,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6007",
+          "Message": "Code \u0027Resource\u0027 does not exist in the value set \u0027Resource Types\u0027 (http://hl7.org/fhir/ValueSet/resource-types)"
+        }
+      ],
+      "Tag": null,
+      "Length": 4406,
+      "Hash": "926192848442A4BC6EC377F5692E39F5",
+      "FilePath": "GraphDefinition\\GraphDefinition-Genomics-Test-Result.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": "GraphDefinition.link[4].target[1].link[2].target[0].type[0]",
+          "Severity": 0,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6007",
+          "Message": "Code \u0027Resource\u0027 does not exist in the value set \u0027Resource Types\u0027 (http://hl7.org/fhir/ValueSet/resource-types)"
+        },
+        {
+          "Location": "GraphDefinition.link[4].target[2].link[0].target[0].type[0]",
+          "Severity": 0,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6007",
+          "Message": "Code \u0027Resource\u0027 does not exist in the value set \u0027Resource Types\u0027 (http://hl7.org/fhir/ValueSet/resource-types)"
+        },
+        {
+          "Location": "GraphDefinition.link[4].target[2].link[1].target[0].type[0]",
+          "Severity": 0,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6007",
+          "Message": "Code \u0027Resource\u0027 does not exist in the value set \u0027Resource Types\u0027 (http://hl7.org/fhir/ValueSet/resource-types)"
+        },
+        {
+          "Location": "GraphDefinition.link[4].target[6].link[0].target[0].link[1].target[0].type[0]",
+          "Severity": 0,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6007",
+          "Message": "Code \u0027Resource\u0027 does not exist in the value set \u0027Resource Types\u0027 (http://hl7.org/fhir/ValueSet/resource-types)"
+        },
+        {
+          "Location": "GraphDefinition.link[6].target[0].link[4].target[1].link[2].target[0].type[0]",
+          "Severity": 0,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6007",
+          "Message": "Code \u0027Resource\u0027 does not exist in the value set \u0027Resource Types\u0027 (http://hl7.org/fhir/ValueSet/resource-types)"
+        },
+        {
+          "Location": "GraphDefinition.link[6].target[0].link[4].target[2].link[0].target[0].type[0]",
+          "Severity": 0,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6007",
+          "Message": "Code \u0027Resource\u0027 does not exist in the value set \u0027Resource Types\u0027 (http://hl7.org/fhir/ValueSet/resource-types)"
+        },
+        {
+          "Location": "GraphDefinition.link[6].target[0].link[4].target[2].link[1].target[0].type[0]",
+          "Severity": 0,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6007",
+          "Message": "Code \u0027Resource\u0027 does not exist in the value set \u0027Resource Types\u0027 (http://hl7.org/fhir/ValueSet/resource-types)"
+        },
+        {
+          "Location": "GraphDefinition.link[6].target[0].link[4].target[6].link[0].target[0].link[1].target[0].type[0]",
+          "Severity": 0,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6007",
+          "Message": "Code \u0027Resource\u0027 does not exist in the value set \u0027Resource Types\u0027 (http://hl7.org/fhir/ValueSet/resource-types)"
+        }
+      ],
+      "Tag": null,
+      "Length": 18912,
+      "Hash": "1C6BA5CB5E0E115888483491C3B4AE22",
+      "FilePath": "GraphDefinition\\GraphDefinition-Genomics-TestOrdersGroup-Example.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": "SearchParameter.target[15]",
+          "Severity": 0,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6007",
+          "Message": "Code \u0027CatalogEntry\u0027 does not exist in the value set \u0027Resource Types\u0027 (http://hl7.org/fhir/ValueSet/resource-types)"
+        },
+        {
+          "Location": "SearchParameter.target[38]",
+          "Severity": 0,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6007",
+          "Message": "Code \u0027DeviceUseStatement\u0027 does not exist in the value set \u0027Resource Types\u0027 (http://hl7.org/fhir/ValueSet/resource-types)"
+        },
+        {
+          "Location": "SearchParameter.target[40]",
+          "Severity": 0,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6007",
+          "Message": "Code \u0027DocumentManifest\u0027 does not exist in the value set \u0027Resource Types\u0027 (http://hl7.org/fhir/ValueSet/resource-types)"
+        },
+        {
+          "Location": "SearchParameter.target[42]",
+          "Severity": 0,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6007",
+          "Message": "Code \u0027EffectEvidenceSynthesis\u0027 does not exist in the value set \u0027Resource Types\u0027 (http://hl7.org/fhir/ValueSet/resource-types)"
+        },
+        {
+          "Location": "SearchParameter.target[73]",
+          "Severity": 0,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6007",
+          "Message": "Code \u0027Media\u0027 does not exist in the value set \u0027Resource Types\u0027 (http://hl7.org/fhir/ValueSet/resource-types)"
+        },
+        {
+          "Location": "SearchParameter.target[80]",
+          "Severity": 0,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6007",
+          "Message": "Code \u0027MedicinalProduct\u0027 does not exist in the value set \u0027Resource Types\u0027 (http://hl7.org/fhir/ValueSet/resource-types)"
+        },
+        {
+          "Location": "SearchParameter.target[81]",
+          "Severity": 0,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6007",
+          "Message": "Code \u0027MedicinalProductAuthorization\u0027 does not exist in the value set \u0027Resource Types\u0027 (http://hl7.org/fhir/ValueSet/resource-types)"
+        },
+        {
+          "Location": "SearchParameter.target[82]",
+          "Severity": 0,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6007",
+          "Message": "Code \u0027MedicinalProductContraindication\u0027 does not exist in the value set \u0027Resource Types\u0027 (http://hl7.org/fhir/ValueSet/resource-types)"
+        },
+        {
+          "Location": "SearchParameter.target[83]",
+          "Severity": 0,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6007",
+          "Message": "Code \u0027MedicinalProductIndication\u0027 does not exist in the value set \u0027Resource Types\u0027 (http://hl7.org/fhir/ValueSet/resource-types)"
+        },
+        {
+          "Location": "SearchParameter.target[84]",
+          "Severity": 0,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6007",
+          "Message": "Code \u0027MedicinalProductIngredient\u0027 does not exist in the value set \u0027Resource Types\u0027 (http://hl7.org/fhir/ValueSet/resource-types)"
+        },
+        {
+          "Location": "SearchParameter.target[85]",
+          "Severity": 0,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6007",
+          "Message": "Code \u0027MedicinalProductInteraction\u0027 does not exist in the value set \u0027Resource Types\u0027 (http://hl7.org/fhir/ValueSet/resource-types)"
+        },
+        {
+          "Location": "SearchParameter.target[86]",
+          "Severity": 0,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6007",
+          "Message": "Code \u0027MedicinalProductManufactured\u0027 does not exist in the value set \u0027Resource Types\u0027 (http://hl7.org/fhir/ValueSet/resource-types)"
+        },
+        {
+          "Location": "SearchParameter.target[87]",
+          "Severity": 0,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6007",
+          "Message": "Code \u0027MedicinalProductPackaged\u0027 does not exist in the value set \u0027Resource Types\u0027 (http://hl7.org/fhir/ValueSet/resource-types)"
+        },
+        {
+          "Location": "SearchParameter.target[88]",
+          "Severity": 0,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6007",
+          "Message": "Code \u0027MedicinalProductPharmaceutical\u0027 does not exist in the value set \u0027Resource Types\u0027 (http://hl7.org/fhir/ValueSet/resource-types)"
+        },
+        {
+          "Location": "SearchParameter.target[89]",
+          "Severity": 0,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6007",
+          "Message": "Code \u0027MedicinalProductUndesirableEffect\u0027 does not exist in the value set \u0027Resource Types\u0027 (http://hl7.org/fhir/ValueSet/resource-types)"
+        },
+        {
+          "Location": "SearchParameter.target[113]",
+          "Severity": 0,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6007",
+          "Message": "Code \u0027RequestGroup\u0027 does not exist in the value set \u0027Resource Types\u0027 (http://hl7.org/fhir/ValueSet/resource-types)"
+        },
+        {
+          "Location": "SearchParameter.target[114]",
+          "Severity": 0,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6007",
+          "Message": "Code \u0027ResearchDefinition\u0027 does not exist in the value set \u0027Resource Types\u0027 (http://hl7.org/fhir/ValueSet/resource-types)"
+        },
+        {
+          "Location": "SearchParameter.target[115]",
+          "Severity": 0,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6007",
+          "Message": "Code \u0027ResearchElementDefinition\u0027 does not exist in the value set \u0027Resource Types\u0027 (http://hl7.org/fhir/ValueSet/resource-types)"
+        },
+        {
+          "Location": "SearchParameter.target[119]",
+          "Severity": 0,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6007",
+          "Message": "Code \u0027RiskEvidenceSynthesis\u0027 does not exist in the value set \u0027Resource Types\u0027 (http://hl7.org/fhir/ValueSet/resource-types)"
+        },
+        {
+          "Location": "SearchParameter.target[135]",
+          "Severity": 0,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6007",
+          "Message": "Code \u0027SubstanceSpecification\u0027 does not exist in the value set \u0027Resource Types\u0027 (http://hl7.org/fhir/ValueSet/resource-types)"
+        }
+      ],
+      "Tag": null,
+      "Length": 4203,
+      "Hash": "30D1E36133388191DFC881416F44FE65",
+      "FilePath": "SearchParameter\\SearchParameter-Genomics-supporting-info.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": "StructureDefinition.differential[0].element[17].slicing[0]",
+          "Severity": 0,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "1012",
+          "Message": "Instance failed constraint eld-1 \u0022If there are no discriminators, there must be a definition\u0022"
+        },
+        {
+          "Location": "StructureDefinition.differential[0].element[28].slicing[0]",
+          "Severity": 0,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "1012",
+          "Message": "Instance failed constraint eld-1 \u0022If there are no discriminators, there must be a definition\u0022"
+        }
+      ],
+      "Tag": null,
+      "Length": 13753,
+      "Hash": "356A9F5858A0021D19F796D24599795D",
+      "FilePath": "StructureDefinition\\NHSEngland-Composition-GenomicsEULabReport.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": "StructureDefinition.differential[0].element[22].slicing[0]",
+          "Severity": 0,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "1012",
+          "Message": "Instance failed constraint eld-1 \u0022If there are no discriminators, there must be a definition\u0022"
+        }
+      ],
+      "Tag": null,
+      "Length": 19046,
+      "Hash": "41D5F231635735438B84E0689D0F3D67",
+      "FilePath": "StructureDefinition\\NHSEngland-DiagnosticReport-GenomicReport.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": "StructureDefinition.differential[0].element[11].slicing[0]",
+          "Severity": 0,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "1012",
+          "Message": "Instance failed constraint eld-1 \u0022If there are no discriminators, there must be a definition\u0022"
+        }
+      ],
+      "Tag": null,
+      "Length": 9934,
+      "Hash": "5DC038946745F654E28DC9146DA3C02E",
+      "FilePath": "StructureDefinition\\NHSEngland-Patient-Genomics.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": "StructureDefinition.differential[0].element[24].slicing[0]",
+          "Severity": 0,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "1012",
+          "Message": "Instance failed constraint eld-1 \u0022If there are no discriminators, there must be a definition\u0022"
+        }
+      ],
+      "Tag": null,
+      "Length": 33440,
+      "Hash": "AB871339D4D2C5F95CED854F29E0360A",
+      "FilePath": "StructureDefinition\\NHSEngland-ServiceRequest-Genomics.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": "Subscription.channel[0].payload[0]",
+          "Severity": 1,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6006",
+          "Message": "Terminology service failed while validating code \u0027application/fhir\u002Bjson\u0027: Operation validate code failed: creating the required expansion failed with message \u0022The ValueSet expander cannot find codesystem \u0027urn:ietf:bcp:13\u0027, so the expansion cannot be completed.\u0022."
+        }
+      ],
+      "Tag": null,
+      "Length": 504,
+      "Hash": "506399929ADB143BCE9C526C943019FA",
+      "FilePath": "Subscription\\Subscription-DiagnosticReportNotification-Example.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": "Subscription.channel[0].payload[0]",
+          "Severity": 1,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6006",
+          "Message": "Terminology service failed while validating code \u0027application/fhir\u002Bjson\u0027: Operation validate code failed: creating the required expansion failed with message \u0022The ValueSet expander cannot find codesystem \u0027urn:ietf:bcp:13\u0027, so the expansion cannot be completed.\u0022."
+        }
+      ],
+      "Tag": null,
+      "Length": 395,
+      "Hash": "8EFFC2DB370C7997A03C108FBC9C1CB7",
+      "FilePath": "Subscription\\Subscription-MinimalTaskNotification-Example.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": "Subscription.channel[0].payload[0]",
+          "Severity": 1,
+          "System": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+          "Code": "6006",
+          "Message": "Terminology service failed while validating code \u0027application/fhir\u002Bjson\u0027: Operation validate code failed: creating the required expansion failed with message \u0022The ValueSet expander cannot find codesystem \u0027urn:ietf:bcp:13\u0027, so the expansion cannot be completed.\u0022."
+        }
+      ],
+      "Tag": null,
+      "Length": 460,
+      "Hash": "3BCA933C5CEDC7830494552CAEFC773D",
+      "FilePath": "Subscription\\Subscription-TaskNotification-Example.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": null,
+          "Severity": 0,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "MANDATORY",
+          "Message": "package.json MUST contain a version field"
+        },
+        {
+          "Location": null,
+          "Severity": 0,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "FIELD_FORMAT",
+          "Message": "Jurisdiction is not valid"
+        },
+        {
+          "Location": null,
+          "Severity": 0,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "CONFIG",
+          "Message": "Package dependency hl7.terminology.r4@6.5.0 is outdated."
+        },
+        {
+          "Location": null,
+          "Severity": 1,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "CONFIG",
+          "Message": "Package dependency hl7.fhir.uv.extensions.r4@5.2.0 has an update 5.3.0."
+        },
+        {
+          "Location": null,
+          "Severity": 0,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "CONFIG",
+          "Message": "Package dependency hl7.terminology.r4@6.2.0 is outdated."
+        },
+        {
+          "Location": null,
+          "Severity": 1,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "CONFIG",
+          "Message": "Package dependency hl7.fhir.uv.smart-app-launch@2.0.0 has an update 2.2.0."
+        },
+        {
+          "Location": null,
+          "Severity": 2,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "CONFIG",
+          "Message": "Package dependency hl7.fhir.uv.smart-app-launch@2.0.0 is compatible but outdated."
+        },
+        {
+          "Location": null,
+          "Severity": 0,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "CONFIG",
+          "Message": "Package dependency hl7.terminology.r4@6.1.0 is outdated."
+        },
+        {
+          "Location": null,
+          "Severity": 0,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "CONFIG",
+          "Message": "Package dependency hl7.fhir.uv.extensions.r4@5.1.0 is not in range."
+        },
+        {
+          "Location": null,
+          "Severity": 1,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "CONFIG",
+          "Message": "Package dependency hl7.fhir.eu.laboratory@0.1.1 has an update 2.0.0."
+        },
+        {
+          "Location": null,
+          "Severity": 0,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "CONFIG",
+          "Message": "Package dependency hl7.fhir.uv.ips@1.1.0 is outdated."
+        },
+        {
+          "Location": null,
+          "Severity": 0,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "CONFIG",
+          "Message": "Package dependency hl7.terminology.r4@5.0.0 is outdated."
+        },
+        {
+          "Location": null,
+          "Severity": 1,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "CONFIG",
+          "Message": "Package dependency fhir.dicom@2022.4.20221006 has an update 2025.3.20250714."
+        },
+        {
+          "Location": null,
+          "Severity": 1,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "CONFIG",
+          "Message": "Package dependency hl7.fhir.eu.extensions@0.1.1 has an update 1.3.0."
+        },
+        {
+          "Location": null,
+          "Severity": 1,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "CONFIG",
+          "Message": "Package dependency hl7.fhir.eu.extensions@0.1.1 has a FHIR version mismatch: R5."
+        },
+        {
+          "Location": null,
+          "Severity": 1,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "CONFIG",
+          "Message": "Package dependency hl7.terminology.r5@6.5.0 has an update 7.1.0."
+        },
+        {
+          "Location": null,
+          "Severity": 1,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "CONFIG",
+          "Message": "Package dependency hl7.terminology.r5@6.5.0 has a FHIR version mismatch: R5."
+        },
+        {
+          "Location": null,
+          "Severity": 1,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "CONFIG",
+          "Message": "Package dependency hl7.fhir.uv.extensions.r5@5.2.0 has an update 5.3.0."
+        },
+        {
+          "Location": null,
+          "Severity": 1,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "CONFIG",
+          "Message": "Package dependency hl7.fhir.uv.extensions.r5@5.2.0 has a FHIR version mismatch: R5."
+        },
+        {
+          "Location": null,
+          "Severity": 1,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "CONFIG",
+          "Message": "Package dependency hl7.fhir.r5.core@5.0.0 has a FHIR version mismatch: R5."
+        },
+        {
+          "Location": null,
+          "Severity": 0,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "CONFIG",
+          "Message": "Package dependency hl7.terminology.r4@5.3.0 is outdated."
+        },
+        {
+          "Location": null,
+          "Severity": 0,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "CONFIG",
+          "Message": "Package dependency hl7.fhir.uv.extensions.r4@1.0.0 is not in range."
+        },
+        {
+          "Location": null,
+          "Severity": 1,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "CONFIG",
+          "Message": "Package dependency us.nlm.vsac@0.9.0 has an update 0.17.0."
+        },
+        {
+          "Location": null,
+          "Severity": 1,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "CONFIG",
+          "Message": "Package dependency fhir.r4.nhsengland.nhse-identifiers@0.1.1-alpha is a prerelease."
+        },
+        {
+          "Location": null,
+          "Severity": 1,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "CONFIG",
+          "Message": "Package dependency hl7.terminology.r4@7.0.1 has an update 7.1.0."
+        },
+        {
+          "Location": null,
+          "Severity": 2,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "CONFIG",
+          "Message": "Package dependency hl7.terminology.r4@7.0.1 is compatible but outdated."
+        },
+        {
+          "Location": null,
+          "Severity": 1,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "CONFIG",
+          "Message": "Package dependency hl7.fhir.eu.extensions.r4@1.2.0 has an update 1.3.0."
+        },
+        {
+          "Location": null,
+          "Severity": 1,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "CONFIG",
+          "Message": "Package dependency hl7.fhir.eu.base@2.0.0-ballot has an update 2.0.0."
+        },
+        {
+          "Location": null,
+          "Severity": 1,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "CONFIG",
+          "Message": "Package dependency hl7.fhir.eu.base@2.0.0-ballot is a prerelease."
+        },
+        {
+          "Location": null,
+          "Severity": 1,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "CONFIG",
+          "Message": "Package dependency hl7.fhir.uv.xver-r5.r4@0.0.1-snapshot-2 has an update 0.1.0."
+        },
+        {
+          "Location": null,
+          "Severity": 1,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "CONFIG",
+          "Message": "Package dependency hl7.fhir.uv.xver-r5.r4@0.0.1-snapshot-2 is a prerelease."
+        },
+        {
+          "Location": null,
+          "Severity": 2,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "CONFIG",
+          "Message": "Package dependency hl7.fhir.uv.xver-r5.r4@0.0.1-snapshot-2 is compatible but outdated."
+        },
+        {
+          "Location": null,
+          "Severity": 1,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "CONFIG",
+          "Message": "Package dependency ihe.pharm.mpd.r4@1.0.0-comment-2 is a prerelease."
+        },
+        {
+          "Location": null,
+          "Severity": 0,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "CONFIG",
+          "Message": "Package dependency hl7.terminology.r4@6.3.0 is outdated."
+        },
+        {
+          "Location": null,
+          "Severity": 1,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "CONFIG",
+          "Message": "Package dependency fhir.r4.ukcore.stu3.currentbuild@0.22.0-pre-release is a prerelease."
+        },
+        {
+          "Location": null,
+          "Severity": 2,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "CONFIG",
+          "Message": "Package dependency fhir.r4.ukcore.stu3.currentbuild@0.22.0-pre-release is compatible but outdated."
+        },
+        {
+          "Location": null,
+          "Severity": 1,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "CONFIG",
+          "Message": "Package dependency fhir.r4.ukcore.stu3.currentbuild@0.28.0-pre-release is a prerelease."
+        },
+        {
+          "Location": null,
+          "Severity": 0,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "CONFIG",
+          "Message": "Package dependency hl7.fhir.uv.genomics-reporting@2.0.0 is outdated."
+        },
+        {
+          "Location": null,
+          "Severity": 1,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "CONFIG",
+          "Message": "Package dependency hl7.fhir.us.core@6.1.0 has an update 9.0.0."
+        },
+        {
+          "Location": null,
+          "Severity": 1,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "CONFIG",
+          "Message": "Package dependency hl7.fhir.uv.bulkdata@2.0.0 has an update 3.0.0."
+        },
+        {
+          "Location": null,
+          "Severity": 1,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "CONFIG",
+          "Message": "Package dependency hl7.fhir.uv.smart-app-launch@2.1.0 has an update 2.2.0."
+        },
+        {
+          "Location": null,
+          "Severity": 1,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "CONFIG",
+          "Message": "Package dependency us.nlm.vsac@0.11.0 has an update 0.17.0."
+        },
+        {
+          "Location": null,
+          "Severity": 2,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "CONFIG",
+          "Message": "Package dependency us.nlm.vsac@0.11.0 is compatible but newer."
+        },
+        {
+          "Location": null,
+          "Severity": 1,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "CONFIG",
+          "Message": "Package dependency hl7.fhir.uv.sdc@3.0.0 has an update 4.0.0."
+        },
+        {
+          "Location": null,
+          "Severity": 1,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "CONFIG",
+          "Message": "Package dependency ihe.formatcode.fhir@1.1.0 has an update 1.5.0."
+        }
+      ],
+      "Tag": null,
+      "Length": 622,
+      "Hash": "046AAA28A3BFA0FE1E9D50D60BBB6057",
+      "FilePath": "package.json"
+    }
+  ]
+}

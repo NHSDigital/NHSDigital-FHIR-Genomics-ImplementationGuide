@@ -91,6 +91,11 @@
         "definition": "TBC. Only relevant for EU Lab aligned reports (included in HL7 EU Laboratory Report: Composition Profile). A reference to the focal DiagnosticReport this Composition is for."
       },
       {
+        "id": "Composition.extension:diagnosticReport-reference.url",
+        "path": "Composition.extension.url",
+        "fixedUri": "diagnosticReport-reference"
+      },
+      {
         "id": "Composition.extension:diagnosticReport-reference.value[x]",
         "path": "Composition.extension.value[x]",
         "type": [
