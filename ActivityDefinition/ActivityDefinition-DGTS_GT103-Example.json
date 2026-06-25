@@ -1,6 +1,6 @@
 {
  "resourceType": "ActivityDefinition",
- "id": "ActivityDefinition-DGTS-family-follow-up-testing-Example",
+ "id": "ActivityDefinition-DGTS_GT103-Example",
  "url": "https://fhir.nhs.uk/ActivityDefinition/GT103",
  "status": "active",
  "identifier": [
@@ -15,6 +15,7 @@
   }
  ],
  "title": "Family follow-up testing to aid variant interpretation - Targeted variant testing",
+  "name": "GT103_Family follow-up testing to aid variant interpretation",
  "code": {
   "coding": [
    {

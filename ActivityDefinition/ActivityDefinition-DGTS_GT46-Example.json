@@ -1,0 +1,57 @@
+{
+ "resourceType": "ActivityDefinition",
+ "id": "ActivityDefinition-DGTS_GT46-Example",
+ "url": "https://fhir.nhs.uk/ActivityDefinition/GT46",
+ "identifier": [
+  {
+   "system": "https://fhir.nhs.uk/Id/England-DigitalGenomicTestServices",
+   "value": "GT46"
+  },
+  {
+   "system": "https://fhir.nhs.uk/Id/England-GenomicTestDirectory",
+   "value": "R69.5",
+   "use": "old"
+  }
+ ],
+ "status": "active",
+ "title": "Hypotonic infant - WGS",
+  "name": "GT46_Hypotonic-infant-WGS",
+ "code": {
+  "coding": [
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/DGTS-genomictest-method-type",
+    "code": "whole-genome-sequencing"
+   }
+  ]
+ },
+ "useContext": [
+  {
+   "code": {
+    "code": "focus"
+   },
+   "valueCodeableConcept": {
+    "coding": [
+     {
+      "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
+      "code": "diagnostic"
+     }
+    ]
+   }
+  }
+ ],
+ "library": [
+  "https://fhir.nhs.uk/Library/GT46"
+ ],
+ "specimenRequirement": [
+  {
+   "reference": "SpecimenDefinition/DGTS-SpecimenDefinition-Example"
+  }
+ ],
+ "relatedArtifact": [
+  {
+   "type": "composed-of",
+   "url": "https://nhsgms-panelapp.genomicsengland.co.uk/panels/490/v46.1",
+   "display": "Hypotonic infant"
+  }
+ ]
+}

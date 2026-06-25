@@ -1,6 +1,6 @@
 {
  "resourceType": "PlanDefinition",
- "id": "PlanDefinition-DGTS-HypotonicInfant-Example",
+ "id": "PlanDefinition-DGTS_TP383-Example",
  "url": "https://fhir.nhs.uk/PlanDefinition/TP383",
  "identifier": [
   {

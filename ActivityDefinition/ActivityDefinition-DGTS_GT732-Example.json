@@ -1,0 +1,50 @@
+{
+ "resourceType": "ActivityDefinition",
+ "id": "ActivityDefinition-DGTS_GT732-Example",
+ "url": "https://fhir.nhs.uk/ActivityDefinition/GT732",
+ "status": "active",
+ "identifier": [
+  {
+   "system": "https://fhir.nhs.uk/Id/England-DigitalGenomicTestServices",
+   "value": "GT732"
+  },
+  {
+   "system": "https://fhir.nhs.uk/Id/England-GenomicTestDirectory",
+   "value": "R244.1",
+   "use": "old"
+  }
+ ],
+ "title": "Carrier testing for known variant(s) - Targeted variant testing",
+  "name": "GT732_Carrier testing for known variant(s) - Targeted variant testing",
+ "code": {
+  "coding": [
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/DGTS-genomictest-method-type",
+    "code": "targeted-assays"
+   }
+  ]
+ },
+ "useContext": [
+  {
+   "code": {
+    "code": "focus"
+   },
+   "valueCodeableConcept": {
+    "coding": [
+     {
+      "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
+      "code": "carrier"
+     }
+    ]
+   }
+  }
+ ],
+ "library": [
+  "https://fhir.nhs.uk/Library/DGTS-targetdisease-gene-variant-required"
+ ],
+ "specimenRequirement": [
+  {
+   "reference": "SpecimenDefinition/DGTS-SpecimenDefinition-Example"
+  }
+ ]
+}

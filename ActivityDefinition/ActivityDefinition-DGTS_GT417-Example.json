@@ -1,25 +1,26 @@
 {
  "resourceType": "ActivityDefinition",
- "id": "ActivityDefinition-DGTS-HypotonicinfantWGS-Example",
- "url": "https://fhir.nhs.uk/ActivityDefinition/GT46",
+ "id": "ActivityDefinition-DGTS_GT417-Example",
+ "url": "https://fhir.nhs.uk/ActivityDefinition/GT417",
+ "status": "active",
  "identifier": [
   {
    "system": "https://fhir.nhs.uk/Id/England-DigitalGenomicTestServices",
-   "value": "GT46"
+   "value": "GT417"
   },
   {
    "system": "https://fhir.nhs.uk/Id/England-GenomicTestDirectory",
-   "value": "R69.5",
+   "value": "R263.1",
    "use": "old"
   }
  ],
- "status": "active",
- "title": "Hypotonic infant - WGS",
+ "title": "Confirmation of uniparental disomy",
+  "name": "GT417_Confirmation of uniparental disomy",
  "code": {
   "coding": [
    {
     "system": "https://fhir.nhs.uk/CodeSystem/DGTS-genomictest-method-type",
-    "code": "whole-genome-sequencing"
+    "code": "targeted-assays"
    }
   ]
  },
@@ -39,18 +40,11 @@
   }
  ],
  "library": [
-  "https://fhir.nhs.uk/Library/GT46"
+  "https://fhir.nhs.uk/Library/DGTS-targetdisease-gene-variant-required"
  ],
  "specimenRequirement": [
   {
    "reference": "SpecimenDefinition/DGTS-SpecimenDefinition-Example"
-  }
- ],
- "relatedArtifact": [
-  {
-   "type": "composed-of",
-   "url": "https://nhsgms-panelapp.genomicsengland.co.uk/panels/490/v46.1",
-   "display": "Hypotonic infant"
   }
  ]
 }

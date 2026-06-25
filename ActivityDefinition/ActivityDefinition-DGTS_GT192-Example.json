@@ -1,20 +1,20 @@
 {
  "resourceType": "ActivityDefinition",
- "id": "DGTS-ActivityDefinition-Example",
- "url": "https://fhir.nhs.uk/ActivityDefinition/GT1",
+ "id": "ActivityDefinition-DGTS_192-Example",
+ "url": "https://fhir.nhs.uk/ActivityDefinition/GT192",
  "identifier": [
   {
    "system": "https://fhir.nhs.uk/Id/England-DigitalGenomicTestServices",
-   "value": "GT1"
+   "value": "GT192"
   },
   {
    "system": "https://fhir.nhs.uk/Id/England-GenomicTestDirectory",
-   "value": "R47.2",
+   "value": "R387.1",
    "use": "old"
   }
  ],
- "title": "15q11 critical region (AS/PWS) - MLPA or equivalent",
- "name": "GT1_ActivityDefinition",
+ "title": "Reanalysis of existing data",
+ "name": "GT192_Reanalysis-of-existing-data",
  "version": "1.0",
  "status": "active",
  "experimental": false,
@@ -37,25 +37,17 @@
  "code": {
   "coding": [
    {
-    "code": "targeted-variant-analysis",
-    "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/genomic-study-method-type-cs"
+    "system": "https://fhir.nhs.uk/CodeSystem/DGTS-genomictest-method-type",
+    "code": "sequencing"
    }
   ]
  },
  "library": [
-  "https://fhir.nhs.uk/Library/GT1"
+  "https://fhir.nhs.uk/Library/DGTS-targetdisease-gene-variant-required"
  ],
  "specimenRequirement": [
   {
    "reference": "SpecimenDefinition/DGTS-SpecimenDefinition-Example"
-  }
- ],
- "relatedArtifact": [
-  {
-   "type": "composed-of",
-   "url": "https://panelapp.genomicsengland.co.uk/panels/1313",
-   "label": "Carney complex",
-   "display": "GMS Rare Disease"
   }
  ]
 }

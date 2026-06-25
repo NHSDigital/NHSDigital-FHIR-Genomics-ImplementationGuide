@@ -1,6 +1,6 @@
 {
  "resourceType": "PlanDefinition",
- "id": "DGTS-PlanDefinition-Example",
+ "id": "PlanDefinition-DGTS_TP231-Example",
  "url": "https://fhir.nhs.uk/PlanDefinition/TP231",
  "identifier": [
   {

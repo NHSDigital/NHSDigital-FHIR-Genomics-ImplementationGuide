@@ -1,0 +1,50 @@
+{
+ "resourceType": "ActivityDefinition",
+ "id": "ActivityDefinition-DGTS_GT897-Example",
+ "url": "https://fhir.nhs.uk/ActivityDefinition/GT897",
+ "status": "active",
+ "identifier": [
+  {
+   "system": "https://fhir.nhs.uk/Id/England-DigitalGenomicTestServices",
+   "value": "GT897"
+  },
+  {
+   "system": "https://fhir.nhs.uk/Id/England-GenomicTestDirectory",
+   "value": "R240.1",
+   "use": "old"
+  }
+ ],
+ "title": "Diagnostic testing for known variant(s) - Targeted variant testing",
+  "name": "GT897_Diagnostic testing for known variant(s) - Targeted variant testing",
+ "code": {
+  "coding": [
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/DGTS-genomictest-method-type",
+    "code": "targeted-assays"
+   }
+  ]
+ },
+ "useContext": [
+  {
+   "code": {
+    "code": "focus"
+   },
+   "valueCodeableConcept": {
+    "coding": [
+     {
+      "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
+      "code": "diagnostic"
+     }
+    ]
+   }
+  }
+ ],
+ "library": [
+  "https://fhir.nhs.uk/Library/DGTS-targetdisease-gene-variant-required"
+ ],
+ "specimenRequirement": [
+  {
+   "reference": "SpecimenDefinition/DGTS-SpecimenDefinition-Example"
+  }
+ ]
+}
