@@ -165,6 +165,9 @@
     ],
     "action": [
      {
+      "definitionCanonical": "https://fhir.nhs.uk/ActivityDefinition/GT46"
+     },
+     {
       "definitionCanonical": "https://fhir.nhs.uk/ActivityDefinition/GT36"
      },
      {
@@ -1023,45 +1026,45 @@
   {
    "fullUrl": "https://example.org/fhir.nhs.uk/fhir/Library/DGTS-targetdisease-gene-variant-required",
    "resource": {
-   "resourceType": "Library",
- "id": "DGTS-targetdisease-gene-variant-required-Example",
- "url": "https://fhir.nhs.uk/Library/DGTS-targetdisease-gene-variant-required",
- "name": "DGTS-TargetDiseaseGeneVariantRequired-Example",
- "type": {
-  "coding": [
-   {
-    "system": "http://terminology.hl7.org/CodeSystem/library-type",
-    "code": "module-definition"
-   }
-  ]
- },
- "status": "active",
- "parameter": [
-  {
-   "name": "additional_panels_available",
-   "use": "in",
-   "max": "0",
-   "type": "Coding"
-  },
-  {
-   "name": "target_disease",
-   "use": "in",
-   "min": 1,
-   "type": "Coding"
-  },
-  {
-   "name": "target_gene",
-   "use": "in",
-   "min": 1,
-   "type": "Coding"
-  },
-  {
-   "name": "target_variant",
-   "use": "in",
-   "min": 1,
-   "type": "Coding"
-  }
- ]
+    "resourceType": "Library",
+    "id": "DGTS-targetdisease-gene-variant-required-Example",
+    "url": "https://fhir.nhs.uk/Library/DGTS-targetdisease-gene-variant-required",
+    "name": "DGTS-TargetDiseaseGeneVariantRequired-Example",
+    "type": {
+     "coding": [
+      {
+       "system": "http://terminology.hl7.org/CodeSystem/library-type",
+       "code": "module-definition"
+      }
+     ]
+    },
+    "status": "active",
+    "parameter": [
+     {
+      "name": "additional_panels_available",
+      "use": "in",
+      "max": "0",
+      "type": "Coding"
+     },
+     {
+      "name": "target_disease",
+      "use": "in",
+      "min": 1,
+      "type": "Coding"
+     },
+     {
+      "name": "target_gene",
+      "use": "in",
+      "min": 1,
+      "type": "Coding"
+     },
+     {
+      "name": "target_variant",
+      "use": "in",
+      "min": 1,
+      "type": "Coding"
+     }
+    ]
    }
   }
  ]
