@@ -1,8 +1,8 @@
 {
  "resourceType": "Library",
- "id": "DGTS-GT46-Example",
+ "id": "Library-DGTS-GT46-Example",
  "url": "https://fhir.nhs.uk/Library/GT46",
- "name": "DDGTS-GT46-Example",
+ "name": "DGTS-GT46-Example",
  "type": {
   "coding": [
    {

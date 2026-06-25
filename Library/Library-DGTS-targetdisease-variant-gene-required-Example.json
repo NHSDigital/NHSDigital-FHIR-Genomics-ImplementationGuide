@@ -1,6 +1,6 @@
 {
  "resourceType": "Library",
- "id": "DGTS-targetdisease-variant-gene-required-Example",
+ "id": "DGTS-targetdisease-gene-variant-required-Example",
  "url": "https://fhir.nhs.uk/Library/DGTS-targetdisease-gene-variant-required",
  "name": "DGTS-TargetDiseaseGeneVariantRequired-Example",
  "type": {

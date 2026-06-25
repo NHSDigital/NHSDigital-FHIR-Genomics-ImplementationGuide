@@ -446,8 +446,9 @@
    }
   },
   {
-   "fullUrl": "https://example.org/fhir.nhs.uk/fhir/ActivityDefinition/ctivityDefinition-DGTS-GT36-Example",
+   "fullUrl": "https://example.org/fhir.nhs.uk/fhir/ActivityDefinition/ActivityDefinition-DGTS-GT36-Example",
    "resource": {
+    "resourceType": "ActivityDefinition",
     "id": "ActivityDefinition-DGTS-GT36-Example",
     "url": "https://fhir.nhs.uk/ActivityDefinition/GT36",
     "identifier": [
@@ -720,7 +721,7 @@
    }
   },
   {
-   "fullUrl": "https://example.org/fhir.nhs.uk/fhir/ActivityDefinition/ActivityDefinition-DGTS-GT732-Exampl",
+   "fullUrl": "https://example.org/fhir.nhs.uk/fhir/ActivityDefinition/ActivityDefinition-DGTS-GT732-Example",
    "resource": {
     "resourceType": "ActivityDefinition",
     "id": "ActivityDefinition-DGTS-GT732-Example",
@@ -929,6 +930,138 @@
       "reference": "SpecimenDefinition/DGTS-SpecimenDefinition-Example"
      }
     ]
+   }
+  },
+  {
+   "fullUrl": "https://example.org/fhir.nhs.uk/fhir/Library/LibraryDGTS-GT1-Example",
+   "resource": {
+    "resourceType": "Library",
+    "id": "LibraryDGTS-GT1-Example",
+    "url": "https://fhir.nhs.uk/Library/GT1",
+    "name": "GT1_Library",
+    "type": {
+     "coding": [
+      {
+       "system": "http://terminology.hl7.org/CodeSystem/library-type",
+       "code": "module-definition"
+      }
+     ]
+    },
+    "status": "active",
+    "parameter": [
+     {
+      "name": "additional_panels_available",
+      "use": "in",
+      "max": "0",
+      "type": "Coding"
+     },
+     {
+      "name": "target_disease_required",
+      "use": "in",
+      "min": 0,
+      "type": "Coding"
+     },
+     {
+      "name": "target_gene_required",
+      "use": "in",
+      "min": 0,
+      "type": "Coding"
+     },
+     {
+      "name": "target_variant_required",
+      "use": "in",
+      "min": 0,
+      "type": "Coding"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "https://example.org/fhir.nhs.uk/fhir/Library/LibraryDGTS-GT46-Example",
+   "resource": {
+    "resourceType": "Library",
+    "id": "LibraryDGTS-GT46-Example",
+    "url": "https://fhir.nhs.uk/Library/GT46",
+    "name": "DDGTS-GT46-Example",
+    "type": {
+     "coding": [
+      {
+       "system": "http://terminology.hl7.org/CodeSystem/library-type",
+       "code": "module-definition"
+      }
+     ]
+    },
+    "status": "active",
+    "parameter": [
+     {
+      "name": "additional_panels_available",
+      "use": "in",
+      "max": "1",
+      "type": "Coding"
+     },
+     {
+      "name": "target_disease",
+      "use": "in",
+      "min": 0,
+      "type": "Coding"
+     },
+     {
+      "name": "target_gene",
+      "use": "in",
+      "min": 0,
+      "type": "Coding"
+     },
+     {
+      "name": "target_variant",
+      "use": "in",
+      "min": 0,
+      "type": "Coding"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "https://example.org/fhir.nhs.uk/fhir/Library/DGTS-targetdisease-gene-variant-required",
+   "resource": {
+   "resourceType": "Library",
+ "id": "DGTS-targetdisease-gene-variant-required-Example",
+ "url": "https://fhir.nhs.uk/Library/DGTS-targetdisease-gene-variant-required",
+ "name": "DGTS-TargetDiseaseGeneVariantRequired-Example",
+ "type": {
+  "coding": [
+   {
+    "system": "http://terminology.hl7.org/CodeSystem/library-type",
+    "code": "module-definition"
+   }
+  ]
+ },
+ "status": "active",
+ "parameter": [
+  {
+   "name": "additional_panels_available",
+   "use": "in",
+   "max": "0",
+   "type": "Coding"
+  },
+  {
+   "name": "target_disease",
+   "use": "in",
+   "min": 1,
+   "type": "Coding"
+  },
+  {
+   "name": "target_gene",
+   "use": "in",
+   "min": 1,
+   "type": "Coding"
+  },
+  {
+   "name": "target_variant",
+   "use": "in",
+   "min": 1,
+   "type": "Coding"
+  }
+ ]
    }
   }
  ]
