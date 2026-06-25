@@ -1,0 +1,137 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "DGTS-clinical-specialty-genomics",
+  "url": "https://fhir.nhs.uk/CodeSystem/DGTS-clinical-specialty-genomics",
+  "version": "0.1.0",
+  "name": "DGTSClinicalSpecialtyGenomics",
+  "title": "DGTS Clinical Specialty Genomics",
+  "status": "draft",
+  "experimental": false,
+  "date": "2026-06-15T00:00:00+00:00",
+  "publisher": "NHS England",
+  "contact": [
+    {
+      "name": "NHS England",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "interoperabilityteam@nhs.net",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "CodeSystem used to identify the clinical specialty associated with a genomic test request, result, care pathway, or service within the Digital Genomic Test Service (DGTS).",
+  "purpose": "Defines a standard set of clinical specialties relevant to genomic testing and interpretation within NHS genomic services.",
+  "copyright": "Copyright © 2026+ NHS England Licensed under the Apache License, Version 2.0 (the \\\"License\\\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \\\"AS IS\\\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html.",
+  "caseSensitive": true,
+  "content": "complete",
+  "count": 21,
+  "concept": [
+    {
+      "code": "oncology",
+      "display": "Oncology",
+      "definition": "Clinical specialty concerned with the diagnosis, treatment and management of cancer."
+    },
+    {
+      "code": "cardiology",
+      "display": "Cardiology",
+      "definition": "Clinical specialty concerned with disorders of the heart and cardiovascular system."
+    },
+    {
+      "code": "audiology",
+      "display": "Audiology",
+      "definition": "Clinical specialty concerned with hearing, balance and related disorders."
+    },
+    {
+      "code": "endocrinology",
+      "display": "Endocrinology",
+      "definition": "Clinical specialty concerned with hormone-producing glands and endocrine disorders."
+    },
+    {
+      "code": "ophthalmology",
+      "display": "Ophthalmology",
+      "definition": "Clinical specialty concerned with diseases and disorders of the eye and visual system."
+    },
+    {
+      "code": "gastrohepatology",
+      "display": "Gastrohepatology",
+      "definition": "Clinical specialty concerned with disorders of the gastrointestinal tract, liver and associated organs."
+    },
+    {
+      "code": "haematology",
+      "display": "Haematology",
+      "definition": "Clinical specialty concerned with blood disorders and diseases of the blood-forming organs."
+    },
+    {
+      "code": "immunology",
+      "display": "Immunology",
+      "definition": "Clinical specialty concerned with disorders of the immune system."
+    },
+    {
+      "code": "inherited-cancer",
+      "display": "Inherited Cancer",
+      "definition": "Clinical specialty focused on inherited cancer syndromes and familial cancer risk assessment."
+    },
+    {
+      "code": "metabolic",
+      "display": "Metabolic",
+      "definition": "Clinical specialty concerned with inherited and acquired metabolic disorders."
+    },
+    {
+      "code": "mitochondrial",
+      "display": "Mitochondrial",
+      "definition": "Clinical specialty concerned with disorders caused by mitochondrial dysfunction or mitochondrial genetic variants."
+    },
+    {
+      "code": "musculoskeletal",
+      "display": "Musculoskeletal",
+      "definition": "Clinical specialty concerned with disorders affecting bones, muscles, connective tissues and joints."
+    },
+    {
+      "code": "neurology",
+      "display": "Neurology",
+      "definition": "Clinical specialty concerned with disorders of the nervous system."
+    },
+    {
+      "code": "renal",
+      "display": "Renal",
+      "definition": "Clinical specialty concerned with kidney diseases and disorders of renal function."
+    },
+    {
+      "code": "respiratory",
+      "display": "Respiratory",
+      "definition": "Clinical specialty concerned with diseases of the lungs and respiratory system."
+    },
+    {
+      "code": "dermatology",
+      "display": "Dermatology",
+      "definition": "Clinical specialty concerned with disorders of the skin, hair and nails."
+    },
+    {
+      "code": "fetal-and-prenatal",
+      "display": "Fetal and Prenatal",
+      "definition": "Clinical specialty concerned with fetal medicine, prenatal diagnosis and pregnancy-related genetic conditions."
+    },
+    {
+      "code": "paediatric-cancers",
+      "display": "Paediatric Cancers",
+      "definition": "Clinical specialty concerned with cancers occurring in children and young people."
+    },
+    {
+      "code": "haemato-oncology",
+      "display": "Haemato-Oncology",
+      "definition": "Clinical specialty focused on the diagnosis and treatment of blood cancers."
+    },
+    {
+      "code": "cellular-pathology",
+      "display": "Cellular Pathology",
+      "definition": "Clinical specialty concerned with the diagnosis of disease through examination of cells, tissues and organs."
+    },
+    {
+      "code": "developmental-disorders",
+      "display": "Developmental Disorders",
+      "definition": "Clinical specialty concerned with genetic and congenital conditions affecting physical, cognitive or behavioural development."
+    }
+  ]
+}
