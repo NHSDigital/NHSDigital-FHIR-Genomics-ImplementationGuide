@@ -3,10 +3,10 @@
  "type": "collection",
  "entry": [
   {
-   "fullUrl": "https://example.org/fhir.nhs.uk/fhir/PlanDefinition/PlanDefinition-DGTS_TP383-Example",
+   "fullUrl": "https://example.org/fhir.nhs.uk/fhir/PlanDefinition/PlanDefinition-DGTS-TP383-Example",
    "resource": {
     "resourceType": "PlanDefinition",
-    "id": "PlanDefinition-DGTS_TP383-Example",
+    "id": "PlanDefinition-DGTS-TP383-Example",
     "url": "https://fhir.nhs.uk/PlanDefinition/TP383",
     "identifier": [
      {
@@ -192,10 +192,10 @@
    }
   },
   {
-   "fullUrl": "https://example.org/fhir.nhs.uk/fhir/PlanDefinition/PlanDefinition-DGTS_TP231-Example",
+   "fullUrl": "https://example.org/fhir.nhs.uk/fhir/PlanDefinition/PlanDefinition-DGTS-TP231-Example",
    "resource": {
     "resourceType": "PlanDefinition",
-    "id": "PlanDefinition-DGTS_TP231-Example",
+    "id": "PlanDefinition-DGTS-TP231-Example",
     "url": "https://fhir.nhs.uk/PlanDefinition/TP231",
     "identifier": [
      {
@@ -382,10 +382,10 @@
    }
   },
   {
-   "fullUrl": "https://example.org/fhir.nhs.uk/fhir/ActivityDefinition/ActivityDefinition-DGTS_GT1-Example",
+   "fullUrl": "https://example.org/fhir.nhs.uk/fhir/ActivityDefinition/ActivityDefinition-DGTS-GT1-Example",
    "resource": {
     "resourceType": "ActivityDefinition",
-    "id": "ActivityDefinition-DGTS_GT1-Example",
+    "id": "ActivityDefinition-DGTS-GT1-Example",
     "url": "https://fhir.nhs.uk/ActivityDefinition/GT1",
     "identifier": [
      {
@@ -446,9 +446,9 @@
    }
   },
   {
-   "fullUrl": "https://example.org/fhir.nhs.uk/fhir/ActivityDefinition/ctivityDefinition-DGTS_GT36-Example",
+   "fullUrl": "https://example.org/fhir.nhs.uk/fhir/ActivityDefinition/ctivityDefinition-DGTS-GT36-Example",
    "resource": {
-    "id": "ActivityDefinition-DGTS_GT36-Example",
+    "id": "ActivityDefinition-DGTS-GT36-Example",
     "url": "https://fhir.nhs.uk/ActivityDefinition/GT36",
     "identifier": [
      {
@@ -498,10 +498,10 @@
    }
   },
   {
-   "fullUrl": "https://example.org/fhir.nhs.uk/fhir/ActivityDefinition/ActivityDefinition-DGTS_GT46-Example",
+   "fullUrl": "https://example.org/fhir.nhs.uk/fhir/ActivityDefinition/ActivityDefinition-DGTS-GT46-Example",
    "resource": {
     "resourceType": "ActivityDefinition",
-    "id": "ActivityDefinition-DGTS_GT46-Example",
+    "id": "ActivityDefinition-DGTS-GT46-Example",
     "url": "https://fhir.nhs.uk/ActivityDefinition/GT46",
     "identifier": [
      {
@@ -558,10 +558,10 @@
    }
   },
   {
-   "fullUrl": "https://example.org/fhir.nhs.uk/fhir/ActivityDefinition/ActivityDefinition-DGTS_GT103-Example",
+   "fullUrl": "https://example.org/fhir.nhs.uk/fhir/ActivityDefinition/ActivityDefinition-DGTS-GT103-Example",
    "resource": {
     "resourceType": "ActivityDefinition",
-    "id": "ActivityDefinition-DGTS_GT103-Example",
+    "id": "ActivityDefinition-DGTS-GT103-Example",
     "url": "https://fhir.nhs.uk/ActivityDefinition/GT103",
     "status": "active",
     "identifier": [
@@ -611,10 +611,10 @@
    }
   },
   {
-   "fullUrl": "https://example.org/fhir.nhs.uk/fhir/ActivityDefinition/ActivityDefinition-DGTS_192-Example",
+   "fullUrl": "https://example.org/fhir.nhs.uk/fhir/ActivityDefinition/ActivityDefinition-DGTS-192-Example",
    "resource": {
     "resourceType": "ActivityDefinition",
-    "id": "ActivityDefinition-DGTS_192-Example",
+    "id": "ActivityDefinition-DGTS-192-Example",
     "url": "https://fhir.nhs.uk/ActivityDefinition/GT192",
     "identifier": [
      {
@@ -667,10 +667,10 @@
    }
   },
   {
-   "fullUrl": "https://example.org/fhir.nhs.uk/fhir/ActivityDefinition/ActivityDefinition-DGTS_GT417-Example",
+   "fullUrl": "https://example.org/fhir.nhs.uk/fhir/ActivityDefinition/ActivityDefinition-DGTS-GT417-Example",
    "resource": {
     "resourceType": "ActivityDefinition",
-    "id": "ActivityDefinition-DGTS_GT417-Example",
+    "id": "ActivityDefinition-DGTS-GT417-Example",
     "url": "https://fhir.nhs.uk/ActivityDefinition/GT417",
     "status": "active",
     "identifier": [
@@ -720,10 +720,10 @@
    }
   },
   {
-   "fullUrl": "https://example.org/fhir.nhs.uk/fhir/ActivityDefinition/ActivityDefinition-DGTS_GT732-Exampl",
+   "fullUrl": "https://example.org/fhir.nhs.uk/fhir/ActivityDefinition/ActivityDefinition-DGTS-GT732-Exampl",
    "resource": {
     "resourceType": "ActivityDefinition",
-    "id": "ActivityDefinition-DGTS_GT732-Example",
+    "id": "ActivityDefinition-DGTS-GT732-Example",
     "url": "https://fhir.nhs.uk/ActivityDefinition/GT732",
     "status": "active",
     "identifier": [
@@ -773,10 +773,10 @@
    }
   },
   {
-   "fullUrl": "https://example.org/fhir.nhs.uk/fhir/ActivityDefinition/ActivityDefinition-DGTS_GT858-Example",
+   "fullUrl": "https://example.org/fhir.nhs.uk/fhir/ActivityDefinition/ActivityDefinition-DGTS-GT858-Example",
    "resource": {
     "resourceType": "ActivityDefinition",
-    "id": "ActivityDefinition-DGTS_GT858-Example",
+    "id": "ActivityDefinition-DGTS-GT858-Example",
     "url": "https://fhir.nhs.uk/ActivityDefinition/GT858",
     "status": "active",
     "identifier": [
@@ -826,10 +826,10 @@
    }
   },
   {
-   "fullUrl": "https://example.org/fhir.nhs.uk/fhir/ActivityDefinition/ActivityDefinition-DGTS_GT897-Example",
+   "fullUrl": "https://example.org/fhir.nhs.uk/fhir/ActivityDefinition/ActivityDefinition-DGTS-GT897-Example",
    "resource": {
     "resourceType": "ActivityDefinition",
-    "id": "ActivityDefinition-DGTS_GT897-Example",
+    "id": "ActivityDefinition-DGTS-GT897-Example",
     "url": "https://fhir.nhs.uk/ActivityDefinition/GT897",
     "status": "active",
     "identifier": [
@@ -879,10 +879,10 @@
    }
   },
   {
-   "fullUrl": "https://example.org/fhir.nhs.uk/fhir/ActivityDefinition/ActivityDefinition-DGTS_GT1124-Example",
+   "fullUrl": "https://example.org/fhir.nhs.uk/fhir/ActivityDefinition/ActivityDefinition-DGTS-GT1124-Example",
    "resource": {
     "resourceType": "ActivityDefinition",
-    "id": "ActivityDefinition-DGTS_GT1124-Example",
+    "id": "ActivityDefinition-DGTS-GT1124-Example",
     "url": "https://fhir.nhs.uk/ActivityDefinition/GT1124",
     "status": "active",
     "identifier": [

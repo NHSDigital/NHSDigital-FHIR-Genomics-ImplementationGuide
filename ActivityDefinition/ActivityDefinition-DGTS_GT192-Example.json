@@ -1,6 +1,6 @@
 {
  "resourceType": "ActivityDefinition",
- "id": "ActivityDefinition-DGTS_192-Example",
+ "id": "ActivityDefinition-DGTS-192-Example",
  "url": "https://fhir.nhs.uk/ActivityDefinition/GT192",
  "identifier": [
   {
