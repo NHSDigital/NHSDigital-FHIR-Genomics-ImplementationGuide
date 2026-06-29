@@ -142,6 +142,21 @@
      }
     ]
    }
+  },
+  {
+   "code": {
+    "code": "focus",
+    "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
+   },
+   "valueCodeableConcept": {
+    "coding": [
+     {
+      "system": "https://fhir.nhs.uk/CodeSystem/DGTS-clinical-specialty-genomics",
+      "code": "fetal-and-prenatal",
+      "display":"Fetal and Prenata"
+     }
+    ]
+   }
   }
  ],
  "goal": [
