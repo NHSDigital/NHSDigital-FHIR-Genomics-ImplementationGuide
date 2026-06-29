@@ -15,7 +15,8 @@
  "code": {
   "coding": [
    {
-    "system": "http://purl.obolibrary.org/obo/hp.owl",
+    "system": "http://human-phenotype-ontology.org",
+    "version": "20221005",
     "code": "HP:0001250",
     "display": "Seizure"
    }

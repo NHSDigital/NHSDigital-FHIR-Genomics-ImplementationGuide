@@ -21,7 +21,17 @@
   }
  ],
  "code": {
-  "text": "SLC52A2 variant assessment"
+  "coding": [
+   {
+    "system": "http://loinc.org",
+    "code": "69548-6"
+   },
+   {
+    "system": "http://snomed.info/sct",
+    "code": "414755005",
+    "display": "Molecular, genetic AND/OR cellular observable"
+   }
+  ]
  },
  "subject": {
   "reference": "Patient/Patient-PheobeSmitham-Example"
