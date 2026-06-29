@@ -24,7 +24,8 @@
   "coding": [
    {
     "system": "http://loinc.org",
-    "code": "69548-6"
+    "code": "69548-6",
+    "display": "Genetic variant assessment"
    },
    {
     "system": "http://snomed.info/sct",
