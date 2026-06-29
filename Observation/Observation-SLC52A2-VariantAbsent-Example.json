@@ -1,0 +1,56 @@
+{
+ "resourceType": "Observation",
+ "id": "Observation-SLC52A2-VariantAbsent-Example",
+ "status": "final",
+ "category": [
+  {
+   "coding": [
+    {
+     "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+     "code": "laboratory"
+    }
+   ]
+  },
+  {
+   "coding": [
+    {
+     "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+     "code": "GE"
+    }
+   ]
+  }
+ ],
+ "code": {
+  "text": "SLC52A2 variant assessment"
+ },
+ "subject": {
+  "reference": "Patient/Patient-PheobeSmitham-Example"
+ },
+ "effectiveDateTime": "2023-09-16",
+ "valueCodeableConcept": {
+  "coding": [
+   {
+    "system": "http://snomed.info/sct",
+    "code": "260415000",
+    "display": "Not detected"
+   },
+   {
+    "system": "http://loinc.org",
+    "code": "LA9634-2",
+    "display": "Absent"
+   }
+  ],
+  "text": "Variant not detected"
+ },
+ "method": [
+  {
+   "coding": [
+    {
+     "system": "http://snomed.info/sct",
+     "code": "117040002",
+     "display": "Nucleic acid sequencing"
+    }
+   ]
+  }
+ ]
+}
