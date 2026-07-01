@@ -1,0 +1,53 @@
+{
+ "resourceType": "ActivityDefinition",
+ "id": "ActivityDefinition-DGTS-192-Example",
+ "url": "https://fhir.nhs.uk/ActivityDefinition/GT192",
+ "identifier": [
+  {
+   "system": "https://fhir.nhs.uk/Id/England-DigitalGenomicTestServices",
+   "value": "GT192"
+  },
+  {
+   "system": "https://fhir.nhs.uk/Id/England-GenomicTestDirectory",
+   "value": "R387.1",
+   "use": "old"
+  }
+ ],
+ "title": "Reanalysis of existing data",
+ "name": "GT192_Reanalysis-of-existing-data",
+ "version": "1.0",
+ "status": "active",
+ "experimental": false,
+ "useContext": [
+  {
+   "code": {
+    "code": "focus"
+   },
+   "valueCodeableConcept": {
+    "coding": [
+     {
+      "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
+      "code": "diagnostic",
+      "display": "Diagnostic"
+     }
+    ]
+   }
+  }
+ ],
+ "code": {
+  "coding": [
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/DGTS-genomictest-method-type",
+    "code": "sequencing"
+   }
+  ]
+ },
+ "library": [
+  "https://fhir.nhs.uk/Library/DGTS-targetdisease-gene-variant-required"
+ ],
+ "specimenRequirement": [
+  {
+   "reference": "SpecimenDefinition/DGTS-SpecimenDefinition-Example"
+  }
+ ]
+}

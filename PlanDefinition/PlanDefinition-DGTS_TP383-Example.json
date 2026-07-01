@@ -1,23 +1,24 @@
 {
  "resourceType": "PlanDefinition",
- "id": "DGTS-PlanDefinition-Example",
- "url": "https://fhir.nhs.uk/PlanDefinition/TP231",
+ "id": "PlanDefinition-DGTS-TP383-Example",
+ "url": "https://fhir.nhs.uk/PlanDefinition/TP383",
  "identifier": [
   {
    "system": "https://fhir.nhs.uk/Id/England-DigitalGenomicTestServices",
-   "value": "TP231"
+   "value": "TP383"
   },
   {
    "system": "https://fhir.nhs.uk/Id/England-GenomicTestDirectory",
-   "value": "R47",
+   "value": "R69",
    "use": "old"
   }
  ],
  "version": "1.0",
- "name": "TP321_PlanDefinition",
- "title": "Angelman syndrome",
+ "name": "TP383_PlanDefinition",
+ "title": "Hypotonic infant",
  "status": "active",
  "experimental": false,
+ "description": "Floopy Baby",
  "extension": [
   {
    "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-PlanDefinition.actor",
@@ -34,8 +35,7 @@
           "code": "performer",
           "display": "Performer"
          }
-        ],
-        "text": "Performer"
+        ]
        }
       },
       {
@@ -63,8 +63,7 @@
           "code": "requester",
           "display": "Requester"
          }
-        ],
-        "text": "Requester"
+        ]
        }
       },
       {
@@ -92,9 +91,9 @@
    "valueCodeableConcept": {
     "coding": [
      {
-      "code": "400",
+      "code": "420",
       "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode",
-      "display": "Neurology"
+      "display": "Paediatrics"
      }
     ]
    }
@@ -107,9 +106,9 @@
    "valueCodeableConcept": {
     "coding": [
      {
-      "code": "420",
+      "code": "400",
       "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode",
-      "display": "Paediatrics"
+      "display": "Neurology"
      }
     ]
    }
@@ -143,6 +142,21 @@
      }
     ]
    }
+  },
+  {
+   "code": {
+    "code": "focus",
+    "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
+   },
+   "valueCodeableConcept": {
+    "coding": [
+     {
+      "system": "https://fhir.nhs.uk/CodeSystem/DGTS-clinical-specialty-genomics",
+      "code": "fetal-and-prenatal",
+      "display":"Fetal and Prenata"
+     }
+    ]
+   }
   }
  ],
  "goal": [
@@ -150,9 +164,9 @@
    "description": {
     "coding": [
      {
-      "code": "rare-disease-non-wgs",
-      "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory",
-      "display": "Rare Disease - Non-WGS"
+      "system": "https://fhir.nhs.uk/CodeSystem/DGTS-testpackage-modality",
+      "code": "rare-and-inherited-disease",
+      "display": "Rare and Inherited Disease"
      }
     ]
    }
@@ -160,13 +174,16 @@
  ],
  "action": [
   {
-   "definitionCanonical": "https://fhir.nhs.uk/ActivityDefinition/GT1"
+   "definitionCanonical": "https://fhir.nhs.uk/ActivityDefinition/GT46"
   },
   {
    "definitionCanonical": "https://fhir.nhs.uk/ActivityDefinition/GT36"
   },
   {
    "definitionCanonical": "https://fhir.nhs.uk/ActivityDefinition/GT103"
+  },
+  {
+   "definitionCanonical": "https://fhir.nhs.uk/ActivityDefinition/GT192"
   },
   {
    "definitionCanonical": "https://fhir.nhs.uk/ActivityDefinition/GT417"

@@ -1,0 +1,50 @@
+{
+ "resourceType": "ActivityDefinition",
+ "id": "ActivityDefinition-DGTS-GT36-Example",
+ "url": "https://fhir.nhs.uk/ActivityDefinition/GT36",
+ "identifier": [
+  {
+   "system": "https://fhir.nhs.uk/Id/England-DigitalGenomicTestServices",
+   "value": "GT36"
+  },
+  {
+   "system": "https://fhir.nhs.uk/Id/England-GenomicTestDirectory",
+   "value": "R242.1",
+   "use": "old"
+  }
+ ],
+ "status": "active",
+ "title": "Predictive testing for known variant(s) - Targeted variant testing",
+ "name": "GT36_Targeted-variant-testing",
+ "code": {
+  "coding": [
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/DGTS-genomictest-method-type",
+    "code": "targeted-assays"
+   }
+  ]
+ },
+ "useContext": [
+  {
+   "code": {
+    "code": "focus"
+   },
+   "valueCodeableConcept": {
+    "coding": [
+     {
+      "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
+      "code": "predictive"
+     }
+    ]
+   }
+  }
+ ],
+ "library": [
+  "https://fhir.nhs.uk/Library/DGTS-targetdisease-gene-variant-required"
+ ],
+ "specimenRequirement": [
+  {
+   "reference": "SpecimenDefinition/DGTS-SpecimenDefinition-Example"
+  }
+ ]
+}

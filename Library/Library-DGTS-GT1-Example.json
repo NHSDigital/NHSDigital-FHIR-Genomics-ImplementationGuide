@@ -1,8 +1,8 @@
 {
   "resourceType": "Library",
-  "id": "DGTS-Library-Example",
+  "id": "LibraryDGTS-GT1-Example",
   "url": "https://fhir.nhs.uk/Library/GT1",
-  "name": "GT1_Library"
+  "name": "GT1_Library",
   "type": {
     "coding": [
       {

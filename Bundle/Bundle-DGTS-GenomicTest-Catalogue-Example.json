@@ -1,0 +1,1101 @@
+{
+ "resourceType": "Bundle",
+ "type": "collection",
+ "entry": [
+  {
+   "fullUrl": "https://example.org/fhir.nhs.uk/fhir/PlanDefinition/PlanDefinition-DGTS-TP383-Example",
+   "resource": {
+    "resourceType": "PlanDefinition",
+    "id": "PlanDefinition-DGTS-TP383-Example",
+    "url": "https://fhir.nhs.uk/PlanDefinition/TP383",
+    "identifier": [
+     {
+      "system": "https://fhir.nhs.uk/Id/England-DigitalGenomicTestServices",
+      "value": "TP383"
+     },
+     {
+      "system": "https://fhir.nhs.uk/Id/England-GenomicTestDirectory",
+      "value": "R69",
+      "use": "old"
+     }
+    ],
+    "version": "1.0",
+    "name": "TP383_PlanDefinition",
+    "title": "Hypotonic infant",
+    "status": "active",
+    "experimental": false,
+    "description": "Floopy Baby",
+    "extension": [
+     {
+      "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-PlanDefinition.actor",
+      "extension": [
+       {
+        "url": "option",
+        "extension": [
+         {
+          "url": "role",
+          "valueCodeableConcept": {
+           "coding": [
+            {
+             "system": "https://fhir.nhs.uk/CodeSystem/action-participant-role-genomics",
+             "code": "performer",
+             "display": "Performer"
+            }
+           ]
+          }
+         },
+         {
+          "url": "typeReference",
+          "valueReference": {
+           "reference": "Organization/Organization-CSGLHub-Example",
+           "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "699P0"
+           },
+           "display": "Central and South Genomic Laboratory Hub"
+          }
+         }
+        ]
+       },
+       {
+        "url": "option",
+        "extension": [
+         {
+          "url": "role",
+          "valueCodeableConcept": {
+           "coding": [
+            {
+             "system": "https://fhir.nhs.uk/CodeSystem/action-participant-role-genomics",
+             "code": "requester",
+             "display": "Requester"
+            }
+           ]
+          }
+         },
+         {
+          "url": "typeReference",
+          "valueReference": {
+           "reference": "Organization/ImperialCollegeHealthcareNHSTrust-Example",
+           "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "RYJ"
+           },
+           "display": "Imperial College Healthcare NHS Trust"
+          }
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "useContext": [
+     {
+      "code": {
+       "code": "user",
+       "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
+      },
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "code": "420",
+         "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode",
+         "display": "Paediatrics"
+        }
+       ]
+      }
+     },
+     {
+      "code": {
+       "code": "user",
+       "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
+      },
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "code": "400",
+         "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode",
+         "display": "Neurology"
+        }
+       ]
+      }
+     },
+     {
+      "code": {
+       "code": "user",
+       "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
+      },
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "code": "311",
+         "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode",
+         "display": "Clinical Genetics"
+        }
+       ]
+      }
+     },
+     {
+      "code": {
+       "code": "focus",
+       "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
+      },
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
+         "code": "diagnostic",
+         "display": "Diagnostic"
+        }
+       ]
+      }
+     },
+     {
+      "code": {
+       "code": "focus",
+       "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
+      },
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://fhir.nhs.uk/CodeSystem/DGTS-clinical-specialty-genomics",
+         "code": "fetal-and-prenatal",
+         "display": "Fetal and Prenata"
+        }
+       ]
+      }
+     }
+    ],
+    "goal": [
+     {
+      "description": {
+       "coding": [
+        {
+         "system": "https://fhir.nhs.uk/CodeSystem/DGTS-testpackage-modality",
+         "code": "rare-and-inherited-disease",
+         "display": "Rare and Inherited Disease"
+        }
+       ]
+      }
+     }
+    ],
+    "action": [
+     {
+      "definitionCanonical": "https://fhir.nhs.uk/ActivityDefinition/GT46"
+     },
+     {
+      "definitionCanonical": "https://fhir.nhs.uk/ActivityDefinition/GT36"
+     },
+     {
+      "definitionCanonical": "https://fhir.nhs.uk/ActivityDefinition/GT103"
+     },
+     {
+      "definitionCanonical": "https://fhir.nhs.uk/ActivityDefinition/GT192"
+     },
+     {
+      "definitionCanonical": "https://fhir.nhs.uk/ActivityDefinition/GT417"
+     },
+     {
+      "definitionCanonical": "https://fhir.nhs.uk/ActivityDefinition/GT732"
+     },
+     {
+      "definitionCanonical": "https://fhir.nhs.uk/ActivityDefinition/GT858"
+     },
+     {
+      "definitionCanonical": "https://fhir.nhs.uk/ActivityDefinition/GT897"
+     },
+     {
+      "definitionCanonical": "https://fhir.nhs.uk/ActivityDefinition/GT1124"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "https://example.org/fhir.nhs.uk/fhir/PlanDefinition/PlanDefinition-DGTS-TP231-Example",
+   "resource": {
+    "resourceType": "PlanDefinition",
+    "id": "PlanDefinition-DGTS-TP231-Example",
+    "url": "https://fhir.nhs.uk/PlanDefinition/TP231",
+    "identifier": [
+     {
+      "system": "https://fhir.nhs.uk/Id/England-DigitalGenomicTestServices",
+      "value": "TP231"
+     },
+     {
+      "system": "https://fhir.nhs.uk/Id/England-GenomicTestDirectory",
+      "value": "R47",
+      "use": "old"
+     }
+    ],
+    "version": "1.0",
+    "name": "TP321_PlanDefinition",
+    "title": "Angelman syndrome",
+    "status": "active",
+    "experimental": false,
+    "extension": [
+     {
+      "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-PlanDefinition.actor",
+      "extension": [
+       {
+        "url": "option",
+        "extension": [
+         {
+          "url": "role",
+          "valueCodeableConcept": {
+           "coding": [
+            {
+             "system": "https://fhir.nhs.uk/CodeSystem/action-participant-role-genomics",
+             "code": "performer",
+             "display": "Performer"
+            }
+           ],
+           "text": "Performer"
+          }
+         },
+         {
+          "url": "typeReference",
+          "valueReference": {
+           "reference": "Organization/Organization-CSGLHub-Example",
+           "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "699P0"
+           },
+           "display": "Central and South Genomic Laboratory Hub"
+          }
+         }
+        ]
+       },
+       {
+        "url": "option",
+        "extension": [
+         {
+          "url": "role",
+          "valueCodeableConcept": {
+           "coding": [
+            {
+             "system": "https://fhir.nhs.uk/CodeSystem/action-participant-role-genomics",
+             "code": "requester",
+             "display": "Requester"
+            }
+           ],
+           "text": "Requester"
+          }
+         },
+         {
+          "url": "typeReference",
+          "valueReference": {
+           "reference": "Organization/ImperialCollegeHealthcareNHSTrust-Example",
+           "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "RYJ"
+           },
+           "display": "Imperial College Healthcare NHS Trust"
+          }
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "useContext": [
+     {
+      "code": {
+       "code": "user",
+       "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
+      },
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "code": "400",
+         "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode",
+         "display": "Neurology"
+        }
+       ]
+      }
+     },
+     {
+      "code": {
+       "code": "user",
+       "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
+      },
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "code": "420",
+         "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode",
+         "display": "Paediatrics"
+        }
+       ]
+      }
+     },
+     {
+      "code": {
+       "code": "user",
+       "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
+      },
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "code": "311",
+         "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode",
+         "display": "Clinical Genetics"
+        }
+       ]
+      }
+     },
+     {
+      "code": {
+       "code": "focus",
+       "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
+      },
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
+         "code": "diagnostic",
+         "display": "Diagnostic"
+        }
+       ]
+      }
+     },
+     {
+      "code": {
+       "code": "focus",
+       "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
+      },
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://fhir.nhs.uk/CodeSystem/DGTS-clinical-specialty-genomics",
+         "code": "fetal-and-prenatal",
+         "display": "Fetal and Prenata"
+        }
+       ]
+      }
+     }
+    ],
+    "goal": [
+     {
+      "description": {
+       "coding": [
+        {
+         "system": "https://fhir.nhs.uk/CodeSystem/DGTS-testpackage-modality",
+         "code": "rare-and-inherited-disease",
+         "display": "Rare and Inherited Disease"
+        }
+       ]
+      }
+     }
+    ],
+    "action": [
+     {
+      "definitionCanonical": "https://fhir.nhs.uk/ActivityDefinition/GT1"
+     },
+     {
+      "definitionCanonical": "https://fhir.nhs.uk/ActivityDefinition/GT36"
+     },
+     {
+      "definitionCanonical": "https://fhir.nhs.uk/ActivityDefinition/GT103"
+     },
+     {
+      "definitionCanonical": "https://fhir.nhs.uk/ActivityDefinition/GT417"
+     },
+     {
+      "definitionCanonical": "https://fhir.nhs.uk/ActivityDefinition/GT732"
+     },
+     {
+      "definitionCanonical": "https://fhir.nhs.uk/ActivityDefinition/GT858"
+     },
+     {
+      "definitionCanonical": "https://fhir.nhs.uk/ActivityDefinition/GT897"
+     },
+     {
+      "definitionCanonical": "https://fhir.nhs.uk/ActivityDefinition/GT1124"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "https://example.org/fhir.nhs.uk/fhir/ActivityDefinition/ActivityDefinition-DGTS-GT1-Example",
+   "resource": {
+    "resourceType": "ActivityDefinition",
+    "id": "ActivityDefinition-DGTS-GT1-Example",
+    "url": "https://fhir.nhs.uk/ActivityDefinition/GT1",
+    "identifier": [
+     {
+      "system": "https://fhir.nhs.uk/Id/England-DigitalGenomicTestServices",
+      "value": "GT1"
+     },
+     {
+      "system": "https://fhir.nhs.uk/Id/England-GenomicTestDirectory",
+      "value": "R47.2",
+      "use": "old"
+     }
+    ],
+    "title": "15q11 critical region (AS/PWS) - MLPA or equivalent",
+    "name": "GT1_ActivityDefinition",
+    "version": "1.0",
+    "status": "active",
+    "experimental": false,
+    "useContext": [
+     {
+      "code": {
+       "code": "focus"
+      },
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
+         "code": "diagnostic",
+         "display": "Diagnostic"
+        }
+       ]
+      }
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "code": "targeted-variant-analysis",
+       "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/genomic-study-method-type-cs"
+      }
+     ]
+    },
+    "library": [
+     "https://fhir.nhs.uk/Library/GT1"
+    ],
+    "specimenRequirement": [
+     {
+      "reference": "SpecimenDefinition/DGTS-SpecimenDefinition-Example"
+     }
+    ],
+    "relatedArtifact": [
+     {
+      "type": "composed-of",
+      "url": "https://panelapp.genomicsengland.co.uk/panels/1313",
+      "label": "Carney complex",
+      "display": "GMS Rare Disease"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "https://example.org/fhir.nhs.uk/fhir/ActivityDefinition/ActivityDefinition-DGTS-GT36-Example",
+   "resource": {
+    "resourceType": "ActivityDefinition",
+    "id": "ActivityDefinition-DGTS-GT36-Example",
+    "url": "https://fhir.nhs.uk/ActivityDefinition/GT36",
+    "identifier": [
+     {
+      "system": "https://fhir.nhs.uk/Id/England-DigitalGenomicTestServices",
+      "value": "GT36"
+     },
+     {
+      "system": "https://fhir.nhs.uk/Id/England-GenomicTestDirectory",
+      "value": "R242.1",
+      "use": "old"
+     }
+    ],
+    "status": "active",
+    "title": "Predictive testing for known variant(s) - Targeted variant testing",
+    "name": "GT36_Targeted-variant-testing",
+    "code": {
+     "coding": [
+      {
+       "system": "https://fhir.nhs.uk/CodeSystem/DGTS-genomictest-method-type",
+       "code": "targeted-assays"
+      }
+     ]
+    },
+    "useContext": [
+     {
+      "code": {
+       "code": "focus"
+      },
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
+         "code": "predictive"
+        }
+       ]
+      }
+     }
+    ],
+    "library": [
+     "https://fhir.nhs.uk/Library/DGTS-targetdisease-gene-variant-required"
+    ],
+    "specimenRequirement": [
+     {
+      "reference": "SpecimenDefinition/DGTS-SpecimenDefinition-Example"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "https://example.org/fhir.nhs.uk/fhir/ActivityDefinition/ActivityDefinition-DGTS-GT46-Example",
+   "resource": {
+    "resourceType": "ActivityDefinition",
+    "id": "ActivityDefinition-DGTS-GT46-Example",
+    "url": "https://fhir.nhs.uk/ActivityDefinition/GT46",
+    "identifier": [
+     {
+      "system": "https://fhir.nhs.uk/Id/England-DigitalGenomicTestServices",
+      "value": "GT46"
+     },
+     {
+      "system": "https://fhir.nhs.uk/Id/England-GenomicTestDirectory",
+      "value": "R69.5",
+      "use": "old"
+     }
+    ],
+    "status": "active",
+    "title": "Hypotonic infant - WGS",
+    "name": "GT46_Hypotonic-infant-WGS",
+    "code": {
+     "coding": [
+      {
+       "system": "https://fhir.nhs.uk/CodeSystem/DGTS-genomictest-method-type",
+       "code": "whole-genome-sequencing"
+      }
+     ]
+    },
+    "useContext": [
+     {
+      "code": {
+       "code": "focus"
+      },
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
+         "code": "diagnostic"
+        }
+       ]
+      }
+     }
+    ],
+    "library": [
+     "https://fhir.nhs.uk/Library/GT46"
+    ],
+    "specimenRequirement": [
+     {
+      "reference": "SpecimenDefinition/DGTS-SpecimenDefinition-Example"
+     }
+    ],
+    "relatedArtifact": [
+     {
+      "type": "composed-of",
+      "url": "https://nhsgms-panelapp.genomicsengland.co.uk/panels/490/v46.1",
+      "display": "Hypotonic infant"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "https://example.org/fhir.nhs.uk/fhir/ActivityDefinition/ActivityDefinition-DGTS-GT103-Example",
+   "resource": {
+    "resourceType": "ActivityDefinition",
+    "id": "ActivityDefinition-DGTS-GT103-Example",
+    "url": "https://fhir.nhs.uk/ActivityDefinition/GT103",
+    "status": "active",
+    "identifier": [
+     {
+      "system": "https://fhir.nhs.uk/Id/England-DigitalGenomicTestServices",
+      "value": "GT103"
+     },
+     {
+      "system": "https://fhir.nhs.uk/Id/England-GenomicTestDirectory",
+      "value": "R375.1",
+      "use": "old"
+     }
+    ],
+    "title": "Family follow-up testing to aid variant interpretation - Targeted variant testing",
+    "name": "GT103_Family follow-up testing to aid variant interpretation",
+    "code": {
+     "coding": [
+      {
+       "system": "https://fhir.nhs.uk/CodeSystem/DGTS-genomictest-method-type",
+       "code": "targeted-assays"
+      }
+     ]
+    },
+    "useContext": [
+     {
+      "code": {
+       "code": "focus"
+      },
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
+         "code": "family-member-to-aid-interpretation"
+        }
+       ]
+      }
+     }
+    ],
+    "library": [
+     "https://fhir.nhs.uk/Library/DGTS-targetdisease-gene-variant-required"
+    ],
+    "specimenRequirement": [
+     {
+      "reference": "SpecimenDefinition/DGTS-SpecimenDefinition-Example"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "https://example.org/fhir.nhs.uk/fhir/ActivityDefinition/ActivityDefinition-DGTS-192-Example",
+   "resource": {
+    "resourceType": "ActivityDefinition",
+    "id": "ActivityDefinition-DGTS-192-Example",
+    "url": "https://fhir.nhs.uk/ActivityDefinition/GT192",
+    "identifier": [
+     {
+      "system": "https://fhir.nhs.uk/Id/England-DigitalGenomicTestServices",
+      "value": "GT192"
+     },
+     {
+      "system": "https://fhir.nhs.uk/Id/England-GenomicTestDirectory",
+      "value": "R387.1",
+      "use": "old"
+     }
+    ],
+    "title": "Reanalysis of existing data",
+    "name": "GT192_Reanalysis-of-existing-data",
+    "version": "1.0",
+    "status": "active",
+    "experimental": false,
+    "useContext": [
+     {
+      "code": {
+       "code": "focus"
+      },
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
+         "code": "diagnostic",
+         "display": "Diagnostic"
+        }
+       ]
+      }
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "https://fhir.nhs.uk/CodeSystem/DGTS-genomictest-method-type",
+       "code": "sequencing"
+      }
+     ]
+    },
+    "library": [
+     "https://fhir.nhs.uk/Library/DGTS-targetdisease-gene-variant-required"
+    ],
+    "specimenRequirement": [
+     {
+      "reference": "SpecimenDefinition/DGTS-SpecimenDefinition-Example"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "https://example.org/fhir.nhs.uk/fhir/ActivityDefinition/ActivityDefinition-DGTS-GT417-Example",
+   "resource": {
+    "resourceType": "ActivityDefinition",
+    "id": "ActivityDefinition-DGTS-GT417-Example",
+    "url": "https://fhir.nhs.uk/ActivityDefinition/GT417",
+    "status": "active",
+    "identifier": [
+     {
+      "system": "https://fhir.nhs.uk/Id/England-DigitalGenomicTestServices",
+      "value": "GT417"
+     },
+     {
+      "system": "https://fhir.nhs.uk/Id/England-GenomicTestDirectory",
+      "value": "R263.1",
+      "use": "old"
+     }
+    ],
+    "title": "Confirmation of uniparental disomy",
+    "name": "GT417_Confirmation of uniparental disomy",
+    "code": {
+     "coding": [
+      {
+       "system": "https://fhir.nhs.uk/CodeSystem/DGTS-genomictest-method-type",
+       "code": "targeted-assays"
+      }
+     ]
+    },
+    "useContext": [
+     {
+      "code": {
+       "code": "focus"
+      },
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
+         "code": "diagnostic"
+        }
+       ]
+      }
+     }
+    ],
+    "library": [
+     "https://fhir.nhs.uk/Library/DGTS-targetdisease-gene-variant-required"
+    ],
+    "specimenRequirement": [
+     {
+      "reference": "SpecimenDefinition/DGTS-SpecimenDefinition-Example"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "https://example.org/fhir.nhs.uk/fhir/ActivityDefinition/ActivityDefinition-DGTS-GT732-Example",
+   "resource": {
+    "resourceType": "ActivityDefinition",
+    "id": "ActivityDefinition-DGTS-GT732-Example",
+    "url": "https://fhir.nhs.uk/ActivityDefinition/GT732",
+    "status": "active",
+    "identifier": [
+     {
+      "system": "https://fhir.nhs.uk/Id/England-DigitalGenomicTestServices",
+      "value": "GT732"
+     },
+     {
+      "system": "https://fhir.nhs.uk/Id/England-GenomicTestDirectory",
+      "value": "R244.1",
+      "use": "old"
+     }
+    ],
+    "title": "Carrier testing for known variant(s) - Targeted variant testing",
+    "name": "GT732_Carrier testing for known variant(s) - Targeted variant testing",
+    "code": {
+     "coding": [
+      {
+       "system": "https://fhir.nhs.uk/CodeSystem/DGTS-genomictest-method-type",
+       "code": "targeted-assays"
+      }
+     ]
+    },
+    "useContext": [
+     {
+      "code": {
+       "code": "focus"
+      },
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
+         "code": "carrier"
+        }
+       ]
+      }
+     }
+    ],
+    "library": [
+     "https://fhir.nhs.uk/Library/DGTS-targetdisease-gene-variant-required"
+    ],
+    "specimenRequirement": [
+     {
+      "reference": "SpecimenDefinition/DGTS-SpecimenDefinition-Example"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "https://example.org/fhir.nhs.uk/fhir/ActivityDefinition/ActivityDefinition-DGTS-GT858-Example",
+   "resource": {
+    "resourceType": "ActivityDefinition",
+    "id": "ActivityDefinition-DGTS-GT858-Example",
+    "url": "https://fhir.nhs.uk/ActivityDefinition/GT858",
+    "status": "active",
+    "identifier": [
+     {
+      "system": "https://fhir.nhs.uk/Id/England-DigitalGenomicTestServices",
+      "value": "GT858"
+     },
+     {
+      "system": "https://fhir.nhs.uk/Id/England-GenomicTestDirectory",
+      "value": "R443.1",
+      "use": "old"
+     }
+    ],
+    "title": "Confirmation test",
+    "name": "GT858_Confirmation test",
+    "code": {
+     "coding": [
+      {
+       "system": "https://fhir.nhs.uk/CodeSystem/DGTS-genomictest-method-type",
+       "code": "targeted-assays"
+      }
+     ]
+    },
+    "useContext": [
+     {
+      "code": {
+       "code": "focus"
+      },
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
+         "code": "diagnostic"
+        }
+       ]
+      }
+     }
+    ],
+    "library": [
+     "https://fhir.nhs.uk/Library/DGTS-targetdisease-gene-variant-required"
+    ],
+    "specimenRequirement": [
+     {
+      "reference": "SpecimenDefinition/DGTS-SpecimenDefinition-Example"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "https://example.org/fhir.nhs.uk/fhir/ActivityDefinition/ActivityDefinition-DGTS-GT897-Example",
+   "resource": {
+    "resourceType": "ActivityDefinition",
+    "id": "ActivityDefinition-DGTS-GT897-Example",
+    "url": "https://fhir.nhs.uk/ActivityDefinition/GT897",
+    "status": "active",
+    "identifier": [
+     {
+      "system": "https://fhir.nhs.uk/Id/England-DigitalGenomicTestServices",
+      "value": "GT897"
+     },
+     {
+      "system": "https://fhir.nhs.uk/Id/England-GenomicTestDirectory",
+      "value": "R240.1",
+      "use": "old"
+     }
+    ],
+    "title": "Diagnostic testing for known variant(s) - Targeted variant testing",
+    "name": "GT897_Diagnostic testing for known variant(s) - Targeted variant testing",
+    "code": {
+     "coding": [
+      {
+       "system": "https://fhir.nhs.uk/CodeSystem/DGTS-genomictest-method-type",
+       "code": "targeted-assays"
+      }
+     ]
+    },
+    "useContext": [
+     {
+      "code": {
+       "code": "focus"
+      },
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
+         "code": "diagnostic"
+        }
+       ]
+      }
+     }
+    ],
+    "library": [
+     "https://fhir.nhs.uk/Library/DGTS-targetdisease-gene-variant-required"
+    ],
+    "specimenRequirement": [
+     {
+      "reference": "SpecimenDefinition/DGTS-SpecimenDefinition-Example"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "https://example.org/fhir.nhs.uk/fhir/ActivityDefinition/ActivityDefinition-DGTS-GT1124-Example",
+   "resource": {
+    "resourceType": "ActivityDefinition",
+    "id": "ActivityDefinition-DGTS-GT1124-Example",
+    "url": "https://fhir.nhs.uk/ActivityDefinition/GT1124",
+    "status": "active",
+    "identifier": [
+     {
+      "system": "https://fhir.nhs.uk/Id/England-DigitalGenomicTestServices",
+      "value": "GT1124"
+     },
+     {
+      "system": "https://fhir.nhs.uk/Id/England-GenomicTestDirectory",
+      "value": "R448.1",
+      "use": "old"
+     }
+    ],
+    "title": "Prenatal Diagnosis for known variant(s) - Targeted variant testing",
+    "name": "GT1124_Prenatal Diagnosis for known variant(s) - Targeted variant testing",
+    "code": {
+     "coding": [
+      {
+       "system": "https://fhir.nhs.uk/CodeSystem/DGTS-genomictest-method-type",
+       "code": "targeted-assays"
+      }
+     ]
+    },
+    "useContext": [
+     {
+      "code": {
+       "code": "focus"
+      },
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
+         "code": "prenatal-diagnosis"
+        }
+       ]
+      }
+     }
+    ],
+    "library": [
+     "https://fhir.nhs.uk/Library/DGTS-targetdisease-gene-variant-required"
+    ],
+    "specimenRequirement": [
+     {
+      "reference": "SpecimenDefinition/DGTS-SpecimenDefinition-Example"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "https://example.org/fhir.nhs.uk/fhir/Library/LibraryDGTS-GT1-Example",
+   "resource": {
+    "resourceType": "Library",
+    "id": "LibraryDGTS-GT1-Example",
+    "url": "https://fhir.nhs.uk/Library/GT1",
+    "name": "GT1_Library",
+    "type": {
+     "coding": [
+      {
+       "system": "http://terminology.hl7.org/CodeSystem/library-type",
+       "code": "module-definition"
+      }
+     ]
+    },
+    "status": "active",
+    "parameter": [
+     {
+      "name": "additional_panels_available",
+      "use": "in",
+      "max": "0",
+      "type": "Coding"
+     },
+     {
+      "name": "target_disease_required",
+      "use": "in",
+      "min": 0,
+      "type": "Coding"
+     },
+     {
+      "name": "target_gene_required",
+      "use": "in",
+      "min": 0,
+      "type": "Coding"
+     },
+     {
+      "name": "target_variant_required",
+      "use": "in",
+      "min": 0,
+      "type": "Coding"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "https://example.org/fhir.nhs.uk/fhir/Library/LibraryDGTS-GT46-Example",
+   "resource": {
+    "resourceType": "Library",
+    "id": "LibraryDGTS-GT46-Example",
+    "url": "https://fhir.nhs.uk/Library/GT46",
+    "name": "DDGTS-GT46-Example",
+    "type": {
+     "coding": [
+      {
+       "system": "http://terminology.hl7.org/CodeSystem/library-type",
+       "code": "module-definition"
+      }
+     ]
+    },
+    "status": "active",
+    "parameter": [
+     {
+      "name": "additional_panels_available",
+      "use": "in",
+      "max": "1",
+      "type": "Coding"
+     },
+     {
+      "name": "target_disease",
+      "use": "in",
+      "min": 0,
+      "type": "Coding"
+     },
+     {
+      "name": "target_gene",
+      "use": "in",
+      "min": 0,
+      "type": "Coding"
+     },
+     {
+      "name": "target_variant",
+      "use": "in",
+      "min": 0,
+      "type": "Coding"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "https://example.org/fhir.nhs.uk/fhir/Library/DGTS-targetdisease-gene-variant-required",
+   "resource": {
+    "resourceType": "Library",
+    "id": "DGTS-targetdisease-gene-variant-required-Example",
+    "url": "https://fhir.nhs.uk/Library/DGTS-targetdisease-gene-variant-required",
+    "name": "DGTS-TargetDiseaseGeneVariantRequired-Example",
+    "type": {
+     "coding": [
+      {
+       "system": "http://terminology.hl7.org/CodeSystem/library-type",
+       "code": "module-definition"
+      }
+     ]
+    },
+    "status": "active",
+    "parameter": [
+     {
+      "name": "additional_panels_available",
+      "use": "in",
+      "max": "0",
+      "type": "Coding"
+     },
+     {
+      "name": "target_disease",
+      "use": "in",
+      "min": 1,
+      "type": "Coding"
+     },
+     {
+      "name": "target_gene",
+      "use": "in",
+      "min": 1,
+      "type": "Coding"
+     },
+     {
+      "name": "target_variant",
+      "use": "in",
+      "min": 1,
+      "type": "Coding"
+     }
+    ]
+   }
+  }
+ ]
+}
