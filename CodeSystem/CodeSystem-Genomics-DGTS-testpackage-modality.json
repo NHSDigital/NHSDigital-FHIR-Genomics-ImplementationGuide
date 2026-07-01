@@ -2,12 +2,12 @@
  "resourceType": "CodeSystem",
  "id": "DGTS-testpackagemodality-genomics",
  "url": "https://fhir.nhs.uk/CodeSystem/DGTS-testpackage-modality",
- "version": "0.1.0",
+ "version": "0.1.1",
  "name": "DGTSTestPackageModality",
  "title": "DGTS Test Package Modality",
  "status": "draft",
  "experimental": false,
- "date": "2026-06-15T00:00:00+00:00",
+ "date": "2026-07-01T00:00:00+00:00",
  "publisher": "NHS England",
  "contact": [
   {
