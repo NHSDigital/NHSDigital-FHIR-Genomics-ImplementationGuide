@@ -1,0 +1,73 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Extension-Genomic-Report-Visibility",
+  "url": "https://fhir.nhs.uk/England/StructureDefinition/Extension-Genomic-Report-Visibility",
+  "version": "0.1.0",
+  "name": "ExtensionGenomicReportVisibility",
+  "title": "Extension Genomic Report Visibility",
+  "status": "draft",
+  "date": "2026-06-11",
+  "publisher": "NHS England",
+  "contact": [
+    {
+      "name": "NHS England",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "interoperabilityteam@nhs.net",
+          "use": "work",
+          "rank": 1
+        }
+      ]
+    }
+  ],
+  "description": "An extension used to indicate whether a data element should be included in patient-facing reports or retained solely for clinical interpretation and processing.",
+  "purpose": "This extension supports genomic and diagnostic workflows where certain data elements (for example sex/gender used for reference range determination or interpretation) are required for clinical processing but should not be displayed in patient-facing reports.",
+  "copyright": "Copyright © 2025+ NHS England Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at https://www.hl7.org/fhir/license.html.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://fhir.nhs.uk/England/StructureDefinition/Extension-Genomic-Report-Visibility"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Indicates whether a data element is patient-visible, clinical-use-only, or internal-only",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.nhs.uk/ValueSet/genomic-report-visibility"
+        }
+      }
+    ]
+  }
+}
