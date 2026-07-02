@@ -661,7 +661,15 @@
      }
     },
     "effectiveDateTime": "2023-09-25",
-    "valueBoolean": false
+    "valueCodeableConcept": {
+     "coding": [
+      {
+       "system": "http://snomed.info/sct",
+       "code": "260385009",
+       "display": "Negative"
+      }
+     ]
+    }
    },
    "request": {
     "method": "POST",
@@ -768,7 +776,15 @@
      }
     },
     "effectiveDateTime": "2023-09-25",
-    "valueBoolean": false
+    "valueCodeableConcept": {
+     "coding": [
+      {
+       "system": "http://snomed.info/sct",
+       "code": "260385009",
+       "display": "Negative"
+      }
+     ]
+    }
    },
    "request": {
     "method": "POST",
@@ -850,7 +866,15 @@
      }
     ],
     "effectiveDateTime": "2023-09-25",
-    "valueBoolean": false
+    "valueCodeableConcept": {
+     "coding": [
+      {
+       "system": "http://snomed.info/sct",
+       "code": "260385009",
+       "display": "Negative"
+      }
+     ]
+    }
    },
    "request": {
     "method": "POST",
@@ -894,7 +918,15 @@
      }
     ],
     "effectiveDateTime": "2023-09-25",
-    "valueBoolean": false
+    "valueCodeableConcept": {
+     "coding": [
+      {
+       "system": "http://snomed.info/sct",
+       "code": "260385009",
+       "display": "Negative"
+      }
+     ]
+    }
    },
    "request": {
     "method": "POST",
