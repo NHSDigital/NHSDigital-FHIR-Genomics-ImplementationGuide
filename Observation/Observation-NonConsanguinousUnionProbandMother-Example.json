@@ -28,5 +28,13 @@
 		}
 	},
 	"effectiveDateTime": "2023-09-15T15:00:00Z",
-	"valueBoolean": false
+	"valueCodeableConcept": {
+   "coding": [
+    {
+     "system": "http://snomed.info/sct",
+     "code": "260385009",
+     "display": "Negative"
+    }
+   ]
+  }
 }

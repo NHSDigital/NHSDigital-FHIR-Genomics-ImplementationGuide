@@ -29,5 +29,13 @@
 		}
 	},
 	"effectiveDateTime": "2023-08-05",
-	"valueBoolean": false
+	"valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "2667000",
+        "display": "Absent"
+      }
+    ]
+  }
 }
