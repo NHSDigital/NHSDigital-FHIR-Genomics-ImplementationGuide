@@ -49,8 +49,8 @@
       "definition": "Sequencing is a general term for determining the order of the DNA bases in a specific region, a gene, or a whole genome."
     },
     {
-      "code": "targeted-assays",
-      "display": "Targeted assays",
+      "code": "targeted-assay",
+      "display": "Targeted assay",
       "definition": "Targeted assays, or gene panels, focus on sequencing a specific, pre-selected set of genes known to be associated with a particular condition."
     },
       {
