@@ -16,7 +16,7 @@
   {
    "name": "additional_panels_available",
    "use": "in",
-   "max": "1",
+   "max": "*",
    "type": "Coding"
   },
   {
