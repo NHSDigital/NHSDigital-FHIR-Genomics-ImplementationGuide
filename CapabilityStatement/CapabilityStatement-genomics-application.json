@@ -1870,7 +1870,7 @@
     },
     {
      "type": "RequestGroup",
-     "profile": "https://fhir.nhs.uk/StructureDefinition/NHSEngland-RelatedPerson-Genomics",
+     "profile": "https://fhir.nhs.uk/StructureDefinition/NHSEngland-RequestGroup-Genomics",
      "documentation": "For searching group/family test request.",
      "interaction": [
       {
