@@ -303,19 +303,6 @@
         "max": "1"
       },
       {
-        "id": "Specimen.container.extension:specimenContainerLocationR5",
-        "path": "Specimen.container.extension",
-        "sliceName": "specimenContainerLocationR5",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.container.location"
-            ]
-          }
-        ]
-      },
-      {
         "id": "Specimen.condition",
         "path": "Specimen.condition",
         "definition": "Used to record the condition of a specimen. Within Genomics, SHOULD be used to record the fixed/frozen state, using the UK Core bound ValueSet.",
