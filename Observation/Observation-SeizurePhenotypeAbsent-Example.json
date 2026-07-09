@@ -1,0 +1,44 @@
+{
+ "resourceType": "Observation",
+ "id": "Observation-SeizurePhenotypeAbsent-Example",
+ "status": "final",
+ "category": [
+  {
+   "coding": [
+    {
+     "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+     "code": "exam"
+    }
+   ]
+  }
+ ],
+ "code": {
+  "coding": [
+   {
+    "system": "http://human-phenotype-ontology.org",
+    "version": "20221005",
+    "code": "HP:0001250",
+    "display": "Seizure"
+   }
+  ]
+ },
+ "subject": {
+  "reference": "Patient/Patient-PheobeSmitham-Example"
+ },
+ "effectiveDateTime": "2023-09-16",
+ "valueCodeableConcept": {
+  "coding": [
+   {
+    "system": "http://snomed.info/sct",
+    "code": "260415000",
+    "display": "Not detected"
+   },
+   {
+    "system": "http://loinc.org",
+    "code": "LA9634-2",
+    "display": "Absent"
+   }
+  ],
+  "text": "Phenotype not present"
+ }
+}

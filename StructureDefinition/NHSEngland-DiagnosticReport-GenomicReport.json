@@ -165,6 +165,7 @@
         "id": "DiagnosticReport.basedOn",
         "path": "DiagnosticReport.basedOn",
         "definition": "SHOULD reference the originating ServiceRequest if this is an instance of a genomic diagnostic report resulting from a GMS test order.",
+        "max": "1",
         "type": [
           {
             "code": "Reference",

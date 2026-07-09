@@ -1,0 +1,209 @@
+{
+  "resourceType": "CapabilityStatement",
+  "id": "CapabilityStatement-UGR-application",
+  "url": "https://fhir.nhs.uk/CapabilityStatement/UGR-application",
+  "version": "0.1.0",
+  "name": "CapabilityStatementUGRApplication",
+  "status": "draft",
+  "date": "2026-07-08T00:00:00+00:00",
+  "publisher": "NHS England",
+  "description": "Sample server capability for the Unified Genomic Record",
+  "kind": "instance",
+  "implementationGuide": [
+    "https://fhir.nhs.uk/ImplementationGuide/FHIR-Genomics-Implementation-Guide"
+  ],
+  "fhirVersion": "4.0.1",
+  "format": [
+    "application/fhir+json"
+  ],
+  "implementation": {
+    "description": "Exemplar CapabilityStatement for the GMS Unified Genomic Record, covering the resources required for developing the UGR composition. Capabilities for managing clinical resources are expected to follow SPR/GOMS capabilities"
+  },
+  "rest": [
+    {
+      "mode": "server",
+      "documentation": "RESTful endpoints supported by the UGR FHIR API",
+      "resource": [
+        {
+          "type": "Composition",
+          "profile": "https://fhir.nhs.uk/StructureDefinition/NHSEngland-Composition-GenomicsEULabReport",
+          "documentation": "For searching and retrieving Compositions and generating UGR Documents",
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "search-type"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "history-instance"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "type",
+              "type": "token"
+            },
+            {
+              "name": "subject",
+              "type": "reference"
+            },
+            {
+              "name": "entry",
+              "type": "reference"
+            },
+            {
+              "name": "date",
+              "type": "date"
+            }
+          ],
+          "versioning": "versioned",
+          "readHistory": true,
+          "operation": [
+            {
+              "name": "$document",
+              "definition": "http://hl7.org/fhir/OperationDefinition/Composition-document"
+            }
+          ]
+        },
+        {
+          "type": "RelatedPerson",
+          "profile": "https://fhir.nhs.uk/StructureDefinition/NHSEngland-RelatedPerson-Genomics",
+          "documentation": "Endpoints for interacting with RelatedPerson resources to link UGRs",
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "patch"
+            },
+            {
+              "code": "delete"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "versioning": "versioned",
+          "readHistory": true,
+          "conditionalCreate": true,
+          "referencePolicy": [
+            "resolves"
+          ],
+          "searchParam": [
+            {
+              "name": "active",
+              "type": "token"
+            },
+            {
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "name": "patient",
+              "type": "reference"
+            },
+            {
+              "name": "relationship",
+              "type": "token"
+            }
+          ]
+        },
+        {
+          "type": "Consent",
+          "profile": "https://fhir.nhs.uk/StructureDefinition/NHSEngland-Consent-GenomicsPCF",
+          "documentation": "Endpoints for interacting with Consent resources representing data access permissions for UGRs",
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "patch"
+            },
+            {
+              "code": "delete"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "versioning": "versioned",
+          "readHistory": true,
+          "conditionalCreate": true,
+          "referencePolicy": [
+            "resolves"
+          ],
+          "searchParam": [
+            {
+              "name": "action",
+              "type": "token"
+            },
+            {
+              "name": "actor",
+              "type": "reference"
+            },
+            {
+              "name": "category",
+              "type": "token"
+            },
+            {
+              "name": "consentor",
+              "type": "reference"
+            },
+            {
+              "name": "data",
+              "type": "reference"
+            },
+            {
+              "name": "patient",
+              "type": "reference"
+            },
+            {
+              "name": "period",
+              "type": "date"
+            },
+            {
+              "name": "purpose",
+              "type": "token"
+            },
+            {
+              "name": "scope",
+              "type": "token"
+            },
+            {
+              "name": "status",
+              "type": "token"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

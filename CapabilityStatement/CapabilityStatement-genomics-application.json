@@ -2,10 +2,10 @@
  "resourceType": "CapabilityStatement",
  "id": "CapabilityStatement-Genomics-application",
  "url": "https://fhir.nhs.uk/CapabilityStatement/genomics-application",
- "version": "0.2.0",
+ "version": "0.3.0",
  "name": "CapabilityStatementGenomicsApplication",
  "status": "draft",
- "date": "2024-08-09T00:00:00+00:00",
+ "date": "2026-07-08T00:00:00+00:00",
  "publisher": "NHS England",
  "description": "Sample server capability for the Genomic Medicine Service",
  "kind": "instance",
@@ -1870,7 +1870,7 @@
     },
     {
      "type": "RequestGroup",
-     "profile": "https://fhir.nhs.uk/StructureDefinition/NHSEngland-RelatedPerson-Genomics",
+     "profile": "https://fhir.nhs.uk/StructureDefinition/NHSEngland-RequestGroup-Genomics",
      "documentation": "For searching group/family test request.",
      "interaction": [
       {
