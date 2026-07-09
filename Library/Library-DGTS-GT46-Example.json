@@ -1,0 +1,41 @@
+{
+ "resourceType": "Library",
+ "id": "Library-DGTS-GT46-Example",
+ "url": "https://fhir.nhs.uk/Library/GT46",
+ "name": "DGTS-GT46-Example",
+ "type": {
+  "coding": [
+   {
+    "system": "http://terminology.hl7.org/CodeSystem/library-type",
+    "code": "module-definition"
+   }
+  ]
+ },
+ "status": "active",
+ "parameter": [
+  {
+   "name": "additional_panels_available",
+   "use": "in",
+   "max": "*",
+   "type": "Coding"
+  },
+  {
+   "name": "target_disease",
+   "use": "in",
+   "min": 0,
+   "type": "Coding"
+  },
+  {
+   "name": "target_gene",
+   "use": "in",
+   "min": 0,
+   "type": "Coding"
+  },
+  {
+   "name": "target_variant",
+   "use": "in",
+   "min": 0,
+   "type": "Coding"
+  }
+ ]
+}

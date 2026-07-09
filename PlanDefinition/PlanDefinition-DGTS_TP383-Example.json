@@ -1,0 +1,144 @@
+{
+ "resourceType": "PlanDefinition",
+ "id": "PlanDefinition-DGTS-TP383-Example",
+ "url": "https://fhir.nhs.uk/PlanDefinition/TP383",
+ "identifier": [
+  {
+   "system": "https://fhir.nhs.uk/Id/England-DigitalGenomicTestServices",
+   "value": "TP383"
+  },
+  {
+   "system": "https://fhir.nhs.uk/Id/England-GenomicTestDirectory",
+   "value": "R69",
+   "use": "old"
+  }
+ ],
+ "version": "1.0",
+ "name": "TP383_PlanDefinition",
+ "title": "Hypotonic infant",
+ "status": "active",
+ "experimental": false,
+ "description": "Floppy Baby",
+ "extension": [
+  {
+   "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-PlanDefinition.actor",
+   "extension": [
+    {
+     "url": "option",
+     "extension": [
+      {
+       "url": "role",
+       "valueCodeableConcept": {
+        "coding": [
+         {
+          "system": "https://fhir.nhs.uk/CodeSystem/action-participant-role-genomics",
+          "code": "performer",
+          "display": "Performer"
+         }
+        ]
+       }
+      },
+      {
+       "url": "typeReference",
+       "valueReference": {
+        "reference": "Organization/Organization-CSGLHub-Example",
+        "identifier": {
+         "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+         "value": "699P0"
+        },
+        "display": "Central and South Genomic Laboratory Hub"
+       }
+      }
+     ]
+    },
+    {
+     "url": "option",
+     "extension": [
+      {
+       "url": "role",
+       "valueCodeableConcept": {
+        "coding": [
+         {
+          "system": "https://fhir.nhs.uk/CodeSystem/action-participant-role-genomics",
+          "code": "requester",
+          "display": "Requester"
+         }
+        ]
+       }
+      },
+      {
+       "url": "typeReference",
+       "valueReference": {
+        "reference": "Organization/ImperialCollegeHealthcareNHSTrust-Example",
+        "identifier": {
+         "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+         "value": "RYJ"
+        },
+        "display": "Imperial College Healthcare NHS Trust"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "useContext": [
+  {
+   "code": {
+    "code": "focus",
+    "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
+   },
+   "valueCodeableConcept": {
+    "coding": [
+     {
+      "system": "https://fhir.nhs.uk/CodeSystem/DGTS-clinical-specialty-genomics",
+      "code": "fetal-and-prenatal",
+      "display":"Fetal and Prenata"
+     }
+    ]
+   }
+  }
+ ],
+ "goal": [
+  {
+   "description": {
+    "coding": [
+     {
+      "system": "https://fhir.nhs.uk/CodeSystem/DGTS-testpackage-modality",
+      "code": "rare-and-inherited-disease",
+      "display": "Rare and Inherited Disease"
+     }
+    ]
+   }
+  }
+ ],
+ "action": [
+  {
+   "definitionCanonical": "https://fhir.nhs.uk/ActivityDefinition/GT46"
+  },
+  {
+   "definitionCanonical": "https://fhir.nhs.uk/ActivityDefinition/GT36"
+  },
+  {
+   "definitionCanonical": "https://fhir.nhs.uk/ActivityDefinition/GT103"
+  },
+  {
+   "definitionCanonical": "https://fhir.nhs.uk/ActivityDefinition/GT192"
+  },
+  {
+   "definitionCanonical": "https://fhir.nhs.uk/ActivityDefinition/GT417"
+  },
+  {
+   "definitionCanonical": "https://fhir.nhs.uk/ActivityDefinition/GT732"
+  },
+  {
+   "definitionCanonical": "https://fhir.nhs.uk/ActivityDefinition/GT858"
+  },
+  {
+   "definitionCanonical": "https://fhir.nhs.uk/ActivityDefinition/GT897"
+  },
+  {
+   "definitionCanonical": "https://fhir.nhs.uk/ActivityDefinition/GT1124"
+  }
+ ]
+}
