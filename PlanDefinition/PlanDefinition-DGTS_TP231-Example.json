@@ -1,6 +1,6 @@
 {
  "resourceType": "PlanDefinition",
- "id": "DGTS-PlanDefinition-Example",
+ "id": "PlanDefinition-DGTS-TP231-Example",
  "url": "https://fhir.nhs.uk/PlanDefinition/TP231",
  "identifier": [
   {
@@ -86,60 +86,15 @@
  "useContext": [
   {
    "code": {
-    "code": "user",
-    "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
-   },
-   "valueCodeableConcept": {
-    "coding": [
-     {
-      "code": "400",
-      "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode",
-      "display": "Neurology"
-     }
-    ]
-   }
-  },
-  {
-   "code": {
-    "code": "user",
-    "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
-   },
-   "valueCodeableConcept": {
-    "coding": [
-     {
-      "code": "420",
-      "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode",
-      "display": "Paediatrics"
-     }
-    ]
-   }
-  },
-  {
-   "code": {
-    "code": "user",
-    "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
-   },
-   "valueCodeableConcept": {
-    "coding": [
-     {
-      "code": "311",
-      "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode",
-      "display": "Clinical Genetics"
-     }
-    ]
-   }
-  },
-  {
-   "code": {
     "code": "focus",
     "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
    },
    "valueCodeableConcept": {
     "coding": [
      {
-      "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
-      "code": "diagnostic",
-      "display": "Diagnostic"
+      "system": "https://fhir.nhs.uk/CodeSystem/DGTS-clinical-specialty-genomics",
+      "code": "fetal-and-prenatal",
+      "display": "Fetal and Prenata"
      }
     ]
    }
@@ -150,9 +105,9 @@
    "description": {
     "coding": [
      {
-      "code": "rare-disease-non-wgs",
-      "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory",
-      "display": "Rare Disease - Non-WGS"
+      "system": "https://fhir.nhs.uk/CodeSystem/DGTS-testpackage-modality",
+      "code": "rare-and-inherited-disease",
+      "display": "Rare and Inherited Disease"
      }
     ]
    }
