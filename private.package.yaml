@@ -16,7 +16,7 @@ implementationguides:
         fetchDependencies: false
       fhir-r4-nhsengland-pathology:
         name: fhir.r4.nhsengland.pathology
-        version: 0.1.4-alpha
+        version: 0.2.4-alpha
         installMode: STORE_AND_INSTALL
         fetchDependencies: false
       hl7-fhir-uv-tools-r4:

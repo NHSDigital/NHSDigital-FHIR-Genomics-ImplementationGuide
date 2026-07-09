@@ -10,8 +10,7 @@
     "fhir.r4.nhsengland.pars": "0.1.2-alpha",
     "hl7.fhir.uv.tools.r4": "1.1.2",
     "fhir.r4.nhsengland.nhse-identifiers": "0.1.1-alpha",
-    "fhir.r4.ukcore.stu3.currentbuild": "0.29.0-pre-release",
-    "fhir.r4.nhsengland.pathology": "0.2.4-alpha"
+    "fhir.r4.ukcore.stu3.currentbuild": "0.29.0-pre-release"
   },
   "fhirVersions": [
     "4.0.1"
