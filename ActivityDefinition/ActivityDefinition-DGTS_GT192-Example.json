@@ -18,22 +18,6 @@
  "version": "1.0",
  "status": "active",
  "experimental": false,
- "useContext": [
-  {
-   "code": {
-    "code": "focus"
-   },
-   "valueCodeableConcept": {
-    "coding": [
-     {
-      "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
-      "code": "diagnostic",
-      "display": "Diagnostic"
-     }
-    ]
-   }
-  }
- ],
  "code": {
   "coding": [
    {

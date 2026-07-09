@@ -18,27 +18,11 @@
  "version": "1.0",
  "status": "active",
  "experimental": false,
- "useContext": [
-  {
-   "code": {
-    "code": "focus"
-   },
-   "valueCodeableConcept": {
-    "coding": [
-     {
-      "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
-      "code": "diagnostic",
-      "display": "Diagnostic"
-     }
-    ]
-   }
-  }
- ],
  "code": {
   "coding": [
    {
-    "code": "targeted-variant-analysis",
-    "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/genomic-study-method-type-cs"
+    "system": "https://fhir.nhs.uk/CodeSystem/DGTS-genomictest-method-type",
+    "code": "targeted-assay"
    }
   ]
  },

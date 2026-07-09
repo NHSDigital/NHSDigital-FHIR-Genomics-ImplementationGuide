@@ -20,25 +20,10 @@
   "coding": [
    {
     "system": "https://fhir.nhs.uk/CodeSystem/DGTS-genomictest-method-type",
-    "code": "targeted-assays"
+    "code": "targeted-assay"
    }
   ]
  },
- "useContext": [
-  {
-   "code": {
-    "code": "focus"
-   },
-   "valueCodeableConcept": {
-    "coding": [
-     {
-      "system": "https://fhir.nhs.uk/CodeSystem/rare-diseaseTesting-genomics",
-      "code": "family-member-to-aid-interpretation"
-     }
-    ]
-   }
-  }
- ],
  "library": [
   "https://fhir.nhs.uk/Library/DGTS-targetdisease-gene-variant-required"
  ],

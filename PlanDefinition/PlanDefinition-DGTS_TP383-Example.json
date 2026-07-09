@@ -18,7 +18,7 @@
  "title": "Hypotonic infant",
  "status": "active",
  "experimental": false,
- "description": "Floopy Baby",
+ "description": "Floppy Baby",
  "extension": [
   {
    "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-PlanDefinition.actor",
