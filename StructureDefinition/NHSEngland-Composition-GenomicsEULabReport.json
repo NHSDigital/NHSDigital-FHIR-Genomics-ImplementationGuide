@@ -174,9 +174,6 @@
       {
         "id": "Composition.category",
         "path": "Composition.category",
-        "slicing": {
-          "rules": "open"
-        },
         "definition": "Fixed codes for conformance to the EU Lab Composition profile (for cross border sharing of lab reports)."
       },
       {
@@ -268,9 +265,6 @@
       {
         "id": "Composition.section",
         "path": "Composition.section",
-        "slicing": {
-          "rules": "open"
-        },
         "definition": "To conform to EU Lab, SHOULD include references to the results that form part of the genomic report. For the UGR, will include sections that conform to the UGR folders, this work is currently in development."
       },
       {
