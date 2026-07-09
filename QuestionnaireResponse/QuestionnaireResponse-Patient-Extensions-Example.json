@@ -1,0 +1,40 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "questionnaire": "https://fhir.nhs.uk/Questionnaire/Patient-Extensions-Example",
+  "status": "completed",
+  "subject": {
+    "identifier": {
+	  "system": "https://fhir.nhs.uk/Id/nhs-number",
+	  "value": "7449306524"
+	}
+  },
+  "authored": "2023-10-01T15:00:00Z",
+  "item": [
+    {
+      "linkId": "364699009",
+      "text": "Patient - Ethnicity",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland",
+            "code": "A",
+            "display": "British, Mixed British"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "1345193002",
+      "text": "Patient - Sex defined at birth",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-BirthSex",
+            "code": "male",
+            "display": "Male"
+          }
+        }
+      ]
+    }
+  ]
+}
