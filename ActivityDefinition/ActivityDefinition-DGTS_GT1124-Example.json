@@ -1,0 +1,35 @@
+{
+ "resourceType": "ActivityDefinition",
+ "id": "ActivityDefinition-DGTS-GT1124-Example",
+ "url": "https://fhir.nhs.uk/ActivityDefinition/GT1124",
+ "status": "active",
+ "identifier": [
+  {
+   "system": "https://fhir.nhs.uk/Id/England-DigitalGenomicTestServices",
+   "value": "GT1124"
+  },
+  {
+   "system": "https://fhir.nhs.uk/Id/England-GenomicTestDirectory",
+   "value": "R448.1",
+   "use": "old"
+  }
+ ],
+ "title": "Prenatal Diagnosis for known variant(s) - Targeted variant testing",
+  "name": "GT1124_Prenatal Diagnosis for known variant(s) - Targeted variant testing",
+ "code": {
+  "coding": [
+   {
+    "system": "https://fhir.nhs.uk/CodeSystem/DGTS-genomictest-method-type",
+    "code": "targeted-assay"
+   }
+  ]
+ },
+ "library": [
+  "https://fhir.nhs.uk/Library/DGTS-targetdisease-gene-variant-required"
+ ],
+ "specimenRequirement": [
+  {
+   "reference": "SpecimenDefinition/DGTS-SpecimenDefinition-Example"
+  }
+ ]
+}

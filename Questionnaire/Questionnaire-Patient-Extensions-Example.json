@@ -1,0 +1,41 @@
+{
+  "resourceType": "Questionnaire",
+  "url": "https://fhir.nhs.uk/Questionnaire/Patient-Extensions-Example",
+  "title": "Patient Extensions",
+  "status": "draft",
+  "purpose": "For recording ethnicity and sex at birth",
+  "item": [
+    {
+      "linkId": "364699009",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "364699009",
+          "display": "Ethnic group"
+        }
+      ],
+      "prefix": "P-9",
+      "text": "Patient - Ethnicity",
+      "type": "choice",
+      "required": true,
+      "repeats": false,
+      "answerValueSet": "https://fhir.hl7.org.uk/ValueSet/UKCore-EthnicCategory"
+    },
+    {
+      "linkId": "1345193002",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1345193002",
+          "display": "Sex of neonate assigned at birth"
+        }
+      ],
+      "prefix": "P-10",
+      "text": "Patient - Sex defined at birth",
+      "type": "choice",
+      "required": true,
+      "repeats": false,
+      "answerValueSet": "https://fhir.hl7.org.uk/ValueSet/UKCore-BirthSex"
+    }
+  ]
+}
