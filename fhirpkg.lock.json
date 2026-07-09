@@ -22,7 +22,6 @@
     "hl7.fhir.uv.ipa": "1.1.0",
     "hl7.fhir.uv.smart-app-launch": "2.0.0",
     "fhir.r4.nhsengland.stu1": "1.5.0",
-    "hl7.fhir.uv.tools.r4": "1.1.2",
     "fhir.r4.ukcore.stu3.currentbuild": "0.29.0-pre-release"
   },
   "missing": {}
