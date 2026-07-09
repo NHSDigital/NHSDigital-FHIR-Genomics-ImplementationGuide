@@ -30,7 +30,7 @@
         {
           "valueCoding": {
             "system": "http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender"",
-            "code": "male",
+            "code": "M",
             "display": "Male"
           }
         }
