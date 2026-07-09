@@ -39,6 +39,25 @@
         "definition": "TBC. Only relevant for EU Lab aligned reports (included in HL7 EU Laboratory Report: Composition Profile). A reference to the ServiceRequest which this report is in response to."
       },
       {
+        "id": "Composition.extension:basedOn-order-or-requisition.url",
+        "path": "Composition.extension.url",
+        "fixedUri": "basedOn-order-or-requisition"
+      },
+      {
+        "id": "Composition.extension:basedOn-order-or-requisition.value[x]",
+        "path": "Composition.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
         "id": "Composition.extension:basedOn-order-or-requisition.value[x]:valueReference",
         "path": "Composition.extension.value[x]",
         "sliceName": "valueReference",
@@ -61,6 +80,11 @@
         "path": "Composition.extension",
         "sliceName": "information-recipient",
         "definition": "TBC. Only relevant for EU Lab aligned reports (included in HL7 EU Laboratory Report: Composition Profile). A reference to the recipient for a report, could potentially be used to reference additional recipients over the subject and original requester for the request."
+      },
+      {
+        "id": "Composition.extension:information-recipient.url",
+        "path": "Composition.extension.url",
+        "fixedUri": "information-recipient"
       },
       {
         "id": "Composition.extension:information-recipient.value[x]",
@@ -142,9 +166,9 @@
         "sliceName": "translation"
       },
       {
-        "id": "Composition.type.coding.display.extension:translation.extension",
-        "path": "Composition.type.coding.display.extension.extension",
-        "min": 2
+        "id": "Composition.type.coding.display.extension:translation.url",
+        "path": "Composition.type.coding.display.extension.url",
+        "fixedUri": "translation"
       },
       {
         "id": "Composition.type.coding:codingGenomics",
@@ -162,9 +186,9 @@
         "sliceName": "translation"
       },
       {
-        "id": "Composition.type.coding:codingGenomics.display.extension:translation.extension",
-        "path": "Composition.type.coding.display.extension.extension",
-        "min": 2
+        "id": "Composition.type.coding:codingGenomics.display.extension:translation.url",
+        "path": "Composition.type.coding.display.extension.url",
+        "fixedUri": "translation"
       },
       {
         "id": "Composition.type.text.extension:translation",
@@ -172,9 +196,9 @@
         "sliceName": "translation"
       },
       {
-        "id": "Composition.type.text.extension:translation.extension",
-        "path": "Composition.type.text.extension.extension",
-        "min": 2
+        "id": "Composition.type.text.extension:translation.url",
+        "path": "Composition.type.text.extension.url",
+        "fixedUri": "translation"
       },
       {
         "id": "Composition.category",
@@ -190,9 +214,9 @@
         "sliceName": "translation"
       },
       {
-        "id": "Composition.category.coding.display.extension:translation.extension",
-        "path": "Composition.category.coding.display.extension.extension",
-        "min": 2
+        "id": "Composition.category.coding.display.extension:translation.url",
+        "path": "Composition.category.coding.display.extension.url",
+        "fixedUri": "translation"
       },
       {
         "id": "Composition.category.text.extension:translation",
@@ -200,9 +224,9 @@
         "sliceName": "translation"
       },
       {
-        "id": "Composition.category.text.extension:translation.extension",
-        "path": "Composition.category.text.extension.extension",
-        "min": 2
+        "id": "Composition.category.text.extension:translation.url",
+        "path": "Composition.category.text.extension.url",
+        "fixedUri": "translation"
       },
       {
         "id": "Composition.category:studyType",
@@ -284,9 +308,9 @@
         "sliceName": "translation"
       },
       {
-        "id": "Composition.section.code.coding.display.extension:translation.extension",
-        "path": "Composition.section.code.coding.display.extension.extension",
-        "min": 2
+        "id": "Composition.section.code.coding.display.extension:translation.url",
+        "path": "Composition.section.code.coding.display.extension.url",
+        "fixedUri": "translation"
       },
       {
         "id": "Composition.section.code.text.extension:translation",
@@ -294,9 +318,9 @@
         "sliceName": "translation"
       },
       {
-        "id": "Composition.section.code.text.extension:translation.extension",
-        "path": "Composition.section.code.text.extension.extension",
-        "min": 2
+        "id": "Composition.section.code.text.extension:translation.url",
+        "path": "Composition.section.code.text.extension.url",
+        "fixedUri": "translation"
       },
       {
         "id": "Composition.section:sectionUGR",
