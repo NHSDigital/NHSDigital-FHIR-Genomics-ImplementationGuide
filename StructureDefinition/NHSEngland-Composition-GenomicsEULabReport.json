@@ -145,8 +145,6 @@
         "id": "Composition.section:sectionUGR",
         "path": "Composition.section",
         "sliceName": "sectionUGR",
-        "min": 0,
-        "max": "*",
         "definition": "SSections included within the UGR: patient-demographics | investigations-and-procedures-requested | investigation-results | consent-for-information-sharing | family-history."
       },
       {
