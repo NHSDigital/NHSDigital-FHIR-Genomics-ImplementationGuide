@@ -147,13 +147,14 @@
         "sliceName": "sectionUGR",
         "min": 0,
         "max": "*",
-        "definition": "Sections used to represent UGR folders."
+        "definition": "SSections included within the UGR: patient-demographics | investigations-and-procedures-requested | investigation-results | consent-for-information-sharing | family-history."
       },
       {
         "id": "Composition.section:sectionUGR.code",
         "path": "Composition.section.code",
         "binding": {
           "strength": "extensible",
+          "description": "UK Core Composition Section Codes",
           "valueSet": "https://fhir.hl7.org.uk/ValueSet/UKCore-CompositionSectionCode"
         }
       }
