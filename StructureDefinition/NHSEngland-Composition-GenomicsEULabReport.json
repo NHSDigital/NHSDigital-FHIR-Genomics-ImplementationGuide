@@ -41,34 +41,18 @@
       {
         "id": "Composition.type",
         "path": "Composition.type",
-        "definition": "SNOMED CT code for either a Laboratory Request (24691000000102) or Genetic report (1054161000000101)"
-      },
-      {
-        "id": "Composition.type.coding",
-        "path": "Composition.type.coding",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "pattern",
-              "path": "$this"
-            }
-          ],
-          "rules": "open"
-        }
-      },
-      {
-        "id": "Composition.type.coding:codingGenomics",
-        "path": "Composition.type.coding",
-        "sliceName": "codingGenomics",
-        "fixedCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "1054161000000101",
-          "display": "Genetic report"
+        "definition": "SNOMED CT code for either a Laboratory Request (24691000000102) or Genetic report (1054161000000101)",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.nhs.uk/ValueSet/type-of-genomic-report"
         }
       },
       {
         "id": "Composition.category",
         "path": "Composition.category",
+        "slicing": {
+          "rules": "open"
+        },
         "definition": "Fixed codes for conformance to the EU Lab Composition profile (for cross border sharing of lab reports)."
       },
       {
@@ -106,13 +90,6 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": [
-              "https://fhir.nhs.uk/StructureDefinition/NHSEngland-Patient-Genomics",
-              "http://hl7.eu/fhir/base/StructureDefinition/patient-eu-core",
-              "http://hl7.org/fhir/StructureDefinition/Group",
-              "http://hl7.eu/fhir/base/StructureDefinition/location-eu-core",
-              "http://hl7.org/fhir/StructureDefinition/Device"
-            ],
             "aggregation": [
               "referenced",
               "bundled"
