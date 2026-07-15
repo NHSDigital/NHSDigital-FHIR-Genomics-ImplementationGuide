@@ -1,0 +1,61 @@
+{
+  "resourceType": "ValueSet",
+  "id": "type-of-genomic-report",
+  "url": "https://fhir.nhs.uk/ValueSet/type-of-genomic-report",
+  "version": "0.1.0",
+  "name": "TypeofGenomicsReport",
+  "title": "Types of Genomics Report",
+  "status": "draft",
+  "date": "2026-07-15T00:00:00.000Z",
+  "publisher": "NHS England",
+  "contact": [
+    {
+      "name": "NHS England",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "interoperabilityteam@nhs.net",
+          "use": "work",
+          "rank": 1
+        }
+      ]
+    }
+  ],
+  "description": "A ValueSet used to identify the types of genomics report. The Composition.type SHALL identify either a Laboratory report or a Genetic report using SNOMED CT.",
+  "copyright": "Copyright © 2026+ NHS England Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at https://www.hl7.org/fhir/license.html.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "4241000179101",
+            "display": "Laboratory report"
+          },
+          {
+            "code": "1054161000000101",
+            "display": "Genetic report"
+          }
+        ]
+      }
+    ]
+  },
+  "expansion": {
+    "identifier": "urn:0ee21901-da3d-403a-aabe-b09cf4b70719",
+    "timestamp": "2026-07-15T00:00:00Z",
+    "total": 2,
+    "offset": 0,
+    "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "4241000179101",
+        "display": "Laboratory report"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "1054161000000101",
+        "display": "Genetic report"
+      }
+    ]
+  }
+}
