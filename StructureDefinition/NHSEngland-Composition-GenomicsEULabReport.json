@@ -41,7 +41,7 @@
       {
         "id": "Composition.type",
         "path": "Composition.type",
-        "definition": "SNOMED CT code for either a Laboratory Request (24691000000102) or Genetic report (1054161000000101)",
+        "definition": "SNOMED CT code for either a Laboratory Report (4241000179101) or Genetic report (1054161000000101)",
         "binding": {
           "strength": "required",
           "valueSet": "https://fhir.nhs.uk/ValueSet/type-of-genomic-report"
