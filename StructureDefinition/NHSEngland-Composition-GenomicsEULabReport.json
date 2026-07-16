@@ -41,11 +41,60 @@
       {
         "id": "Composition.type",
         "path": "Composition.type",
-        "definition": "SNOMED CT code for either a Laboratory Report (4241000179101) or Genetic report (1054161000000101)",
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://fhir.nhs.uk/ValueSet/type-of-genomic-report"
+        "definition": "SNOMED CT code for either a Laboratory Report (4241000179101) or Genetic report (1054161000000101)"
+      },
+      {
+        "id": "Composition.type.coding",
+        "path": "Composition.type.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
         }
+      },
+      {
+        "id": "Composition.type.coding.display.extension:translation",
+        "path": "Composition.type.coding.display.extension",
+        "sliceName": "translation"
+      },
+      {
+        "id": "Composition.type.coding.display.extension:translation.extension",
+        "path": "Composition.type.coding.display.extension.extension",
+        "min": 2
+      },
+      {
+        "id": "Composition.type.coding:codingGenomics",
+        "path": "Composition.type.coding",
+        "sliceName": "codingGenomics",
+        "fixedCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "1054161000000101",
+          "display": "Genetic report"
+        }
+      },
+      {
+        "id": "Composition.type.coding:codingGenomics.display.extension:translation",
+        "path": "Composition.type.coding.display.extension",
+        "sliceName": "translation"
+      },
+      {
+        "id": "Composition.type.coding:codingGenomics.display.extension:translation.extension",
+        "path": "Composition.type.coding.display.extension.extension",
+        "min": 2
+      },
+      {
+        "id": "Composition.type.text.extension:translation",
+        "path": "Composition.type.text.extension",
+        "sliceName": "translation"
+      },
+      {
+        "id": "Composition.type.text.extension:translation.extension",
+        "path": "Composition.type.text.extension.extension",
+        "min": 2
       },
       {
         "id": "Composition.category",
